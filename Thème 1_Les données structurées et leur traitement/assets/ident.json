@@ -1,0 +1,15 @@
+[{
+    "nom" : "Durand", 
+    "prenom" : "Jean-Pierre", 
+    "date_naissance" : "23/05/1985"
+},
+{
+    "nom" : "Dupont", 
+    "prenom" : "Christophe", 
+    "date_naissance" : "15/12/1967"
+},
+{
+    "nom" : "Terta", 
+    "prenom" : "Henry", 
+    "date_naissance" : "12/06/1978"
+}]
