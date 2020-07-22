@@ -20,7 +20,7 @@ Guido van Rossum a créé le langage Python mais pour le faire évoluer il a eu 
 
 Un **algorithme** est une suite d'instructions à exécuter. Celui-ci peut être écrit en langage naturel, c'est-à-dire en donnant des instructions en français, mais pour être exécuté, l'algorithme doit être traduit dans un langage de programmation. Un même algorithme peut ainsi être **implémenté** dans plusieurs langages de programmation différents. Par exemple, le langage utilisé par les calculatrices TI n'est pas le même que celui utilisé par les calculatrices Casion. Ainsi, si on souhaite implémentaer un algorithme sur sa calculatrice, on ne saisira pas le même **programme** selon la marque de celle-ci.
 
-#### 2) Variables et affectation
+#### 2) Variables, types, affectation, comparaison
 
 Une **variable** est désignée par un nom (une lettre, un mot, plusieurs mots séparés par le tiret bas ou underscore '_' sans espace) et contient une valeur d'un certain type.
 
@@ -83,7 +83,7 @@ En langage Python, on utilise l'instruction `a=...` pour **affecter une valeur �
 (3, 8, 6)
 ```
 
-<u>Remarque 1</u>: On peut aussi procéder de la manière suivante pour connaître le type d'une variable :
+<u>Remarque 1</u>: On peut aussi procéder de la manière suivante pour connaître le type d'une variable : on utilise un double '==' pour effectuer une **comparaison**.
 
 ```Python
 >>> type("singe")==str#Attention, un simple '=' pour l'affectation, un double '==' pour une comparaison ; le résultat est un booléen
@@ -100,7 +100,27 @@ True
 ```
 La spécialité NSI de première vous permettra de comprendre ce qui se passe et de justifier cet affichage.
 
-<u>Remarque 3</u> : On peut disposer d'autres outils mathématiques en **important des modules** comme par exemple le module **math** (accès aux fonctions mathématiques), le module **random** (génération de nombres aléatoires) ou le module **turtle** (module graphique). 
+<u>Remarque 3</u> : On peut transformer une chaîne de caractère en entier avec `int()` ou en nombre flottant avec `float()`; inversement on peut tranformer un nombre en une chaîne de caractère avec `str()` ce qui peut être utile pour concaténer des chaînes de caractères. On peut aussi transformer un nombre flottant en nombre entier ; ce qui revient à en prendre la partie entière.
+
+```Python
+>>> entier="100"
+>>> valeur=int(entier)
+>>> valeur
+100
+>>> nombre_flottant="13.45"
+>>> valeur_numerique=float(nombre_flottant)
+>>> valeur_numerique
+13.45
+>>> nombre=2020
+>>> nombre_texte=str(nombre)
+>>> texte="Nous sommes en "+nombre_texte
+>>> texte
+'Nous sommes en 2020'
+>>> int(5.42)
+5
+```
+
+<u>Remarque 4</u> : On peut disposer d'autres outils mathématiques en **important des modules** comme par exemple le module **math** (accès aux fonctions mathématiques), le module **random** (génération de nombres aléatoires) ou le module **turtle** (module graphique). 
 
 Pour obtenir des informations sur un module directement dans la console :
 
@@ -345,6 +365,26 @@ Hello
 ```
 
 `for i in range(n,p)` fait démarrer i à n et l'arrêter à p-1.
+
+<u>Remarque</u>:
+
+On peut parcourir une liste ou un tuple de deux manières différentes.
+
+```Python
+>>> liste=[3,5,9]
+>>> for i in range(len(liste)):
+    print(liste[i])
+    
+3
+5
+9
+>>> for i in liste:
+    print(i)
+    
+3
+5
+9
+```
 
 <u>Exemple 1</u>: 
 
