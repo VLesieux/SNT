@@ -26,7 +26,7 @@ Remarque : En informatique, on compte l'information en **octet** : 1 octet est f
 Pour que les données soient correctement transmises, puis exploitées, des **protocoles** ont été mis en place.
 Les données vont être **encapsulées** par ces différents protocoles, c'est-à-dire qu'on va y accoler un certain nombre d'informations (où est situé l'ordinateur destinataire ? quel est le logiciel destinataire ? ...). C'est l'ensemble de ces informations appelé la **trame** qui est transmis via le réseau Internet.
 
-<img src="Assets/Trame.png" width="200" height="200">
+<img src="Assets/Trame.png" width="400" height="200">
 
 ### TCP/IP
 
@@ -44,7 +44,7 @@ Lorsqu'on envoie une lettre par La Poste on l'insère dans une enveloppe sur laq
 À quoi ressemble l'adresse d'un ordinateur ? L'**adresse IP** est constituée de **4 nombres compris entre 0 et 255 séparés par un point**.
 Par exemple, supposons que l'adresse IP de l'expéditeur soit 192.168.0.1 et que celle du destinataire soit 172.152.23.108, on obtient le **datagramme** suivant :
 
-<img src="Assets/Datagramme_IP.png" width="200" height="200">
+<img src="Assets/Datagramme_IP.png" width="400" height="200">
 
 Dans la trame envoyée, l'adresse IP est codée sur 4 octets, c'est-à-dire 32 bits. Pour cela on utilise la représentation binaire des nombres compris entre 0 et 255 (correspondant aux 256 possibilités d'octets).
 
@@ -70,7 +70,7 @@ TCP/IP n'est pas la seule suite de protocoles utilisée, il s'agit seulement de 
 
 Maintenant que l'on sait de quoi est constituée une trame transmise entre deux objets connectés, il reste à savoir comment celle-ci circule entre les deux. Une fois encore on peut faire l'analogie avec l'acheminement du courrier par La Poste : quand on expédie une lettre on la dépose au bureau de poste, elle sera ensuite envoyée dans différents centres de tri avant d'être distribuée au destinataire. 
 
-<img src="Assets/routages.png" width="600" height="600">
+<img src="Assets/routages.png" width="800" height="600">
 
 Le schéma ci-dessus montre que les ordinateurs sont reliés entre eux par des **switchs**, chaque switch correspondant à un réseau local, eux-mêmes reliés à des **routeurs**.
 Le rôle d'un routeur est analogue au centre de tri ; son rôle est de faire communiquer entre eux les réseaux qu'il relie et d'aiguiller correctement chaque trame reçue. Pour cela le routeur utilise sa **table de routage** : en fonction de l'adresse IP de destination il choisira à qui il doit renvoyer la trame.
@@ -94,7 +94,7 @@ Remarques :
 - Un serveur web héberge des ressources web (pages web, images, vidéos, etc..), il est connecté au réseau Internet et échange des informations avec les utilisateurs. On parle d'interaction client/serveur.
 - Un navigateur est un logiciel permettant d'afficher du contenu Web. Les navigateurs les plus utilisés dans le monde sont : Google Chrome, Firefox, Safari, Internet Explorer et Opera..
 
-<img src="Assets/dns.png" width="600" height="600">
+<img src="Assets/dns.png" width="700" height="600">
 
 
 ### Serveurs pair-à-pair (Peer to peer, p2p)
@@ -123,4 +123,4 @@ Le **modèle OSI** est né en 1984, il s'agit d'un modèle en 7 couches indiquan
 Le protocole IP est un protocole de couche 3, TCP est un protocole de couche 4 (UDP également). Un routeur est un matériel de couche 3 (il implémente le protocole IP), un switch un matériel de couche 2. Dans les protocoles de couche 7 (la couche applicative) on retrouve par exemple les protocoles DNS, HTTP et HTTPS.
 Le modèle OSI est un modèle théorique et peut être simplifié dans le cadre TCP/IP :
 
-<img src="Assets/osi.png" width="600" height="600">
+<img src="Assets/osi.png" width="700" height="600">
