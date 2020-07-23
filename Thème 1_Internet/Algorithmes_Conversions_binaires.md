@@ -1,6 +1,6 @@
-# I) La représentation binaire d'un nombre
+## I) La représentation binaire d'un nombre
 
-## 1) Comparaison représentation décimale - représentation binaire
+### 1) Comparaison représentation décimale - représentation binaire
 
 Le but de cette activité est de se familiariser avec l'écriture binaire d'un nombre qui est l'écriture utilisée par les ordinateurs n'utilisant que les bits 0 et 1.
 
@@ -28,7 +28,7 @@ Ce qui peut  se représenter :
 
 |2^7|2^6| 2^5|2^4|2^3|2^2|2^1|2^0|
 |:--------------- |:---------------|:---------------|:-----|:--------------- |:---------------| :---------------|-----:|
-|0|1|1|0|0|0|0|1|   
+|0|1|1|0|0|0|0|1|
 
 
 Le mot binaire de 8 bits appelé octet de valeur décimale 97 s'écrit donc : (0,1,1,0,0,0,0,1).  
@@ -37,31 +37,31 @@ On peut l'écrire plus simplement 1100001 en supprimant les 0 _**non significati
 Remarque : un mot binaire de 8 bits offre 2 possibilités 0 ou 1 par bits, soit 2^8=256 possibilités de valeurs comprises entre 0 : 00000000 et 255 : 11111111
 
 
-## 2) Passer de la notation binaire à la valeur décimale    
+### 2) Passer de la notation binaire à la valeur décimale    
 
 Il s'agit cette fois de réaliser l'opération inverse : déterminer la valeur décimale du nombre à partir de son écriture binaire.  
 
 Par exemple, la valeur décimale du mot binaire 1000101 est : 2^6+ 2^2 + 2^0 = 64 + 4 + 1 = 69
 
 
-## 3) Vérification dans le Shell de Thonny   
+### 3) Vérification dans le Shell de Thonny   
 
 Dans l'_**invite de commande ou prompt**_ `>>>` entrer `bin(97)`
 Le résultat `'0b1100001'` est cohérent : `'0b'` est la manière de désigner un nombre binaire.  
 
 
 Dans l'invite de commande ou prompt `>>>` entrer maintenant `0b1000101` on retrouve 69.
- 
-#  II) Écriture d'un premier programme en python
 
-## 1) Écriture d'un premier programme utilisant les outils natifs du language
+##  II) Écriture d'un premier programme de conversion en python
+
+### 1) Utilisation des outils natifs du language
 
 On se propose d'écrire un premier programme qui demande un nombre entier et retourne sa représentation binaire.  
 Pour demander à l'utisateur d'entrer un nombre entier on écrit :   ```x=input("Entrez un nombre entier : ")```.  
 Après avoir enregistré ce programme au nom de Activite1.py et coché _Variables_ dans _View_, on voit apparaître dans le tableau des Variables le nom de la variable x dont la valeur est donnée entre guillemets : il s'agit donc d'une chaîne de caractères ou string.  
 On le vérifie également en demandant dans le Shell le type de x : `>>> type(x)` on obtient `<class 'str'>`.  
 Il faut dans un premier temps convertir en entier cette variable à l'aide de ```int(x)```avant d'en demander la conversion en binaire à l'aide de la fonction ```bin()```
-Ce qui donne notre premier programme :  
+Ce qui donne un premier programme :  
 
 ```python
 x=input("Entrez un nombre entier : ")
@@ -100,17 +100,19 @@ Entrez un nombre binaire : 0b1011110011
 755
 ```
 
-## 2) Un algorithme pour obtenir la représentation binaire d'un nombre  
+### 2) Un algorithme pour obtenir la représentation binaire d'un nombre  
 
-Un _**algorithme**_ est une recette qui permet d'atteindre le résultat à condition de l'appliquer rigoureusement.
-Pour obtenir la représentation binaire d'un nombre, il s'agit de réaliser un processus répétitif de divisions successives par 2 que l'on arrête dès lors que le quotient de la division est nul, on note alors les restes des divisions de bas en haut. Plus précisément, on observe que dans le processus le quotient devient le nouveau dividende ou que le nouveau dividende prend la valeur du quotient précédent.
+Un _**algorithme**_ est une "recette" qui permet d'atteindre le résultat à condition de l'appliquer rigoureusement.
+Pour obtenir la représentation binaire d'un nombre, il s'agit de réaliser un processus répétitif de divisions successives par 2 que l'on arrête **dès que le quotient de la division est nul**, on note alors les restes des divisions de bas en haut. 
+
+Plus précisément, on observe dans cet algorithme qu'à chaque fois le quotient devient le nouveau dividende.
 
 Observons cette image qui représente la démarche à suivre sur papier :    
 
 
-![Représentation binaire de 755 ](divisions.png)
+![Représentation binaire de 755 ](Assets/divisions.png)
 
-## 3) Programmation de la conversion décimal-binaire en utilisant l'algorithme
+### 3) Programmation de la conversion décimal-binaire en utilisant l'algorithme
 
 On se propose de réaliser un processus qui sera répété aussi longtemps que la condition d'arrêt ne sera pas atteinte.  
 
@@ -132,7 +134,7 @@ a=""
 dividende=int(x)
 #on prend soin de transformer le string x en entier
 quotient=dividende//2
-while quotient>0:#on réalise une boucle non bornée
+while quotient>0:#on réalise une boucle non bornée qui se poursuit aussi longtemps que la proposition 'quotient>0' est True
     reste=dividende%2
     a=str(reste)+a
     quotient=dividende//2
@@ -140,10 +142,9 @@ while quotient>0:#on réalise une boucle non bornée
 print(a) 
 ```
 
-Dans ce programme, on utilise une _**boucle non bornée**_ dite _**boucle while**_ parce qu'on ne sait pas d'avance le nombre de tour à effectuer. On peut voir le déroulement du programme à l'aide du debugger, en entrant dans la boucle (step into) pour voir son déroulement.
-On observera également l'_**indentation**_ qui a été réalisée pour écrire cette boucle.
+Dans ce programme, on utilise une _**boucle non bornée**_ dite _**boucle while**_ parce qu'on ne sait pas d'avance le nombre de tour à effectuer. On peut voir le déroulement du programme à l'aide du **debugger**, en entrant dans la boucle (step into) pour voir son déroulement.
 
-## 4) Améliorations du programme
+### 4) Améliorations du programme
 
 Une première amélioration consiste à prévenir l'arrêt du programme si l'utilisateur entre autre chose qu'un nombre, on pourra alors lui demander gentiment de recommencer la saisie. 
 Dans Python le mécanisme de traitement des exceptions se fait avec les _**instructions**_ `try - except`.
@@ -176,13 +177,13 @@ def convertir():#définition d'une deuxième fonction
 convertir()#pour réaliser la première demande, on appelle une première fois la fonction
 ```
 
-## 5) Programmation de la conversion binaire-décimal
+### 5) Programmation de la conversion binaire-décimal
 
-On demande à l'utilisateur d'entrer une chaîne de caractère correspondant au mot binaire.
+On demande maintenant à l'utilisateur d'entrer une chaîne de caractère correspondant au mot binaire.
 On parcourt la chaîne de caractères en traitant les bits les uns après les autres pour obtenir la valeur décimale.
-On réalise cette fois une _**boucle bornée**_ ou _**boucle for**_ car on sait combien de tours devront être effectués, c'est la longueur de la chaîne de caractère.
+On réalise cette fois une _**boucle bornée**_ ou _**boucle for**_ car on sait maintenant combien de tours devront être effectués, c'est la longueur de la chaîne de caractère.
 
-Pour bien comprendre le programme, voyons d'abord quelques manipulations sur une _**chaîne de caractère_** qui se comporte comme une _**liste**_.
+Pour bien comprendre le programme, voyons d'abord quelques manipulations sur une chaîne de caractère qui se comporte comme une _**liste**_.
 
 ```python
 >>> liste=[1,5,"A",4,"e"]
@@ -229,7 +230,7 @@ x="jardin"
 for i in range(len(x)):#permet de parcourir tous les éléments d'une chaîne ou d'une liste
     print(x[i])
 ```
- 
+
 ```
 j  
 a  
@@ -251,4 +252,6 @@ for i in range(len(x)):
 print(a)
 ```
 
-**Application** : Écrire un programme de conversion décimal-hexadécimal (base 16) dans les deux sens utilisant les notations suivantes 10 = "A"; 11 = "B" ; 12 = "C" ; 13 = "D" ; 14 = "E" ; 15 = "F"
+**Application** : 
+
+Écrire un programme de conversion décimal-hexadécimal (base 16) dans les deux sens utilisant les notations suivantes 10 = "A"; 11 = "B" ; 12 = "C" ; 13 = "D" ; 14 = "E" ; 15 = "F"
