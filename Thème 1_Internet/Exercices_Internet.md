@@ -11,7 +11,7 @@ Sous Windows
 
 Coder en écriture binaire l'adresse IP 192.168.1.13
 
-Procéder "à la main" puis utiliser l'implémentation en Python de l'[algorithme de conversion](Algorithmes_Conversions_binaires.md)   expliquée ici.
+Procéder "à la main" puis utiliser l'implémentation en Python de l'[algorithme de conversion](Assets/Algorithmes_Conversions_binaires.md) expliquée ici.
 
  
 
