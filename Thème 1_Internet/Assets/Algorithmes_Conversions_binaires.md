@@ -254,4 +254,4 @@ print(a)
 
 **Application** : 
 
-Écrire un programme de conversion décimal-hexadécimal (base 16) dans les deux sens utilisant les notations suivantes 10 = "A"; 11 = "B" ; 12 = "C" ; 13 = "D" ; 14 = "E" ; 15 = "F"
+Écrire un programme de conversion décimal-hexadécimal (base 16) puis hexadécimal-décimal utilisant les notations suivantes 10 = "A"; 11 = "B" ; 12 = "C" ; 13 = "D" ; 14 = "E" ; 15 = "F"

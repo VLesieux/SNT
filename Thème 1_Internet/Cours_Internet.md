@@ -48,12 +48,17 @@ Par exemple, supposons que l'adresse IP de l'expéditeur soit 192.168.0.1 et que
 
 Dans la trame envoyée, l'adresse IP est codée sur 4 octets, c'est-à-dire 32 bits. Pour cela on utilise la représentation binaire des nombres compris entre 0 et 255 (correspondant aux 256 possibilités d'octets).
 
-Exemple : pour coder 172 en binaire, il s'agit de décomposer 172 en puissances de 2 (en base 2).
+Exemple : considérons l'adresse : 172.152.23.108.
+Pour coder 172 en binaire, il s'agit de décomposer 172 en puissances de 2 (en base 2).
 Les puissances de 2 sont : (2<sup>0</sup>=1;2<sup>1</sup>=2;2<sup>2</sup>=4;2<sup>3</sup>=8;2<sup>4</sup>=16;2<sup>5</sup>=32;2<sup>6</sup>=64;2<sup>7</sup>=128;2<sup>8</sup>=256..)
 172=1×128+0×64+1×32+0×16+1×8+1×4+0×2+0×1
 172=1×2<sup>7</sup>+0×2<sup>6</sup>+1×2<sup>5</sup>+0×2<sup>4</sup>+1×2<sup>3</sup>+1×2<sup>2</sup>+0×2<sup>1</sup>+0×2<sup>0</sup>
 
 D'où le **code binaire** de 172 : (10101100)
+On procède de même pour 152 : (10011000)
+Puis pour 23 : (00010111)
+Enfin pour 108 : (1101100)
+D'où le code binaire de l'adresse : 1010110010011000000101111101100
 
 Remarque : étant donné le nombre grandissant d'objets connectés ce format d'adresse IP, appelé adresse IPv4 formé de 4 octets, soit 32 bits, devient insuffisants ; il est en effet limité pour coder 2<sup>32</sup>=4×10<sup>9</sup> adresses. 
 On utilise donc de plus en plus le protocole IPv6 qui utilise des adresses codées sur 128 bits ce qui donne 2<sup>128</sup>=3×10<sup>38</sup> adresses possibles. 
@@ -81,7 +86,7 @@ Remarques :
 - Qu'est-ce que la **neutralité du net** ? Il s'agit du principe selon lequel les données circulent sans distinction ni sur les expéditeurs/destinataires ni sur le contenu (texte, vidéo, etc..). Il n'y a aucune priorité accordée sur les trames qui transitent sur le réseau.
 - On entend parfois parler du fait de "débrancher Internet" ; c'est impossible ! On peut éventuellement déconnecter un ensemble de machines d'Internet mais l'interconnexion des réseaux est telle que deux machines pourront toujours communiquer entre elles en empruntant éventuellement un autre chemin ou une déviation.
 - On a vu qu'il existe des milliers de réseaux d'Internet, la table de routage ne les recense pas tous ! Si jamais le routeur reçoit une trame dont l'adresse de destination n'est pas dans la table, elle devra suivre la "route par défaut" indiquée par la table de routage. Par ailleurs la table n'est pas fixe et régulièrement actualisée.
-- Que se passe-t-il lors d'une panne réseau ? Si un paquet ne parvient pas à trouver sa destination, va-t-il transiter indéfiniment sur le résau ? Dans l'adresse IP figure toujours une donnée appelée TTL (Time To Live) qui indique le nombre maximal de routeurs par lequel peut transiter le paquet. À chaque fois que le paquet traverse un routeur la TTL diminue, une fois arrivée à 0 le paquet est détruit. Cela permet de ne pas encombrer le réseau. Si un paquet a été détruit et ne parvient donc pas à destination, il sera de toute façon redemandé par le protocole TCP.
+- Que se passe-t-il lors d'une panne réseau ? Si un paquet ne parvient pas à trouver sa destination, va-t-il transiter indéfiniment sur le résau ? Dans l'adresse IP figure toujours une donnée appelée **TTL** (Time To Live) qui indique le nombre maximal de routeurs par lequel peut transiter le paquet. À chaque fois que le paquet traverse un routeur la TTL diminue, une fois arrivée à 0 le paquet est détruit. Cela permet de ne pas encombrer le réseau. Si un paquet a été détruit et ne parvient donc pas à destination, il sera de toute façon redemandé par le protocole TCP.
 
 ### Serveurs DNS (Domain Name System)
 
