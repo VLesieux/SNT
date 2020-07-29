@@ -86,6 +86,8 @@ Les certificats électroniques peuvent permettre de garentir l'authenticité d'u
 - Certains sites web peuvent essayer d'exécuter un **programme malveillant** sur votre appareil, souvent en demandant de télécharger un fichier exécutable (.exe sous Windows). Ce programme peut contenir un "keylogger" qui enregistre vos frappes de clavier pour récupérer vos mots de passe, un rançongiciel qui chiffre vos fichiers puis demande de l'argent pour pouvoir les récupérer..
 Certains de ces programmes tentent de s'exécuter directement dans le navigateur via un langage web comme JavaScript. L'ANSSI (Agence Nationale de Sécurité des Systèmes d'Information) conseille de désactiver Javascript dans la mesure du possible. Récemment, les principaux navigateurs ont décidé de désactiver Flash par défaut qui posait trop de problèmes de sécurité. 
 
+On retrouvera ces informations [ici](https://www.iptis.fr/iptis-et-le-hameconnage-par-email)
+
 ### Développement Web avec HTML
 
-On trouvera [ici](Assets/Creation_page_web.md) une page consacrée au développment Web avec HTML.
+On trouvera [ici](Assets/Creation_page_web.md) une page consacrée au développment Web avec HTML 5.

@@ -1,4 +1,4 @@
-## Exercices Internet
+## Exercices Thème 1 : Internet
 
 ### Exercice 1
 
