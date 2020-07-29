@@ -140,5 +140,5 @@ palais.html
 
 ### Exercice 4
 
-Réaliser une [page web](Assets/page_web.html) présentant le lieu de votre choix respectant un cahier des charges.
+Réaliser une [page web](http://vfsilesieux.free.fr/page_web.html) présentant le lieu de votre choix respectant un cahier des charges.
  
