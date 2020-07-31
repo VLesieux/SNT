@@ -40,8 +40,9 @@ def chemin(graphe,i,j,liste):
 >>> chemin(G,6,4,[])
 [6, 3, 1, 2, 4]
 ```
-Quelle est la particularité de cet algorithme ? Proposez une explication.
-Vérifier en utilisant le débugger.
+Quelle est la particularité de cet algorithme ? Proposez une explication.  
+Vérifier en utilisant le débugger.    
+
 5. Utiliser la fonction précédente pour écrire les fonctions `excentricite(graphe,i)` ; `diametre(graphe)`, `rayon(graphe)`, `centre(graphe)` .
 Retrouver les résultats établis "à la main". 
 
