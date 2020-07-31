@@ -50,7 +50,7 @@ Retrouver les résultats établis "à la main".
 
 Il peut être intéressant de trouver la plus grande communauté dans un réseau social. On a vu qu'une communauté peut être vue comme une clique (sommets tous reliés entre eux) dans un graphe. Dans les graphes suivants, quel est le nombre maximum de sommets d'une clique ?
 
-<img src="Assets/cliques.png" width="300" height="450">
+<img src="Assets/cliques.png" width="450" height="300">
 
 ### Exercice 5
 
