@@ -18,7 +18,7 @@ Consulter le [kit complet de sensibilisation aux risques numériques](Assets/kit
 
 Soit le graphe ci-dessous :
 
-<img src="Assets/graphe.png" width="500" height="200">
+<img src="Assets/graphe.png" width="500" height="500">
 
 1. Donner une représentation par liste d'adjacence de ce graphe.
 2. Déterminer "à la main" son diamètre et son rayon.
