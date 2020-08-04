@@ -38,15 +38,15 @@ Gascon	Robert	06 64 58 54 36	robert.gascon@wanadoo.fr	08/02/1988	Orléans
 Villefort	Valentine	06 82 25 36 84	valentine.villefort@gmail.com	20/06/1994	Tours
 Poclain	Alexandre	06 25 39 26 37	alexandre.poclain@orange.fr	11/02/1961	Nancy
 
-Vue des [données](Assets/contacts.xls) mises en tableau réalisé dans un tableur tel que Excel ou LibreofficeCalc : <img src="Assets/image_excel.png" width="200" height="100">
+Vue des [données](Assets/contacts.xls) mises en tableau réalisé dans un tableur tel que Excel ou LibreofficeCalc : <img src="Assets/image_excel.png">
 
 Le même [fichier](Assets/contacts.csv) au format **csv** lu dans un éditeur de texte :
 
-<img src="Assets/format_csv.png" width="500" height="300">
+<img src="Assets/format_csv.png">
 
 Le même fichier au format **xml** lu dans un éditeur de texte :
 
-<img src="Assets/format_xml.png" width="900" height="900">
+<img src="Assets/format_xml.png">
 
 Le même fichier au format **json** lu dans un éditeur de texte :
 
