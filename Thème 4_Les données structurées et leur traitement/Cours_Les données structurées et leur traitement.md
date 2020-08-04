@@ -56,13 +56,13 @@ Les fichiers au format PDF, JPG, MP3...constituent également des fichiers de do
 
 Une partie de fichier au format mp3 lu dans un éditeur de texte :
 
-<img src="Assets/format_mp3.png" width="800" height="800">
+<img src="Assets/format_mp3.png">
 
 Cependant, à chacun de ces fichiers sont toujours associées des **métadonnées** indiquant selon le type de fichier une date, un auteur, une donnée de géolocalisation, un matériel utilisé... 
 
 Exemple de métadonnées d'un fichier audio :
 
-<img src="Assets/metadonnees.png" width="1200" height="1200">
+<img src="Assets/metadonnees.png">
 
 
 ### Collecte des données
@@ -93,7 +93,7 @@ On peut également croiser les informations de plusieurs tables issues d'une mê
 Exemple : Dans le but de distribuer des bons d'achat aux clients les plus fidèles d'un magasin, on peut commencer par filtrer dans le fichier des ventes les clients ayant effectué le plus d'achats, puis chercher dans un deuxième leurs adresses postales dans le fichier client.
 Lorsque les données sont représentées sur un tableur, on peut aisément effectuer ce genre d'opérations qui consistent à les **filtrer** ou les **trier**.
 
-<img src="Assets/filtration_donnees.png" width="400" height="400">
+<img src="Assets/filtration_donnees.png">
 
 On réalise le fichier contacts.py avec Thonny placé dans le même dossier que le fichier contacts.csv.
 
@@ -163,5 +163,3 @@ Les entreprises utilisent de plus en plus les serveurs cloud, qu'elles louent av
 
 Le volume massif des données générées et traitées (Big Data) nécessite un nombre de plus en plus important de centres de données appelés **datacenters**, c'est-à-dire des bâtiments abritant des serveurs informatiques dédiés au stockage et à l'exploitation des données. C'est un réel enjeu environnemental du fait de leur consommation en métaux rares, en eau (refroidissement des serveurs) et en électricité. On estime que d'ici 2030 la consommation énergétique de l'informatique constituera plus de 20% de la consommation mondiale, dont un tiers attribué aux datacenters.
 
-
-<img src="Assets/donnees_graphe.jpg" width="1200" height="1200">
