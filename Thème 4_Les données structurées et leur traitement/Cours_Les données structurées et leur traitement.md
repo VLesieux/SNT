@@ -1,4 +1,4 @@
-## Les données structurées et leurs traitements
+## Thème 4 : Les données structurées et leurs traitements
 
 ### Introduction
 
@@ -30,6 +30,27 @@ Une **base de données** est une ensemble de tables de données pouvant être re
 
 Différents formats peuvent être utilisés pour représenter des données structurées, notamment les formats CSV, XML, JSON et VCF.
 
+Exemple : le format utilisé pour pour les contats dans un smartphone est le format qui porte l'extension VCF (fichier vCard).
+
+vCard 4.0 :
+```vCard
+BEGIN:VCARD
+VERSION:4.0
+N:Gump;Forrest;;Mr.;
+FN:Forrest Gump
+ORG:Bubba Gump Shrimp Co.
+TITLE:Shrimp Man
+PHOTO;MEDIATYPE=image/gif:http://www.example.com/dir_photos/my_photo.gif
+TEL;TYPE=work,voice;VALUE=uri:tel:+1-111-555-1212
+TEL;TYPE=home,voice;VALUE=uri:tel:+1-404-555-1212
+ADR;TYPE=WORK;PREF=1;LABEL="100 Waters Edge\nBaytown\n, LA 30314\nUnited States of America":;;100 Waters Edge;Baytown;LA;30314;United States of America
+ADR;TYPE=HOME;LABEL="42 Plantation St.\nBaytown\, LA 30314\nUnited States of America":;;42 Plantation St.;Baytown;LA;30314;United States of America
+EMAIL:forrestgump@example.com
+REV:20080424T195243Z
+x-qq:21588891
+END:VCARD
+```
+
 Exemple de données :
 
 Nom	Prénom	Numéro de téléphone	Adresse e-mail	Date de naissance	Ville
@@ -54,7 +75,7 @@ Le même fichier au format **json** lu dans un éditeur de texte :
 
 Les fichiers au format PDF, JPG, MP3...constituent également des fichiers de données mais ceux-ci sont **non structurées**.
 
-Une partie de fichier au format mp3 lu dans un éditeur de texte :
+Une partie de fichier au format mp3 lue dans un éditeur de texte :
 
 <img src="Assets/format_mp3.png">
 
