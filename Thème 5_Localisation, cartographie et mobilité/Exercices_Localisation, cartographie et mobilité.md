@@ -63,4 +63,4 @@ De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours
 
 Trouver le plus court chemin de A à B dans le graphe suivant et donner sa longueur (chaque arête possède une longueur exprimée en km).
 
-<img width="500" height="300" src="Assets/chemin_plus_court.png">
+<img width="600" height="300" src="Assets/chemin_plus_court.png">
