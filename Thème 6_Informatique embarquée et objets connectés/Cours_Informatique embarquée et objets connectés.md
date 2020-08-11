@@ -50,7 +50,7 @@ Voici quelques exemples d'innovations en matière d'interface homme-machine :
  ### Conception d'une application web : interaction avec le clavier de l'ordinateur
  
  Sans aller jusqu'au bout ce qui n'est pas notre sujet, on pourra suivre [ici](http://isnangellier.alwaysdata.net/php/Projet_Gobble.html) la mise au point d'une application web utilisant HTML 5 où l'utilisateur déplace avec les flèches du clavier une boule verte pour manger des boules rouges sans entrer en collision avec les boules bleues ; les niveaux se complexifient avec un nombre de plus en plus élevé de boules bleues. 
- On pourra également voir [ici](http://isnangellier.alwaysdata.net/php/Projet_carte.html) la mise au point d'une autre application web où il s'agit, en temps limité, de cliquer correctement sur une mappemonde pour localiser le maximum de pays demandés.
+On pourra également voir [ici](http://isnangellier.alwaysdata.net/php/Projet_carte.html) la mise au point d'une autre application web où il s'agit, en temps limité, de cliquer correctement sur une mappemonde pour localiser le maximum de pays demandés.
  
  ### Sécurité et objets connectés
  
