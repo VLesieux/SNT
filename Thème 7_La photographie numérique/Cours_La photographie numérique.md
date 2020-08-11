@@ -65,17 +65,17 @@ Entre le moment où l'on presse le bouton de l'appareil numérique pour déclenc
 
 - Avant même le déclenchement de la prise de vue : 
 
-	. Stabilisation de l'image afin de compenser le mouvement du photographe
-	. Mise au point
-	. Correction du flou
+	. Stabilisation de l'image afin de compenser le mouvement du photographe.  
+	. Mise au point.  
+	. Correction du flou.  
 
 - Capture de l'image : obtention du fichier RAW
 - Après la capture de l'image :
 
-	. Dématriçage
-	. Balance des blancs
-	. Contraste 
-	. Saturation
+	. Dématriçage.  
+	. Balance des blancs. 
+	. Contraste.    
+	. Saturation.  
 
 - Compression de l'image : obtention du fichier JPEG
 - Amélioration de l'image
