@@ -37,7 +37,7 @@ from math import floor
 
 Dans cet exercice nous allons utiliser le module Image de la librairie PIL.
 
-On suivra [ici](Assets/traitements_d_une_même_image.pdf) les différentes traitements d'une même image.
+On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) les différentes traitements d'une même image.
 
 ### Exercice 6
 
