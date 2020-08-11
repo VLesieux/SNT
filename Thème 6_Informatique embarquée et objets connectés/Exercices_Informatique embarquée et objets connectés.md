@@ -12,7 +12,7 @@ Recherchez combien d'objets sont connectés via votre box.
 On donne ici le code d'un jeu écrit en Python qui utilise la bibliothèque graphique tkinter.
 Expliquer comment l'interface du jeu a été créée et proposer éventuellement des améliorations personnelles.
 
-<img width="400" height="400" src="Assets/jeu.png">
+<img width="600" height="400" src="Assets/jeu.png">
 
 ```Python
 valeur_a_atteindre=0
