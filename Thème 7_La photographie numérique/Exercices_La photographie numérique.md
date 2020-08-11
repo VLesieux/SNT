@@ -35,7 +35,7 @@ from math import floor
 
 ### Exercice 5
 
-Dans cet exercice nous allons utiliser le module Image de la librairie PIL.
+Dans cet exercice nous allons utiliser le module Image de la librairie PIL de Python.
 
 On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) les différentes traitements d'une même image.
 
