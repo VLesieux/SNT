@@ -19,17 +19,17 @@ La mise au point de l'appareil photographique diffère néanmoins de l'accommoda
 
 
 
-<img width="600" height="500" src="Assets/analogie_oeil_camera.png">
+<img width="650" height="500" src="Assets/analogie_oeil_camera.png">
 
 
 La rétine est constitué de cellules photosensibles : les cônes (bleus, rouges, verts), qui permettent d'analyser les différentes couleurs de l'image en vision diurne (elles sont sensibles à des domaines spécifiques du spectre visible) et les bâtonnets pour la vision nocturne.
 
-<img width="600" height="500" src="Assets/cones.png">
+<img width="650" height="500" src="Assets/cones.png">
 
 De même le capteur d'un appareil numérique est constitué de **photosites** : il s'agit de cellules mesurant l'intensité lumineuse. Chacune de ces cellules est munie d'un filtre coloré (rouge, vert, bleu) ne laissant passer que les rayons de la couleur en question et d'une microlentille convergente permettant de concentrer les rayons au centre du photosite. Les photosites sont disposés comme sur la figure ci-dessous : deux sites "vert" pour un site "rouge" et un site "bleu". La **définition** du capteur correspond au nombre de ses photosites.
 
 
-<img width="600" height="500" src="Assets/photosite.png">
+<img width="650" height="500" src="Assets/photosite.png">
 
 Une fois l'image capturée, les informations reçues par chaque photosite permettent d'obtenir un premier fichier au format RAW, c'est-à-dire un fichier brut de données non interprétées.
 Les données subissent ensuite plusieurs traitements, notamment le **dématriçage**, afin d'obtenir une image numérique (format JPEG ou TIFF) constituée de petits carrés de couleur : les pixels.
