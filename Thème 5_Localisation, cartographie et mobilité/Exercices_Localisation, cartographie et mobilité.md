@@ -70,11 +70,12 @@ De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours
 3) Ajouter deux fonctions au programme précédent `distance_deux_points(graphe,i,j)` et `distance_totale(graphe,liste)` pour que le programme retourne également la longueur du chemin le plus court.
 
 ```Python
-#  Implémentation  de  l’algorithme  de  Dijkstra en Python
+#  Implémentation  de  l’algorithme  de  Dijkstra
 
-#  Graphe 1 est le graphe correspondant à l'exemple du document
+#  Graphe 1 est le graphe correspondant à l'exemple du document pdf
 
-Graphe1 = [[0,2,5,False,3,False,False],
+Graphe1 = [
+          [0,2,5,False,3,False,False],
           [2,0,2,1,False,False,8],
           [5,2,0,1,4,2,False],
           [False,1,1,0,False,False,5],
@@ -165,6 +166,9 @@ def plus_court_chemin(Graphe, depart, arrivee) :
 #  Renverse  C,  pour  qu’elle  soit  plus  lisible
     C.reverse()
     return C
+    
+>>> plus_court_chemin(Graphe1,0,6)
+[0, 1, 2, 5, 6]
 
 ```
 
