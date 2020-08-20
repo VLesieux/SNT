@@ -65,12 +65,15 @@ De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours
 
 <img width="600" height="300" src="Assets/chemin_plus_court.png">
 
-2) En utilisant l'algorithme de Dijkstra explicité [ici](http://vfsilesieux.free.fr/Dijkstra.pdf) dont l'implémentation en Python est donnée ci-dessous, retrouver le plus court chemin de A à B.
+2) En utilisant l'algorithme de Dijkstra explicité dans ce [document](http://vfsilesieux.free.fr/Dijkstra.pdf) dont l'implémentation en Python est donnée ci-dessous, retrouver le plus court chemin de A à B.
 
 3) Ajouter deux fonctions au programme précédent `distance_deux_points(graphe,i,j)` et `distance_totale(graphe,liste)` pour que le programme retourne également la longueur du chemin le plus court.
 
 ```Python
-#  Implémentation  de  l’algorithme  de  Dijkstra
+#  Implémentation  de  l’algorithme  de  Dijkstra en Python
+
+#  Graphe 1 est le graphe correspondant à l'exemple du document
+
 Graphe1 = [[0,2,5,False,3,False,False],
           [2,0,2,1,False,False,8],
           [5,2,0,1,4,2,False],
