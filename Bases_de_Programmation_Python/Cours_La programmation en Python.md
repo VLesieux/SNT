@@ -1,3 +1,5 @@
+
+
 ## La programmation en Python
 
 <p align="right">
@@ -134,8 +136,6 @@ La spécialité NSI de première vous permettra de comprendre ce qui se passe et
 
 <u>Remarque 4</u> : On peut disposer d'autres outils mathématiques en **important des modules** comme par exemple le module **math** (accès aux fonctions mathématiques), le module **random** (génération de nombres aléatoires) ou le module **turtle** (module graphique). 
 
-Pour obtenir des informations sur un module directement dans la console :
-
 ```Python
 >>> a=144
 >>> import math
@@ -148,6 +148,7 @@ Pour obtenir des informations sur un module directement dans la console :
 
 ```Python
 >>> help(random)
+#Pour obtenir des informations sur un module directement dans la console
 ```
 
 ```Python
@@ -162,6 +163,7 @@ Pour afficher des valeurs ou du texte, on utilise la fonction `print`:
 >>> b=8
 >>> print("La racine carré de ",b," vaut : ",math.sqrt(b))
 La racine carré de  8  vaut :  2.8284271247461903
+#l'utilisation de la virgule dans le print permet de faire la concaténation
 ```
 
 #### 3) Compléments
@@ -169,16 +171,24 @@ La racine carré de  8  vaut :  2.8284271247461903
 ##### a) À propos des listes
 
 Une liste d'éléments est indexée et on accède à un élément avec son **indice** de position ; attention le premier élément est d'indice 0 et non 1 !
-On peut aussi accéder au dernier élément avec un indice décroissant à partir de la valeur -1. On peut connaître la longueur d'une liste avec la fonction `len`. On ajoute des éléments à une liste avec la **méthode append()**.
+On peut aussi accéder au dernier élément avec un indice décroissant à partir de la valeur -1. 
+
+On peut connaître la longueur d'une liste avec la fonction `len`. 
+
+On ajoute des éléments à une liste avec la **méthode append()**.
 
 ```Python
 >>> liste=[2,4,8,16]
+
 >>> len(liste)
 4
+
 >>> liste[2]
 8
+
 >>> liste[-2]
 8
+
 >>> liste.append(20)
 >>> liste
 [2, 4, 8, 16, 20]
@@ -191,10 +201,13 @@ On peut accoler deux chaînes de caractères l'une à l'autre par **concaténati
 >>> salutation="Bon"+"jour"
 >>> salutation
 'Bonjour'
+
 >>> salutation[3]
 'j'
+
 >>> salutation[-3]
 'o'
+
 >>> len(salutation)
 7
 ```
@@ -208,8 +221,10 @@ On retrouve ce que l'on avait pour les listes.
 >>> tuple=tuple1+tuple2
 >>> tuple
 (3, 4, 6, 7, 8, 9)
+
 >>> len(tuple)
 6
+
 >>> tuple[3]
 7
 ```
@@ -220,18 +235,22 @@ La différence entre une liste et un tuple est qu'une liste est **mutable** (on 
 >>> liste[1]=8
 >>> liste
 [3, 8, 5]
+
+# mais
+
 >>> triplet=(3,4,5)
 >>> triplet[1]=8
 Traceback (most recent call last):
   File "<pyshell>", line 1, in <module>
 TypeError: 'tuple' object does not support item assignment
+# l'erreur est clairement formulée
 ```
 
 ##### d) Les fonctions
 
 Les fonctions en Python sont définies par le mot clef `def` : on donne un nom à la fonction et on précise ses éventuels **paramètres** ; on indique ensuite les différentes **instructions** à exécuter lors de l'appel de la fonction. Une fonction est chargée de renvoyer quelque chose : on trouvera généralement le mot `return` comme ultime instruction.
 
-En mathématiques, on définit la fonction : f(x)=(5x-3)<sup>2</sup>.
+Par exemple, en mathématiques, on définit la fonction : f(x)=(5x-3)<sup>2</sup>.
 Implémenté en Python, on écrit le programme suivant dans un fichier intitulé essais_snt.py.
 Il faut veiller à bien respecter l'**indentation** qui se fait automatiquement après les ':'.
 
@@ -279,7 +298,9 @@ le nombre  15  est impair
 le nombre  4  est pair
 ```
 
-En fait il préférable de créer une fonction `est_pair(n)` dont le rôle est de déterminer le caractère pair ou impair d'un nombre en renvoyant un booléen ; on programme ainsi ce qui va nous permettre d'évaluer une propriété d'un nombre. Puis on crée une autre fonction pour l'affichage ; l'intérêt est que la propriété pair ou impair est ainsi évaluable et pourra trouver d'autres usages dans d'autres fonctions.
+En fait il est très souvent préférable de créer une fonction `est_pair(n)` dont le rôle est de déterminer le caractère pair ou impair d'un nombre en renvoyant un booléen ; on programme ainsi ce qui va nous permettre d'évaluer une propriété d'un nombre.
+
+Puis on crée une autre fonction pour l'affichage ; l'intérêt est que la propriété pair ou impair est ainsi évaluable et pourra trouver d'autres usages dans d'autres fonctions dans un programme.
 
 ```Python
 def est_pair(n):
@@ -376,7 +397,7 @@ Hello
 Hello
 ```
 
-`for i in range(n,p)` fait démarrer i à n et l'arrêter à p-1.
+`for i in range(n,p)` fait démarrer i à n et arrête à p-1.
 
 <u>Remarque</u>:
 
@@ -390,6 +411,7 @@ On peut parcourir une liste ou un tuple de deux manières différentes.
 3
 5
 9
+
 >>> for i in liste:
     print(i)
     
@@ -397,6 +419,14 @@ On peut parcourir une liste ou un tuple de deux manières différentes.
 5
 9
 ```
+
+
+
+Bien comprendre que i ne prend pas le même sens. 
+
+Dans la première formulation, i joue le rôle d'un indice qui commence à 0 et va jusque len(liste)-1 parcourant ainsi les n valeurs d'indice des éléments de la liste.
+
+Dans la seconde formulation, i joue le rôle d'un élément constitutif de la liste et n'est pas une valeur numérique mais un objet de la liste.
 
 <u>Exemple 1</u>: 
 
@@ -430,7 +460,7 @@ def liste_carres(n):
 
 <u>Exemple 3</u>: 
 
-Programmons une fonction qui compte le nombre d'occurence de la lettre e dans une chaîne de caractères. Une boucle bornée est adaptée ; en effet on va parcourir chacune des lettres du mot et la comparer à la lettre e et comptabiliser les occurences : la tâche est répétitive et compte autant de comparaison qu'il y a de lettres dans le mot, ce nombre de caractères dans une chaine est donné par la fonction len().
+Programmons une fonction qui compte le nombre d'occurence de la lettre e dans une chaîne de caractères. Une boucle bornée est adaptée ; en effet on va parcourir chacune des lettres du mot et la comparer à la lettre e et comptabiliser le nombre d'occurences : la tâche est répétitive et compte autant de comparaison qu'il y a de lettres dans le mot, le nombre de caractères dans une chaine est donné par la fonction len().
 
  ```Python
 def compte_occurence_lettre_e(chaine):
@@ -446,7 +476,7 @@ def compte_occurence_lettre_e(chaine):
 
 ##### g) Les boucles non bornées
 
-On réalise une boucle non bornée lorsqu'on ne connaît pas exactement le nombre de boucle à effectuer ; toutefois on connaît la cause d'arrêt de la boucle sous une forme que l'on peut traduire de façon booléenne.
+On réalise une boucle non bornée lorsqu'on ne connaît pas exactement le nombre de boucle à effectuer ; toutefois on doit connaître la cause d'arrêt de la boucle sous une forme que l'on traduit de façon booléenne.
 
 <u>Exemple</u>:
 
@@ -458,7 +488,7 @@ Voici un extrait de la conjecture de Syracuse donnée par Wikipédia.
 > La conjecture de Syracuse, encore appelée conjecture de Collatz, conjecture d'Ulam, conjecture tchèque ou problème 3x + 1, est l'hypothèse mathématique selon laquelle la suite de Syracuse de n'importe quel entier strictement positif atteint 1.
 > En dépit de la simplicité de son énoncé, cette conjecture défie depuis de nombreuses années les mathématiciens. Paul Erdős a dit à propos de la conjecture de Syracuse : « les mathématiques ne sont pas encore prêtes pour de tels problèmes ». 
 
-Une boucle non bornée est adaptée ici car on n'a pas idée du nombre d'éléments que l'on va obtenir dans la suite avant d'aboutir à 1, par contre on pourra s'arrêter à cette valeur puisqu'on apprend que la suite va se répéter au-delà selon un cycle trivial.
+Une boucle non bornée est adaptée ici car on n'a pas idée du nombre d'éléments que l'on va obtenir dans la suite avant d'aboutir à 1, par contre on pourra s'arrêter à cette valeur puisque selon la conjecture de Syracuse on sait que la suite va se répéter au-delà selon un cycle trivial.
 On se propose de programmer une fonction qui pour un entier n donne les éléments de la suite de Syracuse et qui compte le nombre d'éléments rencontrés avant d'aboutir à 1.
 
  ```Python
@@ -467,11 +497,11 @@ def syracuse(n):
     i=n
     while i!=1:
         if i%2==0:
-            i=i//2
+            i=i//2#s’il est pair, on le divise par 2
         else:
-            i=3*i+1
+            i=3*i+1#s’il est impair, on le multiplie par 3 et on ajoute 1
         liste.append(i)
-    return liste,len(liste)-1
+    return liste,len(liste)-1#on renvoie un tuple
     
 >>> syracuse(14)
 ([14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1], 17)
@@ -483,29 +513,34 @@ Le module **turtle** permet de tracer des figures comme on le ferait avec un sty
 
 Les principales fonctions mises à votre disposition dans le module turtle sont les suivantes :
 
-**reset()** : efface l’écran, recentre la tortue et remet les variables à zéro
-		
-**forward(distance)** : avance d’une distance donnée en pixel
-	
-**backward(distance)** : recule d’une distance donnée en pixel
-	
-**left(angle)** : pivote vers la gauche d'un angle en degrés
-	
-**right(angle)** : pivote vers la droite d'un angle en degrés
-	
-**up()**: relève le crayon (pour pouvoir avancer sans dessiner)
+> **reset()** : efface l’écran, recentre la tortue et remet les variables à zéro
+> 		
+> **forward(distance)** : avance d’une distance donnée en pixel
+> 	
+> **backward(distance)** : recule d’une distance donnée en pixel
+> 	
+> **left(angle)** : pivote vers la gauche d'un angle en degrés
+> 	
+> **right(angle)** : pivote vers la droite d'un angle en degrés
+> 	
+> **up()**: relève le crayon (pour pouvoir avancer sans dessiner)
+>
+> **down()** : abaisse le crayon (pour recommencer à dessiner)
+>
+> **goto(x, y)** : va à l’endroit de coordonnées (x, y) en pixel
+>
+> /!\ Ne pas oublier d'utiliser la fonction up() avant d'utiliser goto() car sinon il tracera le parcours effectué.
+>
+> **hideturtle()** : masque la tortue.
+>
+> **showturtle()** : afficher la tortue. 
 
-**down()** : abaisse le crayon (pour recommencer à dessiner)
+Exemple intéressant d'application :
 
-**goto(x, y)** : va à l’endroit de coordonnées (x, y) en pixel
-
-/!\ Ne pas oublier d'utiliser la fonction up() avant d'utiliser goto() car sinon il tracera le parcours effectué.
-
-**hideturtle()** : masque la tortue.
-
-**showturtle()** : afficher la tortue. 
+Le **flocon de Von Koch** est l'une des premières courbes fractales à avoir été décrites bien avant l'invention du terme fractal ; une figure fractale est un objet mathématique qui présente une structure similaire à toutes les échelles.
 
 Le **flocon de Von Koch** s'obtient en partant d'un triangle équilatéral, puis en modifiant successivement chacune des arêtes de la façon suivante : 
+
 - On divise l'arête en 3
 - On construit un triangle équilatéral ayant pour base le segment du milieu
 - On ôte le segment du milieu
@@ -538,7 +573,7 @@ def flocon(largeur,n):
     hideturtle() 
  ```
 
-La fonction `branche` permet de construire l'un des trois côtés du flocon. Cette fonction est récursive car elle s'appelle elle-même en faisant décroître n d'une unité.
+La fonction `branche` permet de construire l'un des trois côtés du flocon. On dit que la fonction est récursive car elle s'appelle elle-même en faisant décroître n d'une unité.
 
 branche(400,0)<img src="Assets/branche0.png" width="200" height="200">
 
