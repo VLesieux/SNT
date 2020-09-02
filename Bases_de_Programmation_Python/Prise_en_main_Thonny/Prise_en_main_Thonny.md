@@ -76,10 +76,12 @@ Si le script vient d'être créé (onglet nommé `<untitled>`), boîte de dialog
 => un script peut 
 
 * ne contenir que des définitions de variables, fonctions, ... et on utilise ces définitions dans le shell
-* contenir des instructions d'affichage (ou d'`input`) qui seront immédiatement exécutées et laisseront des traces dans le shell (éviter leur abus en phase de développement de fcts)
+* contenir des instructions d'affichage (ou d'`input`) qui seront immédiatement exécutées et laisseront des traces dans le shell (éviter leur abus en phase de développement de fonctions)
 
 ### Illustration de ces points avec suite Syracuse
 cf fichier [demo_syracuse.py](demo_syracuse.py)
+
+Cet exemple sera étudié dans le détail ; pour le moment il faut juste savoir qu'il s'agit d'une suite de valeurs construite à partir d'une valeur initiale ; pour obtenir la valeur suivante on divise la valeur initiale par 2 si celle-ci est paire, et on la multiplie par 3 en lui ajoutant 1 si la valeur initiale est impaire ; il s'avère qu'au bout d'un certain moment la suite atteint toujours la valeur 1 et finit par se répèter indéfiniment (1,4,2,1,4,2…).
 
 * commencer par écrire la première fonction `syracuse` sans docstring. Profiter de 
   l'ouverture de la parenthèse des paramètres pour souligner la coloration syntaxique (en gris).
@@ -90,7 +92,7 @@ cf fichier [demo_syracuse.py](demo_syracuse.py)
   Noter que dans la vue sur les variables, les variables précédemment définies ont disparues, et un seul  nom est défini : `syracuse` de valeur `<function syracuse at ...>`
   
   => on travaille toujours dans un environnement de variables «propre» : celui des définitions du script plus éventuellement quelques variables définies dans la session en cours  
-* dans le shell utiliser la fonction `syracuse`
+* dans le shell utiliser la fonction `syracuse`  en faisant par exemple syracuse(3)
 * dans l'éditeur écrire le deuxième fonction `terme_syracuse` sans docstring. Profiter de la complétion pour écrire l'appel à `syracuse`. 
 * observer le surlignement des identificateurs identiques en plaçant le curseur sur l'un d'eux (par exemple syracuse, u, res) => portée des variables
 * exécuter (pas besoin de redonner un nom au script) => il ne se passe rien 
@@ -136,7 +138,7 @@ cf fichier [demo_syracuse.py](demo_syracuse.py)
       renvoie le terme suivant u d'une suite de Syracuse
 	  '''
   ```
-  une *doctring* de fonction est une chaîne de caractères placée immédiatement après l'en-tête, qui s'étend généralement sur plusieurs lignes et donc qui est délimité par un triple `'` ou un triple `"`.
+  une *docstring* de fonction est une chaîne de caractères placée immédiatement après l'en-tête, qui s'étend généralement sur plusieurs lignes et donc qui est délimité par un triple `'` ou un triple `"`.
 * exécuter et utiliser la fonction `help` sur `syracuse`
 * on complète la doctring avec des informations de type des paramètres et de valeur renvoyée, en mentionnant les contraintes (ou conditions) d'utilisation (ici aucune) et en donnant quelques exemples (préparation aux doctests vus à la session prochaine)
   ```python
@@ -159,3 +161,85 @@ cf fichier [demo_syracuse.py](demo_syracuse.py)
 * faire de même pour les deux autres fonctions
 
 ![Docstring et fonction help](assets/thonny_docstring.png)
+
+Le module  `doctest  ` ci-dessous à placer en fin de fichier permet de valider des test placés dans la docstring :
+
+  ```python
+  if __name__ == '__main__':
+    import doctest
+    doctest.testmod(verbose=True)
+  ```
+On obtient après exécution :
+
+  ```python
+>>> %Run exemple_syracuse.py
+Trying:
+    syracuse(0)
+Expecting:
+    0
+ok
+Trying:
+    syracuse(3)
+Expecting:
+    10
+ok
+Trying:
+    syracuse(10)
+Expecting:
+    5
+ok
+3 items had no tests:
+    __main__
+    __main__.atterrissage_syracuse
+    __main__.terme_syracuse
+1 items passed all tests:
+   3 tests in __main__.syracuse
+3 tests in 4 items.
+3 passed and 0 failed.
+Test passed.
+  ```
+Si maintenant on place dans la docstring de la fonction syracuse    
+
+  ```python
+ >>> syracuse(3)
+    13
+  ```
+On obtient :
+
+  ```python
+>>> %Run exemple_syracuse.py
+Trying:
+    syracuse(0)
+Expecting:
+    0
+ok
+Trying:
+    syracuse(3)
+Expecting:
+    13
+**********************************************************************
+File "__main__", line 8, in __main__.syracuse
+Failed example:
+    syracuse(3)
+Expected:
+    13
+Got:
+    10
+Trying:
+    syracuse(10)
+Expecting:
+    5
+ok
+3 items had no tests:
+    __main__
+    __main__.atterrissage_syracuse
+    __main__.terme_syracuse
+**********************************************************************
+1 items had failures:
+   1 of   3 in __main__.syracuse
+3 tests in 4 items.
+2 passed and 1 failed.
+***Test Failed*** 1 failures.
+  ```
+  
+Le module  `doctest  ` permet donc de révéler des erreurs dans notre code par rapport à nos attentes et s'avère un outil indispensable pour le programmeur.
