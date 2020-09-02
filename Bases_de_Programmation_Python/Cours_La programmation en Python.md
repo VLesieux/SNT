@@ -12,13 +12,14 @@ Lors des débuts de l'informatique, dans l'immédiat après-guerre, on travailla
 <img src="Assets/Guido_van_Rossum.png" width="500" height="1200"> 
 </p>
 
+
 Guido van Rossum a créé le langage Python mais pour le faire évoluer il a eu l'excellente idée de former autour de lui une **communauté Python** dont il est dévenu le Benevolent Dictator for Life (dictateur bienveillant à vie). À ce titre-là, il validait lui-même toute proposition d'amélioration de ce langage. En juillet 2018, il décida de laisser la gouvernance tout en restant un conseiller des plus éclairés. Après un certain désarroi parmi la communauté, six propositions d'une nouvelle gouvernance furent mises au choix de ses membres. On mit en place un conseil de direction qui veille toujours à la poursuite de l'évolution du langage.
 
 ### Notions de base de programmation
 
 #### 1) préambule 
 
-Un **algorithme** est une suite d'instructions à exécuter. Celui-ci peut être écrit en langage naturel, c'est-à-dire en donnant des instructions en français, mais pour être exécuté, l'algorithme doit être traduit dans un langage de programmation. Un même algorithme peut ainsi être **implémenté** dans plusieurs langages de programmation différents. Par exemple, le langage utilisé par les calculatrices TI n'est pas le même que celui utilisé par les calculatrices Casion. Ainsi, si on souhaite implémentaer un algorithme sur sa calculatrice, on ne saisira pas le même **programme** selon la marque de celle-ci.
+Un **algorithme** est une suite d'instructions à exécuter. Celui-ci peut être écrit en langage naturel, c'est-à-dire en donnant des instructions en français, mais pour être exécuté, l'algorithme doit être traduit dans un langage de programmation. Un même algorithme peut ainsi être **implémenté** dans plusieurs langages de programmation différents. Par exemple, le langage utilisé par les calculatrices TI n'est pas le même que celui utilisé par les calculatrices Casio. Ainsi, si on souhaite implémenter un algorithme sur sa calculatrice, on ne saisira pas le même **programme** selon la marque de celle-ci.
 
 #### 2) Variables, types, affectation, comparaison
 
@@ -29,7 +30,7 @@ Les **types** que nous utilisons cette année sont :
 - **int** : nombre entier relatif (positif ou négatif) ; 4 et -5 sont de type int.
 - **float** : nombre flottant (à virgule) ; 2.56 et -1.627 sont de type float.
 -  **str** : chaîne de caractère (string) entourée d'apostrophes ('...') ou de guillements ("....") pour la distinguer d'une variable ; une chaîne de caractères correspond souvent à du texte, chaque caractère étant un symbole (lettre, chiffre, ponctuation...)
-Par exemple : "une chaîne" est de type str et contient 10 caractères (9 lettres et un espace qui compte aussi pour un caractère).
+Par exemple : la chaîne de caractères "une chaîne" est de type str et contient 10 caractères (9 lettres et un espace qui compte aussi pour un caractère).
 - **bool** : booléen qui peut avoir deux valeurs possibles seulement : True (vrai) et False (faux)
 - **tuple** : suite d'éléments de types éventuellement différents, séparés par des virgules et entourés par des parenthèses ((...)).
 Par exemple : (3,'triplet',True) est un tuple contenant trois éléments.
@@ -37,7 +38,7 @@ Par exemple : (3,'triplet',True) est un tuple contenant trois éléments.
 Par exemple : [0,2,4,6,8] est une liste contenant 5 éléments.
 [] est une liste vide
 [[3,6,9],[4,8],[5,10]] est une liste dont les éléments sont eux-mêmes des listes
-[(64,'pair'),(15,'impair'),(12,'pair')] est une liste de tuple en l'occurence des couples.
+[(64,'pair'),(15,'impair'),(12,'pair')] est une liste de tuple en l'occurence une liste de couples.
 
 Remarque : bien distinguer le symbole '.' utilisé comme virgule pour les nombres flottants du symbole ',' pour séparer les éléments d'une liste.
 
@@ -47,16 +48,22 @@ L'utilisation du **symbole hashtag #** indique un **commentaire** qui est ignor�
 ```Python
 >>> type(4)#on saisit les commandes après les prompts >>> et on peut rappeler la commande précédente pour gagner du temps avec la flèche ↑ du clavier.
 <class 'int'>
+
 >>> type(-1.627)
 <class 'float'>
+
 >>> type("singe")
 <class 'str'>
+
 >>> type(True)
 <class 'bool'>
->>> type((3,'triplet',True))#attention à la double parenthèse
+
+>>> type((3,'triplet',True))#attention à ne pas oublier la double parenthèse
 <class 'tuple'>
+
 >>> type( [0,2,4,6,8])
 <class 'list'>
+
 >>> type([(64,'pair'),(15,'impair'),(12,'pair')])
 <class 'list'>
 ```
@@ -76,23 +83,25 @@ En langage Python, on utilise l'instruction `a=...` pour **affecter une valeur �
 0.6
 >>> a**2#a puissance 2
 9
->>> a//5,a%5#on demande ici un tuple (les parenthèses ne sont pas obligatoires) correspondant au quotient et au reste de la division de a par 5
+>>> a//5,a%5#on demande ici un tuple (les parenthèses ne sont pas obligatoires, elles ne sont pas mises ici) correspondant respectivement au quotient et au reste de la division de a par 5
 (0, 3)
->>> a,b,c=3,6,8#on peut affecter les valeurs de plusieurs variables en même temps
+>>> a,b,c=3,6,8#on peut affecter les valeurs de plusieurs variables en même temps sur une seule ligne
 >>> a,c,b
-(3, 8, 6)
+(3, 8, 6)#on demande le tuple correspondant à un triplet
 ```
 
 <u>Remarque 1</u>: On peut aussi procéder de la manière suivante pour connaître le type d'une variable : on utilise un double '==' pour effectuer une **comparaison**.
 
 ```Python
->>> type("singe")==str#Attention, un simple '=' pour l'affectation, un double '==' pour une comparaison ; le résultat est un booléen
+>>> type("singe")==str#Attention, un simple '=' est utilisé pour l'affectation mais un double '==' pour une comparaison ; le résultat est un booléen
 True
->>> type("singe")!=list# != signifie différent de 
+
+>>> type("singe")!=list# ici != signifie différent de 
 True
+#c'est comme si on posait la question : est-ce que "singe" n'est pas du type list ?
 ```
 
-<u>Remarque 2</u>: Il faut avoir en tête qu'un ordinateur utilise une représentation binaire des nombres. Ce qui donne lieu à des résultats parfois suprenants par exemple !
+<u>Remarque 2</u>: Il faut avoir en tête qu'un ordinateur utilise une représentation binaire des nombres. Ce qui donne lieu parfois à des résultats  suprenants par exemple !
 
 ```Python
 >>> 0.1+0.1+0.1
@@ -107,15 +116,18 @@ La spécialité NSI de première vous permettra de comprendre ce qui se passe et
 >>> valeur=int(entier)
 >>> valeur
 100
+
 >>> nombre_flottant="13.45"
 >>> valeur_numerique=float(nombre_flottant)
 >>> valeur_numerique
 13.45
+
 >>> nombre=2020
 >>> nombre_texte=str(nombre)
 >>> texte="Nous sommes en "+nombre_texte
 >>> texte
 'Nous sommes en 2020'
+
 >>> int(5.42)
 5
 ```
