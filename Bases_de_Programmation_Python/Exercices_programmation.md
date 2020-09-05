@@ -1,4 +1,4 @@
-## Exercices de programmation (révisions 2de SNT)
+## Exercices de programmation
 
 Il est demandé d'écrire les docstring pour toutes les fonctions en utilisant les résultats escomptés en sortie
 
