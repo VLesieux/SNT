@@ -102,7 +102,7 @@ Entrez un nombre binaire : 0b1011110011
 
 ### 2) Un algorithme pour obtenir la représentation binaire d'un nombre  
 
-Un _**algorithme**_ est une "recette" qui permet d'atteindre le résultat à condition de l'appliquer rigoureusement.
+Un _**algorithme**_ est une suite d'instructions qui permet d'atteindre le résultat attendu.
 Pour obtenir la représentation binaire d'un nombre, il s'agit de réaliser un processus répétitif de divisions successives par 2 que l'on arrête **dès que le quotient de la division est nul**, on note alors les restes des divisions de bas en haut. 
 
 Plus précisément, on observe dans cet algorithme qu'à chaque fois le quotient devient le nouveau dividende.
@@ -110,7 +110,7 @@ Plus précisément, on observe dans cet algorithme qu'à chaque fois le quotient
 Observons cette image qui représente la démarche à suivre sur papier :    
 
 
-![Représentation binaire de 755 ](Assets/divisions.png)
+![Représentation binaire de 755 ](divisions.png)
 
 ### 3) Programmation de la conversion décimal-binaire en utilisant l'algorithme
 
