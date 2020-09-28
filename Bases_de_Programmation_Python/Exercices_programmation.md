@@ -61,6 +61,7 @@ Soit l'algorithme ci-dessous écrit en langage naturel :
 	Fin Pour
 
 Prévoir "à la main" les valeurs de a et de b ; retrouver le résultat en programmant l'algorithme.
+Écrire une boucle avec `for i in range` puis avec `while`.
 
 ### Exercice 5
 
