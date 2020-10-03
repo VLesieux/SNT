@@ -61,7 +61,7 @@ Soit l'algorithme ci-dessous écrit en langage naturel :
 	Fin Pour
 
 Prévoir "à la main" les valeurs de a et de b ; retrouver le résultat en programmant l'algorithme.
-Écrire une boucle avec `for i in range` puis avec `while`.
+Écrire une boucle de deux manières différentes : avec `for i in range` puis avec `while`.
 
 ### Exercice 5
 
@@ -91,7 +91,7 @@ Modifier le programme précédent afin que la valeur renvoyée soit un couple co
 
 Que fait la fonction div définie ci-dessous ? Que renvoie div(28) ?
 Dans un premier temps, répondre sans exécuter le programme.
-
+Rappel : `L.append(i)` permet d'ajouter la valeur `i` à la liste `L`.
 ```Python
 def div(n):
     L=[]
@@ -168,7 +168,14 @@ On sera amené à utiliser la fonction `abs()` qui donne la valeur absolue d'un 
 
 ### Exercice 12
 
-Écrire une fonction  `lancers ` telle que `lancer(n)` simule n lancers d'un dé équilibré à 6 faces et renvoie le résultat sous forme de liste.
+Écrire une fonction  `lancers` telle que `lancers(n)` simule n lancers d'un dé équilibré à 6 faces et renvoie le résultat sous forme de liste.
+On importera la bibliothèque `random` pour pouvoir appeler la fonction `randint` de cette bibliothèque, telle que random.randint(n,p) renvoie un entier aléatoire entre n et p, n et p étant compris.
+
+```Python
+>>> import random
+>>> random.randint(2,8)
+5 
+```
 
 ```Python
 >>> lancers(4)

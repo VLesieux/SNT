@@ -17,7 +17,8 @@ Procéder "à la main" puis utiliser l'implémentation en Python de l'**algorith
 
 ### Exercice 3
 
-Donner l'adresse IP codée par 10011000110000110110110001100010
+Donner l'adresse IP codée par 10011000110000110110110001100010. 
+
 Procéder "à la main" puis utiliser l'implémentation en Python de l'**algorithme de conversion binaire-décimal** expliquée [ici](Assets/Algorithmes_Conversions_binaires.md).
 
 Remarque : On trouvera également [ici](http://isnangellier.alwaysdata.net/php/Conversions_binaire_secondaire.html) une implémentation en JavaScript qui est le langage des navigateurs ; on se limitera à observer le code et on retrouvera, implémentés de façon analogue, les algorithmes de conversion. 
