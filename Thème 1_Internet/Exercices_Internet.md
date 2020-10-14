@@ -28,10 +28,20 @@ while quotient>0:
     a=str(reste)+a#permet la concaténation de la chaîne de caractères de droite à gauche
 print(a)
 ```
+4) Transformer le programme précédent en réalisant une fonction que l'on appelera `conversion`.
 
-4) Coder en écriture binaire l'adresse IP 192.168.1.13
+5) À l'aide du programme précédent, coder en écriture binaire l'adresse IP 192.168.1.13
 
-5)  Compléter le programme suivant de conversion binaire-décimal en python dont une ligne est manquante.
+6) Peut-on concevoir un programme qui donnerait directement le code binaire d'une adresse IP ?
+
+Pour cela, on peut transformer une chaîne de caractères en liste en utilisant un séparateur avec la méthode `split` :
+
+```python
+>>> "192.168.1.13".split(".")
+['192', '168', '1', '13']
+```
+
+7)  Compléter le programme suivant de conversion binaire-décimal en python dont une ligne est manquante.
 
 ```python
 a=0
@@ -42,7 +52,16 @@ for i in range(len(code)):
 print(a)
 ```
 
-6) Donner l'adresse IP codée par 10011000110000110110110001100010. 
+8) Donner l'adresse IP codée par 10011000110000110110110001100010
+
+9) Peut-on concevoir un programme qui donnerait directement l'adresse IP sous forme décimale à partir de son expression sous forme binaire ?
+
+Pour cela, on peut prélever une partie d'une chaîne de caractères en réalisant un `slice` :
+
+```python
+>>> "10011000110000110110110001100010"[0:8]
+'10011000'
+```
 
 ### Exercice 3
 
