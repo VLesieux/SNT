@@ -28,17 +28,32 @@ while quotient>0:
     a=str(reste)+a#permet la concaténation de la chaîne de caractères de droite à gauche
 print(a)
 ```
-4) Transformer le programme précédent en réalisant une fonction que l'on appelera `conversion`.
+4) On peut transformer le programme précédent en réalisant une fonction que l'on appelera `conversion_decimal_binaire`. Déterminer la ligne manquante.
+
+```python
+def conversion_decimal_binaire(nombre):
+    a=""
+    # ligne à compléter
+        a=str(nombre%2)+a
+        nombre=nombre//2
+    return a
+```
 
 5) À l'aide du programme précédent, coder en écriture binaire l'adresse IP 192.168.1.13
 
 6) Peut-on concevoir un programme qui donnerait directement le code binaire d'une adresse IP ?
 
-Pour cela, on peut transformer une chaîne de caractères en liste en utilisant un séparateur avec la méthode `split` :
+Pour cela, on peut transformer une chaîne de caractères en liste en utilisant un séparateur avec la méthode `split` puis parcourir la liste avec `for element in `.
 
 ```python
 >>> "192.168.1.13".split(".")
 ['192', '168', '1', '13']
+>>> for element in ['192', '168', '1', '13']:
+    	print(element)    
+192
+168
+1
+13
 ```
 
 7)  Compléter le programme suivant de conversion binaire-décimal en python dont une ligne est manquante.
