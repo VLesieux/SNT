@@ -87,8 +87,10 @@ On a utilisé la fonction choice importée du module random qui permet d'obtenir
 </tr>
 </table>
 
-Proposer "à la main" un classement par ordre de popularité des différentes pages web.
-2. Exécuter le code pour observer le classement par ordre de popularité des différentes pages web obtenu grâce à l'algorithme.
+Proposer "à la main" un classement par ordre de popularité des différentes pages web. 
+
+2. Exécuter le code pour observer le classement par ordre de popularité des différentes pages web obtenu grâce à l'algorithme. 
+
 3. Proposer une interprétation à ce code.
 
 ### Exercice 2
