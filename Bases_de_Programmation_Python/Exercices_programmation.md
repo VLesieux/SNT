@@ -202,10 +202,12 @@ On importera la bibliothèque `random` pour pouvoir appeler la fonction `randint
 
 Écrire une fonction `truquee` telle que `truquee(n,p)` simule n lancers d'une pièce truquée, dont la probabilité de faire "piles" vaut p, et renvoie la fréquence des "piles" observées.
 
-Indication : random() génère un nombre compris entre [0,1[ ; random()+0.6 génère un nombre compris entre [0.6,1.6[ ; int(random()+0.6) génère un nombre qui vaut 0 pour tous les nombres compris dans l'intervalle [0.6,1[ d'étendue 0.4 et 1 pour tous les nombres compris entre [1,1.6[ d'étendue 0.6 ; on a donc 60% de chance d'avoir 1 et 40% de chance d'avoir 0.
+Indication : la fonction random() de la librairie random génère un nombre compris entre [0,1[ ; random.random()+0.6 génère un nombre compris entre [0.6,1.6[ ; int(random.random()+0.6) génère un nombre qui vaut 0 pour tous les nombres compris dans l'intervalle [0.6,1[ d'étendue 0.4 et 1 pour tous les nombres compris entre [1,1.6[ d'étendue 0.6 ; on a donc 60% de chance d'avoir 1 et 40% de chance d'avoir 0.
 La fonction int() donne en effet la partie entière du nombre.
 
 ```Python
+>>> random.random()
+0.6271423151497822
 >>> int(0.8)
 0
 >>> int(1.5)
