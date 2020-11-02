@@ -166,7 +166,7 @@ On sera amené à utiliser la fonction `abs()` qui donne la valeur absolue d'un 
 10
 ```
 
-### Exercice 12
+### Exercice 12 (DM)
 
 Écrire une fonction  `lancers` telle que `lancers(n)` simule n lancers d'un dé équilibré à 6 faces et renvoie le résultat sous forme de liste.
 On importera la bibliothèque `random` pour pouvoir appeler la fonction `randint` de cette bibliothèque, telle que random.randint(n,p) renvoie un entier aléatoire entre n et p, n et p étant compris.
@@ -188,7 +188,10 @@ On importera la bibliothèque `random` pour pouvoir appeler la fonction `randint
 [2, 5, 6, 1]
 ```
 
-### Exercice 13
+Indications : dans la fonction `lancers(n)`, créer d'abord une liste vide à laquelle on ajoute autant de fois qu'il y a de lancers réalisés, c'est-à-dire n fois, au moyen de la méthode `append`,  les résultats des tirages au sort en utilisant `random.randint` ; comme l'action est répétitive puisqu'il y a n lancers, on utilise une boucle `for..in range..`. La liste ainsi complétée est renvoyée à l'issue de la boucle par la fonction au moyen de `return`.
+
+
+### Exercice 13 (DM)
 
 Écrire une fonction `piece` telle que `piece(n)` simule n lancers d'une pièce équilibrée et renvoie la fréquence des "piles" observés.
 
@@ -198,11 +201,14 @@ On importera la bibliothèque `random` pour pouvoir appeler la fonction `randint
 >>> pieces(4000)
 0.49975
 ```
-### Exercice 14
+Indications : dans le même esprit que l'exercice précédent, mais cette fois-ci avec une pièce et non un dé, on place dans la fonction une variable qui sert de compteur initialement à 0 qui se charge de compter les piles (on peut décider que pile c'est la sortie de 1 et que face c'est la sortie de 0); à la fin des n lancers on renvoie la proportion de 1 parmi les n lancers.
+
+
+### Exercice 14 (DM)
 
 Écrire une fonction `truquee` telle que `truquee(n,p)` simule n lancers d'une pièce truquée, dont la probabilité de faire "piles" vaut p, et renvoie la fréquence des "piles" observées.
 
-Indication : la fonction random() de la librairie random génère un nombre compris entre [0,1[ ; random.random()+0.6 génère un nombre compris entre [0.6,1.6[ ; int(random.random()+0.6) génère un nombre qui vaut 0 pour tous les nombres compris dans l'intervalle [0.6,1[ d'étendue 0.4 et 1 pour tous les nombres compris entre [1,1.6[ d'étendue 0.6 ; on a donc 60% de chance d'avoir 1 et 40% de chance d'avoir 0.
+Indications : la fonction random() de la librairie random génère un nombre compris entre [0,1[ ; random.random()+0.6 génère un nombre compris entre [0.6,1.6[ ; int(random.random()+0.6) génère un nombre qui vaut 0 pour tous les nombres compris dans l'intervalle [0.6,1[ d'étendue 0.4 et 1 pour tous les nombres compris entre [1,1.6[ d'étendue 0.6 ; on a donc 60% de chance d'avoir 1 et 40% de chance d'avoir 0.
 La fonction int() donne en effet la partie entière du nombre.
 
 ```Python
@@ -238,9 +244,11 @@ def trace(n,larg):
         forward(larg*i)
 ```
 
-### Exercice 16
+### Exercice 16 (DM)
 
 Écrire un programme qui permet de tracer des triangles en spirales.
 
 
 <img src="Assets/spirales_triangles.png" width="200" height="200"> 
+
+Indications : s'inspirer du code de l'exercice 15.
