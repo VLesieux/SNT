@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Le World Wide Web, en français : la toile d'araignée mondiale, a été inventée en 1989 par deux informaticiens : le Britannique Tim Berners Lee et le Belge Robert Caillau, qui travaillaient au CERN (Conseil Européen pour la Recherche Nucléaire situé à cheval sur la frontière franco-suisse) où se trouve actuellement le LHC (Large Hadron Collider : un accélérateur de particules qui accélère des protons ou des ions à une vitesse proche de la lumière). Il a été conçu et développé pour que des scientifiques travaillant dans des universités et instituts du monde entier puissent s'échanger des informations instantanément.
+Le World Wide Web, en français : la toile d'araignée mondiale, a été inventée en 1989 par deux informaticiens : le Britannique Tim Berners Lee et le Belge Robert Caillau, qui travaillaient au CERN (Conseil Européen pour la Recherche Nucléaire situé à cheval sur la frontière franco-suisse) où se trouve actuellement le LHC (Large Hadron Collider : un accélérateur de particules qui accélère des protons ou des ions à une vitesse proche de la vitesse de la lumière). Cette invention a été conçue et développée pour que des scientifiques travaillant dans des universités et instituts du monde entier puissent s'échanger des informations instantanément.
 
 Communément appelé le Web, il permet, grâce à un navigateur, d'accéder aux différents sites et d'échanger par courrier électronique. Il est devenu incontournable dans pratiquement toutes les activités professionnelles ou de loisir.
 
@@ -17,25 +17,27 @@ Communément appelé le Web, il permet, grâce à un navigateur, d'accéder aux 
 
 ### Fonctionnement du Web
 
-Comme on l'a vu dans le thème précédent, Internet est un gigantesque réseau d'ordinateurs connectés entre eux. Certains de ces ordinateurs appelés **serveurs** mettent à disposition des **ressources** (texte, image, vidéo..). Par exemple, une page web constitue une ressource.
+Comme on l'a vu dans le thème précédent, Internet est un gigantesque réseau d'ordinateurs connectés entre eux. Au sein de ce réseau, certains de ces ordinateurs appelés **serveurs** mettent à la disposition des ordinateurs clients des **ressources** (texte, image, vidéo..). Par exemple, une page web constitue un exemple de ressource.
 Le World Wide Web permet d'accéder à ces ressources par un système de **liens hypertextes**. Un lien hypertexte ou hyperlien est un élément cliquable d'une ressource permettant d'accéder à une autre ressource web en utilisant son **URL**.
 
 Chaque ressource possède ainsi une adresse web appelée **URL** (Uniform Resource Locator) permettant de l'identifier, de la même façon qu'une adresse postale permet de localiser une habitation.
 
-<u>Remarque</u> : ne pas confondre l'adresse IP qui permet d'identifier un ordinateur sur le réseau Internet et l'adresse web qui permet d'identifier une ressource sur un serveur.
+<u>Remarque</u> : ne pas confondre l'adresse IP qui permet d'identifier de façon unique un ordinateur sur le réseau Internet et l'adresse web qui permet d'identifier une ressource sur un serveur.
 
-Une adresse web doit suivre une **syntaxe** précise.
+Une adresse web doit suivre une **syntaxe** bien précise.
 
-Classiquement elle s'écrit : http://www.example.com/dossier/page.html
+Classiquement elle s'écrit de la manière suivante : 
 
-- En premier est indiqué le **protocole** (les règles de communication) utilisé pour demander et recevoir la ressource : **HTTP** (Hypertext Transfer Protocol) est le protocole du Web le plus utilisé en particulier pour les pages web, mais il y en a d'autres : **FTP** (pour échanger des fichiers : File Transfer Protocol ) ou encore **SMTP** (pour envoyer des e-mails : Simple Mail Transfer Protocol).
-- www.example.com est le **nom de domaine** de l'ordinateur sur lequel se trouve la ressource. Comme on l'a vu dans le thème précédent, ce nom de domaine est associé à une adresse IP ; un **serveur DNS** interpète le nom de domaine et renvoie l'adresse IP correspondante.
-- dossier/page.html est le **chemin** de la ressource sur l'ordinateur. Un chemin est constitué des dossiers (ou répertoires) qu'il faut parcourir pour accéder à un certain fichier. Ici la ressource est donc un fichier appelé `page.html` situé dans le `dossier` sur l'ordinateur de nom `www.example.com`.
+http://www.example.com/dossier_un_tel/page_un_tel.html
+
+- En premier est indiqué le **protocole** (les règles de communication) utilisé pour demander et recevoir la ressource : **HTTP** (Hypertext Transfer Protocol) est le protocole du Web le plus utilisé en particulier pour les pages web, mais il y en existe d'autres : **FTP** (pour échanger des fichiers : File Transfer Protocol ) ou encore **SMTP** (pour envoyer des e-mails : Simple Mail Transfer Protocol).
+- www.example.com est le **nom de domaine** de l'ordinateur sur lequel se trouve la ressource. Comme on l'a vu dans le thème précédent, ce nom de domaine est associé à une adresse IP ; c'est le rôle d'un **serveur DNS** d'interpèter le nom de domaine et de renvoyer l'adresse IP correspondante.
+- dossier/page.html est le **chemin** de la ressource sur l'ordinateur. Un chemin est constitué des dossiers (ou répertoires) qu'il faut parcourir pour accéder à un certain fichier. Ici la ressource est donc un **fichier** appelé `page_un_tel.html` lui même situé dans le **dossier**intitulé `dossier_un_tel` sur l'ordinateur portant le nom de domaine `www.example.com`.
 
 ### Le protocole HTTP
 
 **HTTP** est composé de **requêtes** permettant l'échange de ressources entre un client et un serveur. 
-Le protocole **HTTPS** (S signifie secure) est semblable au protocole HTTP sauf que les domaines sont chiffrés : une personne interceptant les communications ne serait pas capable d'en connaître le contenu. Ce protocole est notamment utilisé pour les transactions d'argent et il est indiqué par un cadenas dans le navigateur.
+Le protocole **HTTPS** (S signifie secure) est semblable au protocole HTTP sauf que les domaines sont chiffrés : une personne interceptant les communications ne serait pas capable d'en connaître le contenu. Ce protocole est notamment utilisé pour les transactions d'argent et il est indiqué par un cadenas signalé dans le navigateur.
 
 ### Navigateur web
 
@@ -49,8 +51,8 @@ Pour accéder à une ressource Web, il faut connaître son URL. Seulement un int
 Le fonctionnement d'un moteur de recherche comporte trois parties :
 1. L'**exploration**, réalisé par un logiciel que l'on appelle **robot**, consiste à visiter des pages web de proche en proche en suivant des hyperliens. Il existe plusieurs façons possibles d'effectuer cette exploration du Web, suivant l'ordre dans lequel les pages sont visitées. Par exemple, un parcours en largeur consiste à partir d'une page puis visiter toutes les pages y étant référencées, puis les pages référencées sur ces dernières...
 Certaines pages peuvent ne pas être accessibles lors de cette exploration (par exemple, si aucun lien hypertexte ne pointe dessus) et ne sont donc pas référencées par le moteur de recherche : ces pages forment ce que l'on appelle le **deep web** (web profond en français).
-2. L'**indexation** associe à chaque mot-clé l'ensemble des pages en rapport avec ce mot-clé ; cette association peut être stockée dans ce que l'on appelle un **dictionnaire**. 
-Avec Python, on peut créer un tel dictionnaire :
+2. L'**indexation** associe à chaque mot-clé l'ensemble des pages en rapport avec ce mot-clé ; cette association entre un mot-clé et un ensemble de pages peut être stockée sous la forme d'un **dictionnaire**. 
+Avec Python, on peut créer aisément un tel dictionnaire :
 
  ```Python
 D={'sport':['www.sports.fr','www.lequipe.fr'],'information':['www.20minutes.fr','www.lemonde.fr']}
@@ -89,4 +91,5 @@ Certains de ces programmes tentent de s'exécuter directement dans le navigateur
 
 ### Développement Web avec HTML
 
-On trouvera [ici](Assets/Creation_page_web.md) une page entièrement consacrée au développment Web avec HTML 5.
+On trouvera [ici](Assets/Creation_page_web.md) une page entièrement consacrée au développement Web avec HTML 5, cela vous permettra de créer votre propre page web.
+Pour la diffuser, vous devrez ensuite disposer d'un **hébergeur** ; on peut commencer avec un hébergeur web gratuit tel que alwaysdata. On peut également utiliser un créateur de site web tel que WordPress qui permet de réaliser plus rapidement son site web. Il existe également des logiciels du type WYSIWYG (« what you see is what you get ») qui dispose d'une interface graphique qui permet à l'utilisateur de voir son document tel qu'il sera publié ; l'un des plus connus est Dreamweaver de chez Adobe (payant), toutefois il est bon d'avoir des connaissances de base pour écrire correctement le code d'une page web et être capable d'y apporter des corrections ou des améliorations rapidement.
