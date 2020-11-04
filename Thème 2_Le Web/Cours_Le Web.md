@@ -75,8 +75,10 @@ Un **cookie** est un fichier stocké sur l'ordinateur de l'utilisateur et conten
 Par exemple, un cookie peut contenir les paramètres de l'utilisateur, les articles d'un panier d'achat etc..Les cookies sont donc potentiellement utiles pour l'utilisateur.
 Un **cookie tiers** est un cookie placé par un publicitaire sur d'autres sites web de façon à suivre un utilisateur et récupérer différentes informations sur lui. Ce type de cookie n'est pas donc utile pour l'utilisateur, sauf éventuellement pour recevoir de la publicité ciblée.
 La legislation européenne impose aux sites web de demander à l'utilisateur d'accepter ou non l'utilisation de cookies. 
-Avant d'entrer sur le site de Larousse, on trouve affiché : 
+Par exemple, avant d'entrer sur le site de Larousse, on trouve affiché : 
+
 <img src="Assets/cookie_larousse.png"> 
+
 Il est possible de voir les cookies sur son propre ordinateur, de les supprimer et de les bloquer.
 Dans Firefox, aller dans menu Préférences Vie privée et sécurité.
 Sur un ordinateur public, il est vivement conseillé de supprimer les cookies et l'historique de navigation (c'est-à-dire l'ensemble des sites visités).
