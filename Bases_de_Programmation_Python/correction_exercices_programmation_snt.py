@@ -145,7 +145,49 @@ def nombre_or():
         n+=1
     return n,Fibo(n+1)/Fibo(n)
 
-##############################################################
+########################Exercice 12 (DM) ######################################
+import random
+
+def lancers_de_des(n):
+    liste=[]
+    for i in range(n):
+        lancer=random.randint(1,6)
+        liste.append(lancer)
+    return liste
+
+########################Exercice 13 (DM) ######################################
+import random
+
+def lancers_de_pieces(n):
+    compteur=0
+    for i in range(n):
+        lancer=random.randint(0,1)
+        if lancer==1:
+            compteur+=1                
+    return compteur/n
+
+########################Exercice 14 (DM) ######################################
+import random
+
+def lancers_de_pieces_truquees(n,p):
+    compteur=0
+    for i in range(n):
+        lancer=int(random.random()+p)
+        if lancer==1:
+            compteur+=1                
+    return compteur/n
+
+########################Exercice 16 (DM) ######################################
+from turtle import *
+
+def trace(n,larg):
+    reset()
+    for i in range(1,n+1):
+        forward(larg*i)
+        left(120)
+
+###################################################################################################
+
 if __name__ == '__main__':
   import doctest
   doctest.testmod(verbose=False)
