@@ -31,7 +31,7 @@ Classiquement elle s'écrit de la manière suivante :
 http://www.example.com/dossier_un_tel/page_un_tel.html
 
 - En premier est indiqué le **protocole** (les règles de communication) utilisé pour demander et recevoir la ressource : **HTTP** (Hypertext Transfer Protocol) est le protocole du Web le plus utilisé en particulier pour les pages web, mais il y en existe d'autres : **FTP** (pour échanger des fichiers : File Transfer Protocol ) ou encore **SMTP** (pour envoyer des e-mails : Simple Mail Transfer Protocol).
-- www.example.com est le **nom de domaine** de l'ordinateur sur lequel se trouve la ressource. Comme on l'a vu dans le thème précédent, ce nom de domaine est associé à une adresse IP ; c'est le rôle d'un **serveur DNS** d'interpèter le nom de domaine et de renvoyer l'adresse IP correspondante.
+- www.example.com est le **nom de domaine** de l'ordinateur sur lequel se trouve la ressource. Comme on l'a vu dans le thème précédent, ce nom de domaine est associé à une adresse IP ; c'est le rôle d'un **serveur DNS** d'interpréter le nom de domaine et de renvoyer l'adresse IP correspondante.
 - dossier/page.html est le **chemin** de la ressource sur l'ordinateur. Un chemin est constitué des dossiers (ou répertoires) qu'il faut parcourir pour accéder à un certain fichier. Ici la ressource est donc un **fichier** appelé `page_un_tel.html` lui même situé dans le **dossier**intitulé `dossier_un_tel` sur l'ordinateur portant le nom de domaine `www.example.com`.
 
 ### Le protocole HTTP
