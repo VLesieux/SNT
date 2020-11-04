@@ -240,8 +240,6 @@ def trace(n,larg):
     for i in range(1,n+1):
         left(90)
         forward(larg*i)
-        left(90)
-        forward(larg*i)
 ```
 
 ### Exercice 16 (DM)
