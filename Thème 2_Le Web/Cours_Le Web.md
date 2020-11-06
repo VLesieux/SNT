@@ -49,8 +49,10 @@ La **barre d'adresse** d'un navigateur permet de connaître et de modifier l'URL
 
 Pour accéder à une ressource Web, il faut connaître son URL. Seulement un internaute intéressé par un sujet particulier ne connaît pas, à priori, tous les URL des pages traitant de ce sujet. Un **moteur de recherche** permet de trouver des pages web à partir de **mots-clés**. Les moteurs de recherche sont Google, Baidu, Bing, Yahoo et DuckDuckGo.
 Le fonctionnement d'un moteur de recherche comporte trois parties :
+
 1. L'**exploration**, réalisé par un logiciel que l'on appelle **robot**, consiste à visiter des pages web de proche en proche en suivant des hyperliens. Il existe plusieurs façons possibles d'effectuer cette exploration du Web, suivant l'ordre dans lequel les pages sont visitées. Par exemple, un parcours en largeur consiste à partir d'une page puis visiter toutes les pages y étant référencées, puis les pages référencées sur ces dernières...
 Certaines pages peuvent ne pas être accessibles lors de cette exploration (par exemple, si aucun lien hypertexte ne pointe dessus) et ne sont donc pas référencées par le moteur de recherche : ces pages forment ce que l'on appelle le **deep web** (web profond en français).
+
 2. L'**indexation** associe à chaque mot-clé l'ensemble des pages en rapport avec ce mot-clé ; cette association entre un mot-clé et un ensemble de pages peut être stockée sous la forme d'un **dictionnaire**. 
 Avec Python, on peut créer aisément un tel dictionnaire :
 
@@ -63,7 +65,8 @@ D={'sport':['www.sports.fr','www.lequipe.fr'],'information':['www.20minutes.fr',
 >>> D['information']
 ['www.20minutes.fr', 'www.lemonde.fr']
  ```
-Un dictionnaire constitue un **type construit** (de type dict) qui permet d'associer une valeur à une clé. Il est plus pratique qu'une liste où les éléments sont repérés par leur indice de position.
+Un dictionnaire constitue un **type construit** (de type dict) qui permet d'associer une valeur à une clé. Il est plus pratique qu'une liste où les éléments sont repérés par leur indice de position.    
+
 3. La **recherche** est réalisée à partir d'une **requête** sous forme de mots-clés d'un utilisateur. Le moteur de recherche renvoie une liste de pages web triés par ordre de pertinence et de popularité de sorte que les premiers résultats affichés soient les plus susceptibles d'intéresser l'utilisateur.
 Les moteurs de recherche utilisent différents moyens pour mesurer la popularité d'une page. Par exemple, Google utilise un **algorithme** appelé **PageRank** qui parcourt le Web en suivant aléatoirement un hyperlien sur chaque page. Ainsi, plus il y a de liens vers une page, plus sa "popularité" est élévée et plus il y a de chances qu'elle soit affichée en premier lors d'une recherche Google.
 Il est possible de payer (sous forme d'enchères) pour qu'un site web soit plus souvent en tête de recherches Google. La majeure partie des revenus de Google provient ainsi de cette publicité.  

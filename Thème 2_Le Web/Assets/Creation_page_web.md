@@ -17,7 +17,7 @@ On peut distinguer deux types de balises :
 -	les balises orphelines :``` <img />```
 
 Les balises possèdent généralement des options appelées _**attributs**_.  
-Ainsi ```<image src= “maphoto.jpg“ />``` ;  l’attribut src indique le chemin vers le fichier source de cette image.
+Ainsi ```<image src= "maphoto.jpg" />``` ;  l’attribut src indique le chemin vers le fichier source de cette image.
 
 _**Écrire des commentaires**_ : ```<!--  ceci est un commentaire  -->```  : il est très utile d’en écrire pour se retrouver dans son code et savoir le relire ultérieurement 
 
@@ -66,7 +66,7 @@ Pour créer  une _**liste ordonnée**_, il suffit de remplacer  ```<ul> ``` et  
 
 - _**Créer des liens**_
 
-	-	Lien vers un site existant : ```<a href=“http://adresse.com“> Lien vers le site qui a cet url </a>```
+	-	Lien vers un site existant : ```<a href="http://adresse.com"> Lien vers le site qui a cet url </a>```
 	-	Lien relatif vers une page2.html de mon site à partir d’une page1.html :``` <a href=“page2.html“>Lien vers la page2 </a>```  
 	Remarque : en l’occurrence les deux fichiers doivent se trouver dans le même dossier ; si ce n’est pas le cas, on l’indiquera comme ceci : ```<a href=“dossier2/page2.html“>Lien vers la page2 située dans le dossier 2</a>```
 	-	Lien vers une ancre, c’est-à-dire un repère dans la page, ce qui peut être utile si la page est longue. On choisit pour cela n’importe quelle balise à l’endroit approprié à laquelle on donne un identifiant :  
@@ -77,7 +77,7 @@ Pour créer  une _**liste ordonnée**_, il suffit de remplacer  ```<ul> ``` et  
 
 La taille de l’image ne doit pas être trop importante évidemment pour éviter un temps de chargement trop long aussi utilise-t-on en général le format JEPG à l’extension .jpg ou .jpeg qui est le format le plus compressé pour les photos. Pour les graphiques, on utilise le format PNG 8bits : 2^8=256 couleurs ou PNG 24 bits : 224=16 millions de couleurs.
 L’insertion de l’image se fait avec la balise orpheline ```<img />```  et l’attribut source src :
-```<img src=“monimage.jpg“ />```
+```<img src="monimage.jpg"/>```
 
 
 ## III.	Utilisation du CSS
@@ -86,10 +86,10 @@ Comment place-t-on le code CSS ?
 
 On crée un fichier externe de mise en forme mon_style.css qui accompagnera le fichier de contenu brut ma_page.html. Pour cela dans le fichier html il suffira d’ajouter dans la section head de la page :
  ```html
-<link rel=“stylesheet“ href=“mon_style.css“ />
+<link rel="stylesheet" href="mon_style.css" />
  ```
-**Remarque** : on peut aussi insérer le code CSS directement à l'intérieur de la balise ```<style> </style>``` dans la section head de la page html. Une autre technique plus ancienne mais qui reste cependant utilisable est d’insérer les informations de style dans une balise html :  ```<p style=“color :blue ; font-size :10px ;“> Mon paragraphe en bleu de taille 10px </p> ```  
-Il est conseillé néanmoins d’utiliser un fichier css externe pour distinguer nettement le fond de la forme ; par ailleurs, et c’est là le plus important, si le site comporte plusieurs pages, on peut affecter la même mise en forme pour toutes les pages du site en plaçant simplement le lien ```<link rel=“stylesheet“ href=“style.css“ /> ``` dans la section head de toutes les pages. Ainsi une modification dans le seul fichier css affectera immédiatement la mise en forme de toutes les pages du site.
+**Remarque** : on peut aussi insérer le code CSS directement à l'intérieur de la balise ```<style> </style>``` dans la section head de la page html. Une autre technique plus ancienne mais qui reste cependant utilisable est d’insérer les informations de style dans une balise html :  ```<p style="color :blue ; font-size :10px ;"> Mon paragraphe en bleu de taille 10px </p> ```  
+Il est conseillé néanmoins d’utiliser un fichier css externe pour distinguer nettement le fond de la forme ; par ailleurs, et c’est là le plus important, si le site comporte plusieurs pages, on peut affecter la même mise en forme pour toutes les pages du site en plaçant simplement le lien ```<link rel="stylesheet" href="style.css" /> ``` dans la section head de toutes les pages. Ainsi une modification dans le seul fichier css affectera immédiatement la mise en forme de toutes les pages du site.
 
 _**Structure générale du code CSS**_
 
@@ -158,7 +158,7 @@ color : blue ;
 Ainsi tous les paragraphes qui possèdent la classe mon_paragraphe_en_bleu seront de couleur bleue sur la page.
 
 On utilise également l’attribut _**id**_ pour affecter un style à un élément unique de la page html, de plus id prend le dessus sur class.  
-Dans le html : ```<p id=“monparagrapheenbleu“>mon paragraphe à mettre en bleu</p>```  
+Dans le html : ```<p id="monparagrapheenbleu">mon paragraphe à mettre en bleu</p>```  
 
 Puis dans le css :
 ```css
