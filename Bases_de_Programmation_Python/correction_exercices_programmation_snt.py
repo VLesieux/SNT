@@ -137,6 +137,16 @@ def Fibo(n):
         i+=1
     return liste[n-1]
 
+****Autre méthode****
+
+def fibo_iter(n):
+    liste=[0]
+    u,v=0,1
+    for i in range(n-1):
+        u,v=v,u+v
+        liste.append(v)     
+    return liste
+
 ############Exercice 11 ####################
 
 def nombre_or():
