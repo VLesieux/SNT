@@ -75,7 +75,7 @@ Pour créer  une _**liste ordonnée**_, il suffit de remplacer  ```<ul> ``` et  
 	Remarque :  on peut forcer l’ouverture du lien dans une nouvelle fenêtre en ajoutant dans la balise l’attribut ```target="_blank"``` ; pour faire un lien pour télécharger un fichier, on fait un lien en indiquant simplement le nom du fichier à télécharger :``` <a href="monfichierimage.jpg">Fichier à télécharger< /a> ``` 
 - _**Insérer des images**_
 
-La taille de l’image ne doit pas être trop importante évidemment pour éviter un temps de chargement trop long aussi utilise-t-on en général le format JEPG à l’extension .jpg ou .jpeg qui est le format le plus compressé pour les photos. Pour les graphiques, on utilise le format PNG 8bits : 2^8=256 couleurs ou PNG 24 bits : 224=16 millions de couleurs.
+La taille de l’image ne doit pas être trop importante évidemment pour éviter un temps de chargement trop long aussi utilise-t-on en général le format JEPG à l’extension .jpg ou .jpeg qui est le format le plus compressé pour les photos. Pour les graphiques, on utilise le format PNG 8bits : 2^8=256 couleurs ou PNG 24 bits : 2^24=16 millions de couleurs.
 L’insertion de l’image se fait avec la balise orpheline ```<img />```  et l’attribut source src :
 ```<img src="monimage.jpg"/>```
 
