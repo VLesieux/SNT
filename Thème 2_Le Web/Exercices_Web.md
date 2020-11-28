@@ -40,7 +40,7 @@ On a utilisé la fonction choice importée du module random qui permet d'obtenir
 <tr>
 <td>Numéro de page
 </td>
-<td>point vers
+<td>pointant vers
 </td>
 <td>sortant de
 </td>
