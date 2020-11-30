@@ -337,7 +337,7 @@ _**Utiliser les outils de développement du navigateur**_
 Pour cela, faire un clic droit sur la page et faire l’inspection de l’élément ; à gauche le code html, à droite le code css. Possibilité de changer le code, d’observer directement l’effet des modifications sur la page puis de copier-coller ces modifications pour mettre à jour votre page.
 
 
-Pour aller plus loin :
+Pour aller plus loin, sur cet exemple, on voit comment l'utilisateur peut interagir avec le css de la page au moyen d'un fichier de script :
 
 **exemple.html**
 
@@ -350,8 +350,19 @@ Pour aller plus loin :
 <SCRIPT type="text/javascript" src="script.js"></SCRIPT>
 </HEAD>
 <BODY>
-<H1>Exemple d'interaction en JavaScript avec le css de la page</H1>
+<H1>Exemple d'interaction en JavaScript</H1>
 <DIV id="square"></DIV>
+
+
+<select id="choix">
+<option value="orange">orange</option>
+<option value="blue">bleu</option>
+<option value="green">vert</option>
+<option value="red">rouge</option>
+</select><br>
+
+<br>
+
 <BUTTON type="button" onclick="doDemo(this);">Cliquez ici</BUTTON>
 </BODY>
 </HTML>
@@ -378,7 +389,8 @@ button {
 ```js
 function doDemo (button) {
   var square = document.getElementById("square")
-  square.style.backgroundColor = "#fa4"
+  var couleur=document.getElementById("choix").value
+  square.style.backgroundColor = couleur
   button.setAttribute("disabled", "true")
   setTimeout(clearDemo, 2000, button)
   }
