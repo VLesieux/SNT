@@ -335,3 +335,51 @@ right : 100 px ;
 _**Utiliser les outils de développement du navigateur**_
 
 Pour cela, faire un clic droit sur la page et faire l’inspection de l’élément ; à gauche le code html, à droite le code css. Possibilité de changer le code, d’observer directement l’effet des modifications sur la page puis de copier-coller ces modifications pour mettre à jour votre page.
+
+
+Pour aller plus loin :
+
+```html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<TITLE>Premiers pas en CSS avec Mozilla - Démonstration en JavaScript</TITLE>
+<LINK rel="stylesheet" type="text/css" href="style5.css"></strong>
+<SCRIPT type="text/javascript" src="script5.js"></SCRIPT>
+</HEAD>
+<BODY>
+<H1>Exemple en JavaScript</H1>
+<DIV id="square"></DIV>
+<BUTTON type="button" onclick="doDemo(this);">Cliquez ici</BUTTON>
+</BODY>
+</HTML>
+```
+
+```css
+#square {
+  width: 20em;
+  height: 20em;
+  border: 2px inset gray;
+  margin-bottom: 1em;
+  }
+
+button {
+  padding: .5em 2em;
+  }
+
+```
+
+```js
+function doDemo (button) {
+  var square = document.getElementById("square")
+  square.style.backgroundColor = "#fa4"
+  button.setAttribute("disabled", "true")
+  setTimeout(clearDemo, 2000, button)
+  }
+
+function clearDemo (button) {
+  var square = document.getElementById("square")
+  square.style.backgroundColor = "transparent"
+  button.removeAttribute("disabled")
+  }
+ ```
