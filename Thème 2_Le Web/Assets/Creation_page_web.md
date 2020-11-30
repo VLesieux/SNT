@@ -339,21 +339,25 @@ Pour cela, faire un clic droit sur la page et faire l’inspection de l’élém
 
 Pour aller plus loin :
 
+**exemple.html**
+
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
 <HTML>
 <HEAD>
-<TITLE>Premiers pas en CSS avec Mozilla - Démonstration en JavaScript</TITLE>
-<LINK rel="stylesheet" type="text/css" href="style5.css"></strong>
-<SCRIPT type="text/javascript" src="script5.js"></SCRIPT>
+<TITLE>Premiers pas en CSS Démonstration en JavaScript</TITLE>
+<LINK rel="stylesheet" type="text/css" href="style.css"></strong>
+<SCRIPT type="text/javascript" src="script.js"></SCRIPT>
 </HEAD>
 <BODY>
-<H1>Exemple en JavaScript</H1>
+<H1>Exemple d'interaction en JavaScript avec le css de la page</H1>
 <DIV id="square"></DIV>
 <BUTTON type="button" onclick="doDemo(this);">Cliquez ici</BUTTON>
 </BODY>
 </HTML>
 ```
+
+**style.css**
 
 ```css
 #square {
@@ -368,6 +372,8 @@ button {
   }
 
 ```
+
+**script.js**
 
 ```js
 function doDemo (button) {
