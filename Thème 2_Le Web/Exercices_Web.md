@@ -8,7 +8,7 @@ Considérons seulement 5 pages web:
 <img src="Assets/PageRank.png" width="300" height="300">
 
 Chaque flèche représente un lien hypertexte. Ainsi, la page 0 possède un lien vers la page 1 et vers la page 2. Inversement, trois pages possèdent des liens vers la page 0 : les pages 2, 3 et 4.
-En Python, on utilise une liste web contenant, pour chaque page web, la liste des liens contenus sur cette page ; c'est ce que l'on appelle la représentation par liste d'adjacence du graphe du Web. Dans notre exemple, web[0] va donc s'écrire [1,2].
+En Python, on utilise une liste web contenant, pour chaque page web, la liste des liens contenus sur cette page vers d'autres pages web ; c'est ce que l'on appelle la représentation par liste d'adjacence du graphe du Web. Dans notre exemple, web[0] va donc s'écrire [1,2] car la page 0 contient un lien vers la page 1 et un lien vers la page 2.
 
 On donne alors l'algorithme suivant :
 
@@ -21,7 +21,8 @@ page=2
 for i in range(1000):
     page=choice(web[page])
     passages[page]=passages[page]+1
-
+    
+print(passages)
 ```
 
 On a utilisé la fonction choice importée du module random qui permet d'obtenir aléatoirement un élément dans une liste.
@@ -91,7 +92,7 @@ Proposer "à la main" un classement par ordre de popularité des différentes pa
 
 2. Exécuter le code pour observer le classement par ordre de popularité des différentes pages web obtenu grâce à l'algorithme. 
 
-3. Proposer une interprétation à ce code.
+3. Proposer une interprétation à ce code. Utiliser le Debugger de Thonny.
 
 ### Exercice 2
 
