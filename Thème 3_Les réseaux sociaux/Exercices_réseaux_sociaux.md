@@ -41,9 +41,16 @@ def chemin(graphe,i,j,liste):
 [6, 3, 1, 2, 4]
 ```
 Quelle est la particularité de cet algorithme ? Proposez une explication.  
-Vérifier en utilisant le débugger.    
+Vérifier en utilisant le débugger.  
 
-5. Utiliser la fonction précédente pour écrire les fonctions `excentricite(graphe,i)` ; `diametre(graphe)`, `rayon(graphe)`, `centre(graphe)` .
+5.   Écrire une fonction `sommets(graphe)` qui retourne les différents sommets du graphe.
+
+```Python
+>>> sommets(G)
+[4, 1, 0, 2, 5, 6, 3, 7]
+```
+
+6. Utiliser les fonctions précédentes `sommets` et `chemin` pour écrire les fonctions `excentricite(graphe,i)` puis `diametre(graphe)`, puis `rayon(graphe)`, puis `centre(graphe)`.
 Retrouver les résultats établis "à la main". 
 
 
@@ -56,7 +63,6 @@ Il peut être intéressant de trouver la plus grande communauté dans un réseau
 ### Exercice 5
 
 Écrire une fonction degree telle que `degre(G,i)` renvoie le degré du sommet i dans le graphe G représenté par liste d'adjacence.
-
 
 ### Exercice 6
 
