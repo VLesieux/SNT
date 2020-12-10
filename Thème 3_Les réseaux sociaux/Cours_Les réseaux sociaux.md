@@ -68,48 +68,18 @@ On suppose dans toute la suite que les n sommets d'un graphe sont numérotés de
 [0, 1]
 ```
 Nous pouvons alors écrire des algorithmes en Python sur des graphes.
-Par exemple, on peut définir une fonction `arete` qui détermine si deux sommets i et j sont reliés ; elle admet comme paramètre le graphe G et les sommets i et j.
-L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adjacence de i ; pour cela on parcourt cette liste et on regarde si il y a un élément qui coïncide avec j. La deuxième version utilise un raccourci qui permet de savoir si un élément se trouve dans une liste.
+Par exemple, on peut définir une fonction `arete` qui détermine si deux sommets i et j sont reliés ; elle admet comme paramètre un graphe et deux sommets i et j.
+L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adjacence de i ; pour cela on parcourt cette liste et on regarde si on y trouve l'élément j. 
 
-Première version :
-
-```Python
-def arete(graphe,i,j):
-    for element in graphe[i]:
-        if element==j:
-            return True
-    return False
->>> arete(G,1,4)
-True#1 et 4 sont bien liés entre eux
->>> arete(G,1,2)
-False#1 et 2 ne sont pas reliés        
-```
-
-Deuxième version : 
+Écrire la fonction avec sa docstring.
+On rappelle le code pour faire les doctests.
 
 ```Python
-G=[[1,3,4],[0,4],[3],[0,2],[0,1]]
-def arete_bis(graphe,i,j):
-    if j in graphe[i]:
-        return True
-    else:
-        return False
->>> arete_bis(G,1,4)
-True
->>> arete_bis(G,1,2)
-False       
+if __name__ == '__main__':
+  import doctest
+  doctest.testmod(verbose=True)
 ```
 
-**Attention**, écrire la fonction de la manière ci-dessous ne fonctionne pas, car elle renvoie `False` dès que le premier élément de la liste ne s'idenfie pas à l'élément recherché et ne va pas chercher plus loin.
-
-```Python
-def arete(graphe,i,j):
-    for element in graphe[i]:
-        if element==j:
-            return True
-        else:
-            return False
-```
 
 ### Petits mondes
 
