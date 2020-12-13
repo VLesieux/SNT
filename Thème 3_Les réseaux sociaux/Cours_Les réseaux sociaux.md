@@ -50,7 +50,7 @@ D'où le graphe représentant les relations entre A, B, C, D et E.
 5. Le **rayon** d'un graphe est la valeur minimale de l'excentricité des sommets de ce graphe. Comme les excentricité de A, B, C, D et E sont 2, 3, 3, 2, 3 respectivement, on en déduit que le rayon du graphe est 2.
 6. Un sommet dont l'excentricité est minimum est **centre** du graphe ; le graphe considéré possèdent deux centres : A et D.
 
-### Implémentation des graphes dans Python
+### Implémenter le traitement d'un graphe dans Python
 
 Il existe plusieurs façons de stocker un graphe dans Python. Nous allons utiliser ici ce que l'on appelle la représentation par **liste d'adjacence** d'un graphe.
 On suppose dans toute la suite que les n sommets d'un graphe sont numérotés de 0 à n-1. On utilise alors une liste G de taille n telle que, pour tout entier i de 0 à n-1, G[i] est la liste des sommets qui sont reliés au sommet i. Par exemple le graphe précédent peut être stocké de la façon suivante, en associant les points A, B, C, D, E aux valeurs 0, 1, 2, 3, 4 : 
@@ -67,11 +67,74 @@ On suppose dans toute la suite que les n sommets d'un graphe sont numérotés de
 >>> G[4]
 [0, 1]
 ```
+Pour accéder à la valeur 2, on écrit : 
+
+```Python
+>>> G=[[1,3,4],[0,4],[3],[0,2],[0,1]]
+>>> G[3][1]
+2
+```
+
 Nous pouvons alors écrire des algorithmes en Python sur des graphes.
-Par exemple, on peut définir une fonction `arete` qui détermine si deux sommets i et j sont reliés ; elle admet comme paramètre un graphe et deux sommets i et j.
+Par exemple, on peut définir une fonction `lien` qui détermine si deux sommets i et j sont reliés ; elle admet comme paramètre un graphe et deux sommets i et j.
 L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adjacence de i ; pour cela on parcourt cette liste et on regarde si on y trouve l'élément j. 
 
-Écrire la fonction avec sa docstring.
+Rappels et indications :
+
+- Pour parcourir les éléments d'une liste :
+
+```Python
+>>> liste=[4,8,9,2]
+>>> for element in liste:
+    print(element)   
+4
+8
+9
+2
+```
+- Une autre méthode peu appropriée ici serait de parcourir les indices des éléments de la liste :
+
+```Python
+>>> for i in range(len(liste)):
+    print(liste[i])  
+4
+8
+9
+2
+```
+
+- Comparer deux éléments et renvoyer True si c'est le cas, False sinon :
+
+```Python
+>>> a=5
+>>> b=5
+>>> c=12
+>>> def comparaison(i,j):
+    if i==j:
+        return True
+    else:
+        return False
+comparaison(a,b)
+True
+>>> comparaison(a,c)
+False
+```
+
+ou plus simplement :
+
+```Python
+>>> a=5
+>>> b=5
+>>> c=12
+>>> def comparaison(i,j):
+    return i==j
+comparaison(a,b)
+True
+>>> comparaison(a,c)
+False
+```
+
+En utilisant ces indications, écrire la fonction `lien` avec sa docstring.
 On rappelle le code pour faire les doctests.
 
 ```Python
