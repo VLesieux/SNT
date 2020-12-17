@@ -18,7 +18,7 @@ Consulter le [kit complet de sensibilisation aux risques numériques](Assets/kit
 
 Soit le graphe ci-dessous :
 
-<img src="Assets/graphe.png" width="300" height="300">
+<img src="Assets/graphe.png">
 
 1. Donner une représentation par liste d'adjacence de ce graphe.
 2. Déterminer "à la main" son diamètre et son rayon.
@@ -71,7 +71,7 @@ d. Utiliser la fonction liste.index(valeur) qui retourne l'indice de position de
 
 Il peut être intéressant de trouver la plus grande communauté dans un réseau social. On a vu qu'une communauté peut être vue comme une clique (sommets tous reliés entre eux) dans un graphe. Dans les graphes suivants, quel est le nombre maximum de sommets d'une clique ?
 
-<img src="Assets/cliques.png" width="450" height="300">
+<img src="Assets/cliques.png">
 
 ### Exercice 5
 
