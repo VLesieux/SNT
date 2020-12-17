@@ -52,9 +52,9 @@ Vérifier en utilisant le débugger.
 
 6. Utiliser les fonctions précédentes `sommets` et `chemin` pour écrire les fonctions :
 
-a. `excentricite(graphe,i)`
-b. `diametre(graphe)` 
-c. `rayon(graphe)`
+a. `excentricite(graphe,i)`.  
+b. `diametre(graphe)`.        
+c. `rayon(graphe)`.  
 d. `centre(graphe)`.
 
 Retrouver les résultats établis "à la main". 
