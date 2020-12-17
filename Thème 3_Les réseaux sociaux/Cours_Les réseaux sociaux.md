@@ -41,7 +41,7 @@ Considérons un exemple simpliste de réseau social comportant 5 utilisateurs : 
 - E est ami avec A et B
 D'où le graphe représentant les relations entre A, B, C, D et E.
 
- <img src="Assets/graphe_relations.png" width="200" height="200">
+ <img src="Assets/graphe_relations.png">
 
 1. Le **degré** d'un sommet est le nombre d'arêtes dont il est l'extrémité ; ici, cela correspond aux nombres d'utilisateurs ; par exemple le degré de A est 3, le degré de C est 1.
 2. La **distance** entre deux sommets est le nombre minimum d'arêtes qu'il faut parcourir pour aller de l'un à l'autre. Par exemple, la distance de D à E est 2 (en allant de D à A puis de A à E). La distance de B à C est 3 avec le chemin B-A-D-C.
@@ -156,18 +156,14 @@ Un utilisateur d'un réseau social reçoit, par des systèmes de recommandation,
 
 Exemple : Pour notre situation précédente, A, B, E forment une clique tandis que A, B, D ne forment pas de clique car B n'est pas relié à D.
 
-La fonction est_clique ci-dessous est telle que si G est un graphe représenté par une liste d'adjacence et S une liste de sommets, `est_clique(G,S)` renvoie `True` si S forme une clique, `False` sinon.
+ <img src="Assets/graphe_relations.png">
+ 
+Écrire la fonction `est_clique` telle que si G est un graphe représenté par une liste d'adjacence et S une liste de sommets, `est_clique(G,S)` renvoie `True` si S forme une clique, `False` sinon.
 
 ```Python
-def est_clique(G,S):
-    for element in S:
-        for another_element in S:
-            if another_element !=element and not arete(G,element,another_element):
-                return False
-    return True
 >>> est_clique(G,[0,1,4])
 True
 >>> est_clique(G,[0,1,3])
 False
 ```
-Le principe de l'algorithme est le suivant ; on parcourt tous les éléments de la liste ; pour chacun d'entre eux on regarde s'il est relié aux autres éléments de la liste hormis lui-même ; dès que le test est négatif, cela signifie que ce n'est pas une clique ; si tous les tests sont positifs, cela signifie que c'est une clique.
+Le principe de l'algorithme à écrire est le suivant ; on parcourt tous les éléments de la liste ; pour chacun d'entre eux on regarde s'il est relié aux autres éléments de la liste hormis lui-même ; dès que le test est négatif, cela signifie que ce n'est pas une clique ; si tous les tests sont positifs, cela signifie que c'est une clique.

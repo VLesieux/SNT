@@ -50,8 +50,21 @@ Vérifier en utilisant le débugger.
 [4, 1, 0, 2, 5, 6, 3, 7]
 ```
 
-6. Utiliser les fonctions précédentes `sommets` et `chemin` pour écrire les fonctions `excentricite(graphe,i)` puis `diametre(graphe)`, puis `rayon(graphe)`, puis `centre(graphe)`.
+6. Utiliser les fonctions précédentes `sommets` et `chemin` pour écrire les fonctions :
+
+a. `excentricite(graphe,i)`
+b. `diametre(graphe)` 
+c. `rayon(graphe)`
+d. `centre(graphe)`.
+
 Retrouver les résultats établis "à la main". 
+
+Indications :
+
+a. Pour déterminer l'excentricité du sommet i, créer une liste contenant, pour chacun des sommets du graphe, la longueur du chemin allant du sommet i à ce sommet. Puis utiliser la fonction max(liste) qui retourne le maximum de la liste.
+b. Déterminer le maximum des excentricités pour tous les sommets du graphe.
+c. Déterminer le minimum des excentricités pour tous les sommets du graphe.
+d. Utiliser la fonction liste.index(valeur) qui retourne l'indice de position de valeur dans la liste.
 
 
 ### Exercice 4
@@ -66,6 +79,6 @@ Il peut être intéressant de trouver la plus grande communauté dans un réseau
 
 ### Exercice 6
 
-Écrire une fonction `nb_aretes` renvoyant le nombre d'arêtes dans un graphe représenté par une liste d'adjacence.
+Écrire une fonction `nb_aretes` renvoyant le nombre total d'arêtes dans un graphe représenté par une liste d'adjacence.
 
 
