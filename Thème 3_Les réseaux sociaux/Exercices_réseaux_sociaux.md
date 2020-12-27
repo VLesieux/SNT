@@ -79,6 +79,6 @@ Il peut être intéressant de trouver la plus grande communauté dans un réseau
 
 ### Exercice 6
 
-Écrire une fonction `nb_aretes` renvoyant le nombre total d'arêtes dans un graphe représenté par une liste d'adjacence.
+À l'aide de la fonction précédente, écrire une fonction `nb_aretes` renvoyant le nombre total d'arêtes dans un graphe représenté par une liste d'adjacence.
 
 
