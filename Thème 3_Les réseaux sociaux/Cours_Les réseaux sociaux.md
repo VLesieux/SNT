@@ -134,7 +134,12 @@ True
 False
 ```
 
-En utilisant ces indications, écrire la fonction `lien` avec sa docstring.
+En utilisant ces indications, 
+
+1. Écrire la fonction `lien` avec sa docstring.
+2. Écrire une fonction `degre` telle que `degre(G,i)` renvoie le degré du sommet i dans le graphe G représenté par sa liste d'adjacence.
+3. À l'aide de la fonction précédente, écrire une fonction `nb_aretes` renvoyant le nombre total d'arêtes dans un graphe représenté par une liste d'adjacence.
+
 On rappelle le code pour faire les doctests.
 
 ```Python
@@ -142,7 +147,6 @@ if __name__ == '__main__':
   import doctest
   doctest.testmod(verbose=True)
 ```
-
 
 ### Petits mondes
 
@@ -167,3 +171,4 @@ True
 False
 ```
 Le principe de l'algorithme à écrire est le suivant ; on parcourt tous les éléments de la liste ; pour chacun d'entre eux on regarde s'il est relié aux autres éléments de la liste hormis lui-même ; dès que le test est négatif, cela signifie que ce n'est pas une clique ; si tous les tests sont positifs, cela signifie que c'est une clique.
+

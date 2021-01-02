@@ -72,13 +72,3 @@ d. Utiliser la fonction liste.index(valeur) qui retourne l'indice de position de
 Il peut être intéressant de trouver la plus grande communauté dans un réseau social. On a vu qu'une communauté peut être vue comme une clique (sommets tous reliés entre eux) dans un graphe. Dans les graphes suivants, quel est le nombre maximum de sommets d'une clique ?
 
 <img src="Assets/cliques.png">
-
-### Exercice 5
-
-Écrire une fonction degree telle que `degre(G,i)` renvoie le degré du sommet i dans le graphe G représenté par liste d'adjacence.
-
-### Exercice 6
-
-À l'aide de la fonction précédente, écrire une fonction `nb_aretes` renvoyant le nombre total d'arêtes dans un graphe représenté par une liste d'adjacence.
-
-
