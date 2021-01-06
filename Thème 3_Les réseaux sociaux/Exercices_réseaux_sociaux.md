@@ -1,5 +1,13 @@
 ## Exercices Thème 3 : Réseaux sociaux
 
+On rappelle le code pour faire les doctests.
+
+```Python
+if __name__ == '__main__':
+  import doctest
+  doctest.testmod(verbose=True)
+```
+
 ### Exercice 1
 
 Une personne malveillante décide d'envoyer une fausse nouvelle à 3 personnes. Le jour suivant, chacune de ces 3 personnes envoie à nouveau à 3 nouvelles personnes cette nouvelle, et ainsi de suite. Combien faudra-t-il de jours avant que le monde entier l'ait reçu ?
