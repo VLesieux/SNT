@@ -111,9 +111,9 @@ Rappels et indications :
 >>> c=12
 >>> def comparaison(i,j):
     	if i==j:
-        return True
+         return True
     	else:
-        return False
+         return False
 >>> comparaison(a,b)
 True
 >>> comparaison(a,c)
