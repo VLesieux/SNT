@@ -67,7 +67,7 @@ d. `centre(graphe)`.
 
 Retrouver ainsi les résultats établis "à la main". 
 
-Indications :
+**Indications** :
 
 a. Pour déterminer l'excentricité du sommet i, créer une liste contenant, pour chacun des sommets du graphe, la longueur du chemin allant du sommet i à ce sommet. Puis utiliser la fonction max(liste) qui retourne le maximum de la liste.   
 b. Déterminer le maximum des excentricités pour tous les sommets du graphe.     
