@@ -69,7 +69,7 @@ Retrouver ainsi les résultats établis "à la main".
 
 **Indications** :
 
-a. Pour déterminer l'excentricité du sommet i, créer une liste contenant, pour chacun des sommets du graphe, la longueur du chemin allant du sommet i à ce sommet. Puis utiliser la fonction max(liste) qui retourne le maximum de la liste.   
+a. Pour déterminer l'excentricité du sommet i, créer une liste contenant, pour chacun des sommets du graphe, la longueur du chemin allant du sommet i à ce sommet. Puis utiliser la fonction `max(liste)` qui retourne le maximum de `liste`.   
 b. Déterminer le maximum des excentricités pour tous les sommets du graphe.     
 c. Déterminer le minimum des excentricités pour tous les sommets du graphe.     
 d. Utiliser la fonction `liste.index(valeur)` qui retourne l'indice de position de `valeur` dans `liste`.    
