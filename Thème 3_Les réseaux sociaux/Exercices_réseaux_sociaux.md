@@ -47,7 +47,7 @@ Vérifier en utilisant le débugger.
 
 ```Python
 >>> sommets(G)
-[0, 1, 2, 3, 4, 5, 6, 7]
+[0, 1, 2, 3, 4, 5, 6]
 ```
 
 6. Utiliser les fonctions précédentes `sommets` et `chemin` pour écrire les fonctions :
@@ -57,7 +57,7 @@ b. `diametre(graphe)`.
 c. `rayon(graphe)`.  
 d. `centre(graphe)`.
 
-Retrouver les résultats établis "à la main". 
+Retrouver ainsi les résultats établis "à la main". 
 
 Indications :
 

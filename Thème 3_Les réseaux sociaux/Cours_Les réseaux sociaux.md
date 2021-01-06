@@ -86,7 +86,7 @@ Rappels et indications :
 ```Python
 >>> liste=[4,8,9,2]
 >>> for element in liste:
-    print(element)   
+    	print(element)   
 4
 8
 9
@@ -96,7 +96,7 @@ Rappels et indications :
 
 ```Python
 >>> for i in range(len(liste)):
-    print(liste[i])  
+    	print(liste[i])  
 4
 8
 9
@@ -110,11 +110,11 @@ Rappels et indications :
 >>> b=5
 >>> c=12
 >>> def comparaison(i,j):
-    if i==j:
+    	if i==j:
         return True
-    else:
+    	else:
         return False
-comparaison(a,b)
+>>> comparaison(a,b)
 True
 >>> comparaison(a,c)
 False
@@ -127,8 +127,8 @@ ou plus simplement :
 >>> b=5
 >>> c=12
 >>> def comparaison(i,j):
-    return i==j
-comparaison(a,b)
+    	return i==j
+>>>comparaison(a,b)
 True
 >>> comparaison(a,c)
 False
@@ -170,5 +170,5 @@ True
 >>> est_clique(G,[0,1,3])
 False
 ```
-Le principe de l'algorithme à écrire est le suivant ; on parcourt tous les éléments de la liste ; pour chacun d'entre eux on regarde s'il est relié aux autres éléments de la liste hormis lui-même ; dès que le test est négatif, cela signifie que ce n'est pas une clique ; si tous les tests sont positifs, cela signifie que c'est une clique.
+Le principe de l'algorithme à écrire est le suivant : on parcourt tous les éléments de la liste ; pour chacun d'entre eux on regarde s'il est relié aux autres éléments de la liste hormis lui-même ; dès que le test est négatif, cela signifie que ce n'est pas une clique ; si tous les tests sont positifs, cela signifie que c'est une clique.
 
