@@ -149,9 +149,9 @@ La fonction appelée sans paramètre trie la table par ordre alphabétique sur l
 Pour trier sur un autre champ par exemple Ville, voici la procédure à suivre :
 
 ```Python
-def ville(contact):
+def tri_selon_ville(contact):
     return contact[5]#5 est l'indice du champ Ville
->>> sorted(table,key=ville)#ici ville est une fonction 
+>>> sorted(table,key=tri_selon_ville)#ici tri_selon_ville est une fonction 
 [['Green', 'Emma', '06 36 62 23 66', 'emma.green@free.fr', '16/05/2002', 'Lyon'], ['Poclain', 'Alexandre', '06 25 39 26 37', 'alexandre.poclai@orange.fr', '11/02/1961', 'Nancy'], ['Gascon', 'Robert', '06 64 58 54 36', 'robert.gascon@wanadoo.fr', '08/02/1988', 'Orléans'], ['Villefort', 'Valentine', '06 82 25 36 84', 'valentine.villefort@gmail.com', '20/06/1994', 'Tours']]
 ```
 
