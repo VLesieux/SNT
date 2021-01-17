@@ -13,13 +13,12 @@ Saisir dans un fichier XML les données relatives à ses proches en utilisant le
 
 ### Exercice 3
 
-Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité de l'air Île de France" ;  télécharger puis ouvrir le fichier indices_QA_commune_IDF_04_2018.csv 
+Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité de l'air Île de France" ;  télécharger puis ouvrir le fichier indices_QA_commune_IDF_04_2018.csv. Répondre aux questions suivantes avec Python. 
 
 1. Quels sont les descripteurs utilisés ?
 2. **Trier** les données en fonction de l'indice de pollution au dioxyde d'azote NO<sub>2</sub>, puis **filtrer** les données correspondant à l'Île de France (code Insee : 0) afin de déterminer quel jour était le plus pollué en dioxyde d'azote en Île de France.
 3. Recherchez quelles communes d'Île-de-France étaient les plus polluées en particules fines (pm10) le 20/04/2018.
 4. Pendant combien de jours l'indice de pollution à l'ozone O<sub>3</sub> a-t-il été supérieur à 45 dans le Val-de-Marne (code d'Insee : 94) au mois d'avril 2018 ?
-5. Retrouvez ces résultats avec Python.
 
 ### Exercice 4
 
