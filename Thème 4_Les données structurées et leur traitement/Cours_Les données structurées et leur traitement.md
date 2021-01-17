@@ -184,3 +184,6 @@ Les entreprises utilisent de plus en plus les serveurs cloud, qu'elles louent av
 
 Le volume massif des données générées et traitées (Big Data) nécessite un nombre de plus en plus important de centres de données appelés **datacenters**, c'est-à-dire des bâtiments abritant des serveurs informatiques dédiés au stockage et à l'exploitation des données. C'est un réel enjeu environnemental du fait de leur consommation en métaux rares, en eau (refroidissement des serveurs) et en électricité. On estime que d'ici 2030 la consommation énergétique de l'informatique constituera plus de 20% de la consommation mondiale, dont un tiers attribué aux datacenters.
 
+<img src="Assets/DataCenter.jpg">
+
+<img src="Assets/DatacentersMap.png">
