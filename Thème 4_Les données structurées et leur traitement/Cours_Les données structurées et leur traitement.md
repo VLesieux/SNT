@@ -144,9 +144,9 @@ Commençons par trier les contacts dans l'ordre alphabétique des noms de famill
 [['Gascon', 'Robert', '06 64 58 54 36', 'robert.gascon@wanadoo.fr', '08/02/1988', 'Orléans'], ['Green', 'Emma', '06 36 62 23 66', 'emma.green@free.fr', '16/05/2002', 'Lyon'], ['Poclain', 'Alexandre', '06 25 39 26 37', 'alexandre.poclai@orange.fr', '11/02/1961', 'Nancy'], ['Villefort', 'Valentine', '06 82 25 36 84', 'valentine.villefort@gmail.com', '20/06/1994', 'Tours']]
 ```
 
-La fonction appelée sans paramètre trie la table par ordre alphabétique sur le premier champ qui est Nom.
+La fonction `sorted` appelée sans paramètre trie la table par ordre alphabétique sur le premier champ qui est Nom.
 
-Pour trier sur un autre champ par exemple Ville, voici la procédure à suivre :
+Pour **trier** sur un autre champ, par exemple Ville, voici la procédure à suivre :
 
 ```Python
 def tri_selon_ville(contact):
@@ -155,14 +155,14 @@ def tri_selon_ville(contact):
 [['Green', 'Emma', '06 36 62 23 66', 'emma.green@free.fr', '16/05/2002', 'Lyon'], ['Poclain', 'Alexandre', '06 25 39 26 37', 'alexandre.poclai@orange.fr', '11/02/1961', 'Nancy'], ['Gascon', 'Robert', '06 64 58 54 36', 'robert.gascon@wanadoo.fr', '08/02/1988', 'Orléans'], ['Villefort', 'Valentine', '06 82 25 36 84', 'valentine.villefort@gmail.com', '20/06/1994', 'Tours']]
 ```
 
-Effectuons maintenant la recherche du contact dont le numéro de téléphone est '06 64 58 54 36'. Proposons pour cela une fonction `recherche` qui admet comme paramètre `telephone` qui parcourt l'ensemble des contacts de notre table à la recherche du contact qui possède ce numéro de téléphone : 
+Effectuons maintenant la **recherche** du contact dont le numéro de téléphone est '06 64 58 54 36'. Proposons pour cela une fonction `recherche` qui admet comme paramètres `telephone` et `tableau` qui parcourt l'ensemble des contacts de notre tableau à la recherche du contact qui possède ce numéro de téléphone : 
 
 ```Python
-def recherche(telephone):
-    for contact in table:
+def recherche(telephone,tableau):
+    for contact in tableau:
         if contact[2]==telephone:
             return contact
->>> print(recherche('06 64 58 54 36'))
+>>> print(recherche('06 64 58 54 36',table))
 ['Gascon', 'Robert', '06 64 58 54 36', 'robert.gascon@wanadoo.fr', '08/02/1988', 'Orléans']
 ```
 
