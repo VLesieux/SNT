@@ -22,7 +22,7 @@ Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité d
 
 ### Exercice 4
 
-On souhaite traiter la table appelée fruits à l'aide des fonctions : fonction1, fonction2, fonction3 :
+On souhaite traiter la table appelée fruits à l'aide des fonctions : `fonction1`, `fonction2`, `fonction3` présentées ci-après :
 
 ```Python
 fruits=[
@@ -51,15 +51,25 @@ def fonction3(table,nom):
     return False
 
 ```
-Répondre d'abord "à la main" aux questions puis vérifier avec Thonny. 
+Répondre d'abord "à la main" aux questions suivantes puis vérifiez avec Thonny.
 
 1. Quel est le rôle de `fonction1` et que renvoie `fonction1(fruits`) ?
 2. Quel est le rôle de `fonction2` et que renvoient `fonction2(fruits,1,'rouge')` puis fonction2(fruits,-2,'sol') ?
 3. Quel est le rôle de `fonction3` et que renvoie `fonction3(fruits,'fraise')` ?
-4. Modifier `fonction3` pour qu'elle renvoie la liste des valeurs de tous les descripteurs associés à l'objet si `nom` a été trouvé dans la table et un message indiquant que `nom` n'a pas été trouvé dans le cas contraire.
+4. Modifier `fonction3` pour qu'elle renvoie la liste des valeurs de tous les descripteurs associés à l'objet si `nom` a été trouvé dans la table, et un message indiquant dans le cas contraire que `nom`  n'a pas été trouvé .
+La docstring permettra de vérifier les tests suivants :
+
 ```Python
 >>> fonction3(fruits,'fraise')
 ['fraise', 'rouge', 'sol', 'sans']
 >>> fonction3(fruits,'pomme')
 L'objet  pomme  est absent de la table.
+```
+
+On rappelle le code pour faire les doctests.
+
+```Python
+if __name__ == '__main__':
+  import doctest
+  doctest.testmod(verbose=True)
 ```
