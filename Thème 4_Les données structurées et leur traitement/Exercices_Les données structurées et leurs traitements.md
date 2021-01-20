@@ -56,7 +56,7 @@ Répondre d'abord "à la main" aux questions suivantes puis vérifiez avec Thonn
 1. Quel est le rôle de `fonction1` et que renvoie `fonction1(fruits`) ?
 2. Quel est le rôle de `fonction2` et que renvoient `fonction2(fruits,1,'rouge')` puis fonction2(fruits,-2,'sol') ?
 3. Quel est le rôle de `fonction3` et que renvoie `fonction3(fruits,'fraise')` ?
-4. Modifier `fonction3` pour qu'elle renvoie la liste des valeurs de tous les descripteurs associés à l'objet si `nom` a été trouvé dans la table, et un message indiquant dans le cas contraire que `nom`  n'a pas été trouvé .
+4. Modifier `fonction3` pour qu'elle renvoie la liste des valeurs de tous les descripteurs associés à l'objet si `nom` a été trouvé dans la table, et un message indiquant dans le cas contraire que `nom`  n'a pas été trouvé.      
 La docstring permettra de vérifier les tests suivants :
 
 ```Python
