@@ -22,7 +22,7 @@ Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité d
 
 ### Exercice 4
 
-On souhaite traiter la table appelée fruits à l'aide des fonctions : `fonction1`, `fonction2`, `fonction3` présentées ci-après :
+On souhaite traiter la table ci-dessous appelée fruits à l'aide des fonctions suivantes : `fonction1`, `fonction2`, `fonction3` présentées ci-après :
 
 ```Python
 fruits=[
@@ -51,20 +51,7 @@ def fonction3(table,nom):
     return False
 
 ```
-Répondre d'abord "à la main" aux questions suivantes puis vérifiez avec Thonny.
-
-1. Quel est le rôle de `fonction1` et que renvoie `fonction1(fruits`) ?
-2. Quel est le rôle de `fonction2` et que renvoient `fonction2(fruits,1,'rouge')` puis fonction2(fruits,-2,'sol') ?
-3. Quel est le rôle de `fonction3` et que renvoie `fonction3(fruits,'fraise')` ?
-4. Modifier `fonction3` pour qu'elle renvoie la liste des valeurs de tous les descripteurs associés à l'objet si `nom` a été trouvé dans la table, et un message indiquant dans le cas contraire que `nom`  n'a pas été trouvé.      
-La docstring permettra de vérifier les tests suivants :
-
-```Python
->>> fonction3(fruits,'fraise')
-['fraise', 'rouge', 'sol', 'sans']
->>> fonction3(fruits,'pomme')
-L'objet  pomme  est absent de la table.
-```
+Répondre d'abord "à la main" aux questions suivantes puis vérifiez avec Thonny en réalisant les docstrings des fonctions.
 
 On rappelle le code pour faire les doctests.
 
@@ -72,4 +59,38 @@ On rappelle le code pour faire les doctests.
 if __name__ == '__main__':
   import doctest
   doctest.testmod(verbose=True)
+```
+
+On rappelle la présentation usuelle pour la docstring d'une fonction à travers un exemple :
+
+```Python
+def eleve_au_carre(n):
+    """
+    renvoie le carré du nombre n
+    param : nombre : int
+    param : return : int
+    >>> eleve_au_carre(4)
+    16
+    """
+    return n**2
+```
+
+1. Quel est le rôle de `fonction1` et que renvoie `fonction1(fruits)` ? Faire la docstring de cette fonction avec le test `fonction1(fruits)`.
+2. Quel est le rôle de `fonction2` et que renvoient `fonction2(fruits,1,'rouge')` ? Faire la docstring de cette fonction avec le test `fonction2(fruits,1,'rouge')`.
+3. Quel est le rôle de `fonction3` et que renvoie `fonction3(fruits,'fraise')` ? Faire la docstring de cette fonction avec le test `fonction3(fruits,'fraise')`.
+4. Modifier `fonction3` pour créer `fonction4` ; celle-ci renvoie la liste des valeurs que prennent tous les descripteurs associés à l'objet si `nom` a été trouvé dans la table, et un message indiquant dans le cas contraire que `nom`  n'a pas été trouvé <sup>*</sup>.      
+La docstring de cette `fonction4` doit permettre de vérifier les tests suivants :
+
+```Python
+>>> fonction4(fruits,'fraise')
+['fraise', 'rouge', 'sol', 'sans']
+>>> fonction4(fruits,'pomme')
+L'objet  pomme  est absent de la table.
+```
+
+<sup>*</sup> Indication : on sera amener à utiliser la concaténation de chaînes de caractères, par exemple : 
+
+```Python
+>>> print("ceci est le début, ","la suite"," et la fin de la phrase")
+ceci est le début,  la suite  et la fin de la phrase
 ```
