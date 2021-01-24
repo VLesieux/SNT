@@ -91,6 +91,7 @@ L'objet  pomme  est absent de la table.
 <sup>*</sup> Indication : on sera amener à utiliser la concaténation de chaînes de caractères, par exemple : 
 
 ```Python
->>> print("ceci est le début, ","la suite"," et la fin de la phrase")
+>>> partie2="la suite"
+>>> print("ceci est le début, ",partie2," et la fin de la phrase")
 ceci est le début,  la suite  et la fin de la phrase
 ```
