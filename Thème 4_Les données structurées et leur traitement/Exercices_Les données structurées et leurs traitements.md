@@ -88,7 +88,7 @@ La docstring de cette `fonction4` doit permettre de vérifier les deux tests sui
 L'objet  pomme  est absent de la table.
 ```
 
-<sup>*</sup> Indication : on sera amener à utiliser la concaténation de chaînes de caractères, par exemple : 
+<sup>*</sup> Indication : on sera amené à utiliser la concaténation de chaînes de caractères, par exemple : 
 
 ```Python
 >>> partie2="la suite"#partie2 est une variable dont la valeur est une chaîne de caractères
