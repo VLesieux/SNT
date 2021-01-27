@@ -66,8 +66,8 @@ On rappelle la présentation usuelle pour la docstring d'une fonction à travers
 ```Python
 def eleve_au_carre(n):
     """
-    renvoie le carré du nombre n
-    param : nombre : int
+    renvoie le carré du nombre entier n
+    param : n : int
     return : int
     >>> eleve_au_carre(4)
     16
