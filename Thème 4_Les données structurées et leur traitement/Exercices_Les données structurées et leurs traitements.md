@@ -66,11 +66,11 @@ On rappelle la présentation usuelle pour la docstring d'une fonction à travers
 ```Python
 def eleve_au_carre(n):
     """
-    renvoie le carré du nombre entier n# explicite succinctement mais précisement ce que fait de façon générale la fonction à partir de son ou de ses paramètres
-    param : n : int#indique le type du paramètre parmi les paramètres int(entier), list(tableau), bool(booléen True ou False), string(chaîne de caractères entre guillemets), tuple(n-uplet)
-    return : int#indique le type de ce que renvoie la fonction
-    >>> eleve_au_carre(4)#teste la fonction sur un exemple
-    16#donne le résultat de ce test
+    renvoie le carré du nombre entier n
+    param : n : int
+    return : int
+    >>> eleve_au_carre(4)
+    16
     """
     return n**2
 ```
