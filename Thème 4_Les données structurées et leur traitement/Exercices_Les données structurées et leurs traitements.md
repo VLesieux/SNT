@@ -26,7 +26,7 @@ On sera amené à écrire les fonctions : `tri_selon_pm10(tableau)` et `filtre_s
 **Indications** : trier les données dans l'ordre décroissant d'indice de pollution aux particules fines, puis filtrer les résultats à la date du 20/04/2018.
 On sera amené à écrire les fonctions : `tri_selon_pm10(tableau)` et `filtre_selon_date(date,tableau)`.
 
-Résultat attendu à afficher : `Les insee des deux communes d'Île-de-France les plus polluées aux particules fines (pm10) le 20/04/2018 sont : 92026 92035`
+Résultat attendu à afficher : `Les insee des deux communes d'Île-de-France les plus polluées aux particules fines (pm10) le 20/04/2018 sont :  92026  ,  92035`
 
 4. Pendant combien de jours l'indice de pollution à l'ozone O<sub>3</sub> a-t-il été supérieur à 45 dans le Val-de-Marne (code d'Insee : 94) au mois d'avril 2018 ?   
 
