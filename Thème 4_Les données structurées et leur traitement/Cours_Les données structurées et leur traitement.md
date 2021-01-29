@@ -155,6 +155,8 @@ def tri_selon_ville(contact):
 [['Green', 'Emma', '06 36 62 23 66', 'emma.green@free.fr', '16/05/2002', 'Lyon'], ['Poclain', 'Alexandre', '06 25 39 26 37', 'alexandre.poclai@orange.fr', '11/02/1961', 'Nancy'], ['Gascon', 'Robert', '06 64 58 54 36', 'robert.gascon@wanadoo.fr', '08/02/1988', 'Orléans'], ['Villefort', 'Valentine', '06 82 25 36 84', 'valentine.villefort@gmail.com', '20/06/1994', 'Tours']]
 ```
 
+Remarque : pour trier dans l'ordre décroissant, écrire : `sorted(table,key=tri_selon_ville,reverse=True)`
+
 Effectuons maintenant la **recherche** du contact dont le numéro de téléphone est '06 64 58 54 36'. Proposons pour cela une fonction `recherche` qui admet comme paramètres `telephone` et `tableau` qui parcourt l'ensemble des contacts de notre tableau à la recherche du contact qui possède ce numéro de téléphone : 
 
 ```Python
