@@ -15,12 +15,18 @@ Saisir dans un fichier XML les données relatives à ses proches en utilisant le
 
 Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité de l'air Île de France" ;  télécharger puis ouvrir le fichier indices_QA_commune_IDF_04_2018.csv. Répondre aux questions suivantes avec Python. 
 
-1. Quels sont les descripteurs utilisés ?
+1. Quels sont les descripteurs utilisés ? Affichez-les.
 2. **Trier** les données en fonction de l'indice de pollution au dioxyde d'azote NO<sub>2</sub>, puis **filtrer** les données correspondant à l'Île de France (code Insee : 0) afin de déterminer quel jour était le plus pollué en dioxyde d'azote en Île de France.
+
+**Indications** : trier les données dans l'ordre décroissant d'indice de pollution au NO2, puis filtrer les résultats à la date du 20/04/2018.
+On sera amené à écrire les fonctions : `tri_selon_pm10(tableau)` et `filtre_selon_ninsee(ninsee,tableau)`.
+
 3. Déterminer les numéro d'insee des deux communes d'Île-de-France les plus polluées en particules fines (pm10) le 20/04/2018.    
 
 **Indications** : trier les données dans l'ordre décroissant d'indice de pollution aux particules fines, puis filtrer les résultats à la date du 20/04/2018.
 On sera amené à écrire les fonctions : `tri_selon_pm10(tableau)` et `filtre_selon_date(date,tableau)`.
+
+Résultat attendu à afficher : `Les insee des deux communes d'Île-de-France les plus polluées aux particules fines (pm10) le 20/04/2018 sont : 92026 92035`
 
 4. Pendant combien de jours l'indice de pollution à l'ozone O<sub>3</sub> a-t-il été supérieur à 45 dans le Val-de-Marne (code d'Insee : 94) au mois d'avril 2018 ?   
 
@@ -30,6 +36,8 @@ On sera amené à écrire les fonctions : `tri_selon_o3(tableau)` puis `filtre_s
 >>> int("45")
 45
 ```
+
+Résultat attendu à afficher : `Le nombre de jour où l'indice de pollution à l'ozone a été supérieur à 45 dans le Val-de-Marne est :  7 `
 
 
 ### Exercice 4
