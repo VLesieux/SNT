@@ -18,8 +18,8 @@ Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité d
 1. Quels sont les descripteurs utilisés ? Affichez-les.
 2. **Trier** les données en fonction de l'indice de pollution au dioxyde d'azote NO<sub>2</sub>, puis **filtrer** les données correspondant à l'Île de France (code Insee : 0) afin de déterminer quel jour était le plus pollué en dioxyde d'azote en Île de France.
 
-**Indications** : trier les données dans l'ordre décroissant d'indice de pollution au NO2, puis filtrer les résultats à la date du 20/04/2018.
-On sera amené à écrire les fonctions : `tri_selon_pm10(tableau)` et `filtre_selon_ninsee(ninsee,tableau)`.
+**Indications** : trier les données dans l'ordre décroissant d'indice de pollution au NO<sub>2</sub>, puis filtrer les résultats à la date du 20/04/2018.
+On sera amené à écrire les fonctions : `tri_selon_no2(tableau)` et `filtre_selon_ninsee(ninsee,tableau)`.
 
 3. Déterminer les numéro d'insee des deux communes d'Île-de-France les plus polluées en particules fines (pm10) le 20/04/2018.    
 
