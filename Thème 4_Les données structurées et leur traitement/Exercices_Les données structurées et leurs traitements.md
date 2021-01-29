@@ -30,7 +30,7 @@ Résultat attendu à afficher : `Les insee des deux communes d'Île-de-France le
 
 4. Pendant combien de jours l'indice de pollution à l'ozone O<sub>3</sub> a-t-il été supérieur à 45 dans le Val-de-Marne (code d'Insee : 94) au mois d'avril 2018 ?   
 
-**Indications** : Trier les données dans l'ordre décroissant d'indice de pollution à l'ozone, puis filtrer les résultats selon le code Insee 94.
+**Indications** : trier les données dans l'ordre décroissant d'indice de pollution à l'ozone, puis filtrer les résultats selon le code Insee 94.
 On sera amené à écrire les fonctions : `tri_selon_o3(tableau)` puis `filtre_selon_code(code,tableau,seuil)`. Pour transformer une chaîne de caractère représentant une valeur entière en nombre entier, utiliser int : 
 ```Python
 >>> int("45")
