@@ -17,10 +17,13 @@ Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité d
 
 1. Quels sont les descripteurs utilisés ?
 2. **Trier** les données en fonction de l'indice de pollution au dioxyde d'azote NO<sub>2</sub>, puis **filtrer** les données correspondant à l'Île de France (code Insee : 0) afin de déterminer quel jour était le plus pollué en dioxyde d'azote en Île de France.
-3. Déterminer les numéro d'insee des deux communes d'Île-de-France les plus polluées en particules fines (pm10) le 20/04/2018.
+3. Déterminer les numéro d'insee des deux communes d'Île-de-France les plus polluées en particules fines (pm10) le 20/04/2018.    
+
 **Indications** : trier les données dans l'ordre décroissant d'indice de pollution aux particules fines, puis filtrer les résultats à la date du 20/04/2018.
 On sera amené à écrire les fonctions : `tri_selon_pm10(tableau)` et `filtre_selon_date(date,tableau)`.
-4. Pendant combien de jours l'indice de pollution à l'ozone O<sub>3</sub> a-t-il été supérieur à 45 dans le Val-de-Marne (code d'Insee : 94) au mois d'avril 2018 ?
+
+4. Pendant combien de jours l'indice de pollution à l'ozone O<sub>3</sub> a-t-il été supérieur à 45 dans le Val-de-Marne (code d'Insee : 94) au mois d'avril 2018 ?   
+
 **Indications** : Trier les données dans l'ordre décroissant d'indice de pollution à l'ozone, puis filtrer les résultats selon le code Insee 94.
 On sera amené à écrire les fonctions : `tri_selon_o3(tableau)` puis `filtre_selon_code(code,tableau,seuil)`. Pour transformer une chaîne de caractère représentant une valeur entière en nombre entier, utiliser int : 
 ```Python
