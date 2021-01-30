@@ -42,7 +42,7 @@ On utilise pour cela la relation : d=c·Δt où Δt désigne la durée de transf
 Cette information permet au calculateur du récepteur de savoir que l'utilisateur se trouve sur une sphère de rayon d centré sur la position actuelle de ce satellite.
 Il faut à priori 3 satellites pour pouvoir localiser l'utilisateur à l'intersection de 3 sphères centrées sur ces 3 satellites.
 
-<img width="400" height="400" src="Assets/GPS_Sphere.png">
+<img src="Assets/GPS_Sphere.png">
 
 La difficulté est de synchroniser les horloges des satellites et celle du récepteur. Une erreur d'un millionième de seconde provoque une erreur de 300 mètres sur la position. Le récepteur ne peut bien entendu pas bénéficier d'une horloge atomique comme les satellites ; il doit néanmoins disposer d'une horloge assez stable, mais dont l'heure n'est a priori pas synchronisée avec celle des satellites. Les signaux de quatre satellites au moins sont nécessaires pour déterminer ce décalage, puisqu'il faut résoudre un système d'au moins quatre équations mathématiques à quatre inconnues qui sont la position dans les trois dimensions plus le décalage de l'horloge du récepteur avec l'heure GPS. 
 
@@ -53,7 +53,7 @@ La difficulté est de synchroniser les horloges des satellites et celle du réce
 Géoportail (https://www.geoportail.gouv.fr/) est une plateforme dédiée à la cartographie mise en service par l'État français. Il permet de visualiser l'état français à l'aide d'un fond (photographies aériennes, cartes géologiques...) auquel on peut superposer des couches (musées, réseau ferroviaire...).
 On peut à l'aide des outils mesurer une distance, mesurer une surface, établir un profil altimétrique... 
 
-<img width="400" height="400" src="Assets/geoportail1.png"><img width="400" height="400" src="Assets/geoportail2.png">
+<img src="Assets/geoportail1.png"><img src="Assets/geoportail2.png">
 
 L'**échelle d'une carte**, par exemple 1 : 121 981, est le rapport entre la distance mesurée sur la carte et la distance réelle. Ainsi 1 cm mesuré sur la carte, représente 121 981 cm soit 1219 m ou 1,219 km.
 
@@ -66,7 +66,7 @@ OpenStreetMap (http://www.openstreetmap.fr/) est un projet cartographique libre 
 
 Les cartes numériques et de géolocalisation ont grandement simplifié la recherche d'itinéraire. 
 
-<img width="500" height="500" src="Assets/openstreetmap.png">
+<img src="Assets/openstreetmap.png">
 
 Pour ce faire, un algorithme, appelé **algorithme du plus court chemin**, est utilisé. Il existe de nombreuses façons de calculer un plus court chemin, plus ou moins efficaces suivant le type de carte.
 
@@ -74,7 +74,7 @@ L'algorithme de Dijkstra, inventé par Edsger Dijkstra en 1959, est l'un des plu
 
 Exemple : considérons un exemple simplifié de graphe :
 
-<img width="300" height="300" src="Assets/graphe_carte.png">
+<img src="Assets/graphe_carte.png">
 
 Sur ce graphe, on voit que la distance Lyon - Saint-Étienne est de 60 km.
 Quel est le plus court chemin pour aller de Grenoble à Mâcon ?
