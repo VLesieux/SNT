@@ -83,7 +83,7 @@ En énumérant tous les chemins possibles, on voit que le chemin Grenoble - Cham
 
 Cependant, énumérer toutes les possibilités pour une carte réelle prendrait trop de temps ; l'algorithm de Dijkstra procède de façon plus intelligente, en calculant la distance de la ville de départ à toutes les autres villes de proche en proche.
 
-On trouvera [ici](https://drive.google.com/file/d/0B6JMjmZv1UAwQk5MQU9WY3l4dGs/view) un développement de l'algorithme.
+On trouvera [ici](Assets/Algorithme_Dijkstra.pdf) un développement de l'algorithme.
 
 ### Trame NMEA
 
