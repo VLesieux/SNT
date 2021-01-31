@@ -115,3 +115,17 @@ La docstring de cette `fonction4` doit permettre de vérifier les deux tests sui
 >>> "ceci est le début, " +partie2 +" et la fin de la phrase"
 'ceci est le début, la suite et la fin de la phrase'
 ```
+
+Exemple : réponses à la question 1
+
+```Python
+def fonction1(table):
+    """
+    renvoie la longueur de table, et la longueur de son premier élément (d'indice 0 dans table)
+    param : table : list
+    return : tuple
+    >>> fonction1(fruits)
+    (6, 4)
+    """
+    return len(table),len(table[0])
+```
