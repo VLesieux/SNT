@@ -36,7 +36,7 @@ Le GPS comprend au moins 24 satellites circulant à 20 200 km d'altitude. Ils se
 
 <img width="400" height="400" src="Assets/constellation.png">
 
-Compléter la phrase au vu des résultats ci-dessous : une erreur d'un millionième de seconde provoque une erreur de ... mètres sur la position.
+Compléter la phrase au vu des résultats ci-dessous : une erreur d'un millionième de seconde provoque une erreur de ... mètres sur la position. C'est la raison pour laquelle des horloges de grande précision sont embarquées à bord des satellites G.P.S ; ce sont des horloges atomiques (basées sur des transitions énergétiques au sein de l'atome) qui tiennent compte des effets de la relativité (restreinte et générale) découverts par Einstein en 1905.
 
 ```Python
 >>> distance(064036.261116,064036.328451)
