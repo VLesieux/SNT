@@ -72,7 +72,7 @@ De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours
 ```Python
 #  Implémentation  de  l’algorithme  de  Dijkstra
 
-#  Graphe 1 est le graphe correspondant à l'exemple du document pdf
+#  Graphe 1 est le graphe correspondant à l'exemple du document pdf ; il faudra donc l'adapter à notre exemple
 
 Graphe1 = [
           [0,2,5,False,3,False,False],
