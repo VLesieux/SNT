@@ -19,10 +19,12 @@ Le repérage par satellites des différents points de la Terre a modifié consid
 
 Pour situer un point sur la surface terrestre, on utilise des coordonnées géographiques appelées latitude et longitude qui sont des angles exprimés en degrés.
 
+<img src="Assets/Geodesie.png.png">
+
 La **latitude** d'un point est l'angle δ sur le schéma ci-dessous qui varie de - 90° au pôle Sud à + 90° au pôle Nord et renseigne sur la position par rapport à l'équateur de latitude 0°.
 La **longitude** d'un point est l'angle θ sur le schéma ci-dessous qui varie de - 180° à + 180° et mesure l'angle par rapport au méridien de Greenwich (Le méridien de Greenwich fut adopté comme standard international en octobre 1884 à la conférence internationale du méridien de Washington. En contrepartie de l'adoption du méridien de Greenwich, les Britanniques se sont engagés à adopter le système métrique, adhérant à la Convention du Mètre la même année) .
 
-<img width="400" height="400" src="Assets/coordonnees.png">
+<img src="Assets/coordonnees.png">
 
 On peut aussi préciser l'**altitude** d'un lieu qui est mesurée par rapport au niveau de la mer.
 
@@ -44,7 +46,7 @@ Il faut à priori 3 satellites pour pouvoir localiser l'utilisateur à l'interse
 
 <img src="Assets/GPS_Sphere.png">
 
-La difficulté est de synchroniser les horloges des satellites et celle du récepteur. Une erreur d'un millionième de seconde provoque une erreur de 300 mètres sur la position. Le récepteur ne peut bien entendu pas bénéficier d'une horloge atomique comme les satellites ; il doit néanmoins disposer d'une horloge assez stable, mais dont l'heure n'est a priori pas synchronisée avec celle des satellites. Les signaux de quatre satellites au moins sont nécessaires pour déterminer ce décalage, puisqu'il faut résoudre un système d'au moins quatre équations mathématiques à quatre inconnues qui sont la position dans les trois dimensions plus le décalage de l'horloge du récepteur avec l'heure GPS. 
+La difficulté est de synchroniser les horloges des satellites et celle du récepteur. Une erreur d'un millionième de seconde provoque une erreur de 300 mètres sur la position (cf. exercice 2). Le récepteur ne peut bien entendu pas bénéficier d'une horloge atomique comme les satellites ; il doit néanmoins disposer d'une horloge assez stable, mais dont l'heure n'est a priori pas synchronisée avec celle des satellites. Les signaux de quatre satellites au moins sont nécessaires pour déterminer ce décalage, puisqu'il faut résoudre un système d'au moins quatre équations mathématiques à quatre inconnues qui sont la position dans les trois dimensions plus le décalage de l'horloge du récepteur avec l'heure GPS. 
 
 ### Bases de données cartographiques
 

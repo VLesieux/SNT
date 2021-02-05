@@ -7,14 +7,28 @@ En utilisant openStreetMap, dire ce que l'on peut trouver aux coordonnées (lati
 
 ### Exercice 2
 
+On rappelle le code pour faire les doctests.
+
+```Python
+if __name__ == '__main__':
+  import doctest
+  doctest.testmod(verbose=True)
+```
+
 En Python, écrire une fonction `distance` telle que si un satellite a envoyé à l'instant t1 un signal, qui ensuite a été reçu à l'instant t2 par un récepteur, `distance(t1,t2)` renvoie la distance entre le satellite et le récepteur exprimée en km.
-Les dates t1 et t2 sont données en heure UTC 
-exemple : 064036.261116   : Trame envoyée à 06 h 40 min 36.261116 s
+Les dates t1 et t2 sont données en heure UTC.     
+exemple : 064036.261116 signifie que la trame a été envoyée à 06 h 40 min 36.261116 s.
 Valeur exacte de la célérité de la lumière : c=299.792,458 km/s
 
 ```Python
->>> print(distance(064036.261116,064036.328451))
-20200.499999918975
+def distance(t1,t2):
+    """
+    Renvoie la distance calculée à partir de la date d'émission t1 du signal émis par le satellite et la date t2 de réception du calculateur du G.P.S
+    param : t1 : float
+    param : t2 : float
+    return : float
+    >>> distance(064036.261116,064036.3284959)
+    20199.98584068947
 ```
 
 Le GPS comprend au moins 24 satellites circulant à 20 200 km d'altitude. Ils se répartissent sur six orbites distinctes à raison de quatre satellites par orbite.
@@ -24,10 +38,10 @@ Le GPS comprend au moins 24 satellites circulant à 20 200 km d'altitude. Ils se
 Compléter la phrase au vue de l'exemple ci-dessous : une erreur d'un millionième de seconde provoque une erreur de ... mètres sur la position.
 
 ```Python
->>> print(distance(064036.261116,064036.328451))
-20200.499999918975
->>> print(distance(064036.261116,064036.328452))
-20200.800000020536
+>>> distance(064036.261116,064036.328451)
+20186.52515934903
+>>> distance(064036.261116,064036.328452)
+20186.824951908522
 ```
 
 ### Exercice 3
