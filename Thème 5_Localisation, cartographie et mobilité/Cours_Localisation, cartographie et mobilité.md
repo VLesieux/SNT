@@ -83,9 +83,8 @@ Quel est le plus court chemin pour aller de Grenoble à Mâcon ?
 
 En énumérant tous les chemins possibles, on voit que le chemin Grenoble - Chambéry - Lyon - Mâcon, de longueur 60+110+70=240 km est le plus court.
 
-Cependant, énumérer toutes les possibilités pour une carte réelle prendrait trop de temps ; l'algorithm de Dijkstra procède de façon plus intelligente, en calculant la distance de la ville de départ à toutes les autres villes de proche en proche.
+Cependant, énumérer toutes les possibilités pour une carte réelle prendrait trop de temps ; l'algorithme de Dijkstra procède de façon plus intelligente, en calculant la distance de la ville de départ à toutes les autres villes de proche en proche. (cf. exercice 7)
 
-On trouvera [ici](Assets/Algorithme_Dijkstra.pdf) un développement de l'algorithme.
 
 ### Trame NMEA
 
