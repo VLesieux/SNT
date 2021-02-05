@@ -17,8 +17,9 @@ if __name__ == '__main__':
 
 En Python, écrire une fonction `distance` telle que si un satellite a envoyé à l'instant t1 un signal, qui ensuite a été reçu à l'instant t2 par un récepteur, `distance(t1,t2)` renvoie la distance entre le satellite et le récepteur exprimée en km.
 Les dates t1 et t2 sont données en heure UTC.     
-exemple : 064036.261116 signifie que la trame a été envoyée à 06 h 40 min 36.261116 s.
-Valeur exacte de la célérité de la lumière : c=299.792,458 km/s
+exemple : 064036.261116 signifie que la trame a été envoyée à 06 h 40 min 36.261116 s.      
+
+On donne la valeur exacte de la célérité de la lumière : c=299.792,458 km/s
 
 ```Python
 def distance(t1,t2):
