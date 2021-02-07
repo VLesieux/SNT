@@ -45,7 +45,7 @@ Compléter la phrase au vu des résultats ci-dessous : une erreur d'un millioni�
 20186.824951908522
 ```
 
-C'est la raison pour laquelle des horloges de grande précision sont embarquées à bord des satellites G.P.S ; ce sont des horloges atomiques (basées sur des transitions énergétiques électronique au sein de l'atome) qui tiennent compte des effets de la relativité (restreinte et générale) découverts par Einstein en 1905.
+C'est la raison pour laquelle des horloges de grande précision sont embarquées à bord des satellites G.P.S ; ce sont des horloges atomiques (basées sur des transitions énergétiques électroniques au sein de l'atome (césium Cs) qui tiennent compte des effets de la relativité : restreinte (le temps ne s'écoule pas au même rythme à bord du satellite animé d'une grande vitesse par rapport à la Terre) et générale (la gravité joue également sur l'écoulement du temps) découverts par Einstein en 1905.
 
 ### Exercice 3
 
