@@ -78,13 +78,13 @@ De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours
 
 ### Exercice 7
 
-1) Trouver "à la main" le plus court chemin de A à B dans le graphe suivant et donner sa longueur (chaque arête possède une longueur exprimée en km).
+1) Déterminer "au jugé" le plus court chemin de A à B dans le graphe suivant et donner sa longueur (chaque arête possède une longueur exprimée en km).
 
 <img width="600" height="300" src="Assets/chemin_plus_court.png">
 
 2) En utilisant l'algorithme de Dijkstra explicité dans ce [document](http://vfsilesieux.free.fr/Dijkstra.pdf), retrouver le plus court chemin de A à B.
 
-3) L'implémentation en Python de cet algorithme est donnée ci-dessous. Ajouter deux fonctions au programme `distance_deux_points(graphe,i,j)` et `distance_totale(graphe,liste)` pour que le programme retourne également la longueur du chemin le plus court. Retrouvez ainsi vos résultats précédents.
+3) L'implémentation en Python de cet algorithme est donnée ci-dessous. Ajouter deux fonctions à ce programme : `distance_deux_points(graphe,i,j)` et `distance_totale(graphe,liste)` pour que le programme retourne également la longueur du chemin le plus court. Retrouvez ainsi vos résultats précédents.
 
 ```Python
 #  Implémentation  de  l’algorithme  de  Dijkstra
