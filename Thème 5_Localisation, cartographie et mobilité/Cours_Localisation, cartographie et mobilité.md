@@ -76,7 +76,7 @@ L'algorithme de Dijkstra, inventé par Edsger Dijkstra en 1959, est l'un des plu
 
 Exemple : considérons un exemple simplifié de graphe :
 
-<img src="Assets/graphe_carte.png">
+<img width="400" height="400" src="Assets/graphe_carte.png">
 
 Sur ce graphe, on voit que la distance Lyon - Saint-Étienne est de 60 km.
 Quel est le plus court chemin pour aller de Grenoble à Mâcon ?
