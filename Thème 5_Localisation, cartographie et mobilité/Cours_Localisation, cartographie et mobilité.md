@@ -72,7 +72,7 @@ Les cartes numériques et de géolocalisation ont grandement simplifié la reche
 
 Pour ce faire, un algorithme, appelé **algorithme du plus court chemin**, est utilisé. Il existe de nombreuses façons de calculer un plus court chemin, plus ou moins efficaces suivant le type de carte.
 
-L'algorithme de Dijkstra, inventé par Edsger Dijkstra en 1959, est l'un des plus connus. Cet algorithme utilise un graphe où chaque sommet représente une position (ville par exemple) et chaque arête représente une route possédant une longueur donnée.
+L'**algorithme de Dijkstra**, inventé par Edsger Dijkstra en 1959, est l'un des plus connus. Cet algorithme utilise un graphe où chaque sommet représente une position (ville par exemple) et chaque arête représente une route possédant une longueur donnée.
 
 Exemple : considérons un exemple simplifié de graphe :
 
