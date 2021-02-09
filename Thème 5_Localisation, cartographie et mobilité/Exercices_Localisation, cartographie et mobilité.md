@@ -30,6 +30,7 @@ def distance(t1,t2):
     return : float
     >>> distance(064036.261116,064036.3284959)
     20199.98584068947
+     """
 ```
 
 Le GPS comprend au moins 24 satellites circulant à 20 200 km d'altitude. Ils se répartissent sur six orbites distinctes à raison de quatre satellites par orbite.
