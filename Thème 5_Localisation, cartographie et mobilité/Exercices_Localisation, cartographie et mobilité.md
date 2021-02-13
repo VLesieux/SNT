@@ -135,8 +135,7 @@ def ajout_ligne(T,S_marques,Graphe) :
     param : T : list
     param : S_marques : list
     param : Graphe : list
-    return : list, list
-    
+    return : list, list    
     """
     L = T[-1]
     n = len(L)
