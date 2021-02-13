@@ -222,8 +222,8 @@ def distance_totale(graphe,i,j):
     >>> distance_totale(Graphe1,0,6)
     7
     """
-	pass
-
+    pass
+    
 
 if __name__ == '__main__':
   import doctest
