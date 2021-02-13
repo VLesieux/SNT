@@ -103,39 +103,36 @@ Graphe1 = [
           [False,8,False,5,False,1,False]
           ]
 
-def ligneInit(Graphe,depart) :
-#Renvoie  la  première  ligne  du  tableau
-    L = []
-#  nombre  de  lignes  de  Graphe  donc  nombre  de  sommets
-    n = len(Graphe)
-    for j in range(n) :
-        poids = Graphe[depart][j]
-        if poids :
-#  si  l’arête  est  présente
-            L.append([ poids, depart ])
-        else :
-            L.append(False)
-    return [L]
-
 def SommetSuivant(T, S_marques) :
-#En  considérant  un  tableau  et  un  ensemble  de  sommets  marqués, détermine  le  prochain  sommet  marqué.
+    """
+    En  considérant  un  tableau  et  un  ensemble  de  sommets  marqués, détermine  le  prochain  sommet  marqué.
+    param : T : list
+    param : S_marques : list
+    return : int
+    >>> T=[[False, [2, 0], [5, 0], False, [3, 0], False, False],[False, False, [4, 1], [3, 1], [3, 0], False, [10, 1]]]
+    >>> S_marques=[0,1]
+    >>> SommetSuivant(T, S_marques)
+    3
+    """
     L = T[-1]
     n = len(L)
 #  minimum  des  longueurs,  initialisation
-    min = False
+    minimum = False
     for i in range(n) :
         if not(i in S_marques) :
 #  si  le  sommet  d’indice  i  n’est  pas  marqué
             if L[i]:
-                if not(min) or L[i][0] < min :
+                if not(minimum) or L[i][0] < minimum :
 #  on  trouve  un  nouveau  minimum
 #  ou  si  le  minimum  n’est  pas  défini
-                    min = L[i][0]
+                    minimum = L[i][0]
                     marque = i
     return(marque)
 
 def ajout_ligne(T,S_marques,Graphe) :
-#Ajoute  une  ligne  supplémentaire  au  tableau  """"""
+    """
+    Ajoute  une  ligne  supplémentaire  au  tableau
+    """
     L = T[-1]
     n = len(L)
 #  La  prochaine  ligne  est  une  copie  de  la  précédente, #  dont  on  va  modifier  quelques  valeurs.
@@ -160,7 +157,11 @@ def ajout_ligne(T,S_marques,Graphe) :
     return T, S_marques
 
 def calcule_tableau(Graphe, depart) :
-#Calcule  le  tableau  de  l’algorithme  de  Dijkstra  """"""
+    """
+    Calcule  le  tableau  de  l’algorithme  de  Dijkstra
+    param : Graphe : list
+    param : depart : int
+    """
     n = len(Graphe)
 #  Initialisation  de  la  première  ligne  du  tableau
 #  Avec  ces  valeurs,  le  premier  appel  à  ajout_ligne
@@ -174,7 +175,14 @@ def calcule_tableau(Graphe, depart) :
     return T
 
 def plus_court_chemin(Graphe, depart, arrivee) :
-#Détermine  le  plus  court  chemin  entre  depart  et  arrivee  dans le  Graphe""""""
+    """
+    Détermine  le  plus  court  chemin  entre  depart  et  arrivee  dans le  Graphe
+    param : Graphe : list
+    param : depart : int
+    param : arrivee : int
+    >>> plus_court_chemin(Graphe1,0,6)
+    [0, 1, 2, 5, 6]
+    """
     n = len(Graphe)
 #  calcul  du  tableau  de  Dijkstra
     T = calcule_tableau (Graphe,depart)
@@ -185,10 +193,35 @@ def plus_court_chemin(Graphe, depart, arrivee) :
 #  Renverse  C,  pour  qu’elle  soit  plus  lisible
     C.reverse()
     return C
-    
->>> plus_court_chemin(Graphe1,0,6)
-[0, 1, 2, 5, 6]
 
+def distance_deux_points(Graphe,i,j):
+    """
+    Renvoie la distance entre deux sommets i et j
+    param : Graphe : list
+    param : i : int
+    param : j : int
+    return : int
+    >>> distance_deux_points(Graphe1,0,2)
+    5
+    """
+    pass
+
+def distance_totale(graphe,i,j):
+    """
+    Renvoie la distance correspondant au chemin le plus court du sommet i au sommet j
+    param : graphe : list
+    param : i : int
+    param : j : int
+    >>> distance_totale(Graphe1,0,6)
+    7
+    """
+	pass
+
+
+if __name__ == '__main__':
+  import doctest
+  doctest.testmod(verbose=True)    
+ 
 ```
 
 
