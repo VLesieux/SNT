@@ -132,6 +132,11 @@ def SommetSuivant(T, S_marques) :
 def ajout_ligne(T,S_marques,Graphe) :
     """
     Ajoute  une  ligne  supplémentaire  au  tableau
+    param : T : list
+    param : S_marques : list
+    param : Graphe : list
+    return : list, list
+    
     """
     L = T[-1]
     n = len(L)
@@ -161,6 +166,7 @@ def calcule_tableau(Graphe, depart) :
     Calcule  le  tableau  de  l’algorithme  de  Dijkstra
     param : Graphe : list
     param : depart : int
+    return : list
     """
     n = len(Graphe)
 #  Initialisation  de  la  première  ligne  du  tableau
@@ -180,6 +186,7 @@ def plus_court_chemin(Graphe, depart, arrivee) :
     param : Graphe : list
     param : depart : int
     param : arrivee : int
+    return : list
     >>> plus_court_chemin(Graphe1,0,6)
     [0, 1, 2, 5, 6]
     """
@@ -212,6 +219,7 @@ def distance_totale(graphe,i,j):
     param : graphe : list
     param : i : int
     param : j : int
+    return : list
     >>> distance_totale(Graphe1,0,6)
     7
     """
