@@ -60,8 +60,60 @@ En utilisant Géoportail et l'outil "calculer un itinéraire", trouver le temps 
 ### Exercice 5
 
 Donner l'heure et les coordonnées d'acquisition de la trame NMEA 0183 suivante :
-$GPGLL,4835.07,N,235.47,E,203712,A
+'$GPGLL,4835.07,N,235.47,E,203712,A'
 
+Écrire la fonction `exploitation_trame` définie ci-dessous : 
+
+```Python
+
+def exploitation_trame(trame):
+    """
+    Renvoie la position géographique de façon textuelle à partir de la trame
+    param : trame : string
+    return : string
+    >>> exploitation_trame("$GPGLL,4916.45,N,12311.12,W,225444,A")
+    'position géographique : latitude : 49 deg. 16.45 min. N ; longitude : 123 deg. 11.12 min. W ; acquisition : 22:54:44 UTC'    
+    """
+    pass
+    
+if __name__ == '__main__':
+  import doctest
+  doctest.testmod(verbose=True)
+  
+```
+
+Indications :
+
+- Pour transformer une chaîne de caractères en liste en utilisant un séparateur, afin d'en prélever ensuite un élement
+
+```Python
+>>> "poisson,chien,chat".split(",")
+['poisson', 'chien', 'chat']
+>>> "poisson,chien,chat".split(",")[1]
+'chien'
+```
+
+- Pour extraire une partie d'une chaîne de caractères à l'aide d'un `slicing`
+
+```Python
+>>> "poisson"[3:5]
+'ss'
+>>> "poisson"[3:]
+'sson'
+>>> "poisson"[:3]
+'poi'
+>>> "poisson"[-3:]
+'son'
+>>> "poisson"[:-3]
+'pois'
+```
+
+- Pour accoler ou concaténer plusieurs morceaux de texte, utiliser l'opérateur + :
+
+```Python
+>>> "requin"+"-"+"marteau"
+'requin-marteau'
+```
 ### Exercice 6
 
 Il y a plus de 2000 ans, le scientifique grec Ératosthène invente la discipline de la géographie dont le terme est encore utilisé aujourd'hui ; il a même réussi à estimer la circonférence de la Terre.
