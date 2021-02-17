@@ -126,7 +126,7 @@ De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours
 
 1. En utilisant l'égalité des angles alternes et internes, estimer la circonférence de la Terre en fonction de l'angle α et de la longueur de l'arc qui joint A à S. On rappelle que la longueur s d'un arc de cercle de rayon R sous-tendu par un angle α est donnée par la relation : s=R·α à condition d'exprimer α en radian. On retrouve ainsi l'expression bien connue du périmètre d'un cercle : p=2π·R avec π=180°.
 2. Donner la valeur de la circonférence de la Terre calculée par Ératosthène. 
-3. Estimer l'erreur relative commise en utilisant la valeur connue du rayon moyen de la Terre : 6 371 km. Le pourcentage d'erreur relative entre une valeur expérimentale e<sub>exp</sub> et une valeur théorique e<sub>théo</sub> est donnée par : 100×|e<sub>exp</sub>-e<sub>théo</sub>|/e<sub>théo</sub>.
+3. Estimer l'erreur relative commise en utilisant la valeur connue du rayon moyen de la Terre : 6 371 km. Le pourcentage d'erreur relative entre une valeur expérimentale e<sub>exp</sub> et une valeur théorique e<sub>théo</sub> est donné par : 100×|e<sub>exp</sub>-e<sub>théo</sub>|/e<sub>théo</sub>.
 
 
 ### Exercice 7
