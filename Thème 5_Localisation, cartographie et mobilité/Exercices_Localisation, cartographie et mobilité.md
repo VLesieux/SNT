@@ -136,6 +136,7 @@ De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours
 <img width="600" height="300" src="Assets/chemin_plus_court.png">
 
 2) En utilisant l'algorithme de Dijkstra explicité dans ce [document](http://vfsilesieux.free.fr/Dijkstra.pdf), retrouver le plus court chemin de A à B.
+Compléter le fichier [Tableau.odt](Assets/Tableau.odt).
 On peut résumer ainsi la construction du tableau : pour passer d'une ligne à l'autre, on détermine le sommet à marquer en retenant le sommet pour lequel on a la plus petite distance, puis pour chacune des colonnes des sommets non marqués, on écrit la distance (si elle existe, sinon False) entre le sommet marqué et les sommets non marqués si celle-ci est strictement inférieure à la valeur de la ligne précédente ; on précise également la provenance correspondant au sommet marqué.
 Pour obtenir le résultat final, on part du sommet d'arrivée et on remonte en passant par les provenances.
 
@@ -198,17 +199,17 @@ def ajout_ligne(T,S_marques,Graphe) :
 #  sommet  dont  on  va  étudier  les  voisins
     S = S_marques[-1]
 #  la  longueur  du  (plus  court)  chemin  associé
-    long = L[S][0]
+    retenue = L[S][0]
     for j in range(n) :
         if j not in S_marques:
             poids = Graphe[S][j]
             if poids :
 #  si  l’arète  (S,j)  est  présente
                 if not(L[j]) :  #  L[j]  =  False
-                    Lnew[j] = [ long + poids, S ]
+                    Lnew[j] = [ retenue + poids, S ]
                 else :
-                    if long + poids < L[j][0]:
-                        Lnew[j] = [ long + poids, S ]
+                    if retenue + poids < L[j][0]:
+                        Lnew[j] = [ retenue + poids, S ]
     T.append(Lnew)
 #  Calcul  du  prochain  sommet  marqué
     S_marques.append(SommetSuivant(T, S_marques))
