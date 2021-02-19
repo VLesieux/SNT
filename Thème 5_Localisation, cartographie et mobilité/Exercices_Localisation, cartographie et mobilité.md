@@ -135,7 +135,7 @@ De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours
 
 <img width="600" height="300" src="Assets/chemin_plus_court.png">
 
-2) En utilisant l'algorithme de Dijkstra explicité dans ce [document](Assets/Dijkstra.pdf), retrouver le plus court chemin de A à B.
+2) En utilisant l'algorithme de Dijkstra explicité dans ce [document](Assets/Dijkstra.pdf), retrouver "à la main" le plus court chemin de A à B.
 Compléter le fichier [Tableau.odt](Assets/Tableau.odt).    
 
 On peut résumer ainsi la construction du tableau : pour passer d'une ligne à l'autre, on détermine le sommet à marquer en retenant le sommet pour lequel on a la plus petite distance, puis pour chacune des colonnes des sommets non marqués, on écrit la distance (si elle existe, sinon False) entre le sommet marqué et le sommet non marqué si, après addition de la retenue, celle-ci est strictement inférieure à la valeur inscrite dans la ligne précédente ; on précise également la provenance correspondant au sommet marqué.
