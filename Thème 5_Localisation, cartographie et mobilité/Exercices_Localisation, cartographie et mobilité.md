@@ -131,7 +131,7 @@ De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours
 
 ### Exercice 7
 
-1) Déterminer "au jugé" le plus court chemin de A à B dans le graphe suivant et donner sa longueur (chaque arête possède une longueur exprimée en km).
+1) Déterminer "au jugé" le plus court chemin de A à B dans le graphe suivant et donner sa longueur (chaque arête possède une longueur exprimée par exemple en km).
 
 <img width="600" height="300" src="Assets/chemin_plus_court.png">
 
