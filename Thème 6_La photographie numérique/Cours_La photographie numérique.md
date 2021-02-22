@@ -1,5 +1,7 @@
 ## Thème 7 : La photographie numérique
 
+On trouvera [ici](Assets/Photography.pdf) un document complet en anglais portant sur le sujet de la photographie.
+
 ### Introduction
 
 L'apparition de la photographie numérique a bouleversé notre rapport à l'image et à ses utilisations. L'imagerie astronomique, pour sa part, a gagné en précision grâces aux capteurs photographiques.
@@ -12,7 +14,7 @@ L'apparition de la photographie numérique a bouleversé notre rapport à l'imag
 - 1975 : Premiers appareils numériques
 - 2007 : Arrivée du smartphone
 
-### Capture de l'image
+### Capture et numérisation de l'image
 
 La capture de l'image par un appareil photographique numérique est similaire à celle par l'œil humain : l'objectif avec ses lentilles joue un rôle analogue au cristallin de l'œil et permet de projeter l'image sur la rétine analogue au capteur CCD. Le diaphragme, tout comme l'iris de l'œil, permet de réguler la quantité de lumière qui entre par l'objectif.
 La mise au point de l'appareil photographique diffère néanmoins de l'accommodation de l'œil ; dans le premier cas la lentille ou les lentilles se déplacent, dans le second les muscles ciliaires appuient sur le critallin ; plus celui-ci est bombé, plus le cristallin est convergent.
@@ -38,6 +40,8 @@ La **définition d'une image** est le nombre de pixels constituant l'image. Par 
 Remarque : il n'y a pas nécessairement le même nombre de pixels sur l'image que de photosites sur le capteur. Cela dépend des algorithmes utilisés lors du dématriçage. La définition du capteur peut donc être différente de la définition de l'image.
 
 La **résolution d'une image** quant à elle correspond au nombre de pixels par unité de longueur. Elle est généralement exprimée en ppp (pixel par pouce) ou ppi (pixel per inch) ou dpi (dot per inch) pour les imprimantes. Plus la résolution est importante, plus l'image sera de bonne qualité lors d'un zoom. On obtient une très bonne qualité d'impression avec une résolution de 300 ppi par exemple ; tandis que les écrans d'ordinateur ont désormais généralement une résolution entre 85 et 150 ppi. Cependant certains smartphones ont désormais des écrans avec une très bonne résolution avec par exemple 326 ppi.
+
+Voir [exercice](Assets/Exercice_physique.pdf)
 
 ### Le codage RVB des couleurs
 
