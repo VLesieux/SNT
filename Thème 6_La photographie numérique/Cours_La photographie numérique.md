@@ -35,20 +35,20 @@ Une fois l'image capturée, les informations reçues par chaque photosite permet
 Les données subissent ensuite plusieurs traitements, notamment le **dématriçage**, afin d'obtenir une image numérique (format JPEG ou TIFF) constituée de petits carrés de couleur : les pixels.
 
 La **définition d'une image** est le nombre de pixels constituant l'image. Par exemple, une image contenant 2592 pixels en largeur et 1936 pixels en hauteur (2592×1936) a une définition de 5 018 112 pixels, soit environ 5 Mpx (mégapixels).
-Remarque : il n'y a pas nécessairement le même nombre de pixels sur l'image que de photosites sur le capteur.Cela dépend des algorithmes utilisés lors du dématriçage. La définition du capteur peut donc être différente de la définition de l'image.
+Remarque : il n'y a pas nécessairement le même nombre de pixels sur l'image que de photosites sur le capteur. Cela dépend des algorithmes utilisés lors du dématriçage. La définition du capteur peut donc être différente de la définition de l'image.
 
 La **résolution d'une image** quant à elle correspond au nombre de pixels par unité de longueur. Elle est généralement exprimée en ppp (pixel par pouce) ou ppi (pixel per inch) ou dpi (dot per inch) pour les imprimantes. Plus la résolution est importante, plus l'image sera de bonne qualité lors d'un zoom. On obtient une très bonne qualité d'impression avec une résolution de 300 ppi par exemple ; tandis que les écrans d'ordinateur ont désormais généralement une résolution entre 85 et 150 ppi. Cependant certains smartphones ont désormais des écrans avec une très bonne résolution avec par exemple 326 ppi.
 
 ### Le codage RVB des couleurs
 
 Une image peut être considérée comme un tableau de pixels. La couleur de chaque pixel peut être codée sur 3 octets selon les trois composantes : rouge, vert et bleu.
-On parle de **codage RVB ou RGB** pour Red-Green-Blue). Il s'agit pour chacune des trois composantes d'indiquer l'intensité lumineuse de la couleur par un nombre compris entre 0 et 255. En effet, chaque couleur est codée sur 1 octet formé de 8 bits ce qui offre 2<sup>8</sup>=256 possibilités de niveau de couleur pour le rouge, autant pour le vert et le bleu soit une totalité de 2<sup>8</sup>×2<sup>8</sup>×2<sup>8</sup>=2<sup>24</sup>=16 777 216 couleurs. 
+On parle de **codage RVB ou RGB** pour Red-Green-Blue. Il s'agit pour chacune des trois composantes d'indiquer l'intensité lumineuse de la couleur par un nombre compris entre 0 et 255. En effet, chaque couleur est codée sur 1 octet formé de 8 bits ce qui offre 2<sup>8</sup>=256 possibilités de niveau de couleur pour le rouge, autant pour le vert et le bleu soit une totalité de 2<sup>8</sup>×2<sup>8</sup>×2<sup>8</sup>=2<sup>24</sup>=16 777 216 couleurs. 
 Ainsi le rouge est codé par (255,0,0) ; le vert par (0,255,0) ; le bleu par (0,0,255).
 L'égalité des trois niveaux correspond à des niveaux de gris, il y en a donc 256.
 
 On trouvera [ici](http://isnangellier.alwaysdata.net/php/colours.html) le codage des couleurs.
 
-Remarque :  le codage RVB des couleurs n'est pas le seul codage possible. Lorsqu'on code une page web par exemple, dans la feuille de style CSS on peut aussi donner la couleur voulue ou utilisée le codage HEX (hexadécimal) de cette couleur. On trouvera [ici](http://vfsilesieux.free.fr/exemple_page_web/page_web.html) une page html dont on pourra regarder le code source qui démontre que trois types codages des couleurs dans le CSS sont possibles pour un résultat analogue, par exemple : green, rgb(0,128,0) ou #008000. 
+Remarque :  le codage RVB des couleurs n'est pas le seul codage possible. Lorsqu'on code une page web par exemple, dans la feuille de style CSS on peut aussi donner la couleur voulue ou utilisée en utilisant le codage hexadécimal de cette couleur. On trouvera [ici](http://vfsilesieux.free.fr/exemple_page_web/page_web.html) une page html dont on pourra regarder le code source qui démontre que trois types codages des couleurs dans le CSS sont possibles pour un résultat analogue, par exemple : green, rgb(0,128,0) ou #008000. 
 
 ### Métadonnées
 
@@ -61,7 +61,7 @@ Un fichier RAW, JPEG ou TIFF ne contient pas uniquement des données permettant 
 
 ### Algorithmes de traitement de l'image
 
-Entre le moment où l'on presse le bouton de l'appareil numérique pour déclencher une prise de vue et la pulication de l'image sur un réseau social, de nombreux algorithmes ont été réalisés.
+Entre le moment où l'on presse le bouton de l'appareil numérique pour déclencher une prise de vue et la publication de l'image sur un réseau social, de nombreux algorithmes ont été réalisés.
 
 - Avant même le déclenchement de la prise de vue : 
 
