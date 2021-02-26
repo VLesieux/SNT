@@ -4,7 +4,7 @@ On trouvera [ici](Assets/Photography.pdf) un document complet en anglais portant
 
 ### Introduction
 
-L'apparition de la photographie numérique a bouleversé notre rapport à l'image et à ses utilisations. L'imagerie astronomique, pour sa part, a gagné en précision grâces aux capteurs photographiques.
+L'apparition de la photographie numérique a bouleversé notre rapport à l'image et à ses utilisations. L'imagerie astronomique, pour sa part, a gagné en précision grâce aux capteurs photographiques.
 
 ### Historique
 
@@ -16,8 +16,8 @@ L'apparition de la photographie numérique a bouleversé notre rapport à l'imag
 
 ### Capture et numérisation de l'image
 
-La capture de l'image par un appareil photographique numérique est similaire à celle par l'œil humain : l'objectif avec ses lentilles joue un rôle analogue au cristallin de l'œil et permet de projeter l'image sur la rétine analogue au capteur CCD. Le diaphragme, tout comme l'iris de l'œil, permet de réguler la quantité de lumière qui entre par l'objectif.
-La mise au point de l'appareil photographique diffère néanmoins de l'accommodation de l'œil ; dans le premier cas la lentille ou les lentilles se déplacent, dans le second les muscles ciliaires appuient sur le critallin ; plus celui-ci est bombé, plus le cristallin est convergent.
+La capture de l'image par un appareil photographique numérique est similaire à celle par l'œil humain : l'objectif avec ses lentilles joue un rôle analogue au cristallin de l'œil et permet de projeter l'image sur la rétine qui joue un rôle analogue au capteur CCD. Le diaphragme, tout comme l'iris de l'œil, permet de réguler la quantité de lumière qui entre par l'objectif.
+La mise au point de l'appareil photographique diffère néanmoins de l'accommodation de l'œil ; dans le premier cas la lentille ou les lentilles se déplacent, dans le second les muscles ciliaires appuient sur le critallin en modifiant sa vergence ; plus celui-ci est bombé, plus le cristallin est convergent.
 
 
 
@@ -52,7 +52,7 @@ L'égalité des trois niveaux correspond à des niveaux de gris, il y en a donc 
 
 On trouvera [ici](http://isnangellier.alwaysdata.net/php/colours.html) le codage des couleurs.
 
-Remarque :  le codage RVB des couleurs n'est pas le seul codage possible. Lorsqu'on code une page web par exemple, dans la feuille de style CSS on peut aussi donner la couleur voulue ou utilisée en utilisant le codage hexadécimal de cette couleur. On trouvera [ici](http://vfsilesieux.free.fr/exemple_page_web/page_web.html) une page html dont on pourra regarder le code source qui démontre que trois types codages des couleurs dans le CSS sont possibles pour un résultat analogue, par exemple : green, rgb(0,128,0) ou #008000. 
+Remarque :  le codage RVB des couleurs n'est pas le seul codage possible. Lorsqu'on code une page web par exemple, dans la feuille de style CSS on peut aussi préciser la couleur en utilisant le codage hexadécimal de cette couleur. On trouvera [ici](http://vfsilesieux.free.fr/exemple_page_web/page_web.html) une page html dont on pourra regarder le code source qui démontre que trois types codages des couleurs dans le CSS sont possibles pour un résultat analogue, par exemple : green, rgb(0,128,0) ou #008000. 
 
 ### Métadonnées
 
