@@ -87,8 +87,9 @@ Entre le moment où l'on presse le bouton de l'appareil numérique pour déclenc
 	Une fois l'image enregistrée on peut encore utiliser différents algorithmes grâce à des logiciels de retouche afin de corriger des imperfections, améliorer le rendu des couleurs ou passer en noir et blanc, découper des zones de l'image (détection des contours) etc.
 	
 
-Avec Python, on peut récupérer les données portant sur les pixels d'une image en utilisant `image.getpixel((x,y))` : cf. ex 5
-Avec JavaScript on peut récupérer les données concernant les pixels d'une image en écrivant `ctx.getImageData(0,0,500,500)` pour une image de taille 500*500 : cf. ex 6
+Avec Python, on peut récupérer les données portant sur les pixels d'une image en utilisant `image.getpixel((x,y))` : cf. ex 5.  
+
+Avec JavaScript on peut récupérer les données concernant les pixels d'une image en écrivant `ctx.getImageData(0,0,500,500)` pour une image de taille 500*500 : cf. ex 6.
 	
 ### Droit à l'image - droit d'auteur
 
