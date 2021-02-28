@@ -48,5 +48,8 @@ On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pd
 
 ### Exercice 6
 
-1. Comprendre l'algorithme développé [ici](http://isnangellier.alwaysdata.net/php/Algorithme_localisation_quelconque.html).
-2. Analyser le code source de la [page html](http://isnangellier.alwaysdata.net/php/melange.html) suivante et procéder à une réalisation similaire. 
+Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.
+
+1. On trouvera [ici](http://isnangellier.alwaysdata.net/php/Transformations_image.html) différentes transformations à réaliser en modifiant les pixels d'une image.
+2. Comprendre l'algorithme développé [ici](http://isnangellier.alwaysdata.net/php/Algorithme_localisation_quelconque.html).
+3. Analyser le code source de la [page html](http://isnangellier.alwaysdata.net/php/melange.html) suivante et procéder à une réalisation similaire. 
