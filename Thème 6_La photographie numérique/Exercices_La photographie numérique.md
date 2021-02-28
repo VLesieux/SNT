@@ -53,7 +53,7 @@ Dans cet exercice nous allons utiliser la possibilité de modifier les données 
 1. On trouvera [ici](http://isnangellier.alwaysdata.net/php/Transformations_image.html) différentes transformations à réaliser en modifiant les pixels d'une image.
 2. Réaliser le traitement permettant d'obtenir le résultat suivant :
 
-<img width="650" height="500" src="Assets/Transformation_4_tetes.png">
+<img src="Assets/Transformation_4_tetes.png">
 
 3. Comprendre l'algorithme développé [ici](http://isnangellier.alwaysdata.net/php/Algorithme_localisation_quelconque.html).
 4. Analyser le code source de la [page html](http://isnangellier.alwaysdata.net/php/melange.html) suivante et procéder à une réalisation similaire. 
