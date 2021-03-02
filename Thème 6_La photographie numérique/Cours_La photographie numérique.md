@@ -17,8 +17,7 @@ L'apparition de la photographie numérique a bouleversé notre rapport à l'imag
 ### Capture et numérisation de l'image
 
 La capture de l'image par un appareil photographique numérique est similaire à celle par l'œil humain : l'objectif avec ses lentilles joue un rôle analogue au cristallin de l'œil et permet de projeter l'image sur la rétine qui joue un rôle analogue au capteur CCD. Le diaphragme, tout comme l'iris de l'œil, permet de réguler la quantité de lumière qui entre par l'objectif.
-La mise au point de l'appareil photographique diffère néanmoins de l'accommodation de l'œil ; dans le premier cas la lentille ou les lentilles se déplacent, dans le second les muscles ciliaires appuient sur le critallin en modifiant sa vergence ; plus celui-ci est bombé, plus le cristallin est convergent.
-
+La mise au point de l'appareil photographique diffère néanmoins de l'accommodation de l'œil ; dans le premier cas la lentille ou les lentilles se déplacent, dans le second les muscles ciliaires appuient sur le critallin en modifiant sa vergence ; plus celui-ci est bombé, plus le cristallin est convergent, plus sa vergence (qui est l'inverse de sa distance focale f'=OF' où F' désigne le foyer image où converge un faisceau incident de lumière parallèle).
 
 
 <img width="650" height="500" src="Assets/analogie_oeil_camera.png">
