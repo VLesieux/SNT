@@ -1,6 +1,6 @@
 ## Thème 7 : La photographie numérique
 
-On trouvera [ici](Assets/Photography.pdf) un document complet en anglais portant sur le sujet de la photographie.
+On trouvera [ici](http://vfsilesieux.free.fr/Photography.pdf) un document complet en anglais portant sur le sujet de la photographie.
 
 ### Introduction
 
