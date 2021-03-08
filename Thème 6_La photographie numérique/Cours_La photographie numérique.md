@@ -1,7 +1,7 @@
 ## Thème 7 : La photographie numérique
 
-On trouvera [ici](http://vfsilesieux.free.fr/Photography.pdf) un document complet en anglais portant sur le sujet de la photographie provenant de la revue scientifique New Scientist.
-En pratique, on pourra ouvrir sur l'écran deux fenêtres avec un [dictionnaire en ligne](https://www.macmillandictionary.com/) et y faire un copier-coller des mots inconnus.
+On trouvera [ici](http://vfsilesieux.free.fr/Photography.pdf) un document complet et illustré portant sur le sujet de la photographie provenant de la revue scientifique New Scientist.
+(En pratique, on pourra ouvrir sur l'écran deux fenêtres avec un [dictionnaire en ligne](https://www.macmillandictionary.com/) et y faire un copier-coller pour rechercher les mots inconnus).
 
 ### Introduction
 
@@ -9,7 +9,7 @@ L'apparition de la photographie numérique a bouleversé notre rapport à l'imag
 
 ### Historique
 
-- 1826 : Naissance de la photographie argentique
+- 1826 : Première photographie argentique de Nicéphore Niépce
 - 1900 : Début de la photographie en couleur. Généralisation du format 24×36 et de la visée reflex après la seconde guerre mondiale.
 - 1969 : Premiers capteurs CCD (Charge Coupled Device)
 - 1975 : Premiers appareils numériques
