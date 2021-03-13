@@ -10,6 +10,7 @@ if __name__ == '__main__':
 
 On donne la présentation usuelle pour la `docstring` d'une fonction à travers un exemple :
 
+```Python
 def eleve_au_carre(n):
     """
     renvoie le carré du nombre entier n
@@ -19,6 +20,7 @@ def eleve_au_carre(n):
     16
     """
     return n**2
+ ```
 
 ### Exercice 1
 
