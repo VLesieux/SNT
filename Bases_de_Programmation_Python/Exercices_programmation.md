@@ -1,6 +1,6 @@
 ## Exercices de programmation
 
-Il est demandé d'écrire les docstring pour toutes les fonctions réalisées en écrivant quelques résultats escomptés en sortie et de les vérifier en important le module `doctest` avec le code ci-dessous.
+Il est demandé d'écrire les `docstrings` pour toutes les fonctions réalisées en écrivant quelques résultats escomptés en sortie et de les vérifier en important le module `doctest` avec le code ci-dessous.
 
 ```Python
 if __name__ == '__main__':
