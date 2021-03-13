@@ -182,10 +182,13 @@ On sera amené à utiliser la fonction `abs()` qui donne la valeur absolue d'un 
 
 ### Exercice 12 
 
-Traiter l'[exercice1 du sujet n°3](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_03/21_NSI_03.pdf) de la banque des sujets de Terminale NSI.
+Traiter l'[exercice1 du sujet n°3](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_03/21_NSI_03.pdf) de la banque des sujets de Terminale NSI ; il s'agit de programmer la fonction multiplication en utilisant uniquement les opérations addition et soustraction.
 
+### Exercice 13 
 
-### Exercice 13 (DM)
+Traiter l'[exercice1 du sujet n°5](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_05/21_NSI_05.pdf) de la banque des sujets de Terminale NSI ; il s'agit d'écrire une fonction permettant de passer de l'écriture binaire d'un entier à sa valeur décimale.
+
+### Exercice 14 (DM)
 
 Écrire une fonction  `lancers` telle que `lancers(n)` simule n lancers d'un dé équilibré à 6 faces et renvoie le résultat sous forme de liste.
 On importera la bibliothèque `random` pour pouvoir appeler la fonction `randint` de cette bibliothèque, telle que random.randint(n,p) renvoie un entier aléatoire entre n et p, n et p étant compris.
@@ -210,7 +213,7 @@ On importera la bibliothèque `random` pour pouvoir appeler la fonction `randint
 Indications : dans la fonction `lancers(n)`, créer d'abord une liste vide à laquelle on ajoute autant de fois qu'il y a de lancers réalisés, c'est-à-dire n fois, au moyen de la méthode `append`,  les résultats des tirages au sort en utilisant `random.randint` ; comme l'action est répétitive puisqu'il y a n lancers, on utilise une boucle `for..in range..`. La liste ainsi complétée est renvoyée à l'issue de la boucle par la fonction au moyen de `return`.
 
 
-### Exercice 14 (DM)
+### Exercice 15 (DM)
 
 Écrire une fonction `piece` telle que `piece(n)` simule n lancers d'une pièce équilibrée et renvoie la fréquence des "piles" observés.
 
@@ -223,7 +226,7 @@ Indications : dans la fonction `lancers(n)`, créer d'abord une liste vide à la
 Indications : dans le même esprit que l'exercice précédent, mais cette fois-ci avec une pièce et non un dé, on place dans la fonction une variable qui sert de compteur initialement à 0 qui se charge de compter les piles (on peut décider que pile c'est la sortie de 1 et que face c'est la sortie de 0); à la fin des n lancers on renvoie la proportion de "piles" parmi les n lancers.
 
 
-### Exercice 15 (DM)
+### Exercice 16 (DM)
 
 Écrire une fonction `truquee` telle que `truquee(n,p)` simule n lancers d'une pièce truquée, dont la probabilité de faire "piles" vaut p, et renvoie la fréquence des "piles" observées.
 
@@ -247,7 +250,7 @@ La fonction int() donne en effet la partie entière du nombre.
 0.60069
 ```
 
-### Exercice 16
+### Exercice 17
 
 Que fait la fonction `trace` définie ci-dessous ?
 Dans un premier temps, répondre sans exécuter le programme.
@@ -261,7 +264,7 @@ def trace(n,larg):
         forward(larg*i)
 ```
 
-### Exercice 17 (DM)
+### Exercice 18 (DM)
 
 Écrire un programme qui permet de tracer des triangles en spirales.
 
