@@ -50,12 +50,11 @@ On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pd
 
 Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.
 
-1. On trouvera [ici](http://isnangellier.alwaysdata.net/php/Transformations_image.html) différentes transformations à réaliser en modifiant les pixels d'une image.
-2. Réaliser le traitement permettant d'obtenir le résultat suivant :
+1. On trouvera [ici](http://isnangellier.alwaysdata.net/php/Transformations_image.html) différentes transformations réalisées en modifiant les pixels d'une image.
+Réaliser le traitement permettant d'obtenir le résultat suivant :
 
 <img src="Assets/Transformation_4_tetes.png">
 
-3. Comprendre l'algorithme permettant de réaliser un [effet de loupe.](http://isnangellier.alwaysdata.net/php/Algorithme_loupe.html)
-4. Comprendre l'algorithme permettant de repérer le [positionnement d'un point à l'intérieur d'un contour polygonal quelconque](http://isnangellier.alwaysdata.net/php/Algorithme_localisation_quelconque.html).
-5. Analyser le code source de la [page html](http://isnangellier.alwaysdata.net/php/melange.html) suivante et procéder à une réalisation similaire. 
-6. On trouve sur le site chess.com une [application](https://www.chess.com/vision) permettant de progresser dans le repérage des cases du jeu. Proposer une réalisation similaire.
+2. Comprendre l'algorithme permettant de réaliser un [effet de loupe.](http://isnangellier.alwaysdata.net/php/Algorithme_loupe.html)
+3. Comprendre l'algorithme permettant de repérer le [positionnement d'un point à l'intérieur d'un contour polygonal quelconque](http://isnangellier.alwaysdata.net/php/Algorithme_localisation_quelconque.html).
+4. Analyser le code source de la [page html](http://isnangellier.alwaysdata.net/php/melange.html) suivante et procéder à une réalisation similaire. 
