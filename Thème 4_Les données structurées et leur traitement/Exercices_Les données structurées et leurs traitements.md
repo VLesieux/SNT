@@ -71,29 +71,8 @@ def fonction3(table,nom):
     return False
 
 ```
-Répondre d'abord "à la main" aux questions suivantes à la lecture du code puis vérifiez avec Thonny en utilisant la console puis réaliser les docstrings des fonctions.
 
-On rappelle le code pour faire les doctests.
-
-```Python
-if __name__ == '__main__':
-  import doctest
-  doctest.testmod(verbose=True)
-```
-
-On rappelle la présentation usuelle pour la docstring d'une fonction à travers un exemple :
-
-```Python
-def eleve_au_carre(n):
-    """
-    renvoie le carré du nombre entier n
-    param : n : int
-    return : int
-    >>> eleve_au_carre(4)
-    16
-    """
-    return n**2
-```
+Répondre d'abord "à la main" aux questions suivantes à la lecture du code puis vérifiez avec Thonny en utilisant la console puis réaliser les `docstrings` des fonctions.
 
 1. Quel est le rôle de `fonction1` et que renvoie `fonction1(fruits)` ? Faire la docstring de cette fonction avec le test `fonction1(fruits)`.
 2. Quel est le rôle de `fonction2` et que renvoie `fonction2(fruits,1,'rouge')` ? Faire la docstring de cette fonction avec le test `fonction2(fruits,1,'rouge')`.

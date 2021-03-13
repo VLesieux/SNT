@@ -8,6 +8,18 @@ if __name__ == '__main__':
   doctest.testmod(verbose=True)
 ```
 
+On donne la présentation usuelle pour la `docstring` d'une fonction à travers un exemple :
+
+def eleve_au_carre(n):
+    """
+    renvoie le carré du nombre entier n
+    param : n : int
+    return : int
+    >>> eleve_au_carre(4)
+    16
+    """
+    return n**2
+
 ### Exercice 1
 
 Une entreprise fournit des ramettes de papier à prix dégressif en fonction du nombre de lots achetés : les 50 premiers lots sont vendus 3,68€, au-delà chaque lot est vendu 3,22€. Écrire une fonction `prix(n)` qui lorsqu'on saisit le nombre `n` de lots achetés retourne (avec un return) le prix à payer puis procéder à l'affichage (avec un print) du résultat.
