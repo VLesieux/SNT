@@ -20,33 +20,19 @@ On rappelle que la **résolution** d'un écran est la densité de pixels affich�
 
 ### Exercice 3
 
-La **luminance** est une grandeur correspondant à la sensation visuelle de luminosité ; la luminance varie entre 0 pour le noir et 1 pour le blanc pris comme référence, la pondération est basée sur la sensibilité de l'oeil humain.
-Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul de la luminance se calcule à l'aide de la formule L = 0,2126 × R + 0,7152 × V + 0,0722 × B.
+La **luminance** relative est une grandeur correspondant à la sensation visuelle de luminosité ; elle varie entre 0 pour le noir et 1 pour le blanc pris comme référence, la pondération est basée sur la sensibilité de l'oeil humain  ; le vert contribue le plus à l'intensité perçue par l'œil humain et le bleu le moins.
+Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul de la luminance se calcule à l'aide de la formule L = (0,2126 × R + 0,7152 × V + 0,0722 × B)/255.
+
 Écrire une fonction en Python telle que `lum(couleur)` qui renvoie la valeur de la luminance, lorsque la couleur est donnée sous forme d'un triplet (r,v,b).
 Donner sa valeur dans le cas du blanc (255,255,255), du rose clair (255,192,203) et du bordeaux (165,42,42).
 
 ### Exercice 4
 
-On souhaite convertir une photographie couleur en noir et blanc. Les niveaux de gris s'obtiennent avec les codes RVB de la forme (x,x,x), c'est-à-dire avec la même composante de rouge, de vert et de bleu.
-Pour convertir les couleurs en niveaux de gris, on peut utiliser la valeur de la luminance donnée dans l'exercice précédent : si le code RVB de la couleur est (R,V,B) et L la luminance, on utilise le code RVB(L',L',L') où L' est la partie entière de L.
-
-Écrire une fonction Python telle que `niveau_gris(couleur)` qui renvoie le code RVB du niveau de gris correspondant puis la tester sur le rose clair et le bordeaux.
-On utilisera la fonction floor du module `math` en saisissant la commande `from math import floor`. 
-`floor(x)` renvoie la partie entière du nombre flottant x.
-
-```Python
-from math import floor
->>> floor(2.78)
-2
-```
-
-### Exercice 5
-
 Dans cet exercice nous allons utiliser le module Image de la librairie PIL de Python.
 
 On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) les différentes traitements d'une même image.
 
-### Exercice 6
+### Exercice 5
 
 Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.    
 On trouvera [ici](http://isnangellier.alwaysdata.net/php/Transformations_image.html) différentes transformations réalisées en modifiant les pixels d'une image.
