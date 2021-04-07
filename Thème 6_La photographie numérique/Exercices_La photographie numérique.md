@@ -32,7 +32,7 @@ Dans cet exercice nous allons utiliser le module Image de la librairie PIL de Py
 
 On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) différents traitements possibles d'une image.
 
-Application : réaliser les drapeaux suivants portant un liseré noir :
+Application : réaliser les drapeaux suivants (200×200) portant un liseré noir :
 
 - France : <img width="50" height="50" src="Assets/Drapeau_france.jpg">
 - Belgique : <img width="50" height="50" src="Assets/Drapeau_belge.jpg">
