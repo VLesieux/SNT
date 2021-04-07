@@ -30,7 +30,7 @@ Donner sa valeur dans le cas du blanc (255,255,255), du rose clair (255,192,203)
 
 Dans cet exercice nous allons utiliser le module Image de la librairie PIL de Python.
 
-On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) les différentes traitements d'une image.
+On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) différents traitements possibles d'une image.
 
 Application : réaliser les drapeaux suivants portant un liseré noir :
 
