@@ -32,6 +32,14 @@ Dans cet exercice nous allons utiliser le module Image de la librairie PIL de Py
 
 On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) les différentes traitements d'une image.
 
+Application : réaliser les drapeaux suivants portant un liseré noir :
+
+- France : <img width="50" height="50" src="Assets/Drapeau_france.jpg">
+- Belgique : <img width="50" height="50" src="Assets/Drapeau_belge.jpg">
+- Hollande : <img width="50" height="50" src="Assets/Drapeau_hollande.jpg">
+- Suisse : <img width="50" height="50" src="Assets/Drapeau_suisse.jpg">
+- Japon : <img width="50" height="50" src="Assets/Drapeau_japon.jpg">
+
 ### Exercice 5
 
 Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.    
