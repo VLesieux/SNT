@@ -190,7 +190,7 @@ Traiter l'[exercice1 du sujet n°5](https://github.com/VLesieux/NSI-Terminale/bl
 
 ### Exercice 14 
 
-Traiter l'[exercice1 du sujet n°8](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_08/21_NSI_08.pdf) de la banque des sujets de Terminale NSI ; il s'agit d'écrire une fonction permettant de passer de l'écriture binaire d'un entier à sa valeur décimale.
+Traiter l'[exercice1 du sujet n°8](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_09/21_NSI_09.pdf) de la banque des sujets de Terminale NSI ; il s'agit d'écrire une fonction permettant de calculer la moyenne d'une série de notes coefficientées.
 
 ### Exercice 15 (DM)
 
