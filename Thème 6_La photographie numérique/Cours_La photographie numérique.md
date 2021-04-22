@@ -23,7 +23,6 @@ La mise au point de l'appareil photographique diffère néanmoins de l'accommoda
 
 <img width="650" height="500" src="Assets/analogie_oeil_camera.png">
 
-
 La rétine est constitué de cellules photosensibles : les cônes (bleus, rouges, verts), qui permettent d'analyser les différentes couleurs de l'image en vision diurne (elles sont sensibles à des domaines spécifiques du spectre visible) et les bâtonnets pour la vision nocturne.
 
 <img width="650" height="500" src="Assets/cones.png">

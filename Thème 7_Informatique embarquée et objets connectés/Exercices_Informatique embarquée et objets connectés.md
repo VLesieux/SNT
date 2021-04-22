@@ -150,3 +150,7 @@ La prise de décision aboutit ensuite à une action qui active ou désactive cer
 3. Quels sont les actionneurs mentionnées ?
 4. À votre avis, quels intérêts apportent les voitures autonomes ?
 5. À votre avis, à quelles difficultés se heurtent l'introduction des voitures autonomes ?
+
+### Exercice 6
+
+[Prise en main d’un microcontrôleur](https://phychim.ac-versailles.fr/spip.php?article1076) : la carte ARDUINO.
