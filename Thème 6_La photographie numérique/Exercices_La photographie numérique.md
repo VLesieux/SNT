@@ -40,6 +40,34 @@ Application : réaliser les programmes permettant d'obtenir les drapeaux suivant
 - Suisse : <img width="50" height="50" src="Assets/Drapeau_suisse.jpg">
 - Japon : <img width="50" height="50" src="Assets/Drapeau_japon.jpg">
 
+Code pour la réalisation du drapeau français ; l'image se formera dans le dossier où a été enregistré le programme dont le code est le suivant :
+
+```python
+
+from PIL import Image
+
+def drapeau_france():
+    (colonne,ligne)=(200,200)
+    imagearrivee=Image.new('RGB',(colonne,ligne))
+    for x in range(colonne):
+        for y in range(ligne):
+            if x<200/3:
+                imagearrivee.putpixel((x,y),(0,0,255))
+            elif x>200/3 and x<400/3:
+                imagearrivee.putpixel((x,y),(255,255,255))
+            else:
+                imagearrivee.putpixel((x,y),(255,0,0))
+    for x in range(colonne):
+        imagearrivee.putpixel((x,0),(0,0,0))
+        imagearrivee.putpixel((x,199),(0,0,0))
+    for y in range(ligne):
+        imagearrivee.putpixel((0,y),(0,0,0))
+        imagearrivee.putpixel((199,y),(0,0,0)) 
+    imagearrivee.save("Drapeau_france.jpg")
+
+drapeau_france()
+```
+
 ### Exercice 5
 
 Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.    
