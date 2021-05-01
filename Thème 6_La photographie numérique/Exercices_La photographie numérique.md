@@ -70,8 +70,9 @@ drapeau_france()
 
 ### Exercice 5
 
-Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.    
-On trouvera [ici](http://isnangellier.alwaysdata.net/php/Transformations_image.html) différentes transformations à réaliser en modifiant les pixels d'une image.
+Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.  
+  
+1. On trouvera [ici](http://isnangellier.alwaysdata.net/php/Transformations_image.html) différentes transformations à réaliser en modifiant les pixels d'une image.
 
 `imageData = ctx1.getImageData(0,0,500,500);`    
 
@@ -100,10 +101,9 @@ On trouvera [ici](http://isnangellier.alwaysdata.net/php/Transformations_image.h
 
 `imageData.data[((n-1)*500+p-1)*4+3]` permet d'atteindre le niveau de transparence du pixel situé à l'intersection de la ligne n et de la colonne p
 
-1. Réaliser le traitement permettant d'obtenir le résultat suivant :
+2. Réaliser le traitement permettant d'obtenir le résultat suivant :
 
 <img src="Assets/Transformation_4_tetes.png">
 
-2. Comprendre l'algorithme permettant de réaliser un [effet de loupe.](http://isnangellier.alwaysdata.net/php/Algorithme_loupe.html)
 3. Comprendre l'algorithme permettant de repérer le [positionnement d'un point à l'intérieur d'un contour polygonal quelconque](http://isnangellier.alwaysdata.net/php/Algorithme_localisation_quelconque.html).
 4. Analyser le code source de la [page html](http://isnangellier.alwaysdata.net/php/melange.html) suivante et procéder à une réalisation similaire. 
