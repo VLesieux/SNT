@@ -90,13 +90,13 @@ On trouvera [ici](http://isnangellier.alwaysdata.net/php/Transformations_image.h
 `for (n=1;n<=500;n++) {`
 `for (p=1;p<=500;p++) {` permet de balayer les n lignes et les p colonnes de l'image de taille 500*500
 
-`imageData.data[((n-1)*500+500-p+1)*4];` permet d'atteindre le niveau de rouge du pixel situé à l'intersection de la ligne n et de la colonne p
+`imageData.data[((n-1)*500+p-1)*4];` permet d'atteindre le niveau de rouge du pixel situé à l'intersection de la ligne n et de la colonne p
 
-`imageData.data[((500-n-1)*500+p-1)*4+1]` permet d'atteindre le niveau de vert du pixel situé à l'intersection de la ligne n et de la colonne p
+`imageData.data[((n-1)*500+p-1)*4+1]` permet d'atteindre le niveau de vert du pixel situé à l'intersection de la ligne n et de la colonne p
 
-`imageData.data[((500-n-1)*500+p-1)*4+2]` permet d'atteindre le niveau de bleu du pixel situé à l'intersection de la ligne n et de la colonne p
+`imageData.data[(n-1)*500+p-1)*4+2]` permet d'atteindre le niveau de bleu du pixel situé à l'intersection de la ligne n et de la colonne p
 
-`imageData.data[((500-n-1)*500+p-1)*4+1]` permet d'atteindre le niveau de vert du pixel situé à l'intersection de la ligne n et de la colonne p
+`imageData.data[((n-1)*500+p-1)*4+3]` permet d'atteindre le niveau de transparence du pixel situé à l'intersection de la ligne n et de la colonne p
 
 1. Réaliser le traitement permettant d'obtenir le résultat suivant :
 
