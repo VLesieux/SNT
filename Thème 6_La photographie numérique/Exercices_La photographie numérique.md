@@ -71,9 +71,10 @@ drapeau_france()
 ### Exercice 5
 
 Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.    
-On trouvera [ici](http://isnangellier.alwaysdata.net/php/Transformations_image.html) différentes transformations réalisées en modifiant les pixels d'une image.
+On trouvera [ici](http://isnangellier.alwaysdata.net/php/Transformations_image.html) différentes transformations à réaliser en modifiant les pixels d'une image.
 
-`imageData = ctx1.getImageData(0,0,500,500);` 
+`imageData = ctx1.getImageData(0,0,500,500);`    
+
 `imageData` représente la collection des informations pour chacun des pixels du contexte ctx1 de l'image.
 
 `imageData.data[i]` représente le niveau de rouge du pixel i ;
