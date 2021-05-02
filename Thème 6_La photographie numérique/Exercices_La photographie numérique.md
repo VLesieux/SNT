@@ -68,6 +68,53 @@ def drapeau_france():
 drapeau_france()
 ```
 
+Autre application : le drapeau des Seychelles (situé dans l'ouest de l'océan Indien et rattaché au continent africain) peut être réalisé approximativement ainsi <img width="200" height="200" src="Assets/drapeau_seychelles.jpg">
+
+On peut proposer le programme suivant à compléter.
+En travaillant avec des listes `couleurs` et `valeurs`, on fait l'économie d'écrire toutes les conditions et on synthètise ainsi en une seule condition.
+
+```python
+
+from PIL import Image
+
+import math # on importe le module math pour utiliser math.pi et la fonction math.tan
+
+couleurs=[(0,255,0),.......### à compléter (1) ##########................]
+
+alpha=####### à compléter (2) (l'angle exprimé en radian en fonction de math.pi qui représente 180°) ##########################
+
+Valeurs=[0,........ ########### à compléter (3) ###########################
+
+def drapeau_seychelles():
+    (colonne,ligne)=(200,200)
+    imagearrivee=Image.new('RGB',(colonne,ligne))
+    for x in range(colonne):
+        for y in range(ligne):
+            X,Y=x,200-y #changement de repère pour avoir l'origine en bas à gauche
+            for i in range(5):
+                if Y>math.tan(alpha*Valeurs[i])*X and ############# à compléter (4) ##########:
+                    imagearrivee.putpixel((x,y),######## à compléter (5) ############)
+    
+    #le liseré noir
+    for x in range(colonne):
+        imagearrivee.putpixel((x,0),(0,0,0))
+        imagearrivee.putpixel((x,199),(0,0,0))
+    for y in range(ligne):
+        imagearrivee.putpixel((0,y),(0,0,0))
+        imagearrivee.putpixel((199,y),(0,0,0)) 
+    imagearrivee.save("drapeau_seychelles.jpg")
+    
+    
+drapeau_seychelles()
+
+```
+
+Explications : une droite passant par l'origine d'équation y=a×x partage l'espace en deux demi-plans ; les points du plan inférieur vérifient y<a×x tandis que les points du plan supérieur vérifient y>a×x.
+
+
+<img src="Assets/explications.png">
+
+
 ### Exercice 5
 
 Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.  
