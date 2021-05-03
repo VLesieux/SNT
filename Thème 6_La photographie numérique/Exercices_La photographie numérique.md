@@ -78,7 +78,7 @@ drapeau_france()
 Autre application : le drapeau des Seychelles (situé dans l'ouest de l'océan Indien et rattaché au continent africain) peut être réalisé approximativement ainsi <img width="200" height="200" src="Assets/drapeau_seychelles.jpg">
 
 On peut proposer le programme suivant à compléter.
-En travaillant avec des listes `couleurs` et `valeurs`, on fait l'économie d'écrire toutes les conditions et on synthètise en une seule ligne l'ensemble des conditions.
+En travaillant avec la liste `couleurs` et l'indice `i` qui permet de parcourir les différents secteurs angulaires, on fait l'économie d'écrire toutes les conditions et on synthètise en une seule ligne l'ensemble des conditions à remplir.
 
 ```python
 
