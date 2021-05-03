@@ -90,8 +90,6 @@ couleurs=[(0,255,0),.......### à compléter (1) ##########................]
 
 alpha=####### à compléter (2) (l'angle exprimé en radian en fonction de math.pi qui représente 180°) ##########################
 
-Valeurs=[0,........ ########### à compléter (3) ###########################
-
 def drapeau_seychelles():
     (colonne,ligne)=(200,200)
     imagearrivee=Image.new('RGB',(colonne,ligne))
@@ -99,8 +97,8 @@ def drapeau_seychelles():
         for y in range(ligne):
             X,Y=x,200-y #changement de repère pour avoir l'origine en bas à gauche
             for i in range(5):
-                if Y>math.tan(alpha*Valeurs[i])*X and ############# à compléter (4) ##########:
-                    imagearrivee.putpixel((x,y),######## à compléter (5) ############)
+                if Y>math.tan(alpha*i)*X and ############# à compléter (3) ##########:
+                    imagearrivee.putpixel((x,y),######## à compléter (4) ############)
     
     #le liseré noir
     for x in range(colonne):
