@@ -49,6 +49,10 @@ from PIL import Image
 def drapeau_france():
     (colonne,ligne)=(200,200)
     imagearrivee=Image.new('RGB',(colonne,ligne))
+    
+    # le parcours de toutes les lignes et colonnes de l'image 
+    # pour y implanter les pixels de notre choix
+    
     for x in range(colonne):
         for y in range(ligne):
             if x<200/3:
@@ -57,12 +61,15 @@ def drapeau_france():
                 imagearrivee.putpixel((x,y),(255,255,255))
             else:
                 imagearrivee.putpixel((x,y),(255,0,0))
+                
+    # le liseré noir
     for x in range(colonne):
         imagearrivee.putpixel((x,0),(0,0,0))
         imagearrivee.putpixel((x,199),(0,0,0))
     for y in range(ligne):
         imagearrivee.putpixel((0,y),(0,0,0))
         imagearrivee.putpixel((199,y),(0,0,0)) 
+        
     imagearrivee.save("Drapeau_france.jpg")
 
 drapeau_france()
@@ -103,7 +110,6 @@ def drapeau_seychelles():
         imagearrivee.putpixel((0,y),(0,0,0))
         imagearrivee.putpixel((199,y),(0,0,0)) 
     imagearrivee.save("drapeau_seychelles.jpg")
-    
     
 drapeau_seychelles()
 
