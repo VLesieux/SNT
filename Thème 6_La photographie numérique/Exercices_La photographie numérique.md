@@ -55,12 +55,12 @@ def drapeau_france():
     for x in range(colonne):
         for y in range(ligne):
             if x<200/3:
-                imagearrivee.putpixel((x,y),(0,0,255))
+                imagearrivee.putpixel((x,y),(0,0,255)) # le bleu
             elif x>200/3 and x<400/3:
-                imagearrivee.putpixel((x,y),(255,255,255))
+                imagearrivee.putpixel((x,y),(255,255,255)) # le blanc
             else:
-                imagearrivee.putpixel((x,y),(255,0,0))
-                
+                imagearrivee.putpixel((x,y),(255,0,0)) # le rouge
+                                
     # le liseré noir
     for x in range(colonne):
         imagearrivee.putpixel((x,0),(0,0,0))
