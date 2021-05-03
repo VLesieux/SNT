@@ -61,7 +61,8 @@ def drapeau_france():
             else:
                 imagearrivee.putpixel((x,y),(255,0,0)) # le rouge
                                 
-    # le liseré noir
+# le liseré noir qui borde le drapeau
+
     for x in range(colonne):
         imagearrivee.putpixel((x,0),(0,0,0))
         imagearrivee.putpixel((x,199),(0,0,0))
