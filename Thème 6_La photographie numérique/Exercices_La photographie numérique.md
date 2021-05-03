@@ -50,7 +50,7 @@ def drapeau_france():
     (colonne,ligne)=(200,200)
     imagearrivee=Image.new('RGB',(colonne,ligne))
     
-    # le parcours de toutes les lignes y et colonnes x de l'image pour implanter en (x,y) les pixels de notre choix
+    # le parcours de toutes les lignes y et colonnes x de l'image pour implanter en (x,y) le pixel de la couleur de notre choix exprimée dans le système (r,v,b)
     
     for x in range(colonne):
         for y in range(ligne):
