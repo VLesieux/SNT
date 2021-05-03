@@ -89,7 +89,7 @@ import math # on importe le module math pour utiliser math.pi et la fonction mat
 couleurs=[(0,255,0),.......### à compléter (1) ##########................]
 
 alpha=####### à compléter (2) (l'angle exprimé en radian en fonction de math.pi qui représente 180°)
-# on suppose l'angle commun pour tous les secteurs angulaires
+# on suppose l'angle alpha commun à tous les secteurs angulaires
 
 def drapeau_seychelles():
     (colonne,ligne)=(200,200)
