@@ -49,7 +49,7 @@ On parle de **codage RVB ou RGB** pour Red-Green-Blue. Il s'agit pour chacune de
 Ainsi le rouge est codé par (255,0,0) ; le vert par (0,255,0) ; le bleu par (0,0,255).
 L'égalité des trois niveaux correspond à des niveaux de gris, il y en a donc 256.
 
-On trouvera [ici](http://isnangellier.alwaysdata.net/php/colours.html) le codage des couleurs.
+On trouvera ici une application web permettant [le codage des couleurs](http://isnangellier.alwaysdata.net/php/colours.html) .
 
 Remarque :  le codage RVB des couleurs n'est pas le seul codage possible. Lorsqu'on code une page web par exemple, dans la feuille de style CSS on peut aussi préciser la couleur en utilisant le codage hexadécimal de cette couleur. On trouvera [ici](http://vfsilesieux.free.fr/exemple_page_web/page_web.html) une page html dont on pourra regarder le code source qui démontre que trois types codages des couleurs dans le CSS sont possibles pour un résultat analogue, par exemple : green, rgb(0,128,0) ou #008000. 
 

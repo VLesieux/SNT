@@ -38,9 +38,12 @@ Application : réaliser les programmes permettant d'obtenir les drapeaux suivant
 - Belgique : <img width="50" height="50" src="Assets/Drapeau_belge.jpg">
 - Hollande : <img width="50" height="50" src="Assets/Drapeau_hollande.jpg">
 - Suisse : <img width="50" height="50" src="Assets/Drapeau_suisse.jpg">
-- Japon : <img width="50" height="50" src="Assets/Drapeau_japon.jpg">
+- Japon : (Le disque rouge, qui représente le Soleil, se situe exactement au centre du drapeau et son diamètre est fixé au 3 / 5ème de la hauteur du drapeau ; les points à l'intérieur du disque ont la propriété d'être à une distance du centre inférieure au rayon du cercle) <img width="50" height="50" src="Assets/Drapeau_japon.jpg">
+- Niger : (Le diamètre du disque orange est égal aux trois quarts de la hauteur de la bande blanche) <img width="50" height="50" src="Assets/Drapeau_niger.jpg">
 
-Code pour la réalisation du drapeau français ; l'image se formera dans le dossier où a été enregistré le programme dont le code est le suivant :
+On trouvera ici une application web permettant [le codage des couleurs](http://isnangellier.alwaysdata.net/php/colours.html) .
+
+Code pour la réalisation du drapeau français ; l'image se formera dans même le dossier que le fichier à l'extension python, par exemple, drapeau.py, où a été enregistré le programme dont le code est le suivant :
 
 ```python
 
