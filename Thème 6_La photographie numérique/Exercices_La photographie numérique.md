@@ -26,7 +26,7 @@ Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul
 Écrire une fonction en Python telle que `lum(couleur)` qui renvoie la valeur de la luminance, lorsque la couleur est donnée sous forme d'un triplet (r,v,b).
 Donner sa valeur dans le cas du blanc (255,255,255), du rose clair (255,192,203) et du bordeaux (165,42,42).
 
-### Exercice 4
+### Exercice 4 : traitement d'une image numérique avec Python
 
 Dans cet exercice nous allons utiliser le module Image de la librairie **PIL** ou **pillow** de Python (à télécharger dans le menu outils du logiciel Thonny).
 
@@ -124,7 +124,7 @@ Explications : une droite passant par l'origine d'équation y=a×x partage l'esp
 <img src="Assets/explications.png">
 
 
-### Exercice 5
+### Exercice 5 : traitement d'une image dans le navigateur avec JavaScript
 
 Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.  
   
