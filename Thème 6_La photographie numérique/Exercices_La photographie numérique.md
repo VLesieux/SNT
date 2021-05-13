@@ -124,7 +124,7 @@ Explications : une droite passant par l'origine d'équation y=a×x partage l'esp
 <img src="Assets/explications.png">
 
 
-### Exercice 5 : traitement d'une image dans le navigateur avec JavaScript
+### Exercice 5 : traitement d'une image numérique dans le navigateur web avec JavaScript
 
 Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.  
   
