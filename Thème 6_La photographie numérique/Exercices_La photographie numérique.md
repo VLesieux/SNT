@@ -127,7 +127,7 @@ Explications : une droite passant par l'origine d'équation `y=a*x` partage l'es
 
 <img width="380" height="500" src="Assets/explications.png">
 
-- **le drapeau du Vietnam** :[voir les explications ](http://isnangellier.alwaysdata.net/php/Algorithme_localisation_quelconque.html)
+- **le drapeau du Vietnam** : [voir ici les explications ](http://isnangellier.alwaysdata.net/php/Algorithme_localisation_quelconque.html)
 
 <img width="200" height="200" src="Assets/Drapeau_vietnam.jpg">
 
@@ -137,7 +137,7 @@ from PIL import Image
 
 etoile=[[51.0,90.0],[89.0,90.0],[102.0,55.0],[113.0,90.0],[149.0,89.0],[119.0,113.0],[131.0,150.0],[100.0,127.0],[70.0,149.0],[80.0,112.0]]
 
-def verifie(x,y,contour):
+def verifie(X,Y,contour):
     calcul=0
     try:
         for i in range(len(contour)):            
@@ -154,13 +154,13 @@ def verifie(x,y,contour):
                 xB=contour[i+1][0]            
             if xB!=xA:
                 a=(yB-yA)/(xB-xA)
-                yK=(yA-a*xA)/(1-a*(x/y))
-                xK=(x/y)*yK
-                m=xK/x
+                yK=(yA-a*xA)/(1-a*(X/Y))
+                xK=(X/Y)*yK
+                m=xK/X
             else:
                 xK=xA
-                yK=(y/x)*xK
-                m=yK/y            
+                yK=(Y/X)*xK
+                m=yK/Y            
             if m>=0 and m<=1:
                 if xB!=xA:
                     t=(xK-xA)/(xB-xA)
