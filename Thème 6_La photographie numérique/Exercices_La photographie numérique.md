@@ -127,7 +127,8 @@ Explications : une droite passant par l'origine d'équation `y=a*x` partage l'es
 
 <img width="380" height="500" src="Assets/explications.png">
 
-- le drapeau du Vietnam 
+- le drapeau du Vietnam [voir les explications ](http://isnangellier.alwaysdata.net/php/Algorithme_localisation_quelconque.html)
+
 <img width="200" height="200" src="Assets/Drapeau_vietnam.jpg">
 
 ```python
