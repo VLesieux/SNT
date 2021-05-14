@@ -80,7 +80,9 @@ drapeau_france()
 
 Autres applications : 
 
-- le drapeau des Seychelles (situé dans l'ouest de l'océan Indien et rattaché au continent africain) peut être réalisé approximativement ainsi <img width="200" height="200" src="Assets/drapeau_seychelles.jpg">
+- le drapeau des Seychelles (situé dans l'ouest de l'océan Indien et rattaché au continent africain) peut être réalisé approximativement ainsi :   
+
+<img width="200" height="200" src="Assets/drapeau_seychelles.jpg">
 
 On peut proposer le programme suivant à compléter.
 En travaillant avec la liste `couleurs` et l'indice `i` qui permet de parcourir les différents secteurs angulaires, on fait l'économie d'écrire toutes les conditions et on synthètise en une seule ligne l'ensemble des conditions à remplir.
@@ -126,7 +128,7 @@ Explications : une droite passant par l'origine d'équation y=a×x partage l'esp
 <img width="500" height="500" src="Assets/explications.png">
 
 - le drapeau du Vietnam 
-<img width="200" height="200" src="Assets/Drapeau_vietnam.jpg">
+<img width="130" height="200" src="Assets/Drapeau_vietnam.jpg">
 
 ```python
 
