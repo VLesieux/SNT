@@ -43,7 +43,7 @@ Application : réaliser les programmes permettant d'obtenir les drapeaux suivant
 
 On trouvera ici une application web permettant [le codage des couleurs](http://isnangellier.alwaysdata.net/php/colours.html) .
 
-Code pour la réalisation du drapeau français ; l'image se formera dans même le dossier que le fichier à l'extension python, par exemple, drapeau.py, où a été enregistré le programme dont le code est le suivant :
+Code pour la réalisation du drapeau français ; l'image au format jpg, par exemple "Drapeau_france.jpg", se formera dans même le dossier que le fichier à l'extension python, par exemple, drapeau.py, où sera enregistré le programme dont le code est le suivant :
 
 ```python
 
