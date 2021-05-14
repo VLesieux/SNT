@@ -47,7 +47,7 @@ Code pour la réalisation du drapeau français ; l'image au format jpg, par exem
 
 ```python
 
-from PIL import Image
+from PIL import Image# importe le module Image de la bibliothèque PIL
 
 def drapeau_france():
     (colonne,ligne)=(200,200)
@@ -73,9 +73,9 @@ def drapeau_france():
         imagearrivee.putpixel((0,y),(0,0,0))
         imagearrivee.putpixel((199,y),(0,0,0)) 
         
-    imagearrivee.save("Drapeau_france.jpg")
+    imagearrivee.save("Drapeau_france.jpg")#enregistre l'image
 
-drapeau_france()
+drapeau_france()# lance le programme défini préalablement
 ```
 
 Autres applications : 
