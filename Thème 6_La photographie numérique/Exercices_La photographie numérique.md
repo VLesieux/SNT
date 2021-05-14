@@ -185,6 +185,8 @@ def drapeau_vietnam():
                 imagearrivee.putpixel((x,y),(255,255,0))
             else:
                 imagearrivee.putpixel((x,y),(255,0,0))
+                
+# le liseré noir
                
     for x in range(colonne):
         imagearrivee.putpixel((x,0),(0,0,0))
