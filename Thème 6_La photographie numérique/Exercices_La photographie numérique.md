@@ -136,38 +136,37 @@ from PIL import Image
 
 etoile=[[51.0,90.0],[89.0,90.0],[102.0,55.0],[113.0,90.0],[149.0,89.0],[119.0,113.0],[131.0,150.0],[100.0,127.0],[70.0,149.0],[80.0,112.0]]
 
-def verifie(x,y,liste):
+def verifie(x,y,contour):
     calcul=0
     try:
-        if x!=0 and y!=0:
-            for i in range(len(liste)):                
-                m,t=10,10               
-                if (i==len(liste)-1):
-                    yA=liste[i][1]
-                    yB=liste[0][1]
-                    xA=liste[i][0]
-                    xB=liste[0][0]
-                else:            
-                    yA=liste[i][1]
-                    yB=liste[i+1][1]
-                    xA=liste[i][0]
-                    xB=liste[i+1][0]            
+        for i in range(len(contour)):            
+            m,t=10,10            
+            if (i==len(contour)-1):
+                yA=contour[i][1]
+                yB=contour[0][1]
+                xA=contour[i][0]
+                xB=contour[0][0]
+            else:            
+                yA=contour[i][1]
+                yB=contour[i+1][1]
+                xA=contour[i][0]
+                xB=contour[i+1][0]            
+            if xB!=xA:
+                a=(yB-yA)/(xB-xA)
+                yK=(yA-a*xA)/(1-a*(x/y))
+                xK=(x/y)*yK
+                m=xK/x
+            else:
+                xK=xA
+                yK=(y/x)*xK
+                m=yK/y            
+            if m>=0 and m<=1:
                 if xB!=xA:
-                    a=(yB-yA)/(xB-xA)
-                    yK=(yA-a*xA)/(1-a*(x/y))
-                    xK=(x/y)*yK
-                    m=xK/x
+                    t=(xK-xA)/(xB-xA)
                 else:
-                    xK=xA
-                    yK=(y/x)*xK
-                    m=yK/y            
-                if m>=0 and m<=1:
-                    if xB!=xA:
-                        t=(xK-xA)/(xB-xA)
-                    else:
-                        t=(yK-yA)/(yB-yA)
-                if t>=0 and t<=1:
-                        calcul+=1 
+                    t=(yK-yA)/(yB-yA)
+            if t>=0 and t<=1:
+                    calcul+=1 
         if calcul%2==0:
             return False
         if calcul%2==1:
@@ -195,7 +194,9 @@ def drapeau_vietnam():
     imagearrivee.save("Drapeau_vietnam.jpg")
     
 drapeau_vietnam()
-    
+
+##### pour trouver les coordonnées des points du contour   
+
 #from turtle import *
 #
 #def get_mouse_click_coor(x, y):
