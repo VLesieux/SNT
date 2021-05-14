@@ -78,7 +78,9 @@ def drapeau_france():
 drapeau_france()
 ```
 
-Autre application : le drapeau des Seychelles (situé dans l'ouest de l'océan Indien et rattaché au continent africain) peut être réalisé approximativement ainsi <img width="200" height="200" src="Assets/drapeau_seychelles.jpg">
+Autres applications : 
+
+- le drapeau des Seychelles (situé dans l'ouest de l'océan Indien et rattaché au continent africain) peut être réalisé approximativement ainsi <img width="200" height="200" src="Assets/drapeau_seychelles.jpg">
 
 On peut proposer le programme suivant à compléter.
 En travaillant avec la liste `couleurs` et l'indice `i` qui permet de parcourir les différents secteurs angulaires, on fait l'économie d'écrire toutes les conditions et on synthètise en une seule ligne l'ensemble des conditions à remplir.
@@ -121,8 +123,95 @@ drapeau_seychelles()
 Explications : une droite passant par l'origine d'équation y=a×x partage l'espace en deux demi-plans ; les points du demi-plan inférieur vérifient y<a×x tandis que les points du demi-plan supérieur vérifient y>a×x.
 
 
-<img src="Assets/explications.png">
+<img width="500" height="500" src="Assets/explications.png">
 
+- le drapeau du Vietnam 
+<img width="200" height="200" src="Assets/Drapeau_vietnam.jpg">
+
+```python
+
+from PIL import Image
+
+etoile=[[51.0,90.0],[89.0,90.0],[102.0,55.0],[113.0,90.0],[149.0,89.0],[119.0,113.0],[131.0,150.0],[100.0,127.0],[70.0,149.0],[80.0,112.0]]
+
+def verifie(x,y,liste):
+    calcul=0
+    try:
+        if x!=0 and y!=0:
+            for i in range(len(liste)):                
+                m,t=10,10               
+                if (i==len(liste)-1):
+                    yA=liste[i][1]
+                    yB=liste[0][1]
+                    xA=liste[i][0]
+                    xB=liste[0][0]
+                else:            
+                    yA=liste[i][1]
+                    yB=liste[i+1][1]
+                    xA=liste[i][0]
+                    xB=liste[i+1][0]            
+                if xB!=xA:
+                    a=(yB-yA)/(xB-xA)
+                    yK=(yA-a*xA)/(1-a*(x/y))
+                    xK=(x/y)*yK
+                    m=xK/x
+                else:
+                    xK=xA
+                    yK=(y/x)*xK
+                    m=yK/y            
+                if m>=0 and m<=1:
+                    if xB!=xA:
+                        t=(xK-xA)/(xB-xA)
+                    else:
+                        t=(yK-yA)/(yB-yA)
+                if t>=0 and t<=1:
+                        calcul+=1 
+        if calcul%2==0:
+            return False
+        if calcul%2==1:
+            return True
+    except ZeroDivisionError:
+        return None
+
+def drapeau_vietnam():
+    (colonne,ligne)=(200,200)
+    imagearrivee=Image.new('RGB',(colonne,ligne))
+
+    for x in range(colonne):
+        for y in range(ligne):
+            if verifie(x,y,etoile):
+                imagearrivee.putpixel((x,y),(255,255,0))
+            else:
+                imagearrivee.putpixel((x,y),(255,0,0))
+               
+    for x in range(colonne):
+        imagearrivee.putpixel((x,0),(0,0,0))
+        imagearrivee.putpixel((x,199),(0,0,0))
+    for y in range(ligne):
+        imagearrivee.putpixel((0,y),(0,0,0))
+        imagearrivee.putpixel((199,y),(0,0,0)) 
+    imagearrivee.save("Drapeau_vietnam.jpg")
+    
+drapeau_vietnam()
+    
+#from turtle import *
+#
+#def get_mouse_click_coor(x, y):
+#    print(x-50, 200-(y+10))
+#
+#onscreenclick(get_mouse_click_coor)
+#
+#goto(100,100)
+#speed(1)
+#right(36)
+#for k in range(5):
+#    forward(100)
+#    left(144)
+#    print(position())
+#    
+#mainloop()
+
+```
 
 ### Exercice 5 : traitement d'une image numérique dans le navigateur web avec JavaScript
 
