@@ -223,7 +223,7 @@ drapeau_vietnam()
 
 Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.  
   
-1. On trouvera [ici](http://isnangellier.alwaysdata.net/php/Transformations_image.html) différentes transformations à réaliser en modifiant les pixels d'une image.
+1. On trouvera [ici différentes transformations ](http://isnangellier.alwaysdata.net/php/Transformations_image.html) à réaliser en modifiant les pixels d'une image.
 
 `imageData = ctx1.getImageData(0,0,500,500);`    
 
