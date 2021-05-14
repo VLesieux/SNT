@@ -195,7 +195,7 @@ def drapeau_vietnam():
     
 drapeau_vietnam()
 
-##### pour trouver les coordonnées des points du contour   
+##### pour trouver les coordonnées des points du contour de l'étoile à 5 branches   
 
 #from turtle import *
 #
