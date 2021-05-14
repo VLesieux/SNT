@@ -125,7 +125,7 @@ drapeau_seychelles()
 Explications : une droite passant par l'origine d'équation y=a×x partage l'espace en deux demi-plans ; les points du demi-plan inférieur vérifient y<a×x tandis que les points du demi-plan supérieur vérifient y>a×x.
 
 
-<img width="130" height="500" src="Assets/explications.png">
+<img width="380" height="500" src="Assets/explications.png">
 
 - le drapeau du Vietnam 
 <img width="200" height="200" src="Assets/Drapeau_vietnam.jpg">
