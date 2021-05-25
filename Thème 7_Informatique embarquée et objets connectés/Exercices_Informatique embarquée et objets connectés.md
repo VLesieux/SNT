@@ -154,3 +154,4 @@ La prise de décision aboutit ensuite à une action qui active ou désactive cer
 ### Exercice 6
 
 [Prise en main d’un microcontrôleur](https://phychim.ac-versailles.fr/spip.php?article1076) : la carte ARDUINO.
+Application : [réalisation d'un capacimètre](Assets/Capacimètre_Arduino.pdf) puis [système de detection de passager](Assets/systeme_de_detection_de_passager.pdf) 
