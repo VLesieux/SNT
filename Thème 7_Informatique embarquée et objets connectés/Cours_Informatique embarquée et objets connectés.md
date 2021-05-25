@@ -1,4 +1,4 @@
-## Thème 6 : Informatique embarquée et objets connectés
+## Thème 7 : Informatique embarquée et objets connectés
 
 ### Introduction
 
