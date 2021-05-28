@@ -106,12 +106,11 @@ fenetre.mainloop()#la méthode mainloop() permet de lancer un gestionnaire d’�
 
 Une méthode courante d'attaque informatique consiste à trouver un mot de passe par force rute, c'est-à-dire tester toutes les possibilités.
 
-Testez la sûreté des mots de passes potentiels sur https://password.kaspersky.com/
-Combien de temps faudrait-il pour le trouver par force brute ? Essayez avec majuscule, miniscule, chiffre, caractères spéciaux...
+Testez la sûreté de vos mots de passes potentiels sur https://password.kaspersky.com/
 
 ### Exercice 4
 
-On suppose l'existence d'une fonction `connexion` telle que `connexion(password)` permet de se connecter à un système et renvoie un booléen déterminant si le mot de passe entré est correct. Pour simplifier, on suppose que le mot de passe que vous avez choisi est un entier.
+Écrire une fonction `connexion` telle que `connexion(password)` permet de se connecter à un système et renvoie un booléen déterminant si le mot de passe entré est correct. Pour simplifier, on suppose que le mot de passe que vous avez choisi est un entier.
 
 Écrire une fonction `force_brute(n)` cherchant le mot de passe par force brute entre 0 et n. Cette fonction doit renvoyer le mot de passe s'il a été trouvé sinon afficher un message négatif.
 
@@ -155,4 +154,7 @@ La prise de décision aboutit ensuite à une action qui active ou désactive cer
 
 [Prise en main d’un microcontrôleur](https://phychim.ac-versailles.fr/spip.php?article1076) : la carte ARDUINO.  
 
-Application : [réalisation d'un capacimètre](Assets/Capacimetre_Arduino.pdf) puis [système de detection de passager](Assets/systeme_de_detection_de_passager.pdf) 
+Applications : 
+
+- [réalisation d'un capacimètre](Assets/Capacimetre_Arduino.pdf)
+- [système de detection de passager](Assets/systeme_de_detection_de_passager.pdf) 
