@@ -10,7 +10,7 @@ Recherchez combien d'objets sont connectés via votre box.
 ### Exercice 2
 
 On donne ici le code d'un jeu écrit en Python qui utilise la bibliothèque graphique tkinter.
-Expliquer comment l'interface du jeu a été créée et proposer éventuellement des améliorations personnelles.
+Expliquer comment l'interface du jeu a été créée et interpréter son fonctionnement.
 
 <img width="700" height="400" src="Assets/jeu.png">
 
@@ -113,6 +113,8 @@ Testez la sûreté de vos mots de passes potentiels sur https://password.kaspers
 Écrire une fonction `connexion` telle que `connexion(password)` permet de se connecter à un système et renvoie un booléen déterminant si le mot de passe entré est correct. Pour simplifier, on suppose que le mot de passe que vous avez choisi est un entier.
 
 Écrire une fonction `force_brute(n)` cherchant le mot de passe par force brute entre 0 et n. Cette fonction doit renvoyer le mot de passe s'il a été trouvé sinon afficher un message négatif.
+
+Remarque : cet exercice est l'occasion de différencier variable locale connue d'une fonction et variable globale connue par l'ensemble des fonctions du code.
 
 ### Exercice 5
 
