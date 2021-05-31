@@ -114,7 +114,7 @@ Testez la sûreté de vos mots de passes potentiels sur https://password.kaspers
 
 Écrire une fonction `force_brute(n)` cherchant le mot de passe par force brute entre 0 et n. Cette fonction doit renvoyer le mot de passe s'il a été trouvé sinon afficher un message négatif.
 
-Remarque : cet exercice est l'occasion de différencier variable locale connue d'une fonction et variable globale connue par l'ensemble des fonctions du code.
+Remarque : cet exercice est l'occasion de différencier **variable locale** connue d'une fonction et **variable globale** connue par l'ensemble des fonctions du code.
 
 ### Exercice 5
 
