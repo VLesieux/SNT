@@ -22,14 +22,17 @@ def eleve_au_carre(n):
     return n**2
  ```
 
+On n'hésitera pas également à ajouter des commentaires en les précédant du caractère # ; l'interpréteur Python ignore tout ce qui suit jusqu'à la fin de la ligne courante.
+On réalisera un fichier avec l'extension .py par exercice et on les rangera tous dans le même dossier.
+
 ### Exercice 1
 
-Dans un premier temps, écrire un script qui permet d'afficher sur une seule ligne, séparés par le caractère " ; ", les 20 premiers multiples de 7 en utilisant l'instruction while et le seul opérateur + . Pour afficher une variable sans changer de ligne et en insérant le caractère " ; ", on utilise l'instruction print(variable, end=" ; " ).   
+1) Dans un premier temps, écrire un script qui permet d'afficher sur une seule ligne, séparés par le caractère " ; ", les 20 premiers multiples de 7 en utilisant l'instruction while et le seul opérateur + . Pour afficher une variable sans changer de ligne et en insérant le caractère " ; ", on utilise l'instruction print(variable, end=" ; " ).   
 
 Vous devez obtenir :
 0;7;14;21;28;35;42;49;56;63;70;77;84;91;98;105;112;119;126;133;
 
-Réaliser ensuite la fonction affichage(m,n) dont la docstring vous est donnée.
+2) Réaliser ensuite la fonction affichage(m,n) dont la docstring vous est donnée.
 
 ```Python
 def affichage(m,n):
@@ -37,9 +40,23 @@ def affichage(m,n):
     affiche les n premiers multiples de m séparés par ;
     param : m : int
     param : n : int
-    return : None # la fonction ne renvoie rien mais affiche quelque chose
+    return : None 
+    # la fonction ne renvoie effectivement rien mais affiche quelque chose
     >>> affichage(7,20)
     0;7;14;21;28;35;42;49;56;63;70;77;84;91;98;105;112;119;126;133;
+  ```
+  
+3) Amélioration : faire en sorte d'indiquer à l'aide d'une * les multiples de m qui sont aussi des multiples de 3. On utilisera l'instruction conditionnelle `if`, l'opérateur modulo `%` qui donne le reste de la division entière de 2 nombres, et l'opérateur de comparaison `==` .
+
+```Python
+def affichage_ameliore(m,n):
+    """
+    affiche les n premiers multiples de m séparés par ; et ajoute * pour un multiple de 3
+    param : m : int
+    param : n : int
+    return : None
+    >>> affichage(7,20)
+    0*;7;14;21*;28;35;42*;49;56;63*;70;77;84*;91;98;105*;112;119;126*;133;
   ```
 
 ### Exercice 2
