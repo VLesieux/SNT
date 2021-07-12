@@ -24,7 +24,8 @@ def eleve_au_carre(n):
 
 ### Exercice 1
 
-Dans un premier temps, écrire un script qui permet d'afficher sur une seule ligne, séparés par le caractère " ; ", les 20 premiers multiples de 7 en utilisant l'instruction while et le seul opérateur + . Pour afficher une variable sans changer de ligne et en insérant le caractère " ; ", on utilise l'instruction print(variable, end=" ; " ).
+Dans un premier temps, écrire un script qui permet d'afficher sur une seule ligne, séparés par le caractère " ; ", les 20 premiers multiples de 7 en utilisant l'instruction while et le seul opérateur + . Pour afficher une variable sans changer de ligne et en insérant le caractère " ; ", on utilise l'instruction print(variable, end=" ; " ).   
+
 Vous devez obtenir :
 0;7;14;21;28;35;42;49;56;63;70;77;84;91;98;105;112;119;126;133;
 
@@ -36,7 +37,7 @@ def affichage(m,n):
     affiche les n premiers multiples de m séparés par ;
     param : m : int
     param : n : int
-    return : None # la fonction ne renvoie rien affiche quelque chose
+    return : None # la fonction ne renvoie rien mais affiche quelque chose
     >>> affichage(7,20)
     0;7;14;21;28;35;42;49;56;63;70;77;84;91;98;105;112;119;126;133;
   ```
