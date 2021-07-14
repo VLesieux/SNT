@@ -27,6 +27,16 @@ On réalisera un fichier avec l'extension .py par exercice et on les rangera tou
 
 ### Exercice 1
 
+Une légende de l'Inde ancienne raconte que le jeu d'échecs a été inventé par un vieux sage que son roi voulut remercier en lui affirmant qu'il lui accorderait n'importe quel cadeau en récompense. Le vieux sage demanda qu'on lui fournisse simplement un peu de riz pour ses vieux jours, et plus précisément un nombre de grains de riz suffisant pour qu'on puisse en déposer 1 sur la première case du jeu qu'il venait d'inventer, deux sur la suivante, quatre sur la troisième, en doublant ainsi chaque fois le nombre de grains déposés, et ainsi de suite jusqu'à la 64e case.
+
+Écrire un script qui permet d'afficher le résultat suivant :
+
+numero de case :  1  ; nombre de grains déposés sur cette case :  1.0  ; nombre total de grains déposés sur l'échiquier:  1.0
+numero de case :  2  ; nombre de grains déposés sur cette case :  2.0  ; nombre total de grains déposés sur l'échiquier:  3.0
+numero de case :  3  ; nombre de grains déposés sur cette case :  4.0  ; nombre total de grains déposés sur l'échiquier:  7.0
+
+### Exercice 2
+
 1) Dans un premier temps, écrire un script qui permet d'afficher sur une seule ligne, séparés par le caractère " ; ", les 20 premiers multiples de 7 en utilisant l'instruction while et le seul opérateur + . Pour afficher une variable sans changer de ligne et en insérant le caractère " ; ", on utilise l'instruction print(variable, end=" ; " ).   
 
 Vous devez obtenir :
@@ -59,7 +69,7 @@ def affichage_ameliore(m,n):
     0*;7;14;21*;28;35;42*;49;56;63*;70;77;84*;91;98;105*;112;119;126*;133;
   ```
 
-### Exercice 2
+### Exercice 3
 
 Une entreprise fournit des ramettes de papier à prix dégressif en fonction du nombre de lots achetés : les 50 premiers lots sont vendus 3,68€, au-delà chaque lot est vendu 3,22€. Écrire une fonction `prix(n)` qui lorsqu'on saisit le nombre `n` de lots achetés retourne (avec un return) le prix à payer puis procéder à l'affichage (avec un print) du résultat.
 
@@ -69,7 +79,7 @@ nombre de lots de ramettes de papier achetés ? 100
 Il vous en reviendra 345.0€
 ```
 
-### Exercice 3
+### Exercice 4
 
 Un cinéma propose un pass mensuel à 15€ permettant d'obtenir une réduction sur le prix des séances : sans réduction la séance est à 8,70€, alors qu'avec le pass la séance est à 5,50€. 
 Sans résoudre mathématiquement le problème, écrire une première fonction `abo1(n)` qui renvoie (avec un return) une chaîne de caractères et qui permet d'afficher (avec dans un deuxième temps un print) s'il est avantageux de prendre le pass ou non en fonction du nombre ` n` de séances dans le mois ; la fonction affiche également sur la même ligne le prix total à payer et l'avantage que représente ce choix.
@@ -91,7 +101,7 @@ Prenez le pass, il est avantageux ; vous payez 59.0€ avec le pass au lieu de 6
 (69.6, 59.0)
 ```
 
-### Exercice 4
+### Exercice 5
 
 On suppose que l'on dispose de la fonction `abo2(n)` précédente ; écrire une fonction `avantage()` qui utilise cette fonction et qui renvoie le nombre de séances à partir duquel le pass devient avantageux.
 
@@ -128,7 +138,7 @@ def cherche(L):
     return m
 ```
 
-### Exercice 7
+### Exercice 6
 
 Modifier le programme précédent afin que la valeur renvoyée soit un couple contenant le plus petit et le plus grand élément d'une liste non vide.
 
@@ -138,7 +148,7 @@ Modifier le programme précédent afin que la valeur renvoyée soit un couple co
 (1, 19)
 ```
 
-### Exercice 8
+### Exercice 7
 
 Que fait la fonction div définie ci-dessous ? Que renvoie div(28) ?
 Dans un premier temps, répondre sans exécuter le programme.
@@ -152,7 +162,7 @@ def div(n):
     return L
 ```
 
-### Exercice 9
+### Exercice 8
 
 Que fait la fonction Inconnue définie ci-dessous ?
 Dans un premier temps, répondre sans exécuter le programme.
@@ -166,7 +176,7 @@ def Inconnue(char,chaine):
     return c
 ```
 
-### Exercice 10
+### Exercice 9
 
 Écrire une fonction `concat` telle que `concat(L1,L2)` concatène les listes L1 et L2, c'est-à-dire renvoie une liste des éléments L1 et L2 mis bout à bout.
 
@@ -181,7 +191,7 @@ def concat(L1,L2):
 mais présentant un intérêt pédagogique.
 
 
-### Exercice 11
+### Exercice 10
 
 La suite de Fibonacci se construit comme ceci : les deux premiers termes valent 1, puis chaque terme est la somme des deux précédents.
 F(1)=1
@@ -198,7 +208,7 @@ Proposer un fonction `Fibo(n)` permettant de déterminer le n-ième terme de la 
 39088169
 ```
 
-### Exercice 12
+### Exercice 11
 
 <img src="Assets/nombre_or.png"> 
 
@@ -217,29 +227,29 @@ On sera amené à utiliser la fonction `abs()` qui donne la valeur absolue d'un 
 10
 ```
 
-### Exercice 13 
+### Exercice 12 
 
 Traiter l'[exercice1 du sujet n°3](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_03/21_NSI_03.pdf) de la banque des sujets de Terminale NSI ; il s'agit de programmer la fonction multiplication en utilisant uniquement les opérations addition et soustraction.
 
-### Exercice 14 
+### Exercice 13 
 
 Traiter l'[exercice1 du sujet n°5](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_05/21_NSI_05.pdf) de la banque des sujets de Terminale NSI ; il s'agit d'écrire une fonction permettant de passer de l'écriture binaire d'un entier à sa valeur décimale.
 
-### Exercice 15 
+### Exercice 14 
 
 Traiter l'[exercice1 du sujet n°9](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_09/21_NSI_09.pdf) de la banque des sujets de Terminale NSI ; il s'agit d'écrire une fonction permettant de calculer la moyenne d'une série de notes coefficientées.
 
 
-### Exercice 16 
+### Exercice 15 
 
 Traiter l'[exercice2 du sujet n°19](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_19/21_NSI_19.pdf) de la banque des sujets de Terminale NSI ; il s'agit d'écrire une fonction permettant de coder un message selon le code de César.
 
 
-### Exercice 17 
+### Exercice 16 
 
 Traiter l'[exercice2 du sujet n°20](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_20/21_NSI_20.pdf) de la banque des sujets de Terminale NSI ; il s'agit d'écrire une fonction qui retourne si oui ou non une chaîne de caractères ou un nombre est un palindrome.
 
-### Exercice 18
+### Exercice 17
 
 Écrire une fonction  `lancers` telle que `lancers(n)` simule n lancers d'un dé équilibré à 6 faces et renvoie le résultat sous forme de liste.
 On importera la bibliothèque `random` pour pouvoir appeler la fonction `randint` de cette bibliothèque, telle que random.randint(n,p) renvoie un entier aléatoire entre n et p, n et p étant compris.
@@ -264,7 +274,7 @@ On importera la bibliothèque `random` pour pouvoir appeler la fonction `randint
 Indications : dans la fonction `lancers(n)`, créer d'abord une liste vide à laquelle on ajoute autant de fois qu'il y a de lancers réalisés, c'est-à-dire n fois, au moyen de la méthode `append`,  les résultats des tirages au sort en utilisant `random.randint` ; comme l'action est répétitive puisqu'il y a n lancers, on utilise une boucle `for..in range..`. La liste ainsi complétée est renvoyée à l'issue de la boucle par la fonction au moyen de `return`.
 
 
-### Exercice 19
+### Exercice 18
 
 Écrire une fonction `piece` telle que `piece(n)` simule n lancers d'une pièce équilibrée et renvoie la fréquence des "piles" observés.
 
@@ -277,7 +287,7 @@ Indications : dans la fonction `lancers(n)`, créer d'abord une liste vide à la
 Indications : dans le même esprit que l'exercice précédent, mais cette fois-ci avec une pièce et non un dé, on place dans la fonction une variable qui sert de compteur initialement à 0 qui se charge de compter les piles (on peut décider que pile c'est la sortie de 1 et que face c'est la sortie de 0); à la fin des n lancers on renvoie la proportion de "piles" parmi les n lancers.
 
 
-### Exercice 20
+### Exercice 190
 
 Écrire une fonction `truquee` telle que `truquee(n,p)` simule n lancers d'une pièce truquée, dont la probabilité de faire "piles" vaut p, et renvoie la fréquence des "piles" observées.
 
@@ -301,7 +311,7 @@ La fonction int() donne en effet la partie entière du nombre.
 0.60069
 ```
 
-### Exercice 21
+### Exercice 20
 
 Que fait la fonction `trace` définie ci-dessous ?
 Dans un premier temps, répondre sans exécuter le programme.
@@ -315,7 +325,7 @@ def trace(n,larg):
         forward(larg*i)
 ```
 
-### Exercice 22
+### Exercice 21
 
 Écrire un programme qui permet de tracer des triangles en spirales.
 
