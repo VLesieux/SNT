@@ -37,6 +37,7 @@ numero de case :  2  ; nombre de grains déposés sur cette case :  2.0  ; nombr
 
 numero de case :  3  ; nombre de grains déposés sur cette case :  4.0  ; nombre total de grains déposés sur l'échiquier:  7.0    
 
+N.B : pour otenir le résultat en notation scientifique, on écrira non pas 1 qui est du type int mais 1.0 qui est du type float.
 
 ### Exercice 2
 
