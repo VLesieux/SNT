@@ -182,11 +182,11 @@ def Inconnue(char,chaine):
 
 ### Exercice 9
 
-Écrire un programme qui analyse un par un tous les éléments d'une liste de mots par exemple liste_complete=['Jean','Maximilien','Brigitte','Sonia','Jean-Pierre'] pour générer deux nouvelles listes : l'une contiendra les mots comportant moins de 6 caractères, l'autre comportant les mots de plus de 6 caractères.
+1) Écrire un programme qui analyse un par un tous les éléments d'une liste de mots par exemple liste_complete=['Jean','Maximilien','Brigitte','Sonia','Jean-Pierre'] pour générer deux nouvelles listes : l'une contiendra les mots comportant moins de 6 caractères, l'autre comportant les mots de plus de 6 caractères.
 
 Indications : 
 
-1) On utilise la fonction intégrée `len()` qui renvoie la longueur d'une chaîne de caractères et la méthode `append` associée à une occurence d'objet de type liste qui permet d'ajouter un élément à cette liste. 
+a) On utilise la fonction intégrée `len()` qui renvoie la longueur d'une chaîne de caractères et la méthode `append` associée à une occurence d'objet de type liste qui permet d'ajouter un élément à cette liste. 
 
 Exemple : 
 
@@ -199,7 +199,7 @@ Exemple :
 [3, 'chien', 2.0]
 ```
 
-2) On peut parcourir les éléments d'une liste de deux manières, soit élément après élément, soit index d'élément après index d'élément.
+b) On peut parcourir les éléments d'une liste de deux manières, soit élément après élément, soit index d'élément après index d'élément.
 
 ```Python
 for element in liste:
@@ -209,7 +209,7 @@ for i in range(len(liste)):
     print(liste[i])
 ```
 
-3) Amélioriation : l'utilisateur est invité à entrer sans cesse de nouveaux noms, jusqu'à ce qu'il décide de terminer en frappant `<Enter>` en guise d'entrée. Le programme se termine avec l'affichage des deux listes.  
+2) Amélioriation : l'utilisateur est invité à entrer sans cesse de nouveaux noms, jusqu'à ce qu'il décide de terminer en frappant `<Enter>` en guise d'entrée. Le programme se termine avec l'affichage des deux listes.  
 
 Indication : utiliser la fonction prédéfinie `input()` qui permet l'interaction avec l'utilisateur. Créer une fonction `traitement` qui admettra en argument la liste ainsi constituée et qui en sortie affichera les deux listes comme précédemment.
 
