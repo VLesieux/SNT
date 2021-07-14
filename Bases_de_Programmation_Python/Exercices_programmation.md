@@ -31,9 +31,12 @@ Une légende de l'Inde ancienne raconte que le jeu d'échecs a été inventé pa
 
 Écrire un script qui permet d'afficher le résultat suivant :
 
-numero de case :  1  ; nombre de grains déposés sur cette case :  1.0  ; nombre total de grains déposés sur l'échiquier:  1.0
-numero de case :  2  ; nombre de grains déposés sur cette case :  2.0  ; nombre total de grains déposés sur l'échiquier:  3.0
-numero de case :  3  ; nombre de grains déposés sur cette case :  4.0  ; nombre total de grains déposés sur l'échiquier:  7.0
+numero de case :  1  ; nombre de grains déposés sur cette case :  1.0  ; nombre total de grains déposés sur l'échiquier:  1.0    
+
+numero de case :  2  ; nombre de grains déposés sur cette case :  2.0  ; nombre total de grains déposés sur l'échiquier:  3.0   
+
+numero de case :  3  ; nombre de grains déposés sur cette case :  4.0  ; nombre total de grains déposés sur l'échiquier:  7.0    
+
 
 ### Exercice 2
 
