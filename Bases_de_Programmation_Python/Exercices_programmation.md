@@ -186,7 +186,7 @@ def Inconnue(char,chaine):
 
 Indications : 
 
-1) On utilise la fonction len() qui renvoie la longueur d'une chaîne de caractères et la méthode append associée à une occurence d'objet de type liste qui permet d'ajouter un élément à cette liste. 
+1) On utilise la fonction intégrée `len()` qui renvoie la longueur d'une chaîne de caractères et la méthode `append` associée à une occurence d'objet de type liste qui permet d'ajouter un élément à cette liste. 
 
 Exemple : 
 
@@ -207,6 +207,16 @@ for element in liste:
     
 for i in range(len(liste)):
     print(liste[i])
+```
+
+3) Amélioriation : l'utilisateur est invité à entrer sans cesse de nouveaux noms, jusqu'à ce qu'il décide de terminer en frappant `<Enter>` en guise d'entrée. Le programme se termine avec l'affichage des deux listes.  
+
+Indication : utiliser la fonction prédéfinie `input()` qui permet l'interaction avec l'utilisateur. Créer une fonction `traitement` qui admettra en argument la liste ainsi constituée et qui en sortie affichera les deux listes comme précédemment.
+
+Exemple : 
+
+```Python
+nom=input("entrer un nom : ")
 ```
 
 ### Exercice 10
