@@ -182,18 +182,32 @@ def Inconnue(char,chaine):
 
 ### Exercice 9
 
-Écrire une fonction `concat` telle que `concat(L1,L2)` concatène les listes L1 et L2, c'est-à-dire renvoie une liste des éléments L1 et L2 mis bout à bout.
+Écrire un programme qui analyse un par un tous les éléments d'une liste de mots par exemple liste_complete=['Jean','Maximilien','Brigitte','Sonia','Jean-Pierre'] pour générer deux nouvelles listes : l'une contiendra les mots comportant moins de 6 caractères, l'autre comportant les mots de plus de 6 caractères.
 
-On proposera deux façons de procéder certes moins efficaces que la fonction ci-dessous :
+Indications : 
+
+1) On utilise la fonction len() qui renvoie la longueur d'une chaîne de caractères et la méthode append associée à une occurence d'objet de type liste qui permet d'ajouter un élément à cette liste. 
+
+Exemple : 
 
 ```Python
-def concat(L1,L2):
-    return L1+L2
->>> concat([2,8,4],[3,9])
-[2, 8, 4, 3, 9]
+>>> liste=[3,"chien"]
+>>> len(liste)
+2
+>>> liste.append(2.0)
+>>> liste
+[3, 'chien', 2.0]
 ```
-mais présentant un intérêt pédagogique.
 
+2) On peut parcourir les éléments d'une liste de deux manières, soit élément après élément, soit index d'élément après index d'élément.
+
+```Python
+for element in liste:
+    print(element)
+    
+for i in range(len(liste)):
+    print(liste[i])
+```
 
 ### Exercice 10
 
