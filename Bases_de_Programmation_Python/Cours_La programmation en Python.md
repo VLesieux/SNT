@@ -103,7 +103,7 @@ True
 #c'est comme si on posait la question : est-ce que "singe" n'est pas du type list ?
 ```
 
-<u>Remarque 2</u>: Il faut avoir en tête qu'un ordinateur utilise une représentation binaire des nombres. Ce qui donne lieu parfois à des résultats  suprenants par exemple !
+<u>Remarque 2</u>: Il faut avoir en tête qu'un ordinateur utilise une représentation binaire des nombres. Ce qui donne lieu parfois à des résultats très suprenants par exemple !
 
 ```Python
 >>> 0.1+0.1+0.1
@@ -589,5 +589,4 @@ branche(400,3)<img src="Assets/branche3.png" width="200" height="200">
 La fonction  `flocon` permet de construire chacun des trois côtés du flocon, en effectuant une rotation de 120° entre chaque construction.
 
 flocon(400,3)<img src="Assets/flocon.png" width="200" height="200"> 
-
 
