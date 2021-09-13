@@ -25,8 +25,40 @@ def eleve_au_carre(n):
 On n'hésitera pas également à ajouter des commentaires en les précédant du caractère # ; l'interpréteur Python ignore tout ce qui suit jusqu'à la fin de la ligne courante.
 On réalisera un fichier avec l'extension .py par exercice et on les rangera tous dans le même dossier.
 
-### Exercice 1
+### Exercice 1 : de l'utilisation des boucles en programmation
 
+<u>Ce qu'il faut savoir :</u> 
+
+Une <b>bloucle non conditionnelle et bornée</b> se fait avec `for i in range(n)` qui produit n tours de boucle, i est une variable qui prend les valeurs de 0 à n-1 ; on peut également décider d'une autre valeur initiale pour la variable, en écrivant par exemple `for i in range(2, n)` qui fait varier la variable i de 2 compris à n-1.
+
+Par exemple : on affiche 5 fois le mot "salut" ainsi que l'état de la variable
+
+```Python
+>>> for tour in range(5):
+    print(tour,"salut")   
+0 salut
+1 salut
+2 salut
+3 salut
+4 salut
+ ```
+ 
+Une <b>bloucle conditionnelle et non bornée</b> se fait avec l'instruction `while`.
+
+Par exemple : on fait la même chose que précédemment mais d'une autre manière en imposant une condition qui limite l'évolution de la variable : 
+
+```Python
+>>> tour=0
+>>> while tour<5:
+    print(tour,"salut")
+    tour +=1    
+0 salut
+1 salut
+2 salut
+3 salut
+4 salut
+ ```
+ 
 Une légende de l'Inde ancienne raconte que le jeu d'échecs a été inventé par un vieux sage que son roi voulut remercier en lui affirmant qu'il lui accorderait n'importe quel cadeau en récompense. Le vieux sage demanda qu'on lui fournisse simplement un peu de riz pour ses vieux jours, et plus précisément un nombre de grains de riz suffisant pour qu'on puisse en déposer 1 sur la première case du jeu qu'il venait d'inventer, deux sur la suivante, quatre sur la troisième, en doublant ainsi chaque fois le nombre de grains déposés, et ainsi de suite jusqu'à la 64e case.
 
 Écrire un script qui permet d'afficher le résultat suivant :
