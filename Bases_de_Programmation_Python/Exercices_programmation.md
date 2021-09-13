@@ -67,13 +67,24 @@ numero de case :  1  ; nombre de grains déposés sur cette case :  1.0  ; nombr
 
 numero de case :  2  ; nombre de grains déposés sur cette case :  2.0  ; nombre total de grains déposés sur l'échiquier:  3.0   
 
-numero de case :  3  ; nombre de grains déposés sur cette case :  4.0  ; nombre total de grains déposés sur l'échiquier:  7.0    
+numero de case :  3  ; nombre de grains déposés sur cette case :  4.0  ; nombre total de grains déposés sur l'échiquier:  7.0
+
+etc...    
 
 N.B : pour otenir le résultat en notation scientifique, on écrira non pas 1 qui est du type int mais 1.0 qui est du type float.
 
-### Exercice 2
+### Exercice 2 : utilisation de la boucle while
 
-1) Dans un premier temps, écrire un script qui permet d'afficher sur une seule ligne, séparés par le caractère " ; ", les 20 premiers multiples de 7 en utilisant l'instruction while et le seul opérateur + . Pour afficher une variable sans changer de ligne et en insérant le caractère " ; ", on utilise l'instruction print(variable, end=" ; " ).   
+Connaissance : le symbole % est appelé <b>modulo</b>, il donne le reste de la division de deux nombres : 
+
+```Python
+>>> 9/2
+4.5
+>>> 9%2
+1
+```
+
+1) Dans un premier temps, écrire un script qui permet d'afficher sur une seule ligne, séparés par le caractère " ; ", les 20 premiers multiples de 7 en utilisant l'instruction while. Pour afficher une variable sans changer de ligne et en insérant le caractère " ; ", on utilise l'instruction print(variable, end=" ; " ).   
 
 Vous devez obtenir :
 0;7;14;21;28;35;42;49;56;63;70;77;84;91;98;105;112;119;126;133;
@@ -212,7 +223,7 @@ def Inconnue(char,chaine):
     return c
 ```
 
-### Exercice 9
+### Exercice 9 : Parcourir les éléments d'une liste
 
 1) Écrire un programme qui analyse un par un tous les éléments d'une liste de mots par exemple liste_complete=['Jean','Maximilien','Brigitte','Sonia','Jean-Pierre'] pour générer deux nouvelles listes : l'une contiendra les mots comportant moins de 6 caractères, l'autre comportant les mots de plus de 6 caractères.
 
