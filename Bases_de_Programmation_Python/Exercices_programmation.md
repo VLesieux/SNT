@@ -29,7 +29,7 @@ On réalisera un fichier avec l'extension .py par exercice et on les rangera tou
 
 <u>Ce qu'il faut savoir :</u> 
 
-Une <b>bloucle non conditionnelle et bornée</b> se fait avec `for i in range(n)` qui produit n tours de boucle, i est une variable qui prend les valeurs de 0 à n-1 ; on peut également décider d'une autre valeur initiale pour la variable, en écrivant par exemple `for i in range(2, n)` qui fait varier la variable i de 2 compris à n-1.
+Une <b>bloucle non conditionnelle et bornée</b> se fait avec **`for i in range(n)`** qui produit n tours de boucle, i est une variable qui prend les valeurs de 0 à n-1 ; on peut également décider d'une autre valeur initiale pour la variable, en écrivant par exemple `for i in range(2, n)` qui fait varier la variable i de 2 compris à n-1.
 
 Par exemple : on affiche 5 fois le mot "salut" ainsi que l'état de la variable
 
@@ -43,7 +43,7 @@ Par exemple : on affiche 5 fois le mot "salut" ainsi que l'état de la variable
 4 salut
  ```
  
-Une <b>bloucle conditionnelle et non bornée</b> se fait avec l'instruction `while`.
+Une <b>bloucle conditionnelle et non bornée</b> se fait avec l'instruction **`while`**.
 
 Par exemple : on fait la même chose que précédemment mais d'une autre manière en imposant une condition qui limite l'évolution de la variable : 
 
