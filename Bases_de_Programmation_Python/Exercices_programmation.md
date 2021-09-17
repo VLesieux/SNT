@@ -73,15 +73,37 @@ etc...
 
 N.B : pour otenir le résultat en notation scientifique, on écrira non pas 1 qui est du type int mais 1.0 qui est du type float.
 
-### Exercice 2 : utilisation de la boucle while
+### Exercice 2 : de l'utilisation de l'instruction conditionnelle
+
+La structure conditionnelle utilise les mots : **`if ; elif ; else`** dans cet ordre.
+`elif` est utilisé dans le cas où se présentent plusieurs alternatives.
+
+<u>Exemple</u>: 
+
+On se propose d'écrire un petit programme qui va répondre à l'objectif suivant que l'on traduit d'abord en langage naturel : un utilisateur entre son âge, le programme concluera que l'individu est soit un enfant (<10), soit un adolescent (≥10 ; <19), soit un adulte (≥19).
+
+```Python
+age=int(input("Entrez votre âge s.v.p : "))#le résultat d'un input est une chaîne de caractères, d'où la nécessité de la convertir en entier avec int()
+if age <10:
+    print("Vous êtes un enfant")
+elif age>=10 and age<19:
+    print("Vous êtes un adolescent")
+else:
+    print("Vous êtes un adulte")
+```
 
 Connaissance : le symbole % est appelé <b>modulo</b>, il donne le reste de la division de deux nombres : 
 
 ```Python
 >>> 9/2
 4.5
+#le résultat de la division
 >>> 9%2
 1
+#le reste de la division
+>>> 9//2
+4
+#le quotient de la division
 ```
 
 1) Dans un premier temps, écrire un script qui permet d'afficher sur une seule ligne, séparés par le caractère " ; ", les 20 premiers multiples de 7 en utilisant l'instruction while. Pour afficher une variable sans changer de ligne et en insérant le caractère " ; ", on utilise l'instruction print(variable, end=" ; " ).   
@@ -115,6 +137,8 @@ def affichage_ameliore(m,n):
     >>> affichage(7,20)
     0*;7;14;21*;28;35;42*;49;56;63*;70;77;84*;91;98;105*;112;119;126*;133;
   ```
+  
+4) De la même façon indiquer également à l'aide d'un + les multiples de m qui sont aussi des multiples de 2.
 
 ### Exercice 3
 
