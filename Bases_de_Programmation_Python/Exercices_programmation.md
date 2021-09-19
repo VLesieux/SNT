@@ -186,7 +186,7 @@ exemple :
 ### Exercice 4
 
 Un cinéma propose un pass mensuel à 15€ permettant d'obtenir une réduction sur le prix des séances : sans réduction la séance est à 8,70€, alors qu'avec le pass la séance est à 5,50€. 
-Sans résoudre mathématiquement le problème, écrire une première fonction `abo1(n)` qui renvoie (avec un return) une chaîne de caractères et qui permet d'afficher (avec dans un deuxième temps un print) s'il est avantageux de prendre le pass ou non en fonction du nombre ` n` de séances dans le mois ; la fonction affiche également sur la même ligne le prix total à payer et l'avantage que représente ce choix.
+Sans résoudre mathématiquement le problème, écrire une première fonction `abo1(n)` qui renvoie (avec un return) une chaîne de caractères et qui permet d'afficher (en utilisant dans un deuxième temps l'instruction `print()`) s'il est avantageux de prendre le pass ou non en fonction du nombre ` n` de séances dans le mois ; la fonction affiche également sur la même ligne le prix total à payer et l'avantage que représente ce choix.
 
 ```Python
 >>> %Run exercices_programmation_snt.py
@@ -196,7 +196,7 @@ Ne prenez pas le pass, il est désavantageux ; vous payez 17.4€ sans le pass a
 combien de séances de cinéma allez-vous prendre ? 8
 Prenez le pass, il est avantageux ; vous payez 59.0€ avec le pass au lieu de 69.6€ sans le pass
 ```
-Écrire maintenant une deuxième fonction `abo2(n)` qui renvoie cette fois deux informations numériques sous la forme d'un tuple, la première information étant le prix sans abonnement, la seconde le prix avec abonnement.
+Écrire maintenant une deuxième fonction `abo2(n)` qui renvoie cette fois deux informations numériques sous la forme d'un tuple, la première information étant le prix sans abonnement, la seconde le prix avec abonnement. Pour renvoyer deux valeurs a et b sous forme de tuple, écrire `return (a,b)`.
 
 ```Python
 >>> abo2(2)
@@ -205,12 +205,25 @@ Prenez le pass, il est avantageux ; vous payez 59.0€ avec le pass au lieu de 6
 (69.6, 59.0)
 ```
 
-On suppose que l'on dispose de la fonction `abo2(n)` précédente ; écrire une fonction `avantage()` qui utilise cette fonction et qui renvoie le nombre de séances à partir duquel le pass devient avantageux.
+Une fois que l'on dispose de la fonction `abo2(n)` précédente, écrire une fonction `avantage()` qui utilise cette fonction et qui renvoie le nombre de séances à partir duquel le pass devient avantageux. 
+
+Pour récuperer la première et la deuxième valeur d'un tuple, procéder ainsi : 
+
+```Python
+>>> doublet=(10,17)
+>>> doublet[0]
+10
+>>> doublet[1]
+17
+```
 
 ```Python
 >>> %Run correction_exercices_programmation_snt.py
 Prendre le pass devient avantageux à partir de 5 séances.
 ```
+
+Indication : on augmente le nombre n de séances et on compare les prix avec et sans abonnement.
+
 
 ### Exercice 5
 
