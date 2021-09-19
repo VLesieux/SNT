@@ -20,7 +20,7 @@ def eleve_au_carre(n):
     16
     """
     return n**2
- ```
+```
 
 On n'hésitera pas également à ajouter des commentaires en les précédant du caractère # ; l'interpréteur Python ignore tout ce qui suit jusqu'à la fin de la ligne courante.
 On réalisera un fichier avec l'extension .py par exercice et on les rangera tous dans le même dossier.
@@ -41,8 +41,8 @@ Par exemple : on affiche 5 fois le mot "salut" ainsi que l'état de la variable
 2 salut
 3 salut
 4 salut
- ```
- 
+```
+
 Une <b>bloucle conditionnelle et non bornée</b> se fait avec l'instruction **`while`**.
 
 Par exemple : on fait la même chose que précédemment mais d'une autre manière en imposant une condition qui limite l'évolution de la variable : 
@@ -57,8 +57,8 @@ Par exemple : on fait la même chose que précédemment mais d'une autre manièr
 2 salut
 3 salut
 4 salut
- ```
- 
+```
+
 Problème : Une légende de l'Inde ancienne raconte que le jeu d'échecs a été inventé par un vieux sage que son roi voulut remercier en lui affirmant qu'il lui accorderait n'importe quel cadeau en récompense. Le vieux sage demanda qu'on lui fournisse simplement un peu de riz pour ses vieux jours, et plus précisément un nombre de grains de riz suffisant pour qu'on puisse en déposer 1 sur la première case du jeu qu'il venait d'inventer, deux sur la suivante, quatre sur la troisième, en doublant ainsi chaque fois le nombre de grains déposés, et ainsi de suite jusqu'à la 64e case. 
 
 Écrire un script qui permet d'afficher le résultat suivant :
@@ -75,7 +75,7 @@ numero de case :  64  ; nombre de grains déposés sur cette case :  ?  ; nombre
 
 N.B : pour otenir le résultat en notation scientifique, on écrira non pas 1 qui est du type int mais 1.0 qui est du type float.
 
-### Exercice 2 : de l'utilisation de l'instruction conditionnelle
+### Exercice 2 : de l'utilisation de l'instruction conditionnelle if
 
 La structure conditionnelle utilise les mots : **`if ; elif ; else`** dans cet ordre.
 `elif` est utilisé dans le cas où se présentent plusieurs alternatives.
@@ -125,22 +125,35 @@ def affichage(m,n):
     # la fonction ne renvoie effectivement rien mais affiche quelque chose
     >>> affichage(7,20)
     0;7;14;21;28;35;42;49;56;63;70;77;84;91;98;105;112;119;126;133;
-  ```
-  
+```
+
 3) Amélioration : faire en sorte d'indiquer à l'aide d'une * les multiples de m qui sont aussi des multiples de 3. On utilisera l'instruction conditionnelle `if`, l'opérateur modulo `%` qui donne le reste de la division entière de 2 nombres, et l'opérateur de comparaison `==` .
 
 ```Python
-def affichage_ameliore(m,n):
+def affichage_ameliore1(m,n):
     """
     affiche les n premiers multiples de m séparés par ; et ajoute * pour un multiple de 3
     param : m : int
     param : n : int
     return : None
-    >>> affichage(7,20)
+    >>> affichage_ameliore1(7,20)
     0*;7;14;21*;28;35;42*;49;56;63*;70;77;84*;91;98;105*;112;119;126*;133;
-  ```
-  
-4) De la même façon indiquer également à l'aide d'un + les multiples de m qui sont aussi des multiples de 2.
+```
+
+4) De la même façon indiquer également à l'aide d'un ! les multiples de m qui sont aussi des multiples de 2.
+
+```Python
+def affichage_ameliore2(m,n):
+    """
+    affiche les n premiers multiples de m séparés par ; et ajoute * pour un multiple de 3 et ou ! pour un multiple de 2
+    param : m : int
+    param : n : int
+    return : None
+    >>> affichage_ameliore2(7,20)
+    0*!;7;14!;21*;28!;35;42*!;49;56!;63*;70!;77;84*!;91;98!;105*;112!;119;126*!;133;
+    """
+```
+
 
 ### Exercice 3
 
@@ -150,6 +163,24 @@ Une entreprise fournit des ramettes de papier à prix dégressif en fonction du 
 >>> %Run exercices_programmation_snt.py
 nombre de lots de ramettes de papier achetés ? 100
 Il vous en reviendra 345.0€
+```
+
+Utiliser :
+
+1) `input` pour interroger l'utilisateur ; le résultat est une chaîne de caractères à convertir en nombre entier à l'aide de `int()`.
+
+exemple :
+```Python
+nombre=int(input("nombre de lots de ramettes de papier achetés ? "))
+```
+2) la concaténation (addition) de chaînes de caractères ; transformer un nombre en chaîne de caractères se fait avec `str()`.
+
+exemple :
+
+```Python
+>>> variable=4
+>>> "vous avez acheté "+str(variable)+ " livres"
+'vous avez acheté 4 livres'
 ```
 
 ### Exercice 4
@@ -173,8 +204,6 @@ Prenez le pass, il est avantageux ; vous payez 59.0€ avec le pass au lieu de 6
 >>> abo2(8)
 (69.6, 59.0)
 ```
-
-### Exercice 5
 
 On suppose que l'on dispose de la fonction `abo2(n)` précédente ; écrire une fonction `avantage()` qui utilise cette fonction et qui renvoie le nombre de séances à partir duquel le pass devient avantageux.
 
