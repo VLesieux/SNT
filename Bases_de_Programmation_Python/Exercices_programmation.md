@@ -155,7 +155,7 @@ def affichage_ameliore2(m,n):
 ```
 
 
-### Exercice 3
+### Exercice 3 : interagir avec l'utilisateur avec input
 
 Une entreprise fournit des ramettes de papier à prix dégressif en fonction du nombre de lots achetés : les 50 premiers lots sont vendus 3,68€, au-delà chaque lot est vendu 3,22€. Écrire une fonction `prix(n)` qui lorsqu'on saisit le nombre `n` de lots achetés retourne (avec un return) le prix à payer puis procéder à l'affichage (avec un print) du résultat.
 
@@ -183,7 +183,7 @@ exemple :
 'vous avez acheté 4 livres'
 ```
 
-### Exercice 4
+### Exercice 4 : manipuler les élements d'un tuple
 
 Un cinéma propose un pass mensuel à 15€ permettant d'obtenir une réduction sur le prix des séances : sans réduction la séance est à 8,70€, alors qu'avec le pass la séance est à 5,50€. 
 Sans résoudre mathématiquement le problème, écrire une première fonction `abo1(n)` qui renvoie (avec un return) une chaîne de caractères et qui permet d'afficher (en utilisant dans un deuxième temps l'instruction `print()`) s'il est avantageux de prendre le pass ou non en fonction du nombre ` n` de séances dans le mois ; la fonction affiche également sur la même ligne le prix total à payer et l'avantage que représente ce choix.
@@ -224,78 +224,11 @@ Prendre le pass devient avantageux à partir de 5 séances.
 
 Indication : on augmente le nombre n de séances et on compare les prix avec et sans abonnement.
 
-
-### Exercice 5
-
-Soit l'algorithme ci-dessous écrit en langage naturel :
-
-	a ← -1
-	b ← 2
-	Pour i allant de 1 à 4
-	a ← b-a+i
-	b ← 2a+1
-	Fin Pour
-
-Prévoir "à la main" les valeurs de a et de b ; retrouver le résultat en programmant l'algorithme.
-Écrire une boucle de deux manières différentes : avec `for i in range` puis avec `while`.
-
-### Exercice 6
-
-Que fait la fonction `cherche` définie ci-dessous ?
-
-```Python
-def cherche(L):
-    longueur=len(L)
-    m=L[0]
-    for i in range(1,longueur):
-        if L[i]>m:
-            m=L[i]
-    return m
-```
-
-### Exercice 6
-
-Modifier le programme précédent afin que la valeur renvoyée soit un couple contenant le plus petit et le plus grand élément d'une liste non vide.
-
-```Python
->>> %Run exercices_programmation_snt.py
->>> recherche_min_max([2,8,19,4,1])
-(1, 19)
-```
-
-### Exercice 7
-
-Que fait la fonction div définie ci-dessous ? Que renvoie div(28) ?
-Dans un premier temps, répondre sans exécuter le programme.
-Rappel : `L.append(i)` permet d'ajouter la valeur `i` à la liste `L`.
-```Python
-def div(n):
-    L=[]
-    for i in range(1,n+1):
-        if n%i==0:
-            L.append(i)
-    return L
-```
-
-### Exercice 8
-
-Que fait la fonction Inconnue définie ci-dessous ?
-Dans un premier temps, répondre sans exécuter le programme.
-
-```Python
-def Inconnue(char,chaine):
-    c=0
-    for caractere in chaine:
-        if caractere==char:
-            c=c+1
-    return c
-```
-
-### Exercice 9 : Parcourir les éléments d'une liste
+### Exercice 5 : Parcourir les éléments d'une liste
 
 1) Écrire un programme qui analyse un par un tous les éléments d'une liste de mots par exemple liste_complete=['Jean','Maximilien','Brigitte','Sonia','Jean-Pierre'] pour générer deux nouvelles listes : l'une contiendra les mots comportant moins de 6 caractères, l'autre comportant les mots de plus de 6 caractères.
 
-Indications : 
+**Indications** : 
 
 a) On utilise la fonction intégrée `len()` qui renvoie la longueur d'une chaîne de caractères et la méthode `append` associée à une occurence d'objet de type liste qui permet d'ajouter un élément à cette liste. 
 
@@ -320,17 +253,10 @@ for i in range(len(liste)):
     print(liste[i])
 ```
 
-2) Amélioriation : l'utilisateur est invité à entrer sans cesse de nouveaux noms, jusqu'à ce qu'il décide de terminer en frappant `<Enter>` en guise d'entrée. Le programme se termine avec l'affichage des deux listes.  
+2) Amélioriation : l'utilisateur est invité à entrer sans cesse de nouveaux noms, jusqu'à ce qu'il décide de terminer en frappant `<Enter>` en guise d'entrée. Le programme se termine avec l'affichage des deux listes. Créer une fonction `traitement` qui admettra en argument la liste ainsi constituée et qui en sortie affichera les deux listes comme précédemment.
 
-Indication : utiliser la fonction prédéfinie `input()` qui permet l'interaction avec l'utilisateur. Créer une fonction `traitement` qui admettra en argument la liste ainsi constituée et qui en sortie affichera les deux listes comme précédemment.
 
-Exemple : 
-
-```Python
-nom=input("entrer un nom : ")
-```
-
-### Exercice 10
+### Exercice 6 : à la recherche du nombre d'or
 
 La suite de Fibonacci se construit comme ceci : les deux premiers termes valent 1, puis chaque terme est la somme des deux précédents.
 F(1)=1
@@ -346,12 +272,11 @@ Proposer un fonction `Fibo(n)` permettant de déterminer le n-ième terme de la 
 >>> Fibo(38)
 39088169
 ```
-
-### Exercice 11
+<img src="Assets/suite-de-fibonacci-phi.png.webp"> 
 
 <img src="Assets/nombre_or.png"> 
 
-Comme l'affirme cet extrait de wikipédia à propos du nombre d'or, il existe une relation entre le nombre d'or et la suite de Fibonacci étudiée précédemment. Ce nombre est en effet la valeur du rapport F(n+1)/F(n) quand n est très grand (ou encore la limite du quotient des termes consécutifs de la suite de Fibonacci). Proposer une fonction qui permet d'approcher la valeur du nombre d'or donnée dans le document à 10<sup>-10</sup> près.
+Comme l'affirme cet extrait de wikipédia à propos du nombre d'or, il existe une relation entre le nombre d'or et la suite de Fibonacci étudiée précédemment. Ce nombre est en effet la valeur du rapport F(n+1)/F(n) quand n est très grand (ou encore la limite qu'atteint le quotient des termes consécutifs de la suite de Fibonacci quand ceux-ci sont très grands). Proposer une fonction qui permet d'approcher la valeur du nombre d'or donnée dans le document à 10<sup>-10</sup> près.
 
 ```Python
 >>> nombre_or()
@@ -366,31 +291,42 @@ On sera amené à utiliser la fonction `abs()` qui donne la valeur absolue d'un 
 10
 ```
 
-### Exercice 12 
+Applications du nombre d'or dans des domaines variés :
+
+
+<img src="Assets/tournesol.jpg.webp"> 
+
+<img src="Assets/nombre-dor-adn.png.webp"> 
+
+<img src="Assets/nombre-or-corps-humain.jpg.webp"> 
+
+<img src="Assets/parthenon.png.webp">
+
+### Exercice 7 
 
 Traiter l'[exercice1 du sujet n°3](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_03/21_NSI_03.pdf) de la banque des sujets de Terminale NSI ; il s'agit de programmer la fonction multiplication en utilisant uniquement les opérations addition et soustraction.
 
-### Exercice 13 
+### Exercice 8 
 
 Traiter l'[exercice1 du sujet n°5](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_05/21_NSI_05.pdf) de la banque des sujets de Terminale NSI ; il s'agit d'écrire une fonction permettant de passer de l'écriture binaire d'un entier à sa valeur décimale.
 
-### Exercice 14 
+### Exercice 9 
 
 Traiter l'[exercice1 du sujet n°9](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_09/21_NSI_09.pdf) de la banque des sujets de Terminale NSI ; il s'agit d'écrire une fonction permettant de calculer la moyenne d'une série de notes coefficientées.
 
 
-### Exercice 15 
+### Exercice 10
 
 Traiter l'[exercice2 du sujet n°19](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_19/21_NSI_19.pdf) de la banque des sujets de Terminale NSI ; il s'agit d'écrire une fonction permettant de coder un message selon le code de César.
 
 
-### Exercice 16 
+### Exercice 11
 
 Traiter l'[exercice2 du sujet n°20](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_20/21_NSI_20.pdf) de la banque des sujets de Terminale NSI ; il s'agit d'écrire une fonction qui retourne si oui ou non une chaîne de caractères ou un nombre est un palindrome.
 
-### Exercice 17
+### Exercice 12
 
-Écrire une fonction  `lancers` telle que `lancers(n)` simule n lancers d'un dé équilibré à 6 faces et renvoie le résultat sous forme de liste.
+1) Écrire une fonction  `lancers` telle que `lancers(n)` simule n lancers d'un dé équilibré à 6 faces et renvoie le résultat sous forme de liste.
 On importera la bibliothèque `random` pour pouvoir appeler la fonction `randint` de cette bibliothèque, telle que random.randint(n,p) renvoie un entier aléatoire entre n et p, n et p étant compris.
 
 ```Python
@@ -412,10 +348,7 @@ On importera la bibliothèque `random` pour pouvoir appeler la fonction `randint
 
 Indications : dans la fonction `lancers(n)`, créer d'abord une liste vide à laquelle on ajoute autant de fois qu'il y a de lancers réalisés, c'est-à-dire n fois, au moyen de la méthode `append`,  les résultats des tirages au sort en utilisant `random.randint` ; comme l'action est répétitive puisqu'il y a n lancers, on utilise une boucle `for..in range..`. La liste ainsi complétée est renvoyée à l'issue de la boucle par la fonction au moyen de `return`.
 
-
-### Exercice 18
-
-Écrire une fonction `piece` telle que `piece(n)` simule n lancers d'une pièce équilibrée et renvoie la fréquence des "piles" observés.
+2) Écrire une fonction `piece` telle que `piece(n)` simule n lancers d'une pièce équilibrée et renvoie la fréquence des "piles" observés.
 
 ```Python
 >>> pieces(400)
@@ -425,10 +358,7 @@ Indications : dans la fonction `lancers(n)`, créer d'abord une liste vide à la
 ```
 Indications : dans le même esprit que l'exercice précédent, mais cette fois-ci avec une pièce et non un dé, on place dans la fonction une variable qui sert de compteur initialement à 0 qui se charge de compter les piles (on peut décider que pile c'est la sortie de 1 et que face c'est la sortie de 0); à la fin des n lancers on renvoie la proportion de "piles" parmi les n lancers.
 
-
-### Exercice 19
-
-Écrire une fonction `truquee` telle que `truquee(n,p)` simule n lancers d'une pièce truquée, dont la probabilité de faire "piles" vaut p, et renvoie la fréquence des "piles" observées.
+3) Écrire une fonction `truquee` telle que `truquee(n,p)` simule n lancers d'une pièce truquée, dont la probabilité de faire "piles" vaut p, et renvoie la fréquence des "piles" observées.
 
 Indications : la fonction random() de la librairie random génère un nombre compris entre [0,1[ ; random.random()+0.6 génère un nombre compris entre [0.6,1.6[ ; int(random.random()+0.6) génère un nombre qui vaut 0 pour tous les nombres compris dans l'intervalle [0.6,1[ d'étendue 0.4 et 1 pour tous les nombres compris entre [1,1.6[ d'étendue 0.6 ; on a donc 60% de chance d'avoir 1 et 40% de chance d'avoir 0.
 La fonction int() donne en effet la partie entière du nombre.
@@ -450,7 +380,7 @@ La fonction int() donne en effet la partie entière du nombre.
 0.60069
 ```
 
-### Exercice 20
+### Exercice 13
 
 Que fait la fonction `trace` définie ci-dessous ?
 Dans un premier temps, répondre sans exécuter le programme.
@@ -464,7 +394,7 @@ def trace(n,larg):
         forward(larg*i)
 ```
 
-### Exercice 21
+### Exercice 14
 
 Écrire un programme qui permet de tracer des triangles en spirales.
 
