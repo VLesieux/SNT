@@ -224,7 +224,7 @@ Prendre le pass devient avantageux à partir de 5 séances.
 
 Indication : on augmente le nombre n de séances et on compare les prix avec et sans abonnement.
 
-### Exercice 5 : Parcourir les éléments d'une liste
+### Exercice 5 : parcourir les éléments d'une liste
 
 1) Écrire un programme qui analyse un par un tous les éléments d'une liste de mots par exemple liste_complete=['Jean','Maximilien','Brigitte','Sonia','Jean-Pierre'] pour générer deux nouvelles listes : l'une contiendra les mots comportant moins de 6 caractères, l'autre comportant les mots de plus de 6 caractères.
 
@@ -324,7 +324,7 @@ Traiter l'[exercice2 du sujet n°19](https://github.com/VLesieux/NSI-Terminale/b
 
 Traiter l'[exercice2 du sujet n°20](https://github.com/VLesieux/NSI-Terminale/blob/master/Banque_Sujets_2021/21_NSI_20/21_NSI_20.pdf) de la banque des sujets de Terminale NSI ; il s'agit d'écrire une fonction qui retourne si oui ou non une chaîne de caractères ou un nombre est un palindrome.
 
-### Exercice 12
+### Exercice 12 : faire de l'aléatoire avec le module random
 
 1) Écrire une fonction  `lancers` telle que `lancers(n)` simule n lancers d'un dé équilibré à 6 faces et renvoie le résultat sous forme de liste.
 On importera la bibliothèque `random` pour pouvoir appeler la fonction `randint` de cette bibliothèque, telle que random.randint(n,p) renvoie un entier aléatoire entre n et p, n et p étant compris.
@@ -380,9 +380,9 @@ La fonction int() donne en effet la partie entière du nombre.
 0.60069
 ```
 
-### Exercice 13
+### Exercice 13 : dessiner avec le module random
 
-Que fait la fonction `trace` définie ci-dessous ?
+1) Que fait la fonction `trace` définie ci-dessous ?
 Dans un premier temps, répondre sans exécuter le programme.
 
 ```Python
@@ -394,9 +394,7 @@ def trace(n,larg):
         forward(larg*i)
 ```
 
-### Exercice 14
-
-Écrire un programme qui permet de tracer des triangles en spirales.
+2) Écrire un programme qui permet de tracer des triangles en spirales.
 
 
 <img src="Assets/spirales_triangles.png" width="200" height="200"> 
