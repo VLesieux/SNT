@@ -125,6 +125,7 @@ def affichage(m,n):
     # la fonction ne renvoie effectivement rien mais affiche quelque chose
     >>> affichage(7,20)
     0;7;14;21;28;35;42;49;56;63;70;77;84;91;98;105;112;119;126;133;
+    """
 ```
 
 3) Amélioration : faire en sorte d'indiquer à l'aide d'une * les multiples de m qui sont aussi des multiples de 3. On utilisera l'instruction conditionnelle `if`, l'opérateur modulo `%` qui donne le reste de la division entière de 2 nombres, et l'opérateur de comparaison `==` .
@@ -138,6 +139,7 @@ def affichage_ameliore1(m,n):
     return : None
     >>> affichage_ameliore1(7,20)
     0*;7;14;21*;28;35;42*;49;56;63*;70;77;84*;91;98;105*;112;119;126*;133;
+    """
 ```
 
 4) De la même façon indiquer également à l'aide d'un ! les multiples de m qui sont aussi des multiples de 2.
