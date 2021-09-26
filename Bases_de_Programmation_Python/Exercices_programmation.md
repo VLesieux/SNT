@@ -188,26 +188,16 @@ exemple :
 ### Exercice 4 : manipuler les élements d'un tuple
 
 Un cinéma propose un pass mensuel à 15€ permettant d'obtenir une réduction sur le prix des séances : sans réduction la séance est à 8,70€, alors qu'avec le pass la séance est à 5,50€. 
-Sans résoudre mathématiquement le problème, écrire une première fonction `abo1(n)` qui renvoie (avec un return) une chaîne de caractères et qui permet d'afficher (en utilisant dans un deuxième temps l'instruction `print()`) s'il est avantageux de prendre le pass ou non en fonction du nombre ` n` de séances dans le mois ; la fonction affiche également sur la même ligne le prix total à payer et l'avantage que représente ce choix.
+Sans résoudre mathématiquement le problème, écrire une fonction `abo(n)` qui renvoie sous la forme de tuple deux informations numériques : la première étant le prix sans abonnement, la seconde le prix avec abonnement. Pour renvoyer deux variables a et b sous forme de tuple, écrire `return (a,b)`.
 
 ```Python
->>> %Run exercices_programmation_snt.py
-combien de séances de cinéma allez-vous prendre ? 2
-Ne prenez pas le pass, il est désavantageux ; vous payez 17.4€ sans le pass au lieu de 26.0€ avec le pass
->>> %Run exercices_programmation_snt.py
-combien de séances de cinéma allez-vous prendre ? 8
-Prenez le pass, il est avantageux ; vous payez 59.0€ avec le pass au lieu de 69.6€ sans le pass
-```
-Écrire maintenant une deuxième fonction `abo2(n)` qui renvoie cette fois deux informations numériques sous la forme d'un tuple, la première information étant le prix sans abonnement, la seconde le prix avec abonnement. Pour renvoyer deux valeurs a et b sous forme de tuple, écrire `return (a,b)`.
-
-```Python
->>> abo2(2)
+>>> abo(2)
 (17.4, 26.0)
->>> abo2(8)
+>>> abo(8)
 (69.6, 59.0)
 ```
 
-Une fois que l'on dispose de la fonction `abo2(n)` précédente, écrire une fonction `avantage()` qui utilise cette fonction et qui renvoie le nombre de séances à partir duquel le pass devient avantageux. 
+Une fois que l'on dispose de cette fonction, écrire une fonction `avantage()` qui utilise cette fonction et qui renvoie le nombre de séances à partir duquel le pass devient avantageux. 
 
 Pour récuperer la première et la deuxième valeur d'un tuple, procéder ainsi : 
 
@@ -218,6 +208,8 @@ Pour récuperer la première et la deuxième valeur d'un tuple, procéder ainsi 
 >>> doublet[1]
 17
 ```
+
+Afficher le résultat de la fonction `avantage()` sous la forme suivante.
 
 ```Python
 >>> %Run correction_exercices_programmation_snt.py
