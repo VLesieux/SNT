@@ -197,26 +197,25 @@ Sans résoudre mathématiquement le problème, écrire une fonction `abo(n)` qui
 (69.6, 59.0)
 ```
 
-Une fois que l'on dispose de cette fonction, écrire une fonction `avantage()` qui utilise cette fonction et qui renvoie le nombre de séances à partir duquel le pass devient avantageux. 
-
 Pour récuperer la première et la deuxième valeur d'un tuple, procéder ainsi : 
 
 ```Python
->>> doublet=(10,17)
->>> doublet[0]
-10
->>> doublet[1]
-17
+>>> abo(2)[0]
+17.4
+>>> abo(2)[1]
+26.0
 ```
+Une fois que l'on dispose de cette fonction, on cherche à afficher le nombre de séances à partir duquel prendre le pass devient avantageux. 
 
-Afficher le résultat de la fonction `avantage()` sous la forme suivante.
+Afficher le résultat de la façon suivante.
 
 ```Python
->>> %Run correction_exercices_programmation_snt.py
-Prendre le pass devient avantageux à partir de 5 séances.
+>>> %Run ex4.py
+L'achat d'un pass devient intéressant à partir de  5 séances
+Sans pass :  43.5 €, avec pass :  42.5  €.
 ```
 
-Indication : on augmente le nombre n de séances et on compare les prix avec et sans abonnement.
+Indication : on augmente la variable `nb_seances` avec une boucle `while` en comparant les prix avec et sans abonnement.
 
 ### Exercice 5 : parcourir les éléments d'une liste
 
