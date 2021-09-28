@@ -25,7 +25,7 @@ def eleve_au_carre(n):
 On n'hésitera pas également à ajouter des commentaires en les précédant du caractère # ; l'interpréteur Python ignore tout ce qui suit jusqu'à la fin de la ligne courante.
 On réalisera un fichier avec l'extension .py par exercice et on les rangera tous dans le même dossier.
 
-### Exercice 1 : de l'utilisation des boucles en programmation
+### Exercice 1 : de l'utilisation des boucles `for` ou `while` en programmation
 
 <u>Ce qu'il faut savoir :</u> 
 
@@ -75,7 +75,7 @@ numero de case :  64  ; nombre de grains déposés sur cette case :  ?  ; nombre
 
 N.B : pour otenir le résultat en notation scientifique, on écrira non pas 1 qui est du type int mais 1.0 qui est du type float.
 
-### Exercice 2 : de l'utilisation de l'instruction conditionnelle if
+### Exercice 2 : de l'utilisation de l'instruction conditionnelle `if` en programmation
 
 La structure conditionnelle utilise les mots : **`if ; elif ; else`** dans cet ordre.
 `elif` est utilisé dans le cas où se présentent plusieurs alternatives.
@@ -234,7 +234,7 @@ Sans abonnement :  43.5 €, avec abonnement :  42.5  €.
 
 Indications : on augmente la variable `nb_seances` (initialisée à 1) avec une boucle `while` (cf. ex 1) en comparant les prix avec et sans abonnement. Pour l'affichage du résultat : cf.ex 3.
 
-### Exercice 5 : parcourir les éléments d'une liste
+### Exercice 5 : parcourir les éléments d'une liste de deux façons différentes
 
 Une **liste** est constitué d'éléments séparés par une virgule à l'intérieur de crochets.
 Les éléments d'une liste sont mutables contrairement aux éléments d'un tuple.
@@ -383,7 +383,7 @@ La fonction int() donne en effet la partie entière du nombre.
 0.60069
 ```
 
-### Exercice 8 : dessiner avec le module random
+### Exercice 8 : dessiner avec le module `turtle`
 
 1) Que fait la fonction `trace` définie ci-dessous ?
 Dans un premier temps, répondre sans exécuter le programme.
@@ -403,7 +403,6 @@ def trace(n,larg):
 <img src="Assets/spirales_triangles.png" width="200" height="200"> 
 
 Indications : s'inspirer du code de l'exercice 15.
-
 
 Aller plus loin...
 
