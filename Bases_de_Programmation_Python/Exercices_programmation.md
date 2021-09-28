@@ -187,7 +187,7 @@ exemple :
 
 ### Exercice 4 : manipuler les élements d'un tuple
 
-Un cinéma propose un pass mensuel à 15€ permettant d'obtenir une réduction sur le prix des séances : sans réduction la séance est à 8,70€, alors qu'avec le pass la séance est à 5,50€. 
+Un cinéma propose une carte d'abonnement mensuel à 15€ permettant d'obtenir une réduction sur le prix des séances : sans réduction la séance est à 8,70€, alors qu'avec l'abonnement la séance est à 5,50€. 
 Sans résoudre mathématiquement le problème, écrire une fonction `abo(n)` qui renvoie sous la forme de tuple deux informations numériques : la première étant le prix sans abonnement, la seconde le prix avec abonnement. Pour renvoyer deux variables a et b sous forme de tuple, écrire `return (a,b)`.
 
 ```Python
@@ -205,14 +205,14 @@ Pour récuperer la première et la deuxième valeur d'un tuple, procéder ainsi 
 >>> abo(2)[1]
 26.0
 ```
-Une fois que l'on dispose de cette fonction, on cherche à afficher le nombre de séances à partir duquel prendre le pass devient avantageux. 
+Une fois que l'on dispose de cette fonction, on cherche à afficher le nombre de séances à partir duquel prendre l'abonnement devient avantageux. 
 
 Afficher le résultat de la façon suivante.
 
 ```Python
 >>> %Run ex4.py
-L'achat d'un pass devient intéressant à partir de  5 séances
-Sans pass :  43.5 €, avec pass :  42.5  €.
+L'achat d'un abonnement devient intéressant à partir de  5 séances
+Sans abonnement :  43.5 €, avec abonnement :  42.5  €.
 ```
 
 Indication : on augmente la variable `nb_seances` avec une boucle `while` en comparant les prix avec et sans abonnement.
