@@ -211,11 +211,11 @@ Afficher le résultat de la façon suivante.
 
 ```Python
 >>> %Run ex4.py
-L'achat d'un abonnement devient intéressant à partir de  5 séances
+L'achat d'un abonnement devient intéressant à partir de 5 séances
 Sans abonnement :  43.5 €, avec abonnement :  42.5  €.
 ```
 
-Indication : on augmente la variable `nb_seances` avec une boucle `while` en comparant les prix avec et sans abonnement.
+Indication : on augmente la variable `nb_seances` (initialisée à 1) avec une boucle `while` en comparant les prix avec et sans abonnement.
 
 ### Exercice 5 : parcourir les éléments d'une liste
 
