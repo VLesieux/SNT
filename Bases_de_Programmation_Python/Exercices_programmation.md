@@ -175,6 +175,7 @@ exemple :
 ```Python
 nombre=int(input("nombre de lots de ramettes de papier achetés ? "))
 ```
+
 2) la concaténation (addition) de chaînes de caractères ; transformer un nombre en chaîne de caractères se fait avec `str()`.
 
 exemple :
@@ -183,6 +184,9 @@ exemple :
 >>> variable=4
 >>> "vous avez acheté "+str(variable)+ " livres"
 'vous avez acheté 4 livres'
+# ou pour afficher un résultat
+>>> print("vous avez acheté ",variable," livres")
+vous avez acheté  4  livres
 ```
 
 ### Exercice 4 : manipuler les élements d'un tuple
@@ -215,7 +219,7 @@ L'achat d'un abonnement devient intéressant à partir de 5 séances
 Sans abonnement :  43.5 €, avec abonnement :  42.5  €.
 ```
 
-Indication : on augmente la variable `nb_seances` (initialisée à 1) avec une boucle `while` (cf. ex 1) en comparant les prix avec et sans abonnement.
+Indications : on augmente la variable `nb_seances` (initialisée à 1) avec une boucle `while` (cf. ex 1) en comparant les prix avec et sans abonnement. Pour l'affichage cf.ex3.
 
 ### Exercice 5 : parcourir les éléments d'une liste
 
