@@ -225,7 +225,7 @@ L'achat d'un abonnement devient intéressant à partir de 5 séances
 Sans abonnement :  43.5 €, avec abonnement :  42.5  €.
 ```
 
-Indications : on augmente la variable `nb_seances` (initialisée à 1) avec une boucle `while` (cf. ex 1) en comparant les prix avec et sans abonnement. Pour l'affichage cf.ex3.
+Indications : on augmente la variable `nb_seances` (initialisée à 1) avec une boucle `while` (cf. ex 1) en comparant les prix avec et sans abonnement. Pour l'affichage du résultat : cf.ex3.
 
 ### Exercice 5 : parcourir les éléments d'une liste
 
