@@ -19,10 +19,12 @@ def eleve_au_carre(n):
     >>> eleve_au_carre(4)
     16
     """
-    return n**2
+    carre=n**2
+    return carre
 ```
 
 On n'hésitera pas également à ajouter des commentaires en les précédant du caractère # ; l'interpréteur Python ignore tout ce qui suit jusqu'à la fin de la ligne courante.
+
 On réalisera un fichier avec l'extension .py par exercice et on les rangera tous dans le même dossier.
 
 ### Exercice 1 : de l'utilisation des boucles `for` ou `while` en programmation
