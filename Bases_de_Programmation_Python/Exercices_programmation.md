@@ -184,7 +184,12 @@ exemple :
 >>> variable=4
 >>> "vous avez acheté "+str(variable)+ " livres"
 'vous avez acheté 4 livres'
-# ou pour afficher un résultat
+```
+
+3) l'affichage sur une seule ligne se fait avec un `print()` en séparant les éléments avec une virgule.
+
+```Python
+>>> variable=4
 >>> print("vous avez acheté ",variable," livres")
 vous avez acheté  4  livres
 ```
