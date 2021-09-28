@@ -182,11 +182,12 @@ exemple :
 
 ```Python
 >>> variable=4
->>> "vous avez acheté "+str(variable)+ " livres"
-'vous avez acheté 4 livres'
+>>> chaine="vous avez acheté "+str(variable)+ " livres"
+>>> print(chaine)
+vous avez acheté 4 livres
 ```
 
-3) l'affichage sur une seule ligne se fait avec un `print()` en séparant les éléments avec une virgule.
+3) l'affichage sur une seule ligne peut également se faire avec un `print()` en séparant les éléments avec une virgule.
 
 ```Python
 >>> variable=4
