@@ -195,7 +195,7 @@ vous avez acheté 4 livres
 vous avez acheté  4  livres
 ```
 
-### Exercice 4 : manipuler les élements d'un tuple avec leur indice de position dans le tuple
+### Exercice 4 : manipuler les élements d'un tuple grâce à leur indice de position dans le tuple
 
 Un **tuple** ou n-uplet est constitué de n valeurs, quel que soit leur type, séparées par une virgule.
 
