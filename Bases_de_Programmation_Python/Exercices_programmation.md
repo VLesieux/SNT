@@ -195,7 +195,14 @@ vous avez acheté 4 livres
 vous avez acheté  4  livres
 ```
 
-### Exercice 4 : manipuler les élements d'un tuple
+### Exercice 4 : manipuler les élements d'un tuple avec leur indice de position dans le tuple
+
+Un **tuple** ou n-uplet est constitué de n valeurs, quel que soit leur type, séparées par une virgule.
+
+```Python
+>>> type((23,"billes",12.5))
+<class 'tuple'>
+```
 
 Un cinéma propose une carte d'abonnement mensuel à 15€ permettant d'obtenir une réduction sur le prix des séances : sans réduction la séance est à 8,70€, alors qu'avec l'abonnement la séance est à 5,50€. 
 Sans résoudre mathématiquement le problème, écrire une fonction `abo(n)` qui renvoie sous la forme de tuple deux informations numériques : la première étant le prix sans abonnement, la seconde le prix avec abonnement. Pour renvoyer deux variables a et b sous forme de tuple, écrire `return (a,b)`.
@@ -228,6 +235,21 @@ Sans abonnement :  43.5 €, avec abonnement :  42.5  €.
 Indications : on augmente la variable `nb_seances` (initialisée à 1) avec une boucle `while` (cf. ex 1) en comparant les prix avec et sans abonnement. Pour l'affichage du résultat : cf.ex 3.
 
 ### Exercice 5 : parcourir les éléments d'une liste
+
+Une **liste** est constitué d'éléments séparés par une virgule à l'intérieur de crochets.
+Les éléments d'une liste sont mutables contrairement aux éléments d'un tuple.
+
+```Python
+>>> liste=[3,"chien",4.5]
+>>> liste[1]="chat"
+>>> liste
+[3, 'chat', 4.5]
+>>> triplet=(3,"chien",4.5)
+>>> triplet[1]="chat"
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+```
 
 1) Écrire un programme qui analyse un par un tous les éléments d'une liste de mots par exemple liste_complete=['Jean','Maximilien','Brigitte','Sonia','Jean-Pierre'] pour générer deux nouvelles listes : l'une contiendra les mots comportant moins de 6 caractères, l'autre comportant les mots de plus de 6 caractères.
 
