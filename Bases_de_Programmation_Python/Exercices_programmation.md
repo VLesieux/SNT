@@ -31,9 +31,9 @@ On réalisera un fichier avec l'extension .py par exercice et on les rangera tou
 
 <u>Ce qu'il faut savoir :</u> 
 
-Une <b>bloucle non conditionnelle et bornée</b> se fait avec **`for i in range(n)`** qui produit n tours de boucle, i est une variable qui prend les valeurs de 0 à n-1 ; on peut également décider d'une autre valeur initiale pour la variable, en écrivant par exemple `for i in range(2, n)` qui fait varier la variable i de 2 compris à n-1.
+Une <b>bloucle non conditionnelle et bornée</b> se fait avec **`for i in range(n)`** qui produit n tours de boucle, i est une variable qui prend les valeurs de 0 à n-1 ; on peut également décider d'une autre valeur initiale pour la variable, en écrivant par exemple `for i in range(2, n)` qui fait varier la variable i de 2 compris à n-1. Enfin, on peut également modifier le pas `p` de l'incrémentation à l'aide d'un troisième paramètre : `for i in range(2, n, p)`.
 
-Par exemple : on affiche 5 fois le mot "salut" ainsi que l'état de la variable
+Par exemple : on affiche le mot "salut" ainsi que l'état de la variable à l'aide de ces différentes boucles.
 
 ```Python
 >>> for tour in range(5):
@@ -43,17 +43,32 @@ Par exemple : on affiche 5 fois le mot "salut" ainsi que l'état de la variable
 2 salut
 3 salut
 4 salut
+>>> for tour in range(2,8):
+    print(tour,"salut")    
+2 salut
+3 salut
+4 salut
+5 salut
+6 salut
+7 salut
+>>> for tour in range(2,8,2):
+    print(tour,"salut")    
+2 salut
+4 salut
+6 salut
 ```
+
+
 
 Une <b>bloucle conditionnelle et non bornée</b> se fait avec l'instruction **`while`**.
 
-Par exemple : on fait la même chose que précédemment mais d'une autre manière en imposant une condition qui limite l'évolution de la variable : 
+Par exemple : on fait la même chose que précédemment mais d'une autre manière en imposant une condition qui limite l'évolution de la variable, il faut penser cette fois à incrémenter la variable à chaque tour de boucle : 
 
 ```Python
 >>> tour=0
 >>> while tour<5:
     print(tour,"salut")
-    tour +=1    
+    tour +=1 # on augmente la variable d'une unité à chaque tour   
 0 salut
 1 salut
 2 salut
@@ -197,7 +212,7 @@ vous avez acheté 4 livres
 vous avez acheté  4  livres
 ```
 
-### Exercice 4 : manipuler les élements d'un tuple grâce à leur indice de position dans le tuple
+### Exercice 4 : manipuler les éléments d'un tuple grâce à leur indice de position dans le tuple
 
 Un **tuple** ou n-uplet est constitué de n valeurs, quel que soit leur type, séparées par une virgule.
 
