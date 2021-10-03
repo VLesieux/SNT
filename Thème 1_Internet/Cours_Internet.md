@@ -2,9 +2,12 @@
 
 ### Le réseau des réseaux
 
-Pour que deux ordinateurs communiquent entre eux il faut les mettre en **réseau**. Dans un lycée par exemple, les ordinateurs sont reliés au **réseau local** de l'établissement à l'aide de câbles. Des **serveurs** dédiés permettent de faire fonctionner le réseau, de stocker et rendre accessibles des données depuis n'importe quel ordinateur de l'établissement. 
-Chez soi, si l'on a plusieurs ordinateurs qui se connectent à la même box (en filaire ou en Wifi), cela constitue également un réseau dit local, auquel peuvent aussi être reliés une imprimante ou un décodeur TV...Il existe énormément de réseaux à travers le monde. Tous ces réseaux peuvent également être reliés entre eux pour former des réseaux de réseaux.
-Internet (qui signifie Inter-networks), constitue **le réseau des réseaux**. Tous les objets connectés à Internet (ordinateurs, téléphones, montres connectées, etc..) peuvent communiquer entre eux et échanger des informations : textes, images, sons, vidéos, etc.. Plusieurs supports de communication peuvent être utilisés : câbles électriques (transport de l'électricité), fibre optique (transport de la lumière utilisant la réflexion totale dans celle-ci), air libre : wifi, 4G : transport d'ondes électromagnétiques, en France, selon les opérateurs (Bouygues Telecom, Free, Orange, SFR), les fréquences utilisées pour la 4G sont dans les bandes 700, 800 et 900 MHz, 1800, 2100 et 2600 MHz (il est à noter qu'il s'agit du même type d'onde électromagnétique (ondes millimétriques ou centimètriques car de longueur d'onde comprise entre 1 et 10 mm=1 cm) que le four à micro-ondes, mais avec une différence de puissance, de l'ordre de 0,1 W pour le Wi-Fi, de l'ordre de 1000 W pour le four à micro-ondes).
+Pour que deux ordinateurs communiquent entre eux il faut les mettre en **réseau**. Dans un lycée par exemple, les ordinateurs sont reliés au **réseau local** de l'établissement à l'aide de câbles. Des **serveurs** dédiés permettent de faire fonctionner le réseau, de stocker et de rendre accessibles des données depuis n'importe quel ordinateur de l'établissement. 
+Chez soi, si l'on a plusieurs ordinateurs qui se connectent à la même box (en filaire ou en Wifi), cela constitue également un réseau dit **local**, auquel peuvent aussi être reliés une imprimante ou un décodeur TV...Il existe énormément de réseaux à travers le monde. Tous ces réseaux peuvent également être reliés entre eux pour former des réseaux de réseaux. Internet qui signifie Inter-networks constitue ainsi **le réseau des réseaux**.
+Tous les objets connectés à Internet (ordinateurs, téléphones, montres connectées, etc..) peuvent communiquer entre eux et échanger des informations : textes, images, sons, vidéos, etc.. Plusieurs **supports de communication** peuvent être utilisés : 
+- **câbles électriques** : transport de l'électricité
+- **fibre optique** : transport de la lumière utilisant la réflexion totale de celle-ci dans le cœur de la fibre
+- **air libre** : wifi, 4G : transport d'ondes électromagnétiques. En France, selon les **opérateurs** (Bouygues Telecom, Free, Orange, SFR...), les fréquences utilisées pour la 4G sont dans les bandes 700, 800 et 900 MHz, 1800, 2100 et 2600 MHz ; il est à noter qu'il s'agit du même type d'onde électromagnétique que ce que l'on trouve dans le four à micro-ondes, mais avec une différence de puissance, de l'ordre de 0,1 W pour le Wi-Fi, de l'ordre de 1000 W pour le four à micro-ondes.
 
 
 ### Historique
@@ -23,20 +26,21 @@ Les données transmises entre deux ordinateurs par exemple sont codées par une 
 
 Remarque : En informatique, on compte l'information en **octet** : 1 octet est formé de 8 bits ; il y a donc 2<sup>8</sup>=256 octets possibles de (0,0,0,0,0,0,0,0) à (1,1,1,1,1,1,1,1). Le traffic Internet prévu en 2021 est de 3 300 milliards de milliards d'octets, soit 3.3×10<sup>21</sup> octets.
 
-Pour que les données soient correctement transmises, puis exploitées, des **protocoles** ont été mis en place.
+Pour que les données (des milliards de 0 et de 1 envoyés les uns après les autres) soient correctement transmises, puis exploitées, des **protocoles** ont été mis en place.
 Les données vont être **encapsulées** par ces différents protocoles, c'est-à-dire qu'on va y accoler un certain nombre d'informations (où est situé l'ordinateur destinataire ? quel est le logiciel destinataire ? ...).
-C'est l'ensemble de ces informations appelé **trame** qui est transmis via le réseau Internet.
+Cet ensemble d'informations est appelé **trame** et c'est ce qui est transmis via le réseau Internet.
 
 <img src="Assets/Trame.png">
 
-### TCP/IP
+### Le protocole TCP/IP
 
-Parmi les différents protocoles utilisés, on retrouve très fréquemment TCP/IP. Il s'agit en réalité de deux protocoles utilisés conjointement. 
+Parmi les différents protocoles utilisés, on retrouve très fréquemment TCP/IP. Il s'agit en réalité de deux protocoles distincts mais utilisés conjointement. 
 
 #### Le protocole TCP (Transmission Control Protocol)
 
-Imaginons que l'on souhaite envoyer une photo numérique. Il s'agit d'un fichier volumineux qui ne pourra pas être envoyé en une seule fois mais devra être découpé. Le protocole TCP se charge de découper les données sous forme de **paquets** numérotés et d'indiquer à quel logiciel ces paquets sont destinés. TCP s'assure ensuite que tous ces paquets sont bien transmis (grâce à des accusés de réception) et les rassemble. Si des paquets ont été perdus lors de la transmission, TCP se charge de demander leur nouvel envoi.
-Le protocole TCP assure donc une transmission fiable, mais sans garantie temporelle. Cependant il manque encore une information essentielle à la transmission des données : où est situé l'ordinateur B sur le réseau Internet ?
+Imaginons que l'on souhaite envoyer une photo numérique. Il s'agit d'un fichier volumineux qui ne pourra pas être envoyé en une seule fois mais devra être découpé en morceaux. Le protocole TCP se charge de découper les données sous forme de **paquets numérotés** et d'indiquer à quel logiciel ces paquets sont destinés. TCP s'assure ensuite que tous ces paquets sont bien transmis (grâce à des accusés de réception) et les rassemble. Si des paquets ont été perdus lors de la transmission, TCP se charge de demander leur nouvel envoi.
+Le protocole TCP assure ainsi une transmission fiable, mais pour autant sans garantie temporelle.
+Cependant il nous manque encore une information essentielle à la transmission des données : où est situé l'ordinateur B sur le réseau Internet ?
 
 #### Le protocole IP (Internet Protocol)
 
@@ -47,7 +51,7 @@ Par exemple, supposons que l'adresse IP de l'expéditeur soit 192.168.0.1 et que
 
 <img src="Assets/Datagramme_IP.png" >
 
-Dans la trame envoyée, l'adresse IP est codée sur 4 octets, c'est-à-dire 32 bits (4*8). Pour cela on utilise la représentation binaire des nombres compris entre 0 et 255 (correspondant aux 256 possibilités pour chaque octet).
+Dans la trame envoyée, l'adresse IP est codée sur **4 octets**, c'est-à-dire 32 bits (4*8). Pour cela on utilise la représentation binaire des nombres compris entre 0 et 255 (correspondant aux 256 possibilités pour chaque octet).
 
 Exemple : considérons l'adresse : 172.152.23.108.
 Pour coder 172 en binaire, il s'agit de décomposer 172 en puissances de 2 (en base 2).
@@ -59,7 +63,7 @@ D'où le **code binaire** de 172 : (10101100)
 On procède de même pour 152 : (10011000)
 Puis pour 23 : (00010111)
 Enfin pour 108 : (1101100)
-D'où les 32 bits du code binaire de l'adresse : 1010110010011000000101111101100
+D'où les 32 bits (4×8) du code binaire de l'adresse : 1010110010011000000101111101100
 
 Remarque : étant donné le nombre grandissant d'objets connectés ce format d'adresse IP, appelé adresse IPv4 formé de 4 octets, soit 32 bits, devient insuffisant ; il est en effet limité pour coder 2<sup>32</sup>=4×10<sup>9</sup> adresses. 
 On utilise donc de plus en plus le protocole IPv6 qui utilise des adresses codées sur 128 bits ce qui donne 2<sup>128</sup>=3×10<sup>38</sup> adresses possibles. 
@@ -70,7 +74,7 @@ Remarque : Chaque adresse IP est unique dans un réseau privé, ce n'est en reva
 
 #### Autres protocoles
 
-TCP/IP n'est pas la seule suite de protocoles utilisée, il s'agit seulement de la plus répandue. Il en existe de nombreux autres, citons par exemple UDP/IP. Le protocole UDP, tout comme TCP, encapsule les données de sorte qu'elles soient transmises au bon logiciel. En revanche UDP ne gère pas les accusés de réception. L'avantage est que la transmission est plus rapide, l'inconvénient est qu'il n'y a aucune fiabilité sur la transmission (les paquets vont-ils tous arriver ? dans l'ordre ?). Ce n'est pas forcément un problème, par exemple quand il s'agit de visionner une vidéo en streaming.
+TCP/IP n'est pas la seule suite de protocoles utilisée, il s'agit seulement de la plus répandue. Il en existe de nombreux autres, citons par exemple UDP/IP. Le **protocole UDP**, tout comme TCP, encapsule les données de sorte qu'elles soient transmises au bon logiciel. En revanche UDP ne gère pas les accusés de réception. L'avantage est que la transmission est plus rapide, l'inconvénient est qu'il n'y a aucune fiabilité sur la transmission (les paquets vont-ils tous arriver ? dans l'ordre ?). Ce n'est pas forcément un problème, par exemple quand il s'agit de visionner une vidéo en streaming.
 
 ### Routage
 
