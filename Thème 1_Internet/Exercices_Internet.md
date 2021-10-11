@@ -144,7 +144,8 @@ Sous Windows, dans un terminal saisir la commande :  `tracert www.facebook.com`.
 
 ### Exercice 7
 
-Vérifier que le site www.wikipedia.org vous est accessible en saisissant dans un terminal la commande `ping www.wikipedia.org` puis accéder au site en utilisant l'adresse IP. 
+Vérifier que le site www.wikipedia.org vous est accessible en saisissant dans un terminal la commande `ping www.wikipedia.org` puis accéder directement au site en utilisant l'adresse IP.
+ 
 Rappeler le nom que l'on donne sur Internet aux serveurs qui disposent d’une application logicielle (sorte d’annuaire) permettant de faire la correspondance entre le nom de domaine demandé et l’IP publique associée au serveur. 
 
 
