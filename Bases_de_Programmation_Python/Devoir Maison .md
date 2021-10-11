@@ -98,7 +98,7 @@ def inverse_chaine(chaine):
     >>> inverse_chaine('bac')
     'cab'
     """
-    # à compléter #
+    # à compléter
 
 def est_palindrome(chaine):
     """
@@ -109,7 +109,7 @@ def est_palindrome(chaine):
     False
     >>> est_palindrome('SNT-TNS')
     True
-    """    # à compléter #
+    """    # à compléter
 
 def est_nbre_palindrome(nombre):
     """
@@ -121,6 +121,6 @@ def est_nbre_palindrome(nombre):
     >>> est_nbre_palindrome(213312)
     True
     """
-    # à compléter #
+    # à compléter
 
 ```
