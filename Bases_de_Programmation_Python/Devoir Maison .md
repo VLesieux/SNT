@@ -45,8 +45,8 @@ def moyenne(liste_notes_coef):
 
 #### Ex 3 : Le codage de César 
 Le codage de César transforme un message en changeant chaque lettre en la décalant dans l’alphabet. Par exemple, avec un décalage de 3, le A se transforme en D, le B en E, ..., le X en A, le Y en B et le Z en C. Les autres caractères (‘!’,’ ?’…) ne sont pas codés.
-La fonction position_alphabet ci-dessous prend en paramètre un caractère lettre et renvoie la position de lettre dans la chaîne de caractères ALPHABET s’il s’y trouve et -1 sinon.
-La fonction cesar prend en paramètre une chaîne de caractères message et un nombre entier decalage et renvoie le nouveau message codé avec le codage de César utilisant le décalage decalage. 
+La fonction position_alphabet ci-dessous prend en paramètre un caractère `lettre` et renvoie la position de lettre dans la chaîne de caractères ALPHABET s’il s’y trouve et -1 sinon.
+La fonction cesar prend en paramètre une chaîne de caractères `message` et un nombre entier `decalage` et renvoie le nouveau message codé avec le codage de César utilisant le décalage `decalage`. 
 
 Compléter le code ci-dessous :
 
@@ -58,6 +58,8 @@ def position_alphabet(lettre):
     return : int
     >>> position_alphabet('E')
     4
+    >>> position_alphabet('!')
+    -1
     """
     for i in range(len(ALPHABET)):
 		# à compléter
