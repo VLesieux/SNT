@@ -1,14 +1,42 @@
 ## Exercices Thème 1 : Internet
 
-### Exercice 1
+### Exercice 1 : Simuler un réseau
 
-Déterminer sa propre adresse IP.  
+[La transmission des données dans un réseau](assets/Transmission_donnees.md)
+
+### Exercice 2 : à faire chez soi
+
+a. Déterminer sa propre adresse IP.  
 
 Sous Windows, aller dans `Système Windows`
 - ouvrir un terminal en cliquant sur `Démarrer`, `exécuter` et en tapant `cmd`
 - saisir la commande `ipconfig`
 
-### Exercice 2
+b. Accéder à sa propre table de routage.
+Sous Windows, dans un terminal saisir la commande `route print`.
+
+
+c. Identifier la route empruntée pour accéder au site web www.facebook.com
+
+Sous Windows, dans un terminal saisir la commande :  `tracert www.facebook.com`.
+
+d. Vérifier que le site www.wikipedia.org vous est accessible en saisissant dans un terminal la commande `ping www.wikipedia.org` puis accéder directement au site en utilisant l'adresse IP.
+ 
+Rappeler le nom que l'on donne sur Internet aux serveurs qui disposent d’une application logicielle (sorte d’annuaire) permettant de faire la correspondance entre le nom de domaine demandé et l’IP publique associée au serveur. 
+
+
+### Exercice 3 : la notion de TTL
+
+Sur le réseau simplifié décrit ci-dessous, citer au moins trois chemins permettant de relier la machine M8 à la machine M4.
+
+<img src="Assets/routages.png" width="800" height="600">
+
+1) Quelle est la valeur minimale du TTL d'un paquet émis par M8 pour qu'il parvienne à M4 ?
+On rappelle que le TTL est une donnée placée au niveau de l'en-tête du paquet IP qui indique le nombre maximal de routeurs de transit pour éviter qu'un paquet ne boucle à l'infini s'il existe un problème de boucle de routage.
+
+2) Que se passe-t-il si le routeur B tombe en panne ? si le routeur D tombe en panne ?
+
+### Exercice 4 : le codage binaire 
 
 1) Coder à la main en binaire la valeur décimale 51. Vérifier dans la console de Thonny avec `bin(51)`.
 
@@ -120,32 +148,6 @@ print(resultat)
 ```
 
 
-### Exercice 3
 
-Sur le réseau simplifié décrit ci-dessous, citer au moins trois chemins permettant de relier la machine M8 à la machine M4.
-
-<img src="Assets/routages.png" width="800" height="600">
-
-1) Quelle est la valeur minimale du TTL d'un paquet émis par M8 pour qu'il parvienne à M4 ?
-On rappelle que le TTL est une donnée placée au niveau de l'en-tête du paquet IP qui indique le nombre maximal de routeurs de transit pour éviter qu'un paquet ne boucle à l'infini s'il existe un problème de boucle de routage.
-
-2) Que se passe-t-il si le routeur B tombe en panne ? si le routeur D tombe en panne ?
-
-### Exercice 5
-
-Accéder à sa propre table de routage.
-Sous Windows, dans un terminal saisir la commande `route print`.
-
-### Exercice 6
-
-Identifier la route empruntée pour accéder au site web www.facebook.com
-
-Sous Windows, dans un terminal saisir la commande :  `tracert www.facebook.com`.
-
-### Exercice 7
-
-Vérifier que le site www.wikipedia.org vous est accessible en saisissant dans un terminal la commande `ping www.wikipedia.org` puis accéder directement au site en utilisant l'adresse IP.
- 
-Rappeler le nom que l'on donne sur Internet aux serveurs qui disposent d’une application logicielle (sorte d’annuaire) permettant de faire la correspondance entre le nom de domaine demandé et l’IP publique associée au serveur. 
 
 
