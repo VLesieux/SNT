@@ -69,7 +69,8 @@ def position_alphabet(lettre):
     """
     Renvoie le message avec le décalage souhaité
     param : message : str
-    param : decalage : int	  >>> cesar('BONJOUR A TOUS. VIVE LA MATIERE SNT !',4)
+    param : decalage : int
+    >>> cesar('BONJOUR A TOUS. VIVE LA MATIERE SNT !',4)
     'FSRNSYV E XSYW. ZMZI PE QEXMIVI WRX !'
     >>> cesar('GTSOTZW F YTZX. ANAJ QF RFYNJWJ XSY !',-5)
     'BONJOUR A TOUS. VIVE LA MATIERE SNT !'
