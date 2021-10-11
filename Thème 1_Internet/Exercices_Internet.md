@@ -134,16 +134,17 @@ On rappelle que le TTL est une donnée placée au niveau de l'en-tête du paquet
 ### Exercice 5
 
 Accéder à sa propre table de routage.
-Sous Windows, dans un terminal saisir la commande `route print`
-
+Sous Windows, dans un terminal saisir la commande `route print`.
 
 ### Exercice 6
 
 Identifier la route empruntée pour accéder au site web www.facebook.com
-Sous Windows, dans un terminal saisir la commande :  `tracert www.facebook.com`
+
+Sous Windows, dans un terminal saisir la commande :  `tracert www.facebook.com`.
 
 ### Exercice 7
 
-Vérifier que le site www.wikipedia.org vous est accessible en saisissant dans un terminal la commande `ping www.wikipedia.org`
+Vérifier que le site www.wikipedia.org vous est accessible en saisissant dans un terminal la commande `ping www.wikipedia.org` puis accéder au site en utilisant l'adresse IP. 
+Rappeler le nom que l'on donne sur Internet aux serveurs qui disposent d’une application logicielle (sorte d’annuaire) permettant de faire la correspondance entre le nom de domaine demandé et l’IP publique associée au serveur. 
 
 
