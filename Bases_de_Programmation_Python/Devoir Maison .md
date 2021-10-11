@@ -8,7 +8,6 @@ if __name__ == '__main__':
   doctest.testmod(verbose=True)
 ```
 
-
 #### Ex 1 : Programmer la fonction multiplication en utilisant uniquement les opérations addition et soustraction.
 
 ```Python
