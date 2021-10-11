@@ -416,10 +416,6 @@ def trace(n,larg):
 
 2) Écrire un programme qui permet de tracer des triangles en spirales.
 
-
 <img src="Assets/spirales_triangles.png" width="200" height="200"> 
 
-Indications : s'inspirer du code de l'exercice 15.
-
-Aller plus loin...
 
