@@ -51,7 +51,7 @@ Compléter le code ci-dessous :
 
 ```Python
 
-ALPHABET='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+ALPHABET='ABCDEFGHIJKLMNOPQRSTUVWXYZ'#une chaîne de 26 caractères
 def position_alphabet(lettre):
     """
     Renvoie l'indice de position de lettre dans ALPHABET
@@ -62,7 +62,7 @@ def position_alphabet(lettre):
     >>> position_alphabet('!')
     -1
     """
-    for i in range(len(ALPHABET)):
+    for i in range(len(ALPHABET)):#parcourt la chaîne en faisant varier l'indice de position i dans la chaîne
 		# à compléter
 		# à compléter
 def cesar(message, decalage):
@@ -74,7 +74,7 @@ def position_alphabet(lettre):
     >>> cesar('GTSOTZW F YTZX. ANAJ QF RFYNJWJ XSY !',-5)
     'BONJOUR A TOUS. VIVE LA MATIERE SNT !'
     """        resultat = ''
-    for lettre in message :
+    for lettre in message :#parcourt les différents lettres de la chaînes 
         if lettre in ALPHABET :
              indice = ( # à compléter #)%26
              resultat = # à compléter
