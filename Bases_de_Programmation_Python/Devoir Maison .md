@@ -51,6 +51,8 @@ Le codage de César transforme un message en changeant chaque lettre en la déca
 Compléter le code ci-dessous :
 
 ```Python
+
+ALPHABET='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 def position_alphabet(lettre):
     """
     Renvoie l'indice de position de lettre dans ALPHABET
@@ -72,14 +74,14 @@ def position_alphabet(lettre):
     'FSRNSYV E XSYW. ZMZI PE QEXMIVI WRX !'
     >>> cesar('GTSOTZW F YTZX. ANAJ QF RFYNJWJ XSY !',-5)
     'BONJOUR A TOUS. VIVE LA MATIERE SNT !'
-    """    	  resultat = ''
-	  for lettre in message :
-	      if lettre in ALPHABET :
-	            indice = ( # à compléter #)%26
-	            resultat = # à compléter
-	      else:
-	            resultat = # à compléter
-	  return resultat    
+    """        resultat = ''
+    for lettre in message :
+        if lettre in ALPHABET :
+             indice = ( # à compléter #)%26
+             resultat = # à compléter
+        else:
+             resultat = # à compléter
+    return resultat    
 ```
 
 #### Ex 4 : Les palindromes
