@@ -10,11 +10,11 @@ Sous Windows, aller dans `Système Windows`
 
 ### Exercice 2
 
-1) Coder en binaire la valeur décimale 51. Vérifier dans la console de Thonny avec `bin(51)`.
+1) Coder à la main en binaire la valeur décimale 51. Vérifier dans la console de Thonny avec `bin(51)`.
 
-2) Déterminer la valeur décimale de l'octet `10110001`. Vérifier dans la console de Thonny avec `0b10110001`.
+2) Inversement calculer à la main la valeur décimale de l'octet `10110001`. Vérifier dans la console de Thonny avec `0b10110001`.
 
-3) Compléter le programme suivant de conversion décimal-binaire en python dont une ligne est manquante.
+3) Après avoir observé dans l'algorithme utilisé le rôle que doit prendre à chaque fois le nouveau dividende par rapport au quotient précédent, compléter le programme suivant de conversion décimal-binaire en python dont une seule ligne est manquante.
 
 ```python
 nombre=input("Entrez un nombre entier : ")
@@ -32,14 +32,30 @@ print(a)
 
 ```python
 def conversion_decimal_binaire(nombre):
+    """
+    Renvoie le code binaire de nombre sur un octet c'est-à-dire 8 bits
+    param : nombre : int
+    return : str
+    >>> conversion_decimal_binaire(51)
+    '00110011'
+    """
     a=""
     # ligne à compléter
         a=str(nombre%2)+a
         nombre=nombre//2
+    a='0'*(8-len(a))+a##pour rajouter autant de 0 que nécessaire à l'écriture d'un octet
     return a
 ```
 
-5) À l'aide du programme précédent, coder en écriture binaire l'adresse IP 192.168.1.13
+Code à ajouter pour importer le module doctest
+
+```Python
+if __name__ == '__main__':
+  import doctest
+  doctest.testmod(verbose=True)
+```
+
+5) En utilisant le programme précédent, coder en écriture binaire l'adresse IP 192.168.1.13
 
 6) Peut-on concevoir un programme qui donnerait directement le code binaire d'une adresse IP ?
 
@@ -56,15 +72,32 @@ Pour cela, on peut transformer une chaîne de caractères en liste en utilisant 
 13
 ```
 
-7)  Compléter le programme suivant de conversion binaire-décimal en python dont une ligne est manquante.
+```Python
+adresseIP=input("Entrez une adresse IP écrite sous forme décimale")
+liste=adresseIP.split(".")
+resultat=""
+for element in liste:
+    nombre=int(element)
+    # une ligne à compléter
+print(resultat)
+```
+
+7)  Compléter le programme suivant de conversion binaire-décimal en python dont une ligne est incomplète.
 
 ```python
-a=0
-code=input("Veuillez entrer un code binaire : ")
-inversion_code=code[::-1]#permet d'inverser la chaîne de caractères
-for i in range(len(code)):
-	# ligne à compléter
-print(a)
+def conversion_binaire_decimal(code_binaire):
+    """
+    Renvoie la valeur décimal de code_binaire
+    param : code_binaire : str
+    return : int
+    >>> conversion_binaire_decimal('00110011')
+    51
+    """
+    resultat=0
+    for i in range(len(code_binaire)):
+        nombre=int(code_binaire[i])
+        resultat+=nombre*(2**(# à compléter #))
+    return resultat
 ```
 
 8) Donner l'adresse IP codée par 10011000110000110110110001100010
@@ -77,6 +110,15 @@ Pour cela, on peut prélever une partie d'une chaîne de caractères en réalisa
 >>> "10011000110000110110110001100010"[0:8]
 '10011000'
 ```
+```python
+adresseIP=input("Entrez une adresse IP écrite sous forme de 4 octets")
+resultat=""
+for i in range(4):
+    resultat+="."+str(conversion_binaire_decimal(# à compléter #))
+resultat=resultat[1:len(resultat)]#pour supprimer le premier point
+print(resultat)
+```
+
 
 ### Exercice 3
 
