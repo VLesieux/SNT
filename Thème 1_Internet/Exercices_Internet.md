@@ -2,7 +2,7 @@
 
 ### Exercice 1 : Simuler un réseau
 
-[La transmission des données dans un réseau](assets/Transmission_donnees.md)
+[La transmission des données dans un réseau](Assets/Transmission_donnees.md)
 
 ### Exercice 2 : à faire chez soi
 
