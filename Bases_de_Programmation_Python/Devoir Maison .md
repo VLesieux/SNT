@@ -28,7 +28,7 @@ def multiplication(n1,n2):
     # à compléter
 ```
 
-Indication : réaliser une boucle non conditionnelle et bornée
+Indication : réaliser une boucle non conditionnelle et bornée.
 
 ####  Ex 2 : Programmer une fonction moyenne qui renvoie la moyenne pondérée d'une liste de notes coefficientées.
 
@@ -44,7 +44,7 @@ def moyenne(liste_notes_coef):
     # à compléter
 ```
 
-Indication : parcourir les éléments (tuple) de la liste, élément après élément, accéder à une valeur dans un tuple par son indice de position.
+Indication : parcourir les éléments (tuple) de la liste, élément après élément, accéder à une valeur du tuple par son indice de position.
 
 Exemple :
 
@@ -107,7 +107,7 @@ def position_alphabet(lettre):
     return resultat    
 ```
 
-Commentaire : `%26` permet de se retrouver dans l'alphabet quelque soit le décalage effectué.
+Commentaire : `%26` permet de se retrouver toujours dans l'alphabet quelque soit le décalage effectué.
 
 
 #### Ex 4 : Les palindromes
@@ -157,4 +157,4 @@ def est_nbre_palindrome(nombre):
 
 ```
 
-Indication : pour réaliser la fonction `inverse_chaine`, parcourir les caractères de la chaîne et consituer son inverse.
+Indication : pour réaliser la fonction `inverse_chaine`, parcourir les caractères de la chaîne en consituant son inverse.
