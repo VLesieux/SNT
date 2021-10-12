@@ -7,7 +7,7 @@ if __name__ == '__main__':
   import doctest
   doctest.testmod(verbose=True)
 ```
-Pour faire ce DM, revoir les [exercices de programmation](Exercices_programmation.md)
+Pour faire ce DM, il est conseillé de revoir les [exercices de programmation](Exercices_programmation.md).
 #### Ex 1 : Programmer la fonction multiplication en utilisant uniquement les opérations addition et soustraction.
 
 ```Python
@@ -73,7 +73,6 @@ Le codage de César transforme un message en changeant chaque lettre en la déca
 Compléter le code ci-dessous :
 
 ```Python
-
 ALPHABET='ABCDEFGHIJKLMNOPQRSTUVWXYZ'#une chaîne de 26 caractères
 def position_alphabet(lettre):
     """
@@ -115,13 +114,12 @@ Commentaire : `%26` permet de se retrouver toujours dans l'alphabet quelque soit
 Un mot palindrome peut se lire de la même façon de gauche à droite ou de droite à gauche : bob, radar, et non sont des mots palindromes.
 De même certains nombres sont eux aussi des palindromes : 33, 121, 345543.
 L’objectif de cet exercice est d’obtenir un programme Python permettant de tester si un nombre est un nombre palindrome.
-Pour remplir cette tâche, on vous demande de compléter le code des trois fonctions ci-dessous sachant que la fonction est `est_nbre_palindrome` s’appuiera sur la fonction `est_palindrome` qui elle-même s’appuiera sur la fonction `inverse_chaine`.
+Pour remplir cette tâche, on vous demande de compléter le code des trois fonctions ci-dessous sachant que la fonction `est_nbre_palindrome` s’appuiera sur la fonction `est_palindrome` qui elle-même s’appuiera sur la fonction `inverse_chaine`.
 La fonction `inverse_chaine` inverse l'ordre des caractères d'une chaîne de caractères chaine et renvoie la chaîne inversée.
 La fonction `est_palindrome` teste si une chaine de caractères chaine est un palindrome. Elle renvoie True si c’est le cas et False sinon. Cette fonction s’appuie sur la fonction précédente.
 La fonction `est_nbre_palindrome` teste si un nombre nbre est un palindrome. Elle renvoie True si c’est le cas et False sinon. Cette fonction s’appuie sur la fonction précédente.
 
 ```Python
-
 def inverse_chaine(chaine):
     """
     Renvoie la chaine dans l'odre inverse
@@ -157,4 +155,4 @@ def est_nbre_palindrome(nombre):
 
 ```
 
-Indication : pour réaliser la fonction `inverse_chaine`, parcourir les caractères de la chaîne en consituant son inverse.
+Indication : pour réaliser la fonction `inverse_chaine`, parcourir les caractères de la chaîne en reconsituant son inverse.
