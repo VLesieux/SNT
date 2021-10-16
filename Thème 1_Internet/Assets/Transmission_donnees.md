@@ -1,5 +1,5 @@
 
-### Pour simuler un réseau, utilisez le logiciel gratuit **Filius**
+### Pour simuler et comprendre le fonctionnement d'un réseau, utilisez le logiciel gratuit **Filius**
 
 1) Réalisez l'architecture d'un réseau en plaçant deux ordinateurs Portable ; en cliquant sur eux, donnez-leur des noms simples M1 et M2 et des adresses IP simples : 192.168.0.1 et  192.168.0.2 ; les relier par un câble Ethernet puis passer en mode simulation (triangle vert à côté du marteau). 
 En cliquant sur une machine, on ouvre une fenêtre qui permet d'utiliser un logiciel sur un ordinateur ; on installe le logiciel Ligne de commande (appliquer les modifications) pour écrire des **lignes de commande** : on utilise la commande **ipconfig** pour vérifier l'adresse IP de la machine ; celle-ci est formée de 4 octets en notation décimale, ainsi que l'adresse MAC de la machine donnée par le constructeur ; celle-ci est formée de 6 octets en notation hexadécimale, puis on envoie un **ping** sur la  machine M2 en renseignant son adresse IP.
