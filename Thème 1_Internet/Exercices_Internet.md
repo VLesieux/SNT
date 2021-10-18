@@ -36,13 +36,13 @@ On rappelle que le TTL est une donnée placée au niveau de l'en-tête du paquet
 
 2) Que se passe-t-il si le routeur B tombe en panne ? si le routeur D tombe en panne ?
 
-### Exercice 4 : le codage binaire 
+### Exercice 4 : le codage binaire de l'information transmise dans le réseau
 
 1) Coder à la main en binaire la valeur décimale 51. Vérifier dans la console de Thonny avec `bin(51)`.
 
-2) Inversement calculer à la main la valeur décimale de l'octet `10110001`. Vérifier dans la console de Thonny avec `0b10110001`.
+2) Inversement, calculer à la main la valeur décimale de l'octet `10110001`. Vérifier dans la console de Thonny avec `0b10110001`.
 
-3) Après avoir observé dans l'algorithme utilisé le rôle que doit prendre à chaque fois le nouveau dividende par rapport au quotient précédent, compléter le programme suivant de conversion décimal-binaire en python dont une seule ligne est manquante.
+3) Après avoir observé dans l'algorithme utilisé le rôle que prend à chaque tour de boucle le nouveau dividende par rapport au quotient précédent, compléter le programme suivant de conversion décimal-binaire en python dont une seule ligne est manquante.
 
 ```python
 nombre=input("Entrez un nombre entier : ")
@@ -56,7 +56,7 @@ while quotient>0:
     a=str(reste)+a#permet la concaténation de la chaîne de caractères de droite à gauche
 print(a)
 ```
-4) On peut transformer le programme précédent en réalisant une fonction que l'on appelera `conversion_decimal_binaire`. Déterminer la ligne manquante.
+4) On peut transformer ce programme en réalisant une fonction que l'on appelera `conversion_decimal_binaire`. Déterminer la ligne manquante afin de rendre fonctionnel le test.
 
 ```python
 def conversion_decimal_binaire(nombre):
@@ -85,7 +85,7 @@ if __name__ == '__main__':
 
 5) En utilisant le programme précédent, coder en écriture binaire l'adresse IP 192.168.1.13
 
-6) Peut-on concevoir un programme qui donnerait directement le code binaire d'une adresse IP ?
+Peut-on concevoir un programme qui donnerait directement le code binaire d'une adresse IP ?
 
 Pour cela, on peut transformer une chaîne de caractères en liste en utilisant un séparateur avec la méthode `split` puis parcourir la liste avec `for element in `.
 
@@ -100,17 +100,45 @@ Pour cela, on peut transformer une chaîne de caractères en liste en utilisant 
 13
 ```
 
+Compléter la fonction ci-dessous : 
+
 ```Python
-adresseIP=input("Entrez une adresse IP écrite sous forme décimale")
-liste=adresseIP.split(".")
-resultat=""
-for element in liste:
-    nombre=int(element)
-    # une ligne à compléter
-print(resultat)
+def encodage_adresse_IP_binaire(adresseIP):
+    """
+    Encode une adresse IP en binaire
+    param : adresse IP : str
+    return : str
+    >>> encodage_adresse_IP_binaire("192.168.1.13")
+    11000000101010000000000100001101
+    """
 ```
 
-7)  Compléter le programme suivant de conversion binaire-décimal en python dont une ligne est incomplète.
+6) Une autre application est l'encodage en binaire d'un texte utilisant le codage ASCII des caractères.
+
+<img src="Assets/ascii.png"> 
+
+Pour obtenir le code ASCII d'un caractère :
+
+```Python
+>>> ord("k")
+107
+```
+
+Compléter la fonction ci-dessous : 
+
+```Python
+def encodage_texte_ascII_binaire(texte):
+    """
+    Encode un texte ascII en binaire
+    param : texte : str
+    return : str
+    >>> encodage_texte_ascII_binaire("vive la snt")
+    '0111011001101001011101100110010100100000011011000110000100100000011100110110111001110100'
+    """
+```
+
+
+7)  Compléter maintenant le programme suivant de conversion binaire-décimal en python dont une ligne est incomplète.
 
 ```python
 def conversion_binaire_decimal(code_binaire):
@@ -132,22 +160,42 @@ def conversion_binaire_decimal(code_binaire):
 
 9) Peut-on concevoir un programme qui donnerait directement l'adresse IP sous forme décimale à partir de son expression sous forme binaire ?
 
-Pour cela, on peut prélever une partie d'une chaîne de caractères en réalisant un `slice` :
+Pour cela, il faut prélever des parties de la chaîne de caractères en réalisant un `slice` :
 
 ```python
 >>> "10011000110000110110110001100010"[0:8]
 '10011000'
 ```
 ```python
-adresseIP=input("Entrez une adresse IP écrite sous forme de 4 octets")
-resultat=""
-for i in range(4):
-    resultat+="."+str(conversion_binaire_decimal(# à compléter #))
-resultat=resultat[1:len(resultat)]#pour supprimer le premier point
-print(resultat)
+def conversion_adresseIP_binaire_decimal(code_binaire):
+    """
+    Renvoie le code décimal d'une adresse IP sous la forme de 4 octets
+    param : code_binaire : str
+    return : str
+    >>> conversion_adresseIP_binaire_decimal('11000000101010000000000100001101')
+    '192.168.1.13'
+    """
+ 
 ```
 
+10) Compléter la fonction ci-dessous qui permet de décoder le code binaire correspondant à un texte.
 
+Pour obtenir le caractère correspondant à un code décimal, utiliser 
 
+```Python
+>>> chr(52)
+'4'
+```
+
+```Python
+def decodage_binaire_texte_ascII(code_binaire):
+    """
+    Décode le code binaire d'un texte ascII
+    param : code_binaire : str
+    return : str
+    >>> decodage_binaire_texte_ascII('0111011001101001011101100110010100100000011011000110000100100000011100110110111001110100')
+    'vive la snt'
+    """
+```
 
 
