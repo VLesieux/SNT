@@ -38,9 +38,13 @@ On rappelle que le TTL est une donnée placée au niveau de l'en-tête du paquet
 
 ### Exercice 4 : le codage binaire de l'information transmise dans le réseau
 
-1) Coder à la main en binaire la valeur décimale 51. Vérifier dans la console de Thonny avec `bin(51)`.
+Un exemple de codage binaire 'à la main' de l'entier 755 : 
 
-2) Inversement, calculer à la main la valeur décimale de l'octet `10110001`. Vérifier dans la console de Thonny avec `0b10110001`.
+<img src="Assets/divisions.png">
+
+1) Coder 'à la main' en binaire la valeur décimale 51. Vérifier dans la console de Thonny avec `bin(51)`.
+
+2) Inversement, calculer 'à la main' la valeur décimale de l'octet `10110001`. Vérifier dans la console de Thonny avec `0b10110001`.
 
 3) Après avoir observé dans l'algorithme utilisé le rôle que prend à chaque tour de boucle le nouveau dividende par rapport au quotient précédent, compléter le programme suivant de conversion décimal-binaire en python dont une seule ligne est manquante.
 
@@ -75,7 +79,7 @@ def conversion_decimal_binaire(nombre):
     return a
 ```
 
-Code à ajouter pour importer le module doctest
+Code à ajouter pour importer le module doctest et vérifier le test :
 
 ```Python
 if __name__ == '__main__':
@@ -113,7 +117,7 @@ def encodage_adresse_IP_binaire(adresseIP):
     """
 ```
 
-6) Une autre application est l'encodage en binaire d'un texte utilisant le codage ASCII des caractères.
+6) Une autre application est l'encodage en binaire d'un texte utilisant le codage ASCII  (American Standard Code for Information Interchange) des caractères.
 
 <img src="Assets/ascii.png"> 
 
