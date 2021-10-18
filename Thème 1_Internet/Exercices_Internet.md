@@ -131,16 +131,15 @@ Pour obtenir le code ASCII d'un caractère :
 Compléter la fonction ci-dessous : 
 
 ```Python
-def encodage_texte_ascII_binaire(texte):
+def encodage_texte_ASCII_binaire(texte):
     """
-    Encode un texte ascII en binaire
+    Encode un texte ASCII en binaire
     param : texte : str
     return : str
-    >>> encodage_texte_ascII_binaire("vive la snt")
+    >>> encodage_texte_ASCII_binaire("vive la snt")
     '0111011001101001011101100110010100100000011011000110000100100000011100110110111001110100'
     """
 ```
-
 
 7)  Compléter maintenant le programme suivant de conversion binaire-décimal en python dont une ligne est incomplète.
 
@@ -192,12 +191,12 @@ Pour obtenir le caractère correspondant à un code décimal, utiliser
 ```
 
 ```Python
-def decodage_binaire_texte_ascII(code_binaire):
+def decodage_binaire_texte_ASCII(code_binaire):
     """
-    Décode le code binaire d'un texte ascII
+    Décode le code binaire d'un texte ASCII
     param : code_binaire : str
     return : str
-    >>> decodage_binaire_texte_ascII('0111011001101001011101100110010100100000011011000110000100100000011100110110111001110100')
+    >>> decodage_binaire_texte_ASCII('0111011001101001011101100110010100100000011011000110000100100000011100110110111001110100')
     'vive la snt'
     """
 ```
