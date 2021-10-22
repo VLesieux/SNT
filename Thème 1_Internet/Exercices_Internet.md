@@ -72,7 +72,7 @@ def conversion_decimal_binaire(nombre):
     '00110011'
     """
     a=""
-    # ligne à compléter
+    # ligne à compléter en observant que nombre passé en paramètre deviendra le quotient après le premier tour
         a=str(nombre%2)+a
         nombre=nombre//2
     a='0'*(8-len(a))+a##pour rajouter autant de 0 que nécessaire à l'écriture d'un octet
