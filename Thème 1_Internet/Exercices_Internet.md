@@ -178,7 +178,6 @@ def conversion_adresseIP_binaire_decimal(code_binaire):
     >>> conversion_adresseIP_binaire_decimal('11000000101010000000000100001101')
     '192.168.1.13'
     """
- 
 ```
 
 10) Compléter la fonction ci-dessous qui permet de décoder le code binaire correspondant à un texte.
