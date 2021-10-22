@@ -113,7 +113,7 @@ def encodage_adresse_IP_binaire(adresseIP):
     param : adresse IP : str
     return : str
     >>> encodage_adresse_IP_binaire("192.168.1.13")
-    11000000101010000000000100001101
+    '11000000101010000000000100001101'
     """
 ```
 
