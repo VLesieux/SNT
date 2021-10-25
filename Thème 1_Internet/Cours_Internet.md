@@ -28,16 +28,19 @@ Tous les objets connectés à Internet (ordinateurs, téléphones, montres conne
 
 ### Transmission d'informations
 
-Les données transmises entre deux ordinateurs par exemple sont codées par une suite de 0 et de 1 : on parle de **bits**. L'intérêt de cette représentation est de pouvoir transférer les données par des signaux électriques (1: signal, 0: rien) ou optiques (1 : allumé, 0: éteint).
+Les données transmises entre deux ordinateurs sont codées en binaire (en base 2) sous la forme d'une suite de 0 et de 1 : on parle de **bits**. L'intérêt de cette représentation est de pouvoir transférer les données par des signaux électriques (1: signal, 0: rien) ou optiques (1 : allumé, 0: éteint).
 
 Remarque : En informatique, on compte l'information en **octet** : 1 octet est formé de 8 bits ; il y a donc 2<sup>8</sup>=256 octets possibles de (0,0,0,0,0,0,0,0) à (1,1,1,1,1,1,1,1). Le traffic Internet prévu en 2021 est de 3 300 milliards de milliards d'octets, soit 3.3×10<sup>21</sup> octets.
 
 Pour que les données (des milliards de 0 et de 1 envoyés les uns après les autres) soient correctement transmises, puis exploitées, des **protocoles** ont été mis en place.
-Les données vont être **encapsulées** par ces différents protocoles, c'est-à-dire qu'on va y accoler un certain nombre d'informations (où est situé l'ordinateur destinataire ? quel est le logiciel destinataire ? ...).
 
-Cet ensemble d'informations est appelé **trame** et c'est ce qui est transmis via le réseau Internet.
+Les données vont être **encapsulées** par ces différents protocoles, c'est-à-dire qu'on va y accoler un certain nombre d'informations, notamment : où est situé l'ordinateur destinataire ? quel est le logiciel destinataire ?...
+
+Cet ensemble d'informations constitue la **trame** et c'est ce qui est transmis via le réseau Internet.
+
 
 <img src="Assets/Trame.png">
+
 
 ### Le protocole TCP/IP
 
@@ -47,11 +50,13 @@ Parmi les différents protocoles utilisés, on retrouve très fréquemment TCP/I
 
 Imaginons que l'on souhaite envoyer une photo numérique. Il s'agit d'un fichier volumineux qui ne pourra pas être envoyé en une seule fois mais devra être découpé en morceaux. Le protocole TCP se charge de découper les données sous forme de **paquets numérotés** et d'indiquer à quel logiciel ces paquets sont destinés. TCP s'assure ensuite que tous ces paquets sont bien transmis (grâce à des accusés de réception) et les rassemble. Si des paquets ont été perdus lors de la transmission, TCP se charge de demander leur nouvel envoi.
 Le protocole TCP assure ainsi une transmission fiable, mais pour autant sans garantie temporelle.
+
 Cependant il nous manque encore une information essentielle à la transmission des données : où est situé l'ordinateur B sur le réseau Internet ?
 
 #### Le protocole IP (Internet Protocol)
 
 Pour comprendre le fonctionnement du protocole IP on peut faire assez naturellement l'analogie avec l'envoi du courrier par La Poste.
+
 Lorsqu'on envoie une lettre par La Poste on l'insère dans une enveloppe sur laquelle sont inscrites l'adresse du destinataire et celle de l'expéditeur. Ici la lettre à envoyer correspond aux données encapsulées par TCP. IP les encapsule en ajoutant entre autres les adresses du destinataire et de l'expéditeur.
 À quoi ressemble l'adresse d'un ordinateur ?   
 
@@ -69,13 +74,14 @@ Les puissances de 2 sont : (2<sup>0</sup>=1;2<sup>1</sup>=2;2<sup>2</sup>=4;2<su
 172=1×128+0×64+1×32+0×16+1×8+1×4+0×2+0×1
 172=1×2<sup>7</sup>+0×2<sup>6</sup>+1×2<sup>5</sup>+0×2<sup>4</sup>+1×2<sup>3</sup>+1×2<sup>2</sup>+0×2<sup>1</sup>+0×2<sup>0</sup>
 
-D'où le **code binaire** de 172 : (10101100). 
-On procède de même pour 152 : (10011000).
-Puis pour 23 : (00010111). 
-Enfin pour 108 : (1101100). 
+D'où le **code binaire** de 172 : (10101100).   
+On procède de même pour 152 : (10011000).  
+Puis pour 23 : (00010111).  
+Enfin pour 108 : (1101100).    
 D'où les 32 bits (4×8) du code binaire de l'adresse : 1010110010011000000101111101100
 
 Remarque : étant donné le nombre grandissant d'objets connectés ce format d'adresse IP, appelé adresse IPv4 formé de 4 octets, soit 32 bits, devient insuffisant ; il est en effet limité pour coder 2<sup>32</sup>=4×10<sup>9</sup> adresses. 
+
 On utilise donc de plus en plus le protocole IPv6 qui utilise des adresses codées sur 128 bits ce qui donne 2<sup>128</sup>=3×10<sup>38</sup> adresses possibles. 
 Les adresses IPv6 sont représentées par 8 groupes de 2 octets codés sous forme hexadécimale (chiffres de 0 à 9 et lettres de a à f) séparés par ":".
 
