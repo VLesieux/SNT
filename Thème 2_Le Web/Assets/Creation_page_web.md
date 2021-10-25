@@ -97,6 +97,7 @@ On trouve dans le code CSS
 -	des noms de balises appelés _**sélecteurs**_
 -	des _**propriétés**_ CSS
 -	des _**valeurs**_
+
 Il faut respecter la structure suivante :
 ```css
 balise1
