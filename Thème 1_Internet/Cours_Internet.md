@@ -28,6 +28,7 @@ Remarque : En informatique, on compte l'information en **octet** : 1 octet est f
 
 Pour que les données (des milliards de 0 et de 1 envoyés les uns après les autres) soient correctement transmises, puis exploitées, des **protocoles** ont été mis en place.
 Les données vont être **encapsulées** par ces différents protocoles, c'est-à-dire qu'on va y accoler un certain nombre d'informations (où est situé l'ordinateur destinataire ? quel est le logiciel destinataire ? ...).
+
 Cet ensemble d'informations est appelé **trame** et c'est ce qui est transmis via le réseau Internet.
 
 <img src="Assets/Trame.png">
