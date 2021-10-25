@@ -146,9 +146,15 @@ color : blue ;
 Tous les paragraphes seront de couleur bleue.
 
 Si on veut mettre en bleu un ou certains paragraphes en particulier uniquement, on utilise l’attribut _**class**_, il faudra procéder en deux temps :  
-Dans la page html, attribuer une classe à la balise : ```<p class="mon_paragraphe_en_bleu">mon paragraphe à mettre en bleu</p>```   
 
-Puis dans le css : 
+- Dans la page html, attribuer une classe à la balise : 
+
+```html
+<p class="mon_paragraphe_en_bleu">mon paragraphe à mettre en bleu</p>
+```   
+
+- Puis dans le css : 
+
 ```css
 . mon_paragraphe_en_bleu
 {
@@ -158,17 +164,26 @@ color : blue ;
 
 Ainsi tous les paragraphes qui possèdent la classe mon_paragraphe_en_bleu seront de couleur bleue sur la page.
 
-On utilise également l’attribut _**id**_ pour affecter un style à un élément unique de la page html, de plus id prend le dessus sur class.  
-Dans le html : ```<p id="monparagrapheenbleu">mon paragraphe à mettre en bleu</p>```  
+On peut aussi utiliser l’attribut _**id**_ pour affecter un style à un élément unique de la page html, de plus id prend le dessus sur class.  
 
-Puis dans le css :
+- Dans le html : 
+
+```html
+<p id="monparagrapheenbleu">mon paragraphe à mettre en bleu</p>
+```  
+
+- Puis dans le css :
+
+
 ```css
 #monparagrapheenbleu
 {
 color : blue ;
 }
 ```
-Mais le fait que class ou id soient des attributs de balise ne restreint pas pour autant leur utilisation aux balises communes telles que ```<p>```,``` <img />```…. En effet, il existe d’autres balises appelées balises universelles qui n’ont pas de signification particulière mais auxquelles nous pourrons affecter ces attributs.
+Mais le fait que `class` ou `id` soient des attributs de balise ne restreint pas pour autant leur utilisation aux balises communes telles que ```<p>```,``` <img />```…. 
+
+En effet, il existe d’autres balises appelées balises universelles qui n’ont pas de signification particulière mais auxquelles nous pourrons affecter ces attributs.
 
 -	la balise de type inline : ```<span> </span>``` : elle permet de sélectionner certains mots en particulier dans un paragraphe
 -	la balise de type block : ```<div> </div>``` : elle permet de sélectionner un bloc de texte.
@@ -212,6 +227,7 @@ h1
 border-radius : 10px;
 }
 ```
+
 _**Mise en place d’apparences dynamiques**_
 
 On peut faire des changements d’apparence :
@@ -233,6 +249,7 @@ a:hover
 color: red;
 }
 ```
+
 _**Organiser la page : le positionnement des blocs**_
 
 On peut organiser la page en blocs en utilisant des balises structurantes introduites pour délimiter différentes zones qui constituent la page web : 
@@ -251,6 +268,7 @@ On dispose de propriétés, exprimées en px ou en pourcentage, de largeur ```wi
 _**Utilisation de marges**_  
 
 Deux types de marge peuvent être utilisés :
+
 -	marge intérieure entre la bordure et le début du texte à l’intérieur : ```padding``` en px
 on peut préciser ```padding -top``` ; ```padding -bottom``` ; ```padding -left``` ; ```padding -right```
 -	marge extérieure entre la bordure et le texte à l’extérieur : ```margin``` en px
