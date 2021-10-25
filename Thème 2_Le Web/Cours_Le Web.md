@@ -2,9 +2,11 @@
 
 ### Introduction
 
-Le World Wide Web, en français : la toile d'araignée mondiale, a été inventée en 1989 par deux informaticiens : le Britannique Tim Berners Lee et le Belge Robert Caillau, qui travaillaient au CERN (Conseil Européen pour la Recherche Nucléaire situé à cheval sur la frontière franco-suisse) où se trouve actuellement le LHC (Large Hadron Collider : un accélérateur de particules qui accélère des protons ou des ions à une vitesse proche de la vitesse de la lumière). Cette invention a été conçue et développée pour que des scientifiques travaillant dans des universités et instituts du monde entier puissent s'échanger des informations instantanément.
 
-Communément appelé le Web, il permet, grâce à un navigateur, d'accéder aux différents sites et d'échanger par courrier électronique. Il est devenu incontournable dans pratiquement toutes les activités professionnelles ou de loisir.
+Le World Wide Web, en français : la toile (the web) d'araignée mondiale, a été inventée en 1989 par deux informaticiens : le Britannique Tim Berners Lee et le Belge Robert Caillau, qui travaillaient au CERN (Conseil Européen pour la Recherche Nucléaire situé à cheval sur la frontière franco-suisse) où se trouve actuellement le LHC (Large Hadron Collider : un accélérateur de particules). Cette invention a donc été conçue et développée initialement pour que des scientifiques travaillant dans des universités et instituts du monde entier puissent échanger des informations instantanément.
+
+Communément appelé le Web, il permet, grâce à un navigateur, d'accéder aux différents sites et d'échanger par courrier électronique. Il est devenu de nos jours incontournable dans pratiquement toutes les activités professionnelles ou de loisir.
+
 
 ### Historique
 
@@ -17,22 +19,21 @@ Communément appelé le Web, il permet, grâce à un navigateur, d'accéder aux 
 
 ### Fonctionnement du Web
 
-Comme on l'a vu dans le thème précédent, Internet est un gigantesque réseau d'ordinateurs connectés entre eux. Au sein de ce réseau, certains de ces ordinateurs appelés **serveurs** mettent à la disposition des ordinateurs clients des **ressources** (texte, image, vidéo..). Par exemple, une page web constitue un exemple de ressource.
-Le World Wide Web permet d'accéder à ces ressources par un système de **liens hypertextes**. Un lien hypertexte ou hyperlien est un élément cliquable d'une ressource permettant d'accéder à une autre ressource web en utilisant son **URL**.
+Comme on l'a vu dans le thème précédent, Internet est un gigantesque réseau d'ordinateurs connectés entre eux : c'est le réseau des réseaux.
+Au sein de ce réseau, certains de ces ordinateurs appelés **serveurs** mettent à la disposition des ordinateurs clients des **ressources** (texte, image, vidéo..) qui transitent à l'aide de protocoles de transferts vers ceux-ci.
+Le World Wide Web permet d'accéder à ces ressources par un système de **liens hypertextes**. Un lien hypertexte ou hyperlien est simplement un élément cliquable d'une ressource permettant d'accéder à une autre ressource web en utilisant son **URL**.
 
 Chaque ressource possède ainsi une adresse web appelée **URL** (Uniform Resource Locator) permettant de l'identifier, de la même façon qu'une adresse postale permet de localiser une habitation.
 
 <u>Remarque</u> : ne pas confondre l'adresse IP qui permet d'identifier de façon unique un ordinateur sur le réseau Internet et l'adresse web qui permet d'identifier une ressource sur un serveur.
 
-Une adresse web doit suivre une **syntaxe** bien précise.
-
-Classiquement elle s'écrit de la manière suivante : 
+Une adresse web doit suivre une **syntaxe** bien précise qui est généralement la suivante : 
 
 http://www.example.com/dossier_un_tel/page_un_tel.html
 
 - En premier est indiqué le **protocole** (les règles de communication) utilisé pour demander et recevoir la ressource : **HTTP** (Hypertext Transfer Protocol) est le protocole du Web le plus utilisé en particulier pour les pages web, mais il y en existe d'autres : **FTP** (pour échanger des fichiers : File Transfer Protocol ) ou encore **SMTP** (pour envoyer des e-mails : Simple Mail Transfer Protocol).
 - www.example.com est le **nom de domaine** de l'ordinateur sur lequel se trouve la ressource. Comme on l'a vu dans le thème précédent, ce nom de domaine est associé à une adresse IP ; c'est le rôle d'un **serveur DNS** d'interpréter le nom de domaine et de renvoyer l'adresse IP correspondante.
-- dossier/page.html est le **chemin** de la ressource sur l'ordinateur. Un chemin est constitué des dossiers (ou répertoires) qu'il faut parcourir pour accéder à un certain fichier. Ici la ressource est donc un **fichier** appelé `page_un_tel.html` lui même situé dans le **dossier**intitulé `dossier_un_tel` sur l'ordinateur portant le nom de domaine `www.example.com`.
+- dossier/page.html est le **chemin** de la ressource sur l'ordinateur. Un chemin est constitué des dossiers (ou répertoires) qu'il faut parcourir pour accéder à un certain fichier. Ici la ressource est donc un **fichier** appelé `page_un_tel.html` lui même situé dans le **dossier** intitulé `dossier_un_tel` sur l'ordinateur portant le nom de domaine `www.example.com`.
 
 ### Le protocole HTTP
 
@@ -54,6 +55,7 @@ Le fonctionnement d'un moteur de recherche comporte trois parties :
 Certaines pages peuvent ne pas être accessibles lors de cette exploration (par exemple, si aucun lien hypertexte ne pointe dessus) et ne sont donc pas référencées par le moteur de recherche : ces pages forment ce que l'on appelle le **deep web** (web profond en français).
 
 2. L'**indexation** associe à chaque mot-clé l'ensemble des pages en rapport avec ce mot-clé ; cette association entre un mot-clé et un ensemble de pages peut être stockée sous la forme d'un **dictionnaire**. 
+
 Avec Python, on peut créer aisément un tel dictionnaire :
 
  ```Python
@@ -65,20 +67,21 @@ D={'sport':['www.sports.fr','www.lequipe.fr'],'information':['www.20minutes.fr',
 >>> D['information']
 ['www.20minutes.fr', 'www.lemonde.fr']
  ```
-Un dictionnaire constitue un **type construit** (de type dict) qui permet d'associer une valeur à une clé. Il est plus pratique qu'une liste où les éléments sont repérés par leur indice de position.    
+Un dictionnaire constitue un **type construit** (de type dict, vu en NSI) qui permet d'associer une valeur à une clé. Il est plus pratique qu'une liste où les éléments sont repérés par leur indice de position dans la liste.    
 
-3. La **recherche** est réalisée à partir d'une **requête** sous forme de mots-clés d'un utilisateur. Le moteur de recherche renvoie une liste de pages web triés par ordre de pertinence et de popularité de sorte que les premiers résultats affichés soient les plus susceptibles d'intéresser l'utilisateur.
-Les moteurs de recherche utilisent différents moyens pour mesurer la popularité d'une page. Par exemple, Google utilise un **algorithme** appelé **PageRank** qui parcourt le Web en suivant aléatoirement un hyperlien sur chaque page. Ainsi, plus il y a de liens vers une page, plus sa "popularité" est élévée et plus il y a de chances qu'elle soit affichée en premier lors d'une recherche Google.
-Il est possible de payer (sous forme d'enchères) pour qu'un site web soit plus souvent en tête de recherches Google. La majeure partie des revenus de Google provient ainsi de cette publicité.  
+3. La **recherche** est réalisée à partir d'une **requête** sous forme de mots-clés d'un utilisateur. Le moteur de recherche renvoie une liste de pages web triés par **ordre de pertinence et de popularité** de sorte que les premiers résultats affichés soient les plus susceptibles d'intéresser l'utilisateur.
+Les moteurs de recherche utilisent différents moyens pour mesurer la popularité d'une page. Par exemple, Google utilise un **algorithme** appelé **PageRank** qui parcourt le Web en suivant aléatoirement un hyperlien sur chaque page. Ainsi, plus il y a de liens extérieurs qui pointent vers cette page, plus sa "popularité" est élévée et plus il y a de chances qu'elle soit affichée en premier lors d'une recherche Google.
+Il est possible de payer (sous forme d'enchères) pour qu'un site web soit plus souvent en tête de recherches Google ; la majeure partie des revenus de Google provient ainsi de cette publicité.  
 
 ### Confidentialité et vie privée
 
-Avez-vous déjà reçu des publicités sur différents sites correspondant exactement à la recherche que vous veniez de faire ? Ce n'est pas un hasard : votre navigation sur le Web laisse des traces qui peuvent être collectés par des entreprises. Ces données peuvent ensuite être revendues.
+Avez-vous déjà reçu des publicités sur différents sites correspondant exactement à la recherche que vous veniez de faire ? 
+Ce n'est pas un hasard : votre navigation sur le Web laisse des traces qui peuvent être collectés par des entreprises. Ces données peuvent ensuite être revendues.
 Un **cookie** est un fichier stocké sur l'ordinateur de l'utilisateur et contenant des informations relatives à la navigation sur un site particulier. Le cookie est lu par le site en question à chaque visite.
 Par exemple, un cookie peut contenir les paramètres de l'utilisateur, les articles d'un panier d'achat etc..Les cookies sont donc potentiellement utiles pour l'utilisateur.
 Un **cookie tiers** est un cookie placé par un publicitaire sur d'autres sites web de façon à suivre un utilisateur et récupérer différentes informations sur lui. Ce type de cookie n'est pas donc utile pour l'utilisateur, sauf éventuellement pour recevoir de la publicité ciblée.
-La legislation européenne impose aux sites web de demander à l'utilisateur d'accepter ou non l'utilisation de cookies. 
-Par exemple, avant d'entrer sur le site de Larousse, on trouve affiché : 
+La legislation européenne impose maintenant aux sites web de demander à l'utilisateur d'accepter ou non l'utilisation de cookies. 
+Par exemple, avant d'entrer sur le site de Larousse, on peut trouver affiché ce genre de messsage : 
 
 <img src="Assets/cookie_larousse.png"> 
 
@@ -93,10 +96,15 @@ Voici certains riques les plus fréquents lorsqu'on navigue sur le Web :
 - L'**hameçonnage** (fishing en anglais) consiste à leurrer un internaute à l'aide d'un faux site ou mail pour lui soutirer des données personnelles (numéro de carte bancaire, mot de passe, etc..). Souvent le site en question possède la même apparence que l'original avec une URL très légèrement différente (une lettre en plus par exemple).
 Les certificats électroniques peuvent permettre de garentir l'authenticité d'un site web. Lorsqu'un site utilise le protocole HTTPS sans certificat valide, le navigateur web affiche normalement un message d'avertissement. De manière générale, il faut éviter de communiquer des informations sensibles en particulier en l'absence de protocole sécurisé HTTPS ou de certificat valide.
 - Certains sites web peuvent essayer d'exécuter un **programme malveillant** sur votre appareil, souvent en demandant de télécharger un fichier exécutable (.exe sous Windows). Ce programme peut contenir un "keylogger" qui enregistre vos frappes de clavier pour récupérer vos mots de passe, un rançongiciel qui chiffre vos fichiers puis demande de l'argent pour pouvoir les récupérer..
-Certains de ces programmes tentent de s'exécuter directement dans le navigateur via un langage web comme JavaScript. L'ANSSI (Agence Nationale de Sécurité des Systèmes d'Information) conseille de désactiver Javascript dans la mesure du possible. Récemment, les principaux navigateurs ont décidé de désactiver Flash par défaut qui posait trop de problèmes de sécurité. 
+Certains de ces programmes tentent de s'exécuter directement dans le navigateur via un langage web comme JavaScript ; l'ANSSI (Agence Nationale de Sécurité des Systèmes d'Information) conseille de désactiver Javascript dans la mesure du possible. Récemment, les principaux navigateurs ont décidé de désactiver Flash par défaut qui posait trop de problèmes de sécurité. 
 
 
 ### Développement Web avec HTML
 
-On trouvera [ici](Assets/Creation_page_web.md) une page entièrement consacrée au développement Web avec HTML 5, cela vous permettra de créer votre propre page web.
-Pour la diffuser, vous devrez ensuite disposer d'un **hébergeur** ; on peut commencer avec un hébergeur web gratuit tel que alwaysdata. On peut également utiliser un créateur de site web tel que WordPress qui permet de réaliser plus rapidement son site web. Il existe également des logiciels du type WYSIWYG (« what you see is what you get ») qui dispose d'une interface graphique qui permet à l'utilisateur de voir son document tel qu'il sera publié ; l'un des plus connus est Dreamweaver de chez Adobe (payant), toutefois il est bon d'avoir des connaissances de base pour écrire correctement le code d'une page web et être capable d'y apporter des corrections ou des améliorations rapidement.
+On trouvera [en suivant ce lien](Assets/Creation_page_web.md) une page entièrement consacrée au développement Web avec HTML 5, cela vous permettra de créer vous-même vos propres pages web.
+Pour la stocker et la diffuser, vous devrez ensuite disposer d'un **hébergeur** possédant des serveurs présents dans un data-center ; on peut commencer avec un hébergeur web gratuit tel que [alwaysdata](https://www.alwaysdata.com/fr/) pour un stockage relativement limité.
+
+On peut également utiliser un créateur de site web tel que WordPress qui permet de réaliser plus facilement son site web.
+
+Il existe également des logiciels du type WYSIWYG (« what you see is what you get ») qui dispose d'une interface graphique qui permet à l'utilisateur de voir son document tel qu'il sera publié ; l'un des plus connus est Dreamweaver de chez Adobe (payant).
+Toutefois, même avec ces outils, il est bon d'avoir des connaissances de base pour écrire correctement le code d'une page web et être capable d'y apporter des corrections ou des améliorations rapidement.
