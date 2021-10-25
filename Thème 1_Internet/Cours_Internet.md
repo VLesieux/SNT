@@ -18,7 +18,7 @@ Tous les objets connectés à Internet (ordinateurs, téléphones, montres conne
 
 ### Historique
 
-- 1969 : L'Arpanet voit le jour, il s'agit du premier réseau de commutation de paquets reliant 4 machines de centres universitaires américains. Le protocole NCP sera utilisé.
+- 1969 (l'année du premier pas de l'homme sur la Lune) : L'Arpanet voit le jour, il s'agit du premier réseau de commutation de paquets reliant 4 machines de centres universitaires américains. Le protocole NCP sera utilisé.
 - 1971 : Envoi du premier courrier électronique.
 - 1971 : Parallèlement en France Louis Pouzin crée le réseau Cyclades. Le projet est abandonné en 1978 mais ses travaux ont influencé la mise au point d'Internet et du protocole TCP/IP.
 - 1974 : Définition de la suite des protocoles TCP/IP. Il sera adopté par l'Arpanet en 1983 en remplacement du protocole NCP.
