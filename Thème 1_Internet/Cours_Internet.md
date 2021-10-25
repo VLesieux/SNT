@@ -46,7 +46,10 @@ Cependant il nous manque encore une information essentielle à la transmission d
 
 Pour comprendre le fonctionnement du protocole IP on peut faire assez naturellement l'analogie avec l'envoi du courrier par La Poste.
 Lorsqu'on envoie une lettre par La Poste on l'insère dans une enveloppe sur laquelle sont inscrites l'adresse du destinataire et celle de l'expéditeur. Ici la lettre à envoyer correspond aux données encapsulées par TCP. IP les encapsule en ajoutant entre autres les adresses du destinataire et de l'expéditeur.
-À quoi ressemble l'adresse d'un ordinateur ? L'**adresse IP** est constituée de **4 nombres compris entre 0 et 255 séparés par un point**.
+À quoi ressemble l'adresse d'un ordinateur ?   
+
+L'**adresse IP**, à distinguer de l'adresse **MAC** qui est l'adresse donnée par le constructeur, est constituée de **4 nombres compris entre 0 et 255 séparés par un point**. 
+
 Par exemple, supposons que l'adresse IP de l'expéditeur soit 192.168.0.1 et que celle du destinataire soit 172.152.23.108, on obtient le **datagramme** suivant :
 
 <img src="Assets/Datagramme_IP.png" >
@@ -68,6 +71,7 @@ D'où les 32 bits (4×8) du code binaire de l'adresse : 101011001001100000010111
 Remarque : étant donné le nombre grandissant d'objets connectés ce format d'adresse IP, appelé adresse IPv4 formé de 4 octets, soit 32 bits, devient insuffisant ; il est en effet limité pour coder 2<sup>32</sup>=4×10<sup>9</sup> adresses. 
 On utilise donc de plus en plus le protocole IPv6 qui utilise des adresses codées sur 128 bits ce qui donne 2<sup>128</sup>=3×10<sup>38</sup> adresses possibles. 
 Les adresses IPv6 sont représentées par 8 groupes de 2 octets codés sous forme hexadécimale (chiffres de 0 à 9 et lettres de a à f) séparés par ":".
+
 Exemple d'adresse IPv6 : 2019:0ca8:0000:86b2:0000:0000:db16:8004
 
 Remarque : Chaque adresse IP est unique dans un réseau privé, ce n'est en revanche pas le cas sur l'ensemble du réseau Internet. Par exemple l'adresse IP de son ordinateur personnel commence souvent par 192.168.0., il s'agit en fait d'une adresse IP privée qui n'est pas directement accessible depuis Internet contrairement aux adresses IP publiques. Certaines plages d'adresses sont réservées aux adresses privées permettant l'utilisation de la même adresse IP sur des réseaux privés différents.
