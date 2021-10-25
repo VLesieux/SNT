@@ -25,7 +25,7 @@ d. Vérifier que le site www.wikipedia.org vous est accessible en saisissant dan
 Rappeler le nom que l'on donne sur Internet aux serveurs qui disposent d’une application logicielle (sorte d’annuaire) permettant de faire la correspondance entre le nom de domaine demandé et l’IP publique associée au serveur. 
 
 
-### Exercice 3 : la notion de TTL
+### Exercice 3 : la notion de TTL (Time to live ou durée de vie)
 
 Sur le réseau simplifié décrit ci-dessous, citer au moins trois chemins permettant de relier la machine M8 à la machine M4.
 
