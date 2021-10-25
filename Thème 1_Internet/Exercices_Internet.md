@@ -1,6 +1,6 @@
 ## Exercices Thème 1 : Internet
 
-### Exercice 1 : Simuler un réseau
+### Exercice 1 : Simuler un réseau avec le logiciel Filius
 
 [La transmission des données dans un réseau](Assets/Transmission_donnees.md)
 
