@@ -59,10 +59,10 @@ Les puissances de 2 sont : (2<sup>0</sup>=1;2<sup>1</sup>=2;2<sup>2</sup>=4;2<su
 172=1×128+0×64+1×32+0×16+1×8+1×4+0×2+0×1
 172=1×2<sup>7</sup>+0×2<sup>6</sup>+1×2<sup>5</sup>+0×2<sup>4</sup>+1×2<sup>3</sup>+1×2<sup>2</sup>+0×2<sup>1</sup>+0×2<sup>0</sup>
 
-D'où le **code binaire** de 172 : (10101100)
-On procède de même pour 152 : (10011000)
-Puis pour 23 : (00010111)
-Enfin pour 108 : (1101100)
+D'où le **code binaire** de 172 : (10101100). 
+On procède de même pour 152 : (10011000).
+Puis pour 23 : (00010111). 
+Enfin pour 108 : (1101100). 
 D'où les 32 bits (4×8) du code binaire de l'adresse : 1010110010011000000101111101100
 
 Remarque : étant donné le nombre grandissant d'objets connectés ce format d'adresse IP, appelé adresse IPv4 formé de 4 octets, soit 32 bits, devient insuffisant ; il est en effet limité pour coder 2<sup>32</sup>=4×10<sup>9</sup> adresses. 
