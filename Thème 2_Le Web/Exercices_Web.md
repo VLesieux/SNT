@@ -2,7 +2,7 @@
 
 ### Exercice 1
 
-On souhaite implémenter une version minimaliste de l'algorithme PageRank du moteur de recherche Google afin de comprendre son fonctionnement.  
+On souhaite étudier une version minimaliste de l'algorithme PageRank du moteur de recherche Google afin de comprendre son fonctionnement.  
 Par souci de simplicité, on travaille avec seulement 5 pages web, chaque page web étant numérotée.
 
 <img src="Assets/PageRank.png" width="300" height="300">
