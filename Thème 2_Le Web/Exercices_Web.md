@@ -96,7 +96,9 @@ Proposer "à la main" un classement par ordre de popularité des différentes pa
 
 ### Exercice 2
 
-Aller à l'adresse https://www.gouvernement.fr/composition-du-gouvernement et télécharger le code HTML en faisant un clic droit puis "Enregistrer sous..". Modifier le contenu de la page pour afficher votre nom au lieu d'un ministre (bien sûr, cette modification sera uniquement présente sur le fichier HTML que vous venez de télécharger...).
+Aller à l'adresse https://www.gouvernement.fr/composition-du-gouvernement et télécharger le code HTML en faisant un clic droit puis "Enregistrer sous..". 
+
+Modifier le contenu de la page pour afficher votre nom au lieu d'un ministre (bien sûr, cette modification sera uniquement présente sur le fichier HTML que vous venez de télécharger...).
 
 ### Exercice 3
 
