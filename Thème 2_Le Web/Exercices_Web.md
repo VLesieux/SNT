@@ -2,15 +2,19 @@
 
 ### Exercice 1
 
-On souhaite implémenter une version minimaliste de l'algorithme PageRank du moteur de recherche Google. Par souci de simplicité, chaque page web sera numérotée.
-Considérons seulement 5 pages web:
+On souhaite implémenter une version minimaliste de l'algorithme PageRank du moteur de recherche Google afin de comprendre son fonctionnement.  
+Par souci de simplicité, on travaille avec seulement 5 pages web, chaque page web étant numérotée.
 
 <img src="Assets/PageRank.png" width="300" height="300">
 
-Chaque flèche représente un lien hypertexte. Ainsi, la page 0 possède un lien vers la page 1 et vers la page 2. Inversement, trois pages possèdent des liens vers la page 0 : les pages 2, 3 et 4.
-En Python, on utilise une liste web contenant, pour chaque page web, la liste des liens contenus sur cette page vers d'autres pages web ; c'est ce que l'on appelle la représentation par liste d'adjacence du graphe du Web. Dans notre exemple, web[0] va donc s'écrire [1,2] car la page 0 contient un lien vers la page 1 et un lien vers la page 2.
+Chaque flèche représente un lien hypertexte d'une page à une autre. 
 
-On donne alors l'algorithme suivant :
+Ainsi, on voit sur le schéma ci-dessus que la page 0 possède un lien vers la page 1 et un lien vers la page 2.   
+Inversement, trois pages possèdent des liens vers la page 0 : les pages 2, 3 et 4.
+En Python, on utilise une liste web contenant, pour chaque page web, la liste des liens contenus sur cette page vers d'autres pages web ; c'est ce que l'on appelle la <b>représentation par liste d'adjacence du graphe</b> du Web.  
+Dans notre exemple, web[0] va donc s'écrire [1,2] car la page 0 contient un lien vers la page 1 et un lien vers la page 2.
+
+On donne le code suivant qui correspond à l'algorithme PageRank implémenté en Python :
 
 ```Python
 from random import choice
@@ -25,12 +29,12 @@ for i in range(1000):
 print(passages)
 ```
 
-On a utilisé la fonction choice importée du module random qui permet d'obtenir aléatoirement un élément dans une liste.
+On a utilisé la fonction `choice` importée du module `random` qui permet d'obtenir aléatoirement un élément dans une liste.
 
 ```Python
 >>> liste=['A','B','C','D']
 >>> from random import choice
->>> >>> choice(liste)
+>>> choice(liste)
 'A'
 >>> choice(liste)
 'C'
@@ -90,7 +94,9 @@ On a utilisé la fonction choice importée du module random qui permet d'obtenir
 
 Proposer "à la main" un classement par ordre de popularité des différentes pages web. 
 
+
 2. Exécuter le code pour observer le classement par ordre de popularité des différentes pages web obtenu grâce à l'algorithme. 
+
 
 3. Proposer une interprétation de ce code. Utiliser le Debugger de Thonny.
 
