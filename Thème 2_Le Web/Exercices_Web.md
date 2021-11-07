@@ -92,7 +92,7 @@ Proposer "à la main" un classement par ordre de popularité des différentes pa
 
 2. Exécuter le code pour observer le classement par ordre de popularité des différentes pages web obtenu grâce à l'algorithme. 
 
-3. Proposer une interprétation à ce code. Utiliser le Debugger de Thonny.
+3. Proposer une interprétation de ce code. Utiliser le Debugger de Thonny.
 
 ### Exercice 2
 
