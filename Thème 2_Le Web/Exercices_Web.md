@@ -9,9 +9,10 @@ Par souci de simplicité, on travaille avec seulement 5 pages web, chaque page w
 
 Chaque flèche représente un lien hypertexte d'une page à une autre. 
 
-Ainsi, on voit sur le schéma ci-dessus que la page 0 possède un lien vers la page 1 et un lien vers la page 2.   
-Inversement, trois pages possèdent des liens vers la page 0 : les pages 2, 3 et 4.
-En Python, on utilise une liste web contenant, pour chaque page web, la liste des liens contenus sur cette page vers d'autres pages web ; c'est ce que l'on appelle la <b>représentation par liste d'adjacence du graphe</b> du Web.  
+Ainsi, on voit sur le schéma ci-dessus appelé graphe que la page 0 possède un lien vers la page 1 et un lien vers la page 2.   
+Inversement, trois pages possèdent des liens vers la page 0 : les pages 2, 3 et 4.  
+
+En Python, on utilise une liste web contenant, pour chaque page web, la liste des liens contenus sur cette page vers d'autres pages web ; c'est ce que l'on appelle une <b>représentation par liste d'adjacence du graphe</b>.  
 Dans notre exemple, web[0] va donc s'écrire [1,2] car la page 0 contient un lien vers la page 1 et un lien vers la page 2.
 
 On donne le code suivant qui correspond à l'algorithme PageRank implémenté en Python :
