@@ -96,12 +96,14 @@ Proposer "à la main" un classement par ordre de popularité des différentes pa
 
 ### Exercice 2
 
-Aller à l'adresse https://www.gouvernement.fr/composition-du-gouvernement et télécharger le code HTML en faisant un clic droit puis "Enregistrer sous..". Modifier le contenu de la page pour afficher votre nom au lieu d'un ministre (bien sûr, cette modification est uniquement présente sur le fichier HTML que vous avez téléchargé...).
+Aller à l'adresse https://www.gouvernement.fr/composition-du-gouvernement et télécharger le code HTML en faisant un clic droit puis "Enregistrer sous..". Modifier le contenu de la page pour afficher votre nom au lieu d'un ministre (bien sûr, cette modification sera uniquement présente sur le fichier HTML que vous venez de télécharger...).
 
 ### Exercice 3
 
 Écrire une histoire dont vous êtes le héros où chaque page possède un hyperlien pour chaque choix possible dans l'histoire.
 Voici un exemple, où le couple de balises `<ul> </ul>` sert à définir une liste à puces (non ordonnée) et où les balises `<li> </li>` délimite un élement de la liste, en l'occurence un choix possible.
+
+script de la page debut.html
 
 ```html
 <!DOCTYPE html>
@@ -112,16 +114,17 @@ Voici un exemple, où le couple de balises `<ul> </ul>` sert à définir une lis
 </head>
 <body>
 Vous incarnez Lancelot, un valeureux chevalier.<br>
-Un jour, un messager vous apprend que le roi vous demande de toute urgence.<br>
+Un jour, un messager vous apprend que le roi demande après vous de toute urgence.<br>
 <ul>
-	<li><a href="palais.html"> Vous rendre au palais royal immédiatement.</a></li>
-	<li><a href="messager.html"> Demander au messager de quoi il retourne.</a></li>
-	<li><a href="epee.html"> Faire un détour pour chercher votre épée.</a></li>
+	<li><a href="palais.html"> Vous vous rendez au palais royal immédiatement.</a></li>
+	<li><a href="messager.html"> Vous demandez au messager la nature de sa demande.</a></li>
+	<li><a href="epee.html"> Vous faites un détour pour aller chercher votre épée.</a></li>
 </ul>
 </body>
 </html>
 ```
-debut.html
+
+script de la page palais.html
 
 ```html
 <!DOCTYPE html>
@@ -133,13 +136,13 @@ debut.html
 <body>
 Alors que vous rentrez dans le palais royal, un bruit assourdissant s'échappe des cuisines.
 <ul>
-	<li><a href="roi.html"> Passer son chemin et aller voir le roi.</a></li>
-	<li><a href="cuisine.html">Aller voir aux cuisines.</a></li>
+	<li><a href="roi.html"> Vous passez votre chemin et allez voir le roi.</a></li>
+	<li><a href="cuisine.html">Vous allez voir ce qui se passe aux cuisines.</a></li>
 </ul>
 </body>
 </html>
 ```
-palais.html
+
 
 ### Exercice 4
 
