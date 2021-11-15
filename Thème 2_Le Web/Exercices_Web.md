@@ -12,35 +12,10 @@ Chaque flèche représente un lien hypertexte d'une page à une autre.
 Ainsi, on voit sur le schéma ci-dessus appelé graphe que la page 0 possède un lien vers la page 1 et un lien vers la page 2.   
 Inversement, trois pages possèdent des liens vers la page 0 : les pages 2, 3 et 4.  
 
-En Python, on utilise une liste web contenant, pour chaque page web, la liste des liens contenus sur cette page vers d'autres pages web ; c'est ce que l'on appelle une <b>représentation par liste d'adjacence du graphe</b>.  
+En Python, on utilise une liste appelée `web` contenant, pour chaque page web, la liste des liens contenus sur cette page vers d'autres pages web ; c'est ce que l'on appelle une <b>représentation par liste d'adjacence du graphe</b>.  
 Dans notre exemple, web[0] va donc s'écrire [1,2] car la page 0 contient un lien vers la page 1 et un lien vers la page 2.
 
-On donne le code suivant qui correspond à l'algorithme PageRank implémenté en Python :
-
-```Python
-from random import choice
-web=[[1,2],[4],[0,3],[0,4],[0]]
-passages=[0,0,0,0,0]
-page=2
-
-for i in range(1000):
-    page=choice(web[page])
-    passages[page]=passages[page]+1
-    
-print(passages)
-```
-
-On a utilisé la fonction `choice` importée du module `random` qui permet d'obtenir aléatoirement un élément dans une liste.
-
-```Python
->>> liste=['A','B','C','D']
->>> from random import choice
->>> choice(liste)
-'A'
->>> choice(liste)
-'C'
-```
-1. Compléter le tableau suivant :
+1. Compléter le tableau suivant à la main :
 
 <table>
 <tr>
@@ -93,13 +68,39 @@ On a utilisé la fonction `choice` importée du module `random` qui permet d'obt
 </tr>
 </table>
 
-Proposer "à la main" un classement par ordre de popularité des différentes pages web. 
+Proposer un classement par ordre de popularité des différentes pages web tel que le ferait un moteur de recherche.
 
 
-2. Exécuter le code pour observer le classement par ordre de popularité des différentes pages web obtenu grâce à l'algorithme. 
+2. On donne le code suivant qui correspond à l'algorithme PageRank implémenté en Python :
+
+```Python
+from random import choice
+web=[[1,2],[4],[0,3],[0,4],[0]]
+passages=[0,0,0,0,0]
+page=2
+
+for i in range(1000):
+    page=choice(web[page])
+    passages[page]=passages[page]+1
+    
+print(passages)
+```
+
+On a utilisé la fonction `choice` importée du module `random` qui permet d'obtenir aléatoirement un élément dans une liste.
+
+```Python
+>>> liste=['A','B','C','D']
+>>> from random import choice
+>>> choice(liste)
+'A'
+>>> choice(liste)
+'C'
+```
+
+Exécuter le code pour observer le classement par ordre de popularité des différentes pages web obtenu grâce à l'algorithme. 
 
 
-3. Proposer une interprétation de ce code. Utiliser le Debugger de Thonny.
+3. Proposer une interprétation au fonctionnement de ce code. Utiliser le Debugger de Thonny.
 
 ### Exercice 2
 
@@ -109,10 +110,11 @@ Modifier le contenu de la page pour afficher votre nom au lieu d'un ministre (bi
 
 ### Exercice 3
 
-Écrire une histoire dont vous êtes le héros où chaque page possède un hyperlien pour chaque choix possible dans l'histoire.
+Écrire une histoire dont vous êtes le héros où chaque page possède un hyperlien pour chaque choix possible dans l'histoire.  
+
 Voici un exemple, où le couple de balises `<ul> </ul>` sert à définir une liste à puces (non ordonnée) et où les balises `<li> </li>` délimite un élement de la liste, en l'occurence un choix possible.
 
-script de la page debut.html
+script de la page appelée debut.html
 
 ```html
 <!DOCTYPE html>
@@ -133,7 +135,7 @@ Un jour, un messager vous apprend que le roi demande après vous de toute urgenc
 </html>
 ```
 
-script de la page palais.html
+script de la page appelée palais.html
 
 ```html
 <!DOCTYPE html>
