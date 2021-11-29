@@ -162,9 +162,9 @@ color : blue ;
 }
 ```
 
-Ainsi tous les paragraphes qui possèdent la classe mon_paragraphe_en_bleu seront de couleur bleue sur la page.
+Ainsi **tous les paragraphes qui possèdent la classe mon_paragraphe_en_bleu** seront de couleur bleue sur la page.
 
-On peut aussi utiliser l’attribut _**id**_ pour affecter un style à un élément unique de la page html, de plus id prend le dessus sur class.  
+On peut aussi utiliser l’attribut _**id**_ pour affecter un style à un **élément unique** de la page html, de plus id prend le dessus sur class.  
 
 - Dans le html : 
 
@@ -174,13 +174,13 @@ On peut aussi utiliser l’attribut _**id**_ pour affecter un style à un élém
 
 - Puis dans le css :
 
-
 ```css
 #monparagrapheenbleu
 {
 color : blue ;
 }
 ```
+
 Mais le fait que `class` ou `id` soient des attributs de balise ne restreint pas pour autant leur utilisation aux balises communes telles que ```<p>```,``` <img />```…. 
 
 En effet, il existe d’autres balises appelées balises universelles qui n’ont pas de signification particulière mais auxquelles nous pourrons affecter ces attributs.
@@ -354,6 +354,9 @@ right : 100 px ;
 _**Utiliser les outils de développement du navigateur**_
 
 Pour cela, faire un clic droit sur la page et faire l’inspection de l’élément ; à gauche le code html, à droite le code css. Possibilité de changer le code, d’observer directement l’effet des modifications sur la page puis de copier-coller ces modifications pour mettre à jour votre page.
+
+
+Exemple [de page web](http://vfsilesieux.free.fr/exemple_page_web_SNT.html) à inspecter.
 
 
 Pour aller plus loin, sur cet exemple, on voit comment l'utilisateur peut interagir avec le css de la page au moyen d'un fichier de script :
