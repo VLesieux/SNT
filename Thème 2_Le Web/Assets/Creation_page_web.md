@@ -269,13 +269,14 @@ _**Utilisation de marges**_
 
 Deux types de marge peuvent être utilisés :
 
--	marge intérieure entre la bordure et le début du texte à l’intérieur : ```padding``` en px
-on peut préciser ```padding -top``` ; ```padding -bottom``` ; ```padding -left``` ; ```padding -right```
--	marge extérieure entre la bordure et le texte à l’extérieur : ```margin``` en px
-on peut préciser ```margin-top``` ; ```margin-bottom``` ; ```margin-left``` ; ```margin-right```  
+-	marge intérieure entre la bordure (qui peut avoir une certaine épaisseur) et le début du contenu : ```padding``` en px
+on peut préciser pour les quatre directions :  ```padding -top``` ; ```padding -bottom``` ; ```padding -left``` ; ```padding -right```
+-	marge extérieure entre la bordure et l'extérieur : ```margin``` en px
+on peut préciser pour les quatre directions :```margin-top``` ; ```margin-bottom``` ; ```margin-left``` ; ```margin-right```.
 
 ![Représentation binaire de 755 ](marges.png#center)   
-Pour centrer un bloc après lui avoir donné une largeur, utiliser : ```margin : auto```.  
+
+Pour centrer un bloc **après lui avoir donné une largeur**, utiliser : ```margin : auto```.  
 Si le texte contenu dans le bloc dépasse ses limites, le navigateur peut ajouter des barres de défilement : ```overflow : auto```  
 Le positionnement ```inline-block``` permet de transformer, grâce à la propriété ```display```, en inline-block deux éléments que l’on veut placer côte à côte, par exemple un menu de navigation et une section du centre de la page.
 ```css
