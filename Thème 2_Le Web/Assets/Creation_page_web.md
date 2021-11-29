@@ -356,7 +356,7 @@ _**Utiliser les outils de développement du navigateur**_
 Pour cela, faire un clic droit sur la page et faire l’inspection de l’élément ; à gauche le code html, à droite le code css. Possibilité de changer le code, d’observer directement l’effet des modifications sur la page puis de copier-coller ces modifications pour mettre à jour votre page.
 
 
--->> Exemple [de page web](http://vfsilesieux.free.fr/exemple_page_web_SNT.html) à inspecter.
+--> Exemple [de page web](http://vfsilesieux.free.fr/exemple_page_web_SNT.html) à inspecter.
 
 
 Pour aller plus loin, sur cet exemple, on voit comment l'utilisateur peut interagir avec le css de la page au moyen d'un fichier de script :
