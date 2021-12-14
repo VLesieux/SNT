@@ -47,7 +47,8 @@ def nombre_or(p):
     (25, 1.6180339886704431)
     """
     valeur_exacte=(1+5**0.5)/2
-	# la suite à compléter
+    n=1
+    while # la suite à compléter
 ```
 
 On sera amené à utiliser la fonction `abs()` qui donne la valeur absolue d'un nombre pour obtenir une différence toujours positive.
