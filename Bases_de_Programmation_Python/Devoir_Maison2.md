@@ -50,7 +50,7 @@ def nombre_or(p):
 	# la suite à compléter
 ```
 
-On sera amené à utiliser la fonction `abs()` qui donne la valeur absolue d'un nombre pour obtenir une différence positive.
+On sera amené à utiliser la fonction `abs()` qui donne la valeur absolue d'un nombre pour obtenir une différence toujours positive.
 ```Python
 >>> abs(-10)
 10
