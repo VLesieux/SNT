@@ -39,8 +39,8 @@ Compléter la fonction `nombre_or(p)` ci-dessous qui permet d'approcher la valeu
 ```Python
 def nombre_or(p):
     """
-    Renvoie un tuple constitué d'une part de la valeur de n telle que le rapport Fibo(n+1)/Fibo(n) approche le nombre d'or à 10^(-p) près
-     et d'autre part de la valeur approchée ainsi obtenue
+    Renvoie un tuple constitué d'une part de la valeur de n telle que le rapport Fibo(n+1)/Fibo(n) approche le nombre d'or 
+    à 10^(-p) près et d'autre part de la valeur approchée ainsi obtenue
     param : p : int
     return : tuple 
     >>> nombre_or(10)
