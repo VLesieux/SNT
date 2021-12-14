@@ -1,6 +1,6 @@
 ### Devoir Maison n°2
 
-Code pour vérifier les tests des docstring à placer à la fin du fichier.
+Code pour vérifier les tests des docstring à placer à la fin du fichier python.
 
 ```Python
 if __name__ == '__main__':
