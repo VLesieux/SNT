@@ -1,6 +1,6 @@
 ### Devoir Maison n°2
 
-Code pour vérifier les tests des docstring
+Code pour vérifier les tests des docstring à placer à la fin du fichier.
 
 ```Python
 if __name__ == '__main__':
@@ -12,7 +12,7 @@ if __name__ == '__main__':
 La suite de Fibonacci se construit comme ceci : les deux premiers termes valent 1, puis chaque terme est la somme des deux précédents.   
 F(1)=1 ; F(2)=1 ; F(3)=2 ; F(4)=3 ; F(5)=5 ; F(6)=8....
 
-Proposer un fonction `Fibo(n)` permettant de déterminer le n-ième terme de la suite de Fibonacci.
+Compléter la fonction `Fibo(n)` ci-dessous permettant de déterminer le n-ième terme de la suite de Fibonacci.
 
 ```Python
 def Fibo(n):
@@ -34,13 +34,13 @@ def Fibo(n):
 
 Comme l'affirme cet extrait de wikipédia à propos du nombre d'or, il existe une relation entre le nombre d'or et la suite de Fibonacci étudiée précédemment. Ce nombre est en effet la valeur du rapport F(n+1)/F(n) quand n est très grand (ou encore la limite qu'atteint le quotient de deux termes consécutifs de la suite de Fibonacci quand ceux-ci sont très grands).   
 
-Proposer une fonction qui permet d'approcher la valeur du nombre d'or donnée dans le document à 10<sup>-p</sup> près.
+Compléter la fonction `nombre_or(p)` ci-dessous qui permet d'approcher la valeur du nombre d'or donnée dans le document à 10<sup>-`p`</sup> près ou en d'autres termes au `p`ième chiffre près après la virgule.
 
 ```Python
 def nombre_or(p):
     """
     Renvoie un tuple constitué d'une part de la valeur de n telle que le rapport Fibo(n+1)/Fibo(n) approche le nombre d'or à 10^(-p) près
-    (au pième chiffre près après la virgule) et d'autre part de la valeur approchée ainsi obtenue
+     et d'autre part de la valeur approchée ainsi obtenue
     param : p : int
     return : tuple 
     >>> nombre_or(10)
@@ -50,7 +50,7 @@ def nombre_or(p):
 	# la suite à compléter
 ```
 
-On sera amené à utiliser la fonction `abs()` qui donne la valeur absolue d'un nombre.
+On sera amené à utiliser la fonction `abs()` qui donne la valeur absolue d'un nombre pour obtenir une différence positive.
 ```Python
 >>> abs(-10)
 10
