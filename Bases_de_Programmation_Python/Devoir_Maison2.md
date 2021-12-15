@@ -34,7 +34,7 @@ def Fibo(n):
 
 Comme l'affirme cet extrait de Wikipédia à propos du nombre d'or*, il existe une relation entre le nombre d'or et la suite de Fibonacci étudiée précédemment. Ce nombre est en effet la valeur du rapport F(n+1)/F(n) quand n est très grand (ou encore c'est la limite vers laquelle tend le quotient de deux termes consécutifs de la suite de Fibonacci plus on avance dans les termes de la suite, par exemple : F(6)/F(5)=1.6 et F(21)/F(20)=1.6180339985218033).   
 
-* Il est intéressant de vérifier les affirmations de cet article, en particulier on retrouve aisément la valeur exacte du nombre d'or en résolvant l'équation du second degré en x où x vaut ici a/b.
+*Il est intéressant de vérifier les affirmations de cet article, en particulier on retrouve aisément la valeur exacte du nombre d'or en résolvant l'équation du second degré en x où x vaut ici a/b.
 
 Compléter la fonction `nombre_or(p)` ci-dessous qui permet d'approcher la valeur du nombre d'or donnée dans le document à 10<sup>-`p`</sup> près ou en d'autres termes au `p`ième chiffre près après la virgule.
 
