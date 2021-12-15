@@ -36,7 +36,7 @@ Comme l'affirme cet extrait de Wikipédia à propos du nombre d'or*, il existe u
 
 *Il est intéressant de vérifier les affirmations de cet article, en particulier on retrouve aisément la valeur exacte du nombre d'or en résolvant l'équation du second degré en x où x vaut ici a/b.
 
-Compléter la fonction `nombre_or(p)` ci-dessous qui permet d'approcher la valeur du nombre d'or donnée dans le document à 10<sup>-`p`</sup> près ou en d'autres termes au `p`ième chiffre près après la virgule.
+Compléter la fonction `nombre_or(p)` ci-dessous qui permet d'approcher la valeur du nombre d'or donnée dans le document à 10<sup>-`p`</sup> près ou, en d'autres termes, à approcher la valeur exacte du nombre d'or au `p`ième chiffre près après la virgule.
 
 ```Python
 def nombre_or(p):
