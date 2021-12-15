@@ -20,8 +20,10 @@ def Fibo(n):
     Renvoie le nième terme de la suite de Fibonaccci
     param : n : int
     return : int
-    >>> Fibo(6)
-    8
+    >>> Fibo(9)
+    34
+    >>> Fibo(10)
+    55
     """
     if n==1 or n==2:
         return 1
@@ -61,18 +63,25 @@ On sera amené à utiliser la fonction `abs()` qui donne la valeur absolue d'un 
 10
 ```
 
-Applications du nombre d'or dans des domaines variés :
+Applications du nombre d'or dans des domaines variés : 
 
+- le tournesol utilise le nombre d'or. Ces graines ou fleurons forment, en observant la photo ci-dessous, 55 spirales dans le sens direct et 34 dans le sens indirect. Ce sont deux nombres consécutifs de la suite de Fibonacci.
 
 <img src="Assets/tournesol.jpg.webp"> 
 
+- le rapport des distances dans la molécule d'ADN
+
 <img src="Assets/nombre-dor-adn.png.webp"> 
+
+- le rapport des distances dans le corps humain
 
 <img src="Assets/nombre-or-corps-humain.jpg.webp"> 
 
+- le rapport des distances pour une apparence visuelle plaisante en architecture
+
 <img src="Assets/parthenon.png.webp">
 
-### Exercice 2 : faire de l'aléatoire avec le module random
+### Exercice 2 : simuler une pièce truquée
 
 1) Écrire une fonction  `lancers` telle que `lancers(n)` simule n lancers d'un dé équilibré à 6 faces et renvoie le résultat sous forme de liste.
 On importera la bibliothèque `random` pour pouvoir appeler la fonction `randint` de cette bibliothèque, telle que random.randint(n,p) renvoie un entier aléatoire entre n et p, n et p étant compris.
