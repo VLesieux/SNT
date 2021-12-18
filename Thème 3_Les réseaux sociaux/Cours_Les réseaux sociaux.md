@@ -39,9 +39,12 @@ Considérons un exemple simpliste de réseau social comportant 5 utilisateurs : 
 - C est ami avec D
 - D est ami avec A et C
 - E est ami avec A et B
+
 D'où le graphe représentant les relations entre A, B, C, D et E.
 
  <img src="Assets/graphe_relations.png">
+ 
+ Un graphe, qui est une représentation très commune et très utile en informatique, peut être caractérisé par les 6 caractéristiques suivantes :
 
 1. Le **degré** d'un sommet est le nombre d'arêtes dont il est l'extrémité ; ici, cela correspond aux nombres d'utilisateurs ; par exemple le degré de A est 3, le degré de C est 1.
 2. La **distance** entre deux sommets est le nombre minimum d'arêtes qu'il faut parcourir pour aller de l'un à l'autre. Par exemple, la distance de D à E est 2 (en allant de D à A puis de A à E). La distance de B à C est 3 avec le chemin B-A-D-C.
