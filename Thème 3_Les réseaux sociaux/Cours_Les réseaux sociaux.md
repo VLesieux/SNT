@@ -155,7 +155,7 @@ if __name__ == '__main__':
 ### Petits mondes
 
 On peut se demander quelle est la distance moyenne qui sépare deux utilisateurs d'un réseau social. En 1967, [Stanley Milgram](Assets/Email_to_test_New_Scientist.pdf), un psychologue social américain, a préparé environ 300 lettres ayant chacune un destinateur cible. Il a envoyé ensuite chaque lettre à une personne au hasard, qui devait soit la renvoyer directement à la personne cible (s'il la connaissait) soit à une connaissance qui pouvait potentiellement la connaître. Ce processus était répété jusqu'à ce que le distinataire cible reçoive la lettre. Milgram a alors constaté que les lettres qui sont arrivées à destination sont passées par 6 personnes, d'où la célèbre théorie des **six degrés de séparation** : deux personnes sont reliées par une chaîne de 6 relations en moyenne. Cependant, cette expérience a été critiquée du fait que beaucoup de lettres ne soient pas arrivées à destination.
-En 2016, des chercheurs ont estimé à 4.57 la distance moyenne entre deux utilisateurs du [graphe d'amitié de Facebook] (https://research.fb.com/blog/2016/02/three-and-a-half-degrees-of-separation) . Ce nombre peut apparaître étonnamment faible : les réseaux sociaux permettent de rapprocher des utilisateurs géographiquement très éloignés. On parle ainsi de **petits mondes**.
+En 2016, des chercheurs ont estimé à 4.57 la distance moyenne entre deux utilisateurs du graphe d'amitié de Facebook: https://research.fb.com/blog/2016/02/three-and-a-half-degrees-of-separation. Ce nombre peut apparaître étonnamment faible : les réseaux sociaux permettent de rapprocher des utilisateurs géographiquement très éloignés. On parle ainsi de **petits mondes**.
 
 ### Communauté
 
