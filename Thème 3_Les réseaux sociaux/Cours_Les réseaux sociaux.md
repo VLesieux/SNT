@@ -70,7 +70,7 @@ On suppose dans toute la suite que les n sommets d'un graphe sont numérotés de
 >>> G[4]
 [0, 1]
 ```
-Pour accéder à la valeur 2, on écrit : 
+Pour accéder à la valeur 2 dans cette liste de liste, on écrit : 
 
 ```Python
 >>> G=[[1,3,4],[0,4],[3],[0,2],[0,1]]
@@ -84,7 +84,7 @@ L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adj
 
 Rappels et indications :
 
-- Pour parcourir les éléments d'une liste :
+- Pour parcourir les éléments d'une liste les uns après les autres :
 
 ```Python
 >>> liste=[4,8,9,2]
@@ -95,9 +95,10 @@ Rappels et indications :
 9
 2
 ```
-- Une autre méthode peu appropriée ici serait de parcourir les indices des éléments de la liste :
+- Une autre méthode (peu appropriée ici) serait de parcourir les indices des éléments de la liste depuis l'indice 0 à l'indice égal à len(liste)-1 :
 
 ```Python
+>>> liste=[4,8,9,2]
 >>> for i in range(len(liste)):
     	print(liste[i])  
 4
@@ -106,7 +107,7 @@ Rappels et indications :
 2
 ```
 
-- Comparer deux éléments et renvoyer True si c'est le cas, False sinon :
+- On réalise une fonction `comparaison(i,j)` chargée de comparer deux éléments i et j entre eux, et renvoyer True si il y a égalité, False sinon :
 
 ```Python
 >>> a=5
@@ -123,7 +124,7 @@ True
 False
 ```
 
-ou plus simplement :
+ou de façon plus synthétique (on gagne une ligne) :
 
 ```Python
 >>> a=5
@@ -153,7 +154,7 @@ if __name__ == '__main__':
 
 ### Petits mondes
 
-On peut se demander quelle est la distance moyenne qui sépare deux utilisateurs d'un réseau social. En 1967, Stanley Milgram, un psychologue social américain, a préparé environ 300 lettres ayant chacune un destinateur cible. Il a envoyé ensuite chaque lettre à une personne au hasard, qui devait soit la renvoyer directement à la personne cible (s'il la connaissait) soit à une connaissance qui pouvait potentiellement la connaître. Ce processus était répété jusqu'à ce que le distinataire cible reçoive la lettre. Milgram a alors constaté que les lettres qui sont arrivées à destination sont passées par 6 personnes, d'où la célèbre théorie des **six degrés de séparation** : deux personnes sont reliées par une chaîne de 6 relations en moyenne. Cependant, cette expérience a été critiquée du fait que beaucoup de lettres ne soient pas arrivées à destination.
+On peut se demander quelle est la distance moyenne qui sépare deux utilisateurs d'un réseau social. En 1967,[Stanley Milgram](Assets/Email_to_test_New_Scientist.pdf), un psychologue social américain, a préparé environ 300 lettres ayant chacune un destinateur cible. Il a envoyé ensuite chaque lettre à une personne au hasard, qui devait soit la renvoyer directement à la personne cible (s'il la connaissait) soit à une connaissance qui pouvait potentiellement la connaître. Ce processus était répété jusqu'à ce que le distinataire cible reçoive la lettre. Milgram a alors constaté que les lettres qui sont arrivées à destination sont passées par 6 personnes, d'où la célèbre théorie des **six degrés de séparation** : deux personnes sont reliées par une chaîne de 6 relations en moyenne. Cependant, cette expérience a été critiquée du fait que beaucoup de lettres ne soient pas arrivées à destination.
 En 2016, des chercheurs ont estimé à 4.57 la distance moyenne entre deux utilisateurs du graphe d'amitié de Facebook : https://research.fb.com/blog/2016/02/three-and-a-half-degrees-of-separation/ . Ce nombre peut apparaître étonnamment faible : les réseaux sociaux permettent de rapprocher des utilisateurs géographiquement très éloignés. On parle ainsi de **petits mondes**.
 
 ### Communauté
