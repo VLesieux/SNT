@@ -107,49 +107,46 @@ Rappels et indications :
 2
 ```
 
-- On réalise une fonction `comparaison(i,j)` chargée de comparer deux éléments i et j entre eux, et de renvoyer True si il y a égalité, False sinon :
-
-```Python
->>> a=5
->>> b=5
->>> c=12
->>> def comparaison(i,j):
-    	if i==j:
-         return True
-    	else:
-         return False
->>> comparaison(a,b)
-True
->>> comparaison(a,c)
-False
-```
-
-ou de façon plus synthétique (on gagne 3 lignes de code) :
-
-```Python
->>> a=5
->>> b=5
->>> c=12
->>> def comparaison(i,j):
-    	return i==j
->>>comparaison(a,b)
-True
->>> comparaison(a,c)
-False
-```
-
-En utilisant ces indications, 
-
-1. Écrire la fonction `lien` avec sa docstring.
-2. Écrire une fonction `degre` telle que `degre(G,i)` renvoie le degré du sommet i dans le graphe G représenté par sa liste d'adjacence.
-3. À l'aide de la fonction précédente, écrire une fonction `nb_aretes` renvoyant le nombre total d'arêtes dans un graphe représenté par une liste d'adjacence.
-
 On rappelle le code pour faire les doctests.
 
 ```Python
 if __name__ == '__main__':
   import doctest
   doctest.testmod(verbose=True)
+```
+
+1. Compléter la fonction `lien`.
+
+```Python
+	def lien(i,j,Graphe):
+    """
+    Renvoie True si i et j sont liés
+    >>> lien(0,3,G)
+    True
+    """
+```
+
+2. Compléter la fonction `degre(Graphe,i)`.
+
+```Python
+	def degre(Graphe,i):
+    """
+    Renvoie le degré du sommet i dans le graphe, c'est-à-dire le nombre
+    d'arêtes dont il est l'extrémité
+    >>> degre(G,1)
+    2
+    """
+```
+
+3. Compléter la fonction `nb_aretes` renvoyant le nombre total d'arêtes dans un graphe représenté par une liste d'adjacence.
+
+```Python
+def nb_aretes(Graphe):
+    """
+    Renvoie le nombre d'arêtes du graphe
+    >>> nb_aretes(G)
+    5
+    """
 ```
 
 ### Petits mondes
