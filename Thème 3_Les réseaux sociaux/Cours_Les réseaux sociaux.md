@@ -166,10 +166,15 @@ Exemple : Pour notre situation précédente, A, B, E forment une clique tandis q
 Écrire la fonction `est_clique` telle que si G est un graphe représenté par une liste d'adjacence et S une liste de sommets, `est_clique(G,S)` renvoie `True` si S forme une clique, `False` sinon.
 
 ```Python
->>> est_clique(G,[0,1,4])
-True
->>> est_clique(G,[0,1,3])
-False
+def est_clique(Graphe,liste):
+    """
+    Renvoie True si la liste est une clique où tous les sommets sont reliés mutuellement entre eux
+    >>> est_clique(G,[0,1,4])
+    True
+    >>> est_clique(G,[0,1,3])
+    False
+    """
 ```
+
 Le principe de l'algorithme à écrire est le suivant : on parcourt tous les éléments de la liste ; pour chacun d'entre eux on regarde s'il est relié aux autres éléments de la liste hormis lui-même ; dès que le test est négatif, cela signifie que ce n'est pas une clique ; si tous les tests sont positifs, cela signifie que c'est une clique.
 
