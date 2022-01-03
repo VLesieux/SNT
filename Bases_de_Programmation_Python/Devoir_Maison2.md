@@ -81,6 +81,8 @@ Applications du nombre d'or dans des domaines variés :
 
 <img src="Assets/parthenon.png.webp">
 
+On trouvera dans ce documentaire [Le grand mystère des mathématiques (documentaire arte)](https://www.youtube.com/watch?v=YIeuCCQoUWc) des informations complémentaires sur la suite de Fibonacci.
+
 ### Exercice 2 : simuler une pièce truquée
 
 1) Écrire une fonction  `lancers` telle que `lancers(n)` simule n lancers d'un dé équilibré à 6 faces et renvoie le résultat sous forme de liste.
