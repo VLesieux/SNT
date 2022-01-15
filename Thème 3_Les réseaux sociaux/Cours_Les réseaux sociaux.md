@@ -118,7 +118,7 @@ if __name__ == '__main__':
 1. Compléter la fonction `lien`.
 
 ```Python
-	def lien(i,j,Graphe):
+def lien(i,j,Graphe):
     """
     Renvoie True si i et j sont liés
     >>> lien(0,3,G)
@@ -131,7 +131,7 @@ if __name__ == '__main__':
 2. Compléter la fonction `degre(Graphe,i)`.
 
 ```Python
-	def degre(Graphe,i):
+def degre(Graphe,i):
     """
     Renvoie le degré du sommet i dans le graphe, c'est-à-dire le nombre
     d'arêtes dont il est l'extrémité
