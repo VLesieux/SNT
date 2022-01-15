@@ -29,7 +29,7 @@ Soit le graphe ci-dessous :
 <img src="Assets/graphe.png">
 
 1. Donner une représentation par liste d'adjacence de ce graphe.
-2. Déterminer "à la main" son diamètre et son rayon.
+2. En utilisant les définitions du cours, déterminer son diamètre et son rayon.
 3. Indiquer le ou les centres de ce graphe.
 
 ### Exercice 4
