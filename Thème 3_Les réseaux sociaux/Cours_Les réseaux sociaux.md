@@ -82,7 +82,7 @@ Nous pouvons alors écrire des algorithmes en Python sur des graphes.
 Par exemple, on peut définir une fonction `lien` qui détermine si deux sommets i et j sont reliés ; elle admet comme paramètre un graphe et deux sommets i et j.
 L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adjacence de i ; pour cela on parcourt cette liste et on regarde si on y trouve l'élément j. 
 
-Rappels et indications :
+<u>Rappels et indications</u> :
 
 - Pour parcourir les éléments d'une liste les uns après les autres :
 
@@ -95,7 +95,7 @@ Rappels et indications :
 9
 2
 ```
-- Une autre méthode (peu appropriée ici) serait de parcourir les indices des éléments de la liste depuis l'indice 0 à l'indice égal à len(liste)-1 :
+- Une autre méthode consiste à parcourir les éléments de la liste au moyen de leur indice depuis l'indice 0 du premier élément à l'indice `len(liste)-1` du dernier élément :
 
 ```Python
 >>> liste=[4,8,9,2]
@@ -168,9 +168,9 @@ Exemple : Pour notre situation précédente, A, B, E forment une clique tandis q
 Écrire la fonction `est_clique` telle que si G est un graphe représenté par une liste d'adjacence et S une liste de sommets, `est_clique(G,S)` renvoie `True` si S forme une clique, `False` sinon.
 
 ```Python
-def est_clique(Graphe,liste):
+def est_clique(Graphe,Liste_sommets):
     """
-    Renvoie True si la liste est une clique où tous les sommets sont reliés mutuellement entre eux
+    Renvoie True si Liste_sommets est une clique, c'est-à-dire que les sommets sont reliés mutuellement entre eux
     >>> est_clique(G,[0,1,4])
     True
     >>> est_clique(G,[0,1,3])
@@ -178,5 +178,6 @@ def est_clique(Graphe,liste):
     """
 ```
 
-Le principe de l'algorithme à écrire est le suivant : on parcourt tous les éléments de la liste ; pour chacun d'entre eux on regarde s'il est relié aux autres éléments de la liste hormis lui-même ; dès que le test est négatif, cela signifie que ce n'est pas une clique ; si tous les tests sont positifs, cela signifie que c'est une clique.
+Le principe de l'algorithme à écrire est le suivant : on parcourt tous les éléments de la liste et pour chacun d'entre eux on regarde s'il est relié aux autres éléments de la liste hormis lui-même en utilisant la fonction `lien` précédemment écrite ; dès qu'un test est négatif, cela signifie que ce n'est pas une clique et on renvoie False ; si tous les tests explorés sont positifs, cela signifie que c'est une clique et on renvoie True.
+On sera donc amené à faire une double boucle : une première boucle pour parcourir tous les sommets et à l'intérieur de cette boucle une autre boucle pour tester le lien de ce sommet avec les autres sommets, autres que lui-même.
 
