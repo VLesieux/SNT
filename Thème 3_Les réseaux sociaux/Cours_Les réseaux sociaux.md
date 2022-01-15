@@ -123,6 +123,8 @@ if __name__ == '__main__':
     Renvoie True si i et j sont liés
     >>> lien(0,3,G)
     True
+    >>> lien(0,2,G)
+    False
     """
 ```
 
