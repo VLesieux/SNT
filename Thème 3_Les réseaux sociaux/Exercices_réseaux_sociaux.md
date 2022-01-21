@@ -13,10 +13,17 @@ if __name__ == '__main__':
 Une personne malveillante décide d'envoyer une fausse nouvelle à 3 personnes. Le jour suivant, chacune de ces 3 personnes envoie à nouveau à 3 nouvelles personnes cette nouvelle, et ainsi de suite. Combien faudra-t-il de jours avant que le monde entier l'ait reçu ?
 Population mondiale : 7,8 milliards.
 
-Indications :
+Compléter le code ci-dessous.
 
-1. Donner, en fonction de n, une expression du nombre de nouvelles personnes touchées par la fake news le nième jour.
-2. Écrire un programme en Python permettant de répondre à la question.
+```Python
+def recherche():
+    S=3
+    n=1
+    while S<7.8*10**9:
+        ......
+        ......
+    print(n)
+```
 
 ### Exercice 2
 
