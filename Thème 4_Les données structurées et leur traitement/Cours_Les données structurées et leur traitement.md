@@ -28,7 +28,7 @@ Une **collection de données**, c'est-à-dire un ensemble de données décrivant
 
 Une **base de données** est une ensemble de tables de données pouvant être reliées entre elles.
 
-Différents formats peuvent être utilisés pour représenter des données structurées, notamment les formats CSV, XML, JSON et VCF.
+Différents formats peuvent être utilisés pour représenter des données structurées, notamment les formats CSV (Comma Separated Values), XML (eXtensible Markup Language), JSON (JavaScript Object Notation) et VCF (Virtual Contact File).
 
 Exemple : le format utilisé pour pour les contats dans un smartphone est le format qui porte l'extension VCF (fichier vCard).
 
@@ -116,7 +116,7 @@ Lorsque les données sont représentées sur un tableur, on peut aisément effec
 
 <img src="Assets/filtration_donnees.png">
 
-On réalise le fichier contacts.py avec Thonny placé dans le même dossier que le fichier contacts.csv.
+On réalise le fichier contacts.py avec Thonny placé dans le même dossier que le fichier `contacts.csv` obtenu à partir du fichier `contacts.xlsx` placé dans le dossier Assets.
 
 ```Python
 import csv
@@ -127,7 +127,7 @@ for ligne in lecteur:
     table.append(ligne)
 fichier.close
 print(table)
-print("descripteurs : ",table[0])#affichage des descripteurs
+print("descripteurs : ",tatable[0])#affichage des descripteurs
 del table[0]#suppression de la ligne des descripteurs
 print(table)
 
