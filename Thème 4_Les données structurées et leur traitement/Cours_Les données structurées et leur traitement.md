@@ -116,7 +116,7 @@ Lorsque les données sont représentées sur un tableur, on peut aisément effec
 
 <img src="Assets/filtration_donnees.png">
 
-On réalise le fichier contacts.py avec Thonny placé dans le même dossier que le fichier `contacts.csv` obtenu à partir du fichier `contacts.xlsx` placé dans le dossier Assets.
+On réalise le fichier `contacts.py` avec Thonny en le plaçant dans le même dossier que le fichier `contacts.csv` obtenu à partir du fichier `contacts.xlsx` placé dans le dossier Assets.
 
 ```Python
 import csv
