@@ -142,7 +142,7 @@ del table[0]#suppression de la ligne des descripteurs
 print(table)
 ```
 
-Voir l'effet de `rstrip()` et de `split(';')` pour comprendre code.
+Voir l'effet de `rstrip()` et de `split(';')` pour comprendre le code.
 
 Commençons par trier les contacts dans l'ordre alphabétique des noms de famille à l'aide de la fonction `sorted`.
 
@@ -167,10 +167,10 @@ Effectuons maintenant la **recherche** du contact dont le numéro de téléphone
 
 ```Python
 def recherche(telephone,tableau):
-    for contact in tableau:
-        if contact[2]==telephone:
-            return contact
->>> print(recherche('06 64 58 54 36',table))
+    for element in tableau:
+        if element[2]==telephone:
+            return element
+>>> recherche('06 64 58 54 36',table)
 ['Gascon', 'Robert', '06 64 58 54 36', 'robert.gascon@wanadoo.fr', '08/02/1988', 'Orléans']
 ```
 
