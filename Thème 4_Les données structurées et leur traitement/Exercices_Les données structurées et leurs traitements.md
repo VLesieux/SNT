@@ -13,13 +13,12 @@ Saisir dans un fichier XML les données relatives à ses proches en utilisant le
 
 ### Exercice 3
 
-Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité de l'air Île de France" ;  télécharger puis ouvrir le fichier indices_QA_commune_IDF_04_2018.csv. Répondre aux questions suivantes avec Python. 
+Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité de l'air Île de France" ;  télécharger puis ouvrir le fichier indices_QA_commune_IDF_04_2018.csv. Le fichier est également présent dans le dossier Assets. Répondre aux questions suivantes avec Python. 
 
 1. Quels sont les descripteurs utilisés ? Affichez-les.
-2. **Trier** les données en fonction de l'indice de pollution au dioxyde d'azote NO<sub>2</sub>, puis **filtrer** les données correspondant à l'Île de France (code Insee : 0) afin de déterminer quel jour était le plus pollué en dioxyde d'azote en Île de France.
+2. **Trier** les données en fonction de l'indice de pollution au dioxyde d'azote NO<sub>2</sub> dans l'ordre décroissant, puis **filtrer** les données correspondant à l'Île de France (code Insee : 0) afin de déterminer quel jour était le plus pollué en dioxyde d'azote en Île de France.
 
-**Indications** : trier les données dans l'ordre décroissant d'indice de pollution au NO<sub>2</sub>, puis filtrer les résultats à la date du 20/04/2018.
-On sera amené à écrire les fonctions : `tri_selon_no2(tableau)` et `filtre_selon_ninsee(ninsee,tableau)`.
+**Indications** : On sera amené à écrire les fonctions : `tri_selon_NO2(element)` et `filtre_selon_ninsee(ninsee,tableau)`.
 
 3. Déterminer les numéro d'insee des deux communes d'Île-de-France les plus polluées en particules fines (pm10) le 20/04/2018.    
 
@@ -30,15 +29,37 @@ Résultat attendu à afficher : `Les insee des deux communes d'Île-de-France le
 
 4. Pendant combien de jours l'indice de pollution à l'ozone O<sub>3</sub> a-t-il été supérieur à 45 dans le Val-de-Marne (code d'Insee : 94) au mois d'avril 2018 ?   
 
-**Indications** : trier les données dans l'ordre décroissant d'indice de pollution à l'ozone, puis filtrer les résultats selon le code Insee 94.
-On sera amené à écrire les fonctions : `tri_selon_o3(tableau)` puis `filtre_selon_code(code,tableau,seuil)`. Pour transformer une chaîne de caractère représentant une valeur entière en nombre entier, utiliser int : 
+**Indications** : On sera amené à écrire une fonction : `filtre_selon_code_mois_seuil(code,tableau,mois,seuil)` 
+
+Attention : pour transformer une chaîne de caractère représentant une valeur entière en nombre entier, utiliser int : 
 ```Python
 >>> int("45")
 45
 ```
-
 Résultat attendu à afficher : `Le nombre de jour où l'indice de pollution à l'ozone a été supérieur à 45 dans le Val-de-Marne est :  7 `
 
+5. Donner la représentation graphique de l'évolution de la pollution à l'ozone pendant le mois d'avril 2018 dans le Val-de-Marne. Utiliser ce graphe pour déterminer les dates correspondant à la question 4.
+
+On sera amené à ordonner selon la date en réalisant la fonction `tri_selon_date(element)`.
+
+Voici le code permettant la représentation graphique :
+
+```Python
+import matplotlib.pyplot as plt
+x=[]
+y=[]
+for element in table:
+    x.append(element[0].split("/")[0])#on ne garde que le numéro du jour
+    y.append(int(element[3]))#transforme en valeur entière
+plt.axis([ 1, 31, 0, 100 ])
+plt.plot(x,y,'+',markersize=5,linestyle='solid',color='blue')
+plt.xlabel("Date")
+plt.ylabel("Taux d'ozone")
+plt.title ("Evolution de la pollution en ozone au mois d'avril 2018 dans le 94")
+plt.grid()
+plt.show()
+plt.close()
+```
 
 ### Exercice 4
 
