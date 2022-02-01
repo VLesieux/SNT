@@ -40,9 +40,9 @@ Résultat attendu à afficher : `Le nombre de jour où l'indice de pollution à 
 
 5. Donner la représentation graphique de l'évolution de la pollution à l'ozone pendant le mois d'avril 2018 dans le Val-de-Marne. Utiliser ce graphe pour déterminer les dates correspondant à la question 4.
 
-On sera amené à ordonner selon la date en réalisant la fonction `tri_selon_date(element)`.
+On sera amené à ordonner les données selon la date en réalisant la fonction `tri_selon_date(element)`.
 
-Voici le code permettant la représentation graphique :
+Voici le code permettant une représentation graphique du niveau d'ozone dans le Val-de-Marne au mois d'avril 2018 au cours du temps  une fois le filtre et le tri effectués.
 
 ```Python
 import matplotlib.pyplot as plt
