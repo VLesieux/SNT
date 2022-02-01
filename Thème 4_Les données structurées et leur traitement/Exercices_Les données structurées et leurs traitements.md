@@ -13,7 +13,10 @@ Saisir dans un fichier XML les données relatives à ses proches en utilisant le
 
 ### Exercice 3
 
-Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité de l'air Île de France" ;  télécharger puis ouvrir le fichier indices_QA_commune_IDF_04_2018.csv. Le fichier est également présent dans le dossier Assets. Répondre aux questions suivantes avec Python. 
+Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité de l'air Île de France" ;  télécharger puis ouvrir le fichier indices_QA_commune_IDF_04_2018.csv (le fichier est également présent dans le dossier Assets).   
+Les indices de qualité de l’air sont des outils de communication qui permettent de décrire périodiquement sous une forme simple (qualificatif, chiffre) l’état global de la qualité de l’air dans une aire géographique donnée.
+
+Répondre aux questions suivantes avec Python. 
 
 1. Quels sont les descripteurs utilisés ? Affichez-les.
 2. **Trier** les données en fonction de l'indice de pollution au dioxyde d'azote NO<sub>2</sub> dans l'ordre décroissant, puis **filtrer** les données correspondant à l'Île de France (code Insee : 0) afin de déterminer quel jour était le plus pollué en dioxyde d'azote en Île de France.
