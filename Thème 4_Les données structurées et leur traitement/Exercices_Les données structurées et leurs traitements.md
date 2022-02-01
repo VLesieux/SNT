@@ -22,8 +22,7 @@ Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité d
 
 3. Déterminer les numéro d'insee des deux communes d'Île-de-France les plus polluées en particules fines (pm10) le 20/04/2018.    
 
-**Indications** : trier les données dans l'ordre décroissant d'indice de pollution aux particules fines, puis filtrer les résultats à la date du 20/04/2018.
-On sera amené à écrire les fonctions : `tri_selon_pm10(tableau)` et `filtre_selon_date(date,tableau)`.
+**Indications** : On sera amené à écrire les fonctions : `tri_selon_pm10(tableau)` et `filtre_selon_date(date,tableau)`.
 
 Résultat attendu à afficher : `Les insee des deux communes d'Île-de-France les plus polluées aux particules fines (pm10) le 20/04/2018 sont :  92026  ,  92035`
 
@@ -40,7 +39,7 @@ Résultat attendu à afficher : `Le nombre de jour où l'indice de pollution à 
 
 5. Donner la représentation graphique de l'évolution de la pollution à l'ozone pendant le mois d'avril 2018 dans le Val-de-Marne. Utiliser ce graphe pour déterminer les dates correspondant à la question précédente.
 
-On sera amené à ordonner les données selon la date en réalisant la fonction `tri_selon_date(element)`.
+On sera amené à ordonner les données selon la date placée en abscisse en réalisant la fonction `tri_selon_date(element)`.
 
 Voici le code permettant une représentation graphique du niveau d'ozone dans le Val-de-Marne au mois d'avril 2018 au cours du temps  une fois le filtre et le tri effectués.
 
