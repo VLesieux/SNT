@@ -38,7 +38,7 @@ Attention : pour transformer une chaîne de caractère représentant une valeur 
 ```
 Résultat attendu à afficher : `Le nombre de jour où l'indice de pollution à l'ozone a été supérieur à 45 dans le Val-de-Marne est :  7 `
 
-5. Donner la représentation graphique de l'évolution de la pollution à l'ozone pendant le mois d'avril 2018 dans le Val-de-Marne. Utiliser ce graphe pour déterminer les dates correspondant à la question 4.
+5. Donner la représentation graphique de l'évolution de la pollution à l'ozone pendant le mois d'avril 2018 dans le Val-de-Marne. Utiliser ce graphe pour déterminer les dates correspondant à la question précédente.
 
 On sera amené à ordonner les données selon la date en réalisant la fonction `tri_selon_date(element)`.
 
