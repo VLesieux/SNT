@@ -17,19 +17,20 @@ Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité d
 Les indices de qualité de l’air sont des outils de communication qui permettent de décrire périodiquement sous une forme simple (qualificatif, chiffre) l’état global de la qualité de l’air dans une aire géographique donnée.
 
 
-Répondre aux questions suivantes avec Python. 
-Attention, on observe que les séparateurs sont ici des virgules et non des points-virgules, il faut donc modifier en conséquence notre programme de lecture et de transformation en tableau du fichier texte csv.
+En s'inspirant des exemples du cours réalisés sur le fichier `contacts.csv`, répondre aux questions suivantes avec Python.   
+**Attention**, on observe que les séparateurs dans le fichier csv sont ici des virgules et non des points-virgules, il faut donc modifier en conséquence notre programme de lecture et de transformation en tableau du fichier texte csv.
+
 
 1. Quels sont les descripteurs utilisés ? Affichez-les.
 2. **Trier** les données en fonction de l'indice de pollution au dioxyde d'azote NO<sub>2</sub> dans l'ordre décroissant, puis **filtrer** les données correspondant à l'Île de France (code Insee : 0) afin de déterminer quel jour était le plus pollué en dioxyde d'azote en Île de France.
 
-**Indications** : On sera amené à écrire les fonctions : `tri_selon_NO2(element)` et `filtre_selon_ninsee(ninsee,tableau)`.
+**Indications** : On sera amené à écrire deux fonctions : `tri_selon_NO2(element)` pour trier les données dans l'odre décroissant de  no2 et `filtre_selon_ninsee(ninsee,tableau)` pour ne garder que ce qui se rapporte à ninsee.
 
 3. Déterminer les numéro d'insee des deux communes d'Île-de-France les plus polluées en particules fines (pm10) le 20/04/2018.    
 
-**Indications** : On sera amené à écrire les fonctions : `tri_selon_pm10(element)` et `filtre_selon_date(date,tableau)`.
+**Indications** : On sera amené à écrire les fonctions : `tri_selon_pm10(element)`pour  trier les données dans l'odre décroissant de pm10 et `filtre_selon_date(date,tableau)` pour ne garder que ce qui se rapporte à date.
 
-Résultat attendu à afficher : `Les insee des deux communes d'Île-de-France les plus polluées aux particules fines (pm10) le 20/04/2018 sont :  92026  ,  92035`
+Résultat attendu : `Les insee des deux communes d'Île-de-France les plus polluées aux particules fines (pm10) le 20/04/2018 sont :  92026  ,  92035`
 
 4. Pendant combien de jours l'indice de pollution à l'ozone O<sub>3</sub> a-t-il été supérieur à 45 dans le Val-de-Marne (code d'Insee : 94) au mois d'avril 2018 ?   
 
@@ -40,13 +41,13 @@ Attention : pour transformer une chaîne de caractère représentant une valeur 
 >>> int("45")
 45
 ```
-Résultat attendu à afficher : `Le nombre de jour où l'indice de pollution à l'ozone a été supérieur à 45 dans le Val-de-Marne est :  7 `
+Résultat attendu : `Le nombre de jour où l'indice de pollution à l'ozone a été supérieur à 45 dans le Val-de-Marne est :  7 `
 
 5. Donner la représentation graphique de l'évolution de la pollution à l'ozone pendant le mois d'avril 2018 dans le Val-de-Marne. Utiliser ce graphe pour déterminer les dates correspondant à la question précédente.
 
-On sera amené à ordonner les données selon la date placée en abscisse en réalisant la fonction `tri_selon_date(element)`.
+On sera amené à ordonner les données selon la date, placée en abscisse sur le graphe, en réalisant la fonction `tri_selon_date(element)`.
 
-Voici le code permettant une représentation graphique du niveau d'ozone dans le Val-de-Marne au mois d'avril 2018 au cours du temps  une fois le filtre et le tri effectués.
+Voici le code permettant une représentation graphique du niveau d'ozone dans le Val-de-Marne au mois d'avril 2018 au cours du temps  une fois le tri et le filtre effectués.
 
 ```Python
 import matplotlib.pyplot as plt
