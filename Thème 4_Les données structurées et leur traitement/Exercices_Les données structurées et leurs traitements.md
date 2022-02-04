@@ -15,7 +15,7 @@ Saisir dans un fichier XML les données relatives à ses proches en utilisant le
 
 Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité de l'air Île de France" ;  télécharger puis ouvrir le fichier `indices_QA_commune_IDF_04_2018.csv` (le fichier est également présent dans le dossier `Assets` du thème 4).   
 
-Les indices de qualité de l’air sont des outils de communication qui permettent de décrire périodiquement sous une forme simple (qualificatif, chiffre) l’état global de la qualité de l’air dans une aire géographique donnée.
+Il s'agit d'un exemple de données ouvertes ou **open data** accessibles à tous. Les indices de qualité de l’air sont des outils de communication qui permettent de décrire périodiquement sous une forme simple (qualificatif, chiffre) l’état global de la qualité de l’air dans une aire géographique donnée.
 
 
 En s'inspirant des exemples du cours réalisés sur le fichier `contacts.csv`, répondre aux questions suivantes avec Python.  
