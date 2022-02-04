@@ -125,7 +125,8 @@ Exemple : dans un fichier client, on peut effectuer les opérations suivantes:
 On peut également croiser les informations de plusieurs tables issues d'une même base de données.
 
 Exemple : Dans le but de distribuer des bons d'achat aux clients les plus fidèles d'un magasin, on peut commencer par filtrer dans le fichier des ventes les clients ayant effectué le plus d'achats, puis chercher dans un deuxième leurs adresses postales dans le fichier client.
-Lorsque les données sont représentées sur un tableur, on peut aisément effectuer ce genre d'opérations qui consistent à les **filtrer** ou les **trier**.
+
+Lorsque les données sont représentées sur un tableur, on peut aisément effectuer ce genre d'opérations qui consistent à **filtrer**,  **trier** ou **faire une recherche**.
 
 <img src="Assets/filtration_donnees.png">
 
@@ -144,19 +145,21 @@ print(table)
 
 Voir l'effet de `rstrip()` et de `split(';')` pour comprendre le code.
 
+On observe que table est ainsi une liste formée de sous-listes.
+
 Commençons par trier les contacts dans l'ordre alphabétique des noms de famille à l'aide de la fonction `sorted`.
 
 ```Python
 table=sorted(table)
 ```
 
-La fonction `sorted` appelée sans paramètre trie la table par ordre alphabétique sur le premier champ qui est Nom.
+La fonction `sorted`, appelée sans paramètre, trie la table par ordre alphabétique sur le premier champ,c'est-à-dire selon l'élément d'indice 0 des sous-listes, qui est le Nom .
 
-Pour **trier** sur un autre champ, par exemple Ville, voici la procédure à suivre :
+Pour **trier** sur un autre champ, par exemple Ville, qui constitue pour les sous-listes, notées ici `element`, la valeur d'indice 5, voici la procédure à suivre :
 
 ```Python
-def tri_selon_ville(contact):
-    return contact[5]
+def tri_selon_ville(element):
+    return element[5]
 
 table=sorted(table,key=tri_selon_ville)
 ```
@@ -173,6 +176,23 @@ def recherche(telephone,tableau):
 >>> recherche('06 64 58 54 36',table)
 ['Gascon', 'Robert', '06 64 58 54 36', 'robert.gascon@wanadoo.fr', '08/02/1988', 'Orléans']
 ```
+
+Effectuons maintenant un **filtrage** selon un critère donné, pour ne garder que quelques valeurs, ici par exemple la première lettre du nom :
+
+```Python
+def filtrer(tableau,premiere_lettre_du_nom):
+    """
+    Renvoie les noms du tableau de contacts qui commencent par premiere_lettre_du_nom
+    >>> filtrer(table,'G')
+    ['Green', 'Gascon']
+    """
+    resultat=[]
+    for element in tableau:
+        if element[0][0]==premiere_lettre_du_nom:
+            resultat.append(element[0])
+    return resultat
+```
+
 
 Remarque : En réalité la plupart des bases de données sont hébergées et gérées par des **serveurs de bases de données** ; on utilise pour cela un logiciel de bases de données comme MySQL (qui utilise un langage SQL). Ce n'est pas l'objet de ce cours, mais une requête SQL filtrant les clients ayant entre 18 et 25 ans et indiquant leurs nom et adresse, triés par ordre alphabétique, a cette écriture :
 
