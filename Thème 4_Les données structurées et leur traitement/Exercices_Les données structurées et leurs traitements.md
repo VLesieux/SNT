@@ -110,7 +110,7 @@ def fonction3(table,nom):
     return False
 ```
 
-Répondre d'abord "à la main" aux questions suivantes à la lecture du code puis vérifiez avec Thonny en utilisant la console puis réaliser les `docstrings` des fonctions.
+Répondre d'abord "à la main" aux questions suivantes à la lecture du code puis vérifiez avec Thonny en utilisant la console puis réaliser les `docstrings` des fonctions (c'est à dire un résumé succinct de ce que fait la fonction, les paramètres et leur type, un test permettant de vérifier la fonction).
 
 1. Quel est le rôle de `fonction1` et que renvoie `fonction1(fruits)` ? Faire la docstring de cette fonction avec le test `fonction1(fruits)`.
 2. Quel est le rôle de `fonction2` et que renvoie `fonction2(fruits,1,'rouge')` ? Faire la docstring de cette fonction avec le test `fonction2(fruits,1,'rouge')`.
@@ -138,8 +138,8 @@ Exemple : réponses à la question 1
 ```Python
 def fonction1(table):
     """
-    renvoie la longueur de table, et la longueur de son premier élément (d'indice 0 dans table)
-    param : table : list
+    Renvoie un tuple donnant le nombre d'éléments du tableau et le nombre de données dans élément[0]
+    param: table : list
     return : tuple
     >>> fonction1(fruits)
     (6, 4)
