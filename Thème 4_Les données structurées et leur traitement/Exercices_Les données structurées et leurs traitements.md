@@ -72,6 +72,15 @@ plt.close()
 
 ### Exercice 4
 
+Code pour vérifier les docstrings :
+
+```Python
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
+```
+
+
 On souhaite traiter la table ci-dessous appelée `fruits` à l'aide des fonctions suivantes : `fonction1`, `fonction2`, `fonction3` présentées ci-après :
 
 ```Python
@@ -99,7 +108,6 @@ def fonction3(table,nom):
         if objet[0]==nom:
             return True
     return False
-
 ```
 
 Répondre d'abord "à la main" aux questions suivantes à la lecture du code puis vérifiez avec Thonny en utilisant la console puis réaliser les `docstrings` des fonctions.
