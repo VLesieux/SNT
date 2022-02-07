@@ -72,7 +72,7 @@ plt.close()
 
 ### Exercice 4
 
-On souhaite traiter la table ci-dessous appelée fruits à l'aide des fonctions suivantes : `fonction1`, `fonction2`, `fonction3` présentées ci-après :
+On souhaite traiter la table ci-dessous appelée `fruits` à l'aide des fonctions suivantes : `fonction1`, `fonction2`, `fonction3` présentées ci-après :
 
 ```Python
 fruits=[
