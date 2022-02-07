@@ -138,7 +138,7 @@ Exemple : réponses à la question 1
 ```Python
 def fonction1(table):
     """
-    Renvoie un tuple donnant le nombre d'éléments du tableau et le nombre de données dans élément[0]
+    Renvoie un tuple donnant le nombre d'éléments du tableau et le nombre de données dans son premiere élément
     param: table : list
     return : tuple
     >>> fonction1(fruits)
