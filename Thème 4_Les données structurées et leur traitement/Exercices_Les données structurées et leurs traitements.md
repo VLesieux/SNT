@@ -164,8 +164,9 @@ print(table_des_donnees[0])
 
 def denombre(departement,tableau):
     """
-    Renvoie le nombre de cinéma dans le département
+    Renvoie le nombre de salles de cinéma dans le _departement_ après le parcours de _tableau_ 
     param : departement : str
+    param : tableau : list
     return : int
     >>> denombre("93",table_des_donnees)
     30
