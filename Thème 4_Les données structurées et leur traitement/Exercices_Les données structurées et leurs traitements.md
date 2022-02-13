@@ -151,7 +151,7 @@ def fonction1(table):
 
 Compléter les quatre lignes de code suivantes de la fonction `recherche` pour que sa docstring soit vérifiée.
 
-Le fichier csv se trouve dans le dossier `Assets`.
+Vous trouverez le fichier `csv` (comma-separated values) dans le dossier `Assets`.
 
 ```Python
 import csv
@@ -164,7 +164,7 @@ print(table_des_donnees[0])
 
 def recherche(departement,tableau):
     """
-    renvoie le nombre de cinéma dans le département
+    renvoie le nombre de salles de cinéma dans le département
     param : departement : str
     return : int
     >>> recherche("93",table_des_donnees)
