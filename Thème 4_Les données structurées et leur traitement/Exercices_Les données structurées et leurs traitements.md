@@ -164,7 +164,7 @@ print(table_des_donnees[0])
 
 def recherche(departement,tableau):
     """
-    renvoie après avoir parcouru le tableau selon le critère departement le nombre de salles de cinéma dans ce departement
+    renvoie après avoir parcouru le tableau selon le critère _departement_ le nombre de salles de cinéma dans ce _departement_
     param : departement : str
     return : int
     >>> recherche("93",table_des_donnees)
