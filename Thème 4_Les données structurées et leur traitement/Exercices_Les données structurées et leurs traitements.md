@@ -146,3 +146,39 @@ def fonction1(table):
     """
     return len(table),len(table[0])
 ```
+
+### Exercice 5
+
+Compléter les quatre lignes de code suivantes de la fonction `recherche` pour que sa docstring soit vérifiée.
+
+Le fichier csv se trouve dans le dossier `Assets`.
+
+```Python
+import csv
+fichier=open("les_salles_de_cinemas_en_ile-de-france.csv","r")
+table_des_donnees=[]
+for ligne in fichier:
+    table_des_donnees.append(ligne.rstrip().split(';'))
+fichier.close
+print(table_des_donnees[0])
+
+def recherche(departement,tableau):
+    """
+    renvoie le nombre de cinéma dans le département
+    param : departement : str
+    return : int
+    >>> recherche("93",table_des_donnees)
+    30
+    """
+    ................................
+    ................................
+    ................................
+    ................................
+    ................................
+
+        
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
+```
+
