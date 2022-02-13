@@ -177,7 +177,7 @@ def recherche(telephone,tableau):
 ['Gascon', 'Robert', '06 64 58 54 36', 'robert.gascon@wanadoo.fr', '08/02/1988', 'Orléans']
 ```
 
-Effectuons maintenant un **filtrage** selon un critère donné, pour ne garder que quelques valeurs, ici par exemple la première lettre du nom :
+Effectuons maintenant un **filtrage** selon un ou plusieurs critères donnés, pour ne garder que quelques valeurs, ici par exemple la première lettre du nom :
 
 ```Python
 def filtrer(tableau,premiere_lettre_du_nom):
@@ -193,6 +193,21 @@ def filtrer(tableau,premiere_lettre_du_nom):
     return resultat
 ```
 
+On peut également **dénombrer** le nombre d'éléments correspondant à ce filtrage :
+
+```Python
+def denombre(tableau,premiere_lettre_du_nom):
+    """
+    Renvoie les noms du tableau de contacts qui commencent par premiere_lettre_du_nom
+    >>> denombre(table,'G')
+    2
+    """
+    resultat=[]
+    for element in tableau:
+        if element[0][0]==premiere_lettre_du_nom:
+            resultat.append(element[0])
+    return len(resultat)
+```
 
 Remarque : En réalité la plupart des bases de données sont hébergées et gérées par des **serveurs de bases de données** ; on utilise pour cela un logiciel de bases de données comme MySQL (qui utilise un langage SQL). Ce n'est pas l'objet de ce cours, mais une requête SQL filtrant les clients ayant entre 18 et 25 ans et indiquant leurs nom et adresse, triés par ordre alphabétique, a cette écriture :
 
