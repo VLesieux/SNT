@@ -149,7 +149,7 @@ def fonction1(table):
 
 ### Exercice 5
 
-Compléter les quatre lignes de code suivantes de la fonction `recherche` pour que sa docstring soit vérifiée.
+1. Compléter les quatre lignes de code suivantes de la fonction `recherche` pour que sa docstring soit vérifiée.
 
 Vous trouverez le fichier `csv` (comma-separated values) dans le dossier `Assets`.
 
@@ -164,7 +164,7 @@ print(table_des_donnees[0])
 
 def denombre(departement,tableau):
     """
-    Renvoie le nombre de salles de cinéma dans le _departement_ après le parcours de _tableau_ 
+    Renvoie le nombre de salles de cinéma dans departement après le parcours de tableau 
     param : departement : str
     param : tableau : list
     return : int
@@ -183,3 +183,16 @@ if __name__ == '__main__':
     doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
 ```
 
+Indications: 
+
+- Créer une liste vide à laquelle vous ajoutez les données de `tableau` correspondant à `departement`.
+- Renvoyer la longueur de la liste en utilisant `len(liste)` qui renvoie la longueur de la liste.
+
+
+2. Quel est le nom du cinéma d'Ile de France qui a fait le plus d'entrée en 2020 ?
+
+Indication : utiliser `sorted` et une fonction `tri_selon_entree_2020`
+
+3. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
+
+Indication : réaliser une fonction `filtre_selon_code`.
