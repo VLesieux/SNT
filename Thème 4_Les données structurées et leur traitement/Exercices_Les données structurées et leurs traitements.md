@@ -186,12 +186,12 @@ if __name__ == '__main__':
 Indications: 
 
 - Créer une liste vide à laquelle vous ajoutez les données de `tableau` correspondant à `departement`.
-- Renvoyer la longueur de la liste en utilisant `len(liste)` qui renvoie la longueur de la liste.
+- Renvoyer la longueur de la liste en utilisant `len(liste)`.
 
 
-2. Quel est le nom du cinéma d'Ile de France qui a fait le plus d'entrée en 2020 ?
+2. Quel est le nom du cinéma d'Île de France qui a fait le plus d'entrée en 2020 ?
 
-Indication : utiliser `sorted` et une fonction `tri_selon_entree_2020`
+Indications : utiliser `sorted` et une fonction `tri_selon_entree_2020`
 
 3. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
 
