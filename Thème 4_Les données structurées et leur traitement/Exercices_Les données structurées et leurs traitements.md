@@ -150,6 +150,7 @@ def fonction1(table):
 ### Exercice 5
 
 1. Compléter les quatre lignes de code suivantes de la fonction `recherche` pour que sa docstring soit vérifiée.
+On dénombre en effet 30 salles de cinéma dans le département 93.
 
 Vous trouverez le fichier `csv` (comma-separated values) dans le dossier `Assets`.
 
