@@ -2,7 +2,7 @@
 
 ### Exercice 1
 
-En utilisant Géoportail, trouver les coordonnées géographiques (latitude et longitude) du château de Chambord.
+En utilisant [Géoportail](https://www.geoportail.gouv.fr/), trouver les coordonnées géographiques (latitude et longitude) du château de Chambord.
 En utilisant openStreetMap, dire ce que l'on peut trouver aux coordonnées (latitude : 45.83267°, longitude : 6.86517°).
 
 ### Exercice 2
@@ -50,7 +50,7 @@ C'est la raison pour laquelle des horloges de grande précision sont embarquées
 
 ### Exercice 3
 
-En utilisant Géoportail et l'outil "mesurer une distance", trouver la distance à vol d'oiseau de la Tour Eiffel à l'Arc de Triomphe.
+En utilisant [Géoportail](https://www.geoportail.gouv.fr/) et l'outil "mesurer une distance", trouver la distance à vol d'oiseau de la Tour Eiffel à l'Arc de Triomphe.
 
 Latitude de Eiffel Tower	48.858370.  
 Longitude de Eiffel Tower	2.294481. 
