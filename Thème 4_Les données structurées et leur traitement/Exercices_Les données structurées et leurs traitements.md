@@ -204,4 +204,4 @@ if __name__ == '__main__':
 
 3. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
 
-**Indications** : réaliser une fonction filtrage `filtre_selon_code(code,tableau)` pour retenir les éléments du tableau précédent correspondant au code mis en paramètre.
+**Indications** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir les éléments du tableau de la question précédente correspondant au code mis en paramètre.
