@@ -184,16 +184,24 @@ if __name__ == '__main__':
     doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
 ```
 
-Indications: 
+**Indications**: 
 
-- Créer une liste vide à laquelle vous ajoutez les données de `tableau` correspondant à `departement`.
+1ère possibibilité 
+
+- Créer une liste vide à laquelle vous ajoutez les données de `tableau` correspondant à `departement` placé en paramètre.
 - Renvoyer la longueur de la liste en utilisant `len(liste)`.
 
 
-2. Quel est le nom du cinéma d'Île de France qui a fait le plus d'entrée en 2020 ?
+2ième possibilité 
 
-Indications : utiliser `sorted` et une fonction `tri_selon_entree_2020`
+- Créer un compteur qui est incrémenté lorsqu'on rencontre une donnée correspondant à `departement` placé en paramètre
+- Renvoyer ce compteur
+
+
+2. Quel est le nom du cinéma d'Île de France (tous départements confondus) qui a fait le plus d'entrée en 2020 ?
+
+**Indications** : utiliser `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri.
 
 3. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
 
-Indication : réaliser une fonction `filtre_selon_code`.
+**Indications** : réaliser une fonction filtrage `filtre_selon_code(code,tableau)` pour retenir les éléments du tableau précédent correspondant au code mis en paramètre.
