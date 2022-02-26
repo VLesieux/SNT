@@ -93,9 +93,7 @@ if __name__ == '__main__':
 
 ```
 
-En déduire la distance à vol d'oiseau entre ces deux villes :
-
-Lille : (50.636565,3.063528) - Dunkerque : (51.034771,2.377253)
+En déduire la distance à vol d'oiseau entre ces deux villes : Lille : (50.636565,3.063528) - Dunkerque : (51.034771,2.377253)
 
 Retrouver le résultat à cette [adresse](https://www.coordonnees-gps.fr/distance).
 
