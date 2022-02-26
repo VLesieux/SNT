@@ -149,7 +149,7 @@ def fonction1(table):
 
 ### Exercice 5
 
-1. Compléter les quatre lignes de code suivantes de la fonction `recherche` pour que sa docstring soit vérifiée.  
+1. Compléter les lignes de code suivantes de la fonction `recherche` pour que sa docstring soit vérifiée.  
 On dénombre en effet 30 salles de cinéma dans le département 93.
 
 Vous trouverez le fichier `csv` (comma-separated values) dans le dossier `Assets`.
@@ -172,11 +172,7 @@ def denombre(departement,tableau):
     >>> denombre("93",table_des_donnees)
     30
     """
-    ................................
-    ................................
-    ................................
-    ................................
-    ................................
+	pass
 
         
 if __name__ == '__main__':
