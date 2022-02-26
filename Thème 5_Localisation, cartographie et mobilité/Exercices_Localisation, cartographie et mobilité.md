@@ -52,12 +52,56 @@ C'est la raison pour laquelle des horloges de grande précision sont embarquées
 
 En utilisant Géoportail et l'outil "mesurer une distance", trouver la distance à vol d'oiseau de la Tour Eiffel à l'Arc de Triomphe.
 
+Latitude de Eiffel Tower	48.858370.  
+Longitude de Eiffel Tower	2.294481. 
+
+Latitude de arc de triomphe	48.873792.   
+Longitude de arc de triomphe	2.295028. 
+
+<img src="Assets/Calcul_distance.png">
+
+Le programme ci-dessous a pour but de déterminer la distance entre deux positions à vol d'oiseau ; compléter les deux lignes manquantes.
+
+```Python
+import math
+
+def conversion_degre_radian(angle):
+    """
+    Convertit un angle exprimé en degré en radian
+    >>> conversion_degre_radian(180)
+    3.141592653589793
+    """
+    return angle*math.pi/180
+
+def calcul_distance_a_vol_d_oiseau(A,B):
+    """
+    Calcule la distance entre deux points A et B à partir de leurs coordonnées géographiques
+    param : A : tuple
+    param : B : tuple
+    return : float
+    >>> calcul_distance_a_vol_d_oiseau((48.858370,2.294481),(48.873792,2.295028))
+    1717.236416494379
+    """
+    dλ=conversion_degre_radian(B[1])-conversion_degre_radian(A[1])
+    S=math.acos(math.sin(conversion_degre_radian(A[0]))*math.sin(conversion_degre_radian(B[0]))+math.cos(conversion_degre_radian(A[0]))*math.cos(conversion_degre_radian(B[0]))*math.cos(dλ))
+	....................
+	....................
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
+
+```
+
+En déduire la distance à vol d'oiseau entre ces deux villes :
+
+Lille : (50.636565,3.063528)
+Dunkerque : (51.034771,2.377253)
+
+Retrouver le résultat à cette [adresse](https://www.coordonnees-gps.fr/distance)
+
 
 ### Exercice 4
-
-En utilisant Géoportail et l'outil "calculer un itinéraire", trouver le temps de trajet en voiture pour aller de Dunkerque à Marseille.
-
-### Exercice 5
 
 Donner l'heure et les coordonnées d'acquisition de la trame NMEA 0183 suivante :
 '$GPGLL,4835.07,N,235.47,E,203712,A'
@@ -114,7 +158,7 @@ Indications :
 >>> "requin"+"-"+"marteau"
 'requin-marteau'
 ```
-### Exercice 6
+### Exercice 5
 
 Il y a plus de 2000 ans, le scientifique grec Ératosthène invente la discipline de la géographie dont le terme est encore utilisé aujourd'hui ; il a même réussi à estimer la circonférence de la Terre.
 
@@ -129,7 +173,7 @@ De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours
 3. Estimer l'erreur relative commise, exprimée en pourcentage, en utilisant la valeur connue du rayon moyen de la Terre : 6 371 km. Le pourcentage d'erreur relative entre une valeur expérimentale e<sub>exp</sub> et une valeur théorique e<sub>théo</sub> est donné par : 100×|e<sub>exp</sub>-e<sub>théo</sub>|/e<sub>théo</sub>.
 
 
-### Exercice 7
+### Exercice 6
 
 1) Déterminer "au jugé" le plus court chemin de A à B dans le graphe suivant et donner sa longueur (chaque arête possède une longueur exprimée par exemple en km).
 

@@ -52,7 +52,7 @@ La difficulté est de synchroniser les horloges des satellites et celle du réce
 
 #### Géoportail
 
-Géoportail (https://www.geoportail.gouv.fr/) est une plateforme dédiée à la cartographie mise en service par l'État français. Il permet de visualiser l'état français à l'aide d'un fond (photographies aériennes, cartes géologiques...) auquel on peut superposer des couches (musées, réseau ferroviaire...).
+[Géoportail](https://www.geoportail.gouv.fr/) est une plateforme dédiée à la cartographie mise en service par l'État français. Il permet de visualiser l'état français à l'aide d'un fond (photographies aériennes, cartes géologiques...) auquel on peut superposer des couches (musées, réseau ferroviaire...).
 On peut à l'aide des outils mesurer une distance, mesurer une surface, établir un profil altimétrique... 
 
 <img src="Assets/geoportail1.png"><img src="Assets/geoportail2.png">
@@ -61,7 +61,7 @@ L'**échelle d'une carte**, par exemple 1 : 121 981, est le rapport entre la dis
 
 #### OpenStreetMap
 
-OpenStreetMap (http://www.openstreetmap.fr/) est un projet cartographique libre et collaboratif : tout le monde peut ajouter ou corriger des informations.
+[OpenStreetMap](http://www.openstreetmap.fr/) est un projet cartographique libre et collaboratif : tout le monde peut ajouter ou corriger des informations.
 
 
 ### Calcul d'itinéraire
