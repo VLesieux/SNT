@@ -60,7 +60,7 @@ Longitude de arc de triomphe	2.295028.
 
 <img src="Assets/Calcul_distance.png">
 
-Le programme ci-dessous a pour but de déterminer la distance entre deux positions à vol d'oiseau ; compléter les deux lignes manquantes.
+Le programme ci-dessous a pour but de déterminer la distance à vol d'oiseau entre deux positions en utilisant la méthode explicitée précédemment ; compléter les deux lignes manquantes.
 
 ```Python
 import math
