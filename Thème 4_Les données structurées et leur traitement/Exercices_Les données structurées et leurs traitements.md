@@ -161,8 +161,9 @@ for ligne in fichier:
 fichier.close
 ```
 
-Dans la console, noter les résultats obtenus :
+Dans la console, noter les résultats affichés :
 
+- print(len(table_des_donnees))
 - print(table_des_donnees[0])
 - print(len(table_des_donnees[0]))
 - print(table_des_donnees[0].index('dep'))
