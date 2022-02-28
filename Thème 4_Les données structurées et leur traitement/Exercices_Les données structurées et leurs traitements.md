@@ -149,7 +149,8 @@ def fonction1(table):
 
 ### Exercice 5
 
-1. Dans un premier temps on extrait à l'aide du programme ci-dessous en Python les données d'un fichier csv appelé `les_salles_de_cinemas_en_ile-de-france.csv` . Vous trouverez le fichier `csv` (comma-separated values) dans le dossier `Assets`.
+1. Dans un premier temps on extrait à l'aide du programme ci-dessous en Python les données d'un fichier csv appelé `les_salles_de_cinemas_en_ile-de-france.csv` .
+Vous trouverez ce fichier `csv` (comma-separated values) dans le dossier `Assets`.
 
 ```Python
 import csv
