@@ -221,7 +221,7 @@ if __name__ == '__main__':
 **Indications** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir les éléments du tableau de la question précédente correspondant au code mis en paramètre.
 
 5. On se propose de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
-Pour cela, on importe un programme appelé `calcul_distance_latitude_longitude` en ajoutant dans notre code 
+Pour cela, on importe un programme appelé `calcul_distance_latitude_longitude.py` en ajoutant dans notre code 
 ```Python
 import calcul_distance_latitude_longitude as distance
 ```
