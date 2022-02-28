@@ -188,13 +188,13 @@ if __name__ == '__main__':
 
 1ère possibibilité 
 
-- Créer une liste vide à laquelle vous ajoutez les données de `tableau` correspondant à `departement` placé en paramètre.
+- Créer une liste vide à laquelle vous ajoutez les données de `tableau` correspondant au `departement` placé en paramètre.
 - Renvoyer la longueur de la liste en utilisant `len(liste)`.
 
 
 2ième possibilité 
 
-- Créer un compteur qui est incrémenté lorsqu'on rencontre une donnée correspondant à `departement` placé en paramètre
+- Créer un compteur qui est incrémenté lorsqu'on rencontre une donnée correspondant au `departement` placé en paramètre
 - Renvoyer ce compteur
 
 
