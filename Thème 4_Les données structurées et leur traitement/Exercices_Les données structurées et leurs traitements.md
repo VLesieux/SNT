@@ -215,12 +215,22 @@ if __name__ == '__main__':
 
 **Indications** : utiliser `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri.
 
-3. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
+4. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
 
 **Indications** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir les éléments du tableau de la question précédente correspondant au code mis en paramètre.
 
-4. On se propose de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?
-Pour cela, on importe un programme appelé `calcul_distance_latitude_longitude` en ajoutant dans notre code `import calcul_distance_latitude_longitude as distance` après avoir placé ce programme que l'on trouvera dans le dossier Assets dans le même dossier que le programme actif. Ce programme possède une fonction `a_paris` qui renvoie la distance en mètre par rapport à Paris ; pour l'appeler et l'utiliser dans notre programme, il suffit d'écrire la fonction `distance.a_paris` par exemple 
-`
+5. On se propose de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?
+Pour cela, on importe un programme appelé `calcul_distance_latitude_longitude` en ajoutant dans notre code 
+```Python
+import calcul_distance_latitude_longitude as distance
+```
+ après avoir placé ce programme que l'on trouvera dans le dossier Assets dans le même dossier que le programme actif. 
+ 
+Ce programme possède une fonction `a_paris` qui renvoie la distance en mètre par rapport à Paris ; pour l'appeler et l'utiliser dans notre programme, il suffit d'écrire la fonction `distance.a_paris` par exemple 
+
+```Python
 >>> distance.a_paris('48.873073,2.298394')
 4346.833687547045`
+```
+
+**Indications** : réaliser une fonction de filtrage `filtre_selon_distance_a_Paris(tableau)` pour retenir les éléments du tableau correspondant à notre requête.
