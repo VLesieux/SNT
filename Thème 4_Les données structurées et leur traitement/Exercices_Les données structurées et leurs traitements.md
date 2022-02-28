@@ -149,10 +149,7 @@ def fonction1(table):
 
 ### Exercice 5
 
-1. Compléter les lignes de code suivantes de la fonction `recherche` pour que sa docstring soit vérifiée.  
-On dénombre en effet 30 salles de cinéma dans le département 93.
-
-Vous trouverez le fichier `csv` (comma-separated values) dans le dossier `Assets`.
+1. Dans un premier temps on extrait à l'aide du programme ci-dessous en Python les données d'un fichier csv appelé `les_salles_de_cinemas_en_ile-de-france.csv` . Vous trouverez le fichier `csv` (comma-separated values) dans le dossier `Assets`.
 
 ```Python
 import csv
@@ -161,7 +158,23 @@ table_des_donnees=[]
 for ligne in fichier:
     table_des_donnees.append(ligne.rstrip().split(';'))
 fichier.close
-print(table_des_donnees[0])
+```
+
+Dans la console, noter les résultats obtenus :
+
+- print(table_des_donnees[0])
+- print(len(table_des_donnees[0]))
+- print(table_des_donnees[0].index('dep'))
+- print(table_des_donnees[0].index('entrees_2020'))
+- print(table_des_donnees[0].index('geo'))
+
+Donnez la signification de ces résultats.
+Pour la suite, supprimer la ligne des descripteurs en ajoutant : `del table_des_donnees[0]`.
+
+2. Compléter les lignes de code suivantes de la fonction `recherche` pour que sa docstring soit vérifiée.  
+On dénombre en effet 30 salles de cinéma dans le département 93.
+
+```Python
 
 def denombre(departement,tableau):
     """
@@ -198,10 +211,16 @@ if __name__ == '__main__':
 - Renvoyer ce compteur
 
 
-2. Quel est le nom du cinéma d'Île de France (tous départements confondus) qui a fait le plus d'entrée en 2020 ?
+3. Quel est le nom du cinéma d'Île de France (tous départements confondus) qui a fait le plus d'entrée en 2020 ?
 
 **Indications** : utiliser `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri.
 
 3. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
 
 **Indications** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir les éléments du tableau de la question précédente correspondant au code mis en paramètre.
+
+4. On se propose de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?
+Pour cela, on importe un programme appelé `calcul_distance_latitude_longitude` en ajoutant dans notre code `import calcul_distance_latitude_longitude as distance` après avoir placé ce programme que l'on trouvera dans le dossier Assets dans le même dossier que le programme actif. Ce programme possède une fonction `a_paris` qui renvoie la distance en mètre par rapport à Paris ; pour l'appeler et l'utiliser dans notre programme, il suffit d'écrire la fonction `distance.a_paris` par exemple 
+`
+>>> distance.a_paris('48.873073,2.298394')
+4346.833687547045`
