@@ -149,7 +149,7 @@ def fonction1(table):
 
 ### Exercice 5
 
-1. Dans un premier temps on extrait à l'aide du programme ci-dessous en Python les données d'un fichier csv appelé `les_salles_de_cinemas_en_ile-de-france.csv` .
+1. Dans un premier temps on extrait à l'aide du programme ci-dessous en Python les données d'un fichier csv appelé `les_salles_de_cinemas_en_ile-de-france.csv` .   
 Vous trouverez ce fichier `csv` (comma-separated values) dans le dossier `Assets`.
 
 ```Python
@@ -169,7 +169,7 @@ Dans la console, noter les résultats obtenus :
 - print(table_des_donnees[0].index('entrees_2020'))
 - print(table_des_donnees[0].index('geo'))
 
-Donnez la signification de ces résultats.
+Donnez la signification de ces résultats.   
 Pour la suite, supprimer la ligne des descripteurs en ajoutant : `del table_des_donnees[0]`.
 
 2. Compléter les lignes de code suivantes de la fonction `recherche` pour que sa docstring soit vérifiée.  
@@ -220,7 +220,7 @@ if __name__ == '__main__':
 
 **Indications** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir les éléments du tableau de la question précédente correspondant au code mis en paramètre.
 
-5. On se propose de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?
+5. On se propose de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
 Pour cela, on importe un programme appelé `calcul_distance_latitude_longitude` en ajoutant dans notre code 
 ```Python
 import calcul_distance_latitude_longitude as distance
