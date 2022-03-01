@@ -163,17 +163,24 @@ fichier.close
 
 Dans la console, noter les résultats affichés :
 
-- print(len(table_des_donnees))
-- print(table_des_donnees[0])
-- print(len(table_des_donnees[0]))
-- print(table_des_donnees[0].index('dep'))
-- print(table_des_donnees[0].index('entrees_2020'))
-- print(table_des_donnees[0].index('geo'))
+a) print(len(table_des_donnees)). 
+
+b) print(table_des_donnees[0]). 
+
+c) print(len(table_des_donnees[0])). 
+
+d) print(table_des_donnees[0].index('dep')). 
+
+e) print(table_des_donnees[0].index('entrees_2020')).  
+
+f) print(table_des_donnees[0].index('geo')). 
 
 Donnez la signification de ces résultats.   
-Pour la suite, supprimer la ligne des descripteurs en ajoutant : `del table_des_donnees[0]`.
+Pour la suite, supprimer la ligne des descripteurs en ajoutant :  
+ `del table_des_donnees[0]` après `fichier.close`
 
-2. Compléter les lignes de code suivantes de la fonction `recherche` pour que sa docstring soit vérifiée.  
+2. On se demande combien il y a de cinémas dans le département 95.
+Dans un premier temps, compléter les lignes de code de la fonction `denombre` pour que sa docstring soit vérifiée.  
 On dénombre en effet 30 salles de cinéma dans le département 93.
 
 ```Python
@@ -201,25 +208,17 @@ if __name__ == '__main__':
 
 **Indications**: 
 
-1ère possibibilité 
-
-- Créer une liste vide à laquelle vous ajoutez les données de `tableau` correspondant au `departement` placé en paramètre.
-- Renvoyer la longueur de la liste en utilisant `len(liste)`.
-
-
-2ième possibilité 
-
-- Créer un compteur qui est incrémenté lorsqu'on rencontre une donnée correspondant au `departement` placé en paramètre
+- Créer un compteur (comme dans la fonction2 de l'exercice 4) qui est incrémenté lorsqu'on rencontre une donnée correspondant au `departement` placé en paramètre
 - Renvoyer ce compteur
 
 
 3. Quel est le nom du cinéma d'Île de France (tous départements confondus) qui a fait le plus d'entrée en 2020 ?
 
-**Indications** : utiliser `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri.
+**Indications** : utiliser `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri comme dans l'exercice 3.
 
 4. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
 
-**Indications** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir les éléments du tableau de la question précédente correspondant au code mis en paramètre.
+**Indications** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` comme dans l'exercice 3 pour retenir les éléments du tableau de la question précédente correspondant au code mis en paramètre.
 
 5. On se propose de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
 Pour cela, on importe un programme appelé `calcul_distance_latitude_longitude.py` en ajoutant dans notre code 
@@ -228,7 +227,7 @@ import calcul_distance_latitude_longitude as distance
 ```
  après avoir placé ce programme que l'on trouvera dans le dossier Assets dans le même dossier que le programme actif. 
  
-Ce programme possède une fonction `a_paris` qui renvoie la distance en mètre par rapport à Paris ; pour l'appeler et l'utiliser dans notre programme, il suffit d'écrire la fonction `distance.a_paris` par exemple 
+Ce programme possède une fonction `a_paris(geo)` qui renvoie la distance en <u>mètre</u> par rapport à Paris d'un point dont les coordonnées géographiques sont données sous forme de tuple (latitude,longitude) ; pour l'appeler et l'utiliser dans notre programme, il suffit d'écrire la fonction `distance.a_paris` par exemple 
 
 ```Python
 >>> distance.a_paris('48.873073,2.298394')
