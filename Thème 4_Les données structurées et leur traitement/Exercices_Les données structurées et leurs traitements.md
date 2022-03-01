@@ -179,7 +179,8 @@ Donnez la signification de ces résultats.
 Pour la suite, supprimer la ligne des descripteurs en ajoutant :  
  `del table_des_donnees[0]` après `fichier.close`
 
-2. On se demande combien il y a de cinémas dans le département 95.
+2. On se demande combien il y a de cinémas dans le département 95.   
+
 Dans un premier temps, compléter les lignes de code de la fonction `denombre` pour que sa docstring soit vérifiée.  
 On dénombre en effet 30 salles de cinéma dans le département 93.
 
@@ -214,11 +215,11 @@ if __name__ == '__main__':
 
 3. Quel est le nom du cinéma d'Île de France (tous départements confondus) qui a fait le plus d'entrée en 2020 ?
 
-**Indications** : utiliser `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri comme dans l'exercice 3.
+**Indications** : utiliser `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri (cf. exercice 3).
 
 4. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
 
-**Indications** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` comme dans l'exercice 3 pour retenir les éléments du tableau de la question précédente correspondant au code mis en paramètre.
+**Indications** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` (cf. exercice 3) pour retenir les éléments du tableau de la question précédente correspondant au code mis en paramètre.
 
 5. On se propose de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
 Pour cela, on importe un programme appelé `calcul_distance_latitude_longitude.py` en ajoutant dans notre code 
