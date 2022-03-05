@@ -163,17 +163,17 @@ fichier.close
 
 Dans la console, noter les résultats affichés :
 
-a) print(len(table_des_donnees)). 
+a) print(len(table_des_donnees)) 
 
-b) print(table_des_donnees[0]). 
+b) print(table_des_donnees[0]) 
 
-c) print(len(table_des_donnees[0])). 
+c) print(len(table_des_donnees[0])) 
 
-d) print(table_des_donnees[0].index('dep')). 
+d) print(table_des_donnees[0].index('dep')) 
 
-e) print(table_des_donnees[0].index('entrees_2020')).  
+e) print(table_des_donnees[0].index('entrees_2020'))  
 
-f) print(table_des_donnees[0].index('geo')). 
+f) print(table_des_donnees[0].index('geo')) 
 
 Donnez la signification de ces résultats.   
 Pour la suite, supprimer la ligne des descripteurs en ajoutant :  
@@ -235,4 +235,4 @@ Ce programme possède une fonction `a_paris(geo)` qui renvoie la distance en <u>
 4346.833687547045`
 ```
 
-**Indications** : réaliser une fonction de filtrage `filtre_selon_distance_a_Paris(tableau)` pour retenir les éléments du tableau correspondant à notre requête.
+**Indications** : réaliser une fonction de filtrage `filtre_selon_distance_a_Paris(tableau,rayon_a_Paris)` pour retenir les éléments du tableau correspondant à notre requête.
