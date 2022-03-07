@@ -33,7 +33,7 @@ Une minute d'arc peut elle-même être subdivisé en **seconde d'arc** : 1'=60''
 
 Exemple : les coordonnées de la Tour Eiffel sont : 48°51'31" N (latitude) et 2°17'39" E (longitude).
 
-On trouvera [ici](Assets/measurements_from_the_sky.pdf) une activité permettant de déterminer la latitude d'un lieu en déterminant la position du solaire ou de l'étoile Polaire.
+On trouvera [ici](Assets/measurements_from_the_sky.pdf) une activité permettant de déterminer la latitude d'un lieu en déterminant la position du Soleil ou de l'étoile Polaire dans le ciel.
 
 ### Localisation GPS
 
