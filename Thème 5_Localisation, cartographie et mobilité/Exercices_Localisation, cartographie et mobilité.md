@@ -3,7 +3,8 @@
 ### Exercice 1
 
 En utilisant [Géoportail](https://www.geoportail.gouv.fr/), trouver les coordonnées géographiques (latitude et longitude) du château de Chambord.
-En utilisant openStreetMap, dire ce que l'on peut trouver aux coordonnées (latitude : 45.83267°, longitude : 6.86517°).
+
+En utilisant openStreetMap, dire ce que l'on peut trouver aux coordonnées (latitude : 45.83267°, longitude : 6.86517°). Il suffit de changer les coordonnées dans l'[adresse](https://www.openstreetmap.org/#map=14/45.8359/6.8677) du site.
 
 ### Exercice 2
 
@@ -19,7 +20,9 @@ En Python, écrire une fonction `distance` telle que si un satellite a envoyé �
 Les dates t1 et t2 sont données en heure UTC.     
 exemple : 064036.261116 signifie que la trame a été envoyée à 06 h 40 min 36.261116 s.      
 
-On donne la valeur exacte de la célérité de la lumière : c=299.792,458 km/s
+On donne la valeur exacte de la célérité de la lumière : c=299.792,458 km/s.
+
+Expliquer pourquoi elle est donnée en physique avec 3 chiffres significatifs sous la forme : c=3.00×10<sup>8</sup> m.s<sup>-1</sup>.
 
 ```Python
 def distance(t1,t2):
@@ -46,7 +49,10 @@ Compléter la phrase au vu des résultats ci-dessous : une erreur d'un millioni�
 20186.824951908522
 ```
 
-C'est la raison pour laquelle des horloges de grande précision sont embarquées à bord des satellites G.P.S ; ce sont des horloges atomiques (basées sur des transitions énergétiques électroniques au sein de l'atome (césium Cs) qui tiennent compte des effets de la relativité : restreinte (le temps ne s'écoule pas au même rythme à bord du satellite animé d'une grande vitesse par rapport à la Terre) et générale (la gravité joue également sur l'écoulement du temps) découverts par Einstein en 1905.
+C'est la raison pour laquelle des horloges de grande précision sont embarquées à bord des satellites G.P.S ; ce sont des **horloges atomiques** (basées sur des transitions énergétiques électroniques au sein de l'atome (césium Cs) qui tiennent compte des effets de la relativité : restreinte (le temps ne s'écoule pas au même rythme à bord du satellite animé d'une grande vitesse par rapport à la Terre) et générale (la gravité joue également sur l'écoulement du temps) découverts par Einstein en 1905.
+
+<img src="Assets/horloge.jpg">
+
 
 ### Exercice 3
 
@@ -64,10 +70,12 @@ La démonstration du calcul de la distance à vol d'oiseau à partir des latitud
 
 <img src="Assets/demonstration.png">
 
-Le programme ci-dessous a pour but de déterminer la distance à vol d'oiseau entre deux positions en utilisant la méthode explicitée précédemment ; compléter les deux lignes manquantes.
+Le programme ci-dessous a pour but de déterminer la distance à vol d'oiseau entre deux positions en utilisant la méthode explicitée précédemment ; compléter les lignes manquantes.
 
 ```Python
 import math
+
+R=6378137
 
 def conversion_degre_radian(angle):
     """
@@ -75,11 +83,11 @@ def conversion_degre_radian(angle):
     >>> conversion_degre_radian(180)
     3.141592653589793
     """
-    return angle*math.pi/180
+    return ...................
 
 def calcul_distance_a_vol_d_oiseau(A,B):
     """
-    Calcule la distance entre deux points A et B à partir de leurs coordonnées géographiques
+    Calcule la distance en m entre deux points A et B à partir de leurs coordonnées géographiques
     param : A : tuple
     param : B : tuple
     return : float
@@ -88,8 +96,8 @@ def calcul_distance_a_vol_d_oiseau(A,B):
     """
     dλ=conversion_degre_radian(B[1])-conversion_degre_radian(A[1])
     S=math.acos(math.sin(conversion_degre_radian(A[0]))*math.sin(conversion_degre_radian(B[0]))+math.cos(conversion_degre_radian(A[0]))*math.cos(conversion_degre_radian(B[0]))*math.cos(dλ))
-	....................
-	....................
+	d=...................
+	return d
 
 if __name__ == '__main__':
     import doctest

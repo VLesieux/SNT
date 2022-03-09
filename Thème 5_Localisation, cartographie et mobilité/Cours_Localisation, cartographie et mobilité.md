@@ -15,7 +15,7 @@ Le repérage par satellites des différents points de la Terre a modifié consid
 - 2020 : Mise en service prévue de Galiléo, censé être plus précis que le système GPS.
 
 
-### Coordonnées
+### Les coordonnées géographiques
 
 Pour situer un point sur la surface terrestre, on utilise des coordonnées géographiques appelées latitude et longitude qui sont des angles exprimés en degrés.
 
@@ -35,13 +35,19 @@ Exemple : les coordonnées de la Tour Eiffel sont : 48°51'31" N (latitude) et 2
 
 On trouvera [ici](Assets/measurements_from_the_sky.pdf) une activité permettant de déterminer la latitude d'un lieu en déterminant la position du Soleil ou de l'étoile Polaire dans le ciel.
 
-### Localisation GPS
+### La localisation GPS : [vidéo](https://webtv.univ-lille.fr/video/5507/comment-fonctionne-un-gps)
 
-Le système GPS utilise environ 30 satellites en orbite autour de la Terre. Chaque satellite émet des signaux contenant la position du satellite et l'heure d'émission du signal.
+
+Le système GPS utilise environ 30 satellites en orbite autour de la Terre. Chaque satellite émet des signaux ou **ondes électromagnétiques** contenant la position du satellite et l'heure d'émission du signal.
+
+<img src="Assets/onde_electromag.png">
+
+
+<img src="Assets/spectre.jpg">
 
 Un récepteur GPS peut capter un tel signal et en déduire le temps que le signal a mis pour lui parvenir sachant que le signal est une onde électromagnétique qui se propage à la **vitesse de la lumière** c'est-à-dire à la célérité **c = 300 000 km/s = 3,00×10<sup>8</sup> m·s<sup>-1</sup>**.
 
-On utilise pour cela la relation : d=c·Δt où Δt désigne la durée de transfert du signal, différence entre la date de réception et la date d'émission .
+On utilise pour cela la relation : **d=c·Δt** où Δt désigne la durée de transfert du signal, différence entre la date de réception et la date d'émission .
 
 Cette information permet au calculateur intégré au GPS de calculer que l'utilisateur se trouve sur une sphère de rayon d centré sur la position actuelle du satellite.
 Il faut donc à priori 3 satellites pour pouvoir localiser l'utilisateur à l'intersection de 3 sphères centrées sur ces 3 satellites.
@@ -50,7 +56,7 @@ Il faut donc à priori 3 satellites pour pouvoir localiser l'utilisateur à l'in
 
 La difficulté est cependant de synchroniser les horloges des satellites et celle du récepteur. Une erreur d'un millionième de seconde en effet provoque une erreur de 300 mètres sur la position (cf. exercice 2). Le récepteur ne peut bien entendu pas bénéficier d'une horloge atomique comme les satellites ; il doit néanmoins disposer d'une horloge assez stable, mais dont l'heure n'est a priori pas synchronisée avec celle des satellites. Les signaux de quatre satellites au moins sont nécessaires pour déterminer ce décalage, puisqu'il faut résoudre un système d'au moins quatre équations mathématiques à quatre inconnues qui sont la position dans les trois dimensions (3 inconnues) plus le décalage de l'horloge du récepteur avec l'heure GPS (1 inconnue). 
 
-### Bases de données cartographiques
+### Les bases de données cartographiques
 
 #### Géoportail
 

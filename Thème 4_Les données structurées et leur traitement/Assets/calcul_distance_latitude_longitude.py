@@ -1,5 +1,7 @@
 import math
 
+R=6378137
+
 def conversion_degre_radian(angle):
     """
     Convertit un angle exprimé en degré en radian
