@@ -44,7 +44,7 @@ Compléter la phrase : une erreur de 30 ns (nanoseconde) provoque une erreur de 
 
 C'est la raison pour laquelle des horloges de grande précision sont embarquées à bord des satellites G.P.S ; ce sont des **horloges atomiques** (basées sur des transitions énergétiques électroniques au sein de l'atome (césium Cs)) ; des corrections sont apportées qui tiennent compte des effets de la relativité  [restreinte](https://www.youtube.com/watch?v=Ytk2z3NApYo) (le temps ne s'écoule pas au même rythme à bord du satellite animé d'une grande vitesse par rapport à la Terre que sur Terre) et la relativité générale (la gravité joue également un rôle sur l'écoulement du temps) ; ces deux théories ont été découvertes par Einstein en 1905.
 
-On trouvera ici la démonstration classique du phénomène de [dilatation des durées](assets/demonstration.md).
+On trouvera ici la démonstration classique du phénomène de [dilatation des durées](Assets/demonstration.md).
 
 <img src="Assets/horloge.jpg">
 
