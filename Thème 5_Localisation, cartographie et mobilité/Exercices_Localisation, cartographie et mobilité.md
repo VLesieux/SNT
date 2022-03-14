@@ -40,16 +40,11 @@ Le GPS comprend au moins 24 satellites circulant à 20 200 km d'altitude. Ils se
 
 <img width="400" height="400" src="Assets/constellation.png">
 
-Compléter la phrase au vu des résultats ci-dessous : une erreur d'un millionième de seconde provoque une erreur de ... mètres sur la position.
+Compléter la phrase : une erreur de 30 ns (nanoseconde) provoque une erreur de ... mètres sur la géolocalisation.
 
-```Python
->>> distance(064036.261116,064036.328451)
-20186.52515934903
->>> distance(064036.261116,064036.328452)
-20186.824951908522
-```
+C'est la raison pour laquelle des horloges de grande précision sont embarquées à bord des satellites G.P.S ; ce sont des **horloges atomiques** (basées sur des transitions énergétiques électroniques au sein de l'atome (césium Cs) qui tiennent compte des effets de la relativité :  [restreinte](https://www.youtube.com/watch?v=Ytk2z3NApYo) (le temps ne s'écoule pas au même rythme à bord du satellite animé d'une grande vitesse par rapport à la Terre) et générale (la gravité joue également sur l'écoulement du temps) découverts par Einstein en 1905.
 
-C'est la raison pour laquelle des horloges de grande précision sont embarquées à bord des satellites G.P.S ; ce sont des **horloges atomiques** (basées sur des transitions énergétiques électroniques au sein de l'atome (césium Cs) qui tiennent compte des effets de la relativité : restreinte (le temps ne s'écoule pas au même rythme à bord du satellite animé d'une grande vitesse par rapport à la Terre) et générale (la gravité joue également sur l'écoulement du temps) découverts par Einstein en 1905.
+On trouvera ici la démonstration classique de la [dilatation des durées](assets/demonstration.md).
 
 <img src="Assets/horloge.jpg">
 
@@ -68,7 +63,7 @@ Longitude de arc de triomphe	2.295028.
 
 La démonstration du calcul de la distance à vol d'oiseau à partir des latitudes et longitudes se fait en exprimant le produit scalaire de deux manières différentes.
 
-<img src="Assets/demonstration.png">
+Voir la [démonstration](assets/demonstration_distance.md).
 
 Le programme ci-dessous a pour but de déterminer la distance à vol d'oiseau entre deux positions en utilisant la méthode explicitée précédemment ; compléter les lignes manquantes.
 
