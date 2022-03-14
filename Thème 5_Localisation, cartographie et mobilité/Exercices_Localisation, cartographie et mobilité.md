@@ -36,7 +36,7 @@ def distance(t1,t2):
     """
 ```
 
-Le GPS comprend au moins 24 satellites circulant à 20 200 km d'altitude. Ils se répartissent sur six orbites distinctes à raison de quatre satellites par orbite.
+Le GPS comprend au moins 24 satellites circulant à 20 200 km d'altitude. Ils se répartissent sur six orbites distinctes à raison de quatre satellites par orbite, et tournent à une vitesse de l'ordre de 14000 km/h.
 
 <img width="400" height="400" src="Assets/constellation.png">
 
