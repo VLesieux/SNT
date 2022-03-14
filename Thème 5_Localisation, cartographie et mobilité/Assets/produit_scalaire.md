@@ -1,0 +1,1 @@
+<img src="produit_scalaire.png">

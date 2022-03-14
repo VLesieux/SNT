@@ -63,9 +63,9 @@ Longitude de arc de triomphe	2.295028.
 
 <img src="Assets/Calcul_distance.png">
 
-La démonstration du calcul de la distance à vol d'oiseau à partir des latitudes et longitudes se fait en exprimant le produit scalaire de deux manières différentes.
+La démonstration du calcul de la distance à vol d'oiseau à partir des latitudes et longitudes se fait en exprimant le [produit scalaire](Assets/produit_scalaire.md) de deux manières différentes.
 
-Voir la [démonstration](Assets/demonstration_distance.md).
+Voir la [démonstration](A![](data:image/jpeg;base64,PGltZyBzcmM9ImRlbW9uc3RyYXRpb24ucG5nIj4=)ssets/demonstration_distance.md).
 
 Le programme ci-dessous a pour but de déterminer la distance à vol d'oiseau entre deux positions en utilisant la méthode explicitée précédemment ; compléter les lignes manquantes.
 
