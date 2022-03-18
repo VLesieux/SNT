@@ -78,7 +78,7 @@ R=6378137
 
 def conversion_degre_radian(angle):
     """
-    Convertit un angle exprimé en degré en radian
+    Convertit un angle exprimé en degré en radian (proportionnalité)
     >>> conversion_degre_radian(180)
     3.141592653589793
     """
