@@ -72,6 +72,8 @@ Le programme ci-dessous a pour but de déterminer la distance à vol d'oiseau en
 ```Python
 import math
 
+PI=math.pi
+
 R=6378137
 
 def conversion_degre_radian(angle):
