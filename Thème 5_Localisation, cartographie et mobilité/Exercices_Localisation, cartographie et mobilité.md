@@ -85,8 +85,8 @@ def conversion_degre_radian(angle):
 def calcul_distance_a_vol_d_oiseau(A,B):
     """
     Calcule la distance en m entre deux points A et B à partir de leurs coordonnées géographiques
-    param : A : tuple
-    param : B : tuple
+    param : A : tuple : doublet (latitude, longitude)
+    param : B : tuple : doublet (latitude, longitude)
     return : float
     >>> calcul_distance_a_vol_d_oiseau((48.858370,2.294481),(48.873792,2.295028))
     1717.236416494379
