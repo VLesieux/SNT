@@ -1,6 +1,7 @@
 import math
 
 R=6378137
+PI=math.pi
 
 def conversion_degre_radian(angle):
     """
@@ -8,7 +9,7 @@ def conversion_degre_radian(angle):
     >>> conversion_degre_radian(180)
     3.141592653589793
     """
-    PI=math.pi
+    
     return angle*PI/180
 
 def calcul_distance_a_vol_d_oiseau(A,B):

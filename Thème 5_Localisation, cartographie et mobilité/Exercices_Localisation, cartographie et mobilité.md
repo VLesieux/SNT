@@ -114,19 +114,32 @@ Retrouver le résultat à cette [adresse](https://www.coordonnees-gps.fr/distanc
 Donner l'heure et les coordonnées d'acquisition de la trame NMEA 0183 suivante :
 '$GPGLL,4835.07,N,235.47,E,203712,A'
 
-Écrire la fonction `exploitation_trame` définie ci-dessous : 
+Compléter la fonction `exploitation_trame` définie ci-dessous : 
 
 ```Python
 
 def exploitation_trame(trame):
     """
-    Renvoie la position géographique de façon textuelle à partir de la trame
+    Renvoie l'heure, la latitude et la longitude à partir de la trame
     param : trame : string
     return : string
     >>> exploitation_trame("$GPGLL,4916.45,N,12311.12,W,225444,A")
-    'position géographique : latitude : 49 deg. 16.45 min. N ; longitude : 123 deg. 11.12 min. W ; acquisition : 22:54:44 UTC'    
+    'position géographique : latitude : 49 deg. 16.45 min. N ; longitude : 123 deg. 11.12 min. W ; acquisition : 22:54:44 UTC'
     """
-    pass
+    valeurs=trame.split(',')
+    latitude=valeurs[1]
+    degre_latitude=latitude[:-5]
+    minute_latitude=latitude[-5:]
+    longitude=valeurs[3]
+    degre_longitude=............
+    minute_longitude=...........
+    date=valeurs[5]
+    heure=date[0:2]
+    minute=...........
+    seconde=............
+    texte='position géographique : latitude : '+degre_latitude+' deg. '+ minute_latitude+' min. '+ valeurs[2]+' ; longitude : '+ degre_longitude +' deg. '+minute_longitude+' min. '+valeurs[4]+' ; acquisition : '+heure+':'+minute+':'+seconde+' UTC'
+    return texte
+  
     
 if __name__ == '__main__':
   import doctest
