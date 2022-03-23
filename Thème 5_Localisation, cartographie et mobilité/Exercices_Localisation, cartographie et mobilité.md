@@ -8,6 +8,21 @@ En utilisant openStreetMap, dire ce que l'on peut trouver aux coordonnées (lati
 
 ### Exercice 2
 
+Il y a plus de 2000 ans, le scientifique grec Ératosthène invente la discipline de la géographie dont le terme est encore utilisé aujourd'hui ; il a même réussi à estimer la circonférence de la Terre.
+
+Pour cela il a constaté qu'à midi à Syène (aujourd’hui Assouan en Égypte) les rayons du Soleil sont à la verticale (un puits creusé en donne une preuve expérimentale car il est éclairé tout entier). Le même jour à la même heure, à Alexandrie, ville située quasiment sur le même méridien (à 3° de longitude près), les rayons lumineux forment un angle α de 7,2° avec un bâton planté verticalement.
+De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours pour arriver à Alexandrie en parcourant 100 stades par jour (un stade équivaut à 160m).  
+
+
+<img width="600" height="400" src="Assets/Erathosthene.png">
+
+1. En utilisant l'égalité des angles alternes et internes, donner l'expression de la circonférence P de la Terre en fonction de l'angle α et de la longueur s de l'arc qui joint A à S. On rappelle que la longueur s d'un arc de cercle de rayon R sous-tendu par un angle α est donnée par la relation : s=R·α à condition d'exprimer α en radian. On rappelle que π=180° ; on retrouve ainsi l'expression bien connue du périmètre d'un cercle : p=2π·R.
+2. Donner la valeur de la circonférence de la Terre calculée par Ératosthène. 
+3. Estimer l'erreur relative commise, exprimée en pourcentage, en utilisant la valeur connue du rayon moyen de la Terre : 6 371 km. Le pourcentage d'erreur relative entre une valeur expérimentale e<sub>exp</sub> et une valeur théorique e<sub>théo</sub> est donné par : 100×|e<sub>exp</sub>-e<sub>théo</sub>|/e<sub>théo</sub>.
+
+
+### Exercice 3
+
 On rappelle le code pour faire les doctests.
 
 ```Python
@@ -51,7 +66,7 @@ Des corrections doivent être apportées dans la mesure du temps pour tenir comp
 On trouvera ici la démonstration classique du phénomène de [dilatation des durées](Assets/demonstration.md).
 
 
-### Exercice 3
+### Exercice 4
 
 En utilisant [Géoportail](https://www.geoportail.gouv.fr/) et l'outil "mesurer une distance", trouver la distance à vol d'oiseau de la Tour Eiffel à l'Arc de Triomphe.
 
@@ -109,7 +124,7 @@ En déduire la distance à vol d'oiseau entre ces deux villes : Lille : (50.6365
 Retrouver le résultat à cette [adresse](https://www.coordonnees-gps.fr/distance).
 
 
-### Exercice 4
+### Exercice 5
 
 Donner l'heure et les coordonnées d'acquisition de la trame NMEA 0183 suivante :
 '$GPGLL,4835.07,N,235.47,E,203712,A'
@@ -179,20 +194,6 @@ Indications :
 >>> "requin"+"-"+"marteau"
 'requin-marteau'
 ```
-### Exercice 5
-
-Il y a plus de 2000 ans, le scientifique grec Ératosthène invente la discipline de la géographie dont le terme est encore utilisé aujourd'hui ; il a même réussi à estimer la circonférence de la Terre.
-
-Pour cela il a constaté qu'à midi à Syène (aujourd’hui Assouan en Égypte) les rayons du Soleil sont à la verticale (un puits creusé en donne une preuve expérimentale car il est éclairé tout entier). Le même jour à la même heure, à Alexandrie, ville située quasiment sur le même méridien (à 3° de longitude près), les rayons lumineux forment un angle α de 7,2° avec un bâton planté verticalement.
-De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours pour arriver à Alexandrie en parcourant 100 stades par jour (un stade équivaut à 160m).  
-
-
-<img width="600" height="400" src="Assets/Erathosthene.png">
-
-1. En utilisant l'égalité des angles alternes et internes, donner l'expression de la circonférence P de la Terre en fonction de l'angle α et de la longueur s de l'arc qui joint A à S. On rappelle que la longueur s d'un arc de cercle de rayon R sous-tendu par un angle α est donnée par la relation : s=R·α à condition d'exprimer α en radian. On rappelle que π=180° ; on retrouve ainsi l'expression bien connue du périmètre d'un cercle : p=2π·R.
-2. Donner la valeur de la circonférence de la Terre calculée par Ératosthène. 
-3. Estimer l'erreur relative commise, exprimée en pourcentage, en utilisant la valeur connue du rayon moyen de la Terre : 6 371 km. Le pourcentage d'erreur relative entre une valeur expérimentale e<sub>exp</sub> et une valeur théorique e<sub>théo</sub> est donné par : 100×|e<sub>exp</sub>-e<sub>théo</sub>|/e<sub>théo</sub>.
-
 
 ### Exercice 6
 
