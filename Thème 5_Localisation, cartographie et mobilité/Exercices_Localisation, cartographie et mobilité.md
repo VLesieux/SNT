@@ -109,7 +109,7 @@ def calcul_distance_a_vol_d_oiseau(A,B):
     1717.236416494379
     """
     dλ=conversion_degre_radian(B[1])-conversion_degre_radian(A[1])
-    S=math.acos(math.sin(conversion_degre_radian(A[0]))*math.sin(conversion_degre_radian(B[0]))+math.cos(conversion_degre_radian(A[0]))*math.cos(conversion_degre_radian(B[0]))*math.cos(dλ))
+    θ=math.acos(math.sin(conversion_degre_radian(A[0]))*math.sin(conversion_degre_radian(B[0]))+math.cos(conversion_degre_radian(A[0]))*math.cos(conversion_degre_radian(B[0]))*math.cos(dλ))
     d=..............
     return d
 
