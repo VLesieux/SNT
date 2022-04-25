@@ -1,7 +1,6 @@
 ## Thème 7 : La photographie numérique
 
-On trouvera [ici](http://vfsilesieux.free.fr/Photography.pdf) un document complet et illustré portant sur le sujet de la photographie provenant de la revue scientifique New Scientist.  
-En pratique, on pourra ouvrir sur l'écran deux fenêtres avec un [dictionnaire en ligne](https://www.macmillandictionary.com/) pour rechercher les mots inconnus.
+On trouvera [ici](http://vfsilesieux.free.fr/Photography.pdf) un document complet et illustré portant sur le sujet de l'histoire de la photographie (argentique puis numérique) provenant de la revue scientifique New Scientist.  
 
 ### Introduction
 
