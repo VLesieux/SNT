@@ -30,7 +30,9 @@ Donner sa valeur dans le cas du blanc (255,255,255), du rose clair (255,192,203)
 
 Dans cet exercice nous allons utiliser le module Image de la librairie **PIL** ou **pillow** de Python (à télécharger dans le menu outils du logiciel Thonny).
 
-On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) différents traitements possibles d'une image.
+On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) les différents traitements possibles d'une image avec Python.
+
+On retiendra que l'on peut récupérer les données portant sur les pixels d'une image en utilisant `image.getpixel((x,y))` :
 
 Application : réaliser les programmes permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir :
 
@@ -221,7 +223,7 @@ drapeau_vietnam()
 
 ### Exercice 5 : traitement d'une image numérique dans le navigateur web avec JavaScript
 
-Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.  
+Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.    
   
 1. On trouvera [ici différentes transformations ](http://isnangellier.alwaysdata.net/php/Transformations_image.html) à réaliser en modifiant les pixels d'une image.
 
