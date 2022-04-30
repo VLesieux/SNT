@@ -2,13 +2,19 @@
 
 ### Exercice 1
 
-On dispose d'une image carrée dont la définition est de 4 Mpx. 
+On dispose d'une image carrée dont la définition est de 4 Mpx.   
 On rappelle que la **définition** d'une image est le produit du nombre de pixels sur la hauteur par le nombre de pixels sur la largeur de l'image.
-Déterminer les dimensions en cm de cette image :
-- si elle est affichée sur un écran de résolution 144 ppi (pixels per inch)
-- si elle est imprimée par une imprimante de résolution 300 dpi (dots per inch).
 
 1 inch = 1 pouce = 2.54 cm
+
+1. Déterminer les dimensions en cm de cette image :  
+
+- si elle est affichée sur un écran de résolution 144 ppi (pixels per inch).  
+- si elle est imprimée par une imprimante de résolution 300 dpi (dots per inch).  
+
+2. Dans les deux cas, sur quel principe physique l'image est-elle formée ?
+
+
 
 ### Exercice 2
 
@@ -21,10 +27,36 @@ On rappelle que la **résolution** d'un écran est la densité de pixels affich�
 ### Exercice 3
 
 La **luminance** relative est une grandeur correspondant à la sensation visuelle de luminosité ; elle varie entre 0 pour le noir et 1 pour le blanc pris comme référence, la pondération est basée sur la sensibilité de l'oeil humain  ; le vert contribue le plus à l'intensité perçue par l'œil humain et le bleu le moins.
-Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul de la luminance se calcule à l'aide de la formule L = (0,2126 × R + 0,7152 × V + 0,0722 × B)/255.
+Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul de la luminance se calcule à l'aide de la formule L = (0,2126 × R + 0,7152 × V + 0,0722 × B)/255.  
+Le résultat sera arrondi à 2 chiffres après la virgule avec la fonction round().
 
-Écrire une fonction en Python telle que `lum(couleur)` qui renvoie la valeur de la luminance, lorsque la couleur est donnée sous forme d'un triplet (r,v,b).
-Donner sa valeur dans le cas du blanc (255,255,255), du rose clair (255,192,203) et du bordeaux (165,42,42).
+```python
+>>> round(1.5628,2)
+1.56
+>>> round(1.5658,2)
+1.57
+```
+
+Compléter la fonction `lum(couleur)` qui renvoie la valeur de la luminance, lorsque la couleur est donnée sous forme d'un triplet (R,V,B).  
+Donner sa valeur dans le cas du rose clair (255,192,203) et du bordeaux (165,42,42) ; conclure.
+
+```python
+def lum(couleur):
+    """
+    renvoie la luminance (sensation visuelle) associée à couleur
+    param : couleur : tuple
+    return : float
+    >>> lum((255,255,255))
+    1.0
+    >>> lum((0,0,0))
+    0.0
+    """
+    
+    
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
+```
 
 ### Exercice 4 : traitement d'une image numérique avec Python
 
@@ -34,7 +66,7 @@ On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pd
 
 On retiendra que l'on peut récupérer les données portant sur les pixels d'une image en utilisant `image.getpixel((x,y))` :
 
-Application : réaliser les programmes permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir :
+Applications : réaliser les programmes permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir :
 
 - France : <img width="50" height="50" src="Assets/Drapeau_france.jpg">
 - Belgique : <img width="50" height="50" src="Assets/Drapeau_belge.jpg">
@@ -45,7 +77,7 @@ Application : réaliser les programmes permettant d'obtenir les drapeaux suivant
 
 On trouvera ici une application web permettant [le codage des couleurs](http://isnangellier.alwaysdata.net/php/colours.html) .
 
-Code pour la réalisation du drapeau français ; l'image au format jpg, par exemple "Drapeau_france.jpg", se formera dans même le dossier que le fichier à l'extension python, par exemple, drapeau.py, où sera enregistré le programme dont le code est le suivant :
+Exemple : code pour la réalisation du drapeau français ; l'image au format jpg, par exemple "Drapeau_france.jpg", se formera dans même le dossier que le fichier à l'extension python, par exemple, drapeau.py, où sera enregistré le programme dont le code est le suivant :
 
 ```python
 
