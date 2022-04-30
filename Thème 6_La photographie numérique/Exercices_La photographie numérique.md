@@ -18,17 +18,17 @@ On rappelle que la **définition** d'une image est le produit du nombre de pixel
 
 ### Exercice 2
 
-Un magasin propose deux ordinateurs à des prix intéressants.
-Le premier possède un écran de définition 1233 × 925 px et de dimensions 345,44 × 259,08 mm (écran 17").
-Le second a un écran de définition 1219 × 914 px et de dimensions 304,80 × 228,60 mm (écran 15").
-Lequel a la meilleure résolution ?
-On rappelle que la **résolution** d'un écran est la densité de pixels affichés sur chaque pouce de l'écran, elle s'exprime en ppi (pixels per inch).
+Un magasin propose deux ordinateurs à des prix intéressants.   
+Le premier possède un écran de définition 1233 × 925 px et de dimensions 345,44 × 259,08 mm (écran 17").   
+Le second a un écran de définition 1219 × 914 px et de dimensions 304,80 × 228,60 mm (écran 15").  
+Lequel a la meilleure résolution ?  
+On rappelle que la **résolution** d'un écran est la densité de pixels ; on l'exprimera en ppi (pixels per inch).
 
 ### Exercice 3
 
-La **luminance** relative est une grandeur correspondant à la sensation visuelle de luminosité ; elle varie entre 0 pour le noir et 1 pour le blanc pris comme référence, la pondération est basée sur la sensibilité de l'oeil humain  ; le vert contribue le plus à l'intensité perçue par l'œil humain et le bleu le moins.
-Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul de la luminance se calcule à l'aide de la formule L = (0,2126 × R + 0,7152 × V + 0,0722 × B)/255.  
-Le résultat sera arrondi à 2 chiffres après la virgule avec la fonction round().
+La **luminance** relative est une grandeur correspondant à la sensation visuelle de luminosité ; elle varie entre 0 pour le noir et 1 pour le blanc pris comme référence, la pondération est basée sur la sensibilité de l'oeil humain  ; le vert contribue le plus à l'intensité perçue par l'œil humain et le bleu le moins.   
+Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul de la luminance se calcule à l'aide de la formule : L = (0,2126 × R + 0,7152 × V + 0,0722 × B)/255.  
+Le résultat sera arrondi à 2 chiffres après la virgule en utilisant la fonction `round()` de la manière suivante :
 
 ```python
 >>> round(1.5628,2)
@@ -45,7 +45,7 @@ def lum(couleur):
     """
     renvoie la luminance (sensation visuelle) associée à couleur
     param : couleur : tuple
-    return : float
+    return : float avec deux chiffres après la virgule
     >>> lum((255,255,255))
     1.0
     >>> lum((0,0,0))
