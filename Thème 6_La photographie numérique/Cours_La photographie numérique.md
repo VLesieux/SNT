@@ -1,4 +1,4 @@
-## Thème 7 : La photographie numérique
+## Thème 6 : La photographie numérique
 
 On trouvera [ici](http://vfsilesieux.free.fr/Photography.pdf) un document complet et illustré portant sur le sujet de l'histoire de la photographie (argentique puis numérique) provenant de la revue scientifique New Scientist.  
 
@@ -48,10 +48,10 @@ Remarque : il n'y a pas nécessairement le même nombre de pixels sur l'image qu
 
 La **résolution d'une image** quant à elle correspond au nombre de pixels par unité de longueur. Elle est généralement exprimée en ppp (pixel par pouce) ou ppi (pixel per inch) ou dpi (dot per inch) pour les imprimantes. Plus la résolution est importante, plus l'image sera de bonne qualité lors d'un zoom. On obtient une très bonne qualité d'impression avec une résolution de 300 ppi par exemple ; tandis que les écrans d'ordinateur ont désormais généralement une résolution entre 85 et 150 ppi. Cependant certains smartphones ont désormais des écrans avec une très bonne résolution avec par exemple 326 ppi.
 
-La couleur de chaque sous-pixel est codée sur un octet(8 bits), ainsi chaque pixel est codé sur 3 octets renseignant sur les niveaux des trois composantes : rouge, vert et bleu.
+>>>La couleur de chaque sous-pixel est codée sur un octet(8 bits), ainsi chaque pixel est codé sur 3 octets renseignant sur les niveaux de ces trois composantes : rouge, vert et bleu, qui sont les couleurs primaires en synthèse additive des couleurs.  
 On parle de **codage RVB ou RGB** pour Red-Green-Blue. Il s'agit pour chacune des trois composantes d'indiquer l'intensité lumineuse de la couleur par un nombre compris entre 0 et 255.  
 En effet, chaque couleur est codée sur 1 octet formé de 8 bits ce qui offre 2<sup>8</sup>=256 possibilités de niveau de couleur pour le rouge, autant pour le vert et le bleu, soit une totalité de 2<sup>8</sup>×2<sup>8</sup>×2<sup>8</sup>=2<sup>24</sup>=16 777 216 couleurs. 
-Ainsi le rouge est codé par (255,0,0) ; le vert par (0,255,0) ; le bleu par (0,0,255).
+Ainsi le rouge est codé par (255,0,0) ; le vert par (0,255,0) ; le bleu par (0,0,255).  
 Une égalité des trois niveaux correspond à un niveaux de gris, il y en a donc 256 niveaux de gris.
 
 On trouvera ici une application web permettant d'observer [le codage des couleurs](http://isnangellier.alwaysdata.net/php/colours.html) .

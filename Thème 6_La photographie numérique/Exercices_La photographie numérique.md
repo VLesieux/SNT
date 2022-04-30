@@ -1,4 +1,4 @@
-## Exercices Thème 7 : La photographie numérique
+## Exercices Thème 6 : La photographie numérique
 
 ### Exercice 1
 
