@@ -109,7 +109,7 @@ def drapeau_france():
         
     imagearrivee.save("Drapeau_france.jpg")#enregistre l'image
 
-drapeau_france()# lance le programme défini préalablement
+drapeau_france()# appelle la fonction définie précédemment qui n'admet pas de paramètre.
 ```
 
 Autres applications : 
