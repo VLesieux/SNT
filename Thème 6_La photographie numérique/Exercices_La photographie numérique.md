@@ -77,7 +77,7 @@ Applications : réaliser les programmes permettant d'obtenir les drapeaux suivan
 
 On trouvera ici une application web permettant [le codage des couleurs](http://isnangellier.alwaysdata.net/php/colours.html) .
 
-Exemple : code pour la réalisation du drapeau français ; l'image au format jpg, par exemple "drapeau_france.jpg", se formera dans le même le dossier que le programme à l'extension python, par exemple drapeau_france.py :
+Exemple : code pour la réalisation du drapeau français ; l'image au format jpg, par exemple `drapeau_france.jpg`, se formera dans le même le dossier que le programme à l'extension python, par exemple `drapeau_france.py` :
 
 ```python
 
