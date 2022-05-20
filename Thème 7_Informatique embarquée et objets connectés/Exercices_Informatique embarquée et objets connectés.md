@@ -33,11 +33,10 @@ def initialise():
     valeur_obtenue=0   
     global valeur_a_atteindre    
     valeur_a_atteindre=0    
-    for i in range(1,10):    
-        Suite.append(str(randint(0,21)))#on construit une suite de 9 valeurs tirées au hasard entre 0 et 20    
-    print (Suite)    
-    CopieSuite=tuple(Suite)#on réalise une copie-témoin de la suite qui va subir des modifications    
-    print (CopieSuite)    
+    for i in range(1,10):#on construit une suite de 9 valeurs tirées au hasard entre 0 et 20     
+        Suite.append(str(randint(0,21)))   
+    print ("Suite de valeurs choisies : ",Suite)    
+    CopieSuite=tuple(Suite)#on réalise une copie-témoin de la suite qui va subir des modifications (suppression de valeurs)      
     for i in range(1,4):    
         n=len(Suite)#mesurer la taille de la liste    
         x=randint(0,n-1)#choisit une valeur d'index au hasard sur une liste de plus en plus courte    
@@ -46,7 +45,7 @@ def initialise():
         Suite.remove(Suite[x])#on supprime la valeur de Suite pour qu'elle ne soit pas à nouveau choisie    
     global solution_affiche    
     solution_affiche=';'.join(Solution)    
-    print (Solution)    
+    print ("Combinaison à réaliser : ", Solution)    
     print (valeur_a_atteindre)  
     L3.config(text="")             
     for i in range(1, 10):    
@@ -54,7 +53,7 @@ def initialise():
         B.config(text=str(CopieSuite[i-1]))    
         B.config(command=lambda x=i, y=CopieSuite[i-1]: ajoute(x, y))    
         B.config(state=NORMAL)              
-    L1.config(text="Valeur à atteindre en moins de 3 coups :"+str(valeur_a_atteindre))   
+    L1.config(text="Valeur à atteindre en moins de 3 coups : "+str(valeur_a_atteindre))   
     L2.config(text="Valeur obtenue : "+str(valeur_obtenue))         
 def ajoute(n,valeur):#le premier paramètre est le numéro du bouton, le second est la valeur à ajouter    
     global valeur_obtenue    
@@ -71,7 +70,7 @@ def ajoute(n,valeur):#le premier paramètre est le numéro du bouton, le second 
     if nombre_essais<3 and nombre_essais>0:    
         L3.config(text="Reste : "+str(3-nombre_essais)+" coups.")    
     if nombre_essais>=3:    
-        L3.config(text="Perdu. Une solution était : "+' + '.join(Solution))     
+        L3.config(text="Perdu. Une solution était : "+' + '.join(Solution))#affiche les éléments de la liste solution avec le séparateur +     
     
 from tkinter import *    
 fenetre = Tk()#on crée l'objet fenêtre    
@@ -120,7 +119,6 @@ Remarque : cet exercice est l'occasion de différencier **variable locale** conn
 
 Sur le site http://www.cea.fr, on peut lire le texte suivant :
 
-```
 Une voiture autonome désigne une voiture dont la conduite est en partie ou entièrement automatisée.
 
 Il existe différents niveaux d’autonomie, dont certains sont déjà très courants et utilisés. Par exemple, les systèmes d’antiblocage des roues (ABS) constituent le premier niveau d’autonomie d’un véhicule. Au total, la classification établie par la SAE international* compte 5 niveaux.
@@ -144,7 +142,6 @@ Les informations brutes collectées par tous les capteurs sont acheminées vers 
 En fonction du résultat de l’analyse des données par l’intelligence artificielle, la voiture totalement autonome peut prendre une décision de conduite. Par exemple, les caméras et les lidars d’une voiture autonome détectent une forme. Les données recueillies sont envoyées au logiciel informatique qui, après analyse et fusion des données, reconnaît une apparence humaine et l'interprète donc comme étant un piéton. C'est à partir de cette interprétation que le logiciel comprend que le piéton s'engage sur le passage piéton. Il anticipe et prend donc la décision d'activer les freins pour stopper la voiture.
 
 La prise de décision aboutit ensuite à une action qui active ou désactive certaines commandes comme tourner à droite, freiner, accélérer, etc.
-```
 
 1. À quels niveaux d'autonomie se situent les voitures actuelles ?
 2. Quels sont les capteurs mentionnés ? À quoi servent-ils ?
