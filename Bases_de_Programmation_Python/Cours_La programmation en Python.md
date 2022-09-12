@@ -418,21 +418,17 @@ On peut parcourir une liste ou un tuple de deux manières différentes.
 5
 9
 
->>> for i in liste:
-    print(i)
+>>> for element in liste:
+    print(element)
     
 3
 5
 9
 ```
 
+Dans la première formulation, `i` joue le rôle d'un indice qui commence à 0 et va jusque len(liste)-1 parcourant ainsi les n valeurs d'indice des éléments de la liste.
 
-
-Bien comprendre que i ne prend pas le même sens. 
-
-Dans la première formulation, i joue le rôle d'un indice qui commence à 0 et va jusque len(liste)-1 parcourant ainsi les n valeurs d'indice des éléments de la liste.
-
-Dans la seconde formulation, i joue le rôle d'un élément constitutif de la liste et n'est pas une valeur numérique mais un objet de la liste.
+Dans la seconde formulation, `element` joue le rôle d'un élément constitutif de la liste et n'est pas une valeur numérique mais un objet constitutif de la liste.
 
 <u>Exemple 1</u>: 
 
