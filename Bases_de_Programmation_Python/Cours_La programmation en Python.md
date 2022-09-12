@@ -275,7 +275,7 @@ La structure conditionnelle utilise les mots : **if ; elif ; else** dans cet ord
 
 <u>Exemple 1</u>: 
 
-On se propose d'écrire un petit programme qui va répondre à l'objectif suivant que l'on traduit d'abord en langage naturel : un utilisateur entre son âge, l'ordinateur concluera que l'individu est soit un enfant (<10), soit un adolescent (≥10 ; <19), soit un adulte (≥19).
+On se propose d'écrire un petit programme qui va répondre à l'objectif suivant que l'on traduit d'abord en **langage naturel** : un utilisateur entre son âge, l'ordinateur concluera que l'individu est soit un enfant (<10), soit un adolescent (≥10 ; <19), soit un adulte (≥19).
 
 ```Python
 age=int(input("Entrez votre âge s.v.p : "))#le résultat d'un input est une chaîne de caractères, d'où la nécessité de la convertir en entier avec int()
@@ -304,7 +304,7 @@ le nombre  15  est impair
 le nombre  4  est pair
 ```
 
-En fait il est très souvent préférable de créer une fonction `est_pair(n)` dont le rôle est de déterminer le caractère pair ou impair d'un nombre en renvoyant un booléen ; on programme ainsi ce qui va nous permettre d'évaluer une propriété d'un nombre.
+En fait il est très souvent préférable de créer une fonction `est_pair(n)` dont le rôle est de déterminer le caractère pair ou impair d'un nombre en renvoyant un booléen ; on programme ainsi ce qui va nous permettre d'évaluer la propriété d'un nombre.
 
 Puis on crée une autre fonction pour l'affichage ; l'intérêt est que la propriété pair ou impair est ainsi évaluable et pourra trouver d'autres usages dans d'autres fonctions dans un programme.
 
@@ -403,7 +403,7 @@ Hello
 Hello
 ```
 
-`for i in range(n,p)` fait démarrer i à n et arrête à p-1.
+`for i in range(n,p)` fait démarrer une boucle avec i égal à n, incrémente i de 1 (par défaut sinon on peut modifier le pas avec `for i in range(n,pas,p)`) à chaque tour de boucle et arrête la boucle lorsque i vaut p-1.
 
 <u>Remarque</u>:
 
