@@ -71,11 +71,15 @@ L'utilisation du **symbole hashtag #** indique un **commentaire** qui est ignor�
 <class 'list'>
 ```
 
-En langage Python, on utilise l'instruction `a=...` pour **affecter une valeur à une variable**.
+En langage Python, on utilise l'instruction `a=...` pour **affecter une valeur à une variable**. Un espace mémoire identifié par une étiquette est consacré dans la mémoire vive de l'ordinateur à cette variable ; l'identifiant de cette étiquette est donné par l'id de la variable.
 
 ```Python
 >>> a=3
 >>> b=5
+>>> id(a)
+4343180496
+>>> id(b)
+4343180432
 >>> a+b
 8
 >>> a-b
@@ -101,7 +105,7 @@ True
 
 >>> type("singe")!=list# ici != signifie différent de 
 True
-#c'est comme si on posait la question : est-ce que "singe" n'est pas du type list ?
+#c'est comme si on posait la question : est-ce que "singe" est du type list ?
 ```
 
 <u>Remarque 2</u>: Il faut avoir en tête qu'un ordinateur utilise une représentation binaire des nombres. Ce qui donne lieu parfois à des résultats très suprenants par exemple !
@@ -125,11 +129,11 @@ La spécialité NSI de première vous permettra de comprendre ce qui se passe et
 >>> valeur_numerique
 13.45
 
->>> nombre=2020
+>>> nombre=2022
 >>> nombre_texte=str(nombre)
 >>> texte="Nous sommes en "+nombre_texte
 >>> texte
-'Nous sommes en 2020'
+'Nous sommes en 2022'
 
 >>> int(5.42)
 5
@@ -196,7 +200,7 @@ On peut connaître la longueur d'une liste avec la fonction `len`.
 ```
 ##### b) À propos des chaînes de caractères
 
-On peut accoler deux chaînes de caractères l'une à l'autre par **concaténation** avec le simple **opérateur** +. On peut connaître la longueur de la chaîne de caractères ou accéder à un caractère de la même façon que pour les listes.
+On peut accoler deux chaînes de caractères l'une à l'autre par **concaténation** avec le simple **opérateur** +. On peut connaître la longueur de la chaîne de caractères ou accéder à un caractère de la même façon que pour les listes avec la fonction `len`.
 
 ```Python
 >>> salutation="Bon"+"jour"
@@ -252,6 +256,7 @@ TypeError: 'tuple' object does not support item assignment
 Les fonctions en Python sont définies par le mot clef `def` : on donne un nom à la fonction et on précise ses éventuels **paramètres** ; on indique ensuite les différentes **instructions** à exécuter lors de l'appel de la fonction. Une fonction est chargée de renvoyer quelque chose : on trouvera généralement le mot `return` comme ultime instruction.
 
 Par exemple, en mathématiques, on définit la fonction : f(x)=(5x-3)<sup>2</sup>.
+
 Implémenté en Python, on écrit le programme suivant dans un fichier intitulé essais_snt.py.
 Il faut veiller à bien respecter l'**indentation** qui se fait automatiquement après les ':'.
 
