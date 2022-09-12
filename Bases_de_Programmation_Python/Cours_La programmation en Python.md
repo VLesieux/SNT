@@ -428,7 +428,7 @@ On peut parcourir une liste ou un tuple de deux manières différentes.
 
 Dans la première formulation, `i` joue le rôle d'un indice qui commence à 0 et va jusque len(liste)-1 parcourant ainsi les n valeurs d'indice des éléments de la liste.
 
-Dans la seconde formulation, `element` joue le rôle d'un élément constitutif de la liste et n'est pas une valeur numérique mais un objet constitutif de la liste.
+Dans la seconde formulation, `element` joue le rôle d'un élément constitutif de la liste.
 
 <u>Exemple 1</u>: 
 
