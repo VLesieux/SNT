@@ -40,7 +40,7 @@ Par exemple : (3,'triplet',True) est un tuple contenant trois éléments.
 Par exemple : [0,2,4,6,8] est une liste contenant 5 éléments.
 [] est une liste vide
 [[3,6,9],[4,8],[5,10]] est une liste dont les éléments sont eux-mêmes des listes
-[(64,'pair'),(15,'impair'),(12,'pair')] est une liste de tuple en l'occurence une liste de couples.
+[(64,'pair'),(15,'impair'),(12,'pair')] est une liste de tuples, en l'occurence une liste de couples.
 
 Remarque : bien distinguer le symbole '.' utilisé comme virgule pour les nombres flottants du symbole ',' pour séparer les éléments d'une liste.
 
