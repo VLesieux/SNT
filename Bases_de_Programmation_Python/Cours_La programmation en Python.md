@@ -44,8 +44,9 @@ Par exemple : [0,2,4,6,8] est une liste contenant 5 éléments.
 
 Remarque : bien distinguer le symbole '.' utilisé comme virgule pour les nombres flottants du symbole ',' pour séparer les éléments d'une liste.
 
-Dans la **console** ou **Shell** du logiciel Thonny, on peut faire quelques vérifications en utilisant la fonction interne `type()` qui permet de connaître le type d'une variable.
-L'utilisation du **symbole hashtag #** indique un **commentaire** qui est ignoré par Python.
+Dans la **console** ou **Shell** du logiciel Thonny, on peut faire quelques vérifications en utilisant la fonction interne `type()` qui permet de connaître le type d'une variable.   
+
+L'utilisation du **symbole hashtag #** indique un **commentaire** qui est ignoré par Python mais qui est utile au programmeur pour se retrouver dans son code.
 
 ```Python
 >>> type(4)#on saisit les commandes après les prompts >>> et on peut rappeler la commande précédente pour gagner du temps avec la flèche ↑ du clavier.
