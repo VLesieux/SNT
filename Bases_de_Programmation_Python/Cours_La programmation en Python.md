@@ -21,7 +21,7 @@ Guido van Rossum a créé le langage Python mais pour le faire évoluer il a eu 
 
 #### 1) préambule 
 
-Un **algorithme** est une suite d'instructions à exécuter.
+Un **algorithme** est une suite d'instructions à exécuter.    
 Celui-ci peut être écrit en langage naturel, c'est-à-dire en donnant des instructions en français, mais pour être exécuté, l'algorithme doit être traduit dans un langage de programmation. Un même algorithme peut ainsi être **implémenté** dans plusieurs langages de programmation différents. Par exemple, le langage utilisé par les calculatrices TI n'est pas le même que celui utilisé par les calculatrices Casio. Ainsi, si on souhaite implémenter un algorithme sur sa calculatrice, on ne saisira pas le même **programme** selon la marque de celle-ci.
 
 #### 2) Variables, types, affectation, comparaison
