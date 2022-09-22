@@ -38,6 +38,8 @@ On rappelle que le TTL est une donnée placée au niveau de l'en-tête du paquet
 
 ### Exercice 4 : le codage binaire de l'information transmise dans le réseau
 
+Toute l'information (textes, images, sons) qui transite sur le réseau internet est numérisée en binaire pour être interprétée par nos logiciels aussi est-il intéressant de comprendre la numérisation en binaire.
+
 Un exemple de codage binaire 'à la main' de l'entier 755 : 
 
 <img src="Assets/divisions.png">
@@ -60,7 +62,7 @@ while quotient>0:
     a=str(reste)+a#permet la concaténation de la chaîne de caractères de droite à gauche
 print(a)
 ```
-4) On peut transformer ce programme en réalisant une fonction que l'on appelera `conversion_decimal_binaire`. Déterminer la ligne manquante afin de rendre fonctionnel le test.
+4) On peut transformer ce programme en réalisant une **fonction** que l'on appelera `conversion_decimal_binaire`. Déterminer la ligne manquante afin de rendre fonctionnel le test introduit dans la documentation de la fonction.
 
 ```python
 def conversion_decimal_binaire(nombre):
@@ -79,7 +81,7 @@ def conversion_decimal_binaire(nombre):
     return a
 ```
 
-Code à ajouter pour importer le module doctest et vérifier le test :
+Code à ajouter pour importer le module doctest et vérifier le test de la docstring :
 
 ```Python
 if __name__ == '__main__':
@@ -87,11 +89,11 @@ if __name__ == '__main__':
   doctest.testmod(verbose=True)
 ```
 
-5) En utilisant le programme précédent, coder en écriture binaire l'adresse IP 192.168.1.13
+5) En utilisant le programme précédent, on cherche à coder en écriture binaire l'adresse IP 192.168.1.13
 
 Peut-on concevoir un programme qui donnerait directement le code binaire d'une adresse IP ?
 
-Pour cela, on peut transformer une chaîne de caractères en liste en utilisant un séparateur avec la méthode `split` puis parcourir la liste avec `for element in `.
+Pour cela, on peut transformer une chaîne de caractères en liste en utilisant un séparateur avec la méthode `split` puis parcourir cette liste avec `for element in `.
 
 ```python
 >>> "192.168.1.13".split(".")
@@ -159,7 +161,7 @@ def conversion_binaire_decimal(code_binaire):
     return resultat
 ```
 
-8) Donner l'adresse IP codée par 10011000110000110110110001100010
+8) Donner l'adresse IP en notation décimale codée par 10011000110000110110110001100010
 
 9) Peut-on concevoir un programme qui donnerait directement l'adresse IP sous forme décimale à partir de son expression sous forme binaire ?
 
