@@ -90,7 +90,7 @@ etc...
 
 numero de case :  64  ; nombre de grains déposés sur cette case :  ?  ; nombre total de grains déposés sur l'échiquier:  ?
 
-N.B : pour otenir le résultat en notation scientifique, on écrira non pas 1 qui est du type int mais 1.0 qui est du type float.
+Remarque : on crée les variables suivantes : `nombre_grains_deposes`, `nombre_total_grains` que l'on appelera ensuite avec la touche TAB pour éviter les erreur.
 
 ### Exercice 2 : de l'utilisation de l'instruction conditionnelle `if` en programmation
 
