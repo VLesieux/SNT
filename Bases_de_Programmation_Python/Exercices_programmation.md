@@ -78,7 +78,8 @@ Par exemple : on fait la même chose que précédemment mais d'une autre manièr
 
 **Problème** : Une légende de l'Inde ancienne raconte que le jeu d'échecs a été inventé par un vieux sage que son roi voulut remercier en lui affirmant qu'il lui accorderait n'importe quel cadeau en récompense. Le vieux sage demanda qu'on lui fournisse simplement un peu de riz pour ses vieux jours, et plus précisément un nombre de grains de riz suffisant pour qu'on puisse en déposer 1 sur la première case du jeu qu'il venait d'inventer, deux sur la suivante, quatre sur la troisième, en doublant ainsi chaque fois le nombre de grains déposés, et ainsi de suite jusqu'à la 64e case. 
 
-<u>Question</u> : le vieux sage était-il si modeste dans sa requête auprès du roi ?
+<u>Question</u> : le vieux sage était-il si modeste dans sa requête auprès du roi ?   
+
 Donner en notation scientifique le nombre de grains de riz qu'il obtient.
 
 Écrire un script **utilisant les deux types de boucle** qui permet d'afficher le résultat suivant :
