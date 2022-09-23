@@ -129,9 +129,9 @@ Connaissances préalales : le symbole % est appelé <b>modulo</b>, il donne le r
 #le quotient de la division euclidienne
 ```
 
-1) Dans un premier temps, écrire un script qui permet d'afficher sur une seule ligne, séparés par le caractère " ; ", les 20 premiers multiples de 7 en utilisant l'instruction while. 
+1) Dans un premier temps, écrire un script qui permet d'afficher sur une seule ligne, séparés par le caractère " ; ", les 20 premiers multiples de 7 en utilisant une boucle `for` puis une boucle `while`. 
 
-Pour afficher une variable sans changer de ligne et en insérant le caractère " ; ", on utilise l'instruction print(variable, end=" ; " ).   
+Pour afficher une variable sans changer de ligne et en insérant le caractère " ; ", on utilise l'instruction `print(variable, end=" ; " )`.   
 
 Vous devez obtenir le résultat suivant : 
 
