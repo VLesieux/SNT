@@ -58,8 +58,6 @@ Par exemple : on affiche le mot "salut" ainsi que l'état de la variable à l'ai
 6 salut
 ```
 
-
-
 Une <b>bloucle conditionnelle et non bornée</b> se fait avec l'instruction **`while`**.
 
 Par exemple : on fait la même chose que précédemment mais d'une autre manière en imposant une condition qui limite l'évolution de la variable, il faut penser cette fois à incrémenter la variable à chaque tour de boucle : 
@@ -101,7 +99,7 @@ Remarque : on crée les variables suivantes : `nombre_grains_deposes`, `nombre_t
 La structure conditionnelle utilise les mots : **`if ; elif ; else`** dans cet ordre.
 `elif` est utilisé dans le cas où se présentent plusieurs alternatives.
 
-<u>Exemple</u>: 
+**Exemple**: 
 
 On se propose d'écrire un petit programme qui va répondre à l'objectif suivant que l'on traduit d'abord en langage naturel : un utilisateur entre son âge, le programme concluera que l'individu est soit un enfant (<10), soit un adolescent (≥10 ; <19), soit un adulte (≥19).
 
@@ -115,7 +113,9 @@ else:
     print("Vous êtes un adulte")
 ```
 
-Connaissance : le symbole % est appelé <b>modulo</b>, il donne le reste de la division de deux nombres : 
+**Problème**
+
+Connaissances préalales : le symbole % est appelé <b>modulo</b>, il donne le reste de la division euclidienne de deux nombres : 
 
 ```Python
 >>> 9/2
@@ -123,15 +123,18 @@ Connaissance : le symbole % est appelé <b>modulo</b>, il donne le reste de la d
 #le résultat de la division
 >>> 9%2
 1
-#le reste de la division
+#le reste de la division euclidienne
 >>> 9//2
 4
-#le quotient de la division
+#le quotient de la division euclidienne
 ```
 
-1) Dans un premier temps, écrire un script qui permet d'afficher sur une seule ligne, séparés par le caractère " ; ", les 20 premiers multiples de 7 en utilisant l'instruction while. Pour afficher une variable sans changer de ligne et en insérant le caractère " ; ", on utilise l'instruction print(variable, end=" ; " ).   
+1) Dans un premier temps, écrire un script qui permet d'afficher sur une seule ligne, séparés par le caractère " ; ", les 20 premiers multiples de 7 en utilisant l'instruction while. 
 
-Vous devez obtenir :
+Pour afficher une variable sans changer de ligne et en insérant le caractère " ; ", on utilise l'instruction print(variable, end=" ; " ).   
+
+Vous devez obtenir le résultat suivant : 
+
 0;7;14;21;28;35;42;49;56;63;70;77;84;91;98;105;112;119;126;133;
 
 2) Réaliser ensuite la fonction affichage(m,n) dont la docstring vous est donnée.
@@ -177,10 +180,9 @@ def affichage_ameliore2(m,n):
     """
 ```
 
-
 ### Exercice 3 : interagir avec l'utilisateur avec `input()`
 
-Une entreprise fournit des ramettes de papier à prix dégressif en fonction du nombre de lots achetés : les 50 premiers lots sont vendus 3,68€, au-delà chaque lot est vendu 3,22€. Écrire une fonction `prix(n)` qui lorsqu'on saisit le nombre `n` de lots achetés retourne (avec un return) le prix à payer puis procéder à l'affichage (avec un print) du résultat.
+**Problème** : Une entreprise fournit des ramettes de papier à prix dégressif en fonction du nombre de lots achetés : les 50 premiers lots sont vendus 3,68€, au-delà chaque lot est vendu 3,22€. Écrire une fonction `prix(n)` qui lorsqu'on saisit le nombre `n` de lots achetés retourne (avec un return) le prix à payer puis procéder à l'affichage (avec un print) du résultat.
 
 ```Python
 >>> %Run exercices_programmation_snt.py
@@ -224,6 +226,8 @@ Un **tuple** ou n-uplet est constitué de n valeurs, quel que soit leur type, s�
 >>> type((23,"billes",12.5))
 <class 'tuple'>
 ```
+
+**Problème** 
 
 Un cinéma propose une carte d'abonnement mensuel à 15€ permettant d'obtenir une réduction sur le prix des séances : sans réduction la séance est à 8,70€, alors qu'avec l'abonnement la séance est à 5,50€. 
 Sans résoudre mathématiquement le problème, écrire une fonction `abo(n)` qui renvoie sous la forme de tuple deux informations numériques : la première étant le prix sans abonnement, la seconde le prix avec abonnement. Pour renvoyer deux variables a et b sous forme de tuple, écrire `return (a,b)`.
@@ -271,6 +275,8 @@ Traceback (most recent call last):
   File "<pyshell>", line 1, in <module>
 TypeError: 'tuple' object does not support item assignment
 ```
+
+**Problème**
 
 1) Écrire un programme qui analyse un par un tous les éléments d'une liste de mots par exemple liste_complete=['Jean','Maximilien','Brigitte','Sonia','Jean-Pierre'] pour générer deux nouvelles listes : l'une contiendra les mots comportant moins de 6 caractères, l'autre comportant les mots de plus de 6 caractères.
 
