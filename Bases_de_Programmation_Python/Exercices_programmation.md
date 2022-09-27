@@ -152,7 +152,7 @@ def affichage(m,n):
     """
 ```
 
-3) Amélioration : faire en sorte d'indiquer à l'aide d'une * les multiples de m qui sont aussi des multiples de 3. On utilisera l'instruction conditionnelle `if`, l'opérateur modulo `%` qui donne le reste de la division entière de 2 nombres, et l'opérateur de comparaison `==` .
+3) Amélioration : faire en sorte d'indiquer à l'aide d'une `*` les multiples de m qui sont aussi des multiples de 3. On utilisera l'instruction conditionnelle `if`, l'opérateur modulo `%` qui donne le reste de la division entière de 2 nombres, et l'opérateur de comparaison `==` .
 
 ```Python
 def affichage_ameliore1(m,n):
@@ -166,7 +166,7 @@ def affichage_ameliore1(m,n):
     """
 ```
 
-4) De la même façon indiquer également à l'aide d'un ! les multiples de m qui sont aussi des multiples de 2. Quatre cas de figure à explorer, attention à l'ordre dans lequel ils sont énoncés.
+4) De la même façon indiquer également à l'aide d'un `!` les multiples de m qui sont aussi des multiples de 2. Quatre cas de figure à explorer, attention à l'ordre dans lequel ils sont énoncés.
 
 ```Python
 def affichage_ameliore2(m,n):
