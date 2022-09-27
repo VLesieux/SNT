@@ -166,7 +166,7 @@ def affichage_ameliore1(m,n):
     """
 ```
 
-4) De la même façon indiquer également à l'aide d'un ! les multiples de m qui sont aussi des multiples de 2.
+4) De la même façon indiquer également à l'aide d'un ! les multiples de m qui sont aussi des multiples de 2. Quatre cas de figure à explorer, attention à l'ordre dans lequel ils sont énoncés.
 
 ```Python
 def affichage_ameliore2(m,n):
