@@ -182,7 +182,7 @@ def affichage_ameliore2(m,n):
 
 ### Exercice 3 : interagir avec l'utilisateur avec `input()`
 
-**Problème** : Une entreprise fournit des ramettes de papier à prix dégressif en fonction du nombre de lots achetés : les 50 premiers lots sont vendus 3,68€, au-delà chaque lot est vendu 3,22€. 
+**Problème** : Une entreprise fournit des ramettes de papier à prix dégressif en fonction du nombre de lots achetés : les 50 premiers lots sont vendus 3.68€, au-delà chaque lot est vendu 3.22€. 
 Écrire une fonction `prix(n)` qui lorsqu'on saisit le nombre `n` de lots achetés renvoie le prix à payer puis procéder à l'affichage (avec un print) du résultat.
 
 ```Python
