@@ -11,7 +11,8 @@ Chez soi, si l'on a plusieurs ordinateurs qui se connectent à la même box (en 
 
 Il existe énormément de réseaux à travers le monde. Tous ces réseaux peuvent également être reliés entre eux pour former **le réseau des réseaux** : Internet qui signifie Inter-networks.
 
-Tous les objets connectés à Internet (ordinateurs, téléphones, montres connectées, etc..) peuvent communiquer entre eux et échanger des informations : textes, images, sons, vidéos, etc.. 
+Tous les objets connectés à Internet (ordinateurs, téléphones, montres connectées, etc..) peuvent communiquer entre eux et échanger des informations : textes, images, sons, vidéos, etc..   
+
 Pour cela, plusieurs **supports physiques de communication** peuvent être utilisés : 
 - **câbles électriques** : transport de l'électricité
 - **fibre optique** : transport de la lumière utilisant la réflexion totale de celle-ci dans le cœur de la fibre
