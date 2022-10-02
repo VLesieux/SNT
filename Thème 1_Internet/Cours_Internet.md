@@ -11,7 +11,8 @@ Chez soi, si l'on a plusieurs ordinateurs qui se connectent à la même box (en 
 
 Il existe énormément de réseaux à travers le monde. Tous ces réseaux peuvent également être reliés entre eux pour former **le réseau des réseaux** : Internet qui signifie Inter-networks.
 
-Tous les objets connectés à Internet (ordinateurs, téléphones, montres connectées, etc..) peuvent communiquer entre eux et échanger des informations : textes, images, sons, vidéos, etc.. Plusieurs **supports de communication** peuvent être utilisés : 
+Tous les objets connectés à Internet (ordinateurs, téléphones, montres connectées, etc..) peuvent communiquer entre eux et échanger des informations : textes, images, sons, vidéos, etc.. 
+Pour cela, plusieurs **supports physiques de communication** peuvent être utilisés : 
 - **câbles électriques** : transport de l'électricité
 - **fibre optique** : transport de la lumière utilisant la réflexion totale de celle-ci dans le cœur de la fibre
 - **air libre** : wifi, 4G : transport d'ondes électromagnétiques. En France, selon les **opérateurs** (Bouygues Telecom, Free, Orange, SFR...), les fréquences utilisées pour la 4G sont dans les bandes 700, 800 et 900 MHz, 1800, 2100 et 2600 MHz ; il est à noter qu'il s'agit du même type d'onde électromagnétique que ce que l'on trouve dans le four à micro-ondes, mais avec une différence de puissance, de l'ordre de 0,1 W pour le Wi-Fi, de l'ordre de 1000 W pour le four à micro-ondes.
