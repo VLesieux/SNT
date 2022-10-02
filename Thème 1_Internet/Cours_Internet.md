@@ -125,7 +125,9 @@ Remarques :
 ### Serveurs DNS (Domain Name System)
 
 Lorsque nous utilisons Internet, que se passe-t-il ?
-Imaginons que l'on souhaite s'informer pour son orientation grâce au site de l'Onisep. On commence par ouvrir le **navigateur** de son choix et dans la barre d'adresse on tape l'adresse web du site de l'Onisep : www.onisep.fr
+Imaginons que l'on souhaite s'informer pour son orientation grâce au site de l'Onisep.
+
+On commence par ouvrir le **navigateur** de son choix et dans la barre d'adresse on tape l'adresse web du site de l'Onisep : www.onisep.fr
 Le navigateur va alors chercher à se connecter au **serveur web** correspondant pour télécharger les ressources nécessaires et afficher la page web demandée.
 L'adresse symbolique www.onisep.fr est une adresse simple à mémoriser, mais on a vu que pour faire communiquer deux machines entre elles selon le protocole TCP/IP il fallait connaître leurs adresses IP. Un mécanisme a donc été mis en place pour faire correspondre le **nom de domaine** onisep.fr à l'adresse IP du serveur web sur lequel est stocké le contenu de la page web : le **DNS**. Il s'agit d'une sorte d'annuaire permettant d'associer une adresse IP à chaque nom de domaine. On interroge les serveurs DNS (ordinateurs sur lesquels est implémenté le protocole DNS) pour connaître l'adresse IP d'un serveur web.
 
