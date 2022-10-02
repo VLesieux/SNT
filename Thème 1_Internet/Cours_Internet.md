@@ -23,21 +23,27 @@ Pour cela, plusieurs **supports physiques de communication** peuvent être utili
 
 - 1969 (l'année du premier pas de l'homme sur la Lune) : L'Arpanet voit le jour, il s'agit du premier réseau de commutation de paquets reliant 4 machines de centres universitaires américains. Le protocole NCP sera utilisé.
 - 1971 : Envoi du premier courrier électronique.
-- 1971 : Parallèlement en France Louis Pouzin crée le réseau Cyclades. Le projet est abandonné en 1978 mais ses travaux ont influencé la mise au point d'Internet et du protocole TCP/IP.
-- 1974 : Définition de la suite des protocoles TCP/IP. Il sera adopté par l'Arpanet en 1983 en remplacement du protocole NCP.
+- 1971 : Parallèlement en France, Louis Pouzin crée le réseau Cyclades. Le projet est abandonné en 1978 mais ses travaux ont influencé la mise au point d'Internet et du protocole TCP/IP.
+- 1974 : Définition de la suite des protocoles TCP/IP, il sera adopté par l'Arpanet en 1983 en remplacement du protocole NCP.
 - 1983 : Création du DNS, base de données permettant la gestion des noms de domaines.
 - 1989 : Naissance du World Wide Web. Le Web, qui s'appuie sur Internet, est un ensemble de documents reliés entre eux par un système hypertexte et consultables à l'aide d'un navigateur.
 - 1993 : Popularisation du Web avec l'arrivée du navigateur NCSA Mosaic, doté d'une interface graphique. C'est le premier navigateur permettant l'utilisation d'images sur des pages Web.
 
 ### Transmission d'informations
 
-Les données transmises entre deux ordinateurs sont codées en binaire (en base 2) sous la forme d'une suite de 0 et de 1 : on parle de **bits**. L'intérêt de cette représentation est de pouvoir transférer les données par des signaux électriques (1: signal, 0: rien) ou optiques (1 : allumé, 0: éteint).
+Les données transmises entre deux ordinateurs sont codées en binaire (en base 2) sous la forme d'une suite de 0 et de 1 : on parle de **bits**. 
 
-Remarque : En informatique, on compte l'information en **octet** : 1 octet est formé de 8 bits ; il y a donc 2<sup>8</sup>=256 octets possibles de (0,0,0,0,0,0,0,0) à (1,1,1,1,1,1,1,1). Le traffic Internet prévu en 2021 est de 3 300 milliards de milliards d'octets, soit 3.3×10<sup>21</sup> octets.
+L'intérêt de cette représentation est de pouvoir transférer les données par des signaux électriques (1: signal, 0: rien) ou optiques (1 : allumé, 0: éteint).
+
+Remarque : 
+
+En informatique, on compte l'information en **octet** : 1 octet est formé de 8 bits ; il y a donc 2<sup>8</sup>=256 octets possibles de (0,0,0,0,0,0,0,0) à (1,1,1,1,1,1,1,1) qui codent les niveaux de 0 à 255.
+
+Le traffic Internet est de l'ordre de 3 300 milliards de milliards d'octets, soit 3.3×10<sup>21</sup> octets.
 
 Pour que les données (des milliards de 0 et de 1 envoyés les uns après les autres) soient correctement transmises, puis exploitées, des **protocoles** ont été mis en place.
 
-Les données vont être **encapsulées** par ces différents protocoles, c'est-à-dire qu'on va y accoler un certain nombre d'informations, notamment : où est situé l'ordinateur destinataire ? quel est le logiciel destinataire ?...
+Les données sont **encapsulées** par différents protocoles, c'est-à-dire qu'on va y accoler un certain nombre d'informations, notamment : où est situé l'ordinateur destinataire ? quel est le logiciel destinataire ?...
 
 Cet ensemble d'informations constitue la **trame** et c'est ce qui est transmis via le réseau Internet.
 
@@ -60,7 +66,8 @@ Cependant il nous manque encore une information essentielle à la transmission d
 
 Pour comprendre le fonctionnement du protocole IP on peut faire assez naturellement l'analogie avec l'envoi du courrier par La Poste.
 
-Lorsqu'on envoie une lettre par La Poste on l'insère dans une enveloppe sur laquelle sont inscrites l'adresse du destinataire et celle de l'expéditeur. Ici la lettre à envoyer correspond aux données encapsulées par TCP. IP les encapsule en ajoutant entre autres les adresses du destinataire et de l'expéditeur.
+Lorsqu'on envoie une lettre par La Poste on l'insère dans une enveloppe sur laquelle sont inscrites l'adresse du destinataire et celle de l'expéditeur. Ici la lettre à envoyer correspond aux données encapsulées par TCP. Le protocole IP les encapsule en ajoutant entre autres les adresses du destinataire et de l'expéditeur.
+
 À quoi ressemble l'adresse d'un ordinateur ?   
 
 L'**adresse IP**, à distinguer de l'adresse **MAC** qui est l'adresse donnée par le constructeur, est constituée de **4 nombres compris entre 0 et 255 séparés par un point**. 
@@ -69,9 +76,10 @@ Par exemple, supposons que l'adresse IP de l'expéditeur soit 192.168.0.1 et que
 
 <img src="Assets/Datagramme_IP.png" >
 
-Dans la trame envoyée, l'adresse IP est codée sur **4 octets**, c'est-à-dire 32 bits (4*8). Pour cela on utilise la représentation binaire des nombres compris entre 0 et 255 (correspondant aux 256 possibilités pour chaque octet).
+Dans la trame envoyée, l'adresse IP est codée sur **4 octets**, c'est-à-dire sur 32 bits (4*8). Pour cela on utilise la représentation binaire des nombres compris entre 0 et 255 (correspondant aux 256 possibilités pour chaque octet).
 
 Exemple : considérons l'adresse : 172.152.23.108.
+
 Pour coder 172 en binaire, il s'agit de décomposer 172 en puissances de 2 (en base 2).
 Les puissances de 2 sont : (2<sup>0</sup>=1;2<sup>1</sup>=2;2<sup>2</sup>=4;2<sup>3</sup>=8;2<sup>4</sup>=16;2<sup>5</sup>=32;2<sup>6</sup>=64;2<sup>7</sup>=128;2<sup>8</sup>=256..)
 172=1×128+0×64+1×32+0×16+1×8+1×4+0×2+0×1
@@ -86,7 +94,7 @@ D'où les 32 bits (4×8) du code binaire de l'adresse : 101011001001100000010111
 Remarque : étant donné le nombre grandissant d'objets connectés ce format d'adresse IP, appelé adresse IPv4 formé de 4 octets, soit 32 bits, devient insuffisant ; il est en effet limité pour coder 2<sup>32</sup>=4×10<sup>9</sup> adresses. 
 
 On utilise donc de plus en plus le protocole IPv6 qui utilise des adresses codées sur 128 bits ce qui donne 2<sup>128</sup>=3×10<sup>38</sup> adresses possibles. 
-Les adresses IPv6 sont représentées par 8 groupes de 2 octets codés sous forme hexadécimale (chiffres de 0 à 9 et lettres de a à f) séparés par ":".
+Les adresses IPv6 sont représentées par 8 groupes de 2 octets codés sous forme hexadécimale (10 chiffres de 0 à 9 puis 6 lettres de A à F) séparés par ":".
 
 Exemple d'adresse IPv6 : 2019:0ca8:0000:86b2:0000:0000:db16:8004
 
@@ -103,6 +111,7 @@ Maintenant que l'on sait de quoi est constituée une trame transmise entre deux 
 <img src="Assets/routages.png" width="800" height="600">
 
 Le schéma ci-dessus montre que les ordinateurs sont reliés entre eux par des **switchs**, chaque switch correspondant à un réseau local, eux-mêmes reliés à des **routeurs**.
+
 Le rôle d'un routeur est analogue au centre de tri ; son rôle est de faire communiquer entre eux les réseaux qu'il relie et d'aiguiller correctement chaque trame reçue. Pour cela le routeur utilise sa **table de routage** : en fonction de l'adresse IP de destination il choisira à qui il doit renvoyer la trame.
 Sur le réseau représenté sur le schéma ci-dessus, lorsqu'une trame est envoyée par l'ordinateur M2 à destination de l'ordinateur M10, elle peut être relayée par les routeurs A, B, D, E mais ce n'est pas le seul chemin possible, la trame peut aussi passer par le routeur H et suivre le chemin H, F, E ; le cheminement effectivement suivi dépend des tables de routage des routeurs rencontrés.
 
