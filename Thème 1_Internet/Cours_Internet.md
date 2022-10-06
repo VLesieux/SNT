@@ -66,7 +66,7 @@ Cependant il nous manque encore une information essentielle à la transmission d
 
 Pour comprendre le fonctionnement du protocole IP on peut faire assez naturellement l'analogie avec l'envoi du courrier par La Poste.
 
-Lorsqu'on envoie une lettre par La Poste on l'insère dans une enveloppe sur laquelle sont inscrites l'adresse du destinataire et celle de l'expéditeur. Ici la lettre à envoyer correspond aux données encapsulées par TCP. Le protocole IP les encapsule en ajoutant entre autres les adresses du destinataire et de l'expéditeur.
+Lorsqu'on envoie une lettre par La Poste on l'insère dans une enveloppe sur laquelle sont inscrites l'adresse du **destinataire** et celle de l'**expéditeur***. Ici la lettre à envoyer correspond aux données encapsulées par TCP. Le protocole IP les encapsule en ajoutant entre autres les adresses du destinataire et de l'expéditeur.
 
 À quoi ressemble l'adresse d'un ordinateur ?   
 
