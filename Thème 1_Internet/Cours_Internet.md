@@ -37,7 +37,7 @@ L'intérêt de cette représentation est de pouvoir transférer les données par
 
 Remarque : 
 
-En informatique, on compte l'information en **octet** : 1 octet est formé de 8 bits ; il y a donc 2<sup>8</sup>=256 octets possibles de (0,0,0,0,0,0,0,0) à (1,1,1,1,1,1,1,1) qui codent les niveaux de 0 à 255.
+En informatique, on compte l'information en **octet** : 1 octet est formé de 8 bits ; il y a donc 2<sup>8</sup>=256 octets possibles de (0,0,0,0,0,0,0,0) à (1,1,1,1,1,1,1,1) qui codent les niveaux de 0 à 255. L'information numérique se mesure en octet octet et multiples ; kilooctet : 1 ko=10^3 o, megaoctet : 1 Mo=10^6 o, gigaoctet : 1 Go=10^9 o ; teraoctet : 1 To=10^12 o.
 
 Le traffic Internet est de l'ordre de 3 300 milliards de milliards d'octets, soit 3.3×10<sup>21</sup> octets.
 
