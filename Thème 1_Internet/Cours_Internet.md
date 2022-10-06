@@ -57,7 +57,7 @@ Parmi les différents protocoles utilisés, on retrouve très fréquemment TCP/I
 
 #### Le protocole TCP (Transmission Control Protocol)
 
-Imaginons que l'on souhaite envoyer une photo numérique. Il s'agit d'un fichier volumineux qui ne pourra pas être envoyé en une seule fois mais devra être découpé en morceaux. Le protocole TCP se charge de découper les données sous forme de **paquets numérotés** et d'indiquer à quel logiciel ces paquets sont destinés. TCP s'assure ensuite que tous ces paquets sont bien transmis (grâce à des accusés de réception) et les rassemble. Si des paquets ont été perdus lors de la transmission, TCP se charge de demander leur nouvel envoi.
+Imaginons que l'on souhaite envoyer une photo numérique. Il s'agit d'un fichier volumineux qui ne pourra pas être envoyé en une seule fois mais devra être découpé en morceaux. Le protocole TCP se charge de découper les données sous forme de **paquets numérotés** et d'indiquer à quel logiciel ces paquets sont destinés. TCP s'assure ensuite que tous ces paquets sont bien transmis grâce à des **accusés de réception** et les rassemble. Si des paquets ont été perdus lors de la transmission, TCP se charge de demander leur nouvel envoi.
 Le protocole TCP assure ainsi une transmission fiable, mais pour autant sans garantie temporelle.
 
 Cependant il nous manque encore une information essentielle à la transmission des données : où est situé l'ordinateur B sur le réseau Internet ?
