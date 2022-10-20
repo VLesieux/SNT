@@ -50,6 +50,9 @@ Comme le montre cet exemple, la méthode utilisée pour obtenir le code binaire 
 
 2) Inversement, calculer 'à la main' la valeur décimale de l'octet `10110001`. Vérifier dans la console de Thonny avec `0b10110001`.
 
+Cette fois les différents bits du code binaire représentent les différentes puissances de 2 (de droite à gauche en commençant par 0) correspondant à la décomposition en base 2 du nombre.
+En effet, de même que l'écriture 1|2|8 est la représentation décimale d'une quantité égale à 128  correspondant à la décomposition en base 10 : 8×10^0+2×10^1+1×10^2, de même le code binaire 1|0|1|1 est la représentation binaire de la quantité égale à 11 correspondant à la décomposition en base 2 : 1×2^0+1×2^1+0×2^2+1×2^3=1+2+8.
+
 3) Après avoir observé dans l'algorithme utilisé le rôle que prend à chaque tour de boucle le nouveau dividende par rapport au quotient précédent, compléter le programme suivant de conversion décimal-binaire en python dont une seule ligne est manquante.
 
 ```python
