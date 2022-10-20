@@ -44,6 +44,8 @@ Un exemple de codage binaire 'à la main' de l'entier 755 :
 
 <img src="Assets/divisions.png">
 
+Comme le montre cet exemple, la méthode utilisée pour obtenir le code binaire d'un nombre décimal consiste à réaliser des successions de divisions euclidiennes par 2 où à chaque fois le quotient devient le nouveau dividende, et cela aussi longtemps que le quotient est strictement plus grand que 0. Les restes sont lus de bas en haut pour composer le code.
+
 1) Coder 'à la main' en binaire la valeur décimale 51. Vérifier dans la console de Thonny avec `bin(51)`.
 
 2) Inversement, calculer 'à la main' la valeur décimale de l'octet `10110001`. Vérifier dans la console de Thonny avec `0b10110001`.
