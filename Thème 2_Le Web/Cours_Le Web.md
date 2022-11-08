@@ -3,19 +3,19 @@
 ### Introduction
 
 
-Le World Wide Web, en français : la toile (the web) d'araignée mondiale, a été inventée en 1989 par deux informaticiens : le Britannique Tim Berners Lee et le Belge Robert Caillau, qui travaillaient au CERN (Conseil Européen pour la Recherche Nucléaire situé à cheval sur la frontière franco-suisse) où se trouve actuellement le LHC (Large Hadron Collider : un accélérateur de particules). Cette invention a donc été conçue et développée initialement pour que des scientifiques travaillant dans des universités et instituts du monde entier puissent échanger des informations instantanément.
-
-Communément appelé le Web, il permet, grâce à un navigateur, d'accéder aux différents sites et d'échanger par courrier électronique. Il est devenu de nos jours incontournable dans pratiquement toutes les activités professionnelles ou de loisir.
+Le Web, en français : la toile d'araignée mondiale, a été inventée en 1989 par deux informaticiens : le Britannique Tim Berners Lee et le Belge Robert Caillau, qui travaillaient au CERN (Conseil Européen pour la Recherche Nucléaire) situé à cheval sur la frontière franco-suisse où se trouve actuellement le LHC (Large Hadron Collider : un accélérateur de particules).  
+Cette invention a donc été conçue et développée initialement pour que des scientifiques travaillant dans des universités et instituts du monde entier puissent échanger des informations instantanément et exploiter les résultats des expériences scientifiques réalisées au CERN.   
+De nos jours, le Web permet communément, grâce à un navigateur, d'accéder aux différents sites et d'échanger par courrier électronique. Il est devenu incontournable dans pratiquement toutes les activités professionnelles ou de loisir.
 
 
 ### Historique
 
-- 1965 : Invention de la notion d'hypertexte par le sociologue américain Ted Nelson
-- 1989 : Au CERN, le chercheur britannique Tim Berners-Lee invente le Web. Le premier site web est disponible.
-- 1991 : Naissance du langage HTML
+- 1965 : Invention de la notion d'**hypertexte** par le sociologue américain Ted Nelson.
+- 1989 : Au CERN, le chercheur britannique Tim Berners-Lee invente le Web. Le premier **site web** est disponible.
+- 1991 : Naissance du **langage HTML** permettant de réaliser des pages web *statiques*.
 - 1993 : Le CERN rend le Web public.
-- 1995 : Création des langages JavaScript et PHP, permettant le développement de sites web dynamiques, c'est-à-dire permettant l'intéraction avec l'utilisateur.
-- 1998 : Lancement du moteur de recherche Google
+- 1995 : Création des **langages JavaScript et PHP**, permettant le développement de sites web _dynamiques_, c'est-à-dire permettant l'intéraction avec l'utilisateur.
+- 1998 : Lancement du **moteur de recherche** Google
 
 ### Fonctionnement du Web
 
@@ -29,11 +29,11 @@ Chaque ressource possède ainsi une adresse web appelée **URL** (Uniform Resour
 
 Une adresse web doit suivre une **syntaxe** bien précise qui est généralement la suivante : 
 
-http://www.example.com/dossier_un_tel/page_un_tel.html
+*http://www.example.com/dossier_un_tel/page_un_tel.html*
 
 - En premier est indiqué le **protocole** (les règles de communication) utilisé pour demander et recevoir la ressource : **HTTP** (Hypertext Transfer Protocol) est le protocole du Web le plus utilisé en particulier pour les pages web, mais il y en existe d'autres : **FTP** (pour échanger des fichiers : File Transfer Protocol ) ou encore **SMTP** (pour envoyer des e-mails : Simple Mail Transfer Protocol).
-- www.example.com est le **nom de domaine** de l'ordinateur sur lequel se trouve la ressource. Comme on l'a vu dans le thème précédent, ce nom de domaine est associé à une adresse IP ; c'est le rôle d'un **serveur DNS** d'interpréter le nom de domaine et de renvoyer l'adresse IP correspondante.
-- dossier/page.html est le **chemin** de la ressource sur l'ordinateur. Un chemin est constitué des dossiers (ou répertoires) qu'il faut parcourir pour accéder à un certain fichier. Ici la ressource est donc un **fichier** appelé `page_un_tel.html` lui même situé dans le **dossier** intitulé `dossier_un_tel` sur l'ordinateur portant le nom de domaine `www.example.com`.
+- www.example.com est le **nom de domaine** de l'ordinateur sur lequel se trouve la ressource. Comme on l'a vu dans le thème précédent, ce nom de domaine est associé à une adresse IP ; c'est le rôle d'un **serveur DNS** d'interpréter le nom de domaine et de renvoyer l'adresse IP qui lui correspond.
+- dossier *_un_tel/page_un_tel.html* est le **chemin** de la ressource sur l'ordinateur. Un chemin est constitué des dossiers (ou répertoires) qu'il faut parcourir pour accéder à un certain fichier. Ici la ressource est donc un **fichier** appelé `page_un_tel.html` lui même situé dans le **dossier** intitulé `dossier_un_tel` sur l'ordinateur portant le nom de domaine `www.example.com`.
 
 ### Le protocole HTTP
 
