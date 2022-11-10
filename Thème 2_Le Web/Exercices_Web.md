@@ -7,7 +7,7 @@ Par souci de simplicité, on travaille avec seulement 5 pages web, chaque page w
 
 <img src="Assets/PageRank.png" width="300" height="300">
 
-Chaque flèche représente un lien hypertexte d'une page à une autre. 
+Chaque flèche représente un lien **hypertexte** permettant le passage d'une page à l'autre grâce à votre navigateur (web browser). 
 
 Ainsi, on voit sur le schéma ci-dessus que la page 0 possède un lien vers la page 1 et un lien vers la page 2.   
 En retour, trois pages possèdent des liens vers la page 0 : les pages 2, 3 et 4.  
