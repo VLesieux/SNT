@@ -25,7 +25,7 @@ Le World Wide Web permet d'accéder à ces ressources par un système de **liens
 
 Chaque ressource possède ainsi une adresse web appelée **URL** (Uniform Resource Locator) permettant de l'identifier, de la même façon qu'une adresse postale permet de localiser une habitation.
 
-<u>Remarque</u> : ne pas confondre l'adresse IP qui permet d'identifier de façon unique un ordinateur sur le réseau Internet et l'adresse web qui permet d'identifier une ressource sur un serveur.
+<u>Remarque</u> : ne pas confondre l'**adresse IP** qui permet d'identifier de façon unique un ordinateur sur le réseau Internet et l'**adresse web** qui permet d'identifier une ressource sur un serveur.
 
 Une adresse web doit suivre une **syntaxe** bien précise qui est généralement la suivante : 
 
