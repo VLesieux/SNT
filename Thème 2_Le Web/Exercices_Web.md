@@ -2,17 +2,17 @@
 
 ### Exercice 1
 
-On souhaite étudier une version minimaliste de l'algorithme PageRank du moteur de recherche Google afin de comprendre son fonctionnement.  
+On souhaite étudier une version minimaliste de l'algorithme **PageRank** du moteur de recherche Google afin de comprendre son fonctionnement.  
 Par souci de simplicité, on travaille avec seulement 5 pages web, chaque page web étant numérotée.
 
 <img src="Assets/PageRank.png" width="300" height="300">
 
 Chaque flèche représente un lien hypertexte d'une page à une autre. 
 
-Ainsi, on voit sur le schéma ci-dessus appelé graphe que la page 0 possède un lien vers la page 1 et un lien vers la page 2.   
-Inversement, trois pages possèdent des liens vers la page 0 : les pages 2, 3 et 4.  
+Ainsi, on voit sur le schéma ci-dessus que la page 0 possède un lien vers la page 1 et un lien vers la page 2.   
+En retour, trois pages possèdent des liens vers la page 0 : les pages 2, 3 et 4.  
 
-En Python, on utilise une liste appelée `web` contenant, pour chaque page web, la liste des liens contenus sur cette page vers d'autres pages web ; c'est ce que l'on appelle une <b>représentation par liste d'adjacence du graphe</b>.  
+En Python, on utilise une liste appelée `web` contenant, pour chaque page web, la liste des liens contenus sur cette page vers d'autres pages web ; cette liste s'appelle une <b>représentation par liste d'adjacence du graphe</b>.  
 Dans notre exemple, web[0] va donc s'écrire [1,2] car la page 0 contient un lien vers la page 1 et un lien vers la page 2.
 
 1. Compléter le tableau suivant à la main :
@@ -74,19 +74,19 @@ Proposer un classement par ordre de popularité des différentes pages web tel q
 2. On donne le code suivant qui correspond à l'algorithme PageRank implémenté en Python :
 
 ```Python
-from random import choice
+import random#importation de la bibliothèque random
 web=[[1,2],[4],[0,3],[0,4],[0]]
 passages=[0,0,0,0,0]
 page=2
 
 for i in range(1000):
-    page=choice(web[page])
+    page=random.choice(web[page])
     passages[page]=passages[page]+1
     
 print(passages)
 ```
 
-On a utilisé la fonction `choice` importée du module `random` qui permet d'obtenir aléatoirement un élément dans une liste.
+On a utilisé la fonction `choice` du module `random` qui permet d'obtenir aléatoirement un élément dans une liste.
 
 ```Python
 >>> liste=['A','B','C','D']
@@ -105,8 +105,9 @@ Exécuter le code pour observer le classement par ordre de popularité des diff�
 ### Exercice 2
 
 Aller à l'adresse https://www.gouvernement.fr/composition-du-gouvernement et télécharger le code HTML en faisant un clic droit puis "Enregistrer sous..". 
-
-Modifier le contenu de la page pour afficher votre nom au lieu d'un ministre (bien sûr, cette modification sera uniquement présente sur le fichier HTML que vous venez de télécharger...).
+Il apparaît un **fichier** avec l'**extension** **htm** ou **html** ainsi qu'un **dossier** contenant les images présentes sur la page.
+Modifier le contenu de la page **html** pour afficher votre nom au lieu d'un ministre (bien sûr, cette modification sera uniquement présente sur le fichier HTML que vous venez de télécharger et stocké sur votre ordinateur...) et n'affectera pas la page affichée sur le web qui elle est stockée par le serveur du ministère.
+Observer également la structure de la page.
 
 ### Exercice 3
 
