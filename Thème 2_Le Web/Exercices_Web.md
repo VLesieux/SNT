@@ -155,8 +155,10 @@ Alors que vous rentrez dans le palais royal, un bruit assourdissant s'échappe d
 </html>
 ```
 
-
 ### Exercice 4
 
-Réaliser une [page web](http://vfsilesieux.free.fr/page_web.html) présentant le lieu de votre choix respectant un cahier des charges.
+Réaliser une [page web](http://vfsilesieux.free.fr/page_web.html) présentant le lieu de votre choix en respectant un cahier des charges.
  
+### Exercice 5
+
+Comprendre le code qui a permis de réaliser un [quiz en ligne](http://isnangellier.alwaysdata.net/php/Creation_quizz.html) et s'en inspirer pour réaliser son propre quiz. 
