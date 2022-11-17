@@ -111,11 +111,11 @@ Observer également la structure de la page.
 
 ### Exercice 3
 
-Écrire une histoire dont vous êtes le héros où chaque page possède un hyperlien pour chaque choix possible dans l'histoire.  
+Écrire une histoire dont vous êtes le héros où chaque page possède un **hyperlien** pour chaque choix possible dans l'histoire.  
 
 Voici un exemple, où le couple de balises `<ul> </ul>` sert à définir une liste à puces (non ordonnée) et où les balises `<li> </li>` délimite un élement de la liste, en l'occurence un choix possible.
 
-script de la page appelée debut.html
+_Script de la page appelée **debut.html**_
 
 ```html
 <!DOCTYPE html>
@@ -136,7 +136,7 @@ Un jour, un messager vous apprend que le roi demande après vous de toute urgenc
 </html>
 ```
 
-script de la page appelée palais.html
+_Script de la page appelée **palais.html**_
 
 ```html
 <!DOCTYPE html>
