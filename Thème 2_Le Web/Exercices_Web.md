@@ -115,6 +115,8 @@ Observer également la structure de la page.
 
 Voici un exemple, où le couple de balises `<ul> </ul>` sert à définir une liste à puces (non ordonnée) et où les balises `<li> </li>` délimite un élement de la liste, en l'occurence un choix possible.
 
+Enregistrer toutes les pages dans le même dossier.
+
 _Script de la page appelée **debut.html**_
 
 ```html
@@ -147,15 +149,11 @@ _Script de la page appelée **palais.html**_
 </head>
 <body>
 Alors que vous rentrez dans le palais royal, un bruit assourdissant s'échappe des cuisines.
-<ul>
-	<li><a href="roi.html"> Vous passez votre chemin et allez voir le roi.</a></li>
-	<li><a href="cuisine.html">Vous allez voir ce qui se passe aux cuisines.</a></li>
-</ul>
 </body>
 </html>
 ```
 
-À vous de réaliser toutes les pages de façon à ce que tous les liens soient actifs.
+À vous de réaliser toutes les pages de façon à ce que les trois liens de la page `debut.html` soient actifs.
 
 ### Exercice 4
 
