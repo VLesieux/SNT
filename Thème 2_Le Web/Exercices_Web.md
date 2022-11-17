@@ -155,6 +155,8 @@ Alors que vous rentrez dans le palais royal, un bruit assourdissant s'échappe d
 </html>
 ```
 
+À vous de réaliser toutes les pages de façon à ce que les liens soient actifs.
+
 ### Exercice 4
 
 Réaliser une [page web](http://vfsilesieux.free.fr/page_web.html) présentant le lieu de votre choix en respectant un cahier des charges.
