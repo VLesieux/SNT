@@ -155,7 +155,7 @@ Alors que vous rentrez dans le palais royal, un bruit assourdissant s'échappe d
 </html>
 ```
 
-À vous de réaliser toutes les pages de façon à ce que les liens soient actifs.
+À vous de réaliser toutes les pages de façon à ce que tous les liens soient actifs.
 
 ### Exercice 4
 
