@@ -90,7 +90,7 @@ Pour les graphiques, on utilise le format PNG 8bits : 2^8=256 couleurs ou PNG 24
 L’insertion de l’image se fait avec la balise orpheline ```<img />```  et l’attribut source src :
 ```<img src="monimage.jpg"/>```.    
 Pour modifier la hauteur (height) ou la largeur (width) de l'image, celles-ci s'expriment en pixels px :    
- ```<img height="200px" width="250px" src="monimage.jpeg"/>```. 
+ ```<img height="200px" width="250px" src="monimage.jpeg"/>```
 
 
 ## III.	Utilisation du CSS
