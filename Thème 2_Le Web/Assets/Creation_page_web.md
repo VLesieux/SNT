@@ -47,6 +47,7 @@ Des balises pour organiser et structurer le texte :
 - 	Souligner un texte (underline) : ```<u> </u> ```
 -	Surligner le texte :  ```<mark> </mark> ```
 -	Créer des listes non ordonnées ou _**listes à puces**_ :    
+
 Pour créer une **liste non ordonnée** :  
 
  ```html
@@ -68,16 +69,24 @@ Pour créer  une _**liste ordonnée**_, il suffit de remplacer  ```<ul> ``` et  
 
 - _**Créer des liens**_
 
-	-	Lien vers un site existant : ```<a href="http://adresse.com"> Lien vers le site qui a cet url </a>```
-	-	Lien relatif vers une page2.html de mon site à partir d’une page1.html :``` <a href="page2.html">Lien vers la page2 </a>```  
+	1) **Lien vers un site** :
+ ```<a href="http://www.onisep.fr"> Lien vers le site de l'onisep</a>```
+	
+	2) **Lien relatif** vers une page2.html de mon site à partir d’une page1.html :
+	``` <a href="page2.html">Lien vers la page2 </a>```  
 	Remarque : en l’occurrence les deux fichiers doivent se trouver dans le même dossier ; si ce n’est pas le cas, on l’indiquera comme ceci : ```<a href="dossier2/page2.html">Lien vers la page2 située dans le dossier 2</a>```
-	-	Lien vers une ancre, c’est-à-dire un repère dans la page, ce qui peut être utile si la page est longue. On choisit pour cela n’importe quelle balise à l’endroit approprié à laquelle on donne un identifiant :  
+	
+	3) **Lien vers une ancre**, c’est-à-dire un repère dans la page, ce qui peut être utile si la page est longue. On choisit pour cela n’importe quelle balise à l’endroit approprié à laquelle on donne un identifiant :  
 	 ```<p id="monparagraphe"> Mon paragraphe</p>``` puis ```<a href="#monparagraphe">Lien vers mon paragraphe</a>```
 
-	Remarque :  on peut forcer l’ouverture du lien dans une nouvelle fenêtre en ajoutant dans la balise l’attribut ```target="_blank"``` ; pour faire un lien pour télécharger un fichier, on fait un lien en indiquant simplement le nom du fichier à télécharger :``` <a href="monfichierimage.jpg">Fichier à télécharger< /a> ``` 
+	Remarques :  
+	1) on peut forcer l’ouverture du lien dans une nouvelle fenêtre en ajoutant dans la balise l’attribut ```target="_blank"``` ;    
+	2) pour faire un lien pour télécharger un fichier, on fait un lien en indiquant simplement le nom du fichier à télécharger :``` <a href="monfichierimage.jpg">Fichier à télécharger< /a> ``` 
+	
 - _**Insérer des images**_
 
-La taille de l’image ne doit pas être trop importante évidemment pour éviter un temps de chargement trop long aussi utilise-t-on en général le format JEPG à l’extension .jpg ou .jpeg qui est le format le plus compressé pour les photos. Pour les graphiques, on utilise le format PNG 8bits : 2^8=256 couleurs ou PNG 24 bits : 2^24=16 millions de couleurs.
+La taille de l’image ne doit pas être trop importante évidemment pour éviter un temps de chargement trop long, aussi utilise-t-on en général le format JEPG à l’extension .jpg ou .jpeg qui est le format le plus compressé pour les photos.   
+Pour les graphiques, on utilise le format PNG 8bits : 2^8=256 couleurs ou PNG 24 bits : 2^24=16 millions de couleurs.
 L’insertion de l’image se fait avec la balise orpheline ```<img />```  et l’attribut source src :
 ```<img src="monimage.jpg"/>```
 
