@@ -43,11 +43,12 @@ Des balises pour organiser et structurer le texte :
 -	Organiser le texte en _**paragraphes**_ :``` <p> pour débuter un paragraphe``` et ``` </p> pour le terminer```
 -	Aller à la ligne : la balise orpheline : ```<br/>```
 -	Créer des titres avec des niveaux de titres de moins en moins importants. :  ```<h1> </h1> ``` ;  ```<h2> </h2> ``` ; ….. ;  ```<h6> </h6>  ``` 
--	Mettre en valeur du texte (emphasize) : ``` <em> </em> ```
 -	Mettre en gras :  ```<strong> </strong> ```
 - 	Souligner un texte (underline) : ```<u> </u> ```
 -	Surligner le texte :  ```<mark> </mark> ```
--	Créer des listes non ordonnées ou _**listes à puces**_ :
+-	Créer des listes non ordonnées ou _**listes à puces**_ :    
+Pour créer une **liste non ordonnée** :  
+
  ```html
  <ul>
 <li>premier élément </li>
