@@ -97,11 +97,13 @@ Pour modifier la hauteur (height) ou la largeur (width) de l'image, celles-ci s'
 
 Comment place-t-on le code CSS ?
 
-On crée un fichier externe de mise en forme mon_style.css qui accompagnera le fichier de contenu brut ma_page.html. Pour cela dans le fichier html il suffira d’ajouter dans la section head de la page :
+On crée un fichier externe de mise en forme mon_style.css qui accompagnera le fichier de contenu brut ma_page.html.
+
+Pour cela dans le fichier html il suffira d’ajouter dans la section head de la page :
  ```html
-<link rel="stylesheet" href="mon_style.css" />
- ```
-**Remarque** : on peut aussi insérer le code CSS directement à l'intérieur de la balise ```<style> </style>``` dans la section head de la page html. Une autre technique plus ancienne mais qui reste cependant utilisable est d’insérer les informations de style dans une balise html :  ```<p style="color :blue ; font-size :10px ;"> Mon paragraphe en bleu de taille 10px </p> ```  
+<link rel="stylesheet" href="mon_style.css" />. ```
+
+Remarque : on peut aussi insérer le code CSS directement à l'intérieur de la balise ```<style> </style>``` dans la section head de la page html. Une autre technique plus ancienne mais qui reste cependant utilisable est d’insérer les informations de style dans une balise html :  ```<p style="color :blue ; font-size :10px ;"> Mon paragraphe en bleu de taille 10px </p> ```  
 Il est conseillé néanmoins d’utiliser un fichier css externe pour distinguer nettement le fond de la forme ; par ailleurs, et c’est là le plus important, si le site comporte plusieurs pages, on peut affecter la même mise en forme pour toutes les pages du site en plaçant simplement le lien ```<link rel="stylesheet" href="style.css" /> ``` dans la section head de toutes les pages. Ainsi une modification dans le seul fichier css affectera immédiatement la mise en forme de toutes les pages du site.
 
 _**Structure générale du code CSS**_
