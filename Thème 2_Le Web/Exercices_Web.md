@@ -157,7 +157,7 @@ Alors que vous rentrez dans le palais royal, un bruit assourdissant s'échappe d
 
 ### Exercice 4
 
-1) Créer une page web appelée exemple.html vous permettant de tester et de mettre en oeuvre les éléments de code html présentés sur la [page suivante] (https://github.com/VLesieux/SNT/blob/master/Th%C3%A8me%202_Le%20Web/Assets/Creation_page_web.md).
+1) Créer une page web appelée exemple.html vous permettant de tester et de mettre en oeuvre les éléments de code html présentés sur la [page suivante](https://github.com/VLesieux/SNT/blob/master/Th%C3%A8me%202_Le%20Web/Assets/Creation_page_web.md).
 
 2) Réaliser une [page web](http://vfsilesieux.free.fr/page_web.html) présentant le lieu de votre choix en respectant un cahier des charges.
  
