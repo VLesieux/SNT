@@ -88,7 +88,8 @@ Pour créer  une _**liste ordonnée**_, il suffit de remplacer  ```<ul> ``` et  
 La taille de l’image ne doit pas être trop importante évidemment pour éviter un temps de chargement trop long, aussi utilise-t-on en général le format JEPG à l’extension .jpg ou .jpeg qui est le format le plus compressé pour les photos.   
 Pour les graphiques, on utilise le format PNG 8bits : 2^8=256 couleurs ou PNG 24 bits : 2^24=16 millions de couleurs.
 L’insertion de l’image se fait avec la balise orpheline ```<img />```  et l’attribut source src :
-```<img src="monimage.jpg"/>```
+```<img src="monimage.jpg"/>```.    
+Pour modifier la hauteur (height) ou la largeur (width) de l'image, celles-ci s'expriment en pixels px : ```<img height="200px" width="250px" src="monimage.jpeg"/>```. 
 
 
 ## III.	Utilisation du CSS
