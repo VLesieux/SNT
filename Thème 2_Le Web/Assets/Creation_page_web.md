@@ -24,7 +24,10 @@ _**Écrire des commentaires**_ : ```<!--  ceci est un commentaire  -->```  : il 
 
 **Remarque**: tout le monde peut lire le code de n’importe quelle page html avec un clic droit « Afficher le code source de la page ».
 
-_**Structure de base d’une page HTML**_ : observez comment les balises s'ouvrent et se ferment.
+###Structure de base d’une page HTML
+
+Observez comment les balises s'ouvrent et se ferment.
+
 ```html
 <!DOCTYPE html><!--  on indique qu’il s’agit d’une page html   -->
 <html><!--  la balise principale qui englobe tout le contenu de la page   -->
@@ -41,12 +44,12 @@ _**Structure de base d’une page HTML**_ : observez comment les balises s'ouvre
 Des balises pour organiser et structurer le texte :
 
 -	Organiser le texte en _**paragraphes**_ :``` <p> pour débuter un paragraphe``` et ``` </p> pour le terminer```
--	Aller à la ligne : la balise orpheline : ```<br>```
--	Créer des titres avec des niveaux de titres de moins en moins importants. :  ```<h1> </h1> ``` ;  ```<h2> </h2> ``` ; ….. ;  ```<h6> </h6>  ``` 
--	Mettre en gras :  ```<strong> </strong> ```
-- 	Souligner un texte (underline) : ```<u> </u> ```
--	Surligner le texte :  ```<mark> </mark> ```
--	Créer des listes non ordonnées ou _**listes à puces**_ :    
+-	**Aller à la ligne** : on utilise la balise orpheline : ```<br>```
+-	**Créer des titres** avec des niveaux de titres de moins en moins importants. :  ```<h1> </h1> ``` ;  ```<h2> </h2> ``` ; ….. ;  ```<h6> </h6>  ``` 
+-	**Mettre en gras** :  ```<strong> </strong> ```
+- 	**Souligner un texte** (underline) : ```<u> </u> ```
+-	**Surligner le texte** :  ```<mark> </mark> ```
+-	**Créer des listes à puces** ordonnées ou non ordonnées :    
 
 Pour créer une **liste non ordonnée** :  
 
@@ -91,7 +94,7 @@ On choisit pour cela n’importe quelle balise à l’endroit approprié à laqu
 
 La taille de l’image ne doit pas être trop importante évidemment pour éviter un temps de chargement trop long, aussi utilise-t-on en général le format JEPG à l’**extension** .jpg ou .jpeg qui est le format le plus compressé pour les photos.   
 Pour les graphiques, on utilise le format PNG 8bits : 2^8=256 couleurs ou PNG 24 bits : 2^24=16 millions de couleurs.       
-L’insertion de l’image se fait avec la balise orpheline ```<img />```  et l’attribut source src :
+L’insertion de l’image se fait avec la balise orpheline ```<img />```  et l’attribut source src qui indique le chemin vers cette image :
 ```<img src="monimage.jpg"/>```    
 Pour modifier la hauteur (height) ou la largeur (width) de l'image, celles-ci s'expriment en pixels px :    
  ```<img height="200px" width="250px" src="monimage.jpeg"/>```
