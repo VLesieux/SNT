@@ -41,7 +41,7 @@ _**Structure de base d’une page HTML**_ : observez comment les balises s'ouvre
 Des balises pour organiser et structurer le texte :
 
 -	Organiser le texte en _**paragraphes**_ :``` <p> pour débuter un paragraphe``` et ``` </p> pour le terminer```
--	Aller à la ligne : la balise orpheline : ```<br/>```
+-	Aller à la ligne : la balise orpheline : ```<br>```
 -	Créer des titres avec des niveaux de titres de moins en moins importants. :  ```<h1> </h1> ``` ;  ```<h2> </h2> ``` ; ….. ;  ```<h6> </h6>  ``` 
 -	Mettre en gras :  ```<strong> </strong> ```
 - 	Souligner un texte (underline) : ```<u> </u> ```
@@ -85,7 +85,7 @@ On choisit pour cela n’importe quelle balise à l’endroit approprié à laqu
 	 ```<p id="monparagraphe"> Mon paragraphe</p>``` puis ```<a href="#monparagraphe">Lien vers mon paragraphe</a>```
 
     
-	2) pour faire un lien pour télécharger un fichier, on fait un lien en indiquant simplement le nom du fichier à télécharger :``` <a href="monfichierimage.jpg">Fichier à télécharger< /a> ``` 
+	4) **Lien pour télécharger** un fichier, on indique simplement le nom du fichier à télécharger :``` <a href="monfichierimage.jpg">Fichier à télécharger< /a> ``` 
 	
 - _**Insérer des images**_
 
