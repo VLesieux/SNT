@@ -161,7 +161,7 @@ Alors que vous rentrez dans le palais royal, un bruit assourdissant s'échappe d
 
 2) Inspecter la [page web](http://vfsilesieux.free.fr/exemple_page_web_SNT.html) suivante et comprendre le code qui lui a donné naissance.
 
-3) Réaliser une [page web](http://vfsilesieux.free.fr/page_web.html) présentant le lieu de votre choix en respectant un cahier des charges.
+3) Réaliser une [page web](http://vfsilesieux.free.fr/page_web.html) présentant le lieu de votre choix en respectant précisément un cahier des charges.
  
 ### Exercice 5
 
