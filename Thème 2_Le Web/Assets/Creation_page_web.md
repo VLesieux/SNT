@@ -101,16 +101,18 @@ Pour modifier la hauteur (height) ou la largeur (width) de l'image, celles-ci s'
 
 Comment place-t-on le code CSS ?
 
-On crée un fichier externe de mise en forme mon_style.css qui accompagnera le fichier de contenu brut ma_page.html.
+On crée un fichier externe de mise en forme appelé `mon_style.css ` qui accompagnera le fichier de contenu brut  `ma_page.html `.
 
-Pour cela dans le fichier html il suffira d’ajouter dans la section head de la page :
+Pour cela, dans le fichier html, il suffira d’ajouter, dans la section head de la page le lien vers ce fichier de mise en forme :
 
 
 `<link rel="stylesheet" href="mon_style.css" />`
 
 
-Remarque : on peut aussi insérer le code CSS directement à l'intérieur de la balise ```<style> </style>``` dans la section head de la page html. Une autre technique plus ancienne mais qui reste cependant utilisable est d’insérer les informations de style dans une balise html :  ```<p style="color :blue ; font-size :10px ;"> Mon paragraphe en bleu de taille 10px </p> ```  
-Il est conseillé néanmoins d’utiliser un fichier css externe pour distinguer nettement le fond de la forme ; par ailleurs, et c’est là le plus important, si le site comporte plusieurs pages, on peut affecter la même mise en forme pour toutes les pages du site en plaçant simplement le lien ```<link rel="stylesheet" href="style.css" /> ``` dans la section head de toutes les pages. Ainsi une modification dans le seul fichier css affectera immédiatement la mise en forme de toutes les pages du site.
+Remarques : on peut aussi insérer le code CSS directement à l'intérieur de la balise ```<style> </style>``` dans la section head de la page html.  
+Une autre technique plus ancienne mais qui reste cependant utilisable est d’insérer les informations de style directement dans une balise html :  ```<p style="color :blue ; font-size :10px ;"> Mon paragraphe en bleu de taille 10px </p> ```  
+Il est conseillé néanmoins d’utiliser un fichier css externe pour distinguer nettement le fond de la forme ; par ailleurs, et c’est là le plus important, si le site comporte plusieurs pages, on peut affecter la même mise en forme pour toutes les pages du site en plaçant simplement le lien ```<link rel="stylesheet" href="style.css" /> ``` dans la section head de toutes les pages.   
+Ainsi une modification dans le seul fichier css affectera immédiatement la mise en forme de toutes les pages du site.
 
 _**Structure générale du code CSS**_
 
@@ -185,7 +187,7 @@ color : blue ;
 
 Ainsi **tous les paragraphes qui possèdent la classe mon_paragraphe_en_bleu** seront de couleur bleue sur la page.
 
-On peut aussi utiliser l’attribut _**id**_ pour affecter un style à un **élément unique** de la page html, de plus id prend le dessus sur class.  
+On peut aussi utiliser l’attribut _**id**_ pour affecter un style à un élément **unique** de la page html, de plus id prend le dessus sur class.  
 
 - Dans le html : 
 
@@ -204,7 +206,7 @@ color : blue ;
 
 Mais le fait que `class` ou `id` soient des attributs de balise ne restreint pas pour autant leur utilisation aux balises communes telles que ```<p>```,``` <img />```…. 
 
-En effet, il existe d’autres balises appelées balises universelles qui n’ont pas de signification particulière mais auxquelles nous pourrons affecter ces attributs.
+En effet, il existe d’autres balises appelées **balises universelles** qui n’ont pas de signification particulière mais auxquelles nous pourrons affecter ces attributs.
 
 -	la balise de type inline : ```<span> </span>``` : elle permet de sélectionner certains mots en particulier dans un paragraphe
 -	la balise de type block : ```<div> </div>``` : elle permet de sélectionner un bloc de texte.
