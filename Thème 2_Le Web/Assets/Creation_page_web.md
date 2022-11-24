@@ -24,7 +24,7 @@ _**Écrire des commentaires**_ : ```<!--  ceci est un commentaire  -->```  : il 
 
 **Remarque**: tout le monde peut lire le code de n’importe quelle page html avec un clic droit « Afficher le code source de la page ».
 
-###Structure de base d’une page HTML
+_**Structure de base d’une page HTML**_
 
 Observez comment les balises s'ouvrent et se ferment.
 
