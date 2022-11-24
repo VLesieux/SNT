@@ -185,7 +185,7 @@ color : blue ;
 }
 ```
 
-Ainsi **tous les paragraphes qui possèdent la classe mon_paragraphe_en_bleu** seront de couleur bleue sur la page.
+Ainsi tous les paragraphes qui possèdent la classe mon_paragraphe_en_bleu seront de couleur bleue sur la page.
 
 On peut aussi utiliser l’attribut _**id**_ pour affecter un style à un élément **unique** de la page html, de plus id prend le dessus sur class.  
 
@@ -397,7 +397,7 @@ Pour aller plus loin, sur cet exemple, on voit comment l'utilisateur peut intera
 </HEAD>
 <BODY>
 <H1>Exemple d'interaction en JavaScript</H1>
-<DIV id="square"></DIV>
+<div id="square"></div>
 
 
 <select id="choix">
