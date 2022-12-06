@@ -353,15 +353,14 @@ border : 1 px solid blue ;
 }
 ```
 
-Une autre méthode est le positionnement absolu qui permet de placer l’élément n’importe où sur la page :
+Une autre méthode est le positionnement absolu qui permet de placer l’élément n’importe où sur la page ; les expressions sont données en pixel ou en pourcentage :
 
 ```css
 element  
 {
 position : absolute ;
 left : 50px ;
-right : 100 px ;
-top : 10% :
+top : 10% ;
 bottom : 120px ;
 }
 ```
