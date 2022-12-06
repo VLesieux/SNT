@@ -361,7 +361,6 @@ element
 position : absolute ;
 left : 50px ;
 top : 10% ;
-bottom : 120px ;
 }
 ```
 Lorsque des éléments se chevauchent, la propriété z-index permet de préciser quel élément est situé au dessus de l’autre.
