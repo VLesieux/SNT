@@ -104,7 +104,7 @@ Pour modifier la hauteur (height) ou la largeur (width) de l'image, celles-ci s'
 
 Comment place-t-on le code CSS ?
 
-On crée un fichier externe de mise en forme appelé `mon_style.css ` qui accompagnera le fichier de contenu brut  `ma_page.html `.
+On crée un **fichier externe de mise en forme** appelé `mon_style.css ` qui accompagnera le fichier de contenu brut  `ma_page.html `.
 
 Pour cela, dans le fichier html, il suffira d’ajouter, dans la section head de la page le lien vers ce fichier de mise en forme :
 
@@ -119,10 +119,11 @@ Ainsi une modification dans le seul fichier css affectera immédiatement la mise
 
 _**Structure générale du code CSS**_
 
-On trouve dans le code CSS
--	des noms de balises appelés _**sélecteurs**_
--	des _**propriétés**_ CSS
--	des _**valeurs**_
+On trouve dans le code CSS :
+   
+-	des noms de balises appelés _**sélecteurs**_  
+-	des _**propriétés**_ CSS    
+-	des _**valeurs**_   
 
 Il faut respecter la structure suivante :
 ```css
@@ -160,15 +161,17 @@ propriete3 : valeur3 ;
 On peut également ajouter des commentaires dans le code CSS en utilisant : ``` /* mon commentaire */ ```
 
 
-**Amélioration du code CSS** : utilisation des attributs _**class**_ et _**id**_, ainsi que les balises universelles telles que p
+**Amélioration du code CSS** : utilisation des attributs _**class**_ et _**id**_, ainsi que les balises universelles telles que p.
 
 Si l’on écrit :
+
 ```css
 p
 {
 color : blue ;
 }
- ```
+```
+
 Tous les paragraphes seront de couleur bleue.
 
 Si on veut mettre en bleu un ou certains paragraphes en particulier uniquement, on utilise l’attribut _**class**_, il faudra procéder en deux temps :  
@@ -182,15 +185,15 @@ Si on veut mettre en bleu un ou certains paragraphes en particulier uniquement, 
 - Puis dans le css : 
 
 ```css
-. mon_paragraphe_en_bleu
+.mon_paragraphe_en_bleu
 {
 color : blue ;
 }
 ```
 
-Ainsi tous les paragraphes qui possèdent la classe mon_paragraphe_en_bleu seront de couleur bleue sur la page.
+Ainsi tous les paragraphes qui possèdent la classe `mon_paragraphe_en_bleu` seront de couleur bleue sur la page.
 
-On peut aussi utiliser l’attribut _**id**_ pour affecter un style à un élément **unique** de la page html, de plus id prend le dessus sur class.  
+On peut aussi utiliser l’attribut _**id**_ pour affecter un style à un élément **unique** de la page html, de plus `id` prend le dessus sur `class`.  
 
 - Dans le html : 
 
@@ -227,18 +230,21 @@ _**Application au formatage du texte**_
 
 _**Mise en place de bordures**_
 
-3 valeurs permettent de modifier l’apparence d’une bordure
--	la largeur en px
--	la couleur
+3 valeurs permettent de modifier l’apparence d’une bordure  
+-	la largeur en px  
+-	la couleur  
 -	le type de bordure : solid (un trait simple) ; dotted (pointillés) ; dashed (tirets) ; ridge (effet de relief)  
-Par exemple, pour entourer les titres importants de type h1 d’une bordure noire de 4px en pointillé
+
+Par exemple, pour entourer les titres importants de type h1 d’une bordure noire de 4px en pointillé :
+
 ```css
 h1
 {
 border : 4px black dotted ;
 }
 ```
-On peut aussi distinguer les côtés droit, gauche, haut, bas
+On peut aussi distinguer les côtés droit, gauche, haut, bas 
+
 ```css
 h1
 {
@@ -264,6 +270,7 @@ On peut faire des changements d’apparence :
 -	lorsqu’un lien a été consulté : visited
 
 Par exemple, pour décider qu’un lien non survolé soit bleu et qu’il devienne rouge au survol
+
 ```css
 a
 {
@@ -279,11 +286,12 @@ color: red;
 _**Organiser la page : le positionnement des blocs**_
 
 On peut organiser la page en blocs en utilisant des balises structurantes introduites pour délimiter différentes zones qui constituent la page web : 
--	```<header>``` : en-tête
--	```<footer>``` : pied de page
--	```<nav>``` : liens principaux de navigation
--	```<section> ```: section de page
--	```<aside>``` : informations complémentaires
+
+-	```<header>``` : en-tête   
+-	```<footer>``` : pied de page  
+-	```<nav>``` : liens principaux de navigation.  
+-	```<section> ```: section de page    
+-	```<aside>``` : informations complémentaires     
 -	```<article>``` : article indépendant
 
 Ces balises structurantes n’ont d’autre utilité que d’indiquer le positionnement du contenu mais on peut tout aussi bien utiliser la balise universelle ```div```.
@@ -303,6 +311,7 @@ on peut préciser pour les quatre directions :```margin-top``` ; ```margin-botto
 ![Représentation binaire de 755 ](marges.png#center)   
 
 Pour centrer un bloc **après lui avoir donné une largeur**, utiliser : ```margin : auto```.  
+
 Si le texte contenu dans le bloc dépasse ses limites, le navigateur peut ajouter des barres de défilement : ```overflow : auto```  
 Le positionnement ```inline-block``` permet de transformer, grâce à la propriété ```display```, en inline-block deux éléments que l’on veut placer côte à côte, par exemple un menu de navigation et une section du centre de la page.
 ```css
@@ -327,6 +336,7 @@ La propriété ```vertical-align``` permet de modifier l’alignement vertical d
 
 
 Ainsi, pour aligner en haut les blocs nav et section, on écrira :
+
 ```css
 nav
 { 
@@ -335,7 +345,6 @@ vertical-align:top;
 width :150px ;
 border : 1px solid black ;
 }
-
 section
 {
 display : inline-block ;
@@ -345,6 +354,7 @@ border : 1 px solid blue ;
 ```
 
 Une autre méthode est le positionnement absolu qui permet de placer l’élément n’importe où sur la page :
+
 ```css
 element  
 {
@@ -382,7 +392,8 @@ _**Utiliser les outils de développement du navigateur**_
 
 Pour cela, faire un clic droit sur la page et faire l’inspection de l’élément ; à gauche le code html, à droite le code css. Possibilité de changer le code, d’observer directement l’effet des modifications sur la page puis de copier-coller ces modifications pour mettre à jour votre page.
 
-Pour aller plus loin, sur cet exemple, on voit comment l'utilisateur peut interagir avec le css de la page au moyen d'un fichier de script :
+
+**Pour aller plus loin**, sur cet exemple, on voit comment l'utilisateur peut interagir avec le css de la page au moyen d'un fichier de script :
 
 **exemple.html**
 
