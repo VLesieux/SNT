@@ -32,7 +32,7 @@ Le [scandale Facebook-Cambridge Analytica](Assets/How_to_turn_Facebook.pdf) en e
 Il est souvent possible de paramétrer certains aspects relatifs à la vie privée : par exemple, sur Facebook, on peut spécifier dans Paramètres qui peut voir ou publier dans le journal personnel.   
 Le [réglement général sur la protection des données (RGPD)](https://www.cnil.fr/fr/reglement-europeen-protection-donnees) est un ensemble de lois européennes garantissant certains droits relatifs aux données personnelles. Ainsi, dans le cadre du droit à la portabilité des données, vous pouvez demander à récupérer les informations collectées par n'importe quel réseau social. 
 
-Le "droit à l'oubli" (Article 17 du RGPD) vous permet de supprimer des données vous concernant sur un réseau social ou un moteur de recherche.
+Le [droit à l'oubli](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3#Article17) vous permet de supprimer des données vous concernant sur un réseau social ou un moteur de recherche.
 
 ### Modélisation des réseaux sociaux
 
