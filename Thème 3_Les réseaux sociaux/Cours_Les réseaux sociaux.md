@@ -36,9 +36,10 @@ Le [droit à l'oubli](https://www.cnil.fr/fr/reglement-europeen-protection-donne
 
 ### Modélisation des réseaux sociaux
 
-On peut modéliser les relations qui existent entre les utilisateurs d'un réseau social à l'aide d'un **graphe**, c'est-à-dire d'un ensemble de points représentant les utilisateurs et des traits représentant les relations d'amitié entre eux. Les points sont ainsi appelés sommets et les traits arêtes.
+On peut modéliser les relations qui existent entre les utilisateurs d'un réseau social à l'aide d'un **graphe**, c'est-à-dire d'un ensemble de points représentant les utilisateurs et des traits représentant les relations d'amitié entre eux. Les points sont appelés sommets et les traits arêtes.
 
-Considérons un exemple simpliste de réseau social comportant 5 utilisateurs : Alice, Benjamin, Chloé, Dylan et Emma (auxquels on fera référence par leurs initiales).  
+Considérons un exemple simpliste de réseau social comportant 5 utilisateurs : Alice, Benjamin, Chloé, Dylan et Emma (auxquels on fera référence par leurs initiales). On admet les relations suivantes entre eux :
+
 - A est ami avec B, D et E. 
 - B est ami avec A et E.  
 - C est ami avec D.  
@@ -51,21 +52,21 @@ D'où le graphe représentant les relations entre A, B, C, D et E.
  
  Un graphe est une représentation très commune et très utilisée en informatique, elle peut être caractérisée de la manière suivante :
 
-1. Le **degré** d'un sommet est le nombre d'arêtes dont il est l'extrémité ; par exemple le degré de A est 3, le degré de C est 1.
-2. La **distance** entre deux sommets est le nombre minimum d'arêtes qu'il faut parcourir pour aller de l'un à l'autre (le plus court chemin).   
+1. Le **degré d'un sommet** est le nombre d'arêtes dont il est l'extrémité ; par exemple le degré de A est 3, le degré de C est 1.
+2. La **distance entre deux sommets**  est le nombre minimum d'arêtes qu'il faut parcourir pour aller de l'un à l'autre ; en d'autres termes, c'est le plus court chemin pour aller d'un sommet à l'autre.   
 Par exemple, la distance de D à E est 2 (en allant de D à A puis de A à E).   
 La distance de B à C est 3 avec le chemin B-A-D-C.
-3. L'**excentricité** d'un sommet est la plus grande distance de ce sommet aux autres sommets. L'excentricité de B est égale à 3.
-4. Le **diamètre** est la distance maximum entre deux sommets quelconques. Le diamètre du graphe proposé est 3 car la distance de B à C est 3 et la distance entre deux sommets quelconques est au plus 3.
-5. Le **rayon** d'un graphe est la valeur minimale de l'excentricité des sommets de ce graphe. Comme les excentricité de A, B, C, D et E sont respectivement 2, 3, 3, 2, 3, on en déduit que le rayon du graphe est 2.
-6. Un sommet dont l'excentricité est minimum est **centre** du graphe ; le graphe considéré possèdent ici deux centres : A et D.
+3. L'**excentricité d'un sommet** est la plus grande distance de ce sommet aux autres sommets. L'excentricité de B est égale à 3.
+4. Le **diamètre d'un graphe** est la valeur maximale de l'excentricité des sommets de ce graphe. Le diamètre du graphe proposé est 3 car la distance de B à C est 3 et la distance entre deux autres sommets quelconques est au plus 3.
+5. Le **rayon d'un graphe** est la valeur minimale de l'excentricité des sommets de ce graphe. Comme les excentricité de A, B, C, D et E sont respectivement 2, 3, 3, 2, 3, on en déduit que le rayon du graphe est 2.
+6. Un sommet dont l'excentricité est minimum est le **centre du graphe** ; il n'est pas forcément unique, le graphe considéré possède ici deux centres : A et D.
 
 ### Implémenter le traitement d'un graphe dans Python
 
-Il existe plusieurs façons de stocker un graphe dans Python. Nous allons utiliser ici ce que l'on appelle la représentation par **liste d'adjacence** d'un graphe.
+Il existe plusieurs façons de stocker un graphe dans Python. Nous allons utiliser ici ce que l'on appelle la représentation d'un graphe par **liste d'adjacence**.     
 On suppose dans toute la suite que les n sommets d'un graphe sont numérotés de 0 à n-1. On utilise alors une liste G de taille n telle que, pour tout entier i de 0 à n-1, G[i] est la liste des sommets qui sont reliés au sommet i. 
 
-Par exemple le graphe précédent peut être stocké de la façon suivante, en associant les points A, B, C, D, E aux valeurs 0, 1, 2, 3, 4 : 
+Par exemple le graphe précédent peut être stocké de la façon suivante, en décidant d'associer les points A, B, C, D, E aux valeurs 0, 1, 2, 3, 4 : 
 
 ```Python
 >>> G=[[1,3,4],[0,4],[3],[0,2],[0,1]]
@@ -88,7 +89,7 @@ Pour accéder à la valeur 2 dans cette liste de liste, on écrit :
 2
 ```
 
-Nous pouvons alors écrire des algorithmes en Python sur des graphes.
+Nous pouvons alors écrire des algorithmes en Python sur des graphes.      
 Par exemple, on peut définir une fonction `lien` qui détermine si deux sommets i et j sont reliés ; elle admet comme paramètres un graphe et deux sommets i et j.
 L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adjacence de i ; pour cela on parcourt cette liste et on regarde si on y trouve l'élément j. 
 
@@ -117,7 +118,7 @@ L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adj
 2
 ```
 
-On rappelle le code pour faire les doctests.
+On rappelle le code pour la validation des doctests dans les docstrings.
 
 ```Python
 if __name__ == '__main__':
