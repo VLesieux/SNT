@@ -30,7 +30,8 @@ Les réseaux sociaux sont souvent critiqués par leur manque de respect de la vi
 
 Le [scandale Facebook-Cambridge Analytica](Assets/How_to_turn_Facebook.pdf) en est une illustration : ce scandale a éclaté en 2018, lorsqu'il a été révélé que Cambridge Analytica, une entreprise de marketing politique basée au Royaume-Uni, avait collecté illégalement les données de millions d'utilisateurs de Facebook sans leur consentement. L'entreprise a utilisé ces données pour cibler les utilisateurs avec des publicités politiques visant à influencer leur opinion et leur comportement lors des élections américaines de 2016. Le scandale a suscité de nombreuses questions sur la protection de la vie privée en ligne et a entraîné une enquête du Congrès américain ainsi que d'autres enquêtes et procédures juridiques contre Facebook et Cambridge Analytica.
   
-Il est souvent possible de paramétrer certains aspects relatifs à la vie privée : par exemple, sur Facebook, on peut spécifier dans Paramètres qui peut voir ou publier dans le journal personnel.   
+Il est souvent possible de paramétrer certains aspects relatifs à la vie privée : par exemple, sur Facebook, on peut spécifier dans la rubrique Paramètres qui peut voir ou publier dans le journal personnel.   
+
 Le [réglement général sur la protection des données (RGPD)](https://www.cnil.fr/fr/reglement-europeen-protection-donnees) est un ensemble de lois européennes garantissant certains droits relatifs aux données personnelles. Ainsi, dans le cadre du droit à la portabilité des données, vous pouvez demander à récupérer les informations collectées par n'importe quel réseau social. 
 
 Le [droit à l'oubli](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3#Article17) vous permet de supprimer des données vous concernant sur un réseau social ou un moteur de recherche.
