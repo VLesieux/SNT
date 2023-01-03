@@ -102,7 +102,7 @@ Nous pouvons alors écrire des algorithmes en Python sur des graphes.
 Par exemple, on peut définir une fonction `lien` qui détermine si deux sommets i et j sont reliés ; elle admet comme paramètres un graphe et deux sommets i et j.
 L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adjacence de i ; pour cela on parcourt cette liste et on regarde si on y trouve l'élément j. 
 
-<u>Indication</u> :
+**Indication** :
 
 Pour parcourir les éléments d'une liste les uns après les autres :
 
