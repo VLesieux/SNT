@@ -164,7 +164,7 @@ def degre(Graphe,i):
     """
 ```
 
-**Indication** :  Le nombre d'éléments dans une liste est donnée par `len` :
+**Indication** :  Le nombre d'éléments dans une liste est donné par `len` :
 
 ```Python
 >>> liste=[4,19,20,12]
