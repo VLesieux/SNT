@@ -57,9 +57,9 @@ D'où le graphe représentant les relations entre A, B, C, D et E.
 Par exemple, la distance de D à E est 2 (en allant de D à A puis de A à E).   
 La distance de B à C est 3 avec le chemin B-A-D-C.
 3. L'**excentricité d'un sommet** est la plus grande distance de ce sommet aux autres sommets. L'excentricité de B est égale à 3.
-4. Le **diamètre d'un graphe** est la valeur maximale de l'excentricité des sommets de ce graphe. Le diamètre du graphe proposé est 3 car la distance de B à C est 3 et la distance entre deux autres sommets quelconques est au plus 3.
-5. Le **rayon d'un graphe** est la valeur minimale de l'excentricité des sommets de ce graphe. Comme les excentricité de A, B, C, D et E sont respectivement 2, 3, 3, 2, 3, on en déduit que le rayon du graphe est 2.
-6. Un sommet dont l'excentricité est minimum est le **centre du graphe** ; il n'est pas forcément unique, le graphe considéré possède ici deux centres : A et D.
+4. Le **diamètre d'un graphe** est la valeur maximale de l'excentricité des sommets de ce graphe ; il est important de connaître le diamètre d'un graphe car il peut être utilisé pour mesurer la "taille" du graphe et peut être utilisé pour effectuer certaines analyses sur le graphe.. Le diamètre du graphe proposé ici est 3 car la distance de B à C est 3 et la distance entre deux autres sommets quelconques de ce graphe est toujours au plus 3.
+5. Le **rayon d'un graphe** est la valeur minimale de l'excentricité des sommets de ce graphe ; il est important de connaître le rayon d'un graphe car il peut être utilisé pour mesurer la "densité" du graphe et peut être utilisé pour effectuer certaines analyses sur le graphe. Comme les excentricité de A, B, C, D et E sont respectivement 2, 3, 3, 2, 3, on en déduit que le rayon de notre graphe est 2.
+6. Un sommet dont l'excentricité est minimum est le **centre du graphe** ; il est important de connaître le centre d'un graphe car il peut être utilisé pour représenter de manière concise le graphe entier et peut être utilisé pour effectuer certaines analyses sur le graphe. Il n'est pas forcément unique, en l'occurrence le graphe considéré possède deux centres : A et D.
 
 ### Implémenter le traitement d'un graphe dans Python
 
