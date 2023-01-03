@@ -101,9 +101,9 @@ Nous pouvons alors écrire des algorithmes en Python sur des graphes.
 Par exemple, on peut définir une fonction `lien` qui détermine si deux sommets i et j sont reliés ; elle admet comme paramètres un graphe et deux sommets i et j.
 L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adjacence de i ; pour cela on parcourt cette liste et on regarde si on y trouve l'élément j. 
 
-<u>Rappels et indications</u> :
+<u>Indication</u> :
 
-- Pour parcourir les éléments d'une liste les uns après les autres :
+Pour parcourir les éléments d'une liste les uns après les autres :
 
 ```Python
 >>> liste=[4,8,9,2]
@@ -114,7 +114,8 @@ L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adj
 9
 2
 ```
-- Une autre méthode consiste à parcourir les éléments de la liste au moyen de leur indice depuis l'indice 0 du premier élément à l'indice `len(liste)-1` du dernier élément :
+
+Remarque : Une autre méthode non utilisée ici consisterait à parcourir les éléments de la liste au moyen de leur indice depuis l'indice 0 du premier élément à l'indice `len(liste)-1` du dernier élément :
 
 ```Python
 >>> liste=[4,8,9,2]
@@ -147,6 +148,9 @@ def lien(i,j,Graphe):
     """
 ```
 
+**Indication** :  Parcourir les éléments de la liste G[i] et voir si j est dans cette liste.
+
+
 2. Compléter la fonction `degre(Graphe,i)`.
 
 ```Python
@@ -159,6 +163,14 @@ def degre(Graphe,i):
     """
 ```
 
+**Indication** :  Le nombre d'éléments dans une liste est donnée par `len` :
+
+```Python
+>>> liste=[4,19,20,12]
+>>> len(liste)
+4
+```
+
 3. Compléter la fonction `nb_aretes` renvoyant le nombre total d'arêtes dans un graphe représenté par une liste d'adjacence.
 
 ```Python
@@ -169,6 +181,8 @@ def nb_aretes(Graphe):
     5.0
     """
 ```
+
+**Indication** : Le nombre d'arêtes est égal à la moitié du nombre total de liens.
 
 ### Petits mondes
 
@@ -202,5 +216,8 @@ def est_clique(Graphe,Liste_sommets):
     """
 ```
 
+**Indication** :
+
 Le principe de l'algorithme à écrire est le suivant : on parcourt tous les éléments de la liste et pour chacun d'entre eux on regarde s'il est relié aux autres éléments de la liste hormis lui-même en utilisant la fonction `lien` précédemment écrite ; dès qu'un test est négatif, cela signifie que ce n'est pas une clique et la fonction renvoie immédiatement `False` ; si tous les tests explorés sont positifs, cela signifie que c'est une clique et on renvoie `True`.
 On sera donc amené à faire une double boucle : une première boucle pour parcourir tous les sommets et à l'intérieur de cette boucle une autre boucle pour tester le lien de ce sommet avec les autres sommets, autres que lui-même bien sûr.
+
