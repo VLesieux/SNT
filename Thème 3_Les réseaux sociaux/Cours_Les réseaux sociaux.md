@@ -65,7 +65,9 @@ La distance de B à C est 3 avec le chemin B-A-D-C.
 
 ### Implémenter le traitement d'un graphe dans Python
 
-Il existe plusieurs façons de stocker un graphe dans Python. Nous allons utiliser ici ce que l'on appelle la représentation d'un graphe par **liste d'adjacence**.     
+Il existe plusieurs façons de stocker un graphe dans Python. Nous allons utiliser ici ce que l'on appelle la représentation d'un graphe par **liste d'adjacence**.  
+Une liste d'adjacence est un type de structure de données utilisée pour représenter un graphe dans un ordinateur. Un graphe est une collection de points appelés "nœuds" qui sont reliés par des lignes appelées "arêtes". Une liste d'adjacence est une manière de stocker les informations sur les arêtes du graphe en associant chaque nœud à une liste des nœuds adjacents, c'est-à-dire les nœuds qui sont reliés à lui par une arête. Par exemple, si on a un graphe représentant les villes d'un pays et les routes qui les relient, on pourrait utiliser une liste d'adjacence pour stocker l'information sur les villes et les routes qui relient chaque ville à ses voisines.
+   
 On suppose dans toute la suite que les n sommets d'un graphe sont numérotés de 0 à n-1. On utilise alors une liste G de taille n telle que, pour tout entier i de 0 à n-1, G[i] est la liste des sommets qui sont reliés au sommet i. 
 
 Par exemple le graphe précédent peut être stocké de la façon suivante, en décidant d'associer les points A, B, C, D, E aux valeurs 0, 1, 2, 3, 4 : 
