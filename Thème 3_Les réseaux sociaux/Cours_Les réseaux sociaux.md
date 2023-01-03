@@ -89,7 +89,8 @@ Par exemple le graphe précédent peut être stocké de la façon suivante, en d
 >>> G[4]
 [0, 1]
 ```
-Pour accéder à la valeur 2 dans cette liste de liste, on écrit : 
+
+Remarque : Pour accéder à la valeur 2 dans cette liste de liste, on écrira : 
 
 ```Python
 >>> G=[[1,3,4],[0,4],[3],[0,2],[0,1]]
