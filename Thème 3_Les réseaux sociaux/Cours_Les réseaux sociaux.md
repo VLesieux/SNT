@@ -2,10 +2,14 @@
 
 ### Introduction
 
-Plus de la moitié des Français sont actifs sur les réseaux sociaux. Ceux-ci ont modifié notre rapport aux autres mais aussi à l'information. Ils ont permis des retrouvailles, de garder le lien avec des personnes sinon oubliées. Certains cependant en deviennent totalement dépendants et se complaisent dans des relations virtuelles aux dépens de vrais rapports humains. L'anthropologue Robin Dunbar (l'anthropologie est la science qui étudie l'être humain et les groupes humains sous tous leurs aspects, à la fois physiques et culturels) a estimé qu'un individu ne pouvait avoir plus de 150 relations humaines stables, au-dessus de ce nombre la confiance mutuelle d'un groupe est compromise, aussi ceux qui s'extasient d'avoir plus de mille amis sur Facebook n'entretiennent certainement pas de liens avec la grande majorité d'entre eux.   
+Plus de la moitié des Français sont actifs sur les réseaux sociaux ; ils ont modifié notre rapport aux autres mais aussi à l'information. Ils ont permis des retrouvailles, de garder le lien avec des personnes sinon oubliées. Certains cependant en deviennent totalement dépendants et se complaisent dans des relations virtuelles aux dépens de vrais rapports humains.    
+
+L'anthropologue Robin Dunbar (l'anthropologie est la science qui étudie l'être humain et les groupes humains sous tous leurs aspects, à la fois physiques et culturels) a estimé qu'un individu ne pouvait avoir plus de 150 relations humaines stables, au-dessus de ce nombre la confiance mutuelle d'un groupe est compromise, aussi ceux qui s'extasient d'avoir plus de mille amis sur Facebook n'entretiennent certainement pas de liens avec la grande majorité d'entre eux.   
+
 Passionné d'informatique dès son adolescence, Marc Zuckerberg, né en 1984, lance en 2004, avec quelques amis, sa première version de Facebook, il n'a pas 20 ans !   
 D'abord destiné aux étudiants de Harvard (université privée américaine située à Cambridge, ville de l'agglomération de Boston dans le Massachussets au nord-est des États-Unis), le site est ouvert à tous en septembre 2006. Le succès est immédiat et se poursuit grâce à la création de nouvelles fonctionnalités.     
-Son immense diffusion le place face à des responsabilités éthiques que sont la confidentialité, la mise en ligne de propos racistes et haineux, ou la diffusion de fake news (en français infox : néologisme qui veut dire fausse information).
+
+Cependant, son immense diffusion le place face à des responsabilités éthiques que sont la confidentialité, la mise en ligne de propos racistes et haineux, ou la diffusion de fake news (en français infox : néologisme qui veut dire fausse information).
 
 ### Définition
 
