@@ -128,7 +128,7 @@ Remarque : Une autre méthode non utilisée ici consisterait à parcourir les é
 2
 ```
 
-On rappelle le code pour la validation des doctests dans les docstrings.
+> On rappelle le **code pour la validation des doctests dans les docstrings**.
 
 ```Python
 if __name__ == '__main__':
@@ -149,7 +149,22 @@ def lien(i,j,Graphe):
     """
 ```
 
-**Indication** :  Parcourir les éléments de la liste G[i] et voir si j est dans cette liste.
+**Indication1** :  Parcourir les éléments de la liste G[i] et voir si j est dans cette liste.
+
+**Indication2** :  Lorsque le mot-clé `return` est utilisé dans une boucle, il fait sortir de la boucle et retourne la valeur spécifiée (si une valeur est spécifiée). Par exemple, si vous avez une boucle `for` et que vous utilisez `return` à l'intérieur de cette boucle, la boucle sera immédiatement interrompue et le reste du code dans la boucle ne sera pas exécuté.
+
+Voici un exemple simple pour vous aider à comprendre :
+
+```Python
+def find_number(numbers):
+  for number in numbers:
+    if number == 5:
+      return True
+  return False
+
+print(find_number([1, 2, 3, 4, 5]))  # affiche True
+print(find_number([1, 2, 3, 4]))  # affiche False
+```
 
 
 2. Compléter la fonction `degre(Graphe,i)`.
