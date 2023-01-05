@@ -198,7 +198,7 @@ def nb_aretes(Graphe):
     """
 ```
 
-**Indication** : Le nombre d'arêtes est égal à la moitié du nombre total de liens.
+**Indication** : Le nombre d'arêtes est égal à la moitié du nombre total de liens puisqu'un lien est partagé entre deux sommets.
 
 ### Petits mondes
 
