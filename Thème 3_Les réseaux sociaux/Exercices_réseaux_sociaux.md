@@ -16,13 +16,12 @@ Population mondiale : 7,8 milliards.
 Compléter le code ci-dessous.
 
 ```Python
-def recherche():
-    S=3
-    n=1
-    while S<7.8*10**9:
-        ......
-        ......
-    print(n)
+S=3
+n=1
+while S<7.8*10**9:
+    ......
+    ......
+print(n)
 ```
 
 ### Exercice 2
@@ -85,7 +84,16 @@ def centre(graphe):
     >>> centre([[1,3,4],[0,4],[3],[0,2],[0,1]])
     ['A', 'D']
     """
+```
 
+**Indications** : Pour prendre le maximum ou le minimum d'une liste de valeurs.
+
+```Python
+>>> liste=[2,8,5]
+>>> max(liste)
+8
+>>> min(liste)
+2
 ```
 
 Soit le graphe ci-dessous :
