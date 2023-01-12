@@ -27,6 +27,15 @@ if __name__ == '__main__':
   doctest.testmod(verbose=True)
 ```
 
+Tous les tests seront validés avec le graphe étudié en cours, pour rappel : 
+
+<img src="Assets/graphe_relations.png">
+
+```Python
+G=[[1,3,4],[0,4],[3],[0,2],[0,1]]
+```
+
+
 On admet le code qui permet de trouver l'excentricité d'un sommet.
 
 ```Python
@@ -34,7 +43,9 @@ from collections import deque
 
 def excentricite(graphe, sommet):
     """
-    Renvoie la plus grande distance de ce sommet aux autres sommets
+    Renvoie la plus grande distance du sommet passé en paramètre aux autres sommets de graphe
+    param : graphe : list
+    param : sommet : int
     >>> excentricite([[1,3,4],[0,4],[3],[0,2],[0,1]], 1)
     3
     """
@@ -109,9 +120,9 @@ Soit le graphe ci-dessous :
 <img height="400px" src="Assets/graphe.png">
 
 1. Donner une représentation par liste d'adjacence de ce graphe.
-2. En utilisant les définitions du cours, déterminer manuellement son diamètre et son rayon.
+2. En utilisant les définitions du cours, déterminer manuellement, en expliquant, son diamètre et son rayon.
 3. Indiquer le ou les centres de ce graphe.
-4. Retrouver ces résultats à l'aide du programme en Python.
+4. Retrouver ces résultats dans la console de Thonny en faisant agir sur votre graphe les différentes fonctions écrites précédemment. 
 
 ### Exercice 3
 
