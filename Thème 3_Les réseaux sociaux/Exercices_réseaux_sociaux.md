@@ -1,12 +1,5 @@
 ## Exercices Thème 3 : Réseaux sociaux
 
-On rappelle le code pour valider les tests des docstrings.
-
-```Python
-if __name__ == '__main__':
-  import doctest
-  doctest.testmod(verbose=True)
-```
 
 ### Exercice 1
 
@@ -26,13 +19,22 @@ print(n)
 
 ### Exercice 2
 
-On donne le code qui permet de trouver l'excentricité d'un sommet.
+On rappelle le code pour valider les tests des docstrings.
+
+```Python
+if __name__ == '__main__':
+  import doctest
+  doctest.testmod(verbose=True)
+```
+
+On admet le code qui permet de trouver l'excentricité d'un sommet.
 
 ```Python
 from collections import deque
 
 def excentricite(graphe, sommet):
     """
+    Renvoie la plus grande distance de ce sommet aux autres sommets
     >>> excentricite([[1,3,4],[0,4],[3],[0,2],[0,1]], 1)
     3
     """
