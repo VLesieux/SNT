@@ -142,6 +142,9 @@ if __name__ == '__main__':
 def lien(i,j,Graphe):
     """
     Renvoie True si i et j sont liés
+    param : i : int
+    param : j : int
+    param : Graphe : list
     >>> lien(0,3,G)
     True
     >>> lien(0,2,G)
@@ -172,8 +175,9 @@ print(find_number([1, 2, 3, 4]))  # affiche False
 ```Python
 def degre(Graphe,i):
     """
-    Renvoie le degré du sommet i dans le graphe, c'est-à-dire le nombre
-    d'arêtes dont il est l'extrémité
+    Renvoie le nombre de sommets auquel est lié le sommet i dans Graphe
+    param : i : int
+    param : Graphe : list
     >>> degre(G,1)
     2
     """
@@ -193,6 +197,7 @@ def degre(Graphe,i):
 def nb_aretes(Graphe):
     """
     Renvoie le nombre d'arêtes du graphe
+    param : Graphe : list
     >>> nb_aretes(G)
     5.0
     """
@@ -225,6 +230,8 @@ Exemple : Pour notre situation précédente, A, B, E forment une clique tandis q
 def est_clique(Graphe,Liste_sommets):
     """
     Renvoie True si Liste_sommets est une clique, c'est-à-dire que les sommets sont reliés mutuellement entre eux
+    param : Graphe : list
+    param : Liste_sommets : list
     >>> est_clique(G,[0,1,4])
     True
     >>> est_clique(G,[0,1,3])

@@ -69,6 +69,8 @@ def excentricite(graphe, sommet):
 ```Python
 def diametre(graphe):
     """
+    Renvoie la plus grande valeur de l'excentricité
+    param : graphe : list
     >>> diametre([[1,3,4],[0,4],[3],[0,2],[0,1]])
     3
     """
@@ -76,6 +78,8 @@ def diametre(graphe):
 
 def rayon(graphe):
     """
+    Renvoie la plus petite valeur de l'excentricité
+    param : graphe : list
     >>> rayon([[1,3,4],[0,4],[3],[0,2],[0,1]])
     2
     """
@@ -83,6 +87,8 @@ def rayon(graphe):
 
 def centre(graphe):
     """
+    Renvoie le ou les sommets de plus petite excentricité
+    param : graphe : list
     >>> centre([[1,3,4],[0,4],[3],[0,2],[0,1]])
     ['A', 'D']
     """
