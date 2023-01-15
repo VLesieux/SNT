@@ -117,7 +117,7 @@ def centre(graphe):
 2
 ```
 
-Soit le graphe ci-dessous :
+**Application** : Soit le graphe ci-dessous :
 
 <img height="400px" src="Assets/graphe_relations2.png">
 
