@@ -46,6 +46,8 @@ def excentricite(graphe, sommet):
     Renvoie la plus grande distance du sommet passé en paramètre aux autres sommets de graphe
     param : graphe : list
     param : sommet : int
+    >>> excentricite([[1,3,4],[0,4],[3],[0,2],[0,1]], 0)
+    2
     >>> excentricite([[1,3,4],[0,4],[3],[0,2],[0,1]], 1)
     3
     """
