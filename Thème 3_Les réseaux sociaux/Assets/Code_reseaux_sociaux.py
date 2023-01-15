@@ -1,4 +1,5 @@
 G=[[1,3,4],[0,4],[3],[0,2],[0,1]]
+noms=["A","B","C","D","E"]
 
 def lien(i,j,Graphe):
     """
@@ -110,13 +111,12 @@ def rayon(graphe):
         liste.append(excentricite(graphe, i))
     return min(liste)
 
-def centre(graphe):
+def centre(graphe,noms):
     """
-    >>> centre([[1,3,4],[0,4],[3],[0,2],[0,1]])
+    >>> centre([[1,3,4],[0,4],[3],[0,2],[0,1]],noms)
     ['A', 'D']
     """
-    liste=[]
-    noms=["A","B","C","D","E"]
+    liste=[]    
     for i in range(len(graphe)):
         if excentricite(graphe, i)==rayon(graphe):
             liste.append(noms[i])
