@@ -119,7 +119,7 @@ def centre(graphe):
 
 Soit le graphe ci-dessous :
 
-<img height="400px" src="Assets/graphe.png">
+<img height="400px" src="Assets/graphe_relations2.png">
 
 1. Donner une représentation par liste d'adjacence de ce graphe.
 2. En utilisant les définitions du cours, déterminer manuellement, en expliquant, son diamètre et son rayon.
