@@ -122,7 +122,9 @@ def centre(graphe):
 <img height="400px" src="Assets/graphe_relations2.png">
 
 1. Donner une représentation par liste d'adjacence appelée `G_exercice` de ce graphe. On numérotera les sommets dans l'ordre alphabétique des prénoms et on utilisera la liste de noms :
+
 `noms_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]`
+
 2. En utilisant les définitions du cours, déterminer manuellement, en expliquant, le diamètre et le rayon de ce graphe.
 3. Indiquer le ou les centres de ce graphe.
 4. Retrouver ces résultats dans la console de Thonny en faisant agir sur votre graphe les [fonctions](Assets/Code_reseaux_sociaux.py) écrites précédemment.
