@@ -90,9 +90,6 @@ def excentricite(graphe, sommet):
     # Retourner la distance maximale des sommets par rapport au sommet de départ
     return max(distances.values())
 
-
-excentricite([[1, 3, 4], [0, 4], [3], [0, 2], [0, 1]], 1)
-
 def diametre(graphe):
     """
     >>> diametre([[1,3,4],[0,4],[3],[0,2],[0,1]])

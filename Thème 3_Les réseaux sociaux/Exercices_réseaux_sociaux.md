@@ -76,7 +76,7 @@ def excentricite(graphe, sommet):
     return max(distances.values())
 ```
 
-1. Proposer une interprétation de ce code.
+1. Proposer une interprétation de ce code. Pour cela, faire fonctionner la fonction sur un exemple, par exemple : `excentricite([[1, 3, 4], [0, 4], [3], [0, 2], [0, 1]], 1)` et observer le déroulement avec le debugger.
 2. En utilisant cette fonction, compléter les codes des fonctions suivantes:
 
 ```Python
