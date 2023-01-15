@@ -126,9 +126,9 @@ On numérotera les sommets dans l'ordre alphabétique des prénoms et on utilise
 
 `noms_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]`
 
-2. En utilisant les définitions du cours, déterminer manuellement, en expliquant, le diamètre et le rayon de ce graphe.
+2. En utilisant les définitions du [cours](Assets/Code_reseaux_sociaux.py), déterminer manuellement, en expliquant, le diamètre et le rayon de ce graphe.
 3. Indiquer le ou les centres de ce graphe.
-4. Retrouver ces résultats dans la console de Thonny en faisant agir sur votre graphe les [fonctions](Assets/Code_reseaux_sociaux.py) écrites précédemment.
+4. Retrouver ces résultats dans la console de Thonny en faisant agir sur votre graphe les [fonctions](Assets/Cours_Les réseaux sociaux.md) écrites précédemment. Écrire vos résultats.
 5. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Que faut-il écrire dans la console pour le vérifier ?
 
 ### Exercice 3
