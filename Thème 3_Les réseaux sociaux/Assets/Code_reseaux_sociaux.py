@@ -93,7 +93,7 @@ def excentricite(graphe, sommet):
 
 def diametre(graphe):
     """
-    >>> diametre([[1,3,4],[0,4],[3],[0,2],[0,1]])
+    >>> diametre(G)
     3
     """
     liste=[]
