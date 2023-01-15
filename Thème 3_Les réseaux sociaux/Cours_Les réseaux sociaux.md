@@ -59,11 +59,11 @@ D'où le graphe représentant les relations entre A, B, C, D et E.
  Un graphe est une représentation très commune et très utilisée en informatique, elle peut être caractérisée de la manière suivante :
 
 1. Le **degré d'un sommet** est le nombre d'arêtes dont il est l'extrémité ; par exemple le degré de A est 3, le degré de C est 1.
-2. La **distance entre deux sommets**  est le nombre minimum d'arêtes qu'il faut parcourir pour aller de l'un à l'autre ; en d'autres termes, c'est le plus court chemin pour aller d'un sommet à l'autre.   
+2. La **distance entre deux sommets**  est le **nombre minimum** d'arêtes qu'il faut parcourir pour aller de l'un à l'autre ; en d'autres termes, c'est le plus court chemin pour aller d'un sommet à l'autre.   
 Par exemple, la distance de D à E est 2 (en allant de D à A puis de A à E).   
 La distance de B à C est 3 avec le chemin B-A-D-C.
-3. L'**excentricité d'un sommet** est la plus grande distance de ce sommet aux autres sommets. L'excentricité de B est égale à 3.
-4. Le **diamètre d'un graphe** est la valeur maximale de l'excentricité des sommets de ce graphe ; il est important de connaître le diamètre d'un graphe car il peut être utilisé pour mesurer la "taille" du graphe et peut être utilisé pour effectuer certaines analyses sur le graphe.. Le diamètre du graphe proposé ici est 3 car la distance de B à C est 3 et la distance entre deux autres sommets quelconques de ce graphe est toujours au plus 3.
+3. L'**excentricité d'un sommet** est la plus grande distance de ce sommet aux autres sommets ; la distance entre deux sommets étant le chemin le plus court entre ces deux sommets. L'excentricité de B est égale à 3.
+4. Le **diamètre d'un graphe** est la valeur maximale de l'excentricité des sommets de ce graphe ou la plus grande distance entre deux sommets ; il est important de connaître le diamètre d'un graphe car il peut être utilisé pour mesurer la "taille" du graphe et peut être utilisé pour effectuer certaines analyses sur le graphe.. Le diamètre du graphe proposé ici est 3 car la distance de B à C est 3 et la distance entre deux autres sommets quelconques de ce graphe est toujours au plus 3.
 5. Le **rayon d'un graphe** est la valeur minimale de l'excentricité des sommets de ce graphe ; il est important de connaître le rayon d'un graphe car il peut être utilisé pour mesurer la "densité" du graphe et peut être utilisé pour effectuer certaines analyses sur le graphe. Comme les excentricité de A, B, C, D et E sont respectivement 2, 3, 3, 2, 3, on en déduit que le rayon de notre graphe est 2.
 6. Un sommet dont l'excentricité est minimum est le **centre du graphe** ; il est important de connaître le centre d'un graphe car il peut être utilisé pour représenter de manière concise le graphe entier et peut être utilisé pour effectuer certaines analyses sur le graphe. Il n'est pas forcément unique, en l'occurrence le graphe considéré possède deux centres : A et D.
 
