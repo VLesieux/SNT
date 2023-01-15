@@ -128,8 +128,8 @@ def centre(graphe):
 
 <img height="400px" src="Assets/graphe_relations2.png">
 
-1. Donner une représentation par liste d'adjacence appelée `G_exercice` de ce graphe.  
-On numérotera les sommets dans l'ordre alphabétique des prénoms et on utilisera la liste de noms :
+1. Donner une représentation par liste d'adjacence similaire à G, appelée `G_exercice`, pour ce graphe.  
+On numérotera les sommets dans l'ordre alphabétique des noms et on utilisera la liste de noms suivante :
 
 `noms_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]`
 
