@@ -2,17 +2,6 @@
 
 ### Exercice 1
 
-Parmi les formats suivants, lesquels sont utilisés pour les données structurées.
-
-XML ; PDF ; CSV ; JPEG ; MP3 ; VCF
-
-### Exercice 2
-
-Saisir dans un fichier XML les données relatives à ses proches en utilisant les descripteurs : 'nom', 'prenom', 'lien', 'anniversaire'.
-
-
-### Exercice 3
-
 Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité de l'air Île de France" ;  télécharger puis ouvrir le fichier `indices_QA_commune_IDF_04_2018.csv` (le fichier est également présent dans le dossier `Assets` du thème 4).   
 
 Il s'agit d'un exemple de données ouvertes ou **open data** accessibles à tous. Les indices de qualité de l’air sont des outils de communication qui permettent de décrire périodiquement sous une forme simple (qualificatif, chiffre) l’état global de la qualité de l’air dans une aire géographique donnée.
@@ -70,7 +59,7 @@ plt.close()
 
 <img src="Assets/graphe.png">
 
-### Exercice 4
+### Exercice 2
 
 Code pour vérifier les docstrings :
 
@@ -147,7 +136,7 @@ def fonction1(table):
     return len(table),len(table[0])
 ```
 
-### Exercice 5
+### Exercice 3
 
 1. Dans un premier temps on extrait à l'aide du programme ci-dessous en Python les données d'un fichier csv appelé `les_salles_de_cinemas_en_ile-de-france.csv` .   
 Vous trouverez ce fichier `csv` (comma-separated values) dans le dossier `Assets`.
