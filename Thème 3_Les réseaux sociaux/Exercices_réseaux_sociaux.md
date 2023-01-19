@@ -135,7 +135,7 @@ On numérotera les sommets dans l'ordre alphabétique des noms et on utilisera l
 
 2. En utilisant les [définitions](https://github.com/VLesieux/SNT/blob/master/Th%C3%A8me%203_Les%20r%C3%A9seaux%20sociaux/Cours_Les%20r%C3%A9seaux%20sociaux.md) du cours, déterminer manuellement, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe.
 4. Retrouver le nombre d'arêtes, le diamètre, le rayon, le ou les centres de ce graphe, dans la console de Thonny, en faisant agir sur votre graphe les [fonctions](Assets/Code_reseaux_sociaux.py) écrites précédemment. Écrire vos résultats.
-5. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Que faut-il écrire dans la console pour le vérifier ?
+5. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Justifier. Que faut-il écrire dans la console pour le vérifier ?
 
 ### Exercice 3
 
