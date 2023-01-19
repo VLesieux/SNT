@@ -19,7 +19,7 @@ En s'inspirant des exemples du cours réalisés sur le fichier `contacts.csv`, r
 
 3. Déterminer les numéro d'insee des deux communes d'Île-de-France les plus polluées en particules fines (pm10) le 20/04/2018.    
 
-**Indications** : On sera amené à écrire les fonctions : `tri_selon_pm10(element)`pour  trier les données dans l'odre décroissant de `pm10` et `filtre_selon_date(date,tableau)` pour ne garder que ce qui se rapporte à `date`.
+**Indications** : On sera amené à écrire les fonctions : `tri_selon_pm10(element)`pour  trier les données dans l'ordre décroissant de `pm10` et `filtre_selon_date(date,tableau)` pour ne garder que ce qui se rapporte à `date`.
 
 Résultat attendu : `Les insee des deux communes d'Île-de-France les plus polluées aux particules fines (pm10) le 20/04/2018 sont :  92026  ,  92035`
 
