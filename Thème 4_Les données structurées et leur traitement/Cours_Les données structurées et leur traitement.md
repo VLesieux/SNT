@@ -19,14 +19,14 @@ L'informatique s'est révélée d'une très grande efficacité pour manipuler de
 
 <img src="Assets/ibm-ramac-305-1956-3.jpg">
 
-- 1970 : Invention du modèle relationnel, grâce à E.F.Codd, permettant de structure et d'indexer des bases de données
+- 1970 : Invention du modèle relationnel, grâce à E.F.Codd, permettant de structurer et d'indexer des bases de données
 - 1979 : Création du premier tableur : VisiCalc.
 
 <img src="Assets/1256547.jpg">
 
 - 1997 : Apparition du terme Big Data, faisant référence à des ensembles massifs de données générés par l'utilisation des outils numériques
 - 2000 : Utilisation de la clé USB et la carte SD comme supports de stockage
-- 2009 : Le président Obama lance l'<i>Open Government Initiative</i> afin d'instaurer davantage de transparence dans la gouvernance. Cette « initiative » vise à créer un niveau sans précédent de transparence et d'ouverture du gouvernement. Elle se situe dans une tendance émergente qui est celle de l' <i>Open source governance</i>, qui prône l'application en politique et dans la gouvernance des démocraties de philosophies telles que l'open source et les « contenus ouverts » (Open data), pour permettre à tout citoyen intéressé de contribuer à créer les contenus de la Politique, et pour permettre aux gouvernements de mieux bénéficier des savoirs et savoir-faire locaux. Les agences gouvernementales ont en 2010 commencé, autour du gouvernement fédéral, à produire des pages Web de gouvernance élargie, proposant des informations autrefois inaccessibles au public, et invitant les citoyens américains à produire des idées et suggestions.
+- 2009 : Le président Obama lance l'<i>Open Government Initiative</i> afin d'instaurer davantage de transparence dans la gouvernance. Cette « initiative » vise à créer un niveau sans précédent de transparence et d'ouverture du gouvernement. Elle se situe dans une tendance émergente qui est celle de l' <i>Open source governance</i>, qui prône l'application en politique et dans la gouvernance des démocraties de philosophies telles que l'open source et les « contenus ouverts » (**Open data**), pour permettre à tout citoyen intéressé de contribuer à créer les contenus de la Politique, et pour permettre aux gouvernements de mieux bénéficier des savoirs et savoir-faire locaux. Les agences gouvernementales ont en 2010 commencé, autour du gouvernement fédéral, à produire des pages Web de gouvernance élargie, proposant des informations autrefois inaccessibles au public, et invitant les citoyens américains à produire des idées et suggestions.
 
 
 ### Les données structurées
