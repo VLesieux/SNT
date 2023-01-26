@@ -112,17 +112,21 @@ Enfin, certaines données dites ouvertes  : **Open data** sont publiques et libr
 Le **RGPD**, Règlement Général sur la Protection des Données, entré en vigueur le 25 mai 2018, vise à renforcer la protection des données personnelles dans l'Union Européenne en établissant des règles sur la collecte et la gestion des données récoltées par les entreprises et organismes. On trouve par exemple dans les dispositions un **droit à l'effacement des données personnelles** (c'est-à-dire le droit pour chacun de demander l'effacement de ses données pour certains motifs), un **droit à la portabilité des données personnelles** (on peut ainsi demander à un organisme de nous fournir les données personnelles nous concernant en vue par exemple de les transmettre à un autre organisme), ainsi que des principes de **protection des données** (nécessité de garantir au mieux la sécurité des données).
 
 
-### Traitement des données structurées
+# Traitement des données structurées : travail à réaliser
 
-Lorsqu'on dispose d'une table de données, il peut être intéressant d'effectuer des opérations de recherche, de tri, de filtre ou bien des calculs sur les valeurs des descripteurs.
+Lorsqu'on dispose d'une table de données, il peut être intéressant d'effectuer des opérations de **recherche**, de **tri**, de **filtre** ou bien des **calculs** sur les valeurs des descripteurs.
 
 Exemple : dans un fichier client, on peut effectuer les opérations suivantes:
-- rechercher le numéro de téléphone d'un client pour le contacter
+
+- rechercher le numéro de téléphone d'un client pour le contacter  
+
 - trier les données dans l'ordre alphabétique des noms de familles, puis des prénoms
+
 - filtrer les clients dans une catégorie ; par exemple dans la catégorie 18-25 ans pour une publicité ciblée
+
 - déterminer la répartion homme/femme des clients
 
-On peut également croiser les informations de plusieurs tables issues d'une même base de données.
+On peut également **croiser** les informations de plusieurs tables issues d'une même base de données.
 
 Exemple : Dans le but de distribuer des bons d'achat aux clients les plus fidèles d'un magasin, on peut commencer par filtrer dans le fichier des ventes les clients ayant effectué le plus d'achats, puis chercher dans un deuxième leurs adresses postales dans le fichier client.
 
@@ -130,7 +134,7 @@ Lorsque les données sont représentées sur un tableur, on peut aisément effec
 
 <img src="Assets/filtration_donnees.png">
 
-On réalise le fichier `contacts.py` avec Thonny en le plaçant dans le même dossier que le fichier `contacts.csv` obtenu à partir du fichier `contacts.xlsx` placé dans le dossier Assets.
+**Exemple à réaliser** : On réalise le fichier `contacts.py` avec Thonny en le plaçant dans le même dossier que le fichier `contacts.csv` obtenu à partir du fichier `contacts.xlsx` placé dans le dossier Assets.
 
 ```Python
 import csv
@@ -145,7 +149,7 @@ print(table)
 
 Voir l'effet de `rstrip()` et de `split(';')` pour comprendre le code.
 
-On observe que table est ainsi une liste formée de sous-listes.
+On observe que table est ainsi une liste formée de sous-listes ou tableau à deux dimensions.
 
 Commençons par trier les contacts dans l'ordre alphabétique des noms de famille à l'aide de la fonction `sorted`.
 
@@ -153,7 +157,7 @@ Commençons par trier les contacts dans l'ordre alphabétique des noms de famill
 table=sorted(table)
 ```
 
-La fonction `sorted`, appelée sans paramètre, trie la table par ordre alphabétique sur le premier champ,c'est-à-dire selon l'élément d'indice 0 des sous-listes, qui est le Nom .
+La fonction `sorted`, appelée par défaut sans paramètre, trie la table par ordre alphabétique sur le premier champ,c'est-à-dire selon l'élément d'indice 0 des sous-listes, qui est le Nom .
 
 Pour **trier** sur un autre champ, par exemple Ville, qui constitue pour les sous-listes, notées ici `element`, la valeur d'indice 5, voici la procédure à suivre :
 
@@ -166,7 +170,7 @@ table=sorted(table,key=tri_selon_ville)
 
 Remarque : pour trier dans l'ordre décroissant, écrire : `sorted(table,key=tri_selon_ville,reverse=True)`
 
-Effectuons maintenant la **recherche** du contact dont le numéro de téléphone est '06 64 58 54 36'. Proposons pour cela une fonction `recherche` qui admet comme paramètres `telephone` et `tableau` qui parcourt l'ensemble des contacts de notre tableau à la recherche du contact qui possède ce numéro de téléphone : 
+Effectuons maintenant la **recherche** du contact dont le numéro de téléphone est '06 64 58 54 36'. Proposons pour cela une fonction `recherche` qui admet deux paramètres `telephone` et `tableau`, et qui parcourt l'ensemble des contacts de notre tableau à la recherche du contact qui possède ce numéro de téléphone : 
 
 ```Python
 def recherche(telephone,tableau):
