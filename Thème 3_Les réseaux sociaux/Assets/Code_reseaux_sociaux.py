@@ -1,6 +1,9 @@
 G=[[1,3,4],[0,4],[3],[0,2],[0,1]]
 noms=["A","B","C","D","E"]
 
+Graphe_exercice=[[1],[0,4],[3,5,6,4],[2],[2,6,1],[2,6],[2,5,4]]
+noms_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]
+
 def lien(i,j,Graphe):
     """
     Renvoie True si i et j sont liés
