@@ -147,7 +147,19 @@ del table[0]#suppression de la ligne des descripteurs
 print(table)
 ```
 
-Voir l'effet de `rstrip()` et de `split(';')` pour comprendre le code.
+Voir l'effet ci-dessous de `rstrip()` et de `split(';')` pour comprendre le code.
+
+```Python
+>>> phrase="Ceci est une phrase avec changement de ligne\n"
+>>> phrase.rstrip()
+'Ceci est une phrase avec changement de ligne'
+```
+
+```Python
+>>> animaux="Chien, chat, oiseau, moustique"
+>>> animaux.split(",")
+['Chien', ' chat', ' oiseau', ' moustique']
+```
 
 On observe que table est ainsi une liste formée de sous-listes ou tableau à deux dimensions.
 
