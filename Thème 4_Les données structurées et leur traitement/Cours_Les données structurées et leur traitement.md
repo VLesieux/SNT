@@ -228,6 +228,9 @@ Effectuons maintenant un **filtrage** selon un ou plusieurs critères donnés (e
 def filtrer(tableau,premiere_lettre_du_nom):
     """
     Renvoie les noms du tableau de contacts qui commencent par premiere_lettre_du_nom
+    param : tableau : list
+    param : premiere_lettre_du_nom : str
+    return : list
     >>> filtrer(table,'G')
     ['Green', 'Gascon']
     """
