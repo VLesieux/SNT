@@ -218,12 +218,15 @@ def filtrer(tableau,premiere_lettre_du_nom):
     return resultat
 ```
 
-On peut également **dénombrer** les éléments correspondant à ce filtrage en les plaçant dans une liste :
+On peut également **dénombrer** les éléments correspondant à ce filtrage en déterminant la longueur de la liste :
 
 ```Python
 def denombre(tableau,premiere_lettre_du_nom):
     """
-    Renvoie les noms du tableau de contacts qui commencent par premiere_lettre_du_nom
+    Renvoie le nombre de noms du tableau de contacts qui commencent par premiere_lettre_du_nom
+    param : tableau : list
+    param : premiere_lettre_du_nom : str
+    return : int
     >>> denombre(table,'G')
     2
     """
@@ -234,7 +237,26 @@ def denombre(tableau,premiere_lettre_du_nom):
     return len(resultat)
 ```
 
-Remarque : En réalité la plupart des bases de données sont hébergées et gérées par des **serveurs de bases de données** ; on utilise pour cela un logiciel de bases de données comme MySQL (qui utilise un langage SQL). Ce n'est pas l'objet de ce cours, mais une requête SQL filtrant les clients ayant entre 18 et 25 ans et indiquant leurs nom et adresse, triés par ordre alphabétique, a cette écriture :
+Une autre formulation est la création d'un compteur.
+
+```Python
+def denombre_version2(tableau,premiere_lettre_du_nom):
+    """
+    Renvoie le nombre de noms du tableau de contacts qui commencent par premiere_lettre_du_nom
+    param : tableau : list
+    param : premiere_lettre_du_nom : str
+    return : int
+    >>> denombre_version2(table,'G')
+    2
+    """
+    compteur=0
+    for element in tableau:
+        if element[0][0]==premiere_lettre_du_nom:
+            compteur+=1#incrémentation du compteur
+    return compteur
+```
+
+Remarque : En réalité la plupart des bases de données sont hébergées et gérées par des **serveurs de bases de données** ; on utilise pour cela un logiciel de bases de données comme MySQL (qui utilise un langage SQL). Ce n'est pas l'objet de ce cours, mais une requête SQL filtrant les clients ayant entre 18 et 25 ans et indiquant leurs nom et adresse, triés par ordre alphabétique, aurait cette écriture :
 
 ```SQL
 SELECT nom, adresse FROM clients WHERE age>=18 AND age<=25 ORDER BY nom 
