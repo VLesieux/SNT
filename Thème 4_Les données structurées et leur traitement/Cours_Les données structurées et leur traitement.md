@@ -197,8 +197,8 @@ Trions maintenant le tableau des contacts par âge, pour cela on utilise :
 
 ```
 ```Python
-def tri_selon_age(contact):
-    return int(contact[4][-4::])
+def tri_selon_age(element):
+    return int(element[4][-4::])
 
 table2=sorted(table,key=tri_selon_age)
 ```
