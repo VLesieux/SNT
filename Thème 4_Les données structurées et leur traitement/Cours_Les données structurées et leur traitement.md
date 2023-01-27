@@ -156,8 +156,8 @@ Voir l'effet ci-dessous de `rstrip()` et de `split(';')` pour comprendre le code
 ```
 
 ```Python
->>> animaux="Chien, chat, oiseau, moustique"
->>> animaux.split(",")
+>>> animaux="Chien; chat; oiseau; moustique"
+>>> animaux.split(";")
 ['Chien', ' chat', ' oiseau', ' moustique']
 ```
 
