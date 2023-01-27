@@ -165,10 +165,31 @@ Pour **trier** sur un autre champ, par exemple Ville, qui constitue pour les sou
 def tri_selon_ville(element):
     return element[5]
 
-table=sorted(table,key=tri_selon_ville)
+table1=sorted(table,key=tri_selon_ville)
 ```
 
-Remarque : pour trier dans l'ordre décroissant, écrire : `sorted(table,key=tri_selon_ville,reverse=True)`
+Remarque1 : pour trier dans l'ordre décroissant, écrire : `table1=sorted(table,key=tri_selon_ville,reverse=True)`
+
+Remarque 2: on peut aussi écrire 
+`table.sort(key=tri_selon_ville)`, mais dans ce cas on modifie la table de départ `table` alors que la méthode précédente permet de créer une nouveau tableau `table1` en gardant intact le tableau de départ.
+
+Trions maintenant le tableau des contacts par âge, pour cela on utilise :
+
+```Python
+
+>>> '11/02/1961'[-4::]#on extraie les quatre derniers caractères
+'1961'
+
+>>> int('11/02/1961'[-4::])#on transforme la chaîne de caractères en entier
+1961
+
+```
+```Python
+def tri_selon_age(contact):
+    return int(contact[4][-4::])
+
+table2=sorted(table,key=tri_selon_age)
+```
 
 Effectuons maintenant la **recherche** du contact dont le numéro de téléphone est '06 64 58 54 36'. Proposons pour cela une fonction `recherche` qui admet deux paramètres `telephone` et `tableau`, et qui parcourt l'ensemble des contacts de notre tableau à la recherche du contact qui possède ce numéro de téléphone : 
 
@@ -181,7 +202,7 @@ def recherche(telephone,tableau):
 ['Gascon', 'Robert', '06 64 58 54 36', 'robert.gascon@wanadoo.fr', '08/02/1988', 'Orléans']
 ```
 
-Effectuons maintenant un **filtrage** selon un ou plusieurs critères donnés, pour ne garder que quelques valeurs, ici par exemple la première lettre du nom :
+Effectuons maintenant un **filtrage** selon un ou plusieurs critères donnés (en ajoutant autant de conditions), pour ne garder que quelques valeurs, ici par exemple la première lettre du nom :
 
 ```Python
 def filtrer(tableau,premiere_lettre_du_nom):
@@ -197,7 +218,7 @@ def filtrer(tableau,premiere_lettre_du_nom):
     return resultat
 ```
 
-On peut également **dénombrer** le nombre d'éléments correspondant à ce filtrage :
+On peut également **dénombrer** les éléments correspondant à ce filtrage en les plaçant dans une liste :
 
 ```Python
 def denombre(tableau,premiere_lettre_du_nom):
