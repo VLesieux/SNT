@@ -214,6 +214,14 @@ def recherche(telephone,tableau):
 ['Gascon', 'Robert', '06 64 58 54 36', 'robert.gascon@wanadoo.fr', '08/02/1988', 'Orléans']
 ```
 
+Code pour vérifier les docstrings :
+
+```Python
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
+```
+
 Effectuons maintenant un **filtrage** selon un ou plusieurs critères donnés (en ajoutant autant de conditions), pour ne garder que quelques valeurs, ici par exemple la première lettre du nom :
 
 ```Python
