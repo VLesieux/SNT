@@ -13,7 +13,9 @@ En s'inspirant des exemples du cours réalisés sur le fichier `contacts.csv`, r
 
 
 1. Quels sont les descripteurs utilisés ? Affichez-les.
-2. **Trier** les données en fonction de l'indice de pollution au dioxyde d'azote NO<sub>2</sub> dans l'ordre décroissant, puis **filtrer** les données correspondant à l'Île de France (code Insee : 0) afin de déterminer quel jour était le plus pollué en dioxyde d'azote en Île de France.
+2. Question qu'on se pose : quel jour était le plus pollué en dioxyde d'azote en Île de France ?
+
+**Trier** les données en fonction de l'indice de pollution au dioxyde d'azote NO<sub>2</sub> dans l'ordre décroissant, puis **filtrer** les données correspondant à l'Île de France (code Insee : 0) afin de déterminer 
 
 **Indications** : On sera amené à écrire deux fonctions : `tri_selon_NO2(element)` pour trier les données dans l'odre décroissant de  `no2` et `filtre_selon_ninsee(ninsee,tableau)` pour ne garder que ce qui se rapporte à `ninsee`.
 
