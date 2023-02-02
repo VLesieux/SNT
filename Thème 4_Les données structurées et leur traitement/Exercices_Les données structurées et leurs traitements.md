@@ -6,14 +6,13 @@ Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité d
 
 Il s'agit d'un exemple de données ouvertes ou **open data** accessibles à tous. Les indices de qualité de l’air sont des outils de communication qui permettent de décrire périodiquement sous une forme simple (qualificatif, chiffre) l’état global de la qualité de l’air dans une aire géographique donnée.
 
-
 En s'inspirant des exemples du cours réalisés sur le fichier `contacts.csv`, répondre aux questions suivantes avec Python.  
  
 **Attention**, on observe que les séparateurs dans le fichier `csv` sont ici des virgules `,` et non des points-virgules `;`, il faut donc modifier en conséquence notre programme de lecture et de transformation de fichier `csv` en tableau.
 
 
 1. Quels sont les descripteurs utilisés ? Affichez-les.
-2. Question qu'on se pose : quel jour était le plus pollué en dioxyde d'azote en Île de France ?
+2. Question posée : quel jour a été le plus pollué en dioxyde d'azote en Île de France ?
 
 **Trier** les données en fonction de l'indice de pollution au dioxyde d'azote NO<sub>2</sub> dans l'ordre décroissant, puis **filtrer** les données correspondant à l'Île de France (code Insee : 0) afin de déterminer 
 
