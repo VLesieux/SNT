@@ -75,6 +75,7 @@ On souhaite traiter la table ci-dessous appelée `fruits` à l'aide des fonction
 
 ```Python
 fruits=[
+        ['espece','couleur','substrat','contenu'],
         ['fraise','rouge','sol','sans'],
         ['abricot','orange','arbre','noyau'],
         ['peche','orange','arbre','noyau'],
@@ -82,6 +83,8 @@ fruits=[
         ['melon','vert','sol','pepins'],
         ['avocat','vert','arbre','noyau']
         ]
+
+del(fruits[0])#supprime la ligne des descripteurs
 
 def fonction1(table):
     return len(table),len(table[0])
