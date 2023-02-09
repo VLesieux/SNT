@@ -88,13 +88,13 @@ def fonction1(table):
 
 def fonction2(table,indice,valeur):
     compteur=0
-    for objet in table:
-        if objet[indice]==valeur:
+    for ligne in table:
+        if ligne[indice]==valeur:
             compteur+=1
     return compteur
 
 def fonction3(table,nom):
-    for objet in table:
+    for ligne in table:
         if objet[0]==nom:
             return True
     return False
