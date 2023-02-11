@@ -174,8 +174,7 @@ Pour la suite, supprimer la ligne des descripteurs en ajoutant :
 
 2. On se demande combien il y a de cinémas dans le département 95.   
 
-Dans un premier temps, compléter les lignes de code de la fonction `denombre` donnée ci-dessous pour que sa docstring soit vérifiée.  
-On dénombre en effet 30 salles de cinéma dans le département 93.
+Pour cela, compléter les lignes de code de la fonction `denombre` donnée ci-dessous pour que sa docstring soit vérifiée. On dénombre en effet 30 salles de cinéma dans le département 93. Puis dans la console appliquer cette fonction au département 95.
 
 **Indication:** s'inspirer de la question 2 de l'exercice 2.
 
