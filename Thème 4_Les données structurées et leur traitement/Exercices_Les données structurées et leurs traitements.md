@@ -174,8 +174,10 @@ Pour la suite, supprimer la ligne des descripteurs en ajoutant :
 
 2. On se demande combien il y a de cinémas dans le département 95.   
 
-Dans un premier temps, compléter les lignes de code de la fonction `denombre` pour que sa docstring soit vérifiée.  
+Dans un premier temps, compléter les lignes de code de la fonction `denombre` donnée ci-dessous pour que sa docstring soit vérifiée.  
 On dénombre en effet 30 salles de cinéma dans le département 93.
+
+**Indication:** s'inspirer de la question 2 de l'exercice 2.
 
 ```Python
 
@@ -203,24 +205,26 @@ if __name__ == '__main__':
 
 3. Quel est le nom du cinéma d'Île de France (tous départements confondus) qui a fait le plus d'entrée en 2020 ?
 
-**Indications** : utiliser `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri.
+**Indication** : créer une liste triée en utilisant `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri.
 
 4. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
 
-**Indications** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir les éléments du tableau de la question précédente correspondant au code mis en paramètre.
+**Indication** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir les éléments du tableau de la question précédente correspondant au code mis en paramètre.
 
-5. On se propose de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
+5. On se propose maintenant de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
+
 Pour cela, on importe un programme appelé `calcul_distance_latitude_longitude.py` en ajoutant dans notre code 
+
 ```Python
 import calcul_distance_latitude_longitude as distance
 ```
  après avoir placé ce programme que l'on trouvera dans le dossier Assets dans le même dossier que le programme actif. 
  
-Ce programme possède une fonction `a_paris(geo)` qui renvoie la distance en <u>mètre</u> par rapport à Paris d'un point dont les coordonnées géographiques sont données sous forme de tuple (latitude,longitude) ; pour l'appeler et l'utiliser dans notre programme, il suffit d'écrire la fonction `distance.a_paris` par exemple 
+Ce programme possède une fonction `a_paris(geo)` qui renvoie la distance en <u>mètre</u> par rapport à Paris d'un point dont les coordonnées géographiques sont données sous forme de tuple (latitude,longitude) ; pour l'appeler et l'utiliser dans notre programme, il suffit d'écrire la fonction `distance.a_paris` comme le montre l'exemple ci-dessous:
 
 ```Python
 >>> distance.a_paris('48.873073,2.298394')
 4346.833687547045`
 ```
 
-**Indications** : réaliser une fonction de filtrage `filtre_selon_distance_a_Paris(tableau,rayon_a_Paris)` pour retenir les éléments du tableau correspondant à notre requête.
+**Indication** : réaliser une fonction de filtrage `filtre_selon_distance_a_Paris(tableau,rayon_a_Paris)` pour retenir les éléments du tableau correspondant à notre requête.
