@@ -153,7 +153,7 @@ for ligne in fichier:
 fichier.close
 ```
 
-Dans la console, noter les résultats affichés :
+Lancer le programme, puis, dans la console, observer les résultats qui s'affichent suite à ces commandes :
 
 a) print(len(table_des_donnees)) 
 
@@ -167,7 +167,8 @@ e) print(table_des_donnees[0].index('entrees_2020'))
 
 f) print(table_des_donnees[0].index('geo')) 
 
-Donnez la signification de ces résultats.   
+Donnez la signification de ces 6 résultats.
+
 Pour la suite, supprimer la ligne des descripteurs en ajoutant :  
  `del table_des_donnees[0]` après `fichier.close`
 
@@ -179,7 +180,7 @@ Pour cela, compléter les lignes de code de la fonction `denombre` donnée ci-de
 
 ```Python
 
-def denombre(departement,tableau):
+def denombre(departement,table):
     """
     Renvoie le nombre de salles de cinéma dans departement après le parcours de tableau 
     param : departement : str
@@ -200,14 +201,13 @@ if __name__ == '__main__':
     doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
 ```
 
-
 3. Quel est le nom du cinéma d'Île de France (tous départements confondus) qui a fait le plus d'entrée en 2020 ?
 
-**Indication** : créer une liste triée en utilisant `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri.
+**Indication** : créer un tableau trié `table_trie` dans l'ordre décroissant en utilisant `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri puis afficher dans la console le premier élement de ce tableau trié : `table_trie[0]`.  On s'inspirera de l'exercice 1.
 
 4. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
 
-**Indication** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir les éléments du tableau de la question précédente correspondant au code mis en paramètre.
+**Indication** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir parmi les éléments du tableau de la question précédente celui correspondant au code mis en paramètre.  On s'inspirera de l'exercice 1. On écrira dans la console : `filtre_selon_code('95',table_trie)[0]`.
 
 5. On se propose maintenant de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
 
@@ -216,13 +216,13 @@ Pour cela, on importe un programme appelé `calcul_distance_latitude_longitude.p
 ```Python
 import calcul_distance_latitude_longitude as distance
 ```
- après avoir placé ce programme que l'on trouvera dans le dossier Assets dans le même dossier que le programme actif. 
+ après avoir placé ce programme que l'on trouvera dans le dossier Assets du thème 4 dans le même dossier que le programme actif. 
  
-Ce programme possède une fonction `a_paris(geo)` qui renvoie la distance en <u>mètre</u> par rapport à Paris d'un point dont les coordonnées géographiques sont données sous forme de tuple (latitude,longitude) ; pour l'appeler et l'utiliser dans notre programme, il suffit d'écrire la fonction `distance.a_paris` comme le montre l'exemple ci-dessous:
+Ce programme possède une fonction `a_paris(geo)` qui renvoie la distance en **mètre** par rapport à Paris d'un point dont les coordonnées géographiques sont données sous forme de tuple (latitude,longitude) ; pour l'appeler et l'utiliser dans notre programme, il suffit d'écrire la fonction `distance.a_paris` comme le montre l'exemple ci-dessous:
 
 ```Python
 >>> distance.a_paris('48.873073,2.298394')
 4346.833687547045`
 ```
 
-**Indication** : réaliser une fonction de filtrage `filtre_selon_distance_a_Paris(tableau,rayon_a_Paris)` pour retenir les éléments du tableau correspondant à notre requête.
+**Indication** : réaliser une fonction de filtrage `filtre_selon_distance_a_Paris(tableau,rayon_a_Paris)` pour retenir les éléments du tableau correspondant à notre requête. La réponse sera donnée dans la console en écrivant la commande : `len(filtre_selon_distance_a_Paris(table_des_donnees,10000))`.
