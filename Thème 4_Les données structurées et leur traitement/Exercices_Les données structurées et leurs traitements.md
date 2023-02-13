@@ -156,17 +156,17 @@ fichier.close
 
 Lancer le programme, puis, dans la console, observer les résultats qui s'affichent suite à ces commandes :
 
-a) print(len(table_des_donnees)) 
+a) len(table_des_donnees)
 
-b) print(table_des_donnees[0]) 
+b) table_des_donnees[0]
 
-c) print(len(table_des_donnees[0])) 
+c) len(table_des_donnees[0])
 
-d) print(table_des_donnees[0].index('dep')) # noter ce résultat
+d) table_des_donnees[0].index('dep') # noter ce résultat
 
-e) print(table_des_donnees[0].index('entrees_2020')) # noter ce résultat
+e) table_des_donnees[0].index('entrees_2020') # noter ce résultat
 
-f) print(table_des_donnees[0].index('geo')) # noter ce résultat
+f) table_des_donnees[0].index('geo') # noter ce résultat
 
 Donnez la signification de ces 6 résultats.
 
