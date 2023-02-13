@@ -142,7 +142,8 @@ def fonction1(table):
 
 ### Exercice 3
 
-1. Dans un premier temps on extrait à l'aide du programme ci-dessous en Python les données d'un fichier csv appelé `les_salles_de_cinemas_en_ile-de-france.csv` .  On trouvera ce fichier sur le site de données ouvertes du gouvernement à cette [adresse](https://www.data.gouv.fr/fr/datasets/les-salles-de-cinema-en-ile-de-france-idf/) ; il faudra placer ce fichier dans le même dossier que votre programme python `exercice3.py`.
+1. Dans un premier temps on extrait à l'aide du programme ci-dessous en Python les données d'un fichier `csv` appelé `les_salles_de_cinemas_en_ile-de-france.csv` .  
+On trouvera ce fichier sur le site de données ouvertes du gouvernement à cette [adresse](https://www.data.gouv.fr/fr/datasets/les-salles-de-cinema-en-ile-de-france-idf/) ; il faudra placer ce fichier dans le même dossier que votre programme python `exercice3.py`.
 
 ```Python
 import csv
@@ -161,20 +162,20 @@ b) print(table_des_donnees[0])
 
 c) print(len(table_des_donnees[0])) 
 
-d) print(table_des_donnees[0].index('dep')) 
+d) print(table_des_donnees[0].index('dep')) # noter ce résultat
 
-e) print(table_des_donnees[0].index('entrees_2020'))  
+e) print(table_des_donnees[0].index('entrees_2020')) # noter ce résultat
 
-f) print(table_des_donnees[0].index('geo')) 
+f) print(table_des_donnees[0].index('geo')) # noter ce résultat
 
 Donnez la signification de ces 6 résultats.
 
-Pour la suite, supprimer la ligne des descripteurs en ajoutant :  
+Pour la suite, nous supprimerons la ligne des descripteurs en ajoutant :  
  `del table_des_donnees[0]` après `fichier.close`
 
 2. On se demande combien il y a de cinémas dans le département 95.   
 
-Pour cela, compléter les lignes de code de la fonction `denombre` donnée ci-dessous pour que sa docstring soit vérifiée. On dénombre en effet 30 salles de cinéma dans le département 93. Puis dans la console appliquer cette fonction au département 95.
+Pour cela, compléter les lignes de code de la fonction `denombre` donnée ci-dessous pour que sa docstring soit vérifiée. On dénombre en effet 30 salles de cinéma dans le département 93. Puis dans la console appliquer cette fonction au département 95 en écrivant `denombre("95",table_des_donnees)` pour obtenir la réponse à la question posée.
 
 **Indication:** s'inspirer de la question 2 de l'exercice 2.
 
@@ -203,11 +204,11 @@ if __name__ == '__main__':
 
 3. Quel est le nom du cinéma d'Île de France (tous départements confondus) qui a fait le plus d'entrée en 2020 ?
 
-**Indication** : créer un tableau trié `table_trie` dans l'ordre décroissant en utilisant `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri puis afficher dans la console le premier élement de ce tableau trié : `table_trie[0]`.  On s'inspirera de l'exercice 1.
+**Indication** : créer un tableau trié `table_trie` dans l'ordre décroissant (`reverse=True`) en utilisant `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri, puis pour obtenir la réponse à la question posée, afficher dans la console le premier élement de ce tableau trié : `table_trie[0]`.  On s'inspirera de l'exercice 1.
 
 4. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
 
-**Indication** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir parmi les éléments du tableau de la question précédente celui correspondant au code mis en paramètre.  On s'inspirera de l'exercice 1. On écrira dans la console : `filtre_selon_code('95',table_trie)[0]`.
+**Indication** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir parmi les éléments du tableau de la question précédente celui correspondant au code mis en paramètre.  On s'inspirera de l'exercice 1. On écrira dans la console : `filtre_selon_code('95',table_trie)[0]` pour obtenir la réponse à la question posée.
 
 5. On se propose maintenant de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
 
