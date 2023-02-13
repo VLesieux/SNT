@@ -175,7 +175,7 @@ Pour la suite, nous supprimerons la ligne des descripteurs en ajoutant :
 
 2. On se demande combien il y a de cinémas dans le département 95.   
 
-Pour cela, compléter les lignes de code de la fonction `denombre` donnée ci-dessous pour que sa docstring soit vérifiée. On dénombre en effet 30 salles de cinéma dans le département 93. Puis dans la console appliquer cette fonction au département 95 en écrivant `denombre("95",table_des_donnees)` pour obtenir la réponse à la question posée.
+Pour cela, compléter les lignes de code de la fonction `denombre` donnée ci-dessous pour que le test de sa docstring soit vérifié. On dénombre en effet 30 salles de cinéma dans le département 93. Puis dans la console appliquer cette fonction au département 95 en écrivant `denombre("95",table_des_donnees)` pour obtenir la réponse à la question posée.
 
 **Indication:** s'inspirer de la question 2 de l'exercice 2.
 
@@ -204,11 +204,12 @@ if __name__ == '__main__':
 
 3. Quel est le nom du cinéma d'Île de France (tous départements confondus) qui a fait le plus d'entrée en 2020 ?
 
-**Indication** : créer un tableau trié `table_trie` dans l'ordre décroissant (`reverse=True`) en utilisant `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri, puis pour obtenir la réponse à la question posée, afficher dans la console le premier élement de ce tableau trié : `table_trie[0]`.  On s'inspirera de l'exercice 1.
+**Indication** : créer un tableau trié `table_trie` dans l'ordre décroissant (`reverse=True`) en utilisant `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri, puis, pour obtenir la réponse à la question posée, afficher dans la console le premier élement de ce tableau trié : `table_trie[0]`.  On s'inspirera de l'exercice 1.
 
 4. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
 
-**Indication** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir parmi les éléments du tableau de la question précédente celui correspondant au code mis en paramètre.  On s'inspirera de l'exercice 1. On écrira dans la console : `filtre_selon_code('95',table_trie)[0]` pour obtenir la réponse à la question posée.
+**Indication** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir parmi les éléments du tableau de la question précédente ceux qui correspondent au code mis en paramètre.  On s'inspirera de l'exercice 1. 
+On écrira dans la console : `filtre_selon_code('95',table_trie)[0]` pour obtenir la réponse à la question posée.
 
 5. On se propose maintenant de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
 
@@ -219,11 +220,12 @@ import calcul_distance_latitude_longitude as distance
 ```
  après avoir placé ce programme que l'on trouvera dans le dossier Assets du thème 4 dans le même dossier que le programme actif. 
  
-Ce programme possède une fonction `a_paris(geo)` qui renvoie la distance en **mètre** par rapport à Paris d'un point dont les coordonnées géographiques sont données sous forme de tuple (latitude,longitude) ; pour l'appeler et l'utiliser dans notre programme, il suffit d'écrire la fonction `distance.a_paris` comme le montre l'exemple ci-dessous:
+Ce programme possède une fonction `a_paris(geo)` qui renvoie la distance en **mètre** par rapport à Paris d'un point dont les coordonnées géographiques sont données sous forme de tuple (latitude,longitude) comme dans les données ; pour l'appeler et l'utiliser dans notre programme, il suffit d'écrire la fonction `distance.a_paris` comme le montre l'exemple ci-dessous:
 
 ```Python
 >>> distance.a_paris('48.873073,2.298394')
 4346.833687547045`
 ```
 
-**Indication** : réaliser une fonction de filtrage `filtre_selon_distance_a_Paris(tableau,rayon_a_Paris)` pour retenir les éléments du tableau correspondant à notre requête. La réponse sera donnée dans la console en écrivant la commande : `len(filtre_selon_distance_a_Paris(table_des_donnees,10000))`.
+**Indication** : réaliser une fonction de filtrage `filtre_selon_distance_a_Paris(tableau,rayon_a_Paris)` pour retenir les éléments du tableau correspondant à notre requête. 
+La réponse sera donnée dans la console en écrivant la commande : `len(filtre_selon_distance_a_Paris(table_des_donnees,10000))`.
