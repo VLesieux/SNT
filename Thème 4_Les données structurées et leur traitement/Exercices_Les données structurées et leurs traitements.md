@@ -142,7 +142,7 @@ def fonction1(table):
 
 ### Exercice 3
 
-1. Dans un premier temps on extrait à l'aide du programme ci-dessous en Python les données d'un fichier csv appelé `les_salles_de_cinemas_en_ile-de-france.csv` .  On trouvera également ce fichier sur le site de données ouvertes du gouvernement à cette [adresse](https://www.data.gouv.fr/fr/datasets/les-salles-de-cinema-en-ile-de-france-idf/) ; il faudra placer ce fichier dans le même dossier que votre programme python `exercice3.py`.
+1. Dans un premier temps on extrait à l'aide du programme ci-dessous en Python les données d'un fichier csv appelé `les_salles_de_cinemas_en_ile-de-france.csv` .  On trouvera ce fichier sur le site de données ouvertes du gouvernement à cette [adresse](https://www.data.gouv.fr/fr/datasets/les-salles-de-cinema-en-ile-de-france-idf/) ; il faudra placer ce fichier dans le même dossier que votre programme python `exercice3.py`.
 
 ```Python
 import csv
