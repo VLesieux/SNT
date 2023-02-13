@@ -208,7 +208,7 @@ if __name__ == '__main__':
 
 4. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
 
-**Indication** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir parmi les éléments du tableau de la question précédente ceux qui correspondent au département mis en paramètre.  On s'inspirera de l'exercice 1.    
+**Indication** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir parmi les éléments du tableau de la question précédente ceux qui correspondent au code du département mis en paramètre.  On s'inspirera de l'exercice 1.    
 On écrira dans la console : `filtre_selon_code('95',table_trie)[0]` pour obtenir la réponse à la question posée.
 
 5. On se propose maintenant de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
