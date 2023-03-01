@@ -8,6 +8,62 @@ En utilisant openStreetMap, dire ce que l'on peut trouver aux coordonnées (lati
 
 ### Exercice 2
 
+Le lien entre la longitude et le décalage horaire est que la Terre est divisée en 24 fuseaux horaires, chacun couvrant 15 degrés de longitude (car 360°/24h=15°/h). Le temps solaire moyen local (heure locale) est décalé de 1 heure pour chaque tranche de 15 degrés de longitude vers l'est ou vers l'ouest du méridien de Greenwich, qui est le point de référence pour le fuseau horaire GMT (Greenwich Mean Time) ou UTC (Coordinated Universal Time).
+
+Compléter la ligne manquante de la fonction `decalage_horaire(ville1,ville2)` pour que le test soit validé, puis utiliser le programme pour demander le décalage horaire entre Paris et New York.
+
+Pour arrondir, utiliser `round()`
+
+```Python
+>>> round(1.67)
+2
+```
+
+Dans ce programme, on réalise un **dictionnaire** appelé `localisations` qui associe à une ville (une clé) un tuple correspondant à ses coordonnées géographiques (sa valeur).
+
+```Python
+>>> localisations["London"]
+(51.509865, -0.1278)#renvoie le tuple associé à la clé "London"
+>>> localisations["London"][0]#renvoie la première valeur du tuple, c'est-à-dire la latitude de la ville
+51.509865
+>>> localisations["London"][1]#renvoie la deuxième valeur du tuple, c'est-à-dire la longitude de la ville
+-0.1278
+```
+
+```Python
+################################ réalisation d'un dictionnaire ########################
+
+localisations={    
+"London":(51.509865,-0.1278),
+"Hong Kong":(22.302711,114.177216),
+"Paris":(48.866667,2.3522),
+"New York":(40.712784,-74.005941)
+    }
+
+#######################################################################################
+
+def decalage_horaire(ville1,ville2):
+    """
+    Donne le décalage horaire entre les deux villes
+    param : ville 1: str
+    param : ville 2: str
+    return : str
+    >>> decalage_horaire("London","Hong Kong")
+    'Le décalage horaire entre Hong Kong et London est de -8 h'
+    """
+    difference_longitudes=(localisations[ville1][1]-localisations[ville2][1])
+    time_zone_difference=...................................................
+    phrase="Le décalage horaire entre "+ville2+" et "+ville1+" est de "+str(time_zone_difference)+" h"
+    return phrase
+
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
+```
+
+### Exercice 3
+
 Il y a plus de 2000 ans, le scientifique grec Ératosthène invente la discipline de la géographie dont le terme est encore utilisé aujourd'hui ; il a même réussi à estimer la circonférence de la Terre.
 
 Pour cela il a constaté qu'à midi à Syène (aujourd’hui Assouan en Égypte) les rayons du Soleil sont à la verticale (un puits creusé en donne une preuve expérimentale car il est éclairé tout entier). Le même jour à la même heure, à Alexandrie, ville située quasiment sur le même méridien (à 3° de longitude près), les rayons lumineux forment un angle α de 7,2° avec un bâton planté verticalement.
@@ -21,7 +77,7 @@ De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours
 3. Estimer l'erreur relative commise, exprimée en pourcentage, en utilisant la valeur connue du rayon moyen de la Terre : 6 371 km. Le pourcentage d'erreur relative entre une valeur expérimentale e<sub>exp</sub> et une valeur théorique e<sub>théo</sub> est donné par : 100×|e<sub>exp</sub>-e<sub>théo</sub>|/e<sub>théo</sub>.
 
 
-### Exercice 3
+### Exercice 4
 
 On rappelle le code pour faire les doctests.
 
@@ -66,7 +122,7 @@ Des corrections doivent être apportées dans la mesure du temps pour tenir comp
 On trouvera ici la démonstration classique du phénomène de [dilatation des durées](Assets/demonstration.md).
 
 
-### Exercice 4
+### Exercice 5
 
 En utilisant [Géoportail](https://www.geoportail.gouv.fr/) et l'outil "mesurer une distance", trouver la distance à vol d'oiseau de la Tour Eiffel à l'Arc de Triomphe.
 
@@ -124,7 +180,7 @@ En déduire la distance à vol d'oiseau entre ces deux villes : Lille : (50.6365
 Retrouver le résultat à cette [adresse](https://www.coordonnees-gps.fr/distance).
 
 
-### Exercice 5
+### Exercice 6
 
 Donner l'heure et les coordonnées d'acquisition de la trame NMEA 0183 suivante :
 '$GPGLL,4835.07,N,235.47,E,203712,A'
@@ -195,7 +251,7 @@ Indications :
 'requin-marteau'
 ```
 
-### Exercice 6
+### Exercice 7
 
 1) Déterminer "au jugé" le plus court chemin de A à B dans le graphe suivant et donner sa longueur (chaque arête possède une longueur exprimée par exemple en km).
 
