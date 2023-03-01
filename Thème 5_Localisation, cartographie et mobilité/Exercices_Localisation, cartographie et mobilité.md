@@ -79,21 +79,13 @@ De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours
 
 ### Exercice 4
 
-On rappelle le code pour faire les doctests.
-
-```Python
-if __name__ == '__main__':
-  import doctest
-  doctest.testmod(verbose=True)
-```
-
-En Python, écrire une fonction `distance` telle que si un satellite a envoyé à l'instant t1 un signal, qui ensuite a été reçu à l'instant t2 par un récepteur, `distance(t1,t2)` renvoie la distance entre le satellite et le récepteur exprimée en km.
+Compléter la fonction `distance` ci-dessous telle que si un satellite a envoyé à l'instant t1 un signal, qui ensuite a été reçu à l'instant t2 par un récepteur, `distance(t1,t2)` renvoie la distance entre le satellite et le récepteur exprimée en km.
 Les dates t1 et t2 sont données en heure UTC.     
 exemple : 064036.261116 signifie que la trame a été envoyée à 06 h 40 min 36.261116 s.      
 
 On donne la valeur exacte de la célérité de la lumière : c=299.792,458 km/s.
 
-Expliquer pourquoi elle est donnée en physique avec 3 chiffres significatifs sous la forme : c=3.00×10<sup>8</sup> m.s<sup>-1</sup>.
+On pourra expliquer pourquoi cette valeur est communément donnée en physique avec 3 chiffres significatifs sous la forme : c=3.00×10<sup>8</sup> m.s<sup>-1</sup>.
 
 ```Python
 def distance(t1,t2):
@@ -105,6 +97,10 @@ def distance(t1,t2):
     >>> distance(064036.261116,064036.3284959)
     20199.98584068947
     """
+
+if __name__ == '__main__':
+  import doctest
+  doctest.testmod(verbose=True)
 ```
 
 Le GPS comprend au moins 24 satellites circulant à 20 200 km d'altitude. Ils se répartissent sur six orbites distinctes à raison de quatre satellites par orbite, et tournent à une vitesse de l'ordre de 14000 km/h.
@@ -119,22 +115,22 @@ C'est la raison pour laquelle des horloges de grande précision sont embarquées
 
 Des corrections doivent être apportées dans la mesure du temps pour tenir compte des effets de la relativité  [restreinte](https://www.youtube.com/watch?v=Ytk2z3NApYo) (le temps ne s'écoule pas au même rythme à bord du satellite animé d'une grande vitesse par rapport à la Terre que sur Terre) et la relativité générale (la gravité joue également un rôle sur l'écoulement du temps) ; ces deux théories ont été découvertes par Einstein en 1905.
 
-On trouvera ici la démonstration classique du phénomène de [dilatation des durées](Assets/demonstration.md).
+On trouvera ici, si l'on est intéressé, la démonstration classique du phénomène de [dilatation des durées](Assets/demonstration.md).
 
 
 ### Exercice 5
 
 En utilisant [Géoportail](https://www.geoportail.gouv.fr/) et l'outil "mesurer une distance", trouver la distance à vol d'oiseau de la Tour Eiffel à l'Arc de Triomphe.
 
-Latitude de Eiffel Tower	48.858370.  
-Longitude de Eiffel Tower	2.294481. 
+Latitude de Eiffel Tower :	48.858370.  
+Longitude de Eiffel Tower : 2.294481. 
 
-Latitude de arc de triomphe	48.873792.   
-Longitude de arc de triomphe	2.295028. 
+Latitude de arc de triomphe :	48.873792.   
+Longitude de arc de triomphe : 2.295028. 
 
 <img src="Assets/Calcul_distance.png">
 
-La démonstration du calcul de la distance à vol d'oiseau à partir des latitudes et longitudes se fait en exprimant le [produit scalaire](Assets/produit_scalaire.md) de deux manières différentes. Vérifier sa compréhension sur un [exemple](Assets/exemple.md) simple.
+La démonstration du calcul de la distance à vol d'oiseau à partir des latitudes et longitudes peut se faire aisément en exprimant le [produit scalaire](Assets/produit_scalaire.md) de deux manières différentes. Vérifier sa compréhension sur un [exemple](Assets/exemple.md) simple.
 
 Voir la [démonstration](Assets/demonstration_distance.md).
 
@@ -229,7 +225,7 @@ Indications :
 'chien'
 ```
 
-- Pour extraire une partie d'une chaîne de caractères à l'aide d'un `slicing`
+- Pour extraire une partie d'une chaîne de caractères à l'aide d'une découpe ou `slicing`
 
 ```Python
 >>> "poisson"[3:5]
