@@ -2,7 +2,7 @@
 
 ### Exercice 1
 
-1) Rappeler comment fonctionne la géolocalisation par satellites ou GPS.
+1) Rappeler avec vos mots comment fonctionne la géolocalisation par satellites ou GPS.
 
 2) En utilisant [Géoportail](https://www.geoportail.gouv.fr/), trouver les coordonnées géographiques (latitude et longitude) du château de Chambord.
 
