@@ -6,7 +6,7 @@
 
 2) En utilisant [Géoportail](https://www.geoportail.gouv.fr/), trouver les coordonnées géographiques (latitude et longitude) du château de Chambord.
 
-En utilisant openStreetMap, dire ce que l'on peut trouver aux coordonnées (latitude : 45.83267°, longitude : 6.86517°). Il suffit de changer les coordonnées dans l'[adresse ou url](https://www.openstreetmap.org/#map=14/45.8359/6.8677) du site.
+3) En utilisant [openStreetMap](https://www.openstreetmap.org/#map=14/45.8359/6.8677), dire ce que l'on peut trouver aux coordonnées (latitude : 45.83267°, longitude : 6.86517°). Il suffit de changer les coordonnées dans l'url.
 
 ### Exercice 2
 
