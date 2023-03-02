@@ -2,7 +2,7 @@
 
 ### Exercice 1
 
-1) Rappeler avec vos mots comment fonctionne la géolocalisation par satellites ou GPS.
+1) Rappeler avec vos mots comment fonctionne le GPS. Quelles sont les informations contenues dans le signal émis par un satellite ? Pourquoi une grande précision dans la mesure du temps est-elle nécessaire ?
 
 2) En utilisant [Géoportail](https://www.geoportail.gouv.fr/), trouver les coordonnées géographiques (latitude et longitude) du château de Chambord.
 
