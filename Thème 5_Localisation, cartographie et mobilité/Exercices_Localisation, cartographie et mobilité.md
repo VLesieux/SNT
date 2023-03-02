@@ -2,7 +2,7 @@
 
 ### Exercice 1
 
-1) Rappeler avec vos mots comment fonctionne le GPS. Quelles sont les informations contenues dans le signal émis par un satellite ? Pourquoi une grande précision dans la mesure du temps est-elle nécessaire ?
+1) Rappeler avec vos mots comment fonctionne le GPS. Quelles sont les informations contenues dans le signal émis par un satellite ? Pourquoi une grande précision dans la mesure du temps est-elle nécessaire ? Il est dit dans la vidéo : " une erreur de 1 millionième de seconde sur le temps mène à une erreur de 300 m ", justifier.
 
 2) En utilisant [Géoportail](https://www.geoportail.gouv.fr/), trouver les coordonnées géographiques (latitude et longitude) du château de Chambord.
 
@@ -104,21 +104,6 @@ if __name__ == '__main__':
   import doctest
   doctest.testmod(verbose=True)
 ```
-
-Le GPS comprend au moins 24 satellites circulant à 20 200 km d'altitude. Ils se répartissent sur six orbites distinctes à raison de quatre satellites par orbite, et tournent à une vitesse de l'ordre de 14000 km/h.
-
-<img width="400" height="400" src="Assets/constellation.png">
-
-Compléter la phrase : une erreur de 30 ns (nanoseconde) provoque une erreur de ... mètres sur la géolocalisation.
-
-C'est la raison pour laquelle des horloges de grande précision sont embarquées à bord des satellites G.P.S ; ce sont des horloges dites **atomiques** (basées sur des transitions énergétiques électroniques au sein de l'atome de césium Cs). 
-
-<img src="Assets/horloge.jpg"> 
-
-Des corrections doivent être apportées dans la mesure du temps pour tenir compte des effets de la relativité  [restreinte](https://www.youtube.com/watch?v=Ytk2z3NApYo) (le temps ne s'écoule pas au même rythme à bord du satellite animé d'une grande vitesse par rapport à la Terre que sur Terre) et la relativité générale (la gravité joue également un rôle sur l'écoulement du temps) ; ces deux théories ont été découvertes par Einstein en 1905.
-
-On trouvera ici, si l'on est intéressé, la démonstration classique du phénomène de [dilatation des durées](Assets/demonstration.md).
-
 
 ### Exercice 5
 
