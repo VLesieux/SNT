@@ -45,7 +45,7 @@ Le système GPS utilise environ 30 satellites en orbite autour de la Terre. Chaq
 
 <img src="Assets/spectre.jpg">
 
-Un récepteur GPS peut capter un tel signal et en déduire le temps que le signal a mis pour lui parvenir sachant que le signal est une onde électromagnétique qui se propage à la **vitesse de la lumière** c'est-à-dire à la célérité **c = 300 000 km/s = 3,00×10<sup>8</sup> m·s<sup>-1</sup>**.
+Un récepteur GPS peut capter un tel signal (ou trame) et en déduire le temps que le signal a mis pour lui parvenir sachant que le signal est une onde électromagnétique qui se propage à la **vitesse de la lumière** c'est-à-dire à la célérité **c = 300 000 km/s = 3,00×10<sup>8</sup> m·s<sup>-1</sup>**.
 
 On utilise pour cela la relation : **d=c·Δt** où Δt désigne la durée de transfert du signal, différence entre la date de réception et la date d'émission .
 
@@ -55,6 +55,23 @@ Il faut donc à priori 3 satellites pour pouvoir localiser l'utilisateur à l'in
 <img src="Assets/GPS_Sphere.png">
 
 La difficulté est cependant de synchroniser les horloges des satellites et celle du récepteur. Une erreur d'un millionième de seconde en effet provoque une erreur de 300 mètres sur la position (cf. exercice 2). Le récepteur ne peut bien entendu pas bénéficier d'une horloge atomique comme les satellites ; il doit néanmoins disposer d'une horloge assez stable, mais dont l'heure n'est a priori pas synchronisée avec celle des satellites. Les signaux de quatre satellites au moins sont nécessaires pour déterminer ce décalage, puisqu'il faut résoudre un système d'au moins quatre équations mathématiques à quatre inconnues qui sont la position dans les trois dimensions (3 inconnues) plus le décalage de l'horloge du récepteur avec l'heure GPS (1 inconnue). 
+
+### Trame NMEA
+
+Pour échanger des informations de localisation, il faut que les différents appareils puissent se comprendre. La norme NMEA 0183 est un protocole de communication mis au point par la National Electronics Association (NMEA) et notamment utilisé pour la navigation maritime.
+
+Exemple : 
+
+$GPGLL,2736.45,N,10321.12,W,134244,A
+
+- Une trame commence toujours par $
+- GP signifie que l'information provient d'un récepteur GPS
+- Les trois caractères suivants correspondent au type de la trame et précise donc quelles sont les informations communiquées. Dans notre exemple, GLL signifie que la trame contient les coordonnées géographiques de latitude et de longitude
+- 2736.45,N correspond à la latitude 27°36'45" Nord
+- 10321.12,W correspond à la longitude 103°21'12'' West
+- 134244 donne l'heure de calcul de la position : 13 h 42 min 44 s UTC
+- A signifie que la trame est vide
+
 
 ### Les bases de données cartographiques
 
@@ -92,23 +109,6 @@ Quel est le plus court chemin pour aller de Grenoble à Mâcon ?
 En énumérant tous les chemins possibles, on voit que le chemin Grenoble - Chambéry - Lyon - Mâcon, de longueur 60+110+70=240 km est le plus court.
 
 Cependant, énumérer toutes les possibilités pour une carte réelle prendrait trop de temps ; l'algorithme de Dijkstra procède de façon plus intelligente, en calculant la distance de la ville de départ à toutes les autres villes de proche en proche. (cf. exercice 7)
-
-
-### Trame NMEA
-
-Pour échanger des informations de localisation, il faut que les différents appareils puissent se comprendre. La norme NMEA 0183 est un protocole de communication mis au point par la National Electronics Association (NMEA) et notamment utilisé pour la navigation maritime.
-
-Exemple : 
-
-$GPGLL,2736.45,N,10321.12,W,134244,A
-
-- Une trame commence toujours par $
-- GP signifie que l'information provient d'un récepteur GPS
-- Les trois caractères suivants correspondent au type de la trame et précise donc quelles sont les informations communiquées. Dans notre exemple, GLL signifie que la trame contient les coordonnées géographiques de latitude et de longitude
-- 2736.45,N correspond à la latitude 27°36'45" Nord
-- 10321.12,W correspond à la longitude 103°21'12'' West
-- 134244 donne l'heure de calcul de la position : 13 h 42 min 44 s UTC
-- A signifie que la trame est vide
 
 
 
