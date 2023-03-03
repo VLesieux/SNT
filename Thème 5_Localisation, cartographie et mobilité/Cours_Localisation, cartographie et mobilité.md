@@ -57,7 +57,7 @@ Il faut donc à priori 3 satellites pour pouvoir localiser l'utilisateur à l'in
 
 <img src="Assets/GPS_Sphere.png">
 
-La difficulté est cependant de synchroniser les horloges des satellites et celle du récepteur. Une erreur d'un millionième de seconde en effet provoque une erreur de 300 mètres sur la position. Le récepteur ne peut bien entendu pas bénéficier d'une horloge atomique comme les satellites ; il doit néanmoins disposer d'une horloge assez stable, mais dont l'heure n'est a priori pas synchronisée avec celle des satellites. Les signaux de quatre satellites au moins sont nécessaires pour déterminer ce décalage, puisqu'il faut résoudre un système d'au moins quatre équations mathématiques à quatre inconnues qui sont la position dans les trois dimensions (3 inconnues) plus le décalage de l'horloge du récepteur avec l'heure GPS (1 inconnue). 
+La difficulté est cependant de synchroniser les horloges des satellites et celle du récepteur. Une erreur d'un millionième de seconde en effet provoque une erreur de 300 mètres sur la position. Le récepteur ne peut bien entendu pas bénéficier d'une horloge atomique comme les satellites ; il doit néanmoins disposer d'une horloge assez stable, mais dont l'heure n'est pas à priori synchronisée avec celle des satellites. Les signaux de quatre satellites au moins sont donc nécessaires pour déterminer ce décalage, puisqu'il faut résoudre un système d'au moins quatre équations mathématiques à quatre inconnues qui sont la position dans les trois dimensions (3 inconnues) plus le décalage de l'horloge du récepteur avec l'heure GPS (1 inconnue). 
 
 Le GPS comprend au moins 24 satellites circulant à 20 200 km d'altitude. Ils se répartissent sur six orbites distinctes à raison de quatre satellites par orbite, et tournent à une vitesse de l'ordre de 14000 km/h.
 
@@ -65,7 +65,7 @@ Le GPS comprend au moins 24 satellites circulant à 20 200 km d'altitude. Ils se
 
 Compléter la phrase : une erreur de 30 ns (nanoseconde) provoque une erreur de ... mètres sur la géolocalisation.
 
-C'est la raison pour laquelle des horloges de grande précision sont embarquées à bord des satellites G.P.S ; ce sont des horloges dites **atomiques** (basées sur des transitions énergétiques électroniques au sein de l'atome de césium Cs). 
+C'est la raison pour laquelle des horloges de grande précision sont embarquées à bord des satellites G.P.S ; ce sont des horloges dites **atomiques** (basées sur des transitions énergétiques électroniques au sein de l'atome de césium Cs : émission dont la fréquence est non mutale (constante quelques soient les conditions extérieures) et qui sert de référence pour la mesure du temps). 
 
 <img src="Assets/horloge.jpg"> 
 
