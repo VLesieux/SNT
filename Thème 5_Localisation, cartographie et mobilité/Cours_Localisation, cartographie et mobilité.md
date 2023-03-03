@@ -29,7 +29,7 @@ La **longitude** d'un point est l'angle θ sur le schéma ci-dessous qui varie d
 On peut aussi préciser l'**altitude** d'un lieu qui est mesurée par rapport au niveau de la mer.
 
 Pour plus de précision, l'angle peut être donné en **minute d'arc** : 1°=60'.
-Une minute d'arc peut elle-même être subdivisé en **seconde d'arc** : 1'=60''.
+Une minute d'arc peut elle-même être subdivisée en **seconde d'arc** : 1'=60''.
 
 Exemple : les coordonnées de la Tour Eiffel sont : 48°51'31" N (latitude) et 2°17'39" E (longitude).
 
@@ -38,7 +38,10 @@ On trouvera [ici](Assets/measurements_from_the_sky.pdf) une activité permettant
 ### La localisation GPS : [vidéo](https://webtv.univ-lille.fr/video/5507/comment-fonctionne-un-gps)
 
 
-Le système GPS utilise environ 30 satellites en orbite autour de la Terre. Chaque satellite émet des signaux ou **ondes électromagnétiques** contenant la position du satellite et l'heure d'émission du signal.
+Le système GPS utilise environ 30 satellites en orbite autour de la Terre. Chaque satellite émet des signaux ou **ondes électromagnétiques** contenant deux informations : 
+
+- la position du satellite  
+- l'heure d'émission du signal.  
 
 <img src="Assets/onde_electromag.png">
 
