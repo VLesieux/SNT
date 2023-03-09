@@ -88,8 +88,9 @@ rayon_terre_theorique=6371#en km
 
 def mesure_rayon_terre(distance_entre_villes,angle_en_degre):
     """
-    Renvoie la valeur du rayon de la Terre
+    Renvoie la valeur du rayon de la Terre déterminée
     à partir de la mesure de l'angle et de la mesure de la distance
+    ainsi que l'erreur relative par rapport à la valeur théorique
     param : angle_en_degre : float
     param : distance_entre_villes : float
     return : tuple
@@ -110,22 +111,28 @@ if __name__ == '__main__':
 
 Compléter la fonction `distance` ci-dessous telle que si un satellite a envoyé à l'instant t1 un signal, qui ensuite a été reçu à l'instant t2 par un récepteur, `distance(t1,t2)` renvoie la distance entre le satellite et le récepteur exprimée en km.
 Les dates t1 et t2 sont données en heure UTC.     
+
 exemple : 064036.261116 signifie que la trame a été envoyée à 06 h 40 min 36.261116 s.      
 
-On donne la valeur exacte de la célérité de la lumière : c=299.792,458 km/s.
+On donne la valeur exacte de la célérité de la lumière : c=299 792.458 km/s.
 
-On pourra expliquer pourquoi cette valeur est communément donnée en physique avec 3 chiffres significatifs sous la forme : c=3.00×10<sup>8</sup> m.s<sup>-1</sup>.
+On pourra expliquer pourquoi la célérité de la lumière est communément donnée en physique avec 3 chiffres significatifs sous la forme : c=3.00×10<sup>8</sup> m.s<sup>-1</sup>.
 
 ```Python
+
+c=299792.458#km/s
+
 def distance(t1,t2):
     """
-    Renvoie la distance calculée à partir de la date d'émission t1 du signal émis par le satellite et la date t2 de réception du calculateur du G.P.S
+    Renvoie la distance en km calculée à partir de la date d'émission t1 du signal émis par le satellite et la date t2 de réception du calculateur du G.P.S
+    Cette distance qui nous sépare du satellite
     param : t1 : float
     param : t2 : float
     return : float
     >>> distance(064036.261116,064036.3284959)
     20199.98584068947
     """
+
 
 if __name__ == '__main__':
   import doctest
