@@ -92,6 +92,7 @@ def mesure_rayon_terre(distance_entre_villes,angle_en_degre):
     à partir de la mesure de l'angle et de la mesure de la distance
     param : angle_en_degre : float
     param : distance_entre_villes : float
+    return : tuple
     >>> mesure_rayon_terre(800,7.2)
     (6366.197723675813, 0.07537712014106114)
     """
