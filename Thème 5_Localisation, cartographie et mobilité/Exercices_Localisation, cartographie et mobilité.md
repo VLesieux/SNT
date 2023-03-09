@@ -124,8 +124,9 @@ c=299792.458#km/s
 
 def distance(t1,t2):
     """
-    Renvoie la distance en km calculée à partir de la date d'émission t1 du signal émis par le satellite et la date t2 de réception du calculateur du G.P.S
-    Cette distance qui nous sépare du satellite
+    Renvoie la distance en km calculée à partir de la date d'émission t1 du signal
+    émis par le satellite et la date t2 de réception du calculateur du G.P.S
+    C'est la distance qui nous sépare du satellite
     param : t1 : float
     param : t2 : float
     return : float
