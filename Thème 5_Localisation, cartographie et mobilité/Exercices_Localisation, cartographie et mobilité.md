@@ -14,23 +14,6 @@ Le lien entre la longitude et le décalage horaire est que la Terre est divisée
 
 Compléter la ligne manquante de la fonction `decalage_horaire(ville1,ville2)` pour que le test soit validé, puis utiliser le programme pour demander le décalage horaire entre Paris et New York.
 
-Pour arrondir, utiliser `round()`
-
-```Python
->>> round(1.67)
-2
-```
-
-Dans ce programme, on réalise un **dictionnaire** appelé `localisations` qui associe à une ville (une clé) un tuple correspondant à ses coordonnées géographiques (sa valeur).
-
-```Python
->>> localisations["London"]
-(51.509865, -0.1278)#renvoie le tuple associé à la clé "London"
->>> localisations["London"][0]#renvoie la première valeur du tuple, c'est-à-dire la latitude de la ville
-51.509865
->>> localisations["London"][1]#renvoie la deuxième valeur du tuple, c'est-à-dire la longitude de la ville
--0.1278
-```
 
 ```Python
 ################################ réalisation d'un dictionnaire ########################
@@ -63,6 +46,25 @@ if __name__ == '__main__':
     import doctest
     doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
 ```
+
+**Indications** : Pour arrondir, utiliser `round()`
+
+```Python
+>>> round(1.67)
+2
+```
+
+Dans ce programme, on a réalisé un **dictionnaire** appelé `localisations` qui associe à une ville (une clé) un tuple correspondant à ses coordonnées géographiques (sa valeur).
+
+```Python
+>>> localisations["London"]
+(51.509865, -0.1278)#renvoie le tuple associé à la clé "London"
+>>> localisations["London"][0]#renvoie la première valeur du tuple, c'est-à-dire la latitude de la ville
+51.509865
+>>> localisations["London"][1]#renvoie la deuxième valeur du tuple, c'est-à-dire la longitude de la ville
+-0.1278
+```
+
 
 ### Exercice 3
 
