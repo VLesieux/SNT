@@ -12,7 +12,8 @@
 
 Le lien entre la longitude et le décalage horaire est que la Terre est divisée en 24 fuseaux horaires, chacun couvrant 15 degrés de longitude (car 360°/24h=15°/h). Le temps solaire moyen local (heure locale) est décalé de 1 heure pour chaque tranche de 15 degrés de longitude vers l'est ou vers l'ouest du méridien de Greenwich, qui est le point de référence pour le fuseau horaire GMT (Greenwich Mean Time) ou UTC (Coordinated Universal Time).
 
-Compléter la ligne manquante de la fonction `decalage_horaire(ville1,ville2)` pour que le test soit validé, puis utiliser le programme pour demander le décalage horaire entre Paris et New York.
+1) Compléter la ligne manquante de la fonction `decalage_horaire(ville1,ville2)` pour que le test de la docstring soit validé.  
+2) Utiliser le programme pour demander le décalage horaire entre Paris et New York.
 
 
 ```Python
