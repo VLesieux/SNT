@@ -93,10 +93,10 @@ def mesure_rayon_terre(distance_entre_villes,angle_en_degre):
     param : angle_en_degre : float
     param : distance_entre_villes : float
     >>> mesure_rayon_terre(800,7.2)
-    (6366.197723675813, -0.07537712014106114)
+    (6366.197723675813, 0.07537712014106114)
     """
     angle_en_radian=math.pi*(angle_en_degre/180)
-    rayon_terre=..................
+    rayon_terre=......................
     erreur_relative=(abs(rayon_terre-rayon_terre_theorique)/rayon_terre_theorique)*100
     return rayon_terre,erreur_relative
 
