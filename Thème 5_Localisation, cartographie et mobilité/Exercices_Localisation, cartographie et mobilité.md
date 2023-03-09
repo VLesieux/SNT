@@ -86,13 +86,13 @@ import math
 
 rayon_terre_theorique=6371#en km
 
-def mesure_rayon_terre(distance_entre_villesangle_en_degre,):
+def mesure_rayon_terre(distance_entre_villes,angle_en_degre):
     """
     Renvoie la valeur du rayon de la Terre
     à partir de la mesure de l'angle et de la mesure de la distance
     param : angle_en_degre : float
     param : distance_entre_villes : float
-    >>> mesure_rayon_terre(7.2,800)
+    >>> mesure_rayon_terre(800,7.2)
     (6366.197723675813, -0.07537712014106114)
     """
     angle_en_radian=math.pi*(angle_en_degre/180)
