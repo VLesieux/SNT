@@ -81,6 +81,29 @@ De plus il sait que les caravanes de chameaux partant de Syène mettent 50 jours
 2. Donner la valeur de la circonférence de la Terre calculée par Ératosthène. 
 3. Estimer l'erreur relative commise, exprimée en pourcentage, en utilisant la valeur connue du rayon moyen de la Terre : 6 371 km. Le pourcentage d'erreur relative entre une valeur expérimentale e<sub>exp</sub> et une valeur théorique e<sub>théo</sub> est donné par : 100×|e<sub>exp</sub>-e<sub>théo</sub>|/e<sub>théo</sub>.
 
+```Python
+import math
+
+rayon_terre_theorique=6371#en km
+
+def mesure_rayon_terre(distance_entre_villesangle_en_degre,):
+    """
+    Renvoie la valeur du rayon de la Terre
+    à partir de la mesure de l'angle et de la mesure de la distance
+    param : angle_en_degre : float
+    param : distance_entre_villes : float
+    >>> mesure_rayon_terre(7.2,800)
+    (6366.197723675813, -0.07537712014106114)
+    """
+    angle_en_radian=math.pi*(angle_en_degre/180)
+    rayon_terre=..................
+    erreur_relative=(abs(rayon_terre-rayon_terre_theorique)/rayon_terre_theorique)*100
+    return rayon_terre,erreur_relative
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
+```
 
 ### Exercice 4
 
