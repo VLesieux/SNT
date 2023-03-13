@@ -271,7 +271,7 @@ Indications :
 
 ### Exercice 7
 
-1) Déterminer "au jugé" le ou les plus courts chemin de A (sommet 0) à B (somme 4) dans le graphe suivant et donner sa longueur. Chaque arête possède une longueur qui pourrait être exprimée en km dans le cas d'un réseau routier.
+1) Déterminer "au jugé" le ou les plus courts chemin de A (sommet 0) à B (somme 4) dans le graphe suivant et donner la longueur de chemin. Chaque arête possède une longueur qui pourrait être exprimée en km dans le cas d'un réseau routier.
 
 <img width="600" height="300" src="Assets/chemin_plus_court.png">
 
