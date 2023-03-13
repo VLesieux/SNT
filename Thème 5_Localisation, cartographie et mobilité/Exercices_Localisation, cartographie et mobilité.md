@@ -409,7 +409,7 @@ def distance_deux_points(Graphe,i,j):
     """
     pass
 
-def distance_totale(graphe,i,j):
+def distance_totale(Graphe,i,j):
     """
     Renvoie la distance correspondant au chemin le plus court du sommet i au sommet j
     param : graphe : list
