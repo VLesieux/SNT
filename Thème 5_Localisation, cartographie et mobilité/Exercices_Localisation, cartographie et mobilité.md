@@ -271,15 +271,14 @@ Indications :
 
 ### Exercice 7
 
-1) Déterminer "au jugé" le plus court chemin de A (sommet 0) à B (somme 4) dans le graphe suivant et donner sa longueur. Chaque arête possède une longueur exprimée par exemple en km dans le cas d'un réseau routier.
+1) Déterminer "au jugé" le ou les plus courts chemin de A (sommet 0) à B (somme 4) dans le graphe suivant et donner sa longueur. Chaque arête possède une longueur qui pourrait être exprimée en km dans le cas d'un réseau routier.
 
 <img width="600" height="300" src="Assets/chemin_plus_court.png">
 
 2) En utilisant l'algorithme de Dijkstra explicité dans ce [document](Assets/Dijkstra.pdf), retrouver "à la main" le plus court chemin de A à B.
 Compléter pour cela le fichier [Tableau.doc](Assets/Tableau.doc) en suivant le modèle du document où a été déterminé le plus court chemin entre les sommets 0 et 6.
     
-
-On peut résumer ainsi la construction du tableau : pour passer d'une ligne à l'autre, on détermine le sommet à marquer en retenant le sommet pour lequel on a la plus petite distance, puis pour chacune des colonnes des sommets non marqués, on écrit la distance (si elle existe, sinon False) entre le sommet marqué et le sommet non marqué si, après addition de la retenue, celle-ci est strictement inférieure à la valeur inscrite dans la ligne précédente ; on précise également la provenance correspondant au sommet marqué.
+On peut résumer ainsi la construction du tableau : pour passer d'une ligne à l'autre, on détermine le sommet à marquer en retenant le sommet pour lequel on a la plus petite distance (False représente une distance infinie), puis pour chacune des colonnes des sommets non marqués, on écrit la distance (si elle existe, sinon False) entre le sommet marqué et le sommet non marqué si, après addition de la retenue, celle-ci est **strictement inférieure* à la valeur inscrite dans la ligne précédente ; on précise également la provenance correspondant au sommet marqué.
 Pour obtenir le résultat final, on part du sommet d'arrivée et on remonte en passant par les provenances.
 
 3) L'implémentation en Python de cet algorithme est donnée ci-dessous : on retrouvera la construction du tableau dans `ajout_ligne(T,S_marques,Graphe)` puis `calcule_tableau(Graphe, depart)`.
