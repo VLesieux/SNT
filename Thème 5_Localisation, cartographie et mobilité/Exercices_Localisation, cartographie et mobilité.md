@@ -411,7 +411,7 @@ def distance_deux_points(Graphe,i,j):
 def distance_totale(Graphe,i,j):
     """
     Renvoie la distance correspondant au chemin le plus court du sommet i au sommet j
-    param : graphe : list
+    param : Graphe : list
     param : i : int
     param : j : int
     return : list
