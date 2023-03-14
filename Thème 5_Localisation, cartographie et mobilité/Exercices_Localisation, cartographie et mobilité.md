@@ -287,24 +287,6 @@ Pour obtenir le résultat final, on part du sommet d'arrivée et on remonte en p
 
 Ajouter deux fonctions à ce programme : `distance_deux_points(graphe,i,j)` et `distance_totale(graphe,liste)` pour que le programme retourne également la longueur du chemin le plus court. Retrouvez ainsi vos résultats précédents.
 
-Indication:
-
-```Python
-
->>> Graphe1 = [
-          [0,2,5,False,3,False,False],
-          [2,0,2,1,False,False,8],
-          [5,2,0,1,4,2,False],
-          [False,1,1,0,False,False,5],
-          [3,False,4,False,0,False,False],
-          [False,False,2,False,False,0,1],
-          [False,8,False,5,False,1,False]
-          ]
->>> Graphe1[1][6]
-8
-
-```
-
 
 ```Python
 #  Implémentation  de  l’algorithme  de  Dijkstra
@@ -450,4 +432,21 @@ if __name__ == '__main__':
 ```
 
 
+**Indication:**
+
+```Python
+
+>>> Graphe1 = [
+          [0,2,5,False,3,False,False],
+          [2,0,2,1,False,False,8],
+          [5,2,0,1,4,2,False],
+          [False,1,1,0,False,False,5],
+          [3,False,4,False,0,False,False],
+          [False,False,2,False,False,0,1],
+          [False,8,False,5,False,1,False]
+          ]
+>>> Graphe1[1][6]
+8
+
+```
 
