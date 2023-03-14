@@ -238,7 +238,7 @@ if __name__ == '__main__':
   
 ```
 
-Indications :
+**Indications :**
 
 - Pour transformer une chaîne de caractères en liste en utilisant un séparateur, afin d'en prélever ensuite un élement
 
