@@ -109,7 +109,7 @@ if __name__ == '__main__':
 
 ### Exercice 4
 
-Compléter la fonction `distance` ci-dessous telle que si un satellite a envoyé à l'instant t1 un signal, qui ensuite a été reçu à l'instant t2 par un récepteur, `distance(t1,t2)` renvoie la distance entre le satellite et le récepteur exprimée en km.
+Compléter la fonction `calcule_distance` ci-dessous telle que si un satellite a envoyé à l'instant t1 un signal, qui ensuite a été reçu à l'instant t2 par un récepteur, `distance(t1,t2)` renvoie la distance entre le satellite et le récepteur exprimée en km.
 Les dates t1 et t2 sont données en heure UTC.     
 
 exemple : 064036.261116 signifie que la trame a été envoyée à 06 h 40 min 36.261116 s.      
@@ -122,7 +122,7 @@ On pourra expliquer pourquoi la célérité de la lumière est communément donn
 
 c=299792.458#km/s
 
-def distance(t1,t2):
+def calcule_distance(t1,t2):
     """
     Renvoie la distance en km calculée à partir de la date d'émission t1 du signal
     émis par le satellite et la date t2 de réception du calculateur du G.P.S
@@ -130,15 +130,17 @@ def distance(t1,t2):
     param : t1 : float
     param : t2 : float
     return : float
-    >>> distance(064036.261116,064036.3284959)
+    >>> calcule_distance(064036.261116,064036.3284959)
     20199.98584068947
     """
-
+	pass
 
 if __name__ == '__main__':
   import doctest
   doctest.testmod(verbose=True)
 ```
+
+Indications : passer par le calcul d'une variable `duree`, puis par le calcul d'une variable `distance` que l'on retournera. 
 
 ### Exercice 5
 
