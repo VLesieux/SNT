@@ -140,7 +140,7 @@ if __name__ == '__main__':
   doctest.testmod(verbose=True)
 ```
 
-Indications : passer par le calcul d'une variable `duree`, puis par le calcul d'une variable `distance` que l'on retournera. 
+**Indications :** passer par le calcul d'une variable `duree`, puis par le calcul d'une variable `distance` que l'on retournera. 
 
 ### Exercice 5
 
