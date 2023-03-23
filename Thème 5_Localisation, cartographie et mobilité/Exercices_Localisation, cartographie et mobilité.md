@@ -277,25 +277,17 @@ if __name__ == '__main__':
 
 <img width="600" height="300" src="Assets/chemin_plus_court.png">
 
-2) Utiliser l'**algorithme de Dijkstra** explicité sur un exemple dans ce fichier Word : [Tableau.doc](Assets/Tableau.doc) pour retrouver le résultat précédent.
+2) Utiliser l'**algorithme de Dijkstra** explicité sur un exemple dans ce document Word : [Tableau.doc](Assets/Tableau.doc) pour retrouver le résultat précédent.
     
 On peut résumer ainsi la construction du tableau : pour passer d'une ligne à l'autre, on détermine le sommet à marquer en retenant le sommet pour lequel on a la plus petite distance (False représente une distance infinie), puis pour chacune des colonnes des sommets non marqués, on écrit la distance (si elle existe, sinon False) entre le sommet marqué et le sommet non marqué si, après addition de la retenue, celle-ci est **strictement inférieure** à la valeur inscrite dans la ligne précédente ; on précise également la provenance correspondant au sommet marqué.
 Pour obtenir le résultat final, on part du sommet d'arrivée et on remonte en passant par les provenances.
 
-3) L'implémentation en Python de cet algorithme est donnée ci-dessous : on retrouvera la construction du tableau dans `ajout_ligne(T,S_marques,Graphe)` puis `calcule_tableau(Graphe, depart)`.
-
-Ajouter deux fonctions à ce programme : `distance_deux_points(graphe,i,j)` et `distance_totale(graphe,liste)` pour que le programme retourne la longueur du chemin le plus court. 
-
-4) Retrouvez grâce à ce programme vos résultats précédents. Indiquer par écrit les instructions passées dans la console.
-
-5) a) Comment peut-on modifier de façon simple la fonction `SommetSuivant` pour remplacer la ligne `if not(minimum) or L[i][0] < minimum :` par simplement `if L[i][0] < minimum :` ?    
-	b) Interpréter comment fonctionne le code placé dans la partie encadrée.
-
+L'implémentation en Python de cet algorithme est donnée ci-dessous : on y retrouvera la construction du tableau dans `ajout_ligne(T,S_marques,Graphe)` puis dans `calcule_tableau(Graphe, depart)`.
 
 ```Python
 #  Implémentation  de  l’algorithme  de  Dijkstra
 
-#  Graphe 1 est le graphe correspondant à l'exemple du document pdf ; il faudra donc l'adapter à notre exemple
+#  Graphe 1 est le graphe correspondant à l'exemple du document ; il faudra donc l'adapter à notre exemple
 
 Graphe1 = [
           [0,2,5,False,3,False,False],
@@ -436,11 +428,11 @@ if __name__ == '__main__':
  
 ```
 
+3) Ajouter deux fonctions à ce programme : `distance_deux_points(graphe,i,j)` et `distance_totale(graphe,liste)` pour que le programme retourne la longueur du chemin le plus court. Le programme sera validé par les tests fournis dans les docstrings.
 
 **Indication:**
 
 ```Python
-
 >>> Graphe1 = [
           [0,2,5,False,3,False,False],
           [2,0,2,1,False,False,8],
@@ -452,6 +444,9 @@ if __name__ == '__main__':
           ]
 >>> Graphe1[1][6]
 8
-
 ```
+4) Après avoir défini `Graphe2`, retrouvez grâce à votre programme vos résultats de la question 1. Indiquer par écrit les instructions passées dans la console.
+
+5) a) Comment peut-on modifier de façon simple la fonction `SommetSuivant` pour remplacer la ligne `if not(minimum) or L[i][0] < minimum :` par plus simplement `if L[i][0] < minimum :` ?    
+	b) Interpréter dans le détail comment fonctionne le code placé dans la partie encadrée.
 
