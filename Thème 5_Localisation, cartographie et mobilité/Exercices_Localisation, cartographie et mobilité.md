@@ -288,7 +288,7 @@ Ajouter deux fonctions à ce programme : `distance_deux_points(graphe,i,j)` et `
 
 4) Retrouvez grâce à ce programme vos résultats précédents. Indiquer par écrit les instructions passées dans la console.
 
-5) a) Comment peut-on modifier de façon simple la fonction `SommetSuivant` pour remplacer la ligne `if not(minimum) or L[i][0] < minimum :` par simplement `if L[i][0] < minimum :` ?
+5) a) Comment peut-on modifier de façon simple la fonction `SommetSuivant` pour remplacer la ligne `if not(minimum) or L[i][0] < minimum :` par simplement `if L[i][0] < minimum :` ?    
 	b) Interpréter comment fonctionne le code placé dans la partie encadrée.
 
 
