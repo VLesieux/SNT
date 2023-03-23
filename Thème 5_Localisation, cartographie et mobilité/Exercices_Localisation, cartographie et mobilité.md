@@ -288,7 +288,8 @@ Ajouter deux fonctions à ce programme : `distance_deux_points(graphe,i,j)` et `
 
 4) Retrouvez grâce à ce programme vos résultats précédents. Indiquer par écrit les instructions passées dans la console.
 
-5) Comment peut-on modifier la fonction `SommetSuivant` pour remplacer la ligne `if not(minimum) or L[i][0] < minimum :` par simplement `if L[i][0] < minimum :` ?
+5) a) Comment peut-on modifier de façon simple la fonction `SommetSuivant` pour remplacer la ligne `if not(minimum) or L[i][0] < minimum :` par simplement `if L[i][0] < minimum :` ?
+	b) Interpréter comment fonctionne le code placé dans la partie encadrée.
 
 
 ```Python
@@ -348,17 +349,18 @@ def ajout_ligne(T,S_marques,Graphe) :
     S = S_marques[-1]
 #  la  longueur  du  (plus  court)  chemin  associé
     retenue = L[S][0]
+######################## Code à interpréter ###########################
     for j in range(n) :
         if j not in S_marques:
             poids = Graphe[S][j]
             if poids :
-#  si  l’arète  (S,j)  est  présente
                 if not(L[j]) :  #  L[j]  =  False
                     Lnew[j] = [ retenue + poids, S ]
                 else :
                     if retenue + poids < L[j][0]:
                         Lnew[j] = [ retenue + poids, S ]
     T.append(Lnew)
+#######################################################################
 #  Calcul  du  prochain  sommet  marqué
     S_marques.append(SommetSuivant(T, S_marques))
     return T, S_marques
