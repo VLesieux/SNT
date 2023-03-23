@@ -273,19 +273,22 @@ if __name__ == '__main__':
 
 ### Exercice 7
 
-1) Déterminer "au jugé" le ou les plus courts chemin de A (sommet 0) à B (somme 4) dans le graphe suivant et donner la longueur de chemin. Chaque arête possède une longueur qui pourrait être exprimée en km dans le cas d'un réseau routier.
+1) Déterminer "au jugé" le ou les plus courts chemin de A (sommet 0) à B (somme 4) dans le graphe suivant. Chaque arête possède une longueur qui pourrait être exprimée en km dans le cas d'un réseau routier. Donner également la longueur de ce plus court chemin.
 
 <img width="600" height="300" src="Assets/chemin_plus_court.png">
 
-2) En utilisant l'algorithme de Dijkstra explicité dans ce [document](Assets/Dijkstra.pdf), retrouver "à la main" le plus court chemin de A à B.
-Compléter pour cela le fichier Word : [Tableau.doc](Assets/Tableau.doc) en suivant le modèle du document où a été déterminé le plus court chemin entre les sommets 0 et 6.
+2) Utiliser l'**algorithme de Dijkstra** explicité sur un exemple dans ce fichier Word : [Tableau.doc](Assets/Tableau.doc) pour retrouver le résultat précédent.
     
 On peut résumer ainsi la construction du tableau : pour passer d'une ligne à l'autre, on détermine le sommet à marquer en retenant le sommet pour lequel on a la plus petite distance (False représente une distance infinie), puis pour chacune des colonnes des sommets non marqués, on écrit la distance (si elle existe, sinon False) entre le sommet marqué et le sommet non marqué si, après addition de la retenue, celle-ci est **strictement inférieure* à la valeur inscrite dans la ligne précédente ; on précise également la provenance correspondant au sommet marqué.
 Pour obtenir le résultat final, on part du sommet d'arrivée et on remonte en passant par les provenances.
 
 3) L'implémentation en Python de cet algorithme est donnée ci-dessous : on retrouvera la construction du tableau dans `ajout_ligne(T,S_marques,Graphe)` puis `calcule_tableau(Graphe, depart)`.
 
-Ajouter deux fonctions à ce programme : `distance_deux_points(graphe,i,j)` et `distance_totale(graphe,liste)` pour que le programme retourne également la longueur du chemin le plus court. Retrouvez ainsi vos résultats précédents.
+Ajouter deux fonctions à ce programme : `distance_deux_points(graphe,i,j)` et `distance_totale(graphe,liste)` pour que le programme retourne la longueur du chemin le plus court. 
+
+4) Retrouvez grâce à ce programme vos résultats précédents. Indiquer par écrit les instructions passées dans la console.
+
+5) Comment peut-on modifier la fonction `SommetSuivant` pour remplacer la ligne `if not(minimum) or L[i][0] < minimum :` par simplement `if L[i][0] < minimum :` ?
 
 
 ```Python
