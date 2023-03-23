@@ -354,7 +354,7 @@ def ajout_ligne(T,S_marques,Graphe) :
         if j not in S_marques:
             poids = Graphe[S][j]
             if poids :
-                if not(L[j]) :  #  L[j]  =  False
+                if not(L[j]) :
                     Lnew[j] = [ retenue + poids, S ]
                 else :
                     if retenue + poids < L[j][0]:
