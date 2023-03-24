@@ -428,7 +428,8 @@ if __name__ == '__main__':
  
 ```
 
-Ajouter deux fonctions à ce programme : `distance_deux_points(graphe,i,j)` et `distance_totale(graphe,liste)` pour que le programme retourne la longueur du chemin le plus court. Le programme sera validé par les tests fournis dans les docstrings.
+Compléter le code des deux fonctions `distance_deux_points(graphe,i,j)` et `distance_totale(graphe,liste)`.
+Les fonctions seront validées par les tests fournis dans les docstrings.
 
 **Indication:**
 
@@ -445,5 +446,5 @@ Ajouter deux fonctions à ce programme : `distance_deux_points(graphe,i,j)` et `
 >>> Graphe1[1][6]
 8
 ```
-4) Après avoir défini `Graphe2` dans votre programme, retrouvez les résultats de la question 1. Indiquer par écrit les instructions passées dans la console.
+4) Après avoir défini `Graphe2`, retrouvez grâce à votre programme le résultat de la question 1. Indiquer par écrit l'instruction à passer dans la console pour cela.
 
