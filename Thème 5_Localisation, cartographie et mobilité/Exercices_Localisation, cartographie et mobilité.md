@@ -448,5 +448,5 @@ if __name__ == '__main__':
 4) Après avoir défini `Graphe2`, retrouvez grâce à votre programme vos résultats de la question 1. Indiquer par écrit les instructions passées dans la console.
 
 5) a) Comment peut-on modifier de façon simple la fonction `SommetSuivant` pour remplacer la ligne `if not(minimum) or L[i][0] < minimum :` par plus simplement `if L[i][0] < minimum :` ?    
-	b) Interpréter dans le détail comment fonctionne le code placé dans la partie encadrée.
+	b) Étudier la fonction `ajout_ligne` et interpréter dans le détail le fonctionnement du code placé dans la partie encadrée en proposant un commentaire pour les différentes lignes.
 
