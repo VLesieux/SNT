@@ -445,5 +445,5 @@ if __name__ == '__main__':
 >>> Graphe1[1][6]
 8
 ```
-4) Après avoir défini `Graphe2`, retrouvez grâce à votre programme vos résultats de la question 1. Indiquer par écrit les instructions passées dans la console.
+4) Après avoir défini `Graphe2` dans votre programme, retrouvez les résultats de la question 1. Indiquer par écrit les instructions passées dans la console.
 
