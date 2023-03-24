@@ -341,7 +341,7 @@ def ajout_ligne(T,S_marques,Graphe) :
     S = S_marques[-1]
 #  la  longueur  du  (plus  court)  chemin  associé
     retenue = L[S][0]
-######################## Code à interpréter ###########################
+
     for j in range(n) :
         if j not in S_marques:
             poids = Graphe[S][j]
@@ -352,7 +352,7 @@ def ajout_ligne(T,S_marques,Graphe) :
                     if retenue + poids < L[j][0]:
                         Lnew[j] = [ retenue + poids, S ]
     T.append(Lnew)
-#######################################################################
+
 #  Calcul  du  prochain  sommet  marqué
     S_marques.append(SommetSuivant(T, S_marques))
     return T, S_marques
