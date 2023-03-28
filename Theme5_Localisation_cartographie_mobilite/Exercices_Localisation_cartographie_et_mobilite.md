@@ -296,7 +296,7 @@ Graphe1 = [
           [False,1,1,0,False,False,5],
           [3,False,4,False,0,False,False],
           [False,False,2,False,False,0,1],
-          [False,8,False,5,False,1,False]
+          [False,8,False,5,False,1,0]
           ]
 
 def SommetSuivant(T, S_marques) :
@@ -378,7 +378,7 @@ def calcule_tableau(Graphe, depart) :
 
 def plus_court_chemin(Graphe, depart, arrivee) :
     """
-    Détermine  le  plus  court  chemin  entre  depart  et  arrivee  dans le  Graphe
+    Renvoie  le  plus  court  chemin  entre  depart  et  arrivee  dans Graphe
     param : Graphe : list
     param : depart : int
     param : arrivee : int
@@ -397,26 +397,26 @@ def plus_court_chemin(Graphe, depart, arrivee) :
     C.reverse()
     return C
 
-def distance_deux_points(Graphe,i,j):
+def distance_entre_deux_sommets(Graphe,i,j):
     """
     Renvoie la distance entre deux sommets i et j
     param : Graphe : list
     param : i : int
     param : j : int
     return : int
-    >>> distance_deux_points(Graphe1,0,2)
+    >>> distance_entre_deux_sommets(Graphe1,0,2)
     5
     """
     pass
 
-def distance_totale(Graphe,i,j):
+def longueur_plus_court_chemin(Graphe,depart,arrivee):
     """
     Renvoie la distance correspondant au chemin le plus court du sommet i au sommet j
     param : Graphe : list
     param : i : int
     param : j : int
     return : list
-    >>> distance_totale(Graphe1,0,6)
+    >>> longueur_plus_court_chemin(Graphe1,0,6)
     7
     """
     pass
@@ -441,7 +441,7 @@ Les fonctions seront validées par les tests fournis dans les docstrings.
           [False,1,1,0,False,False,5],
           [3,False,4,False,0,False,False],
           [False,False,2,False,False,0,1],
-          [False,8,False,5,False,1,False]
+          [False,8,False,5,False,1,0]
           ]
 >>> Graphe1[1][6]
 8
