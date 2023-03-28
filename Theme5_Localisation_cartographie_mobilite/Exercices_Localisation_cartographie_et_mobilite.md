@@ -428,7 +428,7 @@ if __name__ == '__main__':
  
 ```
 
-Compléter le code des deux fonctions `distance_deux_points(graphe,i,j)` et `distance_totale(graphe,liste)`.
+Compléter le code des deux fonctions `distance_entre_deux_sommets(Graphe,i,j)` et `longueur_plus_court_chemin(Graphe,depart,arrivee)`.    
 Les fonctions seront validées par les tests fournis dans les docstrings.
 
 **Indication:**
