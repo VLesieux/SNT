@@ -38,17 +38,16 @@ Voir [exercice sur le capteur de l'appareil photo intégré dans un smartphone](
 
 ### Le codage RVB des couleurs sur nos écrans
 
-<img width="300" height="300" src="Assets/pixels.png">
-
 Une image numérique peut être considérée comme un tableau de pixels, chaque pixel est formé de 3 sous-pixels : rouge, vert, bleu. 
 
+<img width="300" height="300" src="Assets/pixels.png"><img width="300" height="300" src="Assets/pixel_microscope.jpg">
 
 La **définition d'une image** est le nombre de pixels constituant l'image. Par exemple, une image contenant 2592 pixels en largeur et 1936 pixels en hauteur (2592×1936) a une définition de 5 018 112 pixels, soit environ 5 Mpx (mégapixels).
 Remarque : il n'y a pas nécessairement le même nombre de pixels sur l'image que de photosites sur le capteur. Cela dépend des algorithmes utilisés lors du dématriçage. La définition du capteur peut donc être différente de la définition de l'image.
 
 La **résolution d'une image** quant à elle correspond au nombre de pixels par unité de longueur. Elle est généralement exprimée en ppp (pixel par pouce) ou ppi (pixel per inch) ou dpi (dot per inch) pour les imprimantes. Plus la résolution est importante, plus l'image sera de bonne qualité lors d'un zoom. On obtient une très bonne qualité d'impression avec une résolution de 300 ppi par exemple ; tandis que les écrans d'ordinateur ont désormais généralement une résolution entre 85 et 150 ppi. Cependant certains smartphones ont désormais des écrans avec une très bonne résolution avec par exemple 326 ppi.
 
->>>La couleur de chaque sous-pixel est codée sur un octet(8 bits), ainsi chaque pixel est codé sur 3 octets renseignant sur les niveaux de ces trois composantes : rouge, vert et bleu, qui sont les couleurs primaires en synthèse additive des couleurs.  
+La couleur de chaque sous-pixel est codée sur un octet(8 bits), ainsi chaque pixel est codé sur 3 octets renseignant sur les niveaux de ces trois composantes : rouge, vert et bleu, qui sont les couleurs primaires en synthèse additive des couleurs.  
 On parle de **codage RVB ou RGB** pour Red-Green-Blue. Il s'agit pour chacune des trois composantes d'indiquer l'intensité lumineuse de la couleur par un nombre compris entre 0 et 255.  
 En effet, chaque couleur est codée sur 1 octet formé de 8 bits ce qui offre 2<sup>8</sup>=256 possibilités de niveau de couleur pour le rouge, autant pour le vert et le bleu, soit une totalité de 2<sup>8</sup>×2<sup>8</sup>×2<sup>8</sup>=2<sup>24</sup>=16 777 216 couleurs. 
 Ainsi le rouge est codé par (255,0,0) ; le vert par (0,255,0) ; le bleu par (0,0,255).  
@@ -57,6 +56,11 @@ Une égalité des trois niveaux correspond à un niveaux de gris, il y en a donc
 On trouvera ici une application web permettant d'observer [le codage des couleurs](http://isnangellier.alwaysdata.net/php/colours.html) .
 
 Remarque :  le codage RVB des couleurs en binaire n'est pas le seul type de codage possible. Lorsqu'on code une page web par exemple, dans la feuille de style CSS on peut aussi préciser la couleur en utilisant le codage hexadécimal de cette couleur. On trouvera [ici](http://vfsilesieux.free.fr/exemple_page_web/page_web.html) une page html dont on pourra regarder le code source qui montre que trois types de codages des couleurs dans le CSS sont possibles pour un résultat analogue, par exemple : green, rgb(0,128,0) ou #008000. 
+
+Avec un éditeur de texte tel que Sublime Text, on peut voir le contenu d'un fichier jpg, on y trouve le codage hexadécimal des pixels :
+
+<img width="300" height="300" src="Assets/perrot.jpg"><img width="300" height="300" src="Assets/code_image_perrot.png">
+
 
 ### Métadonnées
 
