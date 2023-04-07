@@ -3,13 +3,13 @@
 ### Exercice 1
 
 On dispose d'une image carrée dont la définition est de 4 Mpx.   
-On rappelle que la **définition** d'une image est le produit du nombre de pixels sur la hauteur par le nombre de pixels sur la largeur de l'image.
+On rappelle que la **définition** d'une image est le nombre total de pixels sur l'écran, c'est donc le produit du nombre de pixels sur la hauteur par le nombre de pixels sur la largeur de l'image.
 
 1 inch = 1 pouce = 2.54 cm
 
 1. Déterminer les dimensions en cm de cette image :  
 
-- si elle est affichée sur un écran de résolution 144 ppi (pixels per inch).  
+- si elle est affichée sur un écran d'iphone de résolution 460 ppi (pixels per inch).  
 - si elle est imprimée par une imprimante de résolution 300 dpi (dots per inch).  
 
 2. Dans les deux cas, sur quel principe physique l'image est-elle formée ?
