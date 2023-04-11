@@ -23,9 +23,9 @@ def dimension(definition,resolution):
     param : resolution : int
     return : float
     >>> dimension(4*10**6,460)
-    11.043478260869565
+    "Taille de l'image : 11 cm"
     >>> dimension(4*10**6,300)
-    16.933333333333334
+    "Taille de l'image : 17 cm"
     """
 	pass
 
