@@ -53,10 +53,10 @@ Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul
 Le résultat sera arrondi à 2 chiffres après la virgule en utilisant la fonction `round()` de la manière suivante :
 
 ```python
->>> round(1.5628,2)
+>>> round(1.555,2)
+1.55
+>>> round(1.556,2)
 1.56
->>> round(1.5658,2)
-1.57
 ```
 
 Compléter la fonction `lum(couleur)` qui renvoie la valeur de la luminance, lorsque la couleur est donnée sous forme d'un triplet (R,V,B).  
