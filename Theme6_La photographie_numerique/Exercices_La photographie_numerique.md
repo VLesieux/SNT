@@ -47,7 +47,7 @@ On rappelle que la **résolution** d'un écran est la densité de pixels ; on l'
 La **luminance** relative est une grandeur correspondant à la sensation visuelle de luminosité ; elle varie entre 0 pour le noir et 1 pour le blanc pris comme référence, la pondération est basée sur la sensibilité de l'oeil humain  ; le vert contribue le plus à l'intensité perçue par l'œil humain et le bleu le moins.   
 Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul de la luminance se calcule à l'aide de la formule : 
 
-`L = (0.2126 * R + 0.7152 * V + 0.0722 * B)/255`
+`L = (0,2126 × R + 0,7152 × V + 0,0722 × B)/255`
 
 Le résultat sera arrondi à 2 chiffres après la virgule en utilisant la fonction `round()` de la manière suivante :
 
@@ -62,14 +62,14 @@ Compléter la fonction `lum(couleur)` qui renvoie la valeur de la luminance, lor
 Donner sa valeur dans le cas du rose clair (255,192,203) et du bordeaux (165,42,42) ; conclure.
 
 ```python
-def lum(R,V,B):
+def lum(couleur):
     """
     renvoie la luminance (sensation visuelle) associée à couleur définie par le triplet (R,V,B)
     param : tuple
     return : float avec deux chiffres après la virgule
-    >>> lum(255,255,255)
+    >>> lum((255,255,255))
     1.0
-    >>> lum(0,0,0)
+    >>> lum((0,0,0))
     0.0
     """
     
