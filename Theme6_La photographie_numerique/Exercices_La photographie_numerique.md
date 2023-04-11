@@ -12,9 +12,27 @@ On rappelle que la **définition** d'une image est le nombre total de pixels sur
 - si elle est affichée sur un écran d'iphone de résolution 460 ppi (pixels per inch).  
 - si elle est imprimée par une imprimante de résolution 300 dpi (dots per inch).  
 
-2. Dans les deux cas, sur quel principe physique l'image est-elle formée ?
+2. Compléter le programme suivant:
 
+```python
+def dimension(definition,resolution):
+    """
+    Renvoie les dimensions en cm de cette image supposée carrée
+    à partir des données definition et resolution
+    param : definition : int
+    param : resolution : int
+    return : float
+    >>> dimension(4*10**6,460)
+    11.043478260869565
+    >>> dimension(4*10**6,300)
+    16.933333333333334
+    """
+	pass
 
+if __name__ == '__main__':
+  import doctest
+  doctest.testmod(verbose=True)   
+```
 
 ### Exercice 2
 
