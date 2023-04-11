@@ -59,10 +59,10 @@ Compléter la fonction `lum(couleur)` qui renvoie la valeur de la luminance, lor
 Donner sa valeur dans le cas du rose clair (255,192,203) et du bordeaux (165,42,42) ; conclure.
 
 ```python
-def lum(couleur):
+def lum((R,V,B)):
     """
-    renvoie la luminance (sensation visuelle) associée à couleur
-    param : couleur : tuple
+    renvoie la luminance (sensation visuelle) associée à couleur définie par le triplet (R,V,B)
+    param : tuple
     return : float avec deux chiffres après la virgule
     >>> lum((255,255,255))
     1.0
