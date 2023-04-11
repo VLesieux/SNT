@@ -12,7 +12,7 @@ On rappelle que la **définition** d'une image est le nombre total de pixels sur
 - si elle est affichée sur un écran d'iphone de résolution 460 ppi (pixels per inch).  
 - si elle est imprimée par une imprimante de résolution 300 dpi (dots per inch).  
 
-2. Compléter le programme suivant:
+2. Compléter le programme suivant ; utiliser `round()` pour arrondir le résultat.
 
 ```python
 def dimension(definition,resolution):
