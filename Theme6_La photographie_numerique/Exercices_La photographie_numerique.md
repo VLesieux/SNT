@@ -12,7 +12,7 @@ On rappelle que la **définition** d'une image est le nombre total de pixels sur
 - si elle est affichée sur un écran d'iphone de résolution 460 ppi (pixels per inch).  
 - si elle est imprimée par une imprimante de résolution 300 dpi (dots per inch).  
 
-2. Compléter le programme suivant ; utiliser `round()` pour arrondir le résultat.
+2. Compléter le programme suivant ; utiliser `round( ,1)` pour arrondir le résultat avec un seul chiffre après la virgule.
 
 ```python
 def dimension(definition,resolution):
@@ -23,9 +23,9 @@ def dimension(definition,resolution):
     param : resolution : int
     return : float
     >>> dimension(4*10**6,460)
-    11
+    11.0
     >>> dimension(4*10**6,300)
-    17
+    16.9
     """
 	pass
 
@@ -39,8 +39,9 @@ if __name__ == '__main__':
 Un magasin propose deux ordinateurs à des prix intéressants.   
 Le premier possède un écran de définition 1233 × 925 px et de dimensions 345,44 × 259,08 mm (écran 17").   
 Le second a un écran de définition 1219 × 914 px et de dimensions 304,80 × 228,60 mm (écran 15").  
-Lequel a la meilleure résolution ?  
-On rappelle que la **résolution** d'un écran est la densité de pixels ; on l'exprimera en ppi (pixels per inch).
+Lequel a la meilleure résolution ?  Considérer une dimension.
+
+On rappelle que la **résolution** d'un écran est la densité de pixels ; on l'exprimera si possibble en ppi (pixels per inch).
 
 ### Exercice 3
 
