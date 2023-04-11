@@ -50,7 +50,7 @@ Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul
 
 `L = (0.2126 * R + 0.7152 * V + 0.0722 * B)/255`
 
-Le résultat sera arrondi à 2 chiffres après la virgule en utilisant la fonction `round()` de la manière suivante :
+Le résultat sera arrondi à 2 chiffres après la virgule en utilisant la fonction `round( ,2)` de la manière suivante :
 
 ```python
 >>> round(1.555,2)
