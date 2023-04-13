@@ -60,7 +60,6 @@ Le résultat sera arrondi à 2 chiffres après la virgule en utilisant la foncti
 ```
 
 Compléter la fonction `lum(couleur)` qui renvoie la valeur de la luminance, lorsque la couleur est donnée sous forme d'un triplet (R,V,B).  
-Donner sa valeur dans le cas du rose clair (255,192,203) et du bordeaux (165,42,42) ; conclure.
 
 ```python
 def lum(couleur):
@@ -79,6 +78,9 @@ if __name__ == '__main__':
     import doctest
     doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
 ```
+
+<u>Application</u> : demander la luminance de la couleur jaune et la luminance de la couleur cyan ; conclure.
+
 
 ### Exercice 4 : traitement d'une image numérique avec Python
 
