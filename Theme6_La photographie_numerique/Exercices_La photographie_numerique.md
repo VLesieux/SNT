@@ -97,7 +97,7 @@ On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pd
 
 On retiendra que l'on peut récupérer les données portant sur les pixels d'une image en utilisant `image.getpixel((x,y))` :
 
-Applications : réaliser les programmes permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir :
+**Application I** : réaliser les programmes permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir :
 
 - France : <img width="50" height="50" src="Assets/Drapeau_france.jpg">
 - Belgique : <img width="50" height="50" src="Assets/Drapeau_belge.jpg">
@@ -143,7 +143,7 @@ def drapeau_france():
 drapeau_france()# appelle la fonction définie précédemment qui n'admet pas de paramètre.
 ```
 
-Autres applications : 
+Autres drapeaux : 
 
 - **le drapeau des Seychelles** (situé dans l'ouest de l'océan Indien et rattaché au continent africain) peut être réalisé approximativement ainsi :   
 
@@ -281,45 +281,14 @@ drapeau_vietnam()
 #    print(position())
 #    
 #mainloop()
-
 ```
+**Application II** : Comparer la longueur réelle d'un fleuve et la distance à vol d'oiseau entre sa source et son embouchure. Idée inspirée par ce [documentaire](https://youtu.be/YIeuCCQoUWc).
 
-### Exercice 5 : traitement d'une image numérique dans le navigateur web avec JavaScript
-
-Dans cet exercice nous allons utiliser la possibilité de modifier les données portant sur les pixels d'une image avec JavaScript.    
-  
-1. On trouvera [ici différentes transformations ](http://isnangellier.alwaysdata.net/php/Transformations_image.html) à réaliser en modifiant les pixels d'une image.
-
-`imageData = ctx1.getImageData(0,0,500,500);`    
-
-`imageData` représente la collection des informations pour chacun des pixels du contexte ctx1 de l'image.
-
-`imageData.data[i]` représente le niveau de rouge du pixel i ;
-
-`imageData.data[i+1]` représente le niveau de vert du pixel i ;
-
-`imageData.data[i+2]` représente le niveau de bleu du pixel i ;
-
-`imageData.data[i+2]` représente le niveau de transparence du pixel i ;
+<img src="Assets/Capture_Loire.png">
 
 
-`for (i=0;i<imageData.data.length;i+=4) {` permet de parcourir les données de 4 en 4, puisque chaque pixel porte quatre informations.
+**Application III** : Apprendre une mappemonde.
 
-`for (n=1;n<=500;n++) {`  
 
-`for (p=1;p<=500;p++) {` permet de balayer les n lignes et les p colonnes de l'image de taille 500*500
+<img src="Assets/Capture_mappemonde.png">
 
-`imageData.data[((n-1)*500+p-1)*4]` permet d'atteindre le niveau de rouge du pixel situé à l'intersection de la ligne n et de la colonne p
-
-`imageData.data[((n-1)*500+p-1)*4+1]` permet d'atteindre le niveau de vert du pixel situé à l'intersection de la ligne n et de la colonne p
-
-`imageData.data[(n-1)*500+p-1)*4+2]` permet d'atteindre le niveau de bleu du pixel situé à l'intersection de la ligne n et de la colonne p
-
-`imageData.data[((n-1)*500+p-1)*4+3]` permet d'atteindre le niveau de transparence du pixel situé à l'intersection de la ligne n et de la colonne p
-
-2. Réaliser le traitement permettant d'obtenir le résultat suivant :
-
-<img src="Assets/Transformation_4_tetes.png">
-
-3. Comprendre l'algorithme permettant de repérer le [positionnement d'un point à l'intérieur d'un contour polygonal quelconque](http://isnangellier.alwaysdata.net/php/Algorithme_localisation_quelconque.html).
-4. Analyser le code source de la [page html](http://isnangellier.alwaysdata.net/php/melange.html) suivante et procéder à une réalisation similaire. 
