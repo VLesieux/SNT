@@ -83,9 +83,7 @@ Applications :
 
 1) Demander la luminance de la couleur jaune et la luminance de la couleur cyan ; conclure.
 
-2) " Pour être perçue avec la même intensité, une source de lumière rouge orangée doit être près de 10 fois plus puissante qu’une source de lumière jaune-vert. C’est d’ailleurs de cette couleur que vont être repeintes les ambulances du Samu de l’Essonne, comme le sont souvent les camions de pompiers américains. " 
-
-cf [https://www.caminteresse.fr/societe/quelle-est-la-couleur-la-mieux-percue-par-loeil-humain-1163473/]
+2) " Pour être perçue avec la même intensité, une source de lumière rouge orangée doit être près de 10 fois plus puissante qu’une source de lumière jaune-vert. C’est d’ailleurs de cette couleur que vont être repeintes les ambulances du Samu de l’Essonne, comme le sont souvent les camions de pompiers américains. " [cf. article. ça m'interesse](https://www.caminteresse.fr/societe/quelle-est-la-couleur-la-mieux-percue-par-loeil-humain-1163473/).
 
 Vérifier cette affirmation.
 
