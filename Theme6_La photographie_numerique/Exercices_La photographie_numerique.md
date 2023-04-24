@@ -292,7 +292,7 @@ drapeau_vietnam()
 
 <img src="Assets/Capture_Loire.png">
 
-**Application III** : Apprendre une mappemonde avec une [application web](http://isnangellier.alwaysdata.net/php/Projet_carte.html) ou une [application écrite en Python](/Assets/Mappemonde.py).
+**Application III** : Apprendre une mappemonde avec une [application web](http://isnangellier.alwaysdata.net/php/Projet_carte.html) ou une [application écrite en Python](Assets/Mappemonde.py).
 
 <img src="Assets/Capture_mappemonde.png">
 
