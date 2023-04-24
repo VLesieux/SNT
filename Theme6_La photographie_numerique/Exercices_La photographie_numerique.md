@@ -93,11 +93,19 @@ Vérifier cette affirmation.
 
 Dans cet exercice nous allons utiliser le module Image de la librairie **PIL** ou **pillow** de Python (à télécharger dans le menu outils du logiciel Thonny).
 
-On suivra [ici](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) les différents traitements possibles d'une image avec Python.
+On suivra [sur ce document pdf](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) les différents traitements possibles d'une image avec Python.
 
-On retiendra que l'on peut récupérer les données portant sur les pixels d'une image en utilisant `image.getpixel((x,y))` :
+On retiendra que l'on peut récupérer les données portant sur les pixels d'une image en utilisant `image.getpixel((x,y))`.  
 
-**Application I** : réaliser les programmes permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir :
+Tous ces traitements peuvent être réunis dans une [application en Python](Assets/Transformations_images.py).
+
+On peut réaliser la même chose avec le langage JavaScript : [voir l'application web](http://isnangellier.alwaysdata.net/php/traitement.html)
+
+### Exercice 5 : applications
+
+**Application I** 
+
+Il s'agit de réaliser les programmes permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir :
 
 - France : <img width="50" height="50" src="Assets/Drapeau_france.jpg">
 - Belgique : <img width="50" height="50" src="Assets/Drapeau_belge.jpg">
@@ -282,13 +290,11 @@ drapeau_vietnam()
 #    
 #mainloop()
 ```
-**Application II** : Comparer la longueur réelle d'un fleuve et la distance à vol d'oiseau entre sa source et son embouchure. Idée inspirée par ce [documentaire](https://youtu.be/YIeuCCQoUWc).
+**Application II** : Comparer la longueur réelle d'un fleuve et la distance à vol d'oiseau entre sa source et son embouchure. [Programme en Python](Assets/longueur_fleuve.py). Idée inspirée par ce [documentaire](https://youtu.be/YIeuCCQoUWc).
 
 <img src="Assets/Capture_Loire.png">
 
-
-**Application III** : Apprendre une mappemonde.
-
+**Application III** : Apprendre une mappemonde avec une [application web](http://isnangellier.alwaysdata.net/php/Projet_carte.html) ou une [application écrite en Python](/Assets/Mappemonde.py).
 
 <img src="Assets/Capture_mappemonde.png">
 
