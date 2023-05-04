@@ -43,16 +43,9 @@ def vert(image):
             p=(0,pixel[1],0)
             imagearrivee.putpixel((x,y),p)
     return imagearrivee
-#########################Inverser les couleurs############################
-def inversion(image):
-    (c,l)=image.size
-    imagearrivee=Image.new('RGB',(c,l))
-    for x in range(c):
-        for y in range(l):
-            pixel=image.getpixel((x,y))
-            p=(255-pixel[0], 255-pixel[1], 255-pixel[2])
-            imagearrivee.putpixel((x,y),p)
-    return imagearrivee
+#########################Transformation nuances de gris############################
+def nuance(image):
+    pass
 #########################################################################
 # Crée une fenêtre principale
 root = tk.Tk()
@@ -117,7 +110,7 @@ def on_button4_click():
 # Fonction à exécuter lorsqu'on clique sur le cinquième bouton
 def on_button5_click():
     image = Image.open("Photo_de_depart.jpg")
-    tranformation=inversion(image)
+    tranformation=nuance(image)
     photo = ImageTk.PhotoImage(tranformation)
     image_label.configure(image=photo)
     image_label.image = photo
