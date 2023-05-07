@@ -45,7 +45,35 @@ def vert(image):
     return imagearrivee
 #########################Transformation nuances de gris############################
 def nuance(image):
-    pass
+    (c,l)=image.size
+    imagearrivee=Image.new('RGB',(c,l))
+    for x in range(c):
+        for y in range(l):
+            pixel=image.getpixel((x,y))
+            moyenne=int((pixel[0]+pixel[1]+pixel[2])/3)
+            p=(moyenne,moyenne,moyenne)
+            imagearrivee.putpixel((x,y),p)
+    return imagearrivee
+#########################Symétrie verticale############################
+def vertical(image):
+    (c,l)=image.size
+    imagearrivee=Image.new('RGB',(c,l))
+    for x in range(c):
+        for y in range(l):
+            pixel=image.getpixel((x,y))
+            X=2*int(c/2)-x
+            imagearrivee.putpixel((X,y),pixel)
+    return imagearrivee
+#########################Symétrie horizontale############################
+def horizontal(image):
+    (c,l)=image.size
+    imagearrivee=Image.new('RGB',(c,l))
+    for x in range(c):
+        for y in range(l):
+            pixel=image.getpixel((x,y))
+            Y=2*int(l/2)-y
+            imagearrivee.putpixel((x,Y),pixel)
+    return imagearrivee
 #########################################################################
 # Crée une fenêtre principale
 root = tk.Tk()
@@ -114,15 +142,31 @@ def on_button5_click():
     photo = ImageTk.PhotoImage(tranformation)
     image_label.configure(image=photo)
     image_label.image = photo
+    
+# Fonction à exécuter lorsqu'on clique sur le sixième bouton
+def on_button6_click():
+    image = Image.open("Photo_de_depart.jpg")
+    tranformation=vertical(image)
+    photo = ImageTk.PhotoImage(tranformation)
+    image_label.configure(image=photo)
+    image_label.image = photo
+
+# Fonction à exécuter lorsqu'on clique sur le septième bouton
+def on_button7_click():
+    image = Image.open("Photo_de_depart.jpg")
+    tranformation=horizontal(image)
+    photo = ImageTk.PhotoImage(tranformation)
+    image_label.configure(image=photo)
+    image_label.image = photo
 
 # Ajoute les boutons au conteneur en leur associant une fonction
 tk.Button(button_container, text="Noir et Blanc", command=on_button1_click).pack(side=tk.LEFT, padx=10)
 tk.Button(button_container, text="Filtre Bleu", command=on_button2_click).pack(side=tk.LEFT, padx=10)
 tk.Button(button_container, text="Filtre Rouge", command=on_button3_click).pack(side=tk.LEFT, padx=10)
 tk.Button(button_container, text="Filtre Vert", command=on_button4_click).pack(side=tk.LEFT, padx=10)
-tk.Button(button_container, text="Inversion", command=on_button5_click).pack(side=tk.LEFT, padx=10)
-
-
+tk.Button(button_container, text="Nuances de gris", command=on_button5_click).pack(side=tk.LEFT, padx=10)
+tk.Button(button_container, text="Symétrie verticale", command=on_button6_click).pack(side=tk.LEFT, padx=10)
+tk.Button(button_container, text="Symétrie horizontale", command=on_button7_click).pack(side=tk.LEFT, padx=10)
 # Démarre la boucle principale de la fenêtre
 root.mainloop()
 

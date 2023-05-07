@@ -98,8 +98,10 @@ On suivra [sur ce document pdf](http://vfsilesieux.free.fr/traitements_d_une_me%
 3) transformation filtre vert
 4) transformation filtre bleu
 5) transformation nuance de gris
+6) symétrie verticale
+7) symétrie horizontale
 
-Tous ces traitements peuvent être réunis dans une [application en Python](Assets/Transformations_images.py) à compléter.
+Tous ces traitements peuvent être réunis dans une [application en Python](Assets/Transformations_images.py).
 
 On peut réaliser la même chose avec le langage JavaScript : [voir l'application web](http://isnangellier.alwaysdata.net/php/traitement.html)
 
