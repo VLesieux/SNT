@@ -1,9 +1,10 @@
 ## Exercices Thème 6 : La photographie numérique
 
-### Exercice 1
+### Exercice 1 : notions de définition et de résolution d'une image
 
 On dispose d'une image carrée dont la définition est de 4 Mpx.   
-On rappelle que la **définition** d'une image est le nombre total de pixels sur l'écran, c'est donc le produit du nombre de pixels sur la hauteur par le nombre de pixels sur la largeur de l'image.
+On rappelle que la **définition** d'une image est le nombre total de pixels sur l'écran, c'est donc le produit du nombre de pixels sur la hauteur par le nombre de pixels sur la largeur de l'image.   
+On rappelle que la **résolution** d'un écran est la densité de pixels ; elle s'exprime en ppi (pixels per inch).
 
 1 inch = 1 pouce = 2.54 cm
 
@@ -34,16 +35,13 @@ if __name__ == '__main__':
   doctest.testmod(verbose=True)   
 ```
 
-### Exercice 2
-
+3. Application pratique: 
 Un magasin propose deux ordinateurs à des prix intéressants.   
 Le premier possède un écran de définition 1233 × 925 px et de dimensions 345,44 × 259,08 mm (écran 17").   
 Le second a un écran de définition 1219 × 914 px et de dimensions 304,80 × 228,60 mm (écran 15").  
 Lequel a la meilleure résolution ?  Considérer une dimension.
 
-On rappelle que la **résolution** d'un écran est la densité de pixels ; on l'exprimera si possibble en ppi (pixels per inch).
-
-### Exercice 3
+### Exercice 2: notion de luminance
 
 La **luminance** relative est une grandeur correspondant à la sensation visuelle de luminosité ; elle varie entre 0 pour le noir et 1 pour le blanc pris comme référence, la pondération est basée sur la sensibilité de l'oeil humain  ; le vert contribue le plus à l'intensité perçue par l'œil humain et le bleu le moins.   
 Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul de la luminance se calcule à l'aide de la formule : 
@@ -87,7 +85,7 @@ Applications :
 
 Vérifier cette affirmation.
 
-### Exercice 4 : traitement d'une image numérique avec Python
+### Exercice 3 : traitements d'une image numérique avec Python
 
 Dans cet exercice nous allons utiliser le module Image de la librairie **PIL** ou **pillow** de Python (à télécharger dans le menu outils du logiciel Thonny).
 
@@ -105,7 +103,7 @@ Tous ces traitements peuvent être réunis dans une [application en Python](Asse
 
 On peut réaliser la même chose avec le langage JavaScript : [voir l'application web](http://isnangellier.alwaysdata.net/php/traitement.html)
 
-### Exercice 5 : dessiner des drapeaux
+### Exercice 4 : créer des images numériques de drapeaux
 
 Il s'agit de réaliser les programmes permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir. 
 
@@ -304,7 +302,7 @@ drapeau_vietnam()
 #mainloop()
 ```
 
-### Exercice 6 : autres applications
+### Exercice 5 : interactions avec une image numérique
 
 **Application I** : Comparer la longueur réelle d'un fleuve et la distance à vol d'oiseau entre sa source et son embouchure. [Programme en Python](Assets/longueur_fleuve.py). Idée inspirée par ce [documentaire](https://youtu.be/YIeuCCQoUWc).
 
