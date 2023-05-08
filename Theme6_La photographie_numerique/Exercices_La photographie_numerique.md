@@ -105,22 +105,15 @@ Tous ces traitements peuvent être réunis dans une [application en Python](Asse
 
 On peut réaliser la même chose avec le langage JavaScript : [voir l'application web](http://isnangellier.alwaysdata.net/php/traitement.html)
 
-### Exercice 5 : applications
+### Exercice 5 : dessiner des drapeaux
 
-**Application I** 
-
-Il s'agit de réaliser les programmes permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir :
-
-- France : <img width="50" height="50" src="Assets/Drapeau_france.jpg">
-- Belgique : <img width="50" height="50" src="Assets/Drapeau_belge.jpg">
-- Hollande : <img width="50" height="50" src="Assets/Drapeau_hollande.jpg">
-- Suisse : <img width="50" height="50" src="Assets/Drapeau_suisse.jpg">
-- Japon : (Le disque rouge, qui représente le Soleil, se situe exactement au centre du drapeau et son diamètre est fixé au 3 / 5ème de la hauteur du drapeau ; les points à l'intérieur du disque ont la propriété d'être à une distance du centre inférieure au rayon du cercle) <img width="50" height="50" src="Assets/Drapeau_japon.jpg">
-- Niger : (Le diamètre du disque orange est égal aux trois quarts de la hauteur de la bande blanche) <img width="50" height="50" src="Assets/Drapeau_niger.jpg">
+Il s'agit de réaliser les programmes permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir. 
 
 On trouvera ici une application web permettant [le codage des couleurs](http://isnangellier.alwaysdata.net/php/colours.html) .
 
-Exemple : code pour la réalisation du drapeau français ; l'image au format jpg, par exemple `drapeau_france.jpg`, se formera dans le même le dossier que le programme à l'extension python, par exemple `drapeau_france.py` :
+1) France : <img width="50" height="50" src="Assets/Drapeau_france.jpg">
+
+Donnée : code pour la réalisation du drapeau français ; l'image au format jpg, par exemple `drapeau_france.jpg`, se formera dans le même le dossier que le programme à l'extension python, `drapeau_france.py` :
 
 ```python
 
@@ -141,7 +134,7 @@ def drapeau_france():
             else:
                 imagearrivee.putpixel((x,y),(255,0,0)) # le rouge
                                 
-# le liseré noir qui borde le drapeau
+# le liseré noir commun à tous les drapeaux
 
     for x in range(colonne):
         imagearrivee.putpixel((x,0),(0,0,0))
@@ -155,7 +148,23 @@ def drapeau_france():
 drapeau_france()# appelle la fonction définie précédemment qui n'admet pas de paramètre.
 ```
 
-Autres drapeaux : 
+2) Belgique : <img width="50" height="50" src="Assets/Drapeau_belge.jpg">
+
+3) Hollande : <img width="50" height="50" src="Assets/Drapeau_hollande.jpg">
+
+4) Suisse : <img width="50" height="50" src="Assets/Drapeau_suisse.jpg">
+
+5) Japon :  <img width="50" height="50" src="Assets/Drapeau_japon.jpg">
+
+Le disque rouge, qui représente le soleil levant, se situe exactement au centre du drapeau et son diamètre est fixé au 3 / 5ème de la hauteur du drapeau ; les points à l'intérieur du disque ont la propriété d'être à une distance du centre inférieure au rayon du cercle qui le délimite ; la distance entre deux points A et B dont on connaît les coordonnées cartésiennes est donnée par le théorème de Pythagore :
+
+```python
+((xA-xB)**2+(yA-yB)**2))**0.5
+
+```
+Complément: Niger : (Le diamètre du disque orange est égal aux trois quarts de la hauteur de la bande blanche) <img width="50" height="50" src="Assets/Drapeau_niger.jpg">
+
+Pour aller plus loin : autres drapeaux : 
 
 - **le drapeau des Seychelles** (situé dans l'ouest de l'océan Indien et rattaché au continent africain) peut être réalisé approximativement ainsi :   
 
@@ -294,11 +303,14 @@ drapeau_vietnam()
 #    
 #mainloop()
 ```
-**Application II** : Comparer la longueur réelle d'un fleuve et la distance à vol d'oiseau entre sa source et son embouchure. [Programme en Python](Assets/longueur_fleuve.py). Idée inspirée par ce [documentaire](https://youtu.be/YIeuCCQoUWc).
+
+### Exercice 6 : autres applications
+
+**Application I** : Comparer la longueur réelle d'un fleuve et la distance à vol d'oiseau entre sa source et son embouchure. [Programme en Python](Assets/longueur_fleuve.py). Idée inspirée par ce [documentaire](https://youtu.be/YIeuCCQoUWc).
 
 <img src="Assets/Capture_Loire.png">
 
-**Application III** : Apprendre une mappemonde avec une [application web](http://isnangellier.alwaysdata.net/php/Projet_carte.html) ou une [application écrite en Python](Assets/Mappemonde.py).
+**Application II** : Apprendre une mappemonde avec une [application web](http://isnangellier.alwaysdata.net/php/Projet_carte.html) ou une [application écrite en Python](Assets/Mappemonde.py).
 
 <img src="Assets/Capture_mappemonde.png">
 
