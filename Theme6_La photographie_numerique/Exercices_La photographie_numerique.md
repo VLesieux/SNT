@@ -156,7 +156,7 @@ drapeau_france()# appelle la fonction définie précédemment qui n'admet pas de
 
 5) Japon :  <img width="50" height="50" src="Assets/Drapeau_japon.jpg">
 
-Le disque rouge, qui représente le soleil levant, se situe exactement au centre du drapeau et son diamètre est fixé au 3 / 5ème de la hauteur du drapeau ; les points à l'intérieur du disque ont la propriété d'être à une distance du centre inférieure au rayon du cercle qui le délimite ; la distance entre deux points A et B dont on connaît les coordonnées cartésiennes est donnée par le théorème de Pythagore :
+Le disque rouge, qui représente le soleil levant, se situe exactement au centre du drapeau et son diamètre est fixé au 3/5ième de la hauteur du drapeau ; les points à l'intérieur du disque ont la propriété d'être à une distance du centre inférieure au rayon du cercle qui le délimite ; la distance entre deux points A et B dont on connaît les coordonnées cartésiennes est donnée par le théorème de Pythagore :
 
 ```python
 ((xA-xB)**2+(yA-yB)**2))**0.5
