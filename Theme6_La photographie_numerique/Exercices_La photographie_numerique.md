@@ -164,6 +164,8 @@ Quand plusieurs conditions doivent être remplies en même temps, utiliser `and`
 
 5) Japon :  <img width="50" height="50" src="Assets/Drapeau_japon.jpg">
 
+<img width="250" height="250" src="Assets/japon.png">
+
 **Indication** : Le disque rouge, qui représente le soleil levant, se situe exactement au centre du drapeau et son diamètre est fixé au 3/5ième de la hauteur du drapeau ; les points à l'intérieur du disque ont la propriété d'être à une distance du centre inférieure au rayon du cercle qui le délimite ; on rappelle la distance entre deux points A et B dont on connaît les coordonnées cartésiennes est donnée par le théorème de Pythagore :
 
 ```python
