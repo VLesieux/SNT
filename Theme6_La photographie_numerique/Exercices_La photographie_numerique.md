@@ -156,7 +156,8 @@ drapeau_france()# appelle la fonction définie précédemment qui n'admet pas de
 
 4) Suisse : <img width="50" height="50" src="Assets/Drapeau_suisse.jpg">
 
-**Indication** : créer le fond rouge puis les deux bandes blanches.
+**Indication** : créer le fond rouge, puis une bande blanche horizontale, puis une bande blanche verticale.
+<img width="250" height="250" src="Assets/suisse.png">
 
 5) Japon :  <img width="50" height="50" src="Assets/Drapeau_japon.jpg">
 
