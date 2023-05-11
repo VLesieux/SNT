@@ -105,7 +105,7 @@ On peut réaliser la même chose avec le langage JavaScript : [voir l'applicatio
 
 ### Exercice 4 : créer des images numériques de drapeaux
 
-Il s'agit de réaliser les programmes permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir. 
+Il s'agit de réaliser, pour chaque drapeau, un programme permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir. 
 
 → On trouvera ici une application web permettant [le codage des couleurs](http://isnangellier.alwaysdata.net/php/colours.html) .
 
