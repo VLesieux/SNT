@@ -152,7 +152,7 @@ drapeau_france()# appelle la fonction définie précédemment qui n'admet pas de
 
 3) Hollande : <img width="50" height="50" src="Assets/Drapeau_hollande.jpg">
 
-**Indication** : modifier les conditions qui portent maintenant sur les lignes.
+**Indication** : modifier les conditions qui portent maintenant sur les lignes y et non plus sur les colonnes x.
 
 4) Suisse : <img width="50" height="50" src="Assets/Drapeau_suisse.jpg">
 
@@ -160,15 +160,24 @@ drapeau_france()# appelle la fonction définie précédemment qui n'admet pas de
 
 <img width="250" height="250" src="Assets/suisse.png">
 
-Quand plusieurs conditions doivent être remplies en même temps, utiliser `and`.
+Quand plusieurs conditions doivent être remplies en même temps, utiliser l'opérateur logique `and`.
 
 5) Japon :  <img width="50" height="50" src="Assets/Drapeau_japon.jpg">
 
-**Indication** : Le disque rouge, qui représente le soleil levant, se situe exactement au centre du drapeau et son diamètre est fixé au 3/5ième de la hauteur du drapeau ; les points à l'intérieur du disque ont la propriété d'être à une distance du centre inférieure au rayon du cercle qui le délimite ; on rappelle la distance entre deux points A et B dont on connaît les coordonnées cartésiennes est donnée par le théorème de Pythagore :
+**Indication** : Le disque rouge, qui représente le soleil levant, se situe exactement au centre du drapeau et son diamètre est fixé au 3/5ième de la hauteur du drapeau ; les points à l'intérieur du disque ont la propriété d'être à une distance du centre inférieure au rayon du cercle qui le délimite ; on utilisera pour cela, en l'introduisant avant la fonction `drapeau_japon()`, la fonction intermédaire `distance(A,B)`, qui calcule, grâce au théorème de Pythagore, la distance entre deux points A et B dont on connaît les coordonnées cartésiennes :
 
 ```python
-((xA-xB)**2+(yA-yB)**2))**0.5
-
+def distance(A,B):
+    """
+    renvoie la distance entre le point A(xA,yA) et le point B(xB,yB)
+    param : A : tuple
+    param : B : tuple
+    return : float
+    Exemple
+    >>> distance((4,0),(0,3))
+    5.0
+    """
+    return ((A[0]-B[0])**2+(A[1]-B[1])**2)**0.5
 ```
 
 <img width="250" height="250" src="Assets/japon.png">
