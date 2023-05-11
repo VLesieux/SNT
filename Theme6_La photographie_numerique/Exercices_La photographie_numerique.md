@@ -164,7 +164,7 @@ Quand plusieurs conditions doivent être remplies en même temps, utiliser l'op�
 
 5) Japon :  <img width="50" height="50" src="Assets/Drapeau_japon.jpg">
 
-**Indication** : Le disque rouge, qui représente le soleil levant, se situe exactement au centre du drapeau et son diamètre est fixé au 3/5ième de la hauteur du drapeau ; les points à l'intérieur du disque ont la propriété d'être à une distance du centre inférieure au rayon du cercle qui le délimite ; on utilisera pour cela, après l'avoir introduite **avant** la fonction `drapeau_japon()`, une fonction intermédaire `distance(A,B)`, qui calcule, grâce au théorème de Pythagore, la distance entre deux points A et B dont on connaît les coordonnées cartésiennes :
+**Indication** : Le disque rouge, qui représente le soleil levant, se situe exactement au centre du drapeau et son diamètre est fixé au 3/5ième de la hauteur du drapeau ; les points à l'intérieur du disque ont la propriété d'être à une distance du centre inférieure au rayon du cercle qui le délimite ; on utilisera pour cela une fonction intermédaire `distance(A,B)`, qui calcule, grâce au théorème de Pythagore, la distance entre deux points A et B dont on connaît les coordonnées cartésiennes. Cette fonction doit être introduite **avant** la fonction `drapeau_japon()` car elle doit être  définie au préalable.
 
 ```python
 def distance(A,B):
