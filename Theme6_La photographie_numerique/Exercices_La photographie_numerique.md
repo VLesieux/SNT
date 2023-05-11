@@ -107,15 +107,15 @@ On peut réaliser la même chose avec le langage JavaScript : [voir l'applicatio
 
 Il s'agit de réaliser les programmes permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir. 
 
-On trouvera ici une application web permettant [le codage des couleurs](http://isnangellier.alwaysdata.net/php/colours.html) .
+→ On trouvera ici une application web permettant [le codage des couleurs](http://isnangellier.alwaysdata.net/php/colours.html) .
 
 1) France : <img width="50" height="50" src="Assets/Drapeau_france.jpg">
 
-Donnée : code pour la réalisation du drapeau français ; l'image au format jpg, par exemple `drapeau_france.jpg`, se formera dans le même le dossier que le programme à l'extension python, `drapeau_france.py` :
+Donnée : code pour la réalisation du drapeau français ; l'image au format jpg, par exemple `drapeau_france.jpg`, se formera **dans le même le dossier** que le programme à l'extension python, `drapeau_france.py` :
 
 ```python
 
-from PIL import Image# importe le module Image de la bibliothèque PIL
+from PIL import Image# importe le module Image de la bibliothèque PIL nécessaire à la création des images
 
 def drapeau_france():
     (colonne,ligne)=(200,200)
@@ -164,7 +164,7 @@ Quand plusieurs conditions doivent être remplies en même temps, utiliser l'op�
 
 5) Japon :  <img width="50" height="50" src="Assets/Drapeau_japon.jpg">
 
-**Indication** : Le disque rouge, qui représente le soleil levant, se situe exactement au centre du drapeau et son diamètre est fixé au 3/5ième de la hauteur du drapeau ; les points à l'intérieur du disque ont la propriété d'être à une distance du centre inférieure au rayon du cercle qui le délimite ; on utilisera pour cela, en l'introduisant avant la fonction `drapeau_japon()`, la fonction intermédaire `distance(A,B)`, qui calcule, grâce au théorème de Pythagore, la distance entre deux points A et B dont on connaît les coordonnées cartésiennes :
+**Indication** : Le disque rouge, qui représente le soleil levant, se situe exactement au centre du drapeau et son diamètre est fixé au 3/5ième de la hauteur du drapeau ; les points à l'intérieur du disque ont la propriété d'être à une distance du centre inférieure au rayon du cercle qui le délimite ; on utilisera pour cela, après l'avoir introduite avant la fonction `drapeau_japon()`, une fonction intermédaire `distance(A,B)`, qui calcule, grâce au théorème de Pythagore, la distance entre deux points A et B dont on connaît les coordonnées cartésiennes :
 
 ```python
 def distance(A,B):
