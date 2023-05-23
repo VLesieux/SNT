@@ -327,9 +327,13 @@ drapeau_vietnam()
 #mainloop()
 ```
 
-### Exercice 5 : interactions avec une image numérique
+### Exercice 5 : interaction avec une image numérique
 
  Apprendre une mappemonde avec une [application web](http://isnangellier.alwaysdata.net/php/Projet_carte.html) ou une [application écrite en Python](Assets/Mappemonde.py).
 
 <img src="Assets/Capture_mappemonde.png">
+
+Procéder de même pour réaliser une application sur le corps humain
+
+<img src="Assets/corps.png">
 
