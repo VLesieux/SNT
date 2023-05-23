@@ -335,5 +335,5 @@ drapeau_vietnam()
 
 Procéder de même pour réaliser une application sur le corps humain
 
-<img src="Assets/corps.png">
+<img width="200" height="200" src="Assets/corps.png">
 
