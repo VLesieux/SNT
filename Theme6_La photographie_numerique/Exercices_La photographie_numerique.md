@@ -329,11 +329,7 @@ drapeau_vietnam()
 
 ### Exercice 5 : interactions avec une image numérique
 
-**Application I** : Comparer la longueur réelle d'un fleuve et la distance à vol d'oiseau entre sa source et son embouchure. [Programme en Python](Assets/longueur_fleuve.py). Idée inspirée par ce [documentaire](https://youtu.be/YIeuCCQoUWc).
-
-<img src="Assets/Capture_Loire.png">
-
-**Application II** : Apprendre une mappemonde avec une [application web](http://isnangellier.alwaysdata.net/php/Projet_carte.html) ou une [application écrite en Python](Assets/Mappemonde.py).
+ Apprendre une mappemonde avec une [application web](http://isnangellier.alwaysdata.net/php/Projet_carte.html) ou une [application écrite en Python](Assets/Mappemonde.py).
 
 <img src="Assets/Capture_mappemonde.png">
 
