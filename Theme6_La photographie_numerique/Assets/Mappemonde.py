@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import Image, ImageTk
 import random
-############################################################
+##############################Définition des variables globales##########################################################################
 Frontieres=[
 
 [(333, 133), (324, 128), (320, 112), (331, 103), (344, 109), (342, 118), (342, 125), (341, 130), (333, 131)],
@@ -11,21 +11,20 @@ Frontieres=[
 [(597, 356), (652, 324), (675, 346), (688, 380), (673, 400), (655, 412), (639, 394), (616, 390), (595, 402), (600, 353)]
 
 ]
-
+########################################################################################
 Pays=["France","Inde","Australie"]
 Frontiere=[]
-
+pays_a_reperer_indice=0
 resultats_corrects=0
-
+###############################la fonction qui interroge###################################
 def interroge():
     global Pays
-    pays_a_reperer_indice=random.randint(0,len(Pays)-1)
+    global pays_a_reperer_indice
     global Frontieres
     global Frontiere
+    pays_a_reperer_indice=random.randint(0,len(Pays)-1)
     Frontiere=Frontieres[pays_a_reperer_indice]
     print("Vous devez repérer le pays : ", Pays[pays_a_reperer_indice])
-
-interroge()
 ############################################################
 # Charger l'image
 image = Image.open("Carte_du_monde_vierge.png")
@@ -34,13 +33,12 @@ image = image.resize((800, 500))
 fenetre = Tk()
 # Liste des points qui défissent une frontière
 liste_points=[]
-
 # Créer un canvas avec l'image
 canvas = Canvas(fenetre, width=800, height=500)
 canvas.pack()
 image_tk = ImageTk.PhotoImage(image)
 canvas.create_image(0, 0, anchor=NW, image=image_tk)
-#############################################################
+########################################la fonction qui vérifie si le clic est dans la frontière#####################
 def verifie(x,y,liste):    
     calcul=0;
     try:
@@ -63,37 +61,32 @@ def verifie(x,y,liste):
                         calcul+=1
     except ZeroDivisionError:
         pass
-    global resultats_corrects
     if (calcul%2==0):
         return False
     else:
-        resultats_corrects+=1
-        print("Vous avez découvert",resultats_corrects,"pays")
-        interroge()
-    
-# Fonction appelée lorsque l'utilisateur clique sur l'image
+        return True
+############################################# Fonction appelée lorsque l'utilisateur clique sur l'image############################################
 def click(event):
     # Obtenir les coordonnées du clic
     x, y = event.x, event.y
     global Frontiere
-
-################# Pour obtenir une nouvelle frontière #######################
+    global resultats_corrects
+################# Partie à activer pour obtenir une nouvelle frontière #######################
 #    liste_points.append((x, y))
 #    if len(liste_points)>=2:
 #        canvas.create_line(liste_points[len(liste_points)-1][0], liste_points[len(liste_points)-1][1], liste_points[len(liste_points)-2][0], liste_points[len(liste_points)-2][1], fill='red', width=2)    
 #    print(liste_points)
-##############################################################################
-
-    print(verifie(x,y,Frontiere))
- 
-
+###################Partie à commenter pour être interrogé#####################################
+    if verifie(x,y,Frontiere):
+        del Frontieres[pays_a_reperer_indice]
+        del Pays[pays_a_reperer_indice]
+        resultats_corrects+=1
+        print("Vous avez découvert",resultats_corrects,"pays")
+    interroge()
+interroge()
+###########################Ne pas toucher à cette partie########################################################################
 # Associer la fonction "click" à l'événement clic de souris
 canvas.bind("<Button-1>", click)
-
-
-
-
-
 # Démarrer la boucle d'événements de la fenêtre
 fenetre.mainloop()
-
+######################################################################################################
