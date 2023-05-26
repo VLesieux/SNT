@@ -19,11 +19,11 @@ resultats_corrects=0
 
 def interroge():
     global Pays
-    pays_a_reperer=random.randint(0,len(Pays)-1)
+    pays_a_reperer_indice=random.randint(0,len(Pays)-1)
     global Frontieres
     global Frontiere
-    Frontiere=Frontieres[pays_a_reperer]
-    print("Vous devez repérer le pays : ", Pays[pays_a_reperer])
+    Frontiere=Frontieres[pays_a_reperer_indice]
+    print("Vous devez repérer le pays : ", Pays[pays_a_reperer_indice])
 
 interroge()
 ############################################################
