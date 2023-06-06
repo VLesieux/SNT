@@ -135,18 +135,6 @@ for i in range(len(boutons)):
     
 limites=[(i,(40*i+30,40*i+50)) for i in range(1,8)]
 
-#def jouer(choix_colonne):
-#    global config
-#    global joueur_courant
-#    if test_valide(config,choix_colonne,JOUEUR_NOIR):            
-#        config = incrementer_config(config,choix_colonne,JOUEUR_NOIR)
-#        afficher_config(config)
-#    if est_jeu_fini(config):
-#        afficher_fin(config,joueur_courant)
-#    joueur_courant = incrementer_joueur(joueur_courant)
-#    config = incrementer_config(config,meilleur_coup,JOUEUR_BLANC)
-#    afficher_config(config)
-
 def aff_mess_vainqueur(plateau):
     """
     : affichage du gagnant
@@ -161,7 +149,6 @@ def aff_mess_vainqueur(plateau):
             print('Le joueur II a gagné')
         else:
             print('Egalité')
-
 
 def detec_clic(event):
     global valeur_joueur
@@ -210,7 +197,7 @@ def afficher_config(config):
     for i in range(len(Jetons)):
         Jetons[i].represente() 
 
-##########################################################################################################
+##############################################################################################
 valeur_joueur=False
 
 def situation_init():
@@ -233,8 +220,8 @@ def situation_init():
 
 def aff_evolution_jeu(plateau):
     """
-    : permet d'afficher le nombre d'allumettes restantes
-    : param : int(param_jeu) nombres d'allumettes
+    : permet d'afficher le plateau dans la console
+    : param : plateau : list
     : return : None
     Exemple:
     >>> config = [[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 1, 0, 0], [0, 1, 2, 2, 2, 2, 0]]
@@ -345,8 +332,7 @@ def evolution_jeu(valeur_joueur,plateau,choix_joueur):
         pion=1
         plateau[dernier][choix_joueur-1]=1  
     return plateau
-# 
-# 
+
 def test_validite_choix(valeur_joueur,le_choix,plateau):
     """
     : test de la validité de la position
@@ -360,7 +346,6 @@ def test_validite_choix(valeur_joueur,le_choix,plateau):
     else:
         return True
            
-
 def action_joueur(valeur_joueur,param_jeu):
     """
     : permet de connaitre le nombre d'allumettes à enlever
@@ -495,7 +480,8 @@ def etat_final(plateau):
         fini=True
     return fini
 
-#################################################################################################
+##############################################################################################
+
 config = situation_init()
 afficher_config(config)
 
