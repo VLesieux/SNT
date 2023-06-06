@@ -103,6 +103,8 @@ fenetre.mainloop()#la méthode mainloop() permet de lancer un gestionnaire d’�
 
 Pour aller plus loin, on donne ici le code d'un jeu de puissance 4 avec la bibliothèque tkinter.
 
+<img width="700" height="700" src="Assets/puissance4.png">
+
 ```Python
 from tkinter import*
 fenetre=Tk()
