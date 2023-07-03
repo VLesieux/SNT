@@ -85,7 +85,7 @@ Applications :
 
 Vérifier cette affirmation.
 
-### Exercice 3 : traitements d'une image numérique avec Python
+### Exercice 3 : écrire des programmes pour traiter une image numérique avec Python
 
 Dans cet exercice nous allons utiliser le module Image de la librairie **PIL** ou **pillow** de Python (à télécharger dans le menu outils du logiciel Thonny).
 
@@ -103,7 +103,7 @@ Tous ces traitements peuvent être réunis dans une [application en Python](Asse
 
 On peut réaliser la même chose avec le langage JavaScript : [voir l'application web](http://isnangellier.alwaysdata.net/php/traitement.html)
 
-### Exercice 4 : créer des images numériques de drapeaux
+### Exercice 4 : créer des images numériques de drapeaux, du plus simple au plus compliqué
 
 Il s'agit de réaliser, pour chaque drapeau, un programme permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir. 
 
@@ -327,7 +327,7 @@ drapeau_vietnam()
 #mainloop()
 ```
 
-### Exercice 5 : interaction avec une image numérique
+### Exercice 5 : interaction avec une image numérique : faire son propre programme d'apprentissage visuel
 
  Apprendre une mappemonde avec une [application web](http://isnangellier.alwaysdata.net/php/Projet_carte.html) ou une [application écrite en Python](Assets/Mappemonde.py).
 
