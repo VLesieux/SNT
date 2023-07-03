@@ -333,7 +333,7 @@ drapeau_vietnam()
 
 <img src="Assets/Capture_mappemonde.png">
 
-Procéder de même pour réaliser une application sur le corps humain
+Procéder de même pour réaliser votre propre application ; sur le corps humain par exemple 
 
 <img width="500" height="500" src="Assets/corps.png">
 
