@@ -1,13 +1,13 @@
 ## Exercices Thème 5 : Informatique embarquée et objets connectés
 
-### Exercice 1
+### Exercice 1 : rechercher ses objets connectés
 
 Cet exercice doit être fait chez vous et suppose que vous ayez une box internet chez vous.
 Accédez à la page de configuration de votre box (renseignez-vous à l'aide d'un moteur de recherche). Par exemple Freebox est accessible à l'adresse IP locale  192.168.0.254 qu'il suffit de rentrer dans le navigateur pour y accéder.
 
 Recherchez combien d'objets sont connectés via votre box.
 
-### Exercice 2
+### Exercice 2 : réaliser une interface graphique avec Python
 
 On donne ici le code d'un jeu écrit en Python qui utilise la bibliothèque graphique tkinter.
 Expliquer comment l'interface du jeu a été créée et interpréter le fonctionnement du programme.
@@ -493,21 +493,19 @@ if __name__ == '__main__':
 
 ```
 
-### Exercice 3
+### Exercice 3 : sécurité des mots de passe
 
-Une méthode courante d'attaque informatique consiste à trouver un mot de passe par force rute, c'est-à-dire tester toutes les possibilités.
+1) Une méthode courante d'attaque informatique consiste à trouver un mot de passe par force rute, c'est-à-dire tester toutes les possibilités.
 
 Testez la sûreté de vos mots de passes potentiels sur https://password.kaspersky.com/
 
-### Exercice 4
+2) Écrire une fonction `connexion` telle que `connexion(password)` permet de se connecter à un système et renvoie un booléen déterminant si le mot de passe entré est correct. Pour simplifier, on suppose que le mot de passe que vous avez choisi est un entier.
 
-Écrire une fonction `connexion` telle que `connexion(password)` permet de se connecter à un système et renvoie un booléen déterminant si le mot de passe entré est correct. Pour simplifier, on suppose que le mot de passe que vous avez choisi est un entier.
-
-Écrire une fonction `force_brute(n)` cherchant le mot de passe par force brute entre 0 et n. Cette fonction doit renvoyer le mot de passe s'il a été trouvé sinon afficher un message négatif.
+3) Écrire une fonction `force_brute(n)` cherchant le mot de passe par force brute entre 0 et n. Cette fonction doit renvoyer le mot de passe s'il a été trouvé sinon afficher un message négatif.
 
 Remarque : cet exercice est l'occasion de différencier **variable locale** connue d'une fonction et **variable globale** connue par l'ensemble des fonctions du code.
 
-### Exercice 5
+### Exercice 4 : les voitures autonomes de demain ?
 
 Sur le site http://www.cea.fr, on peut lire le texte suivant :
 
@@ -541,7 +539,7 @@ La prise de décision aboutit ensuite à une action qui active ou désactive cer
 4. À votre avis, quels intérêts apportent les voitures autonomes ?
 5. À votre avis, à quelles difficultés se heurtent l'introduction des voitures autonomes ?
 
-### Exercice 6
+### Exercice 5 : un exemple de microcontrôleur
 
 [Prise en main d’un microcontrôleur](https://phychim.ac-versailles.fr/spip.php?article1076) : la carte ARDUINO.  
 
