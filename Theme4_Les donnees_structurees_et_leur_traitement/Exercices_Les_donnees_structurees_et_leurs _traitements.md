@@ -1,6 +1,6 @@
 ## Exercices Thème 4 : Les données structurées et leurs traitements
 
-### Exercice 1
+### Exercice 1 : parcourir des données, extraire une information précise après avoir trié
 
 Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité de l'air Île de France" ;  télécharger puis ouvrir le fichier `indices_QA_commune_IDF_04_2018.csv` (le fichier est également présent dans le dossier `Assets` du thème 4).   
 
@@ -60,7 +60,7 @@ plt.close()
 
 <img src="Assets/graphe.png">
 
-### Exercice 2
+### Exercice 2 : écrire les bonnes fonctions pour répondre à une question précise
 
 Code pour vérifier les docstrings :
 
@@ -140,7 +140,7 @@ def fonction1(table):
     return len(table),len(table[0])
 ```
 
-### Exercice 3
+### Exercice 3 : extraire l'information exacte à partir d'un fichier volumineux de données
 
 1. Dans un premier temps on extrait à l'aide du programme ci-dessous en Python les données d'un fichier `csv` appelé `les_salles_de_cinemas_en_ile-de-france.csv` .  
 On trouvera ce fichier sur le site de données ouvertes du gouvernement à cette [adresse](https://www.data.gouv.fr/fr/datasets/les-salles-de-cinema-en-ile-de-france-idf/) ; il faudra placer ce fichier dans le même dossier que votre programme python `exercice3.py`.
