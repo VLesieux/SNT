@@ -1,6 +1,6 @@
 ## Exercices Thème 5 : Localisation, cartographie et mobilité
 
-### Exercice 1
+### Exercice 1 : bien comprendre les outils de localisation
 
 1) Rappeler avec vos mots comment fonctionne le GPS. Quelles sont les informations contenues dans le signal émis par un satellite ? Pourquoi une grande précision dans la mesure du temps est-elle nécessaire ? Il est dit dans la vidéo : " une erreur de 1 millionième de seconde sur le temps mène à une erreur de 300 m ", justifier.
 
@@ -8,7 +8,7 @@
 
 3) En utilisant [openStreetMap](https://www.openstreetmap.org/#map=14/45.8359/6.8677), dire ce que l'on peut trouver aux coordonnées (latitude : 45.83267°, longitude : 6.86517°). Il suffit de changer les coordonnées dans l'url.
 
-### Exercice 2
+### Exercice 2 : décalage horaire (jet lag) : comment ça marche ?
 
 Le lien entre la longitude et le décalage horaire est que la Terre est divisée en 24 fuseaux horaires, chacun couvrant 15 degrés de longitude (car 360°/24h=15°/h). Le temps solaire moyen local (heure locale) est décalé de 1 heure pour chaque tranche de 15 degrés de longitude vers l'est ou vers l'ouest du méridien de Greenwich, qui est le point de référence pour le fuseau horaire GMT (Greenwich Mean Time) ou UTC (Coordinated Universal Time).
 
@@ -67,7 +67,7 @@ Dans ce programme, on a réalisé un **dictionnaire** appelé `localisations` qu
 ```
 
 
-### Exercice 3
+### Exercice 3 : il est fort cet Ératosthène !
 
 Il y a plus de 2000 ans, le scientifique et philosophène grec Ératosthène invente la discipline de la géographie dont le terme est encore utilisé aujourd'hui ; il a même réussi à estimer la circonférence de la Terre.
 
@@ -107,7 +107,7 @@ if __name__ == '__main__':
     doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
 ```
 
-### Exercice 4
+### Exercice 4 : comment le GPS fait-il pour me localiser ?
 
 Compléter la fonction `calcule_distance` ci-dessous telle que si un satellite a envoyé à l'instant t1 un signal, qui ensuite a été reçu à l'instant t2 par un récepteur, `distance(t1,t2)` renvoie la distance entre le satellite et le récepteur exprimée en km.
 Les dates t1 et t2 sont données en heure UTC.     
@@ -142,7 +142,7 @@ if __name__ == '__main__':
 
 **Indications :** passer par le calcul d'une variable `duree`, puis par le calcul d'une variable `distance` que l'on retournera. 
 
-### Exercice 5
+### Exercice 5 : c'est quoi la distance à vol d'oiseau entre deux villes ?
 
 En utilisant [Géoportail](https://www.geoportail.gouv.fr/) et l'outil "mesurer une distance", trouver la distance à vol d'oiseau de la Tour Eiffel à l'Arc de Triomphe.
 
@@ -200,7 +200,7 @@ En déduire la distance à vol d'oiseau entre ces deux villes : Lille : (50.6365
 Retrouver le résultat à cette [adresse](https://www.coordonnees-gps.fr/distance).
 
 
-### Exercice 6
+### Exercice 6 : comment donner du sens à une trame NMEA ?
 
 Donner l'heure et les coordonnées d'acquisition de la trame NMEA 0183 suivante :
 '$GPGLL,4835.07,N,235.47,E,203712,A'
@@ -271,7 +271,7 @@ if __name__ == '__main__':
 'requin-marteau'
 ```
 
-### Exercice 7
+### Exercice 7 : un algorithme pour trouver le chemin le plus court
 
 1) Déterminer "au jugé" le ou les plus courts chemin de A (sommet 0) à B (somme 4) dans le graphe suivant. Chaque arête possède une longueur qui pourrait être exprimée en km dans le cas d'un réseau routier. Donner également la longueur de ce plus court chemin.
 
