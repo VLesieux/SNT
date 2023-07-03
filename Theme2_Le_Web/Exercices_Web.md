@@ -1,9 +1,13 @@
 ## Exercices Thème 2 : Web
 
-### Exercice 1
+### Exercice 1 : découvrire des astuces pour bien utiliser le moteur de recherche Google
+
+Aller à la [page web](https://websites.gelnet.org/page/feedchat-google) suivante et expliquer en français les différentes astuces proposées.
+
+### Exercice 2 : l'algorithme **PageRank** du moteur de recherche de Google
 
 On souhaite étudier une version minimaliste de l'algorithme **PageRank** du moteur de recherche Google afin de comprendre son fonctionnement.  
-Par souci de simplicité, on travaille avec seulement 5 pages web, chaque page web étant numérotée.
+Par souci de simplicité, on travaillera ici avec seulement 5 pages web, chaque page étant numérotée.
 
 <img src="Assets/PageRank.png" width="300" height="300">
 
@@ -102,14 +106,14 @@ Exécuter le code pour observer le classement par ordre de popularité des diff�
 
 3. Proposer une interprétation au fonctionnement de ce code. Utiliser le Debugger de Thonny.
 
-### Exercice 2
+### Exercice 3 : modifier une page web sur son ordinateur
 
 Aller à l'adresse https://www.gouvernement.fr/composition-du-gouvernement et télécharger le code HTML en faisant un clic droit puis "Enregistrer sous..".      
 Il apparaît un **fichier** avec l'**extension** **htm** ou **html** ainsi qu'un **dossier** contenant les images présentes sur la page.      
 À l'aide de l'**éditeur de texte** NotePad++, en utilisant la fonction de recherche (**ctrl F** (pour find)) modifier le contenu de la page **html** pour afficher votre nom au lieu d'un ministre (bien sûr, cette modification sera présente uniquement sur le fichier HTML que vous venez de télécharger et stocker sur votre ordinateur...) et n'affectera pas la page affichée sur le web qui elle est stockée sur le serveur du ministère.
 Observer également la structure de la page.
 
-### Exercice 3
+### Exercice 4 : construire un ensemble lié de pages web
 
 Écrire une histoire dont vous êtes le héros où chaque page possède un **hyperlien** pour chaque choix possible dans l'histoire.  
 
@@ -155,7 +159,7 @@ Alors que vous rentrez dans le palais royal, un bruit assourdissant s'échappe d
 
 À vous de réaliser toutes les pages de façon à ce que les trois liens de la page `debut.html` soient actifs.
 
-### Exercice 4
+### Exercice 5 : utiliser les outils de création du web
 
 1) Créer une page web appelée `exemples.html` pour vous permettre de tester et mettre en œuvre les différents éléments de code html présentés sur la [page suivante](https://github.com/VLesieux/SNT/blob/master/Th%C3%A8me%202_Le%20Web/Assets/Creation_page_web.md).
 
@@ -163,6 +167,6 @@ Alors que vous rentrez dans le palais royal, un bruit assourdissant s'échappe d
 
 3) Réaliser une [page web](http://vfsilesieux.free.fr/page_web.html) présentant le lieu de votre choix en respectant précisément un cahier des charges. S'inspirer de la feuille de style de la page de la question précédente.
  
-### Exercice 5
+### Exercice 6 : faire des pages web interactives
 
 Comprendre le code qui a permis de réaliser un [quiz en ligne](http://isnangellier.alwaysdata.net/php/Creation_quizz.html) et s'en inspirer pour réaliser son propre quiz. 
