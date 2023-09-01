@@ -2,7 +2,10 @@
 
 ### Exercice 1 : découvrire des astuces pour bien utiliser le moteur de recherche Google
 
-Aller à la [page web](https://websites.gelnet.org/page/feedchat-google) suivante et expliquer en français les différentes astuces proposées.
+Aller à la [page web](https://websites.gelnet.org/page/feedchat-google) suivante et expliquer en français les différentes astuces proposées.   
+1. How many searches are made on Google every day?  
+2. What feature of written language can be used to make searches more effective?  
+3. 
 
 ### Exercice 2 : l'algorithme **PageRank** du moteur de recherche de Google
 
