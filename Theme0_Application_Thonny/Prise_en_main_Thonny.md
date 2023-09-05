@@ -51,8 +51,8 @@ L'éditeur permet la rédaction de *scripts* (fichiers contenant du code Python)
 * effectue une sauvegarde à chaque exécution (demande un nom de fichier si 1ère exécution) => toute modification est sauvegardée
 * coloration syntaxique permettant de visualiser des erreurs :
   * des mots clés du langage (`def`, `if`, `for`, `while`, `True`, `False` ...)
-  * des constantes litérales (couleurs distinctes pour nombres et chaînes de caractères)
-  * coloration des régions marqués par un délimiteur ouvert mais non fermé (chaines de caractères, listes, tuples, dictionnaires, ...)
+  * des constantes littérales (couleurs distinctes pour nombres et chaînes de caractères)
+  * coloration des régions marquées par un délimiteur ouvert mais non fermé (chaines de caractères, listes, tuples, dictionnaires, ...)
 * **indentation automatique** lorsque nécessaire :  l'indentation est un moyen de structurer visuellement votre code en utilisant des espaces ou des tabulations pour montrer les blocs de code imbriqués. C'est une caractéristique importante de la syntaxe Python, car elle indique comment le code est organisé et quelles parties du code sont liées les unes aux autres.
 * complétion automatique avec la touche TAB => favorise l'utilisation de noms longs pour les paresseux
 * visualisation de la portée des variables
@@ -75,9 +75,14 @@ Si le script vient d'être créé (onglet nommé `<untitled>`), boîte de dialog
 * contenir des instructions d'affichage (ou d'`input`) qui seront immédiatement exécutées et laisseront des traces dans le shell (éviter leur abus en phase de développement de fonctions).
 
 ### Illustration de ces points avec un exemple simple: la suite Syracuse
-cf fichier [demo_syracuse.py](demo_syracuse.py)
+cf fichier [demo_syracuse.py](assets/demo_syracuse.py)
 
-Cet exemple sera étudié dans le détail ; pour le moment il faut juste savoir qu'il s'agit d'une suite de valeurs construite à partir d'une valeur initiale ; pour obtenir la valeur suivante on divise la valeur initiale par 2 si celle-ci est paire, et on la multiplie par 3 en lui ajoutant 1 si la valeur initiale est impaire ; il s'avère qu'au bout d'un certain temps la suite atteint toujours la valeur 1 puis finit par se répèter indéfiniment (1,4,2,1,4,2…).
+Cet exemple sera étudié dans le détail ; pour le moment il faut juste savoir qu'il s'agit d'une suite de valeurs construite à partir d'une valeur initiale ; pour obtenir la valeur suivante :
+
+* on divise la valeur initiale par 2 si celle-ci est paire,
+* on la multiplie par 3 en lui ajoutant 1 si la valeur initiale est impaire ; 
+
+il s'avère qu'au bout d'un certain temps la suite atteint toujours la valeur 1 puis finit par se répèter indéfiniment (1,4,2,1,4,2…).
 
 * commencer par écrire la première fonction `syracuse` sans docstring. Profiter de 
   l'ouverture de la parenthèse des paramètres pour souligner la coloration syntaxique (en gris).
