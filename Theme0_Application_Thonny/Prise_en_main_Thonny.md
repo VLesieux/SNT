@@ -29,6 +29,10 @@ L'*invite de commande* (ou prompt) `>>>` attend une instruction.    Une instucti
 * elle est parenthésée (liste : [], tuples : (), dictionnaires : {}, chaînes de caractères avec triple délimiteur : ''' ''')     
 * elle est composée : instructions conditionnelles (if ...) , itérations (for ...)
 
+Mon premier dialogue avec l'interpréteur :
+
+![premier dialogue](assets/hello.png)
+
 ### L'explorateur de variables
 
 * faire apparaître une vue sur les variables définies par le programmeur dans la session courante : menu View/Variables
