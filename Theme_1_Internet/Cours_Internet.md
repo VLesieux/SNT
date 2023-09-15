@@ -39,13 +39,13 @@ Remarque :
 
 En informatique, on compte l'information en **octet** : 1 octet est formé de 8 bits ; il y a donc 2<sup>8</sup>=256 octets possibles de (0,0,0,0,0,0,0,0) à (1,1,1,1,1,1,1,1) qui codent les niveaux de 0 à 255. 
 
-L'information numérique se mesure en octet octet et ses multiples ; kilooctet : 1 ko=10^3 o, megaoctet : 1 Mo=10^6 o, gigaoctet : 1 Go=10^9 o ; teraoctet : 1 To=10^12 o.
+L'information numérique se mesure en octet et ses multiples ; kilooctet : 1 ko=10^3 o, megaoctet : 1 Mo=10^6 o, gigaoctet : 1 Go=10^9 o ; teraoctet : 1 To=10^12 o.
 
 Le trafic de données mobiles peut atteindre 6 Go par utilisateur et par mois en moyenne, avec une croissance moyenne de plus de 40% par an !
 
 Pour que les données (des milliards de 0 et de 1 envoyés les uns après les autres) soient correctement transmises, puis exploitées, des **protocoles** ont été mis en place.
 
-Les données sont **encapsulées** par différents protocoles, c'est-à-dire qu'on va y accoler un certain nombre d'informations, notamment : où est situé l'ordinateur destinataire ? quel est le logiciel destinataire ?...
+Les données sont **encapsulées** par différents protocoles, c'est-à-dire qu'on va y accoler un certain nombre d'informations, notamment : où est situé l'ordinateur destinataire ? quel sera le logiciel destinataire ?...
 
 Cet ensemble d'informations constitue la **trame** et c'est ce qui est transmis via le réseau Internet.
 
@@ -60,19 +60,19 @@ Parmi les différents protocoles utilisés, on retrouve très fréquemment TCP/I
 #### Le protocole TCP (Transmission Control Protocol)
 
 Imaginons que l'on souhaite envoyer une photo numérique. Il s'agit d'un fichier volumineux qui ne pourra pas être envoyé en une seule fois mais devra être découpé en morceaux. Le protocole TCP se charge de découper les données sous forme de **paquets numérotés** et d'indiquer à quel logiciel ces paquets sont destinés. TCP s'assure ensuite que tous ces paquets sont bien transmis grâce à des **accusés de réception** et les rassemble. Si des paquets ont été perdus lors de la transmission, TCP se charge de demander leur nouvel envoi.
-Le protocole TCP assure ainsi une transmission fiable, mais pour autant sans garantie temporelle.
+Le protocole TCP assure ainsi une transmission fiable, mais pour autant sans garantie dans le temps.
 
 Cependant il nous manque encore une information essentielle à la transmission des données : où est situé l'ordinateur B sur le réseau Internet ?
 
 #### Le protocole IP (Internet Protocol)
 
-Pour comprendre le fonctionnement du protocole IP on peut faire assez naturellement l'analogie avec l'envoi du courrier par La Poste.
+Pour comprendre le fonctionnement du protocole IP on peut faire assez naturellement l'analogie avec l'envoi du courrier par la Poste.
 
-Lorsqu'on envoie une lettre par La Poste on l'insère dans une enveloppe sur laquelle sont inscrites l'adresse du **destinataire** et celle de l'**expéditeur**. Ici la lettre à envoyer correspond aux données encapsulées par TCP. Le protocole IP les encapsule en ajoutant entre autres les adresses du destinataire et de l'expéditeur.
+Lorsqu'on envoie une lettre par la Poste on l'insère dans une enveloppe sur laquelle sont inscrites l'adresse du **destinataire** et celle de l'**expéditeur**. Ici la lettre à envoyer correspond aux données encapsulées par TCP. Le protocole IP les encapsule en ajoutant entre autres les adresses du destinataire et de l'expéditeur.
 
 À quoi ressemble l'adresse d'un ordinateur ?   
 
-L'**adresse IP**, à distinguer de l'adresse **MAC** qui est l'adresse donnée par le constructeur, est constituée de **4 nombres compris entre 0 et 255 séparés par un point**. 
+L'**adresse IP**, à distinguer de l'adresse **MAC** qui est l'adresse de la machine donnée par le constructeur, est constituée de **4 nombres compris entre 0 et 255 séparés par un point**. 
 
 Par exemple, supposons que l'adresse IP de l'expéditeur soit 192.168.0.1 et que celle du destinataire soit 172.152.23.108, on obtient le **datagramme** suivant :
 
