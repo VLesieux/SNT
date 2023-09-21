@@ -24,7 +24,6 @@ d. Vérifier que le site www.wikipedia.org vous est accessible en saisissant dan
  
 Rappeler le nom que l'on donne sur Internet aux serveurs qui disposent d’une application logicielle (sorte d’annuaire) permettant de faire la correspondance entre le nom de domaine demandé et l’IP publique associée au serveur. 
 
-
 ### Exercice 3 : la notion de TTL (Time to live ou durée de vie)
 
 Sur le réseau simplifié décrit ci-dessous, citer au moins trois chemins permettant de relier la machine M8 à la machine M4.
@@ -56,37 +55,25 @@ En effet, de même que l'écriture 1|2|8 est la représentation décimale d'une 
 3) Après avoir observé dans l'algorithme utilisé le rôle que prend, à chaque tour de boucle, le nouveau dividende par rapport au quotient précédent, compléter le programme suivant de conversion décimal-binaire en python dont une seule ligne est manquante.
 
 ```python
-nombre=input("Entrez un nombre entier : ")
-a=""
-dividende=int(nombre)
-quotient=dividende//2
-while quotient>0:
-    reste=dividende%2
-    quotient=dividende//2
-    # ligne à compléter
-    a=str(reste)+a#permet la concaténation de la chaîne de caractères de droite à gauche
-print(a)
-```
-4) On peut transformer ce programme en réalisant une **fonction** que l'on appelera `conversion_decimal_binaire`. Déterminer la ligne manquante afin de rendre fonctionnel le test introduit dans la documentation de la fonction.
 
-```python
-def conversion_decimal_binaire(nombre):
+def conversion_decimal_binaire(n):
     """
-    Renvoie le code binaire de nombre sur un octet c'est-à-dire 8 bits
-    param : nombre : int
+    Donne la représentation binaire du nombre entier décimal n
+    param : n : int
     return : str
-    >>> conversion_decimal_binaire(51)
-    '00110011'
+    >>> conversion_decimal_binaire(18)
+    '10010'
+    >>> conversion_decimal_binaire(141)
+    '10001101'
     """
-    a=""
-    # ligne à compléter en observant que nombre passé en paramètre deviendra le quotient après le premier tour
-        a=str(nombre%2)+a
-        nombre=nombre//2
-    a='0'*(8-len(a))+a##pour rajouter autant de 0 que nécessaire à l'écriture d'un octet
-    return a
+    resultat=""
+    while n>0:
+        resultat=str(n%2)+resultat
+        #ligne manquante
+    return resultat
 ```
 
-Code à ajouter pour importer le module doctest et vérifier le test de la docstring :
+Code à ajouter pour importer le module doctest et vérifier les tests de la docstring :
 
 ```Python
 if __name__ == '__main__':
@@ -94,7 +81,16 @@ if __name__ == '__main__':
   doctest.testmod(verbose=True)
 ```
 
-5) En utilisant le programme précédent, on cherche à coder en écriture binaire l'adresse IP 192.168.1.13
+On peut maintenant utiliser cette fonction en demandant à l'utilisateur de rentrer un nombre décimal pour le convertir en binaire
+
+
+```python
+nombre=input("Quel est le nombre dont vous voulez connaître la représentation binaire ? ")
+
+print("La représentation binaire de",nombre,"est : ",conversion_decimal_binaire(int(nombre)))
+```
+
+4) En utilisant le programme précédent, on cherche à coder en écriture binaire l'adresse IP 192.168.1.13
 
 Peut-on concevoir un programme qui donnerait directement le code binaire d'une adresse IP ?
 
@@ -124,7 +120,7 @@ def encodage_adresse_IP_binaire(adresseIP):
     """
 ```
 
-6) Une autre application est l'encodage en binaire d'un texte utilisant le codage ASCII  (American Standard Code for Information Interchange) des caractères.
+5) Une autre application est l'encodage en binaire d'un texte utilisant le codage ASCII  (American Standard Code for Information Interchange) des caractères.
 
 <img src="Assets/ascii.png"> 
 
@@ -148,7 +144,9 @@ def encodage_texte_ASCII_binaire(texte):
     """
 ```
 
-7)  Compléter maintenant le programme suivant de conversion binaire-décimal en python dont une ligne est incomplète.
+Faire un programme qui demande à l'utilisateur le texte qu'il veut encoder.
+
+6)  Compléter maintenant le programme suivant de conversion binaire-décimal en python dont une ligne est incomplète.
 
 ```python
 def conversion_binaire_decimal(code_binaire):
@@ -166,9 +164,11 @@ def conversion_binaire_decimal(code_binaire):
     return resultat
 ```
 
-8) Donner l'adresse IP en notation décimale codée par 10011000110000110110110001100010
+Faire un programme qui demande à l'utilisateur le code binaire qu'il veut convertir en décimal.
 
-9) Peut-on concevoir un programme qui donnerait directement l'adresse IP sous forme décimale à partir de son expression sous forme binaire ?
+Donner par exemple l'adresse IP en notation décimale codée par 10011000110000110110110001100010
+
+7) Peut-on concevoir un programme qui donnerait directement l'adresse IP sous forme décimale à partir de son expression sous forme binaire ?
 
 Pour cela, il faut prélever des parties de la chaîne de caractères en réalisant un `slice` :
 
@@ -187,7 +187,7 @@ def conversion_adresseIP_binaire_decimal(code_binaire):
     """
 ```
 
-10) Compléter la fonction ci-dessous qui permet de décoder le code binaire correspondant à un texte.
+8) Compléter la fonction ci-dessous qui permet de décoder le code binaire correspondant à un texte.
 
 Pour obtenir le caractère correspondant à un code décimal, utiliser 
 
