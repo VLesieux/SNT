@@ -67,9 +67,15 @@ def conversion_decimal_binaire(n):
     '10001101'
     """
     resultat=""
+    
     while n>0:
         resultat=str(n%2)+resultat
-        #ligne manquante
+        #ligne manquante, il faut traduire que le dividende est le résultat du quotient précédent
+            
+    #il faut maintenant rajouter des 0 autant que nécessaire pour obtenir un octet
+    
+    resultat='0'*(8-len(resultat))+resultat
+    
     return resultat
 ```
 
@@ -120,7 +126,7 @@ def encodage_adresse_IP_binaire(adresseIP):
     """
 ```
 
-5) Une autre application est l'encodage en binaire d'un texte utilisant le codage ASCII  (American Standard Code for Information Interchange) des caractères.
+5) Une autre application est l'encodage en binaire d'un texte utilisant le codage ASCII  (American Standard Code for Information Interchange) des caractères. L'ASCII définit 128 caractères numérotés de 0 à 127 et codés en binaire de 0000000 à 1111111. Sept bits suffisent donc. Toutefois, les ordinateurs travaillant presque tous sur un multiple de huit bits (un octet) depuis les années 1970, chaque caractère d'un texte en ASCII est souvent stocké dans un octet dont le 8e bit est 0.
 
 <img src="Assets/ascii.png"> 
 
@@ -134,13 +140,13 @@ Pour obtenir le code ASCII d'un caractère :
 Compléter la fonction ci-dessous : 
 
 ```Python
-def encodage_texte_ASCII_binaire(texte):
+def encodage_texte_ascII_binaire(texte):
     """
-    Encode un texte ASCII en binaire
+    Code un texte ascII en binaire
     param : texte : str
     return : str
-    >>> encodage_texte_ASCII_binaire("vive la snt")
-    '0111011001101001011101100110010100100000011011000110000100100000011100110110111001110100'
+    >>> encodage_texte_ascII_binaire("vive la snt")
+    '111011011010011110110110010110000011011001100001100000111001111011101110100'
     """
 ```
 
@@ -197,12 +203,12 @@ Pour obtenir le caractère correspondant à un code décimal, utiliser
 ```
 
 ```Python
-def decodage_binaire_texte_ASCII(code_binaire):
+def decodage_binaire_texte_ascII(code_binaire):
     """
-    Décode le code binaire d'un texte ASCII
-    param : code_binaire : str
+    Décode Code un texte ascII en binaire
+    param : texte : str
     return : str
-    >>> decodage_binaire_texte_ASCII('0111011001101001011101100110010100100000011011000110000100100000011100110110111001110100')
+    >>> decodage_binaire_texte_ascII('0111011001101001011101100110010100100000011011000110000100100000011100110110111001110100')
     'vive la snt'
     """
 ```
