@@ -172,8 +172,6 @@ def conversion_binaire_decimal(code_binaire):
 
 Faire un programme qui demande à l'utilisateur le code binaire qu'il veut convertir en décimal.
 
-Donner par exemple l'adresse IP en notation décimale codée par 10011000110000110110110001100010
-
 7) Peut-on concevoir un programme qui donnerait directement l'adresse IP sous forme décimale à partir de son expression sous forme binaire ?
 
 Pour cela, il faut prélever des parties de la chaîne de caractères en réalisant un `slice` :
