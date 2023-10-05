@@ -58,7 +58,7 @@ En effet, de même que l'écriture 1|2|8 est la représentation décimale d'une 
 
 def conversion_decimal_binaire(n):
     """
-    Donne la représentation binaire du nombre entier décimal n
+    Donne la représentation binaire sur un octet du nombre entier décimal n
     param : n : int
     return : str
     >>> conversion_decimal_binaire(18)
