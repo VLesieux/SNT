@@ -70,8 +70,8 @@ def conversion_decimal_binaire(n):
     
     while n>0:
         resultat=str(n%2)+resultat
-        #ligne manquante, il faut traduire que le dividende est le résultat du quotient précédent
-            
+        #!!!!ligne manquante!!!!
+                    
     #il faut maintenant rajouter des 0 autant que nécessaire pour obtenir un octet
     
     resultat='0'*(8-len(resultat))+resultat
@@ -146,7 +146,7 @@ def encodage_texte_ascII_binaire(texte):
     param : texte : str
     return : str
     >>> encodage_texte_ascII_binaire("vive la snt")
-    '111011011010011110110110010110000011011001100001100000111001111011101110100'
+    '0111011001101001011101100110010100100000011011000110000100100000011100110110111001110100'
     """
 ```
 
