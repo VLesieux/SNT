@@ -62,7 +62,7 @@ def conversion_decimal_binaire(n):
     param : n : int
     return : str
     >>> conversion_decimal_binaire(18)
-    '10010'
+    '00010010'
     >>> conversion_decimal_binaire(141)
     '10001101'
     """
