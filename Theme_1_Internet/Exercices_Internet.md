@@ -62,7 +62,7 @@ def conversion_decimal_binaire(n):
     param : n : int
     return : str
     >>> conversion_decimal_binaire(18)
-    '00010010'
+    '10010'
     >>> conversion_decimal_binaire(141)
     '10001101'
     """
@@ -71,10 +71,6 @@ def conversion_decimal_binaire(n):
     while n>0:
         resultat=str(n%2)+resultat
         #!!!!ligne manquante!!!!
-                    
-    #il faut maintenant rajouter des 0 autant que nécessaire pour obtenir un octet
-    
-    resultat='0'*(8-len(resultat))+resultat
     
     return resultat
 ```
@@ -94,6 +90,29 @@ On peut maintenant utiliser cette fonction en demandant à l'utilisateur de rent
 nombre=input("Quel est le nombre dont vous voulez connaître la représentation binaire ? ")
 
 print("La représentation binaire de",nombre,"est : ",conversion_decimal_binaire(int(nombre)))
+```
+
+Amélioration du programme, pour que le code binaire soit écrit sur un octet.
+
+```python
+
+def conversion_decimal_binaire(n):
+    """
+    Donne la représentation binaire sur un octet du nombre entier décimal n
+    param : n : int
+    return : str
+    >>> conversion_decimal_binaire(18)
+    '00010010'
+    >>> conversion_decimal_binaire(141)
+    '10001101'
+    """
+    resultat="" 
+    while n>0:
+        resultat=str(n%2)+resultat
+        #!!!!ligne manquante!!!!
+    
+    resultat='0'*(8-len(resultat))+resultat   
+    return resultat
 ```
 
 4) En utilisant le programme précédent, on cherche à coder en écriture binaire l'adresse IP 192.168.1.13
