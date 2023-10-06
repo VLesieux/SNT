@@ -111,7 +111,7 @@ def conversion_decimal_binaire(n):
         resultat=str(n%2)+resultat
         #!!!!ligne manquante!!!!
     
-    resultat='0'*(8-len(resultat))+resultat   
+    resultat='0'*(8-len(resultat))+resultat #on rajoute autant de 0 que nécessaire pour compléter à 8 bits  
     return resultat
 ```
 
