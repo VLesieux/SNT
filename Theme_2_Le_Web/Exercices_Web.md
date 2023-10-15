@@ -2,20 +2,15 @@
 
 ### Exercice 1 : découvrire des astuces pour bien utiliser le moteur de recherche Google
 
-Aller à la [page web](https://websites.gelnet.org/page/feedchat-google) suivante et expliquer en français les différentes astuces proposées.   
-1. How many searches are made on Google every day?  
-2. What feature of written language can be used to make searches more effective?  
-3. 
+Aller à la [page web](https://websites.gelnet.org/page/feedchat-google) suivante et prenez connaissance des différentes astuces proposées.   
 
 ### Exercice 2 : l'algorithme **PageRank** du moteur de recherche de Google
 
-On souhaite étudier une version minimaliste de l'algorithme **PageRank** du moteur de recherche Google afin de comprendre son fonctionnement.  
-Par souci de simplicité, on travaillera ici avec seulement 5 pages web, chaque page étant numérotée.
+On souhaite étudier une version minimaliste de l'algorithme **PageRank** du moteur de recherche Google afin de comprendre son fonctionnement.  Par souci de simplicité, on travaillera ici avec seulement 5 pages web, chaque page étant numérotée.
 
 <img src="Assets/PageRank.png" width="300" height="300">
 
 Chaque flèche représente un lien **hypertexte** permettant le passage d'une page à l'autre grâce à votre navigateur (web browser). 
-
 Ainsi, on voit sur le schéma ci-dessus que la page 0 possède un lien vers la page 1 et un lien vers la page 2.   
 En retour, trois pages possèdent des liens vers la page 0 : les pages 2, 3 et 4.  
 
