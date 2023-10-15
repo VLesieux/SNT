@@ -1,6 +1,6 @@
 ## Exercices Thème 2 : Web
 
-### Exercice 1 : découvrire des astuces pour bien utiliser le moteur de recherche Google
+### Exercice 1 : découvrir des astuces pour bien utiliser le moteur de recherche Google
 
 Aller à la [page web](https://websites.gelnet.org/page/feedchat-google) suivante et prenez connaissance des différentes astuces proposées.   
 
