@@ -159,7 +159,7 @@ Alors que vous rentrez dans le palais royal, un bruit assourdissant s'échappe d
 
 ### Exercice 5 : utiliser les outils de création du web
 
-1) Créer une page web appelée `exemples.html` pour vous permettre de tester et mettre en œuvre les différents éléments de code html présentés sur la [page suivante](https://github.com/VLesieux/SNT/blob/master/Th%C3%A8me%202_Le%20Web/Assets/Creation_page_web.md).
+1) Créer une page web appelée `exemples.html` pour vous permettre de tester et mettre en œuvre les différents éléments de code html présentés sur la [page suivante](https://github.com/VLesieux/SNT/blob/master/Theme_2_Le_Web/Assets/Creation_page_web.md).
 
 2) Inspecter, avec l'outil **Inspecter** en faisant un clic droit sur la page, la [page web](http://vfsilesieux.free.fr/exemple_page_web_SNT.html) suivante et comprendre parallèlement le code qui lui a donné naissance que vous découvrirez avec l'autre outil **Code source de la page**.
 
