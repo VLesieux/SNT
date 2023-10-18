@@ -92,10 +92,10 @@ On a utilisé la fonction `choice` du module `random` qui permet d'obtenir aléa
 
 ```Python
 >>> liste=['A','B','C','D']
->>> from random import choice
->>> choice(liste)
+>>> import random
+>>> random.choice(liste)
 'A'
->>> choice(liste)
+>>> random.choice(liste)
 'C'
 ```
 
