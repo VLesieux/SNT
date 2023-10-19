@@ -113,11 +113,44 @@ Observer également la structure de la page.
 
 ### Exercice 4 : construire un ensemble lié de pages web
 
-Écrire une histoire dont vous êtes le héros où chaque page possède un **hyperlien** pour chaque choix possible dans l'histoire.  
+**page1.html**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>page1</title>
+</head>
+<body>
+<p>Ceci est ma premiere page web</p>
+<image src="images/image1.jpg"/>
+<br>
+<a href="page2.html"> lien vers la page 2</a>
+</body>
+</html>
+```
+
+**page2.html**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>page2</title>
+</head>
+<body>
+<p>Ceci est ma seconde page web</p>
+<image src="images/image2.jpg"/>
+</body>
+</html>
+```
+
+Après avoir pris connaissance de la structure générale de deux pages web connectées par un **hyperlien**, écrire une histoire dont vous êtes le héros où la première page présente plusieurs choix possibles dans l'histoire.   
+On trouvera une image sur chaque page pour illustrer votre histoire.
 
 Voici un exemple, où le couple de balises `<ul> </ul>` sert à définir une liste à puces (non ordonnée) et où les balises `<li> </li>` délimite un élement de la liste, en l'occurence un choix possible.
 
-Enregistrer toutes les pages dans le même dossier.
+On mettra toutes les images dans le même dossier pour organiser les fichiers.
 
 _Script de la page appelée **debut.html**_
 
@@ -155,7 +188,7 @@ Alors que vous rentrez dans le palais royal, un bruit assourdissant s'échappe d
 </html>
 ```
 
-À vous de réaliser toutes les pages de façon à ce que les trois liens de la page `debut.html` soient actifs.
+À vous de réaliser les deux autres pages de façon à ce que les trois liens de la page `debut.html` soient actifs.
 
 ### Exercice 5 : utiliser les outils de création du web
 
