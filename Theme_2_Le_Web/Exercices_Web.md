@@ -149,13 +149,14 @@ On met toutes les images dans le même dossier `images` pour organiser les fichi
 </html>
 ```
 
-Après avoir pris connaissance de la structure générale de deux pages web connectées par un **hyperlien**, écrire une histoire dont vous êtes le héros où la première page présente plusieurs choix possibles dans l'histoire.   
-On proposera une image sur chaque page pour illustrer votre histoire.
+Après avoir pris connaissance de la structure générale de deux pages web connectées par un **hyperlien**, écrire une histoire dont vous êtes le héros où la première page appelée `debut.html` présente plusieurs choix possibles dans l'histoire. 
+  
+Vous proposerez une image sur chaque page pour illustrer votre histoire.
 
-Voici un exemple, où le couple de balises `<ul> </ul>` sert à définir une liste à puces (non ordonnée) et où les balises `<li> </li>` délimite un élement de la liste, en l'occurence un choix possible.
+Voici le script de la page `debut.html`, où le couple de balises `<ul> </ul>` sert à définir une liste à puces (non ordonnée) et où les balises `<li> </li>` délimite un élement de la liste, en l'occurence un choix possible.
 
 
-_Script de la page appelée **debut.html**_
+_Exemple de script de la page appelée **debut.html**_
 
 ```html
 <!DOCTYPE html>
@@ -176,7 +177,7 @@ Un jour, un messager vous apprend que le roi demande après vous de toute urgenc
 </html>
 ```
 
-_Script de la page appelée **palais.html**_
+_Exemple de script de la page appelée **palais.html**_
 
 ```html
 <!DOCTYPE html>
