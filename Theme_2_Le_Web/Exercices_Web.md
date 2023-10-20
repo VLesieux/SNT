@@ -106,9 +106,9 @@ Exécuter le code pour observer le classement par ordre de popularité des diff�
 
 ### Exercice 3 : modifier une page web sur son ordinateur
 
-Aller à l'adresse https://www.gouvernement.fr/composition-du-gouvernement et télécharger le code HTML en faisant un clic droit puis "Enregistrer sous..".      
+Aller à l'adresse `https://www.gouvernement.fr/composition-du-gouvernement` et télécharger le code HTML en faisant un clic droit puis "Enregistrer sous..".      
 Il apparaît un **fichier** avec l'**extension** **htm** ou **html** ainsi qu'un **dossier** contenant les images présentes sur la page.      
-À l'aide de l'**éditeur de texte** NotePad++, en utilisant la fonction de recherche (**ctrl F** (pour find)) modifier le contenu de la page **html** pour afficher votre nom au lieu d'un ministre (bien sûr, cette modification sera présente uniquement sur le fichier HTML que vous venez de télécharger et stocker sur votre ordinateur...) et n'affectera pas la page affichée sur le web qui elle est stockée sur le serveur du ministère.
+À l'aide de l'**éditeur de texte** `NotePad++`, en utilisant la fonction de recherche `ctrl F` (F pour find)) modifier le contenu de la page **html** pour afficher votre nom au lieu d'un ministre (bien sûr, cette modification sera présente uniquement sur le fichier HTML que vous venez de télécharger et stocker sur votre ordinateur...) et n'affectera pas la page affichée sur le web qui elle est stockée sur le serveur du ministère.   
 Observer également la structure de la page.
 
 ### Exercice 4 : construire un ensemble lié de pages web
@@ -149,7 +149,7 @@ On met toutes les images dans le même dossier `images` pour organiser les fichi
 </html>
 ```
 
-Après avoir pris connaissance de la structure générale de deux pages web connectées par un **hyperlien**, écrire une histoire dont vous êtes le héros où la première page appelée `debut.html` présente plusieurs choix possibles dans l'histoire. 
+Après avoir pris connaissance de la structure générale de deux pages web interconnectées par un **hyperlien**, écrire une histoire dont vous êtes le héros où la première page appelée `debut.html` présente plusieurs choix possibles dans l'histoire. 
   
 Vous proposerez une image sur chaque page pour illustrer votre histoire.
 
