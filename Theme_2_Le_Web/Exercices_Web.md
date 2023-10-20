@@ -113,6 +113,8 @@ Observer également la structure de la page.
 
 ### Exercice 4 : construire un ensemble lié de pages web
 
+On met toutes les images dans le même dossier `images` pour organiser les fichiers.
+
 **page1.html**
 
 ```html
@@ -141,16 +143,17 @@ Observer également la structure de la page.
 <body>
 <p>Ceci est ma seconde page web</p>
 <image src="images/image2.jpg"/>
+<br>
+<a href="page1.html"> lien vers la page 1</a>
 </body>
 </html>
 ```
 
 Après avoir pris connaissance de la structure générale de deux pages web connectées par un **hyperlien**, écrire une histoire dont vous êtes le héros où la première page présente plusieurs choix possibles dans l'histoire.   
-On trouvera une image sur chaque page pour illustrer votre histoire.
+On proposera une image sur chaque page pour illustrer votre histoire.
 
 Voici un exemple, où le couple de balises `<ul> </ul>` sert à définir une liste à puces (non ordonnée) et où les balises `<li> </li>` délimite un élement de la liste, en l'occurence un choix possible.
 
-On mettra toutes les images dans le même dossier pour organiser les fichiers.
 
 _Script de la page appelée **debut.html**_
 
@@ -183,7 +186,10 @@ _Script de la page appelée **palais.html**_
 <title>Palais royal</title>
 </head>
 <body>
-Alors que vous rentrez dans le palais royal, un bruit assourdissant s'échappe des cuisines.
+<p>Alors que vous rentrez dans le palais royal, un bruit assourdissant s'échappe des cuisines.</p>
+<image src="images/palais.jpg"/>
+<br>
+<a href="debut.html">Retour au début</a>
 </body>
 </html>
 ```
