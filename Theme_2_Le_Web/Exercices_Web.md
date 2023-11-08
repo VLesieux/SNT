@@ -195,7 +195,13 @@ _Exemple de script de la page appelée **palais.html**_
 </html>
 ```
 
-À vous de réaliser les deux autres pages de façon à ce que les trois liens de la page `debut.html` soient actifs.
+À vous de réaliser les deux autres pages de façon à ce que les trois liens de la page `debut.html` ainsi que les liens de retour vers celle-ci fonctionnent.
+
+**Remarque** : vous pouvez ajouter des attributs de dimension : `width` (nom associé à l'adjectif wide) et `heigth` (nom associé à l'adjectif high) à votre balise image pour redimmensionner correctement votre image. Les valeurs numériques sont exprimées en pixels : le pixel est en effet le plus petit élément d'une image numérique, la combinaison des pixels crée une image dite matricielle.
+
+```html
+<image width="300px" height="400px" src="images/palais.jpg"/>
+```
 
 ### Exercice 5 : utiliser les outils de création du web
 
