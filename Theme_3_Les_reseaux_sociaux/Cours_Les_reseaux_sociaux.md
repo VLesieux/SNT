@@ -17,7 +17,7 @@ Les réseaux sociaux sont des applications basées sur les technologies du Web q
 
 Exemples:  
 * Facebook : créé en 2004 par Marc Zuckerberg, il devient accessible en 2006 ; un utilisateur de Facebook peut partager des messages, photos et vidéos avec une liste d'amis. Il est aussi possible de rejoindre des groupes d'intérêts communs autour d'un sujet précis. Facebook revendique plus de 2 milliards d'utilisateurs actifs chaque mois.   
-* Twitter : fondé en 2006 par Jack Dorsey, Noah Glass, Biz Stone et Evan Williams. Un utilisateur peut envoyer de courts messages appelés tweets à ses followers. Le nombre d'utilisateurs actifs de Twitter dépasse 300 millions.   
+* Twitter, renommé X depuis le 24 juillet par Elon Musk : fondé en 2006 par Jack Dorsey, Noah Glass, Biz Stone et Evan Williams. Un utilisateur peut envoyer de courts messages appelés tweets à ses followers. Le nombre d'utilisateurs actifs de Twitter dépasse 300 millions.   
 * Linkedln : réseau social à but professionnel : les utilisateurs peuvent y poster leur CV et consulter des offres d'emploi. Fondé en 2002, il comptabilise plus de 600 millions de membres.
 
 ### Fake news
