@@ -207,14 +207,14 @@ def nb_aretes(graphe):
 ```Python
 def liste_des_amis_commun(i,j,graphe):
     """
-    Renvoie la liste (si ∅) des liens communs à i et à j dans le graphe, sinon une phrase
+    Renvoie la liste des liens communs à i et à j dans le graphe
     param : i : int
     param : j : int
     param : graphe : list
-    >>> liste_des_amis_commun(0,1,Graphe)
-    [4]
+    >>> liste_des_amis_commun(0,2,Graphe)
+    [3]
     >>> liste_des_amis_commun(1,2,Graphe)
-    "Les deux amis n'ont pas d'ami en commun"
+    "Les deux utilisateurs du réseau social n'ont pas d'ami en commun"
     """
 ```
 
