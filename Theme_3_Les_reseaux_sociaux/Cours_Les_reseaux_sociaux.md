@@ -77,24 +77,24 @@ On suppose dans toute la suite que les n sommets d'un graphe sont numérotés de
 Par exemple le graphe précédent peut être stocké de la façon suivante, en décidant d'associer les points A, B, C, D, E aux valeurs 0, 1, 2, 3, 4 : 
 
 ```Python
->>> G=[[1,3,4],[0,4],[3],[0,2],[0,1]]
->>> G[0]
+>>> Graphe=[[1,3,4],[0,4],[3],[0,2],[0,1]]
+>>> Graphe[0]
 [1, 3, 4]
->>> G[1]
+>>> Graphe[1]
 [0, 4]
->>> G[2]
+>>> Graphe[2]
 [3]
->>> G[3]
+>>> Graphe[3]
 [0, 2]
->>> G[4]
+>>> Graphe[4]
 [0, 1]
 ```
 
 Remarque : Pour accéder à la valeur 2 dans cette liste de liste, on écrira : 
 
 ```Python
->>> G=[[1,3,4],[0,4],[3],[0,2],[0,1]]
->>> G[3][1]
+>>> Graphe=[[1,3,4],[0,4],[3],[0,2],[0,1]]
+>>> Graphe[3][1]
 2
 ```
 
@@ -102,9 +102,16 @@ Nous pouvons alors écrire des algorithmes en Python sur des graphes.
 Par exemple, on peut définir une fonction `lien` qui détermine si deux sommets i et j sont reliés ; elle admet comme paramètres un graphe et deux sommets i et j.
 L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adjacence de i ; pour cela on parcourt cette liste et on regarde si on y trouve l'élément j. 
 
-**Indication** :
+**Indications** :
 
-Pour parcourir les éléments d'une liste les uns après les autres :
+1. Appartenance à une liste: 
+
+```Python
+>>> 3 in [2,8,9,3,5]
+True
+```
+
+2. Pour parcourir les éléments d'une liste les uns après les autres :
 
 ```Python
 >>> liste=[4,8,9,2]
@@ -116,7 +123,7 @@ Pour parcourir les éléments d'une liste les uns après les autres :
 2
 ```
 
-Remarque : Une autre méthode non utilisée ici consisterait à parcourir les éléments de la liste au moyen de leur indice depuis l'indice 0 du premier élément à l'indice `len(liste)-1` du dernier élément :
+Remarque : Une autre méthode non utilisée ici consisterait à parcourir les éléments de la liste au moyen de leur **indice** depuis l'indice 0 du premier élément à l'indice `len(liste)-1` du dernier élément :
 
 ```Python
 >>> liste=[4,8,9,2]
@@ -138,47 +145,31 @@ if __name__ == '__main__':
 
 1. Compléter la fonction `lien`.
 
+Remarque : notre graphe utilisé en exemple est appelé `Graphe`, le graphe utilisé en paramètre de la fonction, qui a une portée générale, est note `graphe`.
+
 ```Python
-def lien(i,j,Graphe):
+def lien(i,j,graphe):
     """
-    Renvoie True si i et j sont liés
+    Renvoie True si les sommets i et j sont liés
     param : i : int
     param : j : int
     param : Graphe : list
-    >>> lien(0,3,G)
+    >>> lien(0,3,Graphe)
     True
-    >>> lien(0,2,G)
+    >>> lien(0,2,Graphe)
     False
     """
 ```
 
-**Indication1** :  Parcourir les éléments de la liste G[i] et voir si j est dans cette liste.
-
-**Indication2** :  Lorsque le mot-clé `return` est utilisé dans une boucle, il fait sortir de la boucle et retourne la valeur spécifiée (si une valeur est spécifiée). Par exemple, si vous avez une boucle `for` et que vous utilisez `return` à l'intérieur de cette boucle, la boucle sera immédiatement interrompue et le reste du code dans la boucle ne sera pas exécuté.
-
-Voici un exemple simple pour vous aider à comprendre :
-
-```Python
-def find_number(numbers):
-  for number in numbers:
-    if number == 5:
-      return True
-  return False
-
-print(find_number([1, 2, 3, 4, 5]))  # affiche True
-print(find_number([1, 2, 3, 4]))  # affiche False
-```
-
-
 2. Compléter la fonction `degre(Graphe,i)`.
 
 ```Python
-def degre(Graphe,i):
+def degre(graphe,i):
     """
     Renvoie le nombre de sommets auquel est lié le sommet i dans Graphe
     param : i : int
     param : Graphe : list
-    >>> degre(G,1)
+    >>> degre(Graphe,1)
     2
     """
 ```
@@ -194,11 +185,11 @@ def degre(Graphe,i):
 3. Compléter la fonction `nb_aretes` renvoyant le nombre total d'arêtes dans un graphe représenté par une liste d'adjacence.
 
 ```Python
-def nb_aretes(Graphe):
+def nb_aretes(graphe):
     """
     Renvoie le nombre d'arêtes du graphe
-    param : Graphe : list
-    >>> nb_aretes(G)
+    param : graphe : list
+    >>> nb_aretes(Graphe)
     5.0
     """
 ```
@@ -227,14 +218,14 @@ Exemple : Pour notre situation précédente, A, B, E forment une clique tandis q
 Écrire la fonction `est_clique` telle que si G est un graphe représenté par une liste d'adjacence et S une liste de sommets, `est_clique(G,S)` renvoie `True` si S forme une clique, `False` sinon.
 
 ```Python
-def est_clique(Graphe,Liste_sommets):
+def est_clique(graphe,liste_sommets):
     """
     Renvoie True si Liste_sommets est une clique, c'est-à-dire que les sommets sont reliés mutuellement entre eux
-    param : Graphe : list
-    param : Liste_sommets : list
-    >>> est_clique(G,[0,1,4])
+    param : graphe : list
+    param : liste_sommets : list
+    >>> est_clique(Graphe,[0,1,4])
     True
-    >>> est_clique(G,[0,1,3])
+    >>> est_clique(Graphe,[0,1,3])
     False
     """
 ```
