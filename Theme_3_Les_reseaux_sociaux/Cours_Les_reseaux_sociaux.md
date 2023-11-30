@@ -149,7 +149,7 @@ if __name__ == '__main__':
 
 1. Compléter la fonction `lien`.
 
-Remarque : notre graphe utilisé en exemple est appelé `Graphe`, le graphe utilisé en paramètre de la fonction, qui a une portée générale, est note `graphe`.
+Remarque : notre graphe utilisé en exemple est noté `Graphe` avec un G majuscule, tandis que le graphe utilisé en paramètre de la fonction, qui lui a une portée générale, est note `graphe` avec un g minuscule ; en effet la fonction devra donner de bons résultats quelque soit le graphe placé en paramètre. Les tests porteront sur `Graphe` choisi en exemple.
 
 ```Python
 def lien(i,j,graphe):
@@ -178,7 +178,7 @@ def degre(graphe,i):
     """
 ```
 
-**Indication** :  Le nombre d'éléments dans une liste est donné par `len`, voici un exemple :
+**Indication** :  Le nombre d'éléments dans une liste est donné par `len` (du mot anglais length associé à l'adjectif long), voici un exemple :
 
 ```Python
 >>> liste=[4,19,20,12]
