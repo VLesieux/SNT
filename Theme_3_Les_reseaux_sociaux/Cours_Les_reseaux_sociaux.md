@@ -123,7 +123,7 @@ True
 2
 ```
 
-Remarque : Une autre méthode non utilisée ici consisterait à parcourir les éléments de la liste au moyen de leur **indice** depuis l'indice 0 du premier élément à l'indice `len(liste)-1` du dernier élément :
+Remarque : Une autre méthode consiste à parcourir les éléments de la liste au moyen de leur **indice** depuis l'indice 0 du premier élément à l'indice `len(liste)-1` du dernier élément :
 
 ```Python
 >>> liste=[4,8,9,2]
@@ -142,6 +142,7 @@ if __name__ == '__main__':
   import doctest
   doctest.testmod(verbose=True)
 ```
+------------
 
 1. Compléter la fonction `lien`.
 
@@ -160,7 +161,7 @@ def lien(i,j,graphe):
     False
     """
 ```
-
+------------
 2. Compléter la fonction `degre(Graphe,i)`.
 
 ```Python
@@ -181,7 +182,7 @@ def degre(graphe,i):
 >>> len(liste)
 4
 ```
-
+------------
 3. Compléter la fonction `nb_aretes` renvoyant le nombre total d'arêtes dans un graphe représenté par une liste d'adjacence.
 
 ```Python
