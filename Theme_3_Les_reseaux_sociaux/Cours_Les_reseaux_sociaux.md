@@ -112,7 +112,9 @@ L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adj
 True
 ```
 
-2. Pour parcourir les éléments d'une liste les uns après les autres :
+2. Pour parcourir les valeurs d'une liste les unes après les autres :
+
+Première méthode : parcourir les éléments les uns après les autres
 
 ```Python
 >>> liste=[4,8,9,2]
@@ -124,7 +126,7 @@ True
 2
 ```
 
-Remarque : Une autre méthode consiste à parcourir les éléments de la liste au moyen de leur **indice** depuis l'indice 0 du premier élément à l'indice `len(liste)-1` du dernier élément :
+Deuxième méthode : parcourir les éléments de la liste au moyen de leur **indice** depuis l'indice 0 du premier élément à l'indice `len(liste)-1` du dernier élément :
 
 ```Python
 >>> liste=[4,8,9,2]
@@ -135,7 +137,7 @@ Remarque : Une autre méthode consiste à parcourir les éléments de la liste a
 9
 2
 ```
-
+------------
 > On rappelle le **code pour la validation des doctests dans les docstrings**.
 
 ```Python
@@ -170,7 +172,7 @@ def degre(graphe,i):
     """
     Renvoie le nombre de sommets auquel est lié le sommet i dans Graphe
     param : i : int
-    param : Graphe : list
+    param : graphe : list
     >>> degre(Graphe,1)
     2
     """
@@ -197,6 +199,24 @@ def nb_aretes(graphe):
 ```
 
 **Indication** : Le nombre d'arêtes est égal à la moitié du nombre total de liens puisqu'un lien est partagé entre deux sommets.
+
+------------
+
+4. Deux personnes sur un réseau social ont-elles des amis en commun ? Si oui, quelle est la liste de ces amis ?
+
+```Python
+def liste_des_amis_commun(i,j,graphe):
+    """
+    Renvoie la liste (si ∅) des liens communs à i et à j dans le graphe, sinon une phrase
+    param : i : int
+    param : j : int
+    param : graphe : list
+    >>> liste_des_amis_commun(0,1,Graphe)
+    [4]
+    >>> liste_des_amis_commun(1,2,Graphe)
+    "Les deux amis n'ont pas d'ami en commun"
+    """
+```
 
 ### Petits mondes
 
