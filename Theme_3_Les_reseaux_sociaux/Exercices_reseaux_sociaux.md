@@ -137,12 +137,6 @@ On numérotera les sommets (à partir de 0) dans l'ordre alphabétique des noms 
 4. Retrouver, dans la console de Thonny, le nombre d'arêtes, le diamètre, le rayon, le ou les centres de ce graphe en faisant agir sur votre graphe les différentes [fonctions](Assets/Code_reseaux_sociaux.py) écrites précédemment. Notez vos résultats.
 5. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Justifier. Que faut-il écrire dans la console pour le vérifier ?
 
-### Exercice 3 : une clique ?
-
-Il peut être intéressant de trouver la plus grande communauté dans un réseau social. On a vu qu'une communauté peut être vue comme une clique (sommets tous reliés entre eux) dans un graphe. Dans les graphes suivants, quel est le nombre maximum de sommets d'une clique ?
-
-<img src="Assets/cliques.png">
-
-### Exercice 4 : à lire pour être sensibilisé aux risques numériques
+### Exercice 3 : à lire pour être sensibilisé aux risques numériques
 
 Consulter le [kit complet](Assets/kit_complet_de_sensibilisation.pdf) et effectuer le test de connaissances.
