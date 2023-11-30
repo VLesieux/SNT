@@ -101,7 +101,7 @@ Remarque : Pour accéder à la valeur 2 dans cette liste de liste, on écrira :
 
 Nous pouvons alors écrire des algorithmes en Python sur des graphes.      
 Par exemple, on peut définir une fonction `lien` qui détermine si deux sommets i et j sont reliés ; elle admet comme paramètres un graphe et deux sommets i et j.
-L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adjacence de i ; pour cela on parcourt cette liste et on regarde si on y trouve l'élément j. 
+L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adjacence de i ; pour cela on parcourt cette liste et on regarde si on y trouve l'élément j ; ou on utilise plus simplement l'opérateur d'appartenance `in`.
 
 **Indications** :
 
