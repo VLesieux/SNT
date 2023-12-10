@@ -36,7 +36,7 @@ Tous les tests seront validés avec le graphe, appelé Graphe, étudié en cours
 Graphe=[[1,3,4],[0,4],[3],[0,2],[0,1]]
 ```
 
-On admet le code qui permet de trouver l'excentricité d'un sommet ; on rappelle qu'il s'agit de la plus grande distance de ce sommet aux autres sommets du graphe.
+On admet le code ci-dessous qui permet de trouver l'excentricité d'un sommet ; on rappelle qu'il s'agit de la plus grande distance de ce sommet aux autres sommets du graphe.
 
 ```Python
 from collections import deque
