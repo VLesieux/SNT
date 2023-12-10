@@ -36,8 +36,7 @@ Tous les tests seront validés avec le graphe, appelé Graphe, étudié en cours
 Graphe=[[1,3,4],[0,4],[3],[0,2],[0,1]]
 ```
 
-
-On admet le code qui permet de trouver l'excentricité d'un sommet.
+On admet le code qui permet de trouver l'excentricité d'un sommet ; on rappelle qu'il s'agit de la grande distance de ce sommet par rapport aux autres sommets du graphe.
 
 ```Python
 from collections import deque
@@ -47,9 +46,9 @@ def excentricite(graphe, sommet):
     Renvoie la plus grande distance du sommet passé en paramètre aux autres sommets de graphe
     param : graphe : list
     param : sommet : int
-    >>> excentricite([[1,3,4],[0,4],[3],[0,2],[0,1]], 0)
+    >>> excentricite(Graphe, 0)
     2
-    >>> excentricite([[1,3,4],[0,4],[3],[0,2],[0,1]], 1)
+    >>> excentricite(Graphe, 1)
     3
     """
     # Initialiser la distance de chaque sommet à l'infini
@@ -81,7 +80,7 @@ def excentricite(graphe, sommet):
 
 Pour cela, faire fonctionner la fonction sur un exemple :   
 
-`excentricite([[1, 3, 4], [0, 4], [3], [0, 2], [0, 1]], 1)` 
+`excentricite(Graphe, 1)` 
 
 et observer le déroulement du programme avec le debugger.
 
@@ -92,7 +91,7 @@ def diametre(graphe):
     """
     Renvoie la plus grande valeur de l'excentricité
     param : graphe : list
-    >>> diametre([[1,3,4],[0,4],[3],[0,2],[0,1]])
+    >>> diametre(Graphe)
     3
     """
     
@@ -101,7 +100,7 @@ def rayon(graphe):
     """
     Renvoie la plus petite valeur de l'excentricité
     param : graphe : list
-    >>> rayon([[1,3,4],[0,4],[3],[0,2],[0,1]])
+    >>> rayon(Graphe)
     2
     """
 
@@ -110,7 +109,7 @@ def centre(graphe):
     """
     Renvoie le ou les sommets de plus petite excentricité
     param : graphe : list
-    >>> centre([[1,3,4],[0,4],[3],[0,2],[0,1]])
+    >>> centre(Graphe)
     ['A', 'D']
     """
 ```
@@ -135,7 +134,7 @@ On numérotera les sommets (à partir de 0) dans l'ordre alphabétique des noms 
 `noms_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]`
 
 2. En utilisant les [définitions](https://github.com/VLesieux/SNT/blob/master/Th%C3%A8me%203_Les%20r%C3%A9seaux%20sociaux/Cours_Les%20r%C3%A9seaux%20sociaux.md) du cours, déterminer manuellement, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe.
-4. Retrouver, dans la console de Thonny, le nombre d'arêtes, le diamètre, le rayon, le ou les centres de ce graphe en faisant agir sur votre graphe les différentes [fonctions](Assets/Code_reseaux_sociaux.py) écrites précédemment. Notez vos résultats.
+4. Retrouver, dans la console de Thonny, le nombre d'arêtes, le diamètre, le rayon, le ou les centres de ce graphe en faisant agir sur votre graphe les différentes fonctions écrites dans le cours. Notez vos résultats.
 5. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Justifier. Que faut-il écrire dans la console pour le vérifier ?
 
 ### Exercice 3 : à lire pour être sensibilisé aux risques numériques
