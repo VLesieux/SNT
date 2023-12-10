@@ -76,17 +76,7 @@ def excentricite(graphe, sommet):
     return max(distances.values())
 ```
 
-1. Proposer une interprétation de ce code.   
-
-Pour cela, faire fonctionner la fonction sur un exemple :   
-
-```Python
-excentricite(Graphe, 1)
-```
-
-et observer le déroulement du programme avec le debugger.
-
-2. En utilisant cette fonction, compléter les codes des fonctions suivantes:
+1. En utilisant cette fonction, compléter les codes des fonctions suivantes:
 
 ```Python
 def diametre(graphe):
