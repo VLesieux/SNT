@@ -1,7 +1,7 @@
 ## Exercices Thème 3 : Réseaux sociaux
 
 
-### Exercice 1 : attention aux `Fake News` qui se répandent rapidement à travers les réseaux sociaux
+### Exercice 1 : attention aux Fake News
 
 Une personne malveillante décide d'envoyer une `Fake News` à 3 personnes. Le jour suivant, chacune de ces 3 personnes envoie à nouveau cette nouvelle à 3 nouvelles personnes, et ainsi de suite. Au bout de combien de jours le monde entier est-il au courant de cette fake news ?
 Population mondiale : 7,8 milliards.
