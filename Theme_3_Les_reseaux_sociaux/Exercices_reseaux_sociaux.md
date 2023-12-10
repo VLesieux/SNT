@@ -80,7 +80,9 @@ def excentricite(graphe, sommet):
 
 Pour cela, faire fonctionner la fonction sur un exemple :   
 
-`excentricite(Graphe, 1)` 
+```Python
+excentricite(Graphe, 1)
+```
 
 et observer le déroulement du programme avec le debugger.
 
