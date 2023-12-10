@@ -1,9 +1,9 @@
 ## Exercices Thème 3 : Réseaux sociaux
 
 
-### Exercice 1 : un petit calcul avec Python ?
+### Exercice 1 : attention aux `Fake News` qui se répandent rapidement à travers les réseaux sociaux
 
-Une personne malveillante décide d'envoyer une fausse nouvelle à 3 personnes. Le jour suivant, chacune de ces 3 personnes envoie à nouveau à 3 nouvelles personnes cette nouvelle, et ainsi de suite. Combien faudra-t-il de jours avant que le monde entier l'ait reçu ?
+Une personne malveillante décide d'envoyer une `Fake News` à 3 personnes. Le jour suivant, chacune de ces 3 personnes envoie à nouveau cette nouvelle à 3 nouvelles personnes, et ainsi de suite. Au bout de combien de jours le monde entier est-il au courant de cette fake news ?
 Population mondiale : 7,8 milliards.
 
 Compléter le code ci-dessous.
@@ -17,7 +17,8 @@ while S<7.8*10**9:
 print(n)
 ```
 
-### Exercice 2 : apprends-moi à manipuler un graphe
+
+### Exercice 2 : manipulation d'un graphe
 
 On rappelle le code pour valider les tests des docstrings.
 
@@ -27,12 +28,12 @@ if __name__ == '__main__':
   doctest.testmod(verbose=True)
 ```
 
-Tous les tests seront validés avec le graphe, appelé G, étudié en cours, pour rappel : 
+Tous les tests seront validés avec le graphe, appelé Graphe, étudié en cours, pour rappel : 
 
 <img src="Assets/graphe_relations.png">
 
 ```Python
-G=[[1,3,4],[0,4],[3],[0,2],[0,1]]
+Graphe=[[1,3,4],[0,4],[3],[0,2],[0,1]]
 ```
 
 
@@ -128,7 +129,7 @@ def centre(graphe):
 
 <img height="400px" src="Assets/graphe_relations2.png">
 
-1. Donner une représentation par liste d'adjacence, similaire à G, appelée `G_exercice`, pour ce graphe.  
+1. Donner une représentation par liste d'adjacence, similaire à Graphe, appelée `Graphe_exercice`, pour ce graphe.  
 On numérotera les sommets (à partir de 0) dans l'ordre alphabétique des noms et on utilisera la liste de noms suivante :
 
 `noms_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]`
