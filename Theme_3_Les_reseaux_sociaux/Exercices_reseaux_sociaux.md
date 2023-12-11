@@ -1,24 +1,7 @@
 ## Exercices Thème 3 : Réseaux sociaux
 
 
-### Exercice 1 : attention aux Fake News
-
-Une personne malveillante décide d'envoyer une `Fake News` à 3 personnes. Le jour suivant, chacune de ces 3 personnes envoie à nouveau cette nouvelle à 3 nouvelles personnes, et ainsi de suite. Au bout de combien de jours le monde entier est-il au courant de cette fake news ?
-Population mondiale : 7,8 milliards.
-
-Compléter le code ci-dessous.
-
-```Python
-S=3
-n=1
-while S<7.8*10**9:
-    ......
-    ......
-print(n)
-```
-
-
-### Exercice 2 : manipulation d'un graphe
+### Exercice 1 : manipulation d'un graphe
 
 On rappelle le code pour valider les tests des docstrings.
 
@@ -129,6 +112,21 @@ On numérotera les sommets (à partir de 0) dans l'ordre alphabétique des noms 
 4. Retrouver, dans la console de Thonny, le nombre d'arêtes, le diamètre, le rayon, le ou les centres de ce graphe en faisant agir sur votre graphe les différentes fonctions écrites dans le cours. Notez vos résultats.
 5. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Justifier. Que faut-il écrire dans la console pour le vérifier ?
 
+### Exercice 2 : attention aux Fake News
+
+Une personne malveillante décide d'envoyer une `Fake News` à 3 personnes. Le jour suivant, chacune de ces 3 personnes envoie à nouveau cette nouvelle à 3 nouvelles personnes, et ainsi de suite. Au bout de combien de jours le monde entier est-il au courant de cette fake news ?
+Population mondiale : 7,8 milliards.
+
+Compléter le code ci-dessous.
+
+```Python
+S=3
+n=1
+while S<7.8*10**9:
+    ......
+    ......
+print(n)
+```
 ### Exercice 3 : à lire pour être sensibilisé aux risques numériques
 
 Consulter le [kit complet](Assets/kit_complet_de_sensibilisation.pdf) et effectuer le test de connaissances.
