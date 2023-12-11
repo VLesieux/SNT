@@ -19,7 +19,7 @@ Tous les tests présents dans les documentations des fonctions seront validés a
 Graphe=[[1,3,4],[0,4],[3],[0,2],[0,1]]
 ```
 
-On admet le code ci-dessous qui permet de trouver l'**excentricité** d'un sommet ; on rappelle qu'il s'agit de la plus grande distance de ce sommet aux autres sommets du graphe ; la **distance** d'un sommet à un autre étant le nombre d'arêtes correspondant au chemin le plus court qui sépare ces sommets.
+On admet le code ci-dessous qui permet de trouver l'**excentricité** d'un sommet ; on rappelle qu'il s'agit de la plus grande distance de ce sommet aux autres sommets du graphe ; la **distance** d'un sommet à un autre étant le nombre d'arêtes correspondant au chemin le plus court qui sépare ces deux sommets.
 
 ```Python
 from collections import deque
