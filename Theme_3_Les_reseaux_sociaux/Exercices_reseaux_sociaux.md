@@ -134,6 +134,8 @@ def centre(graphe):
 
 #### Deuxième partie : application à un graphe à modéliser
 
+Les deux premières questions sont à faire sur papier.
+
 <img height="400px" src="Assets/graphe_relations2.png">
 
 1. Donner une représentation par liste d'adjacence appelée `Graphe_exercice` pour ce graphe.  
