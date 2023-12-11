@@ -59,7 +59,9 @@ def excentricite(graphe, sommet):
     return max(distances.values())
 ```
 
-#### Première partie : en utilisant cette fonction et les indications fournies, compléter les codes des trois fonctions suivantes `diametre(graphe)`, `rayon(graphe)`, `centre(graphe)`:
+#### Première partie
+
+En utilisant cette fonction et les indications fournies, compléter les codes des trois fonctions suivantes `diametre(graphe)`, `rayon(graphe)`, `centre(graphe)`:
 
 1. Fonction `diametre(graphe)`
 
@@ -130,7 +132,7 @@ def centre(graphe):
 
 ------------
 
-#### Deuxième partie : application à un autre graphe :
+#### Deuxième partie : application à un graphe à modéliser
 
 <img height="400px" src="Assets/graphe_relations2.png">
 
