@@ -59,7 +59,7 @@ def excentricite(graphe, sommet):
     return max(distances.values())
 ```
 
-1. En utilisant cette fonction, compléter les codes des fonctions suivantes:
+1. En utilisant cette fonction, compléter les codes des trois fonctions suivantes:
 
 ```Python
 def diametre(graphe):
@@ -69,8 +69,9 @@ def diametre(graphe):
     >>> diametre(Graphe)
     3
     """
+```
     
-
+```Python
 def rayon(graphe):
     """
     Renvoie la plus petite valeur de l'excentricité
@@ -78,8 +79,9 @@ def rayon(graphe):
     >>> rayon(Graphe)
     2
     """
+```
 
-
+```Python
 def centre(graphe):
     """
     Renvoie le ou les sommets de plus petite excentricité
