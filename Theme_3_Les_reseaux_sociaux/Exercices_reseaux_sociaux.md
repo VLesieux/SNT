@@ -136,13 +136,13 @@ def centre(graphe):
 
 <img height="400px" src="Assets/graphe_relations2.png">
 
-1. Donner une représentation par liste d'adjacence, similaire à Graphe, appelée `Graphe_exercice`, pour ce graphe.  
+1. Donner une représentation par liste d'adjacence appelée `Graphe_exercice`, pour ce graphe.  
 On numérotera les sommets (à partir de 0) dans l'ordre alphabétique des noms et on utilisera la liste de noms suivante :
 
 `noms_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]`
 
 2. Déterminer sur le papier, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe.
-3. Retrouver, dans la console de Thonny, le le diamètre, le rayon, le ou les centres de ce graphe en faisant agir sur votre graphe les fonctions précédentes. Notez vos résultats.
+3. Retrouver, dans la console de Thonny, le diamètre, le rayon, le ou les centres de ce graphe en faisant agir sur votre graphe les fonctions précédentes. Notez vos résultats.
 5. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Justifier. Comment le vérifier dans la console en utilisant la fonction `est_clique` du cours.
 
 
