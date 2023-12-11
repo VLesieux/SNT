@@ -3,7 +3,7 @@
 
 ### Exercice 1 : manipulation d'un graphe
 
-On rappelle le code pour valider les tests des docstrings.
+On placera à la fin du fichier le code pour valider les tests des docstrings.
 
 ```Python
 if __name__ == '__main__':
@@ -11,7 +11,7 @@ if __name__ == '__main__':
   doctest.testmod(verbose=True)
 ```
 
-Tous les tests seront validés avec le graphe, appelé Graphe, étudié en cours, pour rappel : 
+Tous les tests présents dans les documentations des fonctions seront validés avec notre exemple appelé Graphe, étudié en cours, pour rappel : 
 
 <img src="Assets/graphe_relations.png">
 
@@ -19,7 +19,7 @@ Tous les tests seront validés avec le graphe, appelé Graphe, étudié en cours
 Graphe=[[1,3,4],[0,4],[3],[0,2],[0,1]]
 ```
 
-On admet le code ci-dessous qui permet de trouver l'excentricité d'un sommet ; on rappelle qu'il s'agit de la plus grande distance de ce sommet aux autres sommets du graphe.
+On admet le code ci-dessous qui permet de trouver l'**excentricité** d'un sommet ; on rappelle qu'il s'agit de la plus grande distance de ce sommet aux autres sommets du graphe ; la **distance** d'un sommet à un autre étant le nombre d'arêtes correspondant au chemin le plus court qui sépare ces sommets.
 
 ```Python
 from collections import deque
@@ -59,7 +59,7 @@ def excentricite(graphe, sommet):
     return max(distances.values())
 ```
 
-1. En utilisant cette fonction, compléter les codes des trois fonctions suivantes:
+1. En utilisant cette fonction et les indications fournies, compléter les codes des trois fonctions suivantes `diametre(graphe)`, `rayon(graphe)`, `centre(graphe)`:
 
 ```Python
 def diametre(graphe):
@@ -70,6 +70,17 @@ def diametre(graphe):
     3
     """
 ```
+ 
+**Indication1:** on rappelle que le diamètre d'un graphe est la plus grande valeur des excentricités des sommets de ce graphe ; elle est égale à 3 pour notre exemple Graphe car pour les différents sommets A, B, C, D, E on a respectivement les excentricités : e(0)=2 ; e(1)=3 ; e(2)=3 ; e(3)=2 ; e(4)=3.
+
+**Indication2** : Pour prendre le maximum d'une liste de valeurs.
+
+```Python
+>>> liste=[2,8,5]
+>>> max(liste)
+8
+```      
+ ------------
     
 ```Python
 def rayon(graphe):
@@ -81,25 +92,30 @@ def rayon(graphe):
     """
 ```
 
+**Indication1:** on rappelle que le rayon d'un graphe est la plus petite valeur des excentricités des sommets de ce graphe ; elle est égale à 2 pour notre exemple Graphe car pour les différents sommets A, B, C, D, E on a respectivement les excentricités : e(0)=2 ; e(1)=3 ; e(2)=3 ; e(3)=2 ; e(4)=3.   
+
+**Indication2** : Pour prendre le minimum d'une liste de valeurs.
+
+```Python
+>>> liste=[2,8,5]
+>>> min(liste)
+2
+```
+------------
+
 ```Python
 def centre(graphe):
     """
     Renvoie le ou les sommets de plus petite excentricité
     param : graphe : list
     >>> centre(Graphe)
-    ['A', 'D']
+    [0, 3]
     """
 ```
 
-**Indications** : Pour prendre le maximum ou le minimum d'une liste de valeurs.
+**Indication** : Le ou les centres d'un graphe sont le ou les sommets du graphe où l'excentricité est minimale et correspond au rayon du graphe.
 
-```Python
->>> liste=[2,8,5]
->>> max(liste)
-8
->>> min(liste)
-2
-```
+------------
 
 **Application** : Soit le graphe ci-dessous :
 
@@ -110,9 +126,10 @@ On numérotera les sommets (à partir de 0) dans l'ordre alphabétique des noms 
 
 `noms_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]`
 
-2. En utilisant les [définitions](https://github.com/VLesieux/SNT/blob/master/Th%C3%A8me%203_Les%20r%C3%A9seaux%20sociaux/Cours_Les%20r%C3%A9seaux%20sociaux.md) du cours, déterminer manuellement, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe.
-4. Retrouver, dans la console de Thonny, le nombre d'arêtes, le diamètre, le rayon, le ou les centres de ce graphe en faisant agir sur votre graphe les différentes fonctions écrites dans le cours. Notez vos résultats.
-5. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Justifier. Que faut-il écrire dans la console pour le vérifier ?
+2. Déterminer sur le papier, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe.
+3. Retrouver, dans la console de Thonny, le le diamètre, le rayon, le ou les centres de ce graphe en faisant agir sur votre graphe les fonctions précédentes. Notez vos résultats.
+5. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Justifier. Comment le vérifier dans la console en utilisant la fonction `est_clique` du cours.
+
 
 ### Exercice 2 : attention aux Fake News
 
