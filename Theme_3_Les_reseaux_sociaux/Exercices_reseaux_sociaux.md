@@ -59,7 +59,9 @@ def excentricite(graphe, sommet):
     return max(distances.values())
 ```
 
-1. En utilisant cette fonction et les indications fournies, compléter les codes des trois fonctions suivantes `diametre(graphe)`, `rayon(graphe)`, `centre(graphe)`:
+## Première partie : en utilisant cette fonction et les indications fournies, compléter les codes des trois fonctions suivantes `diametre(graphe)`, `rayon(graphe)`, `centre(graphe)`:
+
+1. Fonction `diametre(graphe)`
 
 ```Python
 def diametre(graphe):
@@ -80,7 +82,12 @@ def diametre(graphe):
 >>> max(liste)
 8
 ```      
+
+**Indication3** : Il faut donc réaliser une liste initialement vide que l'on peut appeler `valeurs` et la peupler avec les valeurs des excentricités des sommets, puis renvoyer le maximum de cette liste. On pourra s'inspirer du code de la fonction `liste_des_amis_commun(i,j,graphe)` vue en cours.
+
  ------------
+2. Fonction `rayon(graphe)`
+
     
 ```Python
 def rayon(graphe):
@@ -101,7 +108,11 @@ def rayon(graphe):
 >>> min(liste)
 2
 ```
+**Indication3** : Il faut donc réaliser une liste initialement vide que l'on peut appeler `valeurs` et la peupler avec les valeurs des excentricités des sommets, puis renvoyer le minimum de cette liste. On pourra s'inspirer du code de la fonction `liste_des_amis_commun(i,j,graphe)` vue en cours.
+
 ------------
+
+3. Fonction `centre(graphe)`
 
 ```Python
 def centre(graphe):
@@ -113,11 +124,13 @@ def centre(graphe):
     """
 ```
 
-**Indication** : Le ou les centres d'un graphe sont le ou les sommets du graphe où l'excentricité est minimale et correspond au rayon du graphe.
+**Indication1** : Le ou les centres d'un graphe sont le ou les sommets du graphe où l'excentricité est minimale et correspond au rayon du graphe.
+
+**Indication2** : Réaliser une liste initialement vide appelée par exemple `centres` et la peupler lorsque l'excentricité du sommet est égale au rayon du graphe puis renvoyer cette liste. 
 
 ------------
 
-**Application** : Soit le graphe ci-dessous :
+## Deuxième partie : application à un autre graphe :
 
 <img height="400px" src="Assets/graphe_relations2.png">
 
