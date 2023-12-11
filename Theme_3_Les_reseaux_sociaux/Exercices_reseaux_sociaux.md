@@ -61,7 +61,7 @@ def excentricite(graphe, sommet):
 
 #### Première partie
 
-En utilisant cette fonction et les indications fournies, compléter les codes des trois fonctions suivantes `diametre(graphe)`, `rayon(graphe)`, `centre(graphe)`:
+En utilisant cette fonction et les indications fournies ci-dessous, compléter les codes des trois fonctions suivantes `diametre(graphe)`, `rayon(graphe)`, `centre(graphe)`:
 
 1. Fonction `diametre(graphe)`
 
