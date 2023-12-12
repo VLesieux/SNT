@@ -134,18 +134,18 @@ def centre(graphe):
 
 #### Deuxième partie : application à un graphe à modéliser
 
-Les deux premières questions sont à faire sur papier.
+Les questions sont à traiter sur papier.
 
 <img height="400px" src="Assets/graphe_relations2.png">
 
-1. Donner une représentation par liste d'adjacence appelée `Graphe_exercice` pour ce graphe.  
+1. Écrire une représentation par liste d'adjacence appelée `Graphe_exercice` pour ce graphe.  
 On numérotera les sommets (à partir de 0) dans l'ordre alphabétique des noms et on utilisera la liste de noms suivante :
 
 `noms_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]`
 
-2. Déterminer sur le papier, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe.
-3. Retrouver, dans la console de Thonny, le diamètre, le rayon, le ou les centres de ce graphe en faisant agir sur `Graphe_exercice` les fonctions précédentes. Notez vos résultats.
-5. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Justifier. Comment le vérifier dans la console en utilisant la fonction `est_clique` du cours.
+2. Déterminer, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe. On commencera par énoncer précisément les définitions de ces termes.
+3. Retrouver le diamètre, le rayon, le ou les centres de `Graphe_exercice` en faisant agir sur ce graphe les fonctions établies dans la première partie. Notez ce que vous lisez dans la console.
+4. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Justifier. Comment le vérifiez-vous dans la console en utilisant la fonction `est_clique` du cours ?
 
 
 ### Exercice 2 : attention aux Fake News
