@@ -75,7 +75,83 @@ def est_clique(graphe,liste_sommets):
     return True
 
 
+from collections import deque
 
+def excentricite(graphe, sommet):
+    """
+    Renvoie la plus grande distance du sommet passé en paramètre aux autres sommets de graphe
+    param : graphe : list
+    param : sommet : int
+    >>> excentricite(Graphe, 0)
+    2
+    >>> excentricite(Graphe, 1)
+    3
+    """
+    # Initialiser la distance de chaque sommet à l'infini
+    distances = {s: float('inf') for s in range(len(graphe))}
+    # Initialiser la distance du sommet de départ à 0
+    distances[sommet] = 0
+
+    # Initialiser la file d'attente avec le sommet de départ
+    queue = deque([sommet])
+
+    # Itérer jusqu'à ce que la file d'attente soit vide
+    while queue:
+    # Prendre le premier sommet de la file d'attente
+        sommet = queue.popleft()
+    # Parcourir tous les sommets adjacents au sommet actuel
+        for voisin in graphe[sommet]:
+      # Si la distance du voisin est infinie, cela signifie qu'il n'a pas encore été visité
+            if distances[voisin] == float('inf'):
+        # Mettre à jour la distance du voisin en lui attribuant la distance du sommet actuel + 1
+                distances[voisin] = distances[sommet] + 1
+        # Ajouter le voisin à la file d'attente pour être traité ultérieurement
+                queue.append(voisin)
+
+    # Retourner la distance maximale des sommets par rapport au sommet de départ
+    return max(distances.values())
+
+
+def diametre(graphe):
+    """
+    Renvoie la plus grande valeur de l'excentricité
+    param : graphe : list
+    >>> diametre(Graphe)
+    3
+    """
+    valeurs=[]
+    for k in range(len(graphe)):
+        valeurs.append(excentricite(graphe, k))
+    return max(valeurs)
+
+
+def rayon(graphe):
+    """
+    Renvoie la plus petite valeur de l'excentricité
+    param : graphe : list
+    >>> rayon(Graphe)
+    2
+    """
+    valeurs=[]
+    for k in range(len(graphe)):
+        valeurs.append(excentricite(graphe, k))
+    return min(valeurs)    
+
+def centre(graphe):
+    """
+    Renvoie le ou les sommets de plus petite excentricité
+    param : graphe : list
+    >>> centre(Graphe)
+    [0, 3]
+    """
+    centres=[]
+    for k in range(len(graphe)):
+        if excentricite(graphe,k)==rayon(graphe):
+            centres.append(k)
+    return centres        
+
+
+Graphe_exercice=[[1],[0,4],[3,5,6,4],[2],[2,1,6],[2,6],[5,2,4]]
 
 
 

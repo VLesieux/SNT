@@ -143,8 +143,10 @@ On numérotera les sommets (à partir de 0) dans l'ordre alphabétique des noms 
 
 `noms_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]`
 
-2. Déterminer, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe. On commencera par énoncer précisément les définitions de ces termes.
+2. Déterminer les excentricités des sommets puis déterminer, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe. 
+
 3. Retrouver le diamètre, le rayon, le ou les centres de `Graphe_exercice` en faisant agir sur ce graphe les fonctions établies dans la première partie. Notez ce que vous lisez dans la console.
+
 4. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Justifier. Comment le vérifiez-vous dans la console en utilisant la fonction `est_clique` du cours ?
 
 
