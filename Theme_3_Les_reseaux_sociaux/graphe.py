@@ -150,10 +150,20 @@ def centre(graphe):
             centres.append(k)
     return centres        
 
+noms=['A','B','C','D','E']
 
-Graphe_exercice=[[1],[0,4],[3,5,6,4],[2],[2,1,6],[2,6],[5,2,4]]
-
-
+def centre_noms(graphe):
+    """
+    Renvoie le ou les sommets de plus petite excentricité
+    param : graphe : list
+    >>> centre_noms(Graphe)
+    ['A', 'D']
+    """
+    centres=[]
+    for k in range(len(graphe)):
+        if excentricite(graphe,k)==rayon(graphe):
+            centres.append(noms[k])
+    return centres
 
 
 

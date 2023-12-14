@@ -126,6 +126,20 @@ def centre(graphe):
     """
 ```
 
+Amélioration :
+
+```Python
+noms=['A','B','C','D','E']
+
+def centre_noms(graphe):
+    """
+    Renvoie le ou les noms des sommets de plus petite excentricité
+    param : graphe : list
+    >>> centre_noms(Graphe)
+    ['A', 'D']
+    """
+```
+
 **Indication1** : Le ou les centres d'un graphe sont le ou les sommets du graphe où l'excentricité est minimale et correspond au rayon du graphe.
 
 **Indication2** : Réaliser une liste initialement vide appelée par exemple `centres` et la peupler lorsque l'excentricité du sommet est égale au rayon du graphe puis renvoyer cette liste. 
