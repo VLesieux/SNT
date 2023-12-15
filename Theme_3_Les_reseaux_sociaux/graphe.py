@@ -6,6 +6,7 @@ def lien(i,j,graphe):
     param : i : int
     param : j : int
     param : Graphe : list
+    return : bool
     >>> lien(0,3,Graphe)
     True
     >>> lien(0,2,Graphe)
@@ -19,6 +20,7 @@ def degre(graphe,i):
     Renvoie le nombre de sommets auquel est lié le sommet i dans Graphe
     param : i : int
     param : graphe : list
+    return : int
     >>> degre(Graphe,1)
     2
     """
@@ -29,13 +31,14 @@ def nb_aretes(graphe):
     """
     Renvoie le nombre d'arêtes du graphe
     param : graphe : list
+    return : int
     >>> nb_aretes(Graphe)
-    5.0
+    5
     """
     compteur=0
     for i in range(len(graphe)):
         compteur+=degre(graphe,i)
-    return compteur/2
+    return compteur//2
 
 
 def liste_des_amis_commun(i,j,graphe):
@@ -44,6 +47,7 @@ def liste_des_amis_commun(i,j,graphe):
     param : i : int
     param : j : int
     param : graphe : list
+    return : list
     >>> liste_des_amis_commun(0,2,Graphe)
     [3]
     >>> liste_des_amis_commun(1,2,Graphe)
@@ -63,6 +67,7 @@ def est_clique(graphe,liste_sommets):
     Renvoie True si Liste_sommets est une clique, c'est-à-dire que les sommets sont reliés mutuellement entre eux
     param : graphe : list
     param : liste_sommets : list
+    return : bool
     >>> est_clique(Graphe,[0,1,4])
     True
     >>> est_clique(Graphe,[0,1,3])
@@ -82,6 +87,7 @@ def excentricite(graphe, sommet):
     Renvoie la plus grande distance du sommet passé en paramètre aux autres sommets de graphe
     param : graphe : list
     param : sommet : int
+    return : int
     >>> excentricite(Graphe, 0)
     2
     >>> excentricite(Graphe, 1)
@@ -116,6 +122,7 @@ def diametre(graphe):
     """
     Renvoie la plus grande valeur de l'excentricité
     param : graphe : list
+    return : int
     >>> diametre(Graphe)
     3
     """
@@ -129,6 +136,7 @@ def rayon(graphe):
     """
     Renvoie la plus petite valeur de l'excentricité
     param : graphe : list
+    return : int
     >>> rayon(Graphe)
     2
     """
@@ -141,6 +149,7 @@ def centre(graphe):
     """
     Renvoie le ou les sommets de plus petite excentricité
     param : graphe : list
+    return : list
     >>> centre(Graphe)
     [0, 3]
     """
@@ -156,6 +165,7 @@ def centre_noms(graphe):
     """
     Renvoie le ou les sommets de plus petite excentricité
     param : graphe : list
+    return : list
     >>> centre_noms(Graphe)
     ['A', 'D']
     """

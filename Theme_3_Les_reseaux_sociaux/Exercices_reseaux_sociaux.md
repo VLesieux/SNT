@@ -29,6 +29,7 @@ def excentricite(graphe, sommet):
     Renvoie la plus grande distance du sommet passé en paramètre aux autres sommets de graphe
     param : graphe : list
     param : sommet : int
+    return : int
     >>> excentricite(Graphe, 0)
     2
     >>> excentricite(Graphe, 1)
@@ -70,6 +71,7 @@ def diametre(graphe):
     """
     Renvoie la plus grande valeur de l'excentricité
     param : graphe : list
+    return : int
     >>> diametre(Graphe)
     3
     """
@@ -96,6 +98,7 @@ def rayon(graphe):
     """
     Renvoie la plus petite valeur de l'excentricité
     param : graphe : list
+    return : int
     >>> rayon(Graphe)
     2
     """
@@ -121,6 +124,7 @@ def centre(graphe):
     """
     Renvoie le ou les sommets de plus petite excentricité
     param : graphe : list
+    return : list
     >>> centre(Graphe)
     [0, 3]
     """
@@ -135,6 +139,7 @@ def centre_noms(graphe):
     """
     Renvoie le ou les noms des sommets de plus petite excentricité
     param : graphe : list
+    return : list
     >>> centre_noms(Graphe)
     ['A', 'D']
     """
