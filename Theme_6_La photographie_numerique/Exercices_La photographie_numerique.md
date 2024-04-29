@@ -95,9 +95,13 @@ On suivra [sur ce document pdf](http://vfsilesieux.free.fr/traitements_d_une_me%
 2) transformation filtre rouge
 3) transformation filtre vert
 4) transformation filtre bleu
-5) transformation nuance de gris
-6) symétrie verticale
-7) symétrie horizontale
+5) inversion des couleurs
+6) transformation en nuances de gris
+7) transformation en 8 couleurs
+8) symétrie par rapport au centre de l'écran
+9) découpes et translations
+10) agrandissement d'une image
+11) extraction des contours
 
 Tous ces traitements peuvent être réunis dans une [application en Python](Assets/Transformations_images.py).
 
