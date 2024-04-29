@@ -92,9 +92,9 @@ Dans cet exercice nous allons utiliser le module Image de la librairie **PIL** o
 On suivra [sur ce document pdf](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) les différents traitements possibles d'une image avec Python : 
 
 1) transformation en noir et blanc
-2) transformation filtre rouge
-3) transformation filtre vert
-4) transformation filtre bleu
+2) transformation avec filtre rouge
+3) transformation avec filtre vert
+4) transformation avec filtre bleu
 5) inversion des couleurs
 6) transformation en nuances de gris
 7) transformation en 8 couleurs
