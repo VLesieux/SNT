@@ -105,6 +105,8 @@ On suivra [sur ce document pdf](http://vfsilesieux.free.fr/traitements_d_une_me%
 
 Tous ces traitements peuvent être réunis dans une [application en Python](Assets/Transformations_images.py).
 
+<img width="50" height="50" src="Assets/interface.png">
+
 On peut réaliser la même chose avec le langage JavaScript : [voir l'application web](http://isnangellier.alwaysdata.net/php/traitement.html)
 
 ### Exercice 4 : créer des images numériques de drapeaux, du plus simple au plus compliqué
