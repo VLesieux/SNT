@@ -90,7 +90,6 @@ def on_button1_click():
     photo = ImageTk.PhotoImage(tranformation)
     image_label.configure(image=photo)
     image_label.image = photo
-    Button1.config(bg="grey")
 
 # Fonction à exécuter lorsqu'on clique sur le deuxième bouton
 def on_button2_click():
@@ -99,7 +98,6 @@ def on_button2_click():
     photo = ImageTk.PhotoImage(tranformation)
     image_label.configure(image=photo)
     image_label.image = photo
-    Button2.config(bg="blue")
 
 # Fonction à exécuter lorsqu'on clique sur le troisième bouton
 def on_button3_click():
