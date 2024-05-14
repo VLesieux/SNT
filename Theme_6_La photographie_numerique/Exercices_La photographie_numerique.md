@@ -91,7 +91,7 @@ Dans cet exercice nous allons utiliser le module Image de la librairie **PIL** o
 
 On suivra [sur ce document pdf](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) les différents traitements possibles d'une image avec Python : 
 
-image de départ : <img src="Assets/depart.jpg">
+image de départ : <img src="Assets/image.jpg">
 
 1) Transformation en noir et blanc
 
