@@ -103,7 +103,7 @@ On suivra [sur ce document pdf](http://vfsilesieux.free.fr/traitements_d_une_me%
 10) agrandissement d'une image
 11) extraction des contours
 
-Tous ces traitements peuvent être réunis dans une [application en Python](Assets/Transformations_images.py).
+Tous ces traitements peuvent être réunis dans une [application en Python](Assets/Transformations_images.py) à compléter en suivant le modèle réalisé pour les 5 premières transformations.
 
 <img src="Assets/interface.png">
 
