@@ -107,7 +107,7 @@ Tous ces traitements peuvent être réunis dans une [application en Python](Asse
 
 <img src="Assets/interface.png">
 
-On peut réaliser la même chose avec le langage JavaScript : [voir l'application web](http://isnangellier.alwaysdata.net/php/traitement.html)
+On peut réaliser la même chose avec le langage JavaScript : [voir l'application web](http://isnangellier.alwaysdata.net/php/traitement.html) ; on pourra observer le code pour faire des analogies avec le code en Python.
 
 ### Exercice 4 : créer des images numériques de drapeaux, du plus simple au plus compliqué
 
