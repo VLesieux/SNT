@@ -91,17 +91,16 @@ Dans cet exercice nous allons utiliser le module Image de la librairie **PIL** o
 
 On suivra [sur ce document pdf](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) les différents traitements possibles d'une image avec Python : 
 
-1) transformation en noir et blanc
-2) transformation avec filtre rouge
-3) transformation avec filtre vert
-4) transformation avec filtre bleu
-5) inversion des couleurs
-6) transformation en nuances de gris
-7) transformation en 8 couleurs
-8) symétrie par rapport au centre de l'écran
-9) découpes et translations
-10) agrandissement d'une image
-11) extraction des contours
+1) Transformation en noir et blanc
+2) Transformation avec filtre bleu
+3) Transformation avec filtre rouge
+4) Transformation avec filtre vert
+5) Transformation en nuances de gris
+6) Transformation en 8 couleurs
+7) Pivoter
+8) Découpes et translations
+9) Agrandissement de l'image
+10) Extraction des contours
 
 Tous ces traitements peuvent être réunis dans une [application en Python](Assets/Transformations_images.py) à compléter en suivant le modèle réalisé pour les 5 premières transformations.
 
