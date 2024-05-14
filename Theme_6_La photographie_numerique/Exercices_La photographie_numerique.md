@@ -95,7 +95,7 @@ image de départ à télécharger : <img src="Assets/image.jpg">
 
 1) Transformation en noir et blanc
 
-<img src="Assets/noir_blanc.jpg">
+<img width="100px" height="100px" src="Assets/noir_blanc.jpg">
 
 2) Transformation avec filtre bleu
 
