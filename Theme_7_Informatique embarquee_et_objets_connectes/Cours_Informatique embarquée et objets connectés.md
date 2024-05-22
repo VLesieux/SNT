@@ -14,6 +14,7 @@ La conception de ces objets connectés s'est faite avec la miniaturisation des p
 - 1971 : Intel crée le premier processeur.
 - 1984 : L'Airbus A320 est le premier avion équipé de commandes électriques informatisées.
 - 1999 : Introduction de la notion d' "Internet des objets" (Internet of Things) qui désigne l'ensemble des objets connectés, c'est-à-dire les systèmes embarqués connectés entre eux par Internet.
+- 2023 : Apple M3 : finesse de gravure 3 nm ; 25 milliards de transistors ; 18 000 milliards d'opérations par seconde !
 
 
 ### Systèmes embarqués
