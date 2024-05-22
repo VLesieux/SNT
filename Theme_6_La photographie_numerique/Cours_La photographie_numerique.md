@@ -41,7 +41,7 @@ Voir [exercice sur le capteur de l'appareil photo intégré dans un smartphone](
 
 Une image numérique peut être considérée comme un tableau de pixels, chaque pixel est formé de 3 sous-pixels : rouge, vert, bleu. Il utilise le principe de la **synthèse additive des couleurs** avec trois couleurs primaire : le rouge, le vert et le bleu.
 
-<img width="500" height="500" src="Assets/additive_synthesis.png">
+<img width="600" height="500" src="Assets/additive_synthesis.png">
 
 Ce principe est à distinguer de la **synthèse soustractive des couleurs** utilisée par les peintres ou les imprimantes couleurs avec trois couleurs primaires : le jaune, le cyan, le magenta.
 
