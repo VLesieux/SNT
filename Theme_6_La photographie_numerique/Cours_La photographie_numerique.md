@@ -47,7 +47,7 @@ Ce principe est à distinguer de la **synthèse soustractive des couleurs** util
 
 <img src="Assets/subtractive_synthesis.png">
 
-<img width="300" height="300" src="Assets/pixels.png"><img width="300" height="300" src="Assets/pixel_microscope.jpg">
+<img width="400" height="300" src="Assets/pixels.png"><img width="300" height="300" src="Assets/pixel_microscope.jpg">
 
 La **définition d'une image** est le nombre de pixels constituant l'image. Par exemple, une image contenant 2592 pixels en largeur et 1936 pixels en hauteur (2592×1936) a une définition de 5 018 112 pixels, soit environ 5 Mpx (mégapixels).
 Remarque : il n'y a pas nécessairement le même nombre de pixels sur l'image que de photosites sur le capteur. Cela dépend des algorithmes utilisés lors du dématriçage. La définition du capteur peut donc être différente de la définition de l'image.
