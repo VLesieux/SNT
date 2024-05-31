@@ -27,7 +27,7 @@ def interroge():
     print("Vous devez repérer le pays : ", Pays[pays_a_reperer_indice])
 ############################################################
 # Charger l'image
-image = Image.open("Carte_du_monde_vierge.png")
+image = Image.open("Capture_mappemonde.png")
 image = image.resize((800, 500))
 # Créer une fenêtre
 fenetre = Tk()
