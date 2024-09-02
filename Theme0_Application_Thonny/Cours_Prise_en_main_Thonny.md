@@ -4,10 +4,7 @@
 Thonny est un *environnement de développement intégré* (EDI ou IDE en anglais pour 
 *Integrated Development Environment*) qui a été particulièrement bien conçu pour les programmeurs débutant en Python ; c'est un outil puissant qui facilite le processus de développement en Python en fournissant une gamme de fonctionnalités et d'outils essentiels pour écrire, déboguer (éliminer les anomalies de fonctionnement) et gérer efficacement des projets Python.
 
-
-La dernière version disponible à ce jour (septembre 2023) est la 3.10.
-
-Site officiel pour télécharger l'application : [Thonny](https://thonny.org)
+La dernière version disponible à ce jour se trouve sur le site officiel ; pour y télécharger l'application : [Thonny](https://thonny.org)
 
 **Remarque** : distinguer Python qui est un langage et Thonny qui est un environnement intégré de programmation en Python.
 
