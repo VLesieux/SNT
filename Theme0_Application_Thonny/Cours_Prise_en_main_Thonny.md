@@ -54,7 +54,7 @@ L'éditeur permet la rédaction de *scripts* (fichiers contenant du code Python)
   * des mots clés du langage (`def`, `if`, `for`, `while`, `True`, `False` ...)
   * des constantes littérales (couleurs distinctes pour nombres et chaînes de caractères)
   * coloration des régions marquées par un délimiteur ouvert mais non fermé (chaines de caractères, listes, tuples, dictionnaires, ...)
-* **indentation automatique** lorsque nécessaire :  l'indentation est un moyen de structurer visuellement votre code en utilisant des espaces ou des tabulations pour montrer les blocs de code imbriqués. C'est une caractéristique importante de la syntaxe Python, car elle indique comment le code est organisé et quelles parties du code sont liées les unes aux autres.
+* **indentation automatique** lorsque nécessaire :  l'indentation est un moyen de structurer visuellement votre code en utilisant des espaces ou des tabulations pour montrer les blocs de code imbriqués. C'est une caractéristique importante de la syntaxe Python (l'équivalent d'une grammaire), car elle indique comment le code est organisé et quelles parties du code sont liées les unes aux autres.
 * complétion automatique avec la touche TAB => favorise l'utilisation de noms longs pour les paresseux
 * visualisation de la portée des variables
 
@@ -88,10 +88,10 @@ Cet exemple sera étudié dans le détail ; pour le moment il faut juste savoir 
 * on divise la valeur initiale par 2 si celle-ci est paire,
 * on la multiplie par 3 en lui ajoutant 1 si la valeur initiale est impaire ; 
 
-il s'avère qu'au bout d'un certain temps la suite atteint toujours la valeur 1 puis finit par se répèter indéfiniment (1,4,2,1,4,2…).
+il s'avère qu'au bout d'un certain temps la suite atteint toujours la valeur 1 puis finit par se répèter logiquement indéfiniment (1,4,2,1,4,2…).
 
 * commencer par écrire la première fonction `syracuse` sans docstring. Profiter de 
-  l'ouverture de la parenthèse des paramètres pour souligner la coloration syntaxique (en gris).
+  l'ouverture de la parenthèse des paramètres pour observer la coloration syntaxique (en gris).
   
 * exécuter => il faut donner un nom au script (qui change l'intitulé de l'onglet) => il ne se passe rien dans le shell. 
   
@@ -258,4 +258,4 @@ ok
 ***Test Failed*** 1 failures.
   ```
 
-Le module  `doctest  ` permet donc de révéler des erreurs dans notre code par rapport à nos attentes et s'avère un outil indispensable pour le programmeur.
+Le module  `doctest  ` permet donc de détecter des erreurs dans notre code par rapport à nos attentes et s'avère un outil indispensable pour le programmeur.
