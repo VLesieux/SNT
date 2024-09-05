@@ -16,7 +16,7 @@ Lorsqu'on lance Thonny la première fois, on découvre une fenêtre avec sa barr
 
 ![vue sur Thonny](assets/thonny.png)
 
-## Le shell
+## La Console (le shell)
 Le *shell* est la zone dans laquelle l'utilisateur intéragit/dialogue avec l'interpréteur Python.
 
 ### Dialogue avec l'interpréteur
@@ -103,15 +103,15 @@ il s'avère qu'au bout d'un certain temps la suite atteint toujours la valeur 1 
   
 * dans le Shell utiliser la fonction `syracuse`  en faisant par exemple syracuse(3) 
 
-* dans le Shell utiliser la complétion automatique pour appeler la fonction `terme_syracuse` ; contruire la liste des valeurs partant de 9 en écrivant dans le Shell :
+* dans la Console utiliser la complétion automatique pour appeler la fonction `terme_syracuse` ; contruire la liste des valeurs partant de 9 en écrivant dans la Console :
 
   `[terme_syracuse(9,i) for i in range(1,30)]`
 
 * écrire la troisième fonction `atterrissage_syracuse` sans docstring.
 
-* exécuter dans le Shell `atterrissage_syracuse(9)` 
+* exécuter dans la Console `atterrissage_syracuse(9)` 
 
-* exécuter dans le Shell  :
+* exécuter dans la Console  :
 
   `[atterrissage_syracuse(a) for a in range(1,10)]`
 
@@ -134,7 +134,7 @@ il s'avère qu'au bout d'un certain temps la suite atteint toujours la valeur 1 
 
 ## Localiser une erreur 
 
-* dans le shell taper la commande `syracuse('3')` => cela se passe mal, pourquoi ? : plusieurs lignes rouges sont écrites ! Elles se lisent de bas en haut.
+* dans la Console taper la commande `syracuse('3')` => cela se passe mal, pourquoi ? : plusieurs lignes rouges sont écrites ! Elles se lisent de bas en haut.
 * dernière ligne : une exception est déclenchée portant le nom de `TypeError`
 * ligne du dessus la ligne de code ayant déclenché l'exception
 * ligne du dessus lien vers le fichier et la ligne de ce fichier contenant ce code
@@ -145,7 +145,7 @@ il s'avère qu'au bout d'un certain temps la suite atteint toujours la valeur 1 
 
 ## Docstring
 
-* partir de la fonction `help` dans le shell sur quelques fcts prédéfinies (`abs`, `len`, `print`)
+* partir de la fonction `help` dans la Console sur quelques fcts prédéfinies (`abs`, `len`, `print`)
 * essayer `help` avec les fcts du script `syracuse` => pas grand chose
 * on ajoute une docstring dans `syracuse`
   ```python
