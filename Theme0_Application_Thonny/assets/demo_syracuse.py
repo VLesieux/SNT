@@ -6,11 +6,13 @@ def syracuse(valeur):
         resultat=3*valeur+1
     return resultat
 
-def terme_syracuse(premier_terme,nb_termes):
+def liste_termes_syracuse(premier_terme,nb_termes):
+    liste_termes=[premier_terme]
     terme=premier_terme
     for i in range(nb_termes):
         terme=syracuse(terme)
-    return terme
+        liste_termes.append(terme)
+    return liste_termes
 
 def atterrissage_syracuse(premier_terme):
     nb_termes=0
