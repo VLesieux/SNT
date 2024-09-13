@@ -17,9 +17,10 @@ Tous les objets connectés à Internet (ordinateurs, téléphones, montres conne
 Pour cela, plusieurs **supports physiques de communication** peuvent être utilisés : 
 - **câbles électriques** : transport de l'électricité
 - **fibre optique** : transport de la lumière utilisant la réflexion totale de celle-ci dans le cœur de la fibre sans perte d'énergie
+<img src="Assets/spectre-electromagnetique.png">
 - **air libre** : wifi, 4G : transport d'ondes électromagnétiques. En France, selon les **opérateurs** (Bouygues Telecom, Free, Orange, SFR...), les fréquences utilisées pour la 4G sont dans les bandes 700, 800 et 900 MHz, 1800, 2100 et 2600 MHz ; il est à noter qu'il s'agit toujours du même type d'onde électromagnétique que ce que l'on trouve dans les fours à micro-ondes, mais avec toutefois une différence de puissance, de l'ordre de 0,1 W pour le Wi-Fi, mais de l'ordre de 1000 W pour le four à micro-ondes.
 
-<img src="Assets/spectre-electromagnetique.png">
+<img src="Assets/fibre_optique.png">
 
 
 ### Historique
