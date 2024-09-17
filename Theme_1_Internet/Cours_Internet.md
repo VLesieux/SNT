@@ -14,12 +14,14 @@ Il existe énormément de réseaux à travers le monde. Tous ces réseaux peuven
 
 Tous les objets connectés à Internet (ordinateurs, téléphones, montres connectées, etc..) peuvent communiquer entre eux et échanger des informations : textes, images, sons, vidéos, etc..   
 
-Pour cela, plusieurs **supports physiques de communication** peuvent être utilisés : 
-- **câbles électriques** : transport de l'électricité
+Pour cela, plusieurs **supports physiques de transmission** peuvent être utilisés : 
+
+- **câbles électriques** : transport du courant électrique
+
 - **fibre optique** : transport de la lumière utilisant la réflexion totale de celle-ci dans le cœur de la fibre sans perte d'énergie
 <img src="Assets/fibre_optique.png">
 
-- **air libre** : wifi, 4G : transport d'ondes électromagnétiques. En France, selon les **opérateurs** (Bouygues Telecom, Free, Orange, SFR...), les fréquences utilisées pour la 4G sont dans les bandes 700, 800 et 900 MHz, 1800, 2100 et 2600 MHz ; il est à noter qu'il s'agit toujours du même type d'onde électromagnétique que ce que l'on trouve dans les fours à micro-ondes, mais avec toutefois une différence de puissance, de l'ordre de 0,1 W pour le Wi-Fi, mais de l'ordre de 1000 W pour le four à micro-ondes (où les ondes sont amplifiées en s'additionnant de façon constructive à l'intérieur de la cavité).
+- **air libre** : wifi, 4G : transport immatériel d'ondes électromagnétiques. En France, selon les **opérateurs** (Bouygues Telecom, Free, Orange, SFR...), les fréquences utilisées pour la 4G sont dans les bandes 700, 800 et 900 MHz, 1800, 2100 et 2600 MHz ; il est à noter qu'il s'agit toujours du même type d'onde électromagnétique que ce que l'on trouve dans les fours à micro-ondes, mais avec toutefois une différence de puissance, de l'ordre de 0,1 W pour le Wi-Fi, mais de l'ordre de 1000 W pour le four à micro-ondes (où les ondes sont amplifiées en s'additionnant de façon constructive à l'intérieur de la cavité).
 
 <img src="Assets/spectre-electromagnetique.png">
 
@@ -119,7 +121,7 @@ Maintenant que l'on sait de quoi est constituée une trame transmise entre deux 
 
 Le schéma ci-dessus montre que les ordinateurs sont reliés entre eux par des **switchs**, chaque switch correspondant à un réseau local, eux-mêmes reliés à des **routeurs**.
 
-Le rôle d'un routeur est analogue au centre de tri ; son rôle est de faire communiquer entre eux les réseaux qu'il relie et d'aiguiller correctement chaque trame reçue. Pour cela le routeur utilise sa **table de routage** : en fonction de l'adresse IP de destination il choisira à qui il doit renvoyer la trame.
+Le rôle d'un routeur est analogue au centre de tri ; son rôle est de faire communiquer entre eux les réseaux qu'il relie et d'aiguiller correctement chaque trame reçue. Pour cela le routeur utilise sa **table de routage** : en fonction de l'adresse IP de destination il choisira à qui il doit renvoyer la trame ; la table de routage contient en effet la liste des réseaux connus ainsi que l'adresse du routeur suivant permettant de les atteindre.
 Sur le réseau représenté sur le schéma ci-dessus, lorsqu'une trame est envoyée par l'ordinateur M2 à destination de l'ordinateur M10, elle peut être relayée par les routeurs A, B, D, E mais ce n'est pas le seul chemin possible, la trame peut aussi passer par le routeur H et suivre le chemin H, F, E ; le cheminement effectivement suivi dépend des tables de routage des routeurs rencontrés.
 
 Remarques :
