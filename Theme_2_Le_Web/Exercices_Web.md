@@ -211,6 +211,6 @@ _Exemple de script de la page appelée **palais.html**_
 
 3) Réaliser une [page web](http://vfsilesieux.free.fr/page_web.html) présentant le lieu de votre choix en respectant précisément un cahier des charges. S'inspirer de la feuille de style de la page de la question précédente.
  
-### Exercice 6 : faire des pages web interactives
+### Exercice 6 : faire des pages web interactives (pour aller plus loin)
 
 Comprendre le code qui a permis de réaliser un [quiz en ligne](http://isnangellier.alwaysdata.net/php/Creation_quizz.html) et s'en inspirer pour réaliser son propre quiz. 
