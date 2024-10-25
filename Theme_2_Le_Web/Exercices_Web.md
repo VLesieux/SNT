@@ -111,7 +111,7 @@ Il apparaît un **fichier** avec l'**extension** **htm** ou **html** ainsi qu'un
 À l'aide de l'**éditeur de texte** `NotePad++`, en utilisant la fonction de recherche `ctrl F` (F pour find)) modifier le contenu de la page **html** pour afficher votre nom au lieu d'un ministre (bien sûr, cette modification sera présente uniquement sur le fichier HTML que vous venez de télécharger et stocker sur votre ordinateur...) et n'affectera pas la page affichée sur le web qui elle est stockée sur le serveur du ministère.   
 Observer également la structure de la page.
 
-### Exercice 4 : construire un ensemble lié de pages web
+### Exercice 4 : construire un ensemble de pages web liées les unes aux autres
 
 On met toutes les images dans le même dossier `images` pour organiser les fichiers.
 
