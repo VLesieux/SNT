@@ -9,7 +9,7 @@ L'anthropologue Robin Dunbar (l'**anthropologie** est la science qui étudie l'h
 Passionné d'informatique dès son adolescence, Marc Zuckerberg, né en 1984, lance en 2004, avec quelques amis, sa première version de Facebook, il n'a pas 20 ans !   
 D'abord destiné aux étudiants de Harvard (université privée américaine située à Cambridge, ville de l'agglomération de Boston dans le Massachussets au nord-est des États-Unis), le site est ouvert à tous en septembre 2006. Le succès est immédiat et se poursuit grâce à la création de nouvelles fonctionnalités.     
 
-Cependant, son immense diffusion le place face à des responsabilités éthiques que sont la confidentialité, la mise en ligne de propos racistes et haineux, ou la diffusion de fake news (en français infox : néologisme qui veut dire fausse information).
+Cependant, son immense diffusion le place face à des responsabilités éthiques (qui concernent la morale) que sont la confidentialité, la mise en ligne de propos racistes et haineux, ou la diffusion de fake news (en français infox : néologisme qui veut dire fausse information).
 
 ### Définition
 
@@ -17,7 +17,7 @@ Les réseaux sociaux sont des applications basées sur les technologies du Web q
 
 Exemples:  
 * Facebook : créé en 2004 par Marc Zuckerberg, il devient accessible en 2006 ; un utilisateur de Facebook peut partager des messages, photos et vidéos avec une liste d'amis. Il est aussi possible de rejoindre des groupes d'intérêts communs autour d'un sujet précis. Facebook revendique plus de 2 milliards d'utilisateurs actifs chaque mois.   
-* Twitter, renommé X depuis le 24 juillet par Elon Musk : fondé en 2006 par Jack Dorsey, Noah Glass, Biz Stone et Evan Williams. Un utilisateur peut envoyer de courts messages appelés tweets à ses followers. Le nombre d'utilisateurs actifs de Twitter dépasse 300 millions.   
+* Twitter, renommé X depuis le 24 juillet 2023 par Elon Musk : fondé en 2006 par Jack Dorsey, Noah Glass, Biz Stone et Evan Williams. Un utilisateur peut envoyer de courts messages appelés tweets à ses followers. Le réseau social X comporte 251 millions en 2024. Lors des élections américaines de 2024, Elon Musk utilise X pour favoriser la campagne de Donald Trump.  
 * Linkedln : réseau social à but professionnel : les utilisateurs peuvent y poster leur CV et consulter des offres d'emploi. Fondé en 2002, il comptabilise plus de 600 millions de membres.  
 * Instagram : lancé en 2010, il permet de partager ses photographies et ses vidéos avec son réseau d'amis, de fournir une appréciation positive (fonction « j'aime ») et de laisser des commentaires sur les clichés déposés par les autres utilisateurs. 
 
@@ -41,7 +41,7 @@ Le [réglement général sur la protection des données (RGPD)](https://www.cnil
 
 Le [droit à l'oubli](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3#Article17) vous permet de supprimer des données vous concernant sur un réseau social ou un moteur de recherche.
 
-### Modélisation des réseaux sociaux
+### Modélisation informatique des réseaux sociaux
 
 On peut modéliser les relations qui existent entre les utilisateurs d'un réseau social à l'aide d'un **graphe**, c'est-à-dire d'un ensemble de points représentant les utilisateurs et des traits représentant les relations d'amitié entre eux. Les points sont appelés sommets et les traits arêtes.
 
@@ -73,7 +73,7 @@ La distance de B à C est 3 avec le chemin B-A-D-C.
 Il existe plusieurs façons de stocker un graphe dans Python. Nous allons utiliser ici ce que l'on appelle la représentation d'un graphe par **liste d'adjacence**.  
 Une liste d'adjacence est un type de structure de données utilisée pour représenter un graphe dans un ordinateur. Un graphe est une collection de points appelés "nœuds" qui sont reliés par des lignes appelées "arêtes". Une liste d'adjacence est une manière de stocker les informations sur les arêtes du graphe en associant chaque nœud à une liste des nœuds adjacents, c'est-à-dire les nœuds qui sont reliés à lui par une arête. Par exemple, si on a un graphe représentant les villes d'un pays et les routes qui les relient, on pourrait utiliser une liste d'adjacence pour stocker l'information sur les villes et les routes qui relient chaque ville à ses voisines.
    
-On suppose dans toute la suite que les n sommets d'un graphe sont numérotés de 0 à n-1. On utilise alors une liste G de taille n telle que, pour tout entier i de 0 à n-1, G[i] est la liste des sommets qui sont reliés au sommet i. 
+On suppose dans toute la suite que les n sommets d'un graphe sont numérotés de 0 à n-1. On utilise alors une liste de liste appelée ici Graphe de taille n telle que, pour tout entier i de 0 à n-1, G[i] est la liste des sommets qui sont reliés au sommet i. 
 
 Par exemple le graphe précédent peut être stocké de la façon suivante, en décidant d'associer les points A, B, C, D, E aux valeurs 0, 1, 2, 3, 4 : 
 
@@ -91,7 +91,7 @@ Par exemple le graphe précédent peut être stocké de la façon suivante, en d
 [0, 1]
 ```
 
-Remarque : Pour accéder à la valeur 2 dans cette liste de liste, on écrira : 
+Pour accéder à la valeur 2 dans cette liste de liste, on écrira : 
 
 ```Python
 >>> Graphe=[[1,3,4],[0,4],[3],[0,2],[0,1]]
@@ -99,13 +99,13 @@ Remarque : Pour accéder à la valeur 2 dans cette liste de liste, on écrira :
 2
 ```
 
-Nous pouvons alors écrire des algorithmes en Python sur des graphes.      
+Nous pouvons alors écrire des algorithmes en Python sur ces graphes.      
 Par exemple, on peut définir une fonction `lien` qui détermine si deux sommets i et j sont reliés ; elle admet comme paramètres un graphe et deux sommets i et j.
-L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adjacence de i ; pour cela on parcourt cette liste et on regarde si on y trouve l'élément j ; ou on utilise plus simplement l'opérateur d'appartenance `in`.
+L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adjacence de i ; pour cela on parcourt cette liste et on regarde si on y trouve l'élément j ; ou, plus rapidement, on utilise l'opérateur d'appartenance `in`.
 
 **Indications** :
 
-1. Appartenance à une liste: 
+1. in opérateur d'appartenance à une liste: 
 
 ```Python
 >>> 3 in [2,8,9,3,5]
@@ -126,7 +126,7 @@ Première méthode : parcourir les éléments les uns après les autres
 2
 ```
 
-Deuxième méthode : parcourir les éléments de la liste au moyen de leur **indice** depuis l'indice 0 du premier élément à l'indice `len(liste)-1` du dernier élément :
+Deuxième méthode : parcourir les éléments de la liste au moyen de leur **indice** numéroté depuis l'indice 0 du premier élément à l'indice `len(liste)-1` du dernier élément :
 
 ```Python
 >>> liste=[4,8,9,2]
@@ -138,7 +138,7 @@ Deuxième méthode : parcourir les éléments de la liste au moyen de leur **ind
 2
 ```
 ------------
-> On rappelle le **code pour la validation des doctests dans les docstrings**.
+> On rappelle le code pour la validation des doctests dans les docstrings**.
 
 ```Python
 if __name__ == '__main__':
@@ -221,6 +221,7 @@ def liste_des_amis_commun(i,j,graphe):
     "Les deux utilisateurs du réseau social n'ont pas d'ami en commun"
     """
 ```
+------------
 
 ### Petits mondes
 
@@ -234,7 +235,7 @@ En 2016, des chercheurs ont estimé à 4.57 la distance moyenne entre deux utili
 
 Au sein d'un réseau social, on constate souvent la création de communautés, regroupant des personnes ayant des opinions politiques similaires, des centres d'intérêts commun, etc... 
 
-Par exemple, les "hashtags" permettent aux utilisateurs de Twitter de communiquer avec d'autres utilisateurs autour d'un sujet précis. Ce phénomène de communauté comporte des avantages mais il peut aussi nuire à l'esprit critique de ses membres.
+Par exemple, les "hashtags" permettent aux utilisateurs de X (Twitter) de communiquer avec d'autres utilisateurs autour d'un sujet précis. Ce phénomène de communauté comporte des avantages mais il peut aussi nuire à l'esprit critique de ses membres.
 Un utilisateur d'un réseau social reçoit, par des systèmes de recommandation, des publicités et des suggestions d'ajout de contact qui dépendent entre autres de sa liste d'amis. On peut modéliser une communauté par une **clique** dans un graphe, c'est-à-dire un ensemble de sommets qui sont tous reliés mutuellement entre eux.
 
 Exemple : Pour notre situation précédente, A, B, E forment une clique tandis que A, B, D ne forment pas de clique car B n'est pas relié à D.
@@ -260,5 +261,5 @@ def est_clique(graphe,liste_sommets):
 **Indication** :
 
 Le principe de l'algorithme à écrire est le suivant : on parcourt tous les éléments de la liste et pour chacun d'entre eux on regarde s'il est relié aux autres éléments de la liste hormis lui-même en utilisant la fonction `lien` précédemment écrite ; dès qu'un test est négatif, cela signifie que ce n'est pas une clique et la fonction renvoie immédiatement `False` ; si tous les tests explorés sont positifs, cela signifie que c'est une clique et on renvoie `True`.
-On sera donc amené à faire une double boucle : une première boucle pour parcourir tous les sommets et à l'intérieur de cette boucle une autre boucle pour tester le lien de ce sommet avec les autres sommets, autres que lui-même bien sûr.
+On sera donc amené à faire une double boucle : une première boucle pour parcourir tous les sommets et à l'intérieur de cette boucle une autre boucle pour tester le lien de ce sommet avec les autres sommets, autres que lui-même.
 
