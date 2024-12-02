@@ -114,7 +114,7 @@ True
 
 2. Pour parcourir les valeurs d'une liste les unes après les autres :
 
-Première méthode : parcourir les éléments les uns après les autres
+Première méthode : parcourir les éléments les uns après les autres avec une boucle `for`
 
 ```Python
 >>> liste=[4,8,9,2]
@@ -126,7 +126,7 @@ Première méthode : parcourir les éléments les uns après les autres
 2
 ```
 
-Deuxième méthode : parcourir les éléments de la liste au moyen de leur **indice** numéroté depuis l'indice 0 du premier élément à l'indice `len(liste)-1` du dernier élément :
+Deuxième méthode : parcourir les éléments de la liste au moyen de leur **indice** de position numéroté depuis l'indice 0 du premier élément à l'indice `len(liste)-1` du dernier élément :
 
 ```Python
 >>> liste=[4,8,9,2]
