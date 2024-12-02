@@ -105,7 +105,7 @@ L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adj
 
 **Indications** :
 
-1. in opérateur d'appartenance à une liste: 
+1. `in` : opérateur d'appartenance à une liste: 
 
 ```Python
 >>> 3 in [2,8,9,3,5]
