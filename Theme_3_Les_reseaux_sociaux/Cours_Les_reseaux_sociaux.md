@@ -108,7 +108,7 @@ Nom_Sommets=["A","B","C","D","E"]
 #Dans la fonction, les paramètres ont une portée générale et sont écrits avec des lettres minuscules
 def donne_les_liens(nom_du_sommet,graphe,nom_sommets):
     """
-    Renvoie le ou les sommets dans nom_sommets auquel ou auxquels nom_du_sommet est lié
+    Renvoie le nom ou les noms du ou des sommets de nom_sommets auquel ou auxquels nom_du_sommet est lié
     param : nom_du_sommet : str
     param : graphe : list
     param : nom_sommets : list
