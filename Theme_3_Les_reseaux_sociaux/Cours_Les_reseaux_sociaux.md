@@ -99,6 +99,33 @@ Pour accéder à la valeur 2 dans cette liste de liste, on écrira :
 2
 ```
 
+Pour afficher les noms des sommets auquel un sommet est lié dans le graphe
+
+```Python
+Sommets=["A","B","C","D","E"]
+
+def donne_les_liens(nom_du_sommet,graphe):
+    """
+    Renvoie les sommets auxquels nom_du_sommet est lié
+    param : nom_du_sommet : str
+    param : graphe : list
+    >>> donne_les_liens("B",Graphe)
+    ['A', 'E']
+    """
+    indice_de_position=Sommets.index(nom_du_sommet)
+    liste_des_liens=graphe[indice_de_position]
+    resultat=[]
+    for valeur in liste_des_liens:
+        resultat.append(Sommets[valeur])
+    return resultat
+
+
+if __name__ == '__main__':
+  import doctest
+  doctest.testmod(verbose=True)
+
+```
+
 Nous pouvons alors écrire des algorithmes en Python sur ces graphes.      
 Par exemple, on peut définir une fonction `lien` qui détermine si deux sommets i et j sont reliés ; elle admet comme paramètres un graphe et deux sommets i et j.
 L'algorithme consiste à regarder si l'élément j se trouve dans la liste d'adjacence de i ; pour cela on parcourt cette liste et on regarde si on y trouve l'élément j ; ou, plus rapidement, on utilise l'opérateur d'appartenance `in`.
