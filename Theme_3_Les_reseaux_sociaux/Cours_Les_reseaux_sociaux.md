@@ -102,28 +102,31 @@ Pour accéder à la valeur 2 dans cette liste de liste, on écrira :
 Pour afficher les noms des sommets auquel un sommet est lié dans le graphe
 
 ```Python
-Sommets=["A","B","C","D","E"]
-
-def donne_les_liens(nom_du_sommet,graphe):
+Graphe=[[1,3,4],[0,4],[3],[0,2],[0,1]]
+Nom_Sommets=["A","B","C","D","E"]
+#On affecte aux variables de notre exemple des lettres majuscules
+#Dans la fonction, les paramètres ont une portée générale et sont écrits avec des lettres minuscules
+def donne_les_liens(nom_du_sommet,graphe,nom_sommets):
     """
-    Renvoie les sommets auxquels nom_du_sommet est lié
+    Renvoie le ou les sommets dans nom_sommets auquel ou auxquels nom_du_sommet est lié
     param : nom_du_sommet : str
     param : graphe : list
-    >>> donne_les_liens("B",Graphe)
+    param : nom_sommets : list
+    CU : il y a cohérence des ordonnancements des deux listes
+    >>> donne_les_liens("B",Graphe,Nom_Sommets)
     ['A', 'E']
     """
-    indice_de_position=Sommets.index(nom_du_sommet)
+    indice_de_position=nom_sommets.index(nom_du_sommet)
     liste_des_liens=graphe[indice_de_position]
     resultat=[]
     for valeur in liste_des_liens:
-        resultat.append(Sommets[valeur])
+        resultat.append(nom_sommets[valeur])
     return resultat
 
 
 if __name__ == '__main__':
   import doctest
   doctest.testmod(verbose=True)
-
 ```
 
 Nous pouvons alors écrire des algorithmes en Python sur ces graphes.      
