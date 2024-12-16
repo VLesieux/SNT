@@ -1,5 +1,7 @@
 Graphe=[[1,3,4],[0,4],[3],[0,2],[0,1]]
 
+noms=['A','B','C','D','E']
+
 def lien(i,j,graphe):
     """
     Renvoie True si les sommets i et j sont liés
@@ -158,8 +160,6 @@ def centre(graphe):
         if excentricite(graphe,k)==rayon(graphe):
             centres.append(k)
     return centres        
-
-noms=['A','B','C','D','E']
 
 def centre_noms(graphe):
     """
