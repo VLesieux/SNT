@@ -1,20 +1,22 @@
 Graphe=[[1,3,4],[0,4],[3],[0,2],[0,1]]
-
+#Cette liste d'adjacence, appelée Graphe, correspond à notre exemple et sert pour valider les tests de nos fonctions.
+#Pour chaque sommet numéroté (à partir de 0), on a une sous-liste indiquant les liens qu'il fait avec les autres sommets.
 noms=['A','B','C','D','E']
+#Ce sont les noms de sommets de notre exemple.
 
 def lien(i,j,graphe):
     """
     Renvoie True si les sommets i et j sont liés
     param : i : int
     param : j : int
-    param : Graphe : list
+    param : graphe : list
     return : bool
     >>> lien(0,3,Graphe)
     True
     >>> lien(0,2,Graphe)
     False
     """
-    return j in graphe[i]
+    return j in graphe[i]#il suffit de voir si j est dans la sous-liste de i.
 
 
 def degre(graphe,i):
@@ -26,7 +28,7 @@ def degre(graphe,i):
     >>> degre(Graphe,1)
     2
     """
-    return len(graphe[i])
+    return len(graphe[i])#il suffit de renvoyer le nombre d'éléments de la sous-liste de i.
 
 
 def nb_aretes(graphe):
@@ -40,7 +42,7 @@ def nb_aretes(graphe):
     compteur=0
     for i in range(len(graphe)):
         compteur+=degre(graphe,i)
-    return compteur//2
+    return compteur//2#il y a moitié moins d'arêtes que de liens, car une arête est commune à deux liens partagés.
 
 
 def liste_des_amis_commun(i,j,graphe):
@@ -57,7 +59,7 @@ def liste_des_amis_commun(i,j,graphe):
     """
     communs=[]
     for k in range(len(graphe)):
-        if k in graphe[i] and k in graphe[j] and k !=i and k !=j:
+        if k in graphe[i] and k in graphe[j] and k !=i and k !=j:#on cherche les liens communs à i et à j différents de i et de j.
             communs.append(k)
     if len(communs)==0:
         return "Les deux utilisateurs du réseau social n'ont pas d'ami en commun"
@@ -77,7 +79,7 @@ def est_clique(graphe,liste_sommets):
     """
     for sommet1 in liste_sommets:
         for sommet2 in liste_sommets:
-            if sommet1 != sommet2 and not lien(sommet1,sommet2,graphe):
+            if sommet1 != sommet2 and not lien(sommet1,sommet2,graphe):#on regarde si tous les sommets de la clique sont interconnectés.
                 return False
     return True
 
@@ -120,7 +122,7 @@ def excentricite(graphe, sommet):
     return max(distances.values())
 
 
-def diametre(graphe):
+def diametre(graphe):#Il s'agit de la plus grande valeur des excentrencités des sommets du graphe
     """
     Renvoie la plus grande valeur de l'excentricité
     param : graphe : list
@@ -134,7 +136,7 @@ def diametre(graphe):
     return max(valeurs)
 
 
-def rayon(graphe):
+def rayon(graphe):#Il s'agit de la plus petite valeur des excentrencités des sommets du graphe
     """
     Renvoie la plus petite valeur de l'excentricité
     param : graphe : list
@@ -147,7 +149,7 @@ def rayon(graphe):
         valeurs.append(excentricite(graphe, k))
     return min(valeurs)    
 
-def centre(graphe):
+def centre(graphe):# Ce sont le ou les sommets où l'excentricité est égale à celle du rayon
     """
     Renvoie le ou les sommets de plus petite excentricité
     param : graphe : list
