@@ -153,20 +153,22 @@ def centre_noms(graphe):
 
 #### Deuxième partie : application à un graphe à modéliser
 
+Toutes les fonctions établies sont disponible dans le dossier Assets : caracterisations_graphe.py.
+
 Les questions sont à traiter sur papier.
 
 <img height="400px" src="Assets/graphe_relations2.png">
 
-1. Écrire une représentation par liste d'adjacence appelée `Graphe_exercice` pour ce graphe.  
+1. Écrire, à la main, une représentation par liste d'adjacence appelée `Graphe_exercice` pour ce graphe.  
 On numérotera les sommets (à partir de 0) dans l'ordre alphabétique des noms et on utilisera la liste de noms suivante :
 
 `noms_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]`
 
-2. Déterminer les excentricités des sommets puis déterminer, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe. 
+2. Déterminer, à la main, les excentricités des sommets, puis déterminer, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe. 
 
-3. Retrouver le diamètre, le rayon, le ou les centres de `Graphe_exercice` en faisant agir sur ce graphe les fonctions établies dans la première partie. Notez ce que vous lisez dans la console.
+3. Retrouver, à l'aide du programme maintenant, le diamètre, le rayon, le ou les centres de `Graphe_exercice` en faisant agir sur ce graphe les fonctions établies. Notez ce que vous lisez dans la console.
 
-4. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Justifier. Comment le vérifiez-vous dans la console en utilisant la fonction `est_clique` du cours ?
+4. Les individus Elliot, Tatiana, Mihretu, Mathilde forment-ils une clique ? Justifier à la main dans un premier temps. Comment le vérifiez-vous dans la console ?
 
 
 ### Exercice 2 : attention aux Fake News
