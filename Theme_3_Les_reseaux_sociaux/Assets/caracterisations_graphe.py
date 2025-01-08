@@ -1,8 +1,9 @@
 Graphe=[[1,3,4],[0,4],[3],[0,2],[0,1]]
 #Cette liste d'adjacence, appelée Graphe, correspond à notre exemple et sert pour valider les tests de nos fonctions.
 #Pour chaque sommet numéroté (à partir de 0), on a une sous-liste indiquant les liens qu'il fait avec les autres sommets.
-noms=['A','B','C','D','E']
+noms_sommets_Graphe=['A','B','C','D','E']
 #Ce sont les noms de sommets de notre exemple.
+
 
 def lien(i,j,graphe):
     """
@@ -163,12 +164,12 @@ def centre(graphe):# Ce sont le ou les sommets où l'excentricité est égale à
             centres.append(k)
     return centres        
 
-def centre_noms(graphe):
+def centre_noms(graphe,noms):
     """
     Renvoie le ou les sommets de plus petite excentricité
     param : graphe : list
     return : list
-    >>> centre_noms(Graphe)
+    >>> centre_noms(Graphe,noms_sommets_Graphe)
     ['A', 'D']
     """
     centres=[]

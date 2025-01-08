@@ -162,7 +162,7 @@ Les questions sont à traiter sur papier.
 1. Écrire, à la main, une représentation par liste d'adjacence appelée `Graphe_exercice` pour ce graphe.  
 On numérotera les sommets (à partir de 0) dans l'ordre alphabétique des noms et on utilisera la liste de noms suivante :
 
-`noms_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]`
+`noms_sommets_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]`
 
 2. Déterminer, à la main, les excentricités des sommets, puis déterminer, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe. 
 
