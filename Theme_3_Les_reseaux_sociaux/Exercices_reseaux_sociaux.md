@@ -164,7 +164,7 @@ On numérotera les sommets (à partir de 0) dans l'ordre alphabétique des noms 
 
 `noms_sommets_exercice=["Anna","Arthur","Elliot","Louise","Mathilde","Mihretu","Tatiana"]`
 
-2. Déterminer, à la main, les excentricités des sommets, puis déterminer, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe. 
+2. Déterminer, à la main, les excentricités des 7 sommets (on présentera sous la forme e(0)=4), puis déterminer, en expliquant, le diamètre et le rayon de ce graphe. Indiquer également le ou les centres de ce graphe. 
 
 3. Retrouver, à l'aide du programme maintenant, le diamètre, le rayon, le ou les centres de `Graphe_exercice` en faisant agir sur ce graphe les fonctions établies. Notez ce que vous lisez dans la console.
 
