@@ -153,7 +153,7 @@ def centre_noms(graphe):
 
 #### Deuxième partie : application à un graphe à modéliser
 
-Toutes les fonctions établies sont disponible dans le dossier Assets : caracterisations_graphe.py.
+Toutes les fonctions établies sont disponible dans le programme `caracterisations_graphe.py` placé dans dossier Assets.
 
 Les questions sont à traiter sur papier.
 
