@@ -3,6 +3,8 @@ Graphe=[[1,3,4],[0,4],[3],[0,2],[0,1]]
 #Pour chaque sommet numéroté (à partir de 0), on a une sous-liste indiquant les liens qu'il fait avec les autres sommets.
 noms_sommets_Graphe=['A','B','C','D','E']
 #Ce sont les noms de sommets de notre exemple.
+######################################################################
+
 
 
 def lien(i,j,graphe):
