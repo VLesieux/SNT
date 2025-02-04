@@ -166,7 +166,9 @@ d) table_des_donnees[0].index('dep') # noter ce résultat
 
 e) table_des_donnees[0].index('entrees_2020') # noter ce résultat
 
-f) table_des_donnees[0].index('geo') # noter ce résultat
+f) table_des_donnees[0].index('fauteuils') # noter ce résultat
+
+g) table_des_donnees[0].index('geo') # noter ce résultat
 
 Donnez la signification de ces 6 résultats.
 
@@ -175,38 +177,21 @@ Pour la suite, nous supprimerons la ligne des descripteurs en ajoutant :
 
 2. On se demande combien il y a de cinémas dans le département 95.   
 
-Pour cela, compléter les lignes de code de la fonction `denombre` donnée ci-dessous pour que le test de sa docstring soit vérifié. On dénombre en effet 30 salles de cinéma dans le département 93. Puis dans la console appliquer cette fonction au département 95 en écrivant `denombre("95",table_des_donnees)` pour obtenir la réponse à la question posée.
-
-**Indication:** s'inspirer de la question 2 de l'exercice 2.
-
-```Python
-
-def denombre(departement,table):
-    """
-    Renvoie le nombre de salles de cinéma dans departement après le parcours de tableau 
-    param : departement : str
-    param : tableau : list
-    return : int
-    >>> denombre("93",table_des_donnees)
-    30
-    """
-
-        
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose=True)
-```
+**Indication:** Filtrer les données selon le département : `filtrer_selon_code(departement,tableau)`. Utiliser `len` pour déterminer le nombre d'élément du résultat.
 
 3. Quel est le nom du cinéma d'Île de France (tous départements confondus) qui a fait le plus d'entrée en 2020 ?
 
-**Indication** : créer un tableau trié `table_trie` dans l'ordre décroissant (`reverse=True`) en utilisant `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri, puis, pour obtenir la réponse à la question posée, afficher dans la console le premier élement de ce tableau trié : `table_trie[0]`.  On s'inspirera de l'exercice 1.
+**Indication** : créer un tableau trié `table_trie_selon_entree` dans l'ordre décroissant (`reverse=True`) en utilisant `sorted` et une fonction `tri_selon_entree_2020` comme critère de tri, puis, pour obtenir la réponse à la question posée, afficher dans la console le premier élement de ce tableau trié : `table_trie_selon_entree[0]`. 
 
 4. Quel est le nom du cinéma du département 95 qui a fait le plus d'entrée en 2020 ?
 
-**Indication** : réaliser une fonction de filtrage `filtre_selon_code(code,tableau)` pour retenir parmi les éléments du tableau de la question précédente ceux qui correspondent au code du département mis en paramètre.  On s'inspirera de l'exercice 1.    
-On écrira dans la console : `filtre_selon_code('95',table_trie)[0]` pour obtenir la réponse à la question posée.
+**Indication** : Filtrer les données précédentes selon le département.
 
-5. On se propose maintenant de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
+5. Quel est le nom du plus petit cinéma du département 75, c.a.d celui qui a le moins de fauteuil ?
+
+**Indication** : Trier, puis filtrer.
+
+6. On se propose maintenant de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
 
 Pour cela, on importe un programme appelé `calcul_distance_latitude_longitude.py` en ajoutant dans notre code 
 
