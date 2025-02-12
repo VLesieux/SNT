@@ -12,7 +12,7 @@ Le repérage par satellites des différents points de la Terre a modifié consid
 - 2004 : Création de la plateforme OpenStreetMap (l'équivalent de Wikipédia pour les cartes)
 - 2004 : Mise en ligne de Google Maps, d'abord pour les États-Unis puis pour le reste du monde.
 - 2006 : Lancement de Géoportail : plateforme de diffusion de l'information géographique.
-- 2016 : Mise en service de Galiléo, plus précis que le système américain GPS, d'une précision égale au mètre.
+- 2016 : Mise en service de Galiléo, plus précis que le système américain GPS, d'une précision égale au mètre, garantissant une indépendance stratégique pour l'Europe.
 
 
 ### Les coordonnées géographiques
