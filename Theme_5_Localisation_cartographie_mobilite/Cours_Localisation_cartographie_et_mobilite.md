@@ -21,8 +21,8 @@ Pour situer un point sur la surface terrestre, on utilise des coordonnées géog
 
 <img src="Assets/Geodesie.png">
 
-La **latitude** d'un point est l'angle δ sur le schéma ci-dessous qui varie de - 90° au pôle Sud à + 90° au pôle Nord et renseigne sur la position par rapport à l'équateur de latitude 0°.   
-La **longitude** d'un point est l'angle θ sur le schéma ci-dessous qui varie de - 180° à + 180° et mesure l'angle par rapport au méridien de Greenwich (Le méridien de Greenwich fut adopté comme standard international en octobre 1884 à la conférence internationale du méridien de Washington. En contrepartie de l'adoption du méridien de Greenwich, les Britanniques se sont engagés à adopter le système métrique, adhérant à la Convention du Mètre la même année) .
+La **latitude** d'un point est l'angle δ (delta minuscule) sur le schéma ci-dessous qui varie de - 90° au pôle Sud à + 90° au pôle Nord et renseigne sur la position par rapport au plan de l'équateur de latitude 0°.   
+La **longitude** d'un point est l'angle θ (thêta minuscule) sur le schéma ci-dessous qui varie de - 180° à + 180° et mesure l'angle par rapport au méridien de Greenwich. Le méridien de Greenwich fut adopté comme standard international en octobre 1884 à la conférence internationale du méridien de Washington. En contrepartie de l'adoption du méridien de Greenwich, les Britanniques se sont engagés à adopter le système métrique, adhérant à la Convention du Mètre la même année.
 
 <img width="400" height="400" src="Assets/coordonnees.png">
 
@@ -125,7 +125,7 @@ Quel est le plus court chemin pour aller de Grenoble à Mâcon ?
 
 En énumérant tous les chemins possibles, on voit que le chemin Grenoble - Chambéry - Lyon - Mâcon, de longueur 60+110+70=240 km est le plus court.
 
-Cependant, énumérer toutes les possibilités pour une carte réelle prendrait trop de temps ; l'algorithme de Dijkstra procède de façon plus intelligente, en calculant la distance de la ville de départ à toutes les autres villes de proche en proche. (cf. exercice 7)
+Cependant, énumérer toutes les possibilités pour une carte réelle prendrait trop de temps ; l'algorithme de Dijkstra procède de façon plus intelligente, en calculant le plus court chemin pour chaque point.(cf. exercice 7)
 
 
 
