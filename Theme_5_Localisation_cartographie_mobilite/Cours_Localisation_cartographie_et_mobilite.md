@@ -125,9 +125,79 @@ Quel est le plus court chemin pour aller de Grenoble à Mâcon ?
 
 En énumérant tous les chemins possibles, on voit que le chemin Grenoble - Chambéry - Lyon - Mâcon, de longueur 60+110+70=240 km est le plus court.
 
-Cependant, énumérer toutes les possibilités pour une carte réelle prendrait trop de temps ; l'algorithme de Dijkstra procède de façon plus intelligente, en calculant le plus court chemin pour chaque point.(cf. exercice 7)
+Cependant, énumérer toutes les possibilités pour une carte réelle prendrait trop de temps.
 
+L'**algorithme de Dijkstra** est un moyen efficace de trouver le plus court chemin dans un graphe (c'est-à-dire un réseau de villes reliées par des routes, par exemple). Il est souvent utilisé en informatique et en mathématiques.
 
+🌍 Idée principale
+
+L’algorithme de Dijkstra permet de trouver le chemin le plus court entre un point de départ et les autres points d’un réseau. Il fonctionne en explorant progressivement les chemins les plus courts possibles.
+🚗 Exemple : Un réseau de villes
+
+Imaginons que nous avons cinq villes : A, B, C, D et E, reliées par des routes avec les distances suivantes :
+
+        (10)
+     A ------ B
+      \       |
+    (5) \ (2) | (2)
+        C ---- D
+         \   / 
+        (8) E
+
+Les chiffres entre parenthèses représentent la distance entre les villes.
+
+Objectif : Trouver le plus court chemin de A à D.
+
+🔢 Étapes de l'algorithme
+
+    On note la distance de A à lui-même comme 0 et les autres distances comme "∞" (infini, car on ne les connaît pas encore) :
+
+A = 0, B = ∞, C = ∞, D = ∞, E = ∞
+
+On commence par A (c'est notre point de départ).
+
+    A → B : Distance 10
+    A → C : Distance 5
+
+A = 0, B = 10, C = 5, D = ∞, E = ∞
+
+On prend la ville avec la plus petite distance connue (ici C avec 5).
+
+    C → D : 5 + 2 = 7 (c'est mieux que ∞, on met à jour D)
+    C → E : 5 + 8 = 13 (mieux que ∞, donc on met à jour E)
+
+A = 0, B = 10, C = 5, D = 7, E = 13
+
+On continue avec D (qui a maintenant la plus petite distance, 7).
+
+    D → B : 7 + 2 = 9 (mieux que 10, donc on met B à jour)
+
+    A = 0, B = 9, C = 5, D = 7, E = 13
+
+    On choisit B (9, la plus petite distance restante).
+        Pas d’amélioration pour les autres villes.
+
+    On termine avec E (13).
+        Pas d’amélioration.
+
+🎯 Résultat final
+
+Le plus court chemin de A à D est A → C → D avec une distance totale de 7.
+
+📌 Résumé :
+
+    On part de la ville de départ (A) avec une distance de 0.
+    On explore les villes voisines et on met à jour les distances si on trouve un chemin plus court.
+    On choisit toujours la ville avec la plus petite distance connue et on continue.
+    On répète jusqu'à avoir trouvé tous les plus courts chemins.
+
+🏆 Pourquoi c’est utile ?
+
+L’algorithme de Dijkstra est utilisé dans les GPS, les jeux vidéo pour les déplacements de personnages et même pour gérer des réseaux informatiques ! 🚀
+
+🚀 Conclusion
+
+L’idée derrière Dijkstra est de choisir toujours la meilleure option immédiate (principe glouton) et de garantir que chaque distance trouvée est la plus courte possible. C’est ce qui permet d’assurer que l’algorithme trouve la solution optimale efficacement.
 
 
 
