@@ -73,7 +73,7 @@ Des corrections doivent être apportées dans la mesure du temps pour tenir comp
 
 On trouvera ici, si l'on est intéressé, la démonstration classique du phénomène de [dilatation des durées](Assets/demonstration.md).
 
-❓Question : Quand j'utilise le GPS sur mon téléphone, pourquoi ai-je besoin qu'il y ait du réseau si je reçois les signaux de la part de satellites ?
+❓Question1 : Quand j'utilise le GPS sur mon téléphone, pourquoi ai-je besoin qu'il y ait du réseau si je reçois les signaux de la part de satellites ?
 
 En théorie, un GPS n’a pas besoin de réseau mobile ou Wi-Fi pour capter les signaux des satellites et déterminer ta position. Cependant, il y a plusieurs raisons pour lesquelles un accès au réseau est souvent nécessaire pour une expérience optimale :
 
@@ -86,6 +86,13 @@ En théorie, un GPS n’a pas besoin de réseau mobile ou Wi-Fi pour capter les 
     Mise à jour du trafic et des itinéraires 🚦
 
     Google Maps, Waze et autres applications GPS ont besoin d’Internet pour afficher le trafic en direct, proposer des itinéraires alternatifs et signaler des incidents sur la route.
+
+
+❓Question2 : Comment le signal GPS peut-il contenir de l'information ?
+
+Les satellites utilisent une modulation BPSK (Binary Phase-Shift Keying) pour encoder les informations.
+<img src="Assets/modulation.png"> 
+
 
 ### Trame NMEA
 
