@@ -139,7 +139,7 @@ Imaginons que nous avons cinq villes : A, B, C, D et E, reliées par des routes 
         (10)
      A ------ B
       \       |
-    (5) \ (2) | (2)
+    (5)\  (2) | (2)
         C ---- D
          \   / 
         (8) E
