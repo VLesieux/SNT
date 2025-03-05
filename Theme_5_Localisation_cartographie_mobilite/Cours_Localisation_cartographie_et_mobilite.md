@@ -73,6 +73,20 @@ Des corrections doivent être apportées dans la mesure du temps pour tenir comp
 
 On trouvera ici, si l'on est intéressé, la démonstration classique du phénomène de [dilatation des durées](Assets/demonstration.md).
 
+❓Question : Quand j'utilise le GPS sur mon téléphone, pourquoi ai-je besoin qu'il y ait du réseau si je reçois les signaux de la part de satellites ?
+
+En théorie, un GPS n’a pas besoin de réseau mobile ou Wi-Fi pour capter les signaux des satellites et déterminer ta position. Cependant, il y a plusieurs raisons pour lesquelles un accès au réseau est souvent nécessaire pour une expérience optimale :
+
+    Téléchargement des cartes 📍
+        Le GPS te donne des coordonnées (latitude, longitude, altitude), mais il ne contient pas forcément toutes les cartes en mémoire. Sans connexion Internet, ton application GPS ne peut pas télécharger ou mettre à jour les cartes en temps réel.
+
+    Assistance GPS (A-GPS) 🚀
+        Les smartphones utilisent souvent l’Assisted GPS (A-GPS) pour accélérer le temps de localisation. Plutôt que d’attendre que le téléphone capte seul les signaux satellites (ce qui peut prendre plusieurs minutes), le réseau mobile envoie des données d’aide pour une localisation plus rapide.
+
+    Mise à jour du trafic et des itinéraires 🚦
+
+    Google Maps, Waze et autres applications GPS ont besoin d’Internet pour afficher le trafic en direct, proposer des itinéraires alternatifs et signaler des incidents sur la route.
+
 ### Trame NMEA
 
 Pour échanger des informations de localisation, il faut que les différents appareils puissent se comprendre. La norme NMEA 0183 est un protocole de communication mis au point par la National Electronics Association (NMEA) et notamment utilisé pour la navigation maritime.
