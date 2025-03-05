@@ -91,6 +91,13 @@ En théorie, un GPS n’a pas besoin de réseau mobile ou Wi-Fi pour capter les 
 ❓Question2 : Comment le signal GPS peut-il contenir de l'information ?
 
 Les satellites utilisent une modulation BPSK (Binary Phase-Shift Keying) pour encoder les informations.
+Il s'agit d'une modulation de phase : l'information est transmise en changeant la phase de l'onde porteuse, tout en maintenant son amplitude et sa fréquence constantes.
+
+Un bit "0" est représenté par une phase de 0°.
+Un bit "1" est représenté par une phase de 180°.
+
+Cette modulation est robuste face aux interférences et au bruit, ce qui est crucial pour les signaux GPS qui parcourent de longues distances et doivent être captés avec une puissance très faible.
+
 <img src="Assets/modulation.png"> 
 
 
