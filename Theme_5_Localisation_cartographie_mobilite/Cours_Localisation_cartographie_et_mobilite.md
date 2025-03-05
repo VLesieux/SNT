@@ -141,7 +141,7 @@ Imaginons que nous avons cinq villes : A, B, C, D et E, reliées par des routes 
       \       |
     (5)\  (2) | (2)
         C ---- D
-         \   / 
+         \   / (3)
         (8) E
 
 Les chiffres entre parenthèses représentent la distance entre les villes.
@@ -172,12 +172,12 @@ On continue avec D (qui a maintenant la plus petite distance, 7).
 
     D → B : 7 + 2 = 9 (mieux que 10, donc on met B à jour)
 
-    A = 0, B = 9, C = 5, D = 7, E = 13
+    A = 0, B = 9, C = 5, D = 7, E = 10
 
     On choisit B (9, la plus petite distance restante).
         Pas d’amélioration pour les autres villes.
 
-    On termine avec E (13).
+    On termine avec E (10).
         Pas d’amélioration.
 
 🎯 Résultat final
@@ -198,6 +198,9 @@ L’algorithme de Dijkstra est utilisé dans les GPS, les jeux vidéo pour les d
 🚀 Conclusion
 
 L’idée derrière Dijkstra est de choisir toujours la meilleure option immédiate (principe glouton) et de garantir que chaque distance trouvée est la plus courte possible. C’est ce qui permet d’assurer que l’algorithme trouve la solution optimale efficacement.
+
+⛏️ À vous de jouer pour trouver le plus court chemin de A à E en utilisant l'algorithme de Dijkstra.
+
 
 
 
