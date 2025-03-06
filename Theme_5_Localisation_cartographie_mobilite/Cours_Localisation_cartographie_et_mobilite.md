@@ -100,7 +100,7 @@ Cette modulation est robuste face aux interférences et au bruit, ce qui est cru
 
 <img src="Assets/modulation.png"> 
 
-[Visualisation effet phase cosinus : télécharger et ouvrir avec Thonny](http://vfsilesieux.free.fr/cosinus_phase.py)
+[Visualisation effet phase cosinus (télécharger et ouvrir avec Thonny)](http://vfsilesieux.free.fr/cosinus_phase.py)
 
 ### Trame NMEA
 
