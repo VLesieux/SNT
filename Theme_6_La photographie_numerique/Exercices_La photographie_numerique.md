@@ -88,10 +88,17 @@ Vérifier cette affirmation.
 
 ### Exercice 3 : écrire des programmes pour traiter une image numérique avec Python
 
-Les codes des couleurs sont souvent donnés en format hexadécimal.
-Dans ce format, les valeurs sont écrites en base 16 en utilisant les chiffres 0, 1...9 puis les lettres A, B, C, D, E, F.
+Les codes des couleurs sont souvent donnés dans le format hexadécimal.  
+
+On le verra sur cette application web écrite en JavaScript.
+
+[le codage des couleurs](http://vfsilesieux.free.fr/colours.html) .
+
+Dans ce format, les valeurs sont écrites en base 16, en utilisant les 16 caractères que sont les chiffres 0, 1...9 puis les lettres A, B, C, D, E, F.
 
 Une première méthode pour réaliser la conversation de la base 10 à la base 16 est de donner une décomposition de la valeur numérique dans cette base.
+
+Déterminer ainsi le code hexadécimal correspondant à la valeur décimale 141.
 
 Une autre méthode consiste à adapter l'algorithe de la conversion en base 2 qui donne la représentation binaire de la valeur décimale.
 
@@ -140,6 +147,8 @@ if __name__ == "__main__":
     import doctest
     doctest.testmod(verbose = True) 
 ```
+
+Quel est le gain de l'écriture hexadécimale du code RVB des couleurs ?
 
 ### Exercice 4 : écrire des programmes pour traiter une image numérique avec Python
 
