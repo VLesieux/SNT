@@ -146,7 +146,7 @@ if __name__ == "__main__":
     doctest.testmod(verbose = True) 
 ```
 
-Quel est le gain de l'écriture hexadécimale du code RVB des couleurs ?
+Quel est le gain à écrire le code RVB des couleurs dans le format hexadécimal ?
 
 ### Exercice 4 : écrire des programmes pour traiter une image numérique avec Python
 
