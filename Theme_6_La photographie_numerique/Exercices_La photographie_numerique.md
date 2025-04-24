@@ -86,7 +86,7 @@ Applications :
 Vérifier cette affirmation.
 
 
-### Exercice 3 : écrire des programmes pour traiter une image numérique avec Python
+### Exercice 3 : écrire le code RVB des couleurs en code hexadécimal
 
 Les codes des couleurs sont souvent donnés dans le format hexadécimal.  
 
