@@ -90,11 +90,9 @@ Vérifier cette affirmation.
 
 Les codes des couleurs sont souvent donnés dans le format hexadécimal.  
 
-On le verra sur cette application web écrite en JavaScript.
+On le verra sur cette application web écrite en JavaScript : [le codage des couleurs](http://vfsilesieux.free.fr/colours.html) .
 
-[le codage des couleurs](http://vfsilesieux.free.fr/colours.html) .
-
-Dans ce format, les valeurs sont écrites en base 16, en utilisant les 16 caractères que sont les chiffres 0, 1...9 puis les lettres A, B, C, D, E, F.
+Dans ce format, les valeurs sont écrites en base 16, en utilisant les 16 caractères que sont les 10 chiffres 0, 1...9 puis les 6 lettres A, B, C, D, E, F.
 
 Une première méthode pour réaliser la conversation de la base 10 à la base 16 est de donner une décomposition de la valeur numérique dans cette base.
 
