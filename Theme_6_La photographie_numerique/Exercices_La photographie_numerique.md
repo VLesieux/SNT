@@ -85,7 +85,63 @@ Applications :
 
 Vérifier cette affirmation.
 
+
 ### Exercice 3 : écrire des programmes pour traiter une image numérique avec Python
+
+Les codes des couleurs sont souvent donnés en format hexadécimal.
+Dans ce format, les valeurs sont écrites en base 16 en utilisant les chiffres 0, 1...9 puis les lettres A, B, C, D, E, F.
+
+Une première méthode pour réaliser la conversation de la base 10 à la base 16 est de donner une décomposition de la valeur numérique dans cette base.
+
+Une autre méthode consiste à adapter l'algorithe de la conversion en base 2 qui donne la représentation binaire de la valeur décimale.
+
+```python
+def conversion_decimal_binaire(n):
+    """
+    Donne la représentation binaire du nombre entier décimal n
+    param : n : int
+    return : str
+    >>> conversion_decimal_binaire(18)
+    '10010'
+    >>> conversion_decimal_binaire(141)
+    '10001101'
+    """
+    resultat=""
+    while n>0:
+        resultat=str(n%2)+resultat
+        n=n//2
+    return resultat
+```
+
+Proposer une adaptation de cet algorithme pour obtenir la conversion du décimal à l'hexadécimal.
+
+```python
+def conversion_decimal_hexadecimal(n):
+    """
+    Donne la représentation hexadécimal du nombre entier décimal n
+    param : n : int
+    return : str
+    >>> conversion_decimal_hexadecimal(18)
+    '12'
+    >>> conversion_decimal_hexadecimal(141)
+    '8D'
+    """
+    resultat=""
+    liste_remplaçant=["A","B","C","D","E","F"]
+    while n>0:
+        if n%16>=10:
+            resultat=liste_remplaçant[.....]+resultat
+        else:
+            resultat=.........+resultat        
+        n=.......
+    return resultat
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod(verbose = True) 
+```
+
+### Exercice 4 : écrire des programmes pour traiter une image numérique avec Python
 
 Dans cet exercice nous allons utiliser le module Image de la librairie **PIL** ou **pillow** de Python (à télécharger dans le menu outils du logiciel Thonny).
 
@@ -117,7 +173,7 @@ Tous ces traitements peuvent être réunis dans une [application en Python](Asse
 
 On peut réaliser la même chose avec le langage JavaScript : [voir l'application web](http://isnangellier.alwaysdata.net/php/traitement.html) ; on pourra observer le code pour faire des analogies avec le code en Python.
 
-### Exercice 4 : créer des images numériques de drapeaux, du plus simple au plus compliqué
+### Exercice 5 : créer des images numériques de drapeaux, du plus simple au plus compliqué
 
 Il s'agit de réaliser, pour chaque drapeau, un programme permettant d'obtenir les drapeaux suivants (200×200) portant chacun un fin liseré noir. 
 
@@ -341,7 +397,7 @@ drapeau_vietnam()
 #mainloop()
 ```
 
-### Exercice 5 : interaction avec une image numérique : faire son propre programme d'apprentissage visuel
+### Exercice 6 : interaction avec une image numérique : faire son propre programme d'apprentissage visuel
 
  Apprendre une mappemonde avec une [application web](http://isnangellier.alwaysdata.net/php/Projet_carte.html) ou une [application écrite en Python](Assets/Mappemonde.py).
 
