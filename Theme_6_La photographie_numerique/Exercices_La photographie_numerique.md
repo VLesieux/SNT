@@ -90,7 +90,11 @@ Vérifier cette affirmation.
 
 Les codes des couleurs sont souvent donnés dans le format hexadécimal.  
 
-On le verra sur cette application web écrite en JavaScript : [le codage des couleurs](http://vfsilesieux.free.fr/colours.html) .
+On le verra sur cette application web écrite en JavaScript : [le codage des couleurs](http://vfsilesieux.free.fr/colours.html).
+
+Donner par exemple le code hexadécimal de la couleur formée de 50% de Rouge, de 20% de Vert et de 40% de Bleu.
+
+Quel est le gain à écrire le code RVB des couleurs dans le format hexadécimal ?
 
 Dans ce format, les valeurs sont écrites en base 16, en utilisant les 16 caractères que sont les 10 chiffres 0, 1...9 puis les 6 lettres A, B, C, D, E, F.
 
@@ -98,7 +102,7 @@ Une première méthode pour réaliser la conversation de la base 10 à la base 1
 
 Déterminer ainsi le code hexadécimal correspondant à la valeur décimale 141.
 
-Une autre méthode consiste à adapter l'algorithe de la conversion en base 2 qui donne la représentation binaire de la valeur décimale.
+Une autre méthode consiste à adapter l'algorithme de la conversion en base 2 qui donne la représentation binaire de la valeur décimale.
 
 ```python
 def conversion_decimal_binaire(n):
@@ -141,12 +145,31 @@ def conversion_decimal_hexadecimal(n):
         n=.......
     return resultat
 
+```
+
+En déduire une fonction qui renvoie le code hexadécimal d'une couleur à partir de 3 paramètres que sont les pourcentages de Rouge, de Vert et de Bleu qui constituent cette couleur.
+
+```python
+
+def codage_RVB_hexadecimal_couleur(pourcentageR,pourcentageV,pourcentageB):
+    """
+    Renvoie le code hexadécimal de la couleur caractérisée par ces 3 composantes
+    param : pourcentageR : int
+    param : pourcentageV : int
+    param : pourcentageB : int
+    return : str
+    >>> codage_RVB_hexadecimal_couleur(50,20,40)
+    '#803366'
+    """
+    code="#"+conversion_decimal_hexadecimal(int(pourcentageR*2.56))+....
+    .................
+
 if __name__ == "__main__":
     import doctest
     doctest.testmod(verbose = True) 
 ```
 
-Quel est le gain à écrire le code RVB des couleurs dans le format hexadécimal ?
+
 
 ### Exercice 4 : écrire des programmes pour traiter une image numérique avec Python
 
