@@ -103,9 +103,9 @@ Quel est le gain à écrire le code RVB des couleurs dans le format hexadécimal
 
 Dans ce format, les valeurs sont écrites en base 16, en utilisant les 16 caractères que sont les 10 chiffres 0, 1...9 puis les 6 lettres A, B, C, D, E, F.
 
-Une première méthode pour réaliser la conversation de la base 10 à la base 16 est de donner une décomposition de la valeur numérique dans cette base.
+Une première méthode est de donner la décomposition de la valeur numérique dans la base 16.
 
-Déterminer ainsi le code hexadécimal correspondant à la valeur décimale 141.
+Déterminer par exemple le code hexadécimal correspondant à la valeur 141.
 
 Une autre méthode consiste à adapter l'algorithme de la conversion en base 2 qui donne la représentation binaire de la valeur décimale.
 
