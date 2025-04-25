@@ -45,13 +45,13 @@ Lequel a la meilleure résolution ?  Considérer une dimension.
 
 La **luminance** relative est une grandeur correspondant à la sensation visuelle de luminosité ; elle varie entre 0 pour le noir et 1 pour le blanc pris comme référence, la pondération est basée sur la sensibilité de l'oeil humain  ; le vert contribue le plus à l'intensité perçue par l'œil humain et le bleu le moins.   
 
-<img width="650" height="500" src="Assets/cones.png">
-
 Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul de la luminance se calcule à l'aide de la formule : 
 
 `L = (0.2126 * R + 0.7152 * V + 0.0722 * B)/255`
 
-Proposez une interprétation physiologique.
+<img width="650" height="500" src="Assets/cones.png">
+
+À l'aide de la réponse des différents types de cellules de la rétine, proposez une interprétation de cette grandeur physiologique.
 
 Le résultat sera arrondi à 1 chiffre après la virgule en utilisant la fonction `round( ,1)` de la manière suivante :
 
