@@ -44,6 +44,9 @@ Lequel a la meilleure résolution ?  Considérer une dimension.
 ### Exercice 2: notion de luminance
 
 La **luminance** relative est une grandeur correspondant à la sensation visuelle de luminosité ; elle varie entre 0 pour le noir et 1 pour le blanc pris comme référence, la pondération est basée sur la sensibilité de l'oeil humain  ; le vert contribue le plus à l'intensité perçue par l'œil humain et le bleu le moins.   
+
+<img width="650" height="500" src="Assets/cones.png">
+
 Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul de la luminance se calcule à l'aide de la formule : 
 
 `L = (0.2126 * R + 0.7152 * V + 0.0722 * B)/255`
@@ -84,6 +87,8 @@ Applications :
 2) " Pour être perçue avec la même intensité, une source de lumière rouge orangée doit être près de 10 fois plus puissante qu’une source de lumière jaune-vert. C’est d’ailleurs de cette couleur que vont être repeintes les ambulances du Samu de l’Essonne, comme le sont souvent les camions de pompiers américains. " [cf. article. ça m'interesse](https://www.caminteresse.fr/societe/quelle-est-la-couleur-la-mieux-percue-par-loeil-humain-1163473/).
 
 Vérifier cette affirmation.
+
+Utiliser l'application web [le codage des couleurs](http://vfsilesieux.free.fr/colours.html) pour vérifier que les pourcentages de Rouge, de Vert, et de Bleu qui forment les couleurs rouge-orangée et jaune-vert sont respectivement (100%,27%,0%) soit (255,69,0) et (50%,100%,0%) soit (128,255,0), puis calculer les luminances de ces couleurs.
 
 
 ### Exercice 3 : écrire le code RVB des couleurs en code hexadécimal
