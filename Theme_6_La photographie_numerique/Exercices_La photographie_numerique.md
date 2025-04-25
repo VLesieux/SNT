@@ -53,7 +53,7 @@ Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul
 
 Proposez une interprétation physiologique.
 
-Le résultat sera arrondi à 1 chiffre après la virgule en utilisant la fonction `round( ,2)` de la manière suivante :
+Le résultat sera arrondi à 1 chiffre après la virgule en utilisant la fonction `round( ,1)` de la manière suivante :
 
 ```python
 >>> round(1.556,1)
