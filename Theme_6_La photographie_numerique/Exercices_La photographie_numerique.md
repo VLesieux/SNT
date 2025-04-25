@@ -51,13 +51,13 @@ Lorsque l'on dispose du code RVB d'une couleur, que l'on note (R,V,B), le calcul
 
 `L = (0.2126 * R + 0.7152 * V + 0.0722 * B)/255`
 
-Le résultat sera arrondi à 2 chiffres après la virgule en utilisant la fonction `round( ,2)` de la manière suivante :
+Proposez une interprétation physiologique.
+
+Le résultat sera arrondi à 1 chiffre après la virgule en utilisant la fonction `round( ,2)` de la manière suivante :
 
 ```python
->>> round(1.555,2)
-1.55
->>> round(1.556,2)
-1.56
+>>> round(1.556,1)
+1.6
 ```
 
 Compléter la fonction `lum(couleur)` qui renvoie la valeur de la luminance, lorsque la couleur est donnée sous forme d'un triplet (R,V,B).  
@@ -67,7 +67,7 @@ def lum(couleur):
     """
     renvoie la luminance (sensation visuelle) associée à couleur définie par le triplet (R,V,B)
     param : tuple
-    return : float avec deux chiffres après la virgule
+    return : float avec 1 chiffre après la virgule
     >>> lum((255,255,255))
     1.0
     >>> lum((0,0,0))
