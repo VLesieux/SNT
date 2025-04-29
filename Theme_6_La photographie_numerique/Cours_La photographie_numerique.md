@@ -60,7 +60,9 @@ En effet, chaque couleur est codée sur 1 octet formé de 8 bits ce qui offre 2<
 Ainsi le rouge est codé par (255,0,0) ; le vert par (0,255,0) ; le bleu par (0,0,255).  
 Une égalité des trois niveaux correspond à un niveaux de gris, il y en a donc 256 niveaux de gris.
 
-On trouvera ici une application web permettant d'observer [le codage des couleurs](http://vfsilesieux.free.fr/colours.html) .
+On trouvera ici une application web permettant d'observer [le codage des couleurs](http://vfsilesieux.free.fr/colours.html).
+
+On trouvera ici un lien vers la découverte de la perception d'[une nouvelle couleur](https://www.radiofrance.fr/franceculture/podcasts/avec-sciences/une-nouvelle-couleur-produite-en-stimulant-l-oeil-humain-7170508).
 
 Remarque :  le codage RVB des couleurs en binaire n'est pas le seul type de codage possible. Lorsqu'on code une page web par exemple, dans la feuille de style CSS on peut aussi préciser la couleur en utilisant le codage hexadécimal de cette couleur. On trouvera [ici](http://vfsilesieux.free.fr/exemple_page_web/page_web.html) une page html dont on pourra regarder le code source qui montre que trois types de codages des couleurs dans le CSS sont possibles pour un résultat analogue, par exemple : green, rgb(0,128,0) ou #008000. 
 
