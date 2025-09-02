@@ -2,26 +2,26 @@
 
 ### Le réseau des réseaux
 
-Pour que deux ordinateurs communiquent entre eux il faut les mettre en **réseau**.
+Pour que deux ordinateurs communiquent entre eux, il faut les mettre en **réseau**.
 
 Dans un lycée par exemple, les ordinateurs sont reliés au **réseau local** de l'établissement à l'aide de câbles.  
 
-Des **serveurs** dédiés permettent de faire fonctionner le réseau, de stocker et de rendre accessibles des données depuis n'importe quel ordinateur de l'établissement : c'est le serveur Kwartz dont le cloud est aussi accessible de l'extérieur.
+Des **serveurs** dédiés permettent de faire fonctionner le réseau, de stocker et de rendre accessibles des données depuis n'importe quel ordinateur de l'établissement.
 
-Chez soi, si l'on a plusieurs ordinateurs qui se connectent à la même box (en filaire ou en Wifi), cela constitue également un réseau dit **local**, auquel peuvent aussi être reliés un ou plusieurs téléphones, une imprimante ou un décodeur TV...
+Chez soi, si l'on a plusieurs ordinateurs qui se connectent à la même box (en filaire ou en Wifi), cela constitue également un **réseau local**, auquel peuvent aussi être reliés un ou plusieurs téléphones, une imprimante ou un décodeur TV...
 
-Il existe énormément de réseaux à travers le monde. Tous ces réseaux peuvent également être reliés entre eux pour former **le réseau des réseaux** : Internet qui signifie Inter-networks.
+Il existe énormément de réseaux à travers le monde. Tous ces réseaux peuvent également être reliés entre eux pour former **le réseau des réseaux : Internet** qui signifie **Inter-networks**.
 
 Tous les objets connectés à Internet (ordinateurs, téléphones, montres connectées, etc..) peuvent communiquer entre eux et échanger des informations : textes, images, sons, vidéos, etc..   
 
 Pour cela, plusieurs **supports physiques de transmission** peuvent être utilisés : 
 
-- **câbles électriques** : transport du courant électrique
+- **des câbles électriques** : transport par le courant électrique
 
-- **fibre optique** : transport de la lumière utilisant la réflexion totale de celle-ci dans le cœur de la fibre sans perte d'énergie
+- **de la fibre optique** : transport par la lumière (utilisant la réflexion totale de celle-ci dans le cœur de la fibre sans perte d'énergie).
 <img src="Assets/fibre_optique.png">
 
-- **air libre** : wifi, 4G : transport immatériel d'ondes électromagnétiques. En France, selon les **opérateurs** (Bouygues Telecom, Free, Orange, SFR...), les fréquences utilisées pour la 4G sont dans les bandes 700, 800 et 900 MHz, 1800, 2100 et 2600 MHz ; il est à noter qu'il s'agit toujours du même type d'onde électromagnétique que ce que l'on trouve dans les fours à micro-ondes, mais avec toutefois une différence de puissance, de l'ordre de 0,1 W pour le Wi-Fi, mais de l'ordre de 1000 W pour le four à micro-ondes (où les ondes sont amplifiées en s'additionnant de façon constructive à l'intérieur de la cavité).
+- **à l'air libre** : wifi, 4G : transport immatériel d'ondes électromagnétiques. En France, selon les **opérateurs** (Bouygues Telecom, Free, Orange, SFR...), les fréquences utilisées pour la 4G sont dans les bandes 700, 800 et 900 MHz, 1800, 2100 et 2600 MHz ; il est à noter qu'il s'agit du même type d'onde électromagnétique que la lumière visible, mais avec une longueur d'onde voisine de celle que l'on trouve dans les fours à micro-ondes, avec toutefois une différence de puissance, de l'ordre de 0,1 W pour le Wi-Fi, mais de l'ordre de 1000 W pour le four à micro-ondes (où les ondes sont amplifiées en s'additionnant de façon constructive à l'intérieur de la cavité).
 
 <img src="Assets/spectre-electromagnetique.png">
 
@@ -33,18 +33,18 @@ Pour cela, plusieurs **supports physiques de transmission** peuvent être utilis
 - 1971 : Parallèlement en France, Louis Pouzin crée le réseau Cyclades. Le projet est abandonné en 1978 mais ses travaux ont influencé la mise au point d'Internet et du protocole TCP/IP.
 - 1974 : Définition de la suite des protocoles TCP/IP, il sera adopté par l'Arpanet en 1983 en remplacement du protocole NCP.
 - 1983 : Création du DNS, base de données permettant la gestion des noms de domaines.
-- 1989 : Naissance du World Wide Web. Le Web, qui s'appuie sur Internet, est un ensemble de documents reliés entre eux par un système hypertexte et consultables à l'aide d'un navigateur.
+- 1989 : **Naissance du World Wide Web.** Le Web, qui s'appuie sur Internet, est un ensemble de documents reliés entre eux par un système hypertexte et consultables à l'aide d'un navigateur.
 - 1993 : Popularisation du Web avec l'arrivée du navigateur NCSA Mosaic, doté d'une interface graphique. C'est le premier navigateur permettant l'utilisation d'images sur des pages Web.
 
 ### Transmission d'informations
 
-Les données transmises entre deux ordinateurs sont codées en binaire (en base 2) sous la forme d'une suite de 0 et de 1 : on parle de **bits**. 
+Les données transmises entre deux ordinateurs sont codées en binaire (c'est-à-dire en base 2) sous la forme d'une suite de 0 et de 1 : on parle de **bits**. 
 
 L'intérêt de cette représentation est de pouvoir transférer les données par des signaux électriques (1: signal, 0: rien) ou optiques (1 : allumé, 0: éteint).
 
 Remarque : 
 
-En informatique, on compte l'information en **octet** : 1 octet est formé de 8 bits ; il y a donc 2<sup>8</sup>=256 octets possibles de (0,0,0,0,0,0,0,0) à (1,1,1,1,1,1,1,1) qui codent les niveaux de 0 à 255. 
+En informatique, on compte l'information en **octet** : 1 octet est un paquet  ordonné formé de 8 bits ; il y a donc 2<sup>8</sup>=256 octets possibles de (0,0,0,0,0,0,0,0) à (1,1,1,1,1,1,1,1), qui codent des niveaux de 0 à 255. 
 
 L'information numérique se mesure en octet et ses multiples ; kilooctet : 1 ko=10^3 o, megaoctet : 1 Mo=10^6 o, gigaoctet : 1 Go=10^9 o ; teraoctet : 1 To=10^12 o.
 
@@ -66,16 +66,16 @@ Parmi les différents protocoles utilisés, on retrouve très fréquemment TCP/I
 
 #### Le protocole TCP (Transmission Control Protocol)
 
-Imaginons que l'on souhaite envoyer une photo numérique. Il s'agit d'un fichier volumineux qui ne pourra pas être envoyé en une seule fois mais devra être découpé en morceaux. Le protocole TCP se charge de découper les données sous forme de **paquets numérotés** et d'indiquer à quel logiciel ces paquets sont destinés. TCP s'assure ensuite que tous ces paquets sont bien transmis grâce à des **accusés de réception** et les rassemble. Si des paquets ont été perdus lors de la transmission, TCP se charge de demander leur nouvel envoi.
-Le protocole TCP assure ainsi une transmission fiable, mais pour autant sans garantie dans le temps.
+Imaginons que l'on souhaite envoyer une photo numérique. Il s'agit d'un fichier volumineux qui ne pourra pas être envoyé en une seule fois mais devra être découpé en plusieurs morceaux. Le protocole TCP se charge de découper les données sous forme de **paquets numérotés** et d'indiquer à quel logiciel ces paquets sont destinés. TCP s'assure ensuite que tous ces paquets sont bien transmis grâce à des **accusés de réception** et les rassemble. Si des paquets ont été perdus lors de la transmission, le protocole TCP se charge de demander leur nouvel envoi.
+Le **protocole TCP assure ainsi une transmission fiable**, mais pour autant sans garantie dans le temps.
 
 Cependant il nous manque encore une information essentielle à la transmission des données : où est situé l'ordinateur B sur le réseau Internet ?
 
 #### Le protocole IP (Internet Protocol)
 
-Pour comprendre le fonctionnement du protocole IP on peut faire assez naturellement l'analogie avec l'envoi du courrier par la Poste.
+Pour comprendre le fonctionnement du **protocole IP** on peut faire assez naturellement l'analogie avec l'envoi du courrier par la Poste.
 
-Lorsqu'on envoie une lettre par la Poste on l'insère dans une enveloppe sur laquelle sont inscrites l'adresse du **destinataire** et celle de l'**expéditeur**. Ici la lettre à envoyer correspond aux données encapsulées par TCP. Le protocole IP les encapsule en ajoutant entre autres les adresses du destinataire et de l'expéditeur.
+Lorsqu'on envoie une lettre par la Poste, on l'insère dans une enveloppe sur laquelle sont inscrites l'adresse du **destinataire** et celle de l'**expéditeur**. Ici la lettre à envoyer correspond aux données encapsulées par TCP. Le protocole IP les encapsule en ajoutant entre autres les adresses du destinataire et de l'expéditeur.
 
 À quoi ressemble l'adresse d'un ordinateur ?   
 
@@ -100,10 +100,10 @@ Puis pour 23 : (00010111).
 Enfin pour 108 : (1101100).    
 D'où les 32 bits (4×8) du code binaire de l'adresse : 1010110010011000000101111101100
 
-Remarque : étant donné le nombre grandissant d'objets connectés ce format d'adresse IP, appelé adresse IPv4 formé de 4 octets, soit 32 bits, devient insuffisant ; il est en effet limité pour coder 2<sup>32</sup>=4×10<sup>9</sup> adresses. 
+Remarque : étant donné le nombre grandissant d'objets connectés ce format d'adresse IP, appelé **adresse IPv4** formé de 4 octets, soit 32 bits, devient insuffisant ; il est en effet limité pour coder 2<sup>32</sup>=4×10<sup>9</sup> adresses. 
 
-On utilise donc de plus en plus le protocole IPv6 qui utilise des adresses codées sur 128 bits ce qui donne 2<sup>128</sup>=3×10<sup>38</sup> adresses possibles. 
-Les adresses IPv6 sont représentées par 8 groupes de 2 octets codés sous forme hexadécimale (10 chiffres de 0 à 9 puis 6 lettres de A à F) séparés par ":".
+On utilise donc de plus en plus le **protocole IPv6** qui utilise des adresses codées sur 128 bits ce qui donne 2<sup>128</sup>=3×10<sup>38</sup> adresses possibles. 
+Les adresses IPv6 sont représentées par 8 groupes de 2 octets codés sous forme hexadécimale (utilisation de 10 chiffres de 0 à 9 et de 6 lettres de A à F) séparés par ":".
 
 Exemple d'adresse IPv6 : 2019:0ca8:0000:86b2:0000:0000:db16:8004
 
