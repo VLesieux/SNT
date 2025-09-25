@@ -75,7 +75,7 @@ def conversion_decimal_binaire(n):
     return resultat
 ```
 
-Code à ajouter pour importer le module doctest et vérifier les tests de la docstring :
+Code à ajouter à la fin de la page pour importer le module doctest qui vérifie les tests de la docstring :
 
 ```Python
 if __name__ == '__main__':
@@ -92,24 +92,24 @@ nombre=input("Quel est le nombre dont vous voulez connaître la représentation 
 print("La représentation binaire de",nombre,"est : ",conversion_decimal_binaire(int(nombre)))
 ```
 
-Amélioration du programme, pour que le code binaire soit écrit sur un octet.
+Amélioration du programme, pour que le code binaire soit écrit sur un octet (8 bits).
 
 ```python
 
-def conversion_decimal_binaire(n):
+def conversion_decimal_binaire_sur_un_octet(n):
     """
     Donne la représentation binaire sur un octet du nombre entier décimal n
     param : n : int
     return : str
-    >>> conversion_decimal_binaire(18)
+    >>> conversion_decimal_binaire_sur_un_octet(18)
     '00010010'
-    >>> conversion_decimal_binaire(141)
+    >>> conversion_decimal_binaire_sur_un_octet(141)
     '10001101'
     """
     resultat="" 
     while n>0:
         resultat=str(n%2)+resultat
-        #!!!!ligne manquante!!!!
+        n=n//2
     
     resultat='0'*(8-len(resultat))+resultat #on rajoute autant de 0 que nécessaire pour compléter à 8 bits  
     return resultat
@@ -119,7 +119,7 @@ def conversion_decimal_binaire(n):
 
 Peut-on concevoir un programme qui donnerait directement le code binaire d'une adresse IP ?
 
-Pour cela, on peut transformer une chaîne de caractères en liste en utilisant un séparateur avec la méthode `split` puis parcourir cette liste avec `for element in `.
+Pour cela, on peut transformer une chaîne de caractères en liste en utilisant le séparateur, ici le point, avec la méthode `split`, puis parcourir cette liste avec `for element in `.
 
 ```python
 >>> "192.168.1.13".split(".")
@@ -143,6 +143,13 @@ def encodage_adresse_IP_binaire(adresseIP):
     >>> encodage_adresse_IP_binaire("192.168.1.13")
     '11000000101010000000000100001101'
     """
+```
+
+Remarque : on est amené à transformer la chaîne de caractère en nombre, avec la fonction `int()`, par exemple : 
+
+```Python
+>>> int("192")
+192
 ```
 
 5) Une autre application est l'encodage en binaire d'un texte utilisant le codage ASCII  (American Standard Code for Information Interchange) des caractères. L'ASCII définit 128 caractères numérotés de 0 à 127 et codés en binaire de 0000000 à 1111111. Sept bits suffisent donc. Toutefois, les ordinateurs travaillant presque tous sur un multiple de huit bits (un octet) depuis les années 1970, chaque caractère d'un texte en ASCII est souvent stocké dans un octet dont le 8e bit est 0.
