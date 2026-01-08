@@ -204,13 +204,13 @@ Ce programme possède une fonction `a_paris(geo)` qui renvoie la distance en **m
 La réponse sera donnée dans la console en écrivant la commande : `len(filtre_selon_distance_a_Paris(table_des_donnees,10000))`.
 
 
-### Exercice 4 : exploiter des données pour répondre à des questions
+### Exercice 4 : exploiter des données pour répondre à des questions précises
 
-Vous disposez du fichier donnees-hospitalieres-relatives-a-lepidemie-de-covid-19-en-france.csv dans le dossier `Assets` du thème 4.
+Vous disposez du fichier `donnees-hospitalieres-relatives-a-lepidemie-de-covid-19-en-france.csv` dans le dossier `Assets` du thème 4. 
 
-Répondre aux questions suivantes:
+Répondre aux questions suivantes en justifiant:
 
-1. Quels départements ont plus de 100 patients hospitalisés ?
-2. Y a-t-il plus d’hospitalisations chez les hommes ou chez les femmes ?
-3. Dans le Finistère, quels jours ont connu le plus d’hospitalisations ?
-4. Combien de personnes étaient hospitalisées le 8 février 2023 ?
+1. Quels sont les noms des départements de Bretagne qui ont eu au moins 100 hospitalisations, tout sexe confondu, le 19 avril 2022 (2022-04-19)? 
+2. Y a-t-il eu plus d’hospitalisations chez les hommes que chez les femmes en Ille-et-Vilaine (35) ce jour-là ?
+3. Dans le Finistère (29), quel jour a connu le plus d’hospitalisations tout sexe confondu ?
+4. Combien de personnes (tout sexe confondu) étaient hospitalisées le 8 février 2023 (2023-02-08) en Bretagne (tout département confondu) ?
