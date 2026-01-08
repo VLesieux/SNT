@@ -1,66 +1,6 @@
 ## Exercices Thème 4 : Les données structurées et leurs traitements
 
-### Exercice 1 : parcourir des données, extraire une information précise après avoir trié
-
-Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité de l'air Île de France" ;  télécharger puis ouvrir le fichier `indices_QA_commune_IDF_04_2018.csv` (le fichier est également présent dans le dossier `Assets` du thème 4).   
-
-Il s'agit d'un exemple de données ouvertes ou **open data** accessibles à tous. Les indices de qualité de l’air sont des outils de communication qui permettent de décrire périodiquement sous une forme simple (qualificatif, chiffre) l’état global de la qualité de l’air dans une aire géographique donnée.
-
-En s'inspirant des exemples du cours réalisés sur le fichier `contacts.csv`, répondre aux questions suivantes avec Python.  
- 
-**Attention**, on observe que les séparateurs dans le fichier `csv` sont ici des virgules `,` et non des points-virgules `;`, il faut donc modifier en conséquence notre programme de lecture et de transformation de fichier `csv` en tableau.
-Penser également à transformer les chaînes de caractères représentant une valeur entière en nombre entier, en utilisant `int` : 
-
-```Python
->>> int("45")
-45
-```
-
-1. Quels sont les descripteurs utilisés ? Affichez-les.
-2. Question posée : quel jour a été le plus pollué en dioxyde d'azote en Île de France ?
-
-**Trier** les données en fonction de l'indice de pollution au dioxyde d'azote NO<sub>2</sub> dans l'ordre décroissant, puis **filtrer** les données correspondant à l'Île de France (code Insee : 0) afin de déterminer la réponse à la question.
-
-**Indications** : On sera donc amené à écrire deux fonctions : `tri_selon_NO2(element)` pour trier les données dans l'odre décroissant de  `no2` et `filtre_selon_ninsee(ninsee,tableau)` pour ne garder que ce qui se rapporte à `ninsee`. 
-
-3. Déterminer les numéro d'insee des deux communes d'Île-de-France les plus polluées en particules fines (pm10) le 20/04/2018.    
-
-**Indications** : On sera amené à écrire les fonctions : `tri_selon_pm10(element)`pour  trier les données dans l'ordre décroissant de `pm10` et `filtre_selon_date(date,tableau)` pour ne garder que ce qui se rapporte à `date`.
-
-Résultat attendu : `Les insee des deux communes d'Île-de-France les plus polluées aux particules fines (pm10) le 20/04/2018 sont :  92026  ,  92035`
-
-4. Pendant combien de jours l'indice de pollution à l'ozone O<sub>3</sub> a-t-il été supérieur à 45 dans le Val-de-Marne (code d'Insee : 94) au mois d'avril 2018 ?   
-
-**Indications** : On sera amené à écrire une fonction : `filtre_selon_code_mois_seuil(code,tableau,mois,seuil)` 
-
-Résultat attendu : `Le nombre de jour où l'indice de pollution à l'ozone a été supérieur à 45 dans le Val-de-Marne est :  7 `
-
-5. Donner la représentation graphique de l'évolution de la pollution à l'ozone pendant le mois d'avril 2018 dans le Val-de-Marne. Utiliser ce graphe pour déterminer les dates correspondant à la question précédente.
-
-On sera amené à ordonner les données selon la `date`, placée en abscisse sur le graphe, en réalisant la fonction `tri_selon_date(element)`.
-
-Voici le code permettant une représentation graphique du niveau d'ozone dans le Val-de-Marne au mois d'avril 2018 au cours du temps  une fois le tri et le filtre effectués.
-
-```Python
-import matplotlib.pyplot as plt
-x=[]
-y=[]
-for element in table:
-    x.append(element[0].split("/")[0])#on ne garde que le numéro du jour
-    y.append(int(element[3]))#transforme en valeur entière
-plt.axis([ 1, 31, 0, 100 ])
-plt.plot(x,y,'+',markersize=5,linestyle='solid',color='blue')
-plt.xlabel("Date")
-plt.ylabel("Taux d'ozone")
-plt.title ("Évolution de la pollution en ozone au mois d'avril 2018 dans le 94")
-plt.grid()
-plt.show()
-plt.close()
-```
-
-<img src="Assets/graphe.png">
-
-### Exercice 2 : écrire les bonnes fonctions pour répondre à une question précise
+### Exercice 1 : écrire les bonnes fonctions pour répondre à une question précise
 
 Code pour vérifier les docstrings :
 
@@ -126,19 +66,71 @@ La docstring de cette `fonction4` doit permettre de vérifier les deux tests sui
 'ceci est le début, la suite et la fin de la phrase'
 ```
 
-Exemple : réponses à la question 1
+
+
+
+
+
+### Exercice 2 : parcourir des données, extraire une information précise après avoir trié
+
+Aller sur le site www.data.gouv.fr et effectuer la recherche "indices qualité de l'air Île de France" ;  télécharger puis ouvrir le fichier `indices_QA_commune_IDF_04_2018.csv` (le fichier est également présent dans le dossier `Assets` du thème 4).   
+
+Il s'agit d'un exemple de données ouvertes ou **open data** accessibles à tous. Les indices de qualité de l’air sont des outils de communication qui permettent de décrire périodiquement sous une forme simple (qualificatif, chiffre) l’état global de la qualité de l’air dans une aire géographique donnée.
+
+En s'inspirant des exemples du cours réalisés sur le fichier `contacts.csv`, répondre aux questions suivantes avec Python.  
+ 
+**Attention**, on observe que les séparateurs dans le fichier `csv` sont ici des virgules `,` et non des points-virgules `;`, il faut donc modifier en conséquence notre programme de lecture et de transformation de fichier `csv` en tableau.
+Penser également à transformer les chaînes de caractères représentant une valeur entière en nombre entier, en utilisant `int` : 
 
 ```Python
-def fonction1(table):
-    """
-    Renvoie un tuple donnant le nombre d'éléments du tableau et le nombre de données dans son premier élément
-    param: table : list
-    return : tuple
-    >>> fonction1(fruits)
-    (6, 4)
-    """
-    return len(table),len(table[0])
+>>> int("45")
+45
 ```
+
+1. Quels sont les descripteurs utilisés ? Affichez-les.
+2. Question posée : quel jour a été le plus pollué en dioxyde d'azote en Île de France ?
+
+**Trier** les données en fonction de l'indice de pollution au dioxyde d'azote NO<sub>2</sub> dans l'ordre décroissant, puis **filtrer** les données correspondant à l'Île de France (code Insee : 0) afin de déterminer la réponse à la question.
+
+**Indications** : On sera donc amené à écrire deux fonctions : `tri_selon_NO2(element)` pour trier les données dans l'odre décroissant de  `no2` et `filtre_selon_ninsee(ninsee,tableau)` pour ne garder que ce qui se rapporte à `ninsee`. 
+
+3. Déterminer les numéro d'insee des deux communes d'Île-de-France les plus polluées en particules fines (pm10) le 20/04/2018.    
+
+**Indications** : On sera amené à écrire les fonctions : `tri_selon_pm10(element)`pour  trier les données dans l'ordre décroissant de `pm10` et `filtre_selon_date(date,tableau)` pour ne garder que ce qui se rapporte à `date`.
+
+Résultat attendu : `Les insee des deux communes d'Île-de-France les plus polluées aux particules fines (pm10) le 20/04/2018 sont :  92026  ,  92035`
+
+4. Pendant combien de jours l'indice de pollution à l'ozone O<sub>3</sub> a-t-il été supérieur à 45 dans le Val-de-Marne (code d'Insee : 94) au mois d'avril 2018 ?   
+
+**Indications** : On sera amené à écrire une fonction : `filtre_selon_code_mois_seuil(code,tableau,mois,seuil)` 
+
+Résultat attendu : `Le nombre de jour où l'indice de pollution à l'ozone a été supérieur à 45 dans le Val-de-Marne est :  7 `
+
+5. Donner la représentation graphique de l'évolution de la pollution à l'ozone pendant le mois d'avril 2018 dans le Val-de-Marne. Utiliser ce graphe pour déterminer les dates correspondant à la question précédente.
+
+On sera amené à ordonner les données selon la `date`, placée en abscisse sur le graphe, en réalisant la fonction `tri_selon_date(element)`.
+
+Voici le code permettant une représentation graphique du niveau d'ozone dans le Val-de-Marne au mois d'avril 2018 au cours du temps  une fois le tri et le filtre effectués.
+
+```Python
+import matplotlib.pyplot as plt
+x=[]
+y=[]
+for element in table:
+    x.append(element[0].split("/")[0])#on ne garde que le numéro du jour
+    y.append(int(element[3]))#transforme en valeur entière
+plt.axis([ 1, 31, 0, 100 ])
+plt.plot(x,y,'+',markersize=5,linestyle='solid',color='blue')
+plt.xlabel("Date")
+plt.ylabel("Taux d'ozone")
+plt.title ("Évolution de la pollution en ozone au mois d'avril 2018 dans le 94")
+plt.grid()
+plt.show()
+plt.close()
+```
+
+<img src="Assets/graphe.png">
+
 
 ### Exercice 3 : extraire l'information exacte à partir d'un fichier volumineux de données
 
