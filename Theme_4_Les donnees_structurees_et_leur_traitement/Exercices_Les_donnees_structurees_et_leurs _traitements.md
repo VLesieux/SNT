@@ -202,3 +202,15 @@ Ce programme possède une fonction `a_paris(geo)` qui renvoie la distance en **m
 
 **Indication** : réaliser une fonction de filtrage `filtre_selon_distance_a_Paris(tableau,rayon_a_Paris)` pour retenir les éléments du tableau correspondant à notre requête. 
 La réponse sera donnée dans la console en écrivant la commande : `len(filtre_selon_distance_a_Paris(table_des_donnees,10000))`.
+
+
+### Exercice 4 : exploiter des données pour répondre à des questions
+
+Vous disposez du fichier donnees-hospitalieres-relatives-a-lepidemie-de-covid-19-en-france.csv dans le dossier `Assets` du thème 4.
+
+Répondre aux questions suivantes:
+
+1. Quels départements ont plus de 100 patients hospitalisés ?
+2. Y a-t-il plus d’hospitalisations chez les hommes ou chez les femmes ?
+3. Dans le Finistère, quels jours ont connu le plus d’hospitalisations ?
+4. Combien de personnes étaient hospitalisées le 8 février 2023 ?
