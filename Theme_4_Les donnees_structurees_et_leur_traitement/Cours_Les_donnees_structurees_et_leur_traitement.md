@@ -66,11 +66,12 @@ END:VCARD
 
 Exemple de données :
 
-Nom	Prénom	Numéro de téléphone	Adresse e-mail	Date de naissance	Ville
-Green	Emma	06 36 62 23 66	emma.green@free.fr	16/05/2002	Lyon
-Gascon	Robert	06 64 58 54 36	robert.gascon@wanadoo.fr	08/02/1988	Orléans
-Villefort	Valentine	06 82 25 36 84	valentine.villefort@gmail.com	20/06/1994	Tours
-Poclain	Alexandre	06 25 39 26 37	alexandre.poclain@orange.fr	11/02/1961	Nancy
+| Nom        | Prénom      | Numéro de téléphone | Adresse e-mail                    | Date de naissance | Ville    |
+|------------|-------------|--------------------|-----------------------------------|-------------------|----------|
+| Green      | Emma        | 06 36 62 23 66     | emma.green@free.fr                | 2002-05-16        | Lyon     |
+| Gascon     | Robert      | 06 64 58 54 36     | robert.gascon@wanadoo.fr          | 1988-02-08        | Orléans  |
+| Villefort  | Valentine   | 06 82 25 36 84     | valentine.villefort@gmail.com     | 1994-06-20        | Tours    |
+| Poclain    | Alexandre   | 06 25 39 26 37     | alexandre.poclai@orange.fr        | 1961-02-11        | Nancy    |
 
 Vue des [données](Assets/contacts.xls) mises en tableau réalisé dans un tableur tel que Excel ou LibreofficeCalc : <img src="Assets/image_excel.png">
 
