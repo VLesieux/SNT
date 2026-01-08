@@ -155,7 +155,9 @@ e) table_des_donnees[0].index('entrees_2020') # noter ce résultat
 
 f) table_des_donnees[0].index('fauteuils') # noter ce résultat
 
-g) table_des_donnees[0].index('geo') # noter ce résultat
+g) table_des_donnees[0].index('ecrans') # noter ce résultat
+
+h) table_des_donnees[0].index('geo') # noter ce résultat
 
 Donnez la signification de ces 6 résultats.
 
@@ -178,7 +180,11 @@ Pour la suite, nous supprimerons la ligne des descripteurs en ajoutant :
 
 **Indication** : Trier, puis filtrer.
 
-6. On se propose maintenant de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
+6. Quel est le cinéma avec le meilleur ratio entrées / nombre de fauteuils ?
+
+7. Quels sont les cinémas possédant plus de 5 écrans ?
+
+8. On se propose maintenant de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
 
 Pour cela, on importe un programme appelé `calcul_distance_latitude_longitude.py` en ajoutant dans notre code 
 
