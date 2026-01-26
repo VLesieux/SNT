@@ -182,7 +182,7 @@ Pour la suite, nous supprimerons la ligne des descripteurs en ajoutant :
 
 6. Quel est le cinéma avec le meilleur ratio entrées / nombre de fauteuils ?
 
-7. Quels sont les cinémas possédant plus de 5 écrans ?
+7. Combien y-a-t-il de cinémas dans le département 95 possédant plus de 5 écrans, plus de 8 écrans ?
 
 8. On se propose maintenant de répondre à la question suivante : combien y-a-t-il de cinéma à moins de 10 km de Paris ?    
 
