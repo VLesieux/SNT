@@ -210,6 +210,8 @@ Vous disposez du fichier `donnees-hospitalieres-relatives-a-lepidemie-de-covid-1
 
 Répondre aux questions suivantes en justifiant:
 
+______
+
 QUESTION 1 : Quels sont les noms des départements de Bretagne qui ont eu au moins 100 hospitalisations, tout sexe confondu, le 19 avril 2022 (2022-04-19)? 
 
 #### Aide pour la première question :
