@@ -269,7 +269,9 @@ QUESTION 2 : Y a-t-il eu plus d’hospitalisations chez les hommes que chez les 
 #### indications : 
 
 1) filtrer la ligne correspondant au 'Code du Département' : '35', à la 'Date' '2022-04-19' et au 'Sexe' : Homme.
+
 2) Lire l'information 'Nb actuellement hospitalisés'.
+
 3)Faire de même pour 'Sexe' : Femme, puis conclure.
 
 _________
