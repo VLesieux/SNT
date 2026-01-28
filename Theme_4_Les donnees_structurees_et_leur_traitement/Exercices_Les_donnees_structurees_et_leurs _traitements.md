@@ -219,14 +219,14 @@ Répondre aux questions suivantes en justifiant:
 Aide pour la première question :
 
 ```Python
-#########################################LECTURE DU FICHIER CSV############################
+#########################################LECTURE DU FICHIER CSV et formation du tableau des données############################
 import csv
 fichier=open("donnees-hospitalieres-relatives-a-lepidemie-de-covid-19-en-france.csv","r",encoding="utf-8-sig")
 table_des_donnees=[]
 for ligne in fichier:
     table_des_donnees.append(ligne.rstrip().split(';'))
 fichier.close()
-#########################################RECHERCHER LES POSITIONS DES DESCRIPTEURS#############
+#########################################RECHERCHE DES POSITIONS DES DESCRIPTEURS UTILES#############
 # 
 # >>> table_des_donnees[0]
 # ['Code du Département', 'Date', 'Nb actuellement hospitalisés', 'Nb actuellement en soins intensifs', 'Total retour à domicile', 'Total Décès', 'Code région', 'Code ISO 3166 de la zone', 'Nom région', 'Nom département', 'Sexe', 'geo_point_2d', 'HospConv', 'SSR_USLD', 'autres', 'Nb Quotidien Admis Hospitalisation', 'Nb Quotidien Admis Réanimation', 'Nb Quotidien Décès', 'Nb Quotidien Retour à Domicile']
@@ -243,7 +243,7 @@ fichier.close()
 # >>> table_des_donnees[0].index('Sexe')#######Les possibilités sont Homme, Femme, Tous
 # 10
 
-del table_des_donnees[0]
+del table_des_donnees[0]#SUPPRESSION DE LA LIGNE DES DESCRIPTEURS
 
 #########################################QUESTION 1################################
 
