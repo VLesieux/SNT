@@ -272,7 +272,7 @@ QUESTION 2 : Y a-t-il eu plus d’hospitalisations chez les hommes que chez les 
 
 2) Lire l'information 'Nb actuellement hospitalisés'.
 
-3)Faire de même pour 'Sexe' : Femme, puis conclure.
+3) Faire de même pour 'Sexe' : Femme, puis conclure.
 
 _________
 
