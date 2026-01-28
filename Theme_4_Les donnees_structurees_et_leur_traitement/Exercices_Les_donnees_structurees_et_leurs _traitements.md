@@ -213,7 +213,7 @@ Répondre aux questions suivantes en justifiant:
 1. Quels sont les noms des départements de Bretagne qui ont eu au moins 100 hospitalisations, tout sexe confondu, le 19 avril 2022 (2022-04-19)? 
 2. Y a-t-il eu plus d’hospitalisations chez les hommes que chez les femmes en Ille-et-Vilaine (35) ce jour-là ?
 
-indications : 
+#### indications : 
 
 1) filtrer la ligne correspondant au 'Code du Département' : '35', à la 'Date' '2022-04-19' et au 'Sexe' : Homme.
 2) Lire l'information 'Nb actuellement hospitalisés'.
@@ -222,20 +222,22 @@ indications :
 
 3. Combien de personnes (tout sexe confondu) étaient hospitalisées le 8 février 2023 (2023-02-08) en Bretagne (tout département confondu) ?
 
+#### indications : 
+
 1) filter les lignes correspondant à la 'Date' '2023-02-08' et 'Sexe' : Tous
 2) Lire l'information 'Nb actuellement hospitalisés'.
 
 
 4. Dans le Finistère (29), quel jour a connu le plus d’hospitalisations tout sexe confondu ?
 
-indications : 
+#### indications :  
 
 1) filter les lignes correspondant au 'Code du Département' : '29' et 'Sexe' : Tous
 2) Trier dans l'ordre décroissant de 'Nb actuellement hospitalisés'
 3) La première ligne donnera la date.
 
 
-# Aide pour la première question :
+#### Aide pour la première question :
 
 ```Python
 #########################################LECTURE DU FICHIER CSV et formation du tableau des données############################
