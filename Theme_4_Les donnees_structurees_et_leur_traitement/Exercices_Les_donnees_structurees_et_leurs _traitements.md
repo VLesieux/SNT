@@ -210,8 +210,11 @@ Vous disposez du fichier `donnees-hospitalieres-relatives-a-lepidemie-de-covid-1
 
 Répondre aux questions suivantes en justifiant:
 
-1. Quels sont les noms des départements de Bretagne qui ont eu au moins 100 hospitalisations, tout sexe confondu, le 19 avril 2022 (2022-04-19)? 
-2. Y a-t-il eu plus d’hospitalisations chez les hommes que chez les femmes en Ille-et-Vilaine (35) ce jour-là ?
+QUESTION 1 : Quels sont les noms des départements de Bretagne qui ont eu au moins 100 hospitalisations, tout sexe confondu, le 19 avril 2022 (2022-04-19)? 
+
+_________
+
+QUESTION 2 : Y a-t-il eu plus d’hospitalisations chez les hommes que chez les femmes en Ille-et-Vilaine (35) ce jour-là ?
 
 #### indications : 
 
@@ -219,16 +222,17 @@ Répondre aux questions suivantes en justifiant:
 2) Lire l'information 'Nb actuellement hospitalisés'.
 3)Faire de même pour 'Sexe' : Femme, puis conclure.
 
+_________
 
-3. Combien de personnes (tout sexe confondu) étaient hospitalisées le 8 février 2023 (2023-02-08) en Bretagne (tout département confondu) ?
+QUESTION 3 :  Combien de personnes (tout sexe confondu) étaient hospitalisées le 8 février 2023 (2023-02-08) en Bretagne (tout département confondu) ?
 
 #### indications : 
 
 1) filter les lignes correspondant à la 'Date' '2023-02-08' et 'Sexe' : Tous
 2) Lire l'information 'Nb actuellement hospitalisés'.
 
-
-4. Dans le Finistère (29), quel jour a connu le plus d’hospitalisations tout sexe confondu ?
+_________
+QUESTION 4 : Dans le Finistère (29), quel jour a connu le plus d’hospitalisations tout sexe confondu ?
 
 #### indications :  
 
