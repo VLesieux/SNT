@@ -67,7 +67,7 @@ Dans ce programme, on a réalisé un **dictionnaire** appelé `localisations` qu
 ```
 
 
-### Exercice 3 : il est fort cet Ératosthène !
+### Exercice 3 : bravo Ératosthène !
 
 Il y a plus de 2000 ans, le scientifique et philosophène grec Ératosthène invente la discipline de la géographie dont le terme est encore utilisé aujourd'hui ; il a même réussi à estimer la circonférence de la Terre.
 
@@ -278,7 +278,11 @@ if __name__ == '__main__':
 <img width="600" height="300" src="Assets/chemin_plus_court.png">
 
 2) Utiliser l'**algorithme de Dijkstra** explicité sur un exemple dans ce document Word : [Tableau.doc](Assets/Tableau.doc) pour retrouver le résultat précédent.
-    
+
+
+Principe de l'algorithme : choisir à chaque fois le sommet non visité avec la distance minimale.
+
+  
 On peut résumer ainsi la construction du tableau : pour passer d'une ligne à l'autre, on détermine le sommet à marquer en retenant le sommet pour lequel on a la plus petite distance (False représente une distance infinie), puis pour chacune des colonnes des sommets non marqués, on écrit la distance (si elle existe, sinon False) entre le sommet marqué et le sommet non marqué si, après addition de la retenue, celle-ci est **strictement inférieure** à la valeur inscrite dans la ligne précédente ; on précise également la provenance correspondant au sommet marqué.
 Pour obtenir le résultat final, on part du sommet d'arrivée et on remonte en passant par les provenances.
 
