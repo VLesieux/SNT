@@ -286,7 +286,7 @@ Principe de l'algorithme : choisir à chaque fois le sommet non visité avec la 
 On peut résumer ainsi la construction du tableau : pour passer d'une ligne à l'autre, on détermine le sommet à marquer en retenant le sommet pour lequel on a la plus petite distance (False représente une distance infinie), puis pour chacune des colonnes des sommets non marqués, on écrit la distance (si elle existe, sinon False) entre le sommet marqué et le sommet non marqué si, après addition de la retenue, celle-ci est **strictement inférieure** à la valeur inscrite dans la ligne précédente ; on précise également la provenance correspondant au sommet marqué.
 Pour obtenir le résultat final, on part du sommet d'arrivée et on remonte en passant par les provenances.
 
-3) L'implémentation en Python de cet algorithme est donnée ci-dessous : on y retrouvera la construction du tableau dans `ajout_ligne(T,S_marques,Graphe)` puis dans `calcule_tableau(Graphe, depart)`.
+3) L'implémentation en Python de cet algorithme est donnée ci-dessous.
 
 ```Python
 #  Implémentation  de  l’algorithme  de  Dijkstra
