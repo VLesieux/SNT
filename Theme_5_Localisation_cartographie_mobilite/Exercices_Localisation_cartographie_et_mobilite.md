@@ -332,8 +332,8 @@ def chemin_plus_court(depart, arrivee, graphe):
     >>> chemin_plus_court("0","4",Graphe)
     ['0', '1', '7', '6', '5', '3', '4']
     """
-	dist.clear()
-	visited.clear()
+    dist.clear()
+    visited.clear()
     pred.clear()
 
     for sommet in graphe:
@@ -404,6 +404,7 @@ if __name__ == '__main__':
 
 
  
+
 ```
 
 Compléter le code des deux fonctions `distance_entre_deux_sommets(Graphe,i,j)` et `longueur_plus_court_chemin(Graphe,depart,arrivee)`.    
