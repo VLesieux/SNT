@@ -332,7 +332,7 @@ def chemin_plus_court(depart, arrivee, graphe):
     >>> chemin_plus_court("0","4",Graphe)
     ['0', '1', '7', '6', '5', '3', '4']
     """
-    dist.clear()
+	dist.clear()
 	visited.clear()
     pred.clear()
 
