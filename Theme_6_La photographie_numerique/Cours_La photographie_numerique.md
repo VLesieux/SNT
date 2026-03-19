@@ -9,8 +9,24 @@ L'apparition de la photographie numérique a bouleversé notre rapport à l'imag
 ### Historique
 
 - 1826 : Première photographie argentique du français Nicéphore Niépce
+
+<img width="650" height="500" src="Assets/Niepce.png">
+
+<img width="650" height="500" src="Assets/photographic_film.png">
+
+<img width="650" height="500" src="Assets/chlorure_argent.png">
+
+<img width="650" height="500" src="Assets/developpement.png">
+
+<img width="650" height="500" src="Assets/developpement2.png">
+
+
 - 1900 : Début de la photographie en couleur. Généralisation du format 24×36 et de la visée reflex après la seconde guerre mondiale.
 - 1969 : Premiers capteurs CCD (Charge Coupled Device)
+
+<img width="650" height="500" src="Assets/ccd.png">
+
+
 - 1975 : Premiers appareils numériques
 - 2007 : Arrivée du smartphone
 - 2024 : iPhone 15 : Le moteur neuronal à 16 coeurs a une capacité de 35 billions d'opérations par seconde !
@@ -22,6 +38,12 @@ Cependant la mise au point de l'appareil photographique diffère de l'accommodat
 
 
 <img width="650" height="500" src="Assets/analogie_oeil_camera.png">
+
+<img width="650" height="500" src="Assets/lentille.png">
+
+<img width="650" height="500" src="Assets/ouverture.png">
+
+<img width="650" height="500" src="Assets/profondeur_de_champ.png">
 
 La rétine est constituée de cellules photosensibles : les cônes (bleus, rouges, verts), qui permettent d'analyser les différentes couleurs de l'image en vision diurne (elles sont sensibles à des domaines spécifiques du spectre visible) et les bâtonnets pour la vision nocturne.
 
