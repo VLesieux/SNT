@@ -182,6 +182,8 @@ Dans cet exercice nous allons utiliser le module Image de la librairie **PIL** o
 
 On suivra [sur ce document pdf](http://vfsilesieux.free.fr/traitements_d_une_me%CC%82me_image.pdf) les différents traitements possibles d'une image avec Python : 
 
+**I] modification des couleurs des pixels**
+
 1) Transformation en noir et blanc
 
 2) Transformation avec filtre bleu
@@ -192,15 +194,16 @@ On suivra [sur ce document pdf](http://vfsilesieux.free.fr/traitements_d_une_me%
 
 5) Transformation en nuances de gris
 
-6) Transformation en 8 couleurs
+6) Extraction des contours
 
-7) Pivoter
+**II] transformations géométriques**
 
-8) Découpes
+1) Pivoter (symétrie centrale)
 
-9) Agrandissement de l'image
+2) Découpes (translation)
 
-10) Extraction des contours
+3) Agrandissement de l'image (modification des dimensions)
+
 
 Tous ces traitements peuvent être réunis dans une [application en Python](Assets/Transformations_images.py) à compléter en suivant le modèle réalisé pour les 5 premières transformations.
 
