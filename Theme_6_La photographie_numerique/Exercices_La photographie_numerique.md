@@ -204,7 +204,9 @@ On suivra [sur ce document pdf](http://vfsilesieux.free.fr/traitements_d_une_me%
 
 3) Agrandissement de l'image
 
-Indication : on considère une image de 2 colonnes sur 3 lignes. On souhaite obtenir une image deux fois plus grande de 4 colonnes et de 6 lignes.
+Indications : on considère une image de 2 colonnes sur 3 lignes.
+
+On souhaite obtenir une image deux fois plus grande de 4 colonnes et de 6 lignes.
 
 <p align="center">
 
@@ -217,12 +219,12 @@ Indication : on considère une image de 2 colonnes sur 3 lignes. On souhaite obt
 
 Pour ce faire, il suffit de faire correspondre :
 
-- au pixel (0,0), le pixel (0,0) puis (1,0),(0,1),(1,1);
-- au pixel (1,0), le pixel (2,0) puis (3,0),(2,1),(3,1) ;
-- au pixel (0,1), le pixel (0,2) puis (1,2),(0,3),(1,3) ;
-- au pixel (1,1), le pixel (2,2) puis (3,2),(2,3),(3,3) ;
-- au pixel (0,2), le pixel (0,4) puis (1,4),(0,5),(1,5) ;
-- au pixel (1,2), le pixel (2,4) puis (3,4),(2,5),(3,5).
+- au pixel de coordonnées (0,0), les pixels de coordonnées (0,0) ; (1,0) ; (0,1) ; (1,1)
+- au pixel de coordonnées (1,0), les pixels de coordonnées (2,0) ; (3,0) ; (2,1) ; (3,1)
+- au pixel de coordonnées (0,1), les pixels de coordonnées (0,2) ; (1,2) ; (0,3) ; (1,3)
+- au pixel de coordonnées (1,1), les pixels de coordonnées (2,2) ; (3,2) ; (2,3) ; (3,3)
+- au pixel de coordonnées (0,2), les pixels de coordonnées (0,4) ; (1,4) ; (0,5) ; (1,5)
+- au pixel de coordonnées (1,2), les pixels de coordonnées (2,4) ; (3,4) ; (2,5) ; (3,5)
 
 
 Tous ces traitements peuvent être réunis dans une [application en Python](Assets/Transformations_images.py) à compléter en suivant le modèle réalisé pour les 5 premières transformations.
