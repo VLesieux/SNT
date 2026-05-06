@@ -208,9 +208,9 @@ Indication : on considère une image de 2 colonnes sur 3 lignes. On souhaite obt
 
 <p align="center">
 
-  <img src="Assets/image2_3.png" width="20%" />
+  <img src="Assets/image2_3.png" />
 
-  <img src="Assets/image4_6.png" width="40%" />
+  <img src="Assets/image4_6.png" />
 
 </p>
 
