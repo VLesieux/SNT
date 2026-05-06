@@ -206,8 +206,8 @@ On suivra [sur ce document pdf](http://vfsilesieux.free.fr/traitements_d_une_me%
 
 Indication : on considère une image de 2 colonnes sur 3 lignes. On souhaite obtenir une image deux fois plus grande de 4 colonnes et de 6 lignes.
 
-<img width="650" height="500" src="Assets/image2_3.png">
-<img width="650" height="500" src="Assets/image4_6.png">
+<img width="200" height="200" src="Assets/image2_3.png">
+<img width="200" height="200" src="Assets/image4_6.png">
 
 Pour ce faire, il suffit de faire correspondre :
 
